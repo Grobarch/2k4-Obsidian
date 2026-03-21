@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "vault/**"
+      - "quartz/quartz.config.ts"
+      - "quartz/quartz.layout.ts"
+      - ".github/workflows/deploy.yml"
 
 permissions:
   contents: read
