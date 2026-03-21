@@ -1,11 +1,13 @@
 ---
-title: TYTUŁ SYSTEMU
+title: Dupa
 type: system
-system: slug-systemu
+system: dupa
 wydawca: Wydawca
-gatunek: gatunek
+gatunek: dupny
 tags: [system, slug-systemu]
 ---
+
+# TYTUŁ SYSTEMU
 
 ![TYTUŁ SYSTEMU](placeholder.jpg)
 

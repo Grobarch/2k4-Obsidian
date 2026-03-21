@@ -13,25 +13,30 @@ tags: [kampania, cold-city, szpiegowski, horror]
 
 ## Bohaterowie Graczy
 
-| Postac | Gracz | Archetyp |
+<!-- PLAYERS_START -->
+| Postać | Gracz | Archetyp |
 |--------|-------|----------|
 | [Mjr. Iwan Gorki](/encyklopedia/bohaterowie-graczy/iwan-gorki) |  | Funkcjonariusz PAP, Agent GRU |
 | [Mjr. Józef Bardak](/encyklopedia/bohaterowie-graczy/jozef-bardak) |  | Funkcjonariusz PAP, Żołnierz KBW |
 | [Por. Jacques Rousseau](/encyklopedia/bohaterowie-graczy/jacques-rousseau) |  | Funkcjonariusz PAP, Oficer Francuskiej Armii |
+<!-- PLAYERS_END -->
 
 ## Bohaterowie Niezalezni
 
-- [Dr. Hans Robke](/encyklopedia/bohaterowie-niezalezni/hans-robke)
-- [Mjr. James Hack](/encyklopedia/postacie/james-hack)
-- [Kpt. Lester Pullman](/encyklopedia/postacie/lester-pullman)
-- [Romantyczne Rozmowy z GRU](/encyklopedia/postacie/romantyczne-rozmowy-z-gru)
-- [Amerykański Sen](/encyklopedia/postacie/amerykanski-sen)
-- [Droga bez Powrotu](/encyklopedia/postacie/droga-bez-powrotu)
+<!-- NPCS_START -->
+| # | Bohater niezależny |
+|---|--------------------|
+| 1 | [Dr. Hans Robke](/encyklopedia/bohaterowie-niezalezni/hans-robke) |
+<!-- NPCS_END -->
 
 ## Lokacje
 
-- [Berlin Zachodni](/encyklopedia/lokacje/berlin-zachodni)
-- [Archiwum PAP](/encyklopedia/lokacje/archiwum-pap)
+<!-- LOCATIONS_START -->
+| # | Lokacja |
+|---|---------|
+| 1 | [Archiwum PAP](/encyklopedia/lokacje/archiwum-pap) |
+| 2 | [Berlin Zachodni](/encyklopedia/lokacje/berlin-zachodni) |
+<!-- LOCATIONS_END -->
 
 ## Spis epizodow
 

@@ -8,8 +8,6 @@ kampania: slug-kampanii
 tags: [artefakt, slug-systemu]
 ---
 
-# NAZWA ARTEFAKTU
-
 ![NAZWA ARTEFAKTU](placeholder.jpg)
 
 ## Opis

@@ -8,8 +8,6 @@ kampania: slug-kampanii
 tags: [lokacja, slug-systemu]
 ---
 
-# NAZWA LOKACJI
-
 ![NAZWA LOKACJI](placeholder.jpg)
 
 ## Opis

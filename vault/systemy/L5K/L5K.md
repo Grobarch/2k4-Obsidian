@@ -4,7 +4,10 @@ type: system
 system: l5k
 wydawca: AEG / Tajemnicze Miasto
 gatunek: samurajski
-tags: [system, l5k, samurajski]
+tags:
+  - system
+  - l5k
+  - samurajski
 ---
 
 # Legenda Pięciu Kręgów 1ed

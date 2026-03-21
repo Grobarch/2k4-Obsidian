@@ -11,18 +11,55 @@ tags: [kampania, l5k, samurajski]
 # Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion
 
 
+## Bohaterowie Graczy
+
+<!-- PLAYERS_START -->
+| Postać | Gracz | Archetyp |
+|--------|-------|----------|
+| [Bayushi Tokuno](/encyklopedia/bohaterowie-graczy/bayushi-tokuno) | Paweł OBSTAWSKI | bushi z Klanu Skorpiona |
+| [Kakita Kim](/encyklopedia/bohaterowie-graczy/kakita-kim) | Rafał KAMIŃSKI | bushi z Klanu Żurawia |
+| [Kakita Kubota](/encyklopedia/bohaterowie-graczy/kakita-kubota) | Dawid KOŁACIŃSKI | bushi z Klanu Żurawia |
+| [Ketsuki Miyagi](/encyklopedia/bohaterowie-graczy/ketsuki-miyagi) | Paweł PIOTROWSKI | bushi z Klanu Jednorożca |
+| [Mirumoto Kenzo](/encyklopedia/bohaterowie-graczy/mirumoto-kenzo) | Tomasz TYMIŃSKI | bushi z Klanu Smoka |
+| [Noya Ayame](/encyklopedia/bohaterowie-graczy/noya-ayame) | Monika ŁYŻWA |  |
+| [Sasaki Hayato](/encyklopedia/bohaterowie-graczy/sasaki-hayato) | Piotr RYGIEL | bushi z Klanu Kraba |
+| [Shiba Takeshi](/encyklopedia/bohaterowie-graczy/shiba-takeshi) | Krzysztof OBSTAWSKI | shugenja z Klanu Feniksa |
+<!-- PLAYERS_END -->
+
+## Bohaterowie Niezalezni
+
+<!-- NPCS_START -->
+| # | Bohater niezależny |
+|---|--------------------|
+| 1 | [Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](/encyklopedia/bohaterowie-niezalezni/cien-kobiety-jedna-z-mrocznych-zjaw-poddanych-woli-cichego-skorpiona-z-zamku-zadel-w-miescie-slodkich-klamstw) |
+| 2 | [Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu](/encyklopedia/bohaterowie-niezalezni/czlowiek-z-chmur-burzowa-chmura-ronin-dotkniety-przez-pania-slonce-amaterasu) |
+| 3 | [Goblin Bakemno](/encyklopedia/bohaterowie-niezalezni/goblin-bakemno) |
+| 4 | [Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wężowy Czarownik ze Strażnicy Płaczu Naku-gadian w Krainach Cienia](/encyklopedia/bohaterowie-niezalezni/hebi-taishiro-czarnoksieznik-maho-tsukai-z-zielonym-krysztalem-wezowy-czarownik-ze-straznicy-placzu-naku-gadian-w-krainach-cienia) |
+| 5 | [Książę Cienia Shosuro Kuno - Cichy Skorpion - Sługa Mrocznego boga Fu Lenga](/encyklopedia/bohaterowie-niezalezni/ksiaze-cienia-shosuro-kuno-cichy-skorpion-sluga-mrocznego-boga-fu-lenga) |
+| 6 | [Nocny Szpon Naitokuro](/encyklopedia/bohaterowie-niezalezni/nocny-szpon-naitokuro) |
+| 7 | [Zły duch Oni Arach Dziecię Pająka - Stwór powstały z truchła pajęczego boga Tkacza Upadłych Losów Atsui-unmei-o-tsumugu-ono](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-arach-dziecie-pajaka-stwor-powstaly-z-truchla-pajeczego-boga-tkacza-upadlych-losow-atsui-unmei-o-tsumugu-ono) |
+<!-- NPCS_END -->
+
 ## Lokacje
 
-- [Zimowy Dwór](/encyklopedia/lokacje/zimowy-dwor)
-- [Pajęczy Świat](/encyklopedia/lokacje/pajeczy-swiat)
-- [Miasto Słodkich Kłamstw](/encyklopedia/lokacje/miasto-slodkich-klamstw)
+<!-- LOCATIONS_START -->
+| # | Lokacja |
+|---|---------|
+| 1 | [Miasto Słodkich Kłamstw](/encyklopedia/lokacje/miasto-slodkich-klamstw) |
+| 2 | [Pajęczy Świat](/encyklopedia/lokacje/pajeczy-swiat) |
+| 3 | [Zimowy Dwór](/encyklopedia/lokacje/zimowy-dwor) |
+<!-- LOCATIONS_END -->
 
 ## Artefakty
 
-- [Miecze odwróconych imion](/encyklopedia/artefakty/miecze-odwroconych-imion)
-- [Ostrze Pychy Hokori](/encyklopedia/artefakty/ostrze-pychy-hokori)
-- [Ostrze Chciwości Don'yoku](/encyklopedia/artefakty/ostrze-chciwosci-donyoku)
-- [Ostrze Nieczystości](/encyklopedia/artefakty/ostrze-nieczystosci)
+<!-- ARTIFACTS_START -->
+| # | Artefakt |
+|---|----------|
+| 1 | [Miecze odwróconych imion](/encyklopedia/artefakty/miecze-odwroconych-imion) |
+| 2 | [Ostrze Chciwości Don'yoku](/encyklopedia/artefakty/ostrze-chciwosci-donyoku) |
+| 3 | [Ostrze Nieczystości](/encyklopedia/artefakty/ostrze-nieczystosci) |
+| 4 | [Ostrze Pychy Hokori](/encyklopedia/artefakty/ostrze-pychy-hokori) |
+<!-- ARTIFACTS_END -->
 
 ## Spis epizodow
 

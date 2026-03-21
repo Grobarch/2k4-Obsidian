@@ -13,14 +13,18 @@ tags: [kampania, l5k, samurajski]
 
 ## Bohaterowie Niezalezni
 
-- [Akodo Raizo](/encyklopedia/bohaterowie-niezalezni/akodo-raizo)
-- [Akodo Monzo](/encyklopedia/bohaterowie-niezalezni/akodo-monzo)
-- [Horigato Manro](/encyklopedia/bohaterowie-niezalezni/horigato-manro)
-- [Horikoshi Imochi](/encyklopedia/bohaterowie-niezalezni/horikoshi-imochi)
-- [Były żołnierz na usługach Horikoshi Imochiego](/encyklopedia/bohaterowie-niezalezni/byly-zolnierz-na-uslugach-horikoshi-imochiego)
-- [Immamura Sakutaro](/encyklopedia/bohaterowie-niezalezni/immamura-sakutaro)
-- [Yojimbo cesarskiego namiestnika Immamury Sakutaro](/encyklopedia/bohaterowie-niezalezni/yojimbo-cesarskiego-namiestnika-immamury-sakutaro)
-- [Rokugański chłop](/encyklopedia/bohaterowie-niezalezni/rokuganski-chlop)
+<!-- NPCS_START -->
+| # | Bohater niezależny |
+|---|--------------------|
+| 1 | [Akodo Monzo](/encyklopedia/bohaterowie-niezalezni/akodo-monzo) |
+| 2 | [Akodo Raizo](/encyklopedia/bohaterowie-niezalezni/akodo-raizo) |
+| 3 | [Były żołnierz na usługach Horikoshi Imochiego](/encyklopedia/bohaterowie-niezalezni/byly-zolnierz-na-uslugach-horikoshi-imochiego) |
+| 4 | [Horigato Manro](/encyklopedia/bohaterowie-niezalezni/horigato-manro) |
+| 5 | [Horikoshi Imochi](/encyklopedia/bohaterowie-niezalezni/horikoshi-imochi) |
+| 6 | [Immamura Sakutaro](/encyklopedia/bohaterowie-niezalezni/immamura-sakutaro) |
+| 7 | [Rokugański chłop](/encyklopedia/bohaterowie-niezalezni/rokuganski-chlop) |
+| 8 | [Yojimbo cesarskiego namiestnika Immamury Sakutaro](/encyklopedia/bohaterowie-niezalezni/yojimbo-cesarskiego-namiestnika-immamury-sakutaro) |
+<!-- NPCS_END -->
 
 ## Spis epizodow
 

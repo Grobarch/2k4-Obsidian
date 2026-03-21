@@ -13,29 +13,39 @@ tags: [kampania, deadlands, western, horror]
 
 ## Bohaterowie Graczy
 
-| Postac                                                                                                                                                                           | Gracz               | Archetyp                                         |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------ |
-| [kanciarz Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/kanciarz-klaus-von-weibenmauer)                                                                                | Krzysztof OBSTAWSKI |                                                  |
-| [ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro)                                                                                                                    | Paweł OBSTAWSKI     |                                                  |
-| [rewolwerowiec Szalony Mickey](/encyklopedia/bohaterowie-graczy/rewolwerowiec-szalony-mickey)                                                                                    | Tomasz TYMIŃSKI     |                                                  |
-| [poszukiwacz Jacob](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob)                                                                                                          | oraz Piotr RYGIEL   |                                                  |
-| [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer)                                                                                                  | Krzysztof OBSTAWSKI | Kanciarz z Rodziny Grimmów                       |
-| [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey)                                                                                                                | Tomasz TYMIŃSKI     | Rewolwerowiec                                    |
-| [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro)                                                                                                                                | Paweł OBSTAWSKI     | Ronin i zabójca potworów z Kraju Kwitnącej Wiśni |
-| [rewolwerowiec i ochroniarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-i-ochroniarz-timothy-crawford-iii)                                              | Paweł PIOTROWSKI    |                                                  |
-| [poszukiwacz Jacob Hoover](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob-hoover)                                                                                            | oraz Piotr RYGIEL   |                                                  |
-| [rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-ochroniarz-i-poczatkujacy-kanciarz-timothy-crawford-iii) | Paweł PIOTROWSKI    |                                                  |
+<!-- PLAYERS_START -->
+| Postać | Gracz | Archetyp |
+|--------|-------|----------|
+| [kanciarz Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/kanciarz-klaus-von-weibenmauer) | Krzysztof OBSTAWSKI |  |
+| [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer) | Krzysztof OBSTAWSKI | Kanciarz z Rodziny Grimmów |
+| [poszukiwacz Jacob](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob) | oraz Piotr RYGIEL |  |
+| [poszukiwacz Jacob Hoover](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob-hoover) | oraz Piotr RYGIEL |  |
+| [rewolwerowiec i ochroniarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-i-ochroniarz-timothy-crawford-iii) | Paweł PIOTROWSKI |  |
+| [rewolwerowiec Szalony Mickey](/encyklopedia/bohaterowie-graczy/rewolwerowiec-szalony-mickey) | Tomasz TYMIŃSKI |  |
+| [rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-ochroniarz-i-poczatkujacy-kanciarz-timothy-crawford-iii) | Paweł PIOTROWSKI |  |
+| [ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro) | Paweł OBSTAWSKI |  |
+| [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey) | Tomasz TYMIŃSKI | Rewolwerowiec |
+| [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro) | Paweł OBSTAWSKI | Ronin i zabójca potworów z Kraju Kwitnącej Wiśni |
+<!-- PLAYERS_END -->
 
 ## Lokacje
 
-- [Heartville](/encyklopedia/lokacje/heartville)
-- [Saloon Crazy Horseshoe](/encyklopedia/lokacje/saloon-crazy-horseshoe)
-- [Drzewo Duchów](/encyklopedia/lokacje/drzewo-duchow)
-- [Kraina Wielu Drzwi](/encyklopedia/lokacje/kraina-wielu-drzwi)
+<!-- LOCATIONS_START -->
+| # | Lokacja |
+|---|---------|
+| 1 | [Drzewo Duchów](/encyklopedia/lokacje/drzewo-duchow) |
+| 2 | [Heartville](/encyklopedia/lokacje/heartville) |
+| 3 | [Kraina Wielu Drzwi](/encyklopedia/lokacje/kraina-wielu-drzwi) |
+| 4 | [Saloon Crazy Horseshoe](/encyklopedia/lokacje/saloon-crazy-horseshoe) |
+<!-- LOCATIONS_END -->
 
 ## Artefakty
 
-- [Walizka z Heartville](/encyklopedia/artefakty/walizka-z-heartville)
+<!-- ARTIFACTS_START -->
+| # | Artefakt |
+|---|----------|
+| 1 | [Walizka z Heartville](/encyklopedia/artefakty/walizka-z-heartville) |
+<!-- ARTIFACTS_END -->
 
 ## Spis epizodow
 

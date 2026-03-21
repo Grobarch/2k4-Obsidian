@@ -11,8 +11,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/..."
 tags: [epizod, slug-systemu]
 ---
 
-# Epizod XX: "Tytuł Epizodu"
-
 ---
 
 *Opis do uzupełnienia.*

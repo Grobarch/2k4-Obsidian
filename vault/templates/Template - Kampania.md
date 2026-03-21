@@ -8,8 +8,6 @@ gatunek: gatunek
 tags: [kampania, slug-systemu]
 ---
 
-# TYTUŁ KAMPANII
-
 ![TYTUŁ KAMPANII](placeholder.jpg)
 
 ## Opis
