@@ -1,0 +1,25 @@
+---
+title: 7th Sea
+type: system
+system: 7th-sea
+wydawca: AEG / John Wick Presents
+gatunek: przygodowy, fantasy
+tags: [system, 7th-sea, szpiegowski, przygodowy, fantasy]
+---
+
+# 7th Sea
+
+
+## Opis
+
+*Opis do uzupelnienia.*
+
+## Kampanie
+
+| Kampania | MG | Epizody |
+|----------|-------|---------|
+| [W maskach](/kampanie/7th-sea/w-maskach) | Arkadiusz RYGIEL | 3 |
+
+## Wszystkie strony
+
+Przegladaj: [wszystkie strony z tagiem *7th-sea*](/tags/7th-sea)
