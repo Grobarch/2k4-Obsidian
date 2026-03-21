@@ -1,14 +1,7 @@
 name: Deploy Wiki to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "vault/**"
-      - "quartz/quartz.config.ts"
-      - "quartz/quartz.layout.ts"
-      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
