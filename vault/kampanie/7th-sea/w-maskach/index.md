@@ -5,7 +5,7 @@ system: 7th-sea
 system_pelna: 7th Sea
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
-tags: [kampania, 7th-sea, szpiegowski, fantasy]
+tags: [kampania, 7th-Sea, szpiegowski, fantasy]
 ---
 
 # W maskach

@@ -8,7 +8,7 @@ kampania: w-maskach
 mg: Arkadiusz RYGIEL
 data: 2010-11-18
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2010/11/7th-sea-odc-1-ze-smiercia.html"
-tags: [epizod, 7th-sea, szpiegowski]
+tags: [epizod, 7th-Sea, szpiegowski]
 ---
 
 # Epizod 1: "Zaślubiny ze śmiercią"
