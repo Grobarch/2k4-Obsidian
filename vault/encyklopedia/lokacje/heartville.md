@@ -3,7 +3,7 @@ title: Heartville
 type: lokacja
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
-kampania_link: /kampanie/deadlands/wszystkie-przebrania-alistaira-kanta
+kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
 kampania: wszystkie-przebrania-alistaira-kanta
 tags: [lokacja, deadlands, western, horror]
 ---
@@ -23,4 +23,4 @@ Skonfederowane Stany Zjednoczone. Heartville w Stanie Missouri.
 ## Wystąpienia
 
 
-- [Epizod 1: "Walizka z Heartville"](/kampanie/deadlands-martwe-ziemie/wszystkie-przebrania-alistaira-kanta/epizod-01)
+- [Epizod 1: "Walizka z Heartville"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-01)

@@ -1,0 +1,25 @@
+---
+title: The Shadow of Yesterday
+type: system
+system: shadow-of-yesterday
+wydawca: CRN Games
+gatunek: fantasy
+tags: [system, shadow-of-yesterday, fantasy]
+---
+
+# The Shadow of Yesterday
+
+
+## Opis
+
+*Opis do uzupelnienia.*
+
+## Scenariusze samodzielne
+
+| Scenariusz | Data |
+|------------|------|
+| [Cień dni minionych](/scenariusze/the-shadow-of-yesterday/cien-dni-minionych) | 2012-01-02 |
+
+## Wszystkie strony
+
+Przegladaj: [wszystkie strony z tagiem *shadow-of-yesterday*](/tags/shadow-of-yesterday)

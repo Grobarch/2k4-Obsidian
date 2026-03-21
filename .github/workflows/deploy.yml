@@ -31,6 +31,9 @@ jobs:
       - name: Copy vault to Quartz content
         run: cp -r vault/* quartz/content/
 
+      - name: Update episode tables
+        run: node scripts/update-episode-tables.mjs quartz/content/systemy
+
       - name: Build Quartz
         working-directory: quartz
         run: npx quartz build

@@ -3,7 +3,7 @@ title: Hortus
 type: lokacja
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
-kampania_link: /kampanie/gasnace-slonca/hortus
+kampania_link: /systemy/gasnace-slonca/hortus
 kampania: hortus
 tags: [lokacja, gasnace-slonca, space-fantasy]
 ---
@@ -20,4 +20,4 @@ Hortusa". Epizod 1 "Banda wyrzutków staje się grupą poszukiwaczy na usługach
 ## Wystąpienia
 
 
-- [Epizod 1: "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis"](/kampanie/gasnace-slonca-2ed/tajemnice-z-hortusa/epizod-01)
+- [Epizod 1: "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis"](/systemy/gasnace-slonca/tajemnice-z-hortusa/epizod-01)

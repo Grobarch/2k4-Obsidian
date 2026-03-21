@@ -11,46 +11,26 @@ Witaj w wiki dokumentującej kampanie, postacie i światy papierowego RPG prowad
 
 ## Sekcje
 
-- [Kampanie](/kampanie) — relacje z rozegranych kampanii i epizodów
 - [Encyklopedia](/encyklopedia) — postacie, lokacje i artefakty
-- [Systemy](/systemy) — karty systemów RPG
+- [Systemy](/systemy) — systemy RPG i kampanie
 
 ---
-test
 
 ## Kampanie
 
-### 7th Sea
-- [W maskach](/kampanie/7th-sea/w-maskach/index)
-
-### Cold City
-- [Cold Tales](/kampanie/cold-city/cold-tales/index)
-
-### Deadlands: Martwe Ziemie
-- [Wszystkie przebrania Alistaira Kanta](/kampanie/deadlands-martwe-ziemie/wszystkie-przebrania-alistaira-kanta/index)
-
-### Gasnące Słońca 2ed
-- [Tajemnice zapomnianej technologii z Hortusa](/kampanie/gasnace-slonca-2ed/tajemnice-z-hortusa/index)
-
-
-### Honor i Krew
-- [Trylogia miecza](/kampanie/honor-i-krew/trylogia-miecza/index)
-
-### Legenda Pięciu Kręgów 1ed
-- [Groza, która zawsze powraca](/kampanie/legenda-pieciu-kregow-1ed/groza-ktora-zawsze-powraca/index)
-- [Miecze cnót i grzechów](/kampanie/legenda-pieciu-kregow-1ed/miecze-cnot-i-grzechow/index)
-- [Prawidła zdrady](/kampanie/legenda-pieciu-kregow-1ed/prawidla-zdrady/index)
-- [Trylogia Klanu Lwa](/kampanie/legenda-pieciu-kregow-1ed/trylogia-klanu-lwa/index)
-
-### Mafia: Gangsterska Gra Fabularna
-- [La Cosa Nostra](/kampanie/mafia-ggf/la-cosa-nostra/index)
-
-### Wampir: Mroczne Wieki
-- [Diabeł z Łazareni](/kampanie/wampir-mroczne-wieki/diabel-z-lazareni/index)
-
-### Warhammer Fantasy Role Play 2ed
-- [Listy z Praag](/kampanie/warhammer-frp-2ed/listy-z-praag/index)
-- [Losy bohaterów przez żarna czasu ścierane](/kampanie/warhammer-frp-2ed/losy-bohaterow/index)
-
-### Wiedźmin: Gra Wyobraźni
-- [Słudzy miecza i brzęczących monet](/kampanie/wiedzmin-gra-wyobrazni/sludzy-miecza/index)
+| System | Kampania | Gatunek |
+|--------|----------|---------|
+| [7th Sea](/systemy/7th-sea/7th-sea) | [W maskach](/systemy/7th-sea/w-maskach/w-maskach) | przygodowy |
+| [Cold City](/systemy/cold-city/cold-city) | [Cold Tales](/systemy/cold-city/cold-tales/cold-tales) | szpiegowski, horror |
+| [Deadlands](/systemy/deadlands/deadlands) | [Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta) | western, horror |
+| [Gasnące Słońca 2ed](/systemy/gasnace-slonca/gasnace-slonca) | [Tajemnice z Hortusa](/systemy/gasnace-slonca/tajemnice-z-hortusa/tajemnice-z-hortusa) | sci-fi |
+| [Honor i Krew](/systemy/honor-i-krew/honor-i-krew) | [Trylogia miecza](/systemy/honor-i-krew/trylogia-miecza/trylogia-miecza) | samurajski |
+| [L5K 1ed](/systemy/l5k/l5k) | [Groza, która zawsze powraca](/systemy/l5k/groza-ktora-zawsze-powraca/groza-ktora-zawsze-powraca) | samurajski |
+| [L5K 1ed](/systemy/l5k/l5k) | [Miecze cnót i grzechów](/systemy/l5k/miecze-cnot-i-grzechow/miecze-cnot-i-grzechow) | samurajski |
+| [L5K 1ed](/systemy/l5k/l5k) | [Prawidła zdrady](/systemy/l5k/prawidla-zdrady/prawidla-zdrady) | samurajski |
+| [L5K 1ed](/systemy/l5k/l5k) | [Trylogia Klanu Lwa](/systemy/l5k/trylogia-klanu-lwa/trylogia-klanu-lwa) | samurajski |
+| [Mafia GGF](/systemy/mafia-ggf/mafia-ggf) | [La Cosa Nostra](/systemy/mafia-ggf/la-cosa-nostra/la-cosa-nostra) | gangsterski |
+| [Wampir](/systemy/wampir/wampir) | [Diabeł z Łazareni](/systemy/wampir/diabel-z-lazareni/diabel-z-lazareni) | dark fantasy, horror |
+| [WFRP 2ed](/systemy/wfrp/wfrp) | [Listy z Praag](/systemy/wfrp/listy-z-praag/listy-z-praag) | dark fantasy |
+| [WFRP 2ed](/systemy/wfrp/wfrp) | [Losy bohaterów](/systemy/wfrp/losy-bohaterow/losy-bohaterow) | dark fantasy |
+| [Wiedźmin](/systemy/wiedzmin/wiedzmin) | [Słudzy miecza](/systemy/wiedzmin/sludzy-miecza/sludzy-miecza) | dark fantasy |
