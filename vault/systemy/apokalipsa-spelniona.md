@@ -12,7 +12,7 @@ tags: [system, apokalipsa-spelniona, apokaliptyczny, horror, postapokalipsa]
 
 ## Opis
 
-*Opis do uzupelnienia.*
+*Opis do uzupelniensia.*
 
 ## Scenariusze samodzielne
 
