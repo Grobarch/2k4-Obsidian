@@ -6,6 +6,7 @@ system_pelna: Honor i Krew
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, honor-i-krew, fantasy, samurajski]
+draft: true
 ---
 
 # Trylogia miecza

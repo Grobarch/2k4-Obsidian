@@ -6,6 +6,7 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: [kampania, Wiedźmin, dark-fantasy, fantasy]
+draft: true
 ---
 
 # Słudzy miecza i brzęczących monet

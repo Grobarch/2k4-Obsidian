@@ -5,6 +5,7 @@ system: honor-i-krew
 wydawca: Gramel
 gatunek: samurajski
 tags: [system, honor-i-krew, fantasy, samurajski]
+draft: true
 ---
 
 # Honor i Krew

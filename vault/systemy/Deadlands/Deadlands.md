@@ -5,6 +5,7 @@ system: deadlands
 wydawca: Pinnacle Entertainment Group
 gatunek: western, horror
 tags: [system, deadlands, western, horror]
+draft: true
 ---
 
 # Deadlands: Martwe Ziemie

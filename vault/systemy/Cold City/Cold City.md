@@ -5,6 +5,7 @@ system: cold-city
 wydawca: Contested Ground Studios
 gatunek: szpiegowski, horror
 tags: [system, cold-city, szpiegowski, horror]
+draft: true
 ---
 
 # Cold City

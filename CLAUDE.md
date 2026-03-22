@@ -83,6 +83,10 @@ Quartz automatycznie slugifikuje je do lowercase z myślnikami (np. `cold-city/c
 
 Hierarchia: `systemy/ → System/ → Kampania/ → Epizod XX.md`
 
+### Ukrywanie folder notes w Quartz
+
+Folder notes (systemów, kampanii i sekcji scenariuszy) mają `draft: true` w frontmatter — Quartz ich nie renderuje. Są widoczne tylko lokalnie w Obsidian (do nawigacji po folderach). Strony indeksujące (np. `Scenariusze.md`) linkują bezpośrednio do zawartości, z pominięciem folder notes.
+
 ### Tabelki epizodów
 
 Folder notes kampanii zawierają automatycznie generowane tabelki epizodów

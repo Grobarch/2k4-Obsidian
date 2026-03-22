@@ -5,6 +5,7 @@ system: apokalipsa-spelniona
 wydawca: Wydawnictwo Portal
 gatunek: horror, postapokalipsa
 tags: [system, apokalipsa-spelniona, apokaliptyczny, horror, postapokalipsa]
+draft: true
 ---
 
 # Apokalipsa Spełniona: Czas Cthulhu

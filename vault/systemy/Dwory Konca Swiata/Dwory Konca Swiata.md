@@ -5,6 +5,7 @@ system: dwory-konca-swiata
 wydawca: Gramel
 gatunek: science fiction, polityczny
 tags: [system, dwory-konca-swiata, science-fiction, polityczny]
+draft: true
 ---
 
 # Dwory Końca Świata: Dziedzictwo Imperium

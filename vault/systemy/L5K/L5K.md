@@ -8,6 +8,7 @@ tags:
   - system
   - l5k
   - samurajski
+draft: true
 ---
 
 # Legenda Pięciu Kręgów 1ed

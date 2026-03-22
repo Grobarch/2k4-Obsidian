@@ -5,6 +5,7 @@ system: 7th-sea
 wydawca: AEG / John Wick Presents
 gatunek: przygodowy, fantasy
 tags: [system, 7th-Sea, szpiegowski, przygodowy, fantasy]
+draft: true
 ---
 
 # 7th Sea

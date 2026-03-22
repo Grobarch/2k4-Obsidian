@@ -5,6 +5,7 @@ system: gasnace-slonca
 wydawca: Gramel
 gatunek: space fantasy
 tags: [system, gasnace-slonca, space-fantasy]
+draft: true
 ---
 
 # Gasnące Słońca 2ed
