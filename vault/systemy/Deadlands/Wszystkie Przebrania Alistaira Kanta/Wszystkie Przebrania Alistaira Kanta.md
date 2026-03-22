@@ -11,6 +11,19 @@ tags: [kampania, deadlands, western, horror]
 # Wszystkie przebrania Alistaira Kanta
 
 
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa postać"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Postać"
+    openNote: true
+```
+
+</div>
+
 ## Bohaterowie Graczy
 
 <!-- PLAYERS_START -->
