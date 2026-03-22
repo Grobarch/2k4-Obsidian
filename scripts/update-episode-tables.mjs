@@ -124,14 +124,17 @@ function buildEpisodeLink(episodePath, systemyPath) {
 }
 
 /**
- * Znajduje folder notes kampanii — pliki z markerem EPISODES_START.
+ * Znajduje folder notes kampanii — pliki z dowolnym markerem sekcji.
  */
 async function findCampaignFolderNotes(systemyPath) {
   const allMd = await findMdFiles(systemyPath);
   const folderNotes = [];
   for (const filePath of allMd) {
     const content = await readFile(filePath, "utf-8");
-    if (content.includes(MARKERS.episodes.start) && content.includes(MARKERS.episodes.end)) {
+    const hasAnyMarker = Object.values(MARKERS).some(
+      (m) => content.includes(m.start) && content.includes(m.end)
+    );
+    if (hasAnyMarker) {
       folderNotes.push(filePath);
     }
   }
