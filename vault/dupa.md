@@ -24,3 +24,7 @@ tags: [system, slug-systemu]
 ## Wszystkie strony
 
 Przeglądaj: [wszystkie strony z tagiem *slug-systemu*](/tags/slug-systemu)
+
+
+
+![[Drawing 2026-03-22 23.41.15.excalidraw.svg]]
