@@ -19,6 +19,24 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   ├── bohaterowie-niezalezni/
 │   │   ├── lokacje/
 │   │   └── artefakty/
+│   ├── scenariusze/        ← gotowe scenariusze i przygody per system
+│   │   ├── Scenariusze.md      ← folder note (indeks systemów)
+│   │   ├── A Penny For My Thoughts/
+│   │   ├── Apokalipsa Spelniona/
+│   │   ├── Cyberpunk 2020/
+│   │   ├── Dead Of Night/
+│   │   ├── Deadlands/
+│   │   ├── Deathwatch/
+│   │   ├── Dwory Konca Swiata/
+│   │   ├── Dzikie Pola/
+│   │   ├── Hell 4 Leather/
+│   │   ├── In Between/
+│   │   ├── L5K1ed/
+│   │   ├── The Shadow Of Yesterday/
+│   │   ├── Wfrp 1ed/
+│   │   ├── Wfrp 4ed/
+│   │   ├── Wolsung/
+│   │   └── Zew Cthulhu/
 │   ├── templates/          ← szablony Obsidian (ignorowane przez Quartz)
 │   │   ├── Utwórz Postać.md    ← skrypt Templater: formularz tworzenia postaci
 │   │   └── statblocks/         ← statbloki per system
@@ -120,6 +138,13 @@ kampania: cold-tales
 data: 2010-10-29
 ```
 
+Scenariusze mają dodatkowe pola:
+```yaml
+type: scenariusz
+zrodlo: "https://arkadiusz-rygiel.blogspot.com/..."
+data: 2011-02-27
+```
+
 ## Linki wewnętrzne
 
 Format absolutny: `[tekst](/ścieżka/do/strony)`
@@ -145,6 +170,24 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 1. Utwórz plik `Epizod XX.md` w folderze kampanii
 2. Dodaj frontmatter z `type: epizod`, `data:`, `kampania_link:`, `title:`
 3. Skrypt pre-build automatycznie doda go do tabelki w folder note kampanii
+
+## Dodawanie nowego scenariusza
+
+1. Utwórz folder systemu w `vault/scenariusze/System Name/` (jeśli nie istnieje)
+2. Utwórz folder note systemu `System Name.md` z listą linków do scenariuszy
+3. Utwórz plik scenariusza z frontmatterem:
+   ```yaml
+   ---
+   title: "Tytuł scenariusza"
+   type: scenariusz
+   system: slug-systemu
+   zrodlo: "https://arkadiusz-rygiel.blogspot.com/..."
+   data: YYYY-MM-DD
+   tags: [scenariusz, slug-systemu]
+   ---
+   ```
+4. Dodaj system do `vault/scenariusze/Scenariusze.md`
+5. Źródłowe pliki w `notes-source/scenariusze/` zawierają H1 tytuł i blok metadanych — przy konwersji przenosimy je do frontmatter, a treść zaczyna się po separatorze `---`
 
 ## Tworzenie postaci (Obsidian)
 
