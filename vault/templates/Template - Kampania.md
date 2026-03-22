@@ -10,6 +10,19 @@ tags: [kampania, slug-systemu]
 
 ![TYTUŁ KAMPANII](placeholder.jpg)
 
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa postać"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Postać"
+    openNote: true
+```
+
+</div>
+
 ## Opis
 
 *Opis do uzupełnienia.*
