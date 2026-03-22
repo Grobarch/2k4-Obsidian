@@ -13,6 +13,7 @@ Witaj w wiki dokumentującej kampanie, postacie i światy papierowego RPG prowad
 
 - [Encyklopedia](/encyklopedia) — postacie, lokacje i artefakty
 - [Systemy](/systemy) — systemy RPG i kampanie
+- [Scenariusze](/scenariusze) — gotowe przygody i scenariusze
 
 ---
 
