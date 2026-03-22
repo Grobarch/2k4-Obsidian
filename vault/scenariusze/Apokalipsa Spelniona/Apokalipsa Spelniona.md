@@ -1,5 +1,6 @@
 ---
 title: Apokalipsa Spełniona
+draft: true
 ---
 
 # Apokalipsa Spełniona

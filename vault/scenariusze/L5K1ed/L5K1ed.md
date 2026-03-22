@@ -1,5 +1,6 @@
 ---
 title: Legenda Pięciu Kręgów 1ed
+draft: true
 ---
 
 # Legenda Pięciu Kręgów 1ed

@@ -1,5 +1,6 @@
 ---
 title: Dwory Końca Świata
+draft: true
 ---
 
 # Dwory Końca Świata

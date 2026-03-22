@@ -1,5 +1,6 @@
 ---
 title: The Shadow of Yesterday
+draft: true
 ---
 
 # The Shadow of Yesterday
