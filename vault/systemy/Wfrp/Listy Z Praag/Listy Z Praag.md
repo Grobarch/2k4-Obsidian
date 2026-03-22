@@ -11,6 +11,19 @@ tags: [kampania, wfrp, dark-fantasy, fantasy]
 # Listy z Praag
 
 
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa postać"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Postać"
+    openNote: true
+```
+
+</div>
+
 ## Spis epizodow
 
 <!-- EPISODES_START -->

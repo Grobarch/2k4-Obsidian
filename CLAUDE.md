@@ -14,15 +14,31 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 ├── vault/                  ← Obsidian vault
 │   ├── index.md            ← strona główna wiki
 │   ├── encyklopedia/
+│   │   ├── Encyklopedia.md     ← folder note (z przyciskiem tworzenia postaci)
 │   │   ├── bohaterowie-graczy/
 │   │   ├── bohaterowie-niezalezni/
 │   │   ├── lokacje/
 │   │   └── artefakty/
+│   ├── templates/          ← szablony Obsidian (ignorowane przez Quartz)
+│   │   ├── Utwórz Postać.md    ← skrypt Templater: formularz tworzenia postaci
+│   │   └── statblocks/         ← statbloki per system
+│   │       ├── generic.md
+│   │       ├── l5k.md
+│   │       ├── cold-city.md
+│   │       ├── deadlands.md
+│   │       ├── wolsung.md
+│   │       ├── wiedzmin.md
+│   │       ├── wfrp.md
+│   │       ├── gasnace-slonca.md
+│   │       ├── 7th-sea.md
+│   │       ├── wampir.md
+│   │       ├── mafia-ggf.md
+│   │       └── honor-i-krew.md
 │   └── systemy/            ← systemy RPG + kampanie + epizody
 │       └── Cold City/          ← folder systemu
 │           ├── Cold City.md    ← folder note systemu
 │           └── Cold Tales/         ← folder kampanii
-│               ├── Cold Tales.md   ← folder note kampanii (z tabelką epizodów)
+│               ├── Cold Tales.md   ← folder note kampanii (z przyciskiem + tabelkami)
 │               ├── Epizod 01.md
 │               └── ...
 ├── scripts/
@@ -32,9 +48,11 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml      ← GitHub Actions: buduje i deployuje na Pages
+├── .obsidian/
+│   └── snippets/
+│       └── obsidian-only.css   ← CSS snippet: pokazuje przyciski lokalnie
 ├── .gitignore
-├── CLAUDE.md               ← ten plik
-└── HANDOFF.md              ← pełna dokumentacja projektu
+└── CLAUDE.md               ← ten plik
 ```
 
 ## Folder Notes
@@ -127,6 +145,81 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 1. Utwórz plik `Epizod XX.md` w folderze kampanii
 2. Dodaj frontmatter z `type: epizod`, `data:`, `kampania_link:`, `title:`
 3. Skrypt pre-build automatycznie doda go do tabelki w folder note kampanii
+
+## Tworzenie postaci (Obsidian)
+
+Formularz uruchamiany przyciskiem w folder note kampanii lub encyklopedii.
+Wymaga pluginów: **Templater** + **Meta Bind**.
+
+### Konfiguracja (jednorazowo)
+
+1. Zainstaluj pluginy **Templater** i **Meta Bind** w Obsidian
+2. W Templater: ustaw "Template folder location" → `templates`
+3. W Obsidian Settings → Appearance → CSS snippets: włącz `obsidian-only`
+
+### Działanie
+
+Przycisk `+ Nowa postać` w folder note kampanii lub `vault/encyklopedia/Encyklopedia.md`
+uruchamia `templates/Utwórz Postać.md`. Formularz pyta kolejno o:
+- Imię (wymagane)
+- Typ: Bohater Gracza / Bohater Niezależny (wymagane)
+- System (wymagane)
+- Kampania (opcjonalna — lista filtrowana po systemie)
+- Gracz (opcjonalne, tylko BG)
+- Archetyp (opcjonalne)
+
+Notatka tworzona w `encyklopedia/bohaterowie-graczy/` lub `.../bohaterowie-niezalezni/`.
+
+### Format notatki postaci
+
+```markdown
+---
+title: "Imię Postaci"
+type: bohater-gracza          # lub bohater-niezalezny
+system: l5k
+system_pelna: "Legenda Pięciu Kręgów 1ed"
+kampania_link: /systemy/l5k/miecze-cnot-i-grzechow
+kampania: miecze-cnot-i-grzechow
+gracz: Jan Kowalski           # tylko BG
+archetyp: bushi z Klanu Lwa
+tags: [bohater-gracza, l5k]
+---
+
+# Imię Postaci
+
+![Portret Imię Postaci](placeholder.jpg)
+
+## Statystyki
+
+<!-- SYSTEM: l5k -->
+← zawartość z templates/statblocks/l5k.md
+
+## Opis
+
+*Opis do uzupełnienia.*
+
+## Wystąpienia
+
+## Kampanie
+
+- [Miecze cnót i grzechów](/systemy/l5k/miecze-cnot-i-grzechow/miecze-cnot-i-grzechow)
+```
+
+### Statbloki systemów
+
+Pliki w `vault/templates/statblocks/` — jeden na system. Dodawanie nowego statbloku:
+1. Utwórz `vault/templates/statblocks/{system-id}.md`
+2. Wpisz czysty markdown (bez frontmatter) — tabela atrybutów, pola tekstowe
+3. Skrypt Templater wczyta plik przez `app.vault.read()` i wklei go do notatki
+
+Dostępne: `l5k`, `cold-city`, `deadlands`, `wolsung`, `wiedzmin`, `wfrp`,
+`gasnace-slonca`, `7th-sea`, `wampir`, `mafia-ggf`, `honor-i-krew`, `generic` (fallback).
+
+### Ukrywanie przycisków w widoku web
+
+Przyciski są owinięte w `<div class="obsidian-only">`.
+- **Obsidian**: CSS snippet `obsidian-only.css` → `display: block`
+- **Quartz**: `quartz/quartz/styles/custom.scss` → `display: none`
 
 ## Ignorowane w .gitignore
 

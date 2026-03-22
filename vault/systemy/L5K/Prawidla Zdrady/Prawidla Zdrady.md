@@ -11,6 +11,19 @@ tags: [kampania, l5k, samurajski]
 # Prawidła zdrady
 
 
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa postać"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Postać"
+    openNote: true
+```
+
+</div>
+
 ## Bohaterowie Niezalezni
 
 <!-- NPCS_START -->
