@@ -34,6 +34,9 @@ jobs:
       - name: Update episode tables
         run: node scripts/update-episode-tables.mjs quartz/content/systemy
 
+      - name: Update scenario lists
+        run: node scripts/update-episode-tables.mjs quartz/content/scenariusze
+
       - name: Build Quartz
         working-directory: quartz
         run: npx quartz build

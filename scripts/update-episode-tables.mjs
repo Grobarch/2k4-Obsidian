@@ -24,11 +24,12 @@ import { readdir, readFile, writeFile, stat } from "node:fs/promises";
 import { join, basename, relative, dirname } from "node:path";
 
 const MARKERS = {
-  episodes:  { start: "<!-- EPISODES_START -->",  end: "<!-- EPISODES_END -->" },
-  players:   { start: "<!-- PLAYERS_START -->",    end: "<!-- PLAYERS_END -->" },
-  npcs:      { start: "<!-- NPCS_START -->",       end: "<!-- NPCS_END -->" },
+  episodes:  { start: "<!-- EPISODES_START -->",   end: "<!-- EPISODES_END -->" },
+  players:   { start: "<!-- PLAYERS_START -->",     end: "<!-- PLAYERS_END -->" },
+  npcs:      { start: "<!-- NPCS_START -->",        end: "<!-- NPCS_END -->" },
   locations: { start: "<!-- LOCATIONS_START -->",   end: "<!-- LOCATIONS_END -->" },
   artifacts: { start: "<!-- ARTIFACTS_START -->",   end: "<!-- ARTIFACTS_END -->" },
+  scenarios: { start: "<!-- SCENARIOS_START -->",   end: "<!-- SCENARIOS_END -->" },
 };
 
 const TYPE_MAP = {
@@ -193,6 +194,51 @@ function sortEpisodes(episodes) {
 }
 
 /**
+ * Znajduje scenariusze w tym samym folderze co folder note.
+ */
+async function findScenariosInDir(dir, folderNoteBasename) {
+  const entries = await readdir(dir);
+  const scenarios = [];
+  for (const name of entries) {
+    if (!name.endsWith(".md") || name === folderNoteBasename) continue;
+    const filePath = join(dir, name);
+    const s = await stat(filePath);
+    if (!s.isFile()) continue;
+    const content = await readFile(filePath, "utf-8");
+    const fm = parseFrontmatter(content);
+    if (fm.type === "scenariusz") {
+      scenarios.push({ filePath, name, fm });
+    }
+  }
+  return scenarios;
+}
+
+/**
+ * Sortuje scenariusze po dacie, potem po nazwie pliku.
+ */
+function sortScenarios(scenarios) {
+  return scenarios.sort((a, b) => {
+    const dateA = a.fm.data || "9999-99-99";
+    const dateB = b.fm.data || "9999-99-99";
+    if (dateA !== dateB) return dateA.localeCompare(dateB);
+    return a.name.localeCompare(b.name);
+  });
+}
+
+/**
+ * Generuje listę bullet scenariuszy.
+ */
+function generateScenariosList(scenarios, vaultRoot) {
+  return scenarios
+    .map((sc) => {
+      const title = (sc.fm.title || basename(sc.name, ".md")).replace(/\|/g, "\\|");
+      const link = buildEncyklopediaLink(sc.filePath, vaultRoot);
+      return `- [${title}](${link})`;
+    })
+    .join("\n");
+}
+
+/**
  * Sortuje wpisy encyklopedii po tytule.
  */
 function sortByTitle(entries) {
@@ -301,6 +347,21 @@ async function main() {
     let changed = false;
 
     console.log(`\n  Kampania: ${campaignSlug} (${notePath})`);
+
+    // --- Scenariusze ---
+    if (content.includes(MARKERS.scenarios.start)) {
+      const scenarios = await findScenariosInDir(dir, noteBasename);
+      const sorted = sortScenarios(scenarios);
+      if (sorted.length > 0) {
+        const list = generateScenariosList(sorted, vaultRoot);
+        const result = replaceMarkerContent(content, MARKERS.scenarios.start, MARKERS.scenarios.end, list);
+        if (result && result !== content) {
+          content = result;
+          changed = true;
+          console.log(`    [scenarios] ${sorted.length} scenariuszy`);
+        }
+      }
+    }
 
     // --- Epizody ---
     if (content.includes(MARKERS.episodes.start)) {
