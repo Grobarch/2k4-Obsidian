@@ -30,13 +30,13 @@ actions:
 <!-- PLAYERS_START -->
 | Postać | Gracz | Archetyp |
 |--------|-------|----------|
-| [Agasha Damagodetsu](/encyklopedia/bohaterowie-graczy/agasha-damagodetsu) | Paweł PIOTROWSKI | shugenja z Klanu Smoka i Szmaragdowy Namiestnik |
-| [Akodo Nushiro](/encyklopedia/bohaterowie-graczy/akodo-nushiro) | Piotr RYGIEL | bushi z Klanu Lwa |
-| [Hida Hikaru](/encyklopedia/bohaterowie-graczy/hida-hikaru) | Dawid KOŁACIŃSKI | bushi z Klanu Kraba |
-| [Hida Mitsuru](/encyklopedia/bohaterowie-graczy/hida-mitsuru) | Tomasz TYMIŃSKI | bushi z Klanu Kraba |
-| [Isawa Mamoru](/encyklopedia/bohaterowie-graczy/isawa-mamoru) | Krzysztof OBSTAWSKI | shugenja z Klanu Feniksa |
-| [Kuni Takajiro](/encyklopedia/bohaterowie-graczy/kuni-takajiro) | Paweł OBSTAWSKI | tsukai-sagasu z Klanu Kraba |
-| [Shiba Tetsu](/encyklopedia/bohaterowie-graczy/shiba-tetsu) | Radosław RYBIŃSKI | bushi z Klanu Feniksa |
+| [Agasha Damagodetsu](/encyklopedia/bohaterowie-graczy/Agasha%20Damagodetsu.md) | Paweł PIOTROWSKI | shugenja z Klanu Smoka i Szmaragdowy Namiestnik |
+| [Akodo Nushiro](/encyklopedia/bohaterowie-graczy/Akodo%20Nushiro.md) | Piotr RYGIEL | bushi z Klanu Lwa |
+| [Hida Hikaru](/encyklopedia/bohaterowie-graczy/Hida%20Hikaru.md) | Dawid KOŁACIŃSKI | bushi z Klanu Kraba |
+| [Hida Mitsuru](/encyklopedia/bohaterowie-graczy/Hida%20Mitsuru.md) | Tomasz TYMIŃSKI | bushi z Klanu Kraba |
+| [Isawa Mamoru](/encyklopedia/bohaterowie-graczy/Isawa%20Mamoru.md) | Krzysztof OBSTAWSKI | shugenja z Klanu Feniksa |
+| [Kuni Takajiro](/encyklopedia/bohaterowie-graczy/Kuni%20Takajiro.md) | Paweł OBSTAWSKI | tsukai-sagasu z Klanu Kraba |
+| [Shiba Tetsu](/encyklopedia/bohaterowie-graczy/Shiba%20Tetsu.md) | Radosław RYBIŃSKI | bushi z Klanu Feniksa |
 <!-- PLAYERS_END -->
 
 ## Bohaterowie Niezalezni
@@ -44,7 +44,7 @@ actions:
 <!-- NPCS_START -->
 | # | Bohater niezależny |
 |---|--------------------|
-| 1 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
+| 1 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/Zly%20Duch%20Oni%20Odrzyskora%20Hifu%20Hosshin%20Z%20Mglistych%20Bagien%20Kiri.md) |
 <!-- NPCS_END -->
 
 ## Spis epizodow
@@ -52,5 +52,5 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Szaleństwo Mistrza Okamury\"](/systemy/l5k/groza-ktora-zawsze-powraca/epizod-01) | 2022-12-25 |
+| 1 | [Epizod 1: \"Szaleństwo Mistrza Okamury\"](/systemy/L5K/Groza%20Ktora%20Zawsze%20Powraca/Epizod%2001.md) | 2022-12-25 |
 <!-- EPISODES_END -->

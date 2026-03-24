@@ -8,6 +8,6 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Niewygodny Człowiek](/scenariusze/cyberpunk-2020/niewygodny-czlowiek)
-- [Jimmy's Juice](/scenariusze/cyberpunk-2020/jimmys-juice)
+- [Niewygodny człowiek](/scenariusze/Cyberpunk%202020/Niewygodny%20Czlowiek.md)
+- [Jimmy's Juice](/scenariusze/Cyberpunk%202020/Jimmys%20Juice.md)
 <!-- SCENARIOS_END -->

@@ -103,12 +103,7 @@ function getCampaignSlug(notePath, systemyPath) {
  */
 function buildEncyklopediaLink(filePath, vaultRoot) {
   const rel = relative(vaultRoot, filePath).replace(/\\/g, "/");
-  const slug = rel
-    .replace(/\.md$/i, "")
-    .split("/")
-    .map((part) => part.toLowerCase().replace(/\s+/g, "-"))
-    .join("/");
-  return `/${slug}`;
+  return `/${rel}`;
 }
 
 /**
@@ -116,12 +111,7 @@ function buildEncyklopediaLink(filePath, vaultRoot) {
  */
 function buildEpisodeLink(episodePath, systemyPath) {
   const rel = relative(systemyPath, episodePath).replace(/\\/g, "/");
-  const slug = rel
-    .replace(/\.md$/i, "")
-    .split("/")
-    .map((part) => part.toLowerCase().replace(/\s+/g, "-"))
-    .join("/");
-  return `/systemy/${slug}`;
+  return `/systemy/${rel}`;
 }
 
 /**
@@ -232,7 +222,7 @@ function generateScenariosList(scenarios, vaultRoot) {
   return scenarios
     .map((sc) => {
       const title = (sc.fm.title || basename(sc.name, ".md")).replace(/\|/g, "\\|");
-      const link = buildEncyklopediaLink(sc.filePath, vaultRoot);
+      const link = buildEncyklopediaLink(sc.filePath, vaultRoot).replace(/ /g, "%20");
       return `- [${title}](${link})`;
     })
     .join("\n");
@@ -258,7 +248,7 @@ function generateEpisodesTable(episodes, systemyPath) {
     const ep = episodes[i];
     const title = ep.fm.title || basename(ep.name, ".md");
     const safeTitle = title.replace(/\|/g, "\\|");
-    const link = buildEpisodeLink(ep.filePath, systemyPath);
+    const link = buildEpisodeLink(ep.filePath, systemyPath).replace(/ /g, "%20");
     const data = ep.fm.data || "";
     rows.push(`| ${i + 1} | [${safeTitle}](${link}) | ${data} |`);
   }
@@ -274,7 +264,7 @@ function generatePlayersTable(entries, vaultRoot) {
     const title = (entry.fm.title || "").replace(/\|/g, "\\|");
     const gracz = (entry.fm.gracz || "").replace(/\|/g, "\\|");
     const archetyp = (entry.fm.archetyp || "").replace(/\|/g, "\\|");
-    const link = buildEncyklopediaLink(entry.filePath, vaultRoot);
+    const link = buildEncyklopediaLink(entry.filePath, vaultRoot).replace(/ /g, "%20");
     rows.push(`| [${title}](${link}) | ${gracz} | ${archetyp} |`);
   }
   return rows.join("\n");
@@ -288,7 +278,7 @@ function generateSimpleTable(entries, vaultRoot, header) {
   for (let i = 0; i < entries.length; i++) {
     const entry = entries[i];
     const title = (entry.fm.title || "").replace(/\|/g, "\\|");
-    const link = buildEncyklopediaLink(entry.filePath, vaultRoot);
+    const link = buildEncyklopediaLink(entry.filePath, vaultRoot).replace(/ /g, "%20");
     rows.push(`| ${i + 1} | [${title}](${link}) |`);
   }
   return rows.join("\n");

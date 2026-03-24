@@ -30,8 +30,8 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Mówiące mury\"](/systemy/wfrp/listy-z-praag/epizod-01) | 2012-07-19 |
-| 2 | [Epizod 2: \"Miecz w skale spaczenia\"](/systemy/wfrp/listy-z-praag/epizod-02) | 2013-05-29 |
-| 3 | [Epizod 3: \"Partia ze Ślimakogłowym\"](/systemy/wfrp/listy-z-praag/epizod-03) | 2013-06-04 |
-| 4 | [Epizod 4: \"Dziecię w czarny pancerz zakute\"](/systemy/wfrp/listy-z-praag/epizod-04) | 2013-06-09 |
+| 1 | [Epizod 1: \"Mówiące mury\"](/systemy/Wfrp/Listy%20Z%20Praag/Epizod%2001.md) | 2012-07-19 |
+| 2 | [Epizod 2: \"Miecz w skale spaczenia\"](/systemy/Wfrp/Listy%20Z%20Praag/Epizod%2002.md) | 2013-05-29 |
+| 3 | [Epizod 3: \"Partia ze Ślimakogłowym\"](/systemy/Wfrp/Listy%20Z%20Praag/Epizod%2003.md) | 2013-06-04 |
+| 4 | [Epizod 4: \"Dziecię w czarny pancerz zakute\"](/systemy/Wfrp/Listy%20Z%20Praag/Epizod%2004.md) | 2013-06-09 |
 <!-- EPISODES_END -->

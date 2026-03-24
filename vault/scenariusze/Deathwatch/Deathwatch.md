@@ -8,5 +8,5 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Wyprawa Estariusza](/scenariusze/deathwatch/wyprawa-estariusza)
+- [Wyprawa Estariusza](/scenariusze/Deathwatch/Wyprawa%20Estariusza.md)
 <!-- SCENARIOS_END -->

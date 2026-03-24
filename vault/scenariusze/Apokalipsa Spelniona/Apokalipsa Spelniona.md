@@ -8,6 +8,6 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Ciało Upadłego Boga](/scenariusze/apokalipsa-spelniona/cialo-upadlego-boga)
-- [Kontinuum Zagłady](/scenariusze/apokalipsa-spelniona/kontinuum-zaglady)
+- [Kontinuum zagłady](/scenariusze/Apokalipsa%20Spelniona/Kontinuum%20Zaglady.md)
+- [Ciało upadłego boga](/scenariusze/Apokalipsa%20Spelniona/Cialo%20Upadlego%20Boga.md)
 <!-- SCENARIOS_END -->

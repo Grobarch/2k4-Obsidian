@@ -8,5 +8,5 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Białogłowa](/scenariusze/dzikie-pola/bialoglowa)
+- [Białogłowa](/scenariusze/Dzikie%20Pola/Bialoglowa.md)
 <!-- SCENARIOS_END -->

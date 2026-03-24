@@ -30,11 +30,11 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Makaroniarskie porachunki\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-01) | 2011-01-28 |
-| 2 | [Epizod 2: \"Nasza sprawa\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-02) | 2011-01-28 |
-| 3 | [Epizod 3: \"Transport w akompaniamencie wystrzałów\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-03) | 2011-01-28 |
-| 4 | [Epizod 4: \"Włoska robota\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-04) | 2011-01-28 |
-| 5 | [Epizod 5: \"Życie miasta\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-05) | 2011-01-28 |
-| 6 | [To tylko interes](/systemy/mafia-ggf/la-cosa-nostra/opowiadanie) |  |
-| 7 | [Rys Fabularny — La Cosa Nostra](/systemy/mafia-ggf/la-cosa-nostra/rys-fabularny) |  |
+| 1 | [Epizod 1: \"Makaroniarskie porachunki\"](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Epizod%2001.md) | 2011-01-28 |
+| 2 | [Epizod 2: \"Nasza sprawa\"](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Epizod%2002.md) | 2011-01-28 |
+| 3 | [Epizod 3: \"Transport w akompaniamencie wystrzałów\"](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Epizod%2003.md) | 2011-01-28 |
+| 4 | [Epizod 4: \"Włoska robota\"](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Epizod%2004.md) | 2011-01-28 |
+| 5 | [Epizod 5: \"Życie miasta\"](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Epizod%2005.md) | 2011-01-28 |
+| 6 | [To tylko interes](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Opowiadanie.md) |  |
+| 7 | [Rys Fabularny — La Cosa Nostra](/systemy/Mafia%20Ggf/La%20Cosa%20Nostra/Rys%20Fabularny.md) |  |
 <!-- EPISODES_END -->

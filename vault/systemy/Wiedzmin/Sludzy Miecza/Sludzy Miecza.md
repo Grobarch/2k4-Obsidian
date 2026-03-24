@@ -30,9 +30,9 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Ostrze ideologii i worek elfich głów\"](/systemy/wiedzmin/sludzy-miecza/epizod-01) | 2011-01-22 |
-| 2 | [Epizod 2: \"Nowy włodarz\"](/systemy/wiedzmin/sludzy-miecza/epizod-02) | 2011-01-22 |
-| 3 | [Epizod 3: \"Masakra w Maden\"](/systemy/wiedzmin/sludzy-miecza/epizod-03) | 2011-01-22 |
-| 4 | [Epizod 4: \"Przywódca Scoia'tael\"](/systemy/wiedzmin/sludzy-miecza/epizod-04) | 2011-01-22 |
-| 5 | [Rys Fabularny — Słudzy miecza i brzęczących monet](/systemy/wiedzmin/sludzy-miecza/rys-fabularny) |  |
+| 1 | [Epizod 1: \"Ostrze ideologii i worek elfich głów\"](/systemy/Wiedzmin/Sludzy%20Miecza/Epizod%2001.md) | 2011-01-22 |
+| 2 | [Epizod 2: \"Nowy włodarz\"](/systemy/Wiedzmin/Sludzy%20Miecza/Epizod%2002.md) | 2011-01-22 |
+| 3 | [Epizod 3: \"Masakra w Maden\"](/systemy/Wiedzmin/Sludzy%20Miecza/Epizod%2003.md) | 2011-01-22 |
+| 4 | [Epizod 4: \"Przywódca Scoia'tael\"](/systemy/Wiedzmin/Sludzy%20Miecza/Epizod%2004.md) | 2011-01-22 |
+| 5 | [Rys Fabularny — Słudzy miecza i brzęczących monet](/systemy/Wiedzmin/Sludzy%20Miecza/Rys%20Fabularny.md) |  |
 <!-- EPISODES_END -->

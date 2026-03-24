@@ -8,7 +8,7 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Tajemnica New Heaven](/scenariusze/dead-of-night/tajemnica-new-heaven)
-- [Wirus Sam](/scenariusze/dead-of-night/wirus-sam)
-- [Zombie Market](/scenariusze/dead-of-night/zombie-market)
+- [Tajemnica New Heaven](/scenariusze/Dead%20Of%20Night/Tajemnica%20New%20Heaven.md)
+- [Zombie market](/scenariusze/Dead%20Of%20Night/Zombie%20Market.md)
+- [Wirus Sam](/scenariusze/Dead%20Of%20Night/Wirus%20Sam.md)
 <!-- SCENARIOS_END -->

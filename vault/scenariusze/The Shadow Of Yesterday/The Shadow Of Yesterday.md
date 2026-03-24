@@ -8,5 +8,5 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Cień dni minionych](/scenariusze/the-shadow-of-yesterday/cien-dni-minionych)
+- [Cień dni minionych](/scenariusze/The%20Shadow%20Of%20Yesterday/Cien%20Dni%20Minionych.md)
 <!-- SCENARIOS_END -->

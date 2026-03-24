@@ -8,8 +8,8 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Szaleństwo Mistrza Okamury](/scenariusze/l5k1ed/szalenstwo-mistrza-okamury)
-- [Pewnego razu w Rokuganie](/scenariusze/l5k1ed/pewnego-razu-w-rokuganie)
-- [Krótka opowieść o człowieku bez serca](/scenariusze/l5k1ed/krotka-opowiesc-o-czlowieku-bez-serca)
-- [Koszmar życia](/scenariusze/l5k1ed/koszmar-zycia)
+- [Pewnego razu w Rokuganie](/scenariusze/L5K1ed/Pewnego%20Razu%20W%20Rokuganie.md)
+- [Koszmar życia](/scenariusze/L5K1ed/Koszmar%20Zycia.md)
+- [Krótka opowieść o człowieku bez serca](/scenariusze/L5K1ed/Krotka%20Opowiesc%20O%20Czlowieku%20Bez%20Serca.md)
+- [Szaleństwo Mistrza Okamury](/scenariusze/L5K1ed/Szalenstwo%20Mistrza%20Okamury.md)
 <!-- SCENARIOS_END -->

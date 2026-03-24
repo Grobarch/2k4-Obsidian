@@ -8,6 +8,6 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Historia pewnej miłości, pieniędzy i ołowiu](/scenariusze/deadlands/historia-pewnej-milosci-pieniedzy-i-olowiu)
-- [Teksańskie love story](/scenariusze/deadlands/teksanskie-love-story)
+- [Teksańskie love story](/scenariusze/Deadlands/Teksanskie%20Love%20Story.md)
+- [Historia pewnej miłości, pieniędzy i ołowiu](/scenariusze/Deadlands/Historia%20Pewnej%20Milosci%20Pieniedzy%20I%20Olowiu.md)
 <!-- SCENARIOS_END -->
