@@ -2,22 +2,28 @@
 title: Wiki RPG — Papierowe RPG
 ---
 
-# Wiki RPG — Papierowe RPG
+# 🐉 Wiki RPG — Papierowe RPG
 
-Witaj w wiki dokumentującej kampanie, postacie i światy papierowego RPG prowadzone przez Arkadiusza Rygla.
-Źródło: [arkadiusz-rygiel.blogspot.com](https://arkadiusz-rygiel.blogspot.com)
+> [!quote] Witaj, Wędrowcze!
+> Znajdujesz się w otwartej wiki dokumentującej dziesiątki kampanii, barwne postacie i niesamowite światy papierowego RPG tworzone i prowadzone przez **[Arkadiusza Rygla](https://arkadiusz-rygiel.blogspot.com)**.
 
----
+***
 
-## Sekcje
+## 🧭 Główne działy
 
-- [Encyklopedia](encyklopedia) — postacie, lokacje i artefakty
-- [Systemy](systemy) — systemy RPG i kampanie
-- [Scenariusze](scenariusze) — gotowe przygody i scenariusze
+> [!info] 📜 **[Encyklopedia](encyklopedia)**
+> Zbiór wspólnej wiedzy o opisywanych światach. Znajdziesz tu śmiałych herosów, zawiłe lokacje, potężne artefakty i najważniejszych Bohaterów Niezależnych.
 
----
+> [!example] 🎲 **[Systemy i Kampanie](systemy)**
+> Zbiór używanych przez nas mechanik oraz wszystkie obszerne notatki, logi i podsumowania sesji z naszych głównych kampanii RPG.
 
-## Kampanie
+> [!tip] 🗺️ **[Scenariusze](scenariusze)**
+> Gotowe przygody, konspekty one-shotów dla Mistrzów Gry do rozegrania przy własnym stole ze swoimi graczami.
+
+***
+
+## 📚 Rozegrane Kampanie
+
 
 | System | Kampania | Gatunek |
 |--------|----------|---------|
