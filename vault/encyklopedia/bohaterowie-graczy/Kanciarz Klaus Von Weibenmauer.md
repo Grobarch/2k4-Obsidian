@@ -1,5 +1,5 @@
 ---
-title: kanciarz Klaus von Weibenmauer
+title: Kanciarz Klaus von Weibenmauer
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"

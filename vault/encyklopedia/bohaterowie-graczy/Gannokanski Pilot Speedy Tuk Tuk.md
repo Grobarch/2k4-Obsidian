@@ -1,5 +1,5 @@
 ---
-title: gannokański pilot Speedy Tuk-Tuk
+title: Gannokański pilot Speedy Tuk-Tuk
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

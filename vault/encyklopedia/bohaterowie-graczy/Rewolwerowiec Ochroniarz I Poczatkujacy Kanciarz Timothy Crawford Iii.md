@@ -1,5 +1,5 @@
 ---
-title: rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
+title: Rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"

@@ -1,5 +1,5 @@
 ---
-title: poszukiwacz Jacob Hoover
+title: Poszukiwacz Jacob Hoover
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"

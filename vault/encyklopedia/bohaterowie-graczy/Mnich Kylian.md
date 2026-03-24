@@ -1,5 +1,5 @@
 ---
-title: mnich Kylian
+title: Mnich Kylian
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

@@ -1,5 +1,5 @@
 ---
-title: poszukiwacz Jacob
+title: Poszukiwacz Jacob
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"

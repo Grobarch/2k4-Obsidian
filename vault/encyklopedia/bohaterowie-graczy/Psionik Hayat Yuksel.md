@@ -1,5 +1,5 @@
 ---
-title: psionik Hayat Yuksel
+title: Psionik Hayat Yuksel
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

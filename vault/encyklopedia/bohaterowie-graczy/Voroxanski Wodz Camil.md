@@ -1,5 +1,5 @@
 ---
-title: voroxański wódz Camil
+title: Voroxański wódz Camil
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

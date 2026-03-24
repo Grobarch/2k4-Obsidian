@@ -1,5 +1,5 @@
 ---
-title: rewolwerowiec Szalony Mickey
+title: Rewolwerowiec Szalony Mickey
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"

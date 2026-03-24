@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "pl-PL",
     baseUrl: "grobarch.github.io/2k4-Obsidian",
-    ignorePatterns: ["private", "templates", ".obsidian", "*.excalidraw.md"],
+    ignorePatterns: ["private", "Templates", "templates", ".obsidian", "*.excalidraw.md"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
