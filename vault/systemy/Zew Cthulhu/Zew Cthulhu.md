@@ -10,6 +10,20 @@ tags: [system, zew-cthulhu, horror]
 # Zew Cthulhu
 
 
+
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa kampania"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Kampanię"
+    openNote: true
+```
+
+</div>
+
 ## Opis
 
 *Opis do uzupelnienia.*

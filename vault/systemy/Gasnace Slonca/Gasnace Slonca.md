@@ -10,6 +10,20 @@ tags: [system, gasnace-slonca, space-fantasy]
 # Gasnące Słońca 2ed
 
 
+
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa kampania"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Kampanię"
+    openNote: true
+```
+
+</div>
+
 ## Opis
 
 *Opis do uzupelnienia.*

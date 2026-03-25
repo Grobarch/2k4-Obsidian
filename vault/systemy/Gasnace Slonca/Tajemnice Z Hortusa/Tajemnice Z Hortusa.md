@@ -14,8 +14,17 @@ tags: [kampania, gasnace-slonca, space-fantasy]
 <div class="obsidian-only">
 
 ```meta-bind-button
-label: "+ Nowa postać"
+label: "+ Nowy epizod"
 style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Epizod"
+    openNote: true
+```
+
+```meta-bind-button
+label: "+ Nowa postać"
+style: default
 actions:
   - type: templaterCreateNote
     templateFile: "templates/Utwórz Postać"

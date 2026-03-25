@@ -10,6 +10,20 @@ tags: [system, dwory-konca-swiata, science-fiction, polityczny]
 # Dwory Końca Świata: Dziedzictwo Imperium
 
 
+
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa kampania"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Kampanię"
+    openNote: true
+```
+
+</div>
+
 ## Opis
 
 *Opis do uzupelnienia.*

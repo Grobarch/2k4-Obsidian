@@ -10,6 +10,20 @@ tags: [system, 7th-Sea, szpiegowski, przygodowy, fantasy]
 # 7th Sea
 
 
+
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowa kampania"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "templates/Utwórz Kampanię"
+    openNote: true
+```
+
+</div>
+
 ## Opis
 
 *Opis do uzupelnienia.*
