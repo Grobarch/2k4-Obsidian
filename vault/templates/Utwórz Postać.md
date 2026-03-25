@@ -2,6 +2,8 @@
 // ============================================================
 // Utwórz Postać — skrypt Templater
 // Wymaga: plugin Templater + plugin Meta Bind
+// Może być uruchamiany z: kampanii (type: kampania),
+//   systemu (type: system) lub encyklopedii (inne).
 // ============================================================
 
 const triggerFile = tp.config.target_file;
@@ -28,23 +30,22 @@ const KAMPANIE = {
   "gasnace-slonca": [{ id: "tajemnice-z-hortusa",                     name: "Tajemnice z Hortusa",                 link: "/systemy/gasnace-slonca/tajemnice-z-hortusa" }],
   "honor-i-krew":   [{ id: "trylogia-miecza",                         name: "Trylogia miecza",                     link: "/systemy/honor-i-krew/trylogia-miecza" }],
   "l5k":            [
-    { id: "groza-ktora-zawsze-powraca",          name: "Groza, która zawsze powraca",          link: "/systemy/l5k/groza-ktora-zawsze-powraca" },
-    { id: "miecze-cnot-i-grzechow",              name: "Miecze cnót i grzechów",              link: "/systemy/l5k/miecze-cnot-i-grzechow" },
-    { id: "prawidla-zdrady",                     name: "Prawidła zdrady",                     link: "/systemy/l5k/prawidla-zdrady" },
-    { id: "trylogia-klanu-lwa",                  name: "Trylogia Klanu Lwa",                  link: "/systemy/l5k/trylogia-klanu-lwa" },
+    { id: "groza-ktora-zawsze-powraca", name: "Groza, która zawsze powraca", link: "/systemy/l5k/groza-ktora-zawsze-powraca" },
+    { id: "miecze-cnot-i-grzechow",    name: "Miecze cnót i grzechów",      link: "/systemy/l5k/miecze-cnot-i-grzechow" },
+    { id: "prawidla-zdrady",           name: "Prawidła zdrady",             link: "/systemy/l5k/prawidla-zdrady" },
+    { id: "trylogia-klanu-lwa",        name: "Trylogia Klanu Lwa",          link: "/systemy/l5k/trylogia-klanu-lwa" },
   ],
-  "mafia-ggf":      [{ id: "la-cosa-nostra",                          name: "La Cosa Nostra",                      link: "/systemy/mafia-ggf/la-cosa-nostra" }],
-  "7th-sea":        [{ id: "w-maskach",                               name: "W maskach",                           link: "/systemy/7th-sea/w-maskach" }],
-  "wampir":         [{ id: "diabel-z-lazareni",                       name: "Diabeł z Łazareni",                   link: "/systemy/wampir/diabel-z-lazareni" }],
-  "wiedzmin":       [{ id: "sludzy-miecza",                           name: "Słudzy miecza",                       link: "/systemy/wiedzmin/sludzy-miecza" }],
+  "mafia-ggf":      [{ id: "la-cosa-nostra", name: "La Cosa Nostra", link: "/systemy/mafia-ggf/la-cosa-nostra" }],
+  "7th-sea":        [{ id: "w-maskach",       name: "W maskach",      link: "/systemy/7th-sea/w-maskach" }],
+  "wampir":         [{ id: "diabel-z-lazareni", name: "Diabeł z Łazareni", link: "/systemy/wampir/diabel-z-lazareni" }],
+  "wiedzmin":       [{ id: "sludzy-miecza",   name: "Słudzy miecza",  link: "/systemy/wiedzmin/sludzy-miecza" }],
   "wfrp":           [
-    { id: "listy-z-praag",   name: "Listy z Praag",   link: "/systemy/wfrp/listy-z-praag" },
-    { id: "losy-bohaterow",  name: "Losy bohaterów",  link: "/systemy/wfrp/losy-bohaterow" },
+    { id: "listy-z-praag",  name: "Listy z Praag",  link: "/systemy/wfrp/listy-z-praag" },
+    { id: "losy-bohaterow", name: "Losy bohaterów", link: "/systemy/wfrp/losy-bohaterow" },
   ],
   "wolsung": [],
 };
 
-// Pomocnicza funkcja do anulowania
 function cancel(msg) {
   new Notice(msg || "Anulowano tworzenie postaci.");
   tp.hooks.on_all_templates_executed(async () => {
@@ -52,6 +53,45 @@ function cancel(msg) {
     if (f) await app.vault.delete(f);
   });
   tR = "";
+}
+
+// ============================================================
+// Odczytaj kontekst z pliku nadrzędnego
+// ============================================================
+const parentFile = tp.config.active_file;
+const parentFm   = parentFile
+  ? app.metadataCache.getFileCache(parentFile)?.frontmatter
+  : null;
+const parentType = parentFm?.type || "";
+
+// Wartości pre-wypełnione z kontekstu
+let preSystemId    = "";
+let preKampaniaId  = "";
+let preKampaniaName = "";
+let preKampaniaLink = "";
+
+if (parentType === "kampania") {
+  // Przycisk kliknięty na stronie kampanii
+  preSystemId = parentFm.system || "";
+  const folderName = parentFile.parent.name;
+  // Slug kampanii z nazwy folderu
+  function toSlugLocal(str) {
+    return str.toLowerCase()
+      .replace(/ą/g, "a").replace(/ć/g, "c").replace(/ę/g, "e")
+      .replace(/ł/g, "l").replace(/ń/g, "n").replace(/ó/g, "o")
+      .replace(/ś/g, "s").replace(/ź/g, "z").replace(/ż/g, "z")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+  preKampaniaId = toSlugLocal(folderName);
+  preKampaniaLink = `/systemy/${preSystemId}/${preKampaniaId}`;
+  // Szukaj w liście kampanii po id
+  const listaK = KAMPANIE[preSystemId] || [];
+  const znaleziona = listaK.find(k => k.id === preKampaniaId);
+  preKampaniaName = znaleziona ? znaleziona.name : parentFm.title || folderName;
+} else if (parentType === "system") {
+  // Przycisk kliknięty na stronie systemu
+  preSystemId = parentFm.system || "";
 }
 
 // ============================================================
@@ -69,39 +109,46 @@ const typeId = await tp.system.suggester(
   ["bohater-gracza",      "bohater-niezalezny"]
 );
 if (!typeId) { cancel(); return; }
-const typeLabel = typeId === "bohater-gracza" ? "bohater-gracza" : "bohater-niezalezny";
+const typeLabel = typeId;
 const folder    = typeId === "bohater-gracza"
   ? "encyklopedia/bohaterowie-graczy"
   : "encyklopedia/bohaterowie-niezalezni";
 
 // ============================================================
-// 3. System (wymagany)
+// 3. System (pominięty jeśli znany z kontekstu)
 // ============================================================
-const systemId = await tp.system.suggester(
-  SYSTEMS.map(s => s.name),
-  SYSTEMS.map(s => s.id)
-);
-if (!systemId) { cancel(); return; }
-const system = SYSTEMS.find(s => s.id === systemId);
+let systemId;
+if (preSystemId) {
+  systemId = preSystemId;
+} else {
+  systemId = await tp.system.suggester(
+    SYSTEMS.map(s => s.name),
+    SYSTEMS.map(s => s.id)
+  );
+  if (!systemId) { cancel(); return; }
+}
+const system = SYSTEMS.find(s => s.id === systemId) || { id: systemId, name: systemId, pelna: systemId };
 
 // ============================================================
-// 4. Kampania (opcjonalna)
+// 4. Kampania (pominięta jeśli znana z kontekstu, opcjonalna inaczej)
 // ============================================================
-let kampaniaId   = "";
-let kampaniaName = "";
-let kampaniaLink = "";
+let kampaniaId   = preKampaniaId;
+let kampaniaName = preKampaniaName;
+let kampaniaLink = preKampaniaLink;
 
-const dostepneKampanie = KAMPANIE[systemId] || [];
-if (dostepneKampanie.length > 0) {
-  const opcje    = ["— brak / nie dotyczy —", ...dostepneKampanie.map(k => k.name)];
-  const wartosci = ["",                        ...dostepneKampanie.map(k => k.id)];
-  const wybor = await tp.system.suggester(opcje, wartosci);
-  if (wybor === null) { cancel(); return; }
-  if (wybor) {
-    kampaniaId   = wybor;
-    const kamp   = dostepneKampanie.find(k => k.id === wybor);
-    kampaniaName = kamp.name;
-    kampaniaLink = kamp.link;
+if (!kampaniaId) {
+  const dostepneKampanie = KAMPANIE[systemId] || [];
+  if (dostepneKampanie.length > 0) {
+    const opcje    = ["— brak / nie dotyczy —", ...dostepneKampanie.map(k => k.name)];
+    const wartosci = ["",                        ...dostepneKampanie.map(k => k.id)];
+    const wybor = await tp.system.suggester(opcje, wartosci);
+    if (wybor === null) { cancel(); return; }
+    if (wybor) {
+      kampaniaId   = wybor;
+      const kamp   = dostepneKampanie.find(k => k.id === wybor);
+      kampaniaName = kamp.name;
+      kampaniaLink = kamp.link;
+    }
   }
 }
 
@@ -186,7 +233,6 @@ ${kampaniaSection}`;
 // ============================================================
 await tp.file.create_new(content, nameTrimmed, true, folder);
 
-// Usuń plik wyzwalacza (pusty plik tworzony przez Meta Bind / Templater)
 tp.hooks.on_all_templates_executed(async () => {
   const f = app.vault.getAbstractFileByPath(triggerFile.path);
   if (f && f.path !== `${folder}/${nameTrimmed}.md`) {
