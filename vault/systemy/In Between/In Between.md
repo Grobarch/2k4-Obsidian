@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska gra fabularna wydana przez Portal, o tematyce horroru psychologicznego, w której bohaterowie balansują na granicy rzeczywistości i koszmaru. Rozgrywka skupia się na eksploracji lęków, traum i mrocznych tajemnic postaci w atmosferze narastającego niepokoju. System wspiera narracyjną budowę napięcia i stopniowe odkrywanie prawdy o otaczającym świecie.
 
 ## Scenariusze samodzielne
 

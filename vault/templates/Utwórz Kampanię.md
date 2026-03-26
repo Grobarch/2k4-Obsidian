@@ -101,7 +101,7 @@ label: "+ Nowy epizod"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Epizod"
+    templateFile: "Templates/Utwórz Epizod.md"
     openNote: true
 \`\`\`
 
@@ -110,7 +110,7 @@ label: "+ Nowa postać"
 style: default
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Postać"
+    templateFile: "Templates/Utwórz Postać.md"
     openNote: true
 \`\`\`
 
@@ -161,6 +161,25 @@ actions:
 // ============================================================
 await app.vault.createFolder(kampaniaFolder).catch(() => {});
 await tp.file.create_new(content, nazwa, true, kampaniaFolder);
+
+// ============================================================
+// Aktualizuj tabelkę kampanii w folder note systemu
+// ============================================================
+const parentContent = await app.vault.read(parentFile);
+const kampaniaDisplayLink = `[${nazwa}](${kampaniaLink})`;
+const newRow = `| ${kampaniaDisplayLink} | ${mg} | 0 |`;
+
+// Szukaj tabelki kampanii (po nagłówku "## Kampanie")
+const kampTableRegex = /(## Kampanie\s*\n\s*\|[^\n]+\|\s*\n\s*\|[-| ]+\|\s*\n)([\s\S]*?)(\n\s*##|\n*$)/;
+const match = parentContent.match(kampTableRegex);
+if (match) {
+  const existingRows = match[2].trimEnd();
+  const rowsWithNew = existingRows ? `${existingRows}\n${newRow}` : newRow;
+  const updated = parentContent.replace(kampTableRegex, `$1${rowsWithNew}\n$3`);
+  if (updated !== parentContent) {
+    await app.vault.modify(parentFile, updated);
+  }
+}
 
 tp.hooks.on_all_templates_executed(async () => {
   const f = app.vault.getAbstractFileByPath(triggerFile.path);

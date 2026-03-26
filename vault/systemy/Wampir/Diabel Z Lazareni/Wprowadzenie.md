@@ -1,9 +1,9 @@
 ---
 title: Wprowadzenie — Diabeł z Łazareni
-type: epizod
+type: artykul
 system: wampir
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/wampir-mroczne-wieki-z-lazareni.html"
-tags: [epizod, wampir, horror]
+tags: [artykul, wampir, horror]
 ---
 
 # Wprowadzenie — Diabeł z Łazareni

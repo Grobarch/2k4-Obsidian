@@ -1,9 +1,9 @@
 ---
 title: Rys Fabularny — La Cosa Nostra
-type: epizod
+type: artykul
 system: mafia-ggf
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/mafia-gangsterska-gra-fabularna.html"
-tags: [epizod, mafia-ggf]
+tags: [artykul, mafia-ggf]
 ---
 
 # Rys Fabularny — La Cosa Nostra

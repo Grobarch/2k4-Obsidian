@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Autorski, uniwersalny system RPG stworzony przez Arkadiusza Rygla, zaprojektowany z myślą o elastyczności gatunkowej -- od westernu przez horror po fantasy. Lekka mechanika pozwala na prowadzenie gier w różnych konwencjach bez konieczności zmiany systemu. Sprawdzony w dziesiątkach sesji o rozmaitej tematyce.
 
 ## Scenariusze samodzielne
 

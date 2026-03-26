@@ -23,6 +23,31 @@
 import { readdir, readFile, writeFile, stat } from "node:fs/promises";
 import { join, basename, relative, dirname } from "node:path";
 
+/**
+ * Zamienia ścieżkę vault na slug Quartz:
+ * - lowercase
+ * - polskie znaki → ASCII
+ * - spacje i inne znaki specjalne → myślniki
+ * - usuwa .md
+ * - usuwa wielokrotne myślniki
+ */
+const POLISH_MAP = {
+  ą: "a", ć: "c", ę: "e", ł: "l", ń: "n", ó: "o", ś: "s", ź: "z", ż: "z",
+  Ą: "a", Ć: "c", Ę: "e", Ł: "l", Ń: "n", Ó: "o", Ś: "s", Ź: "z", Ż: "z",
+};
+
+function slugify(str) {
+  return str
+    .replace(/\.md$/i, "")
+    .replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, (ch) => POLISH_MAP[ch] || ch)
+    .toLowerCase()
+    .replace(/[^a-z0-9/]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/(^-|-$)/g, "")
+    .replace(/\/-/g, "/")
+    .replace(/-\//g, "/");
+}
+
 const MARKERS = {
   episodes:  { start: "<!-- EPISODES_START -->",   end: "<!-- EPISODES_END -->" },
   players:   { start: "<!-- PLAYERS_START -->",     end: "<!-- PLAYERS_END -->" },
@@ -30,6 +55,7 @@ const MARKERS = {
   locations: { start: "<!-- LOCATIONS_START -->",   end: "<!-- LOCATIONS_END -->" },
   artifacts: { start: "<!-- ARTIFACTS_START -->",   end: "<!-- ARTIFACTS_END -->" },
   scenarios: { start: "<!-- SCENARIOS_START -->",   end: "<!-- SCENARIOS_END -->" },
+  systems:   { start: "<!-- SYSTEMS_START -->",     end: "<!-- SYSTEMS_END -->" },
 };
 
 const TYPE_MAP = {
@@ -49,15 +75,44 @@ function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return {};
   const fm = {};
+  let currentKey = null;
+  let currentIsArray = false;
   for (const line of match[1].split(/\r?\n/)) {
-    const m = line.match(/^(\w[\w-]*):\s*(.+)/);
+    const m = line.match(/^(\w[\w-]*):\s*(.*)/);
     if (m) {
+      currentKey = m[1];
       let val = m[2].trim();
-      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
-        val = val.slice(1, -1);
+      if (val === '') {
+        // Może być lista wieloliniowa – inicjalizujemy jako pustą tablicę tymczasowo
+        fm[currentKey] = null;
+        currentIsArray = true;
+      } else {
+        currentIsArray = false;
+        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+          val = val.slice(1, -1);
+        } else if (val.startsWith('[') && val.endsWith(']')) {
+          val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, ''));
+        }
+        fm[currentKey] = val;
       }
-      fm[m[1]] = val;
+    } else if (currentKey && currentIsArray) {
+      const listMatch = line.match(/^\s*-\s+(.+)/);
+      if (listMatch) {
+        if (fm[currentKey] === null) fm[currentKey] = [];
+        let listVal = listMatch[1].trim();
+        if ((listVal.startsWith('"') && listVal.endsWith('"')) || (listVal.startsWith("'") && listVal.endsWith("'"))) {
+          listVal = listVal.slice(1, -1);
+        }
+        fm[currentKey].push(listVal);
+      } else if (line.trim() !== '') {
+        // Koniec listy – jeśli nic nie dodano, traktuj jako pusty string
+        currentIsArray = false;
+      }
     }
+  }
+  // Zamień null (puste listy bez elementów) na pusty string
+  for (const key of Object.keys(fm)) {
+    if (fm[key] === null) fm[key] = '';
   }
   return fm;
 }
@@ -93,9 +148,9 @@ function getCampaignSlug(notePath, systemyPath) {
   const parts = rel.split("/");
   // Folder kampanii to przedostatni segment (folder note ma nazwę = folder)
   if (parts.length >= 2) {
-    return parts[parts.length - 2].toLowerCase().replace(/\s+/g, "-");
+    return slugify(parts[parts.length - 2]);
   }
-  return parts[0].toLowerCase().replace(/\s+/g, "-").replace(/\.md$/i, "");
+  return slugify(parts[0]);
 }
 
 /**
@@ -103,7 +158,7 @@ function getCampaignSlug(notePath, systemyPath) {
  */
 function buildEncyklopediaLink(filePath, vaultRoot) {
   const rel = relative(vaultRoot, filePath).replace(/\\/g, "/");
-  return `/${rel}`;
+  return `/${slugify(rel)}`;
 }
 
 /**
@@ -111,7 +166,7 @@ function buildEncyklopediaLink(filePath, vaultRoot) {
  */
 function buildEpisodeLink(episodePath, systemyPath) {
   const rel = relative(systemyPath, episodePath).replace(/\\/g, "/");
-  return `/systemy/${rel}`;
+  return `/systemy/${slugify(rel)}`;
 }
 
 /**
@@ -164,9 +219,16 @@ async function loadEncyklopedia(encDir, vaultRoot) {
     const fm = parseFrontmatter(content);
     const category = TYPE_MAP[fm.type];
     if (!category || !fm.kampania) continue;
-    const key = `${fm.kampania}:${category}`;
-    if (!index[key]) index[key] = [];
-    index[key].push({ filePath, fm });
+    
+    // Obsługa wielu kampanii (z tablicy lub po przecinku)
+    const kampanie = Array.isArray(fm.kampania) ? fm.kampania : fm.kampania.split(',').map(s => s.trim());
+    
+    for (const kamp of kampanie) {
+      if (!kamp) continue;
+      const key = `${kamp}:${category}`;
+      if (!index[key]) index[key] = [];
+      index[key].push({ filePath, fm });
+    }
   }
   return index;
 }
@@ -222,7 +284,7 @@ function generateScenariosList(scenarios, vaultRoot) {
   return scenarios
     .map((sc) => {
       const title = (sc.fm.title || basename(sc.name, ".md")).replace(/\|/g, "\\|");
-      const link = buildEncyklopediaLink(sc.filePath, vaultRoot).replace(/ /g, "%20");
+      const link = buildEncyklopediaLink(sc.filePath, vaultRoot);
       return `- [${title}](${link})`;
     })
     .join("\n");
@@ -248,7 +310,7 @@ function generateEpisodesTable(episodes, systemyPath) {
     const ep = episodes[i];
     const title = ep.fm.title || basename(ep.name, ".md");
     const safeTitle = title.replace(/\|/g, "\\|");
-    const link = buildEpisodeLink(ep.filePath, systemyPath).replace(/ /g, "%20");
+    const link = buildEpisodeLink(ep.filePath, systemyPath);
     const data = ep.fm.data || "";
     rows.push(`| ${i + 1} | [${safeTitle}](${link}) | ${data} |`);
   }
@@ -264,7 +326,7 @@ function generatePlayersTable(entries, vaultRoot) {
     const title = (entry.fm.title || "").replace(/\|/g, "\\|");
     const gracz = (entry.fm.gracz || "").replace(/\|/g, "\\|");
     const archetyp = (entry.fm.archetyp || "").replace(/\|/g, "\\|");
-    const link = buildEncyklopediaLink(entry.filePath, vaultRoot).replace(/ /g, "%20");
+    const link = buildEncyklopediaLink(entry.filePath, vaultRoot);
     rows.push(`| [${title}](${link}) | ${gracz} | ${archetyp} |`);
   }
   return rows.join("\n");
@@ -278,7 +340,7 @@ function generateSimpleTable(entries, vaultRoot, header) {
   for (let i = 0; i < entries.length; i++) {
     const entry = entries[i];
     const title = (entry.fm.title || "").replace(/\|/g, "\\|");
-    const link = buildEncyklopediaLink(entry.filePath, vaultRoot).replace(/ /g, "%20");
+    const link = buildEncyklopediaLink(entry.filePath, vaultRoot);
     rows.push(`| ${i + 1} | [${title}](${link}) |`);
   }
   return rows.join("\n");
@@ -312,6 +374,72 @@ function findMatchingEntries(encIndex, campaignSlug, category) {
     }
   }
   return results;
+}
+
+/**
+ * Skanuje systemy/ i buduje tabelkę systemów dla Systemy.md.
+ * Każdy wiersz: System (link) | Gatunek | Liczba kampanii
+ */
+async function generateSystemsTable(systemyPath) {
+  const rows = [`| System | Gatunek | Kampanie |`, `|--------|---------|----------|`];
+  let entries;
+  try {
+    entries = await readdir(systemyPath, { withFileTypes: true });
+  } catch {
+    return null;
+  }
+
+  const systems = [];
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const systemFolderName = entry.name;
+    const folderNotePath = join(systemyPath, systemFolderName, `${systemFolderName}.md`);
+    let content;
+    try {
+      content = await readFile(folderNotePath, "utf-8");
+    } catch {
+      continue;
+    }
+    const fm = parseFrontmatter(content);
+    if (fm.type !== "system") continue;
+
+    const title = fm.title || systemFolderName;
+    const gatunek = fm.gatunek || "";
+    const systemId = fm.system || slugify(systemFolderName);
+
+    // Policz kampanie — podfoldery z własnym folder note zawierającym type: kampania
+    let campaignCount = 0;
+    let subEntries;
+    try {
+      subEntries = await readdir(join(systemyPath, systemFolderName), { withFileTypes: true });
+    } catch {
+      subEntries = [];
+    }
+    for (const sub of subEntries) {
+      if (!sub.isDirectory()) continue;
+      const subNotePath = join(systemyPath, systemFolderName, sub.name, `${sub.name}.md`);
+      try {
+        const subContent = await readFile(subNotePath, "utf-8");
+        const subFm = parseFrontmatter(subContent);
+        if (subFm.type === "kampania") campaignCount++;
+      } catch {
+        // brak folder note — nie liczymy
+      }
+    }
+
+    const systemSlug = slugify(systemFolderName);
+    const link = `/systemy/${systemSlug}/${systemSlug}`;
+    systems.push({ title, gatunek, campaignCount, link });
+  }
+
+  // Sortuj po tytule
+  systems.sort((a, b) => a.title.localeCompare(b.title, "pl"));
+
+  for (const sys of systems) {
+    const safeTitle = sys.title.replace(/\|/g, "\\|");
+    rows.push(`| [${safeTitle}](${sys.link}) | ${sys.gatunek} | ${sys.campaignCount} |`);
+  }
+  return rows.join("\n");
 }
 
 async function main() {
@@ -445,7 +573,48 @@ async function main() {
     }
   }
 
-  console.log(`\nZaktualizowano ${updated} z ${folderNotes.length} folder notes.`);
+  // --- Aktualizuj tabelkę systemów w Systemy.md ---
+  const systemyNotePath = join(systemyDir, "..", "Systemy", "Systemy.md");
+  // Próbuj też wariant z małej litery (w CI content jest kopiowany)
+  const systemyNotePathAlt = join(systemyDir, "..", "systemy", "Systemy.md");
+  // Szukaj też folder note Systemy.md bezpośrednio w systemyDir (dla CI: quartz/content/systemy/Systemy.md)
+  const systemyNotePathInDir = join(systemyDir, "Systemy.md");
+
+  let systemyNoteFinalPath = null;
+  for (const candidate of [systemyNotePath, systemyNotePathAlt, systemyNotePathInDir]) {
+    try {
+      await stat(candidate);
+      systemyNoteFinalPath = candidate;
+      break;
+    } catch {
+      // próbuj następny
+    }
+  }
+
+  if (systemyNoteFinalPath) {
+    console.log(`\n  Systemy.md: ${systemyNoteFinalPath}`);
+    const systemsTable = await generateSystemsTable(systemyDir);
+    if (systemsTable) {
+      let systemyContent = await readFile(systemyNoteFinalPath, "utf-8");
+      const result = replaceMarkerContent(
+        systemyContent,
+        MARKERS.systems.start,
+        MARKERS.systems.end,
+        systemsTable
+      );
+      if (result && result !== systemyContent) {
+        await writeFile(systemyNoteFinalPath, result, "utf-8");
+        console.log(`    [systems] → zapisano`);
+        updated++;
+      } else {
+        console.log(`    [systems] → bez zmian`);
+      }
+    }
+  } else {
+    console.log(`\n  Nie znaleziono Systemy.md — pomijam tabelkę systemów`);
+  }
+
+  console.log(`\nZaktualizowano ${updated} z ${folderNotes.length + 1} przetworzonych plików.`);
 }
 
 main().catch((err) => {

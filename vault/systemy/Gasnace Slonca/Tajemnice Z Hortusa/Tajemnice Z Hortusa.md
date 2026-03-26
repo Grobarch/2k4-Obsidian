@@ -19,7 +19,7 @@ label: "+ Nowy epizod"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Epizod"
+    templateFile: "Templates/Utwórz Epizod.md"
     openNote: true
 ```
 
@@ -28,7 +28,7 @@ label: "+ Nowa postać"
 style: default
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Postać"
+    templateFile: "Templates/Utwórz Postać.md"
     openNote: true
 ```
 
@@ -39,5 +39,5 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis\"](/systemy/Gasnace%20Slonca/Tajemnice%20Z%20Hortusa/Epizod%2001.md) | 2023-12-30 |
+| 1 | [Epizod 1: \"Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis\"](/systemy/gasnace-slonca/tajemnice-z-hortusa/epizod-01) | 2023-12-30 |
 <!-- EPISODES_END -->

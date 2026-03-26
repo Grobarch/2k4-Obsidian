@@ -3,9 +3,16 @@ title: Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wę
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/miecze-cnot-i-grzechow-inaczej-zwane-mieczami-odwroconych-imion
-kampania: miecze-cnot-i-grzechow-inaczej-zwane-mieczami-odwroconych-imion
-tags: [bohater-niezalezny, l5k, samurajski]
+kampania_link:
+  - /systemy/l5k/miecze-cnot-i-grzechow
+  - /systemy/l5k/groza-ktora-zawsze-powraca
+kampania:
+  - miecze-cnot-i-grzechow
+  - groza-ktora-zawsze-powraca
+tags:
+  - bohater-niezalezny
+  - l5k
+  - samurajski
 ---
 
 # Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wężowy Czarownik ze Strażnicy Płaczu Naku-gadian w Krainach Cienia

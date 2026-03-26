@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,13 +27,15 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Gra fabularna osadzona w świecie inspirowanym Europą XVII wieku, pełnym piratów, muszkieterów i dworskich intryg. System kładzie nacisk na filmową akcję w stylu płaszcza i szpady, gdzie bohaterowie są odważnymi awanturnikami walczącymi z tyranią. Wydana przez AEG, łączy romantyczną przygodę z magią opartą na tajemnych krwistych liniach.
 
 ## Kampanie
 
 | Kampania | MG | Epizody |
 |----------|-------|---------|
 | [W maskach](/systemy/7th-sea/w-maskach) | Arkadiusz RYGIEL | 3 |
+| [Test](/systemy/7th-sea/test) | Krzyś | 0 |
+
 
 ## Wszystkie strony
 

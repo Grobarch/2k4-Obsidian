@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Gra fabularna osadzona w mrocznym uniwersum Warhammer 40,000, w której gracze wcielają się w Kosmicznych Marines -- genetycznie zmodyfikowanych superżołnierzy służących Imperium Ludzkości. Jako członkowie elitarnej Straży Śmierci (Deathwatch) wykonują misje bojowe przeciwko najbardziej śmiercionośnym obcym zagrożeniom galaktyki. Wydana przez Fantasy Flight Games, oferuje intensywną, taktyczną rozgrywkę w klimacie gotyckiego science fiction.
 
 ## Scenariusze samodzielne
 

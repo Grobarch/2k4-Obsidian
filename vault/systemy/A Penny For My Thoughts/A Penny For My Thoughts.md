@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Kameralna gra fabularna autorstwa Paula Tevis'a, w której gracze wcielają się w pacjentów kliniki odzyskujących utracone wspomnienia za pomocą eksperymentalnego leku. Rozgrywka opiera się na wspólnym tworzeniu narracji -- gracze podsuwają sobie nawzajem fragmenty wspomnień, budując coraz bardziej niepokojące historie. To gra bez Mistrza Gry, idealna na jednorazowe sesje o silnym ładunku psychologicznym.
 
 ## Scenariusze samodzielne
 

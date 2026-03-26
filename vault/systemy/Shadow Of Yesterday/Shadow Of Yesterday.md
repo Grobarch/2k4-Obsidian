@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Niezależna gra fabularna autorstwa Clintona R. Nixona, osadzona w postkatastroficznym świecie fantasy, gdzie dawna zaawansowana cywilizacja upadła. System Solar kładzie nacisk na rozwój postaci poprzez ich motywacje (Keys) i dramatyczne konflikty. Jedna z przełomowych gier indie RPG, która wpłynęła na cały ruch narracyjnych gier fabularnych.
 
 ## Scenariusze samodzielne
 

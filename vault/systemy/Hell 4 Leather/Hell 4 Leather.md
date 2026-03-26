@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Niezależna gra fabularna w klimacie westernowego grindhouse'u, inspirowana filmami o zemście w stylu spaghetti western i exploitation. Mechanika oparta na talii kart prowadzi graczy przez krwawą historię odwetu, gdzie każda postać ma swoje powody do zemsty. Szybka, brutalna i kinowa rozgrywka na jedną sesję.
 
 ## Scenariusze samodzielne
 

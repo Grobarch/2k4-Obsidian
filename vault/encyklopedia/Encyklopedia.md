@@ -22,7 +22,7 @@ label: "+ Nowa postać"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Postać"
+    templateFile: "Templates/Utwórz Postać.md"
     openNote: true
 ```
 

@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+          cache-dependency-path: quartz/package-lock.json
 
       - name: Install Quartz dependencies
         working-directory: quartz
@@ -36,6 +38,9 @@ jobs:
 
       - name: Update scenario lists
         run: node scripts/update-episode-tables.mjs quartz/content/scenariusze
+
+      - name: Validate frontmatter
+        run: node scripts/validate-frontmatter.mjs quartz/content/
 
       - name: Build Quartz
         working-directory: quartz

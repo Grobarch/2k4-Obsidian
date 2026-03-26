@@ -19,7 +19,7 @@ label: "+ Nowy epizod"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Epizod"
+    templateFile: "Templates/Utwórz Epizod.md"
     openNote: true
 ```
 
@@ -28,7 +28,7 @@ label: "+ Nowa postać"
 style: default
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Postać"
+    templateFile: "Templates/Utwórz Postać.md"
     openNote: true
 ```
 
@@ -39,6 +39,6 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Białe kłamstwa\"](/systemy/L5K/Trylogia%20Klanu%20Lwa/Epizod%2001.md) | 2010-11-15 |
-| 2 | [Epizod 2: \"Miecz nienawiści\"](/systemy/L5K/Trylogia%20Klanu%20Lwa/Epizod%2002.md) | 2011-02-13 |
+| 1 | [Epizod 1: \"Białe kłamstwa\"](/systemy/l5k/trylogia-klanu-lwa/epizod-01) | 2010-11-15 |
+| 2 | [Epizod 2: \"Miecz nienawiści\"](/systemy/l5k/trylogia-klanu-lwa/epizod-02) | 2011-02-13 |
 <!-- EPISODES_END -->

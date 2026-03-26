@@ -1,5 +1,7 @@
 quartz/node_modules/
 quartz/.quartz-cache/
 quartz/public/
+quartz/content/
 vault/.obsidian/
 vault/*.base
+.claude/
