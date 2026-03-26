@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Quartz Dev Server",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["quartz", "build", "--serve", "-d", "../vault"],
+      "port": 8080
+    }
+  ]
+}
