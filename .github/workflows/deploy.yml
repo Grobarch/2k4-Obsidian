@@ -33,6 +33,9 @@ jobs:
       - name: Copy vault to Quartz content
         run: cp -r vault/* quartz/content/
 
+      - name: Normalize frontmatter
+        run: node scripts/vault-tools.mjs normalize --dir quartz/content --apply
+
       - name: Update episode tables
         run: node scripts/update-episode-tables.mjs quartz/content/systemy
 

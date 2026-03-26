@@ -10,6 +10,7 @@
  * Komendy:
  *   list                                  — listuj pliki i ich frontmatter
  *   validate                              — raport brakujących/niepoprawnych pól
+ *   normalize                             — napraw frontmatter do kanonicznego formatu
  *   rename-field <stare> <nowe>           — zmień nazwę pola YAML
  *   set-field <pole> <wartość>            — ustaw pole na wartość
  *   delete-field <pole>                   — usuń pole z frontmatter
@@ -24,8 +25,9 @@
  */
 
 import { readFile, writeFile } from "node:fs/promises";
-import { relative } from "node:path";
-import { findMdFiles, parseFrontmatter, extractRawFrontmatter } from "./shared.mjs";
+import { relative, dirname, basename } from "node:path";
+import { findMdFiles, parseFrontmatter, extractRawFrontmatter, slugify, setFieldIfAbsentInYaml } from "./shared.mjs";
+import { TYPE_SCHEMAS, SYSTEM_NAMES } from "./schema.mjs";
 
 // ─── Parsowanie argumentów ───────────────────────────────────────────────────
 
@@ -198,23 +200,13 @@ async function cmdList(files, opts) {
 }
 
 async function cmdValidate(files, opts) {
-  const REQUIRED_BY_TYPE = {
-    "bohater-gracza": ["title", "type", "system", "tags"],
-    "bohater-niezalezny": ["title", "type", "system", "tags"],
-    "epizod": ["title", "type", "data", "kampania_link", "kampania"],
-    "lokacja": ["title", "type", "system", "tags"],
-    "artefakt": ["title", "type", "system", "tags"],
-    "scenariusz": ["title", "type", "system", "tags"],
-    "kampania": ["title", "type", "system"],
-    "system": ["title", "type"],
-  };
-
   let issues = 0;
   for (const f of files) {
     const rel = relative(opts.dir, f.path).replace(/\\/g, "/");
     const fm = f.frontmatter;
     const type = fm.type || "(brak type)";
-    const required = REQUIRED_BY_TYPE[type] || ["title", "type"];
+    const schema = TYPE_SCHEMAS[type];
+    const required = schema ? schema.required : ["title", "type"];
     const missing = required.filter((field) => !fm[field] || fm[field] === "");
     if (missing.length > 0) {
       console.log(`  ⚠ ${rel}`);
@@ -342,6 +334,120 @@ async function cmdMigrateToArray(files, opts) {
   printSummary("migrate-to-array", affected, files.length, opts.apply);
 }
 
+async function cmdNormalize(files, opts) {
+  let affected = 0;
+  const warnings = [];
+
+  for (const f of files) {
+    const fm = f.frontmatter;
+    const type = fm.type;
+    if (!type || !TYPE_SCHEMAS[type]) continue;
+
+    const schema = TYPE_SCHEMAS[type];
+    let yaml = extractRawFrontmatter(f.content);
+    if (!yaml) continue;
+
+    const rel = relative(opts.dir, f.path).replace(/\\/g, "/");
+    const mutations = [];
+
+    // Re-parse frontmatter after each YAML mutation to keep fm in sync
+    function reParse() {
+      return parseFrontmatter(replaceFrontmatterInContent(f.content.replace(/^---\r?\n[\s\S]*?\r?\n---/, `---\n${yaml}\n---`), yaml));
+    }
+
+    // ── Pass 1: Migrate scalar → array ──────────────────────────────────
+    for (const field of schema.arrayFields) {
+      if (fm[field] && !Array.isArray(fm[field])) {
+        const result = migrateToArrayInYaml(yaml, field);
+        if (result !== null) {
+          yaml = result;
+          mutations.push(`  ${field}: "${fm[field]}" → ["${fm[field]}"]  [migrate-to-array]`);
+        }
+      }
+    }
+
+    // ── Pass 2: Compute missing values ──────────────────────────────────
+
+    // 2a: system_pelna from SYSTEM_NAMES
+    if (schema.computed.includes("system_pelna") && !fm.system_pelna && fm.system) {
+      const pelna = SYSTEM_NAMES[fm.system];
+      if (pelna) {
+        yaml = setFieldInYaml(yaml, "system_pelna", pelna);
+        mutations.push(`  system_pelna: (brak) → "${pelna}"  [computed]`);
+      }
+    }
+
+    // 2b: tags — ensure [type, system] are present
+    if (schema.computed.includes("tags")) {
+      const currentTags = Array.isArray(fm.tags) ? fm.tags : [];
+      const requiredTags = [type];
+      if (fm.system) requiredTags.push(fm.system);
+      const missingTags = requiredTags.filter((t) => !currentTags.includes(t));
+      if (missingTags.length > 0) {
+        const newTags = [...currentTags, ...missingTags];
+        const formatted = `[${newTags.map((t) => `"${t}"`).join(", ")}]`;
+        yaml = setFieldInYaml(yaml, "tags", formatted);
+        mutations.push(`  tags: +[${missingTags.join(", ")}]  [computed]`);
+      }
+    }
+
+    // 2c: kampania_link for epizod — derive from parent folder path
+    if (type === "epizod" && schema.computed.includes("kampania_link") && !fm.kampania_link) {
+      const parentDir = dirname(f.path);
+      const relFromDir = relative(opts.dir, parentDir).replace(/\\/g, "/");
+      const kampaniaLink = "/" + slugify(relFromDir);
+      yaml = setFieldInYaml(yaml, "kampania_link", kampaniaLink);
+      mutations.push(`  kampania_link: (brak) → "${kampaniaLink}"  [computed]`);
+    }
+
+    // 2d: kampania for epizod — derive from parent folder name
+    if (type === "epizod" && schema.computed.includes("kampania") && !fm.kampania) {
+      const parentFolderName = basename(dirname(f.path));
+      const kampaniaSlug = slugify(parentFolderName);
+      yaml = setFieldInYaml(yaml, "kampania", kampaniaSlug);
+      mutations.push(`  kampania: (brak) → "${kampaniaSlug}"  [computed]`);
+    }
+
+    // ── Pass 3: Fill defaults for missing required fields ───────────────
+    for (const field of schema.required) {
+      if ((!fm[field] || fm[field] === "") && schema.defaults[field]) {
+        const result = setFieldIfAbsentInYaml(yaml, field, schema.defaults[field]);
+        if (result !== null) {
+          yaml = result;
+          mutations.push(`  ${field}: (brak) → "${schema.defaults[field]}"  [default]`);
+        }
+      }
+    }
+
+    // ── Pass 4: Warnings for missing required without defaults ──────────
+    for (const field of schema.required) {
+      if ((!fm[field] || fm[field] === "") && !schema.defaults[field] && !schema.computed.includes(field)) {
+        warnings.push(`  ⚠ ${rel}: brakuje ${field} (wymagane, brak default)`);
+      }
+    }
+
+    // ── Apply ───────────────────────────────────────────────────────────
+    if (mutations.length > 0) {
+      affected++;
+      console.log(`\n  ${rel}:`);
+      for (const m of mutations) console.log(m);
+
+      if (opts.apply) {
+        const newContent = replaceFrontmatterInContent(f.content, yaml);
+        await writeFile(f.path, newContent, "utf-8");
+      }
+    }
+  }
+
+  // Print warnings
+  if (warnings.length > 0) {
+    console.log(`\nOstrzeżenia:`);
+    for (const w of warnings) console.log(w);
+  }
+
+  printSummary("normalize", affected, files.length, opts.apply);
+}
+
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 function printSummary(cmd, affected, total, applied) {
@@ -362,6 +468,7 @@ Użycie:
 Komendy:
   list                               Listuj pliki i ich frontmatter
   validate                           Raport brakujących pól
+  normalize                          Napraw frontmatter do kanonicznego formatu
   rename-field <stare> <nowe>        Zmień nazwę pola YAML
   set-field <pole> <wartość>         Ustaw pole na wartość
   delete-field <pole>                Usuń pole z frontmatter
@@ -375,12 +482,13 @@ Opcje:
   --apply                   Faktycznie zapisz zmiany
 
 Przykłady:
+  node scripts/vault-tools.mjs normalize
+  node scripts/vault-tools.mjs normalize --type bohater-gracza --apply
   node scripts/vault-tools.mjs list --type bohater-gracza
   node scripts/vault-tools.mjs validate --type bohater-gracza
   node scripts/vault-tools.mjs rename-field archetyp archetype --where "system=l5k"
   node scripts/vault-tools.mjs set-field system_pelna "Cold City" --where "system=cold-city"
   node scripts/vault-tools.mjs delete-field stare_pole --type epizod
-  node scripts/vault-tools.mjs migrate-to-array kampania --type bohater-niezalezny
   node scripts/vault-tools.mjs migrate-to-array kampania --type bohater-niezalezny --apply
 `);
 }
@@ -390,6 +498,7 @@ Przykłady:
 const COMMANDS = {
   list: cmdList,
   validate: cmdValidate,
+  normalize: cmdNormalize,
   "rename-field": cmdRenameField,
   "set-field": cmdSetField,
   "delete-field": cmdDeleteField,
@@ -407,9 +516,12 @@ async function main() {
   console.log(`\nSkanowanie ${opts.dir}...`);
   const allPaths = await findMdFiles(opts.dir);
 
-  // Load all files with frontmatter
+  // Load all files with frontmatter (skip templates/ and .excalidraw.md)
   const allFiles = [];
   for (const p of allPaths) {
+    const rel = relative(opts.dir, p).replace(/\\/g, "/").toLowerCase();
+    if (rel.startsWith("templates/")) continue;
+    if (p.endsWith(".excalidraw.md")) continue;
     const content = await readFile(p, "utf-8");
     const frontmatter = parseFrontmatter(content);
     if (Object.keys(frontmatter).length > 0) {

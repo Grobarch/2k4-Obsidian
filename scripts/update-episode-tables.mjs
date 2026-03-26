@@ -22,31 +22,7 @@
 
 import { readdir, readFile, writeFile, stat } from "node:fs/promises";
 import { join, basename, relative, dirname } from "node:path";
-
-/**
- * Zamienia ścieżkę vault na slug Quartz:
- * - lowercase
- * - polskie znaki → ASCII
- * - spacje i inne znaki specjalne → myślniki
- * - usuwa .md
- * - usuwa wielokrotne myślniki
- */
-const POLISH_MAP = {
-  ą: "a", ć: "c", ę: "e", ł: "l", ń: "n", ó: "o", ś: "s", ź: "z", ż: "z",
-  Ą: "a", Ć: "c", Ę: "e", Ł: "l", Ń: "n", Ó: "o", Ś: "s", Ź: "z", Ż: "z",
-};
-
-function slugify(str) {
-  return str
-    .replace(/\.md$/i, "")
-    .replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, (ch) => POLISH_MAP[ch] || ch)
-    .toLowerCase()
-    .replace(/[^a-z0-9/]+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/(^-|-$)/g, "")
-    .replace(/\/-/g, "/")
-    .replace(/-\//g, "/");
-}
+import { parseFrontmatter, findMdFiles, slugify } from "./shared.mjs";
 
 const MARKERS = {
   episodes:  { start: "<!-- EPISODES_START -->",   end: "<!-- EPISODES_END -->" },
@@ -67,94 +43,6 @@ const TYPE_MAP = {
 
 const systemyDir = process.argv[2] || "vault/systemy";
 const encyklopediaDir = join(dirname(systemyDir), "encyklopedia");
-
-/**
- * Parsuje YAML frontmatter z pliku markdown (prosty parser, bez zależności).
- * Obsługuje wartości skalarne, tablice inline ([a, b]) i blokowe (- a\n- b).
- */
-function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return {};
-  const fm = {};
-  const lines = match[1].split(/\r?\n/);
-  let i = 0;
-  while (i < lines.length) {
-    const line = lines[i];
-    const m = line.match(/^(\w[\w-]*):\s*(.*)/);
-    if (m) {
-      const key = m[1];
-      const rest = m[2].trim();
-      if (rest === "") {
-        // Tablica blokowa: kolejne linie zaczynające się od "  - "
-        const arrItems = [];
-        i++;
-        while (i < lines.length && /^\s+-\s/.test(lines[i])) {
-          const itemMatch = lines[i].match(/^\s+-\s+(.*)/);
-          if (itemMatch) {
-            let val = itemMatch[1].trim();
-            if ((val.startsWith('"') && val.endsWith('"')) ||
-                (val.startsWith("'") && val.endsWith("'"))) {
-              val = val.slice(1, -1);
-            }
-            arrItems.push(val);
-          }
-          i++;
-        }
-        fm[key] = arrItems.length > 0 ? arrItems : "";
-        continue;
-      } else if (rest.startsWith("[") && rest.endsWith("]")) {
-        // Tablica inline: [a, b, c]
-        const inner = rest.slice(1, -1);
-        fm[key] = inner
-          .split(",")
-          .map((v) => {
-            let val = v.trim();
-            if ((val.startsWith('"') && val.endsWith('"')) ||
-                (val.startsWith("'") && val.endsWith("'"))) {
-              val = val.slice(1, -1);
-            }
-            return val;
-          })
-          .filter((v) => v !== "");
-      } else {
-        let val = rest;
-        if ((val.startsWith('"') && val.endsWith('"')) ||
-            (val.startsWith("'") && val.endsWith("'"))) {
-          val = val.slice(1, -1);
-        }
-        fm[key] = val;
-      }
-    }
-    i++;
-  }
-  // Zamień null (puste listy bez elementów) na pusty string
-  for (const key of Object.keys(fm)) {
-    if (fm[key] === null) fm[key] = '';
-  }
-  return fm;
-}
-
-/**
- * Rekurencyjnie znajduje wszystkie pliki .md w folderze.
- */
-async function findMdFiles(dir) {
-  const results = [];
-  let entries;
-  try {
-    entries = await readdir(dir, { withFileTypes: true });
-  } catch {
-    return results;
-  }
-  for (const entry of entries) {
-    const fullPath = join(dir, entry.name);
-    if (entry.isDirectory()) {
-      results.push(...(await findMdFiles(fullPath)));
-    } else if (entry.name.endsWith(".md")) {
-      results.push(fullPath);
-    }
-  }
-  return results;
-}
 
 /**
  * Buduje slug kampanii z ścieżki folder note względem systemy/.

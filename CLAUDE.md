@@ -60,6 +60,10 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │               ├── Epizod 01.md
 │               └── ...
 ├── scripts/
+│   ├── schema.mjs                 ← kanoniczny schemat frontmatter (single source of truth)
+│   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
+│   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
+│   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
 │   └── update-episode-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
 │   └── quartz.config.ts    ← konfiguracja (baseUrl, locale pl-PL)
@@ -107,6 +111,55 @@ w frontmatter i regeneruje tabelki między markerami.
 
 Uruchamianie lokalne: `node scripts/update-episode-tables.mjs vault/systemy`
 
+## Skrypty vault
+
+Wszystkie skrypty w `scripts/` działają bez zależności npm (czysty Node.js ESM).
+
+### Schema (`scripts/schema.mjs`)
+
+Single source of truth dla schematów frontmatter. Eksportuje:
+- `SYSTEM_NAMES` — mapa `system_id → system_pelna`
+- `TYPE_SCHEMAS` — per-type definicje: `required[]`, `arrayFields[]`, `computed[]`, `defaults{}`
+
+### vault-tools.mjs — CLI do masowych operacji
+
+```bash
+node scripts/vault-tools.mjs <komenda> [argumenty] [opcje]
+```
+
+Komendy:
+- `normalize` — napraw frontmatter do kanonicznego formatu (migracje, computed values, defaults)
+- `validate` — raport brakujących pól
+- `list` — listuj pliki i ich frontmatter
+- `rename-field <stare> <nowe>` — zmień nazwę pola YAML
+- `set-field <pole> <wartość>` — ustaw pole na wartość
+- `delete-field <pole>` — usuń pole z frontmatter
+- `migrate-to-array <pole>` — konwertuj skalarne pole na tablicę
+
+Opcje: `--where "pole=wartość"`, `--type <typ>`, `--dir <ścieżka>`, `--dry-run` (domyślne), `--apply`
+
+### Workflow normalizacji
+
+```bash
+# 1. Podgląd co trzeba naprawić
+node scripts/vault-tools.mjs normalize --dir vault
+
+# 2. Zastosuj poprawki
+node scripts/vault-tools.mjs normalize --dir vault --apply
+
+# 3. Walidacja
+node scripts/vault-tools.mjs validate --dir vault
+
+# 4. Aktualizuj tabelki
+node scripts/update-episode-tables.mjs vault/systemy
+```
+
+Komenda `normalize` wykonuje 4 przejścia:
+1. **Migracja scalar → array** — pola z `arrayFields` (np. `kampania`, `kampania_link` dla bohaterów)
+2. **Computed values** — `system_pelna` z `SYSTEM_NAMES`, `tags` z `[type, system]`, `kampania_link`/`kampania` z path (epizody)
+3. **Defaults** — `draft: true` dla kampanii/systemów, `mg` dla epizodów
+4. **Ostrzeżenia** — brakujące required bez default
+
 ## GitHub Pages
 
 - URL: https://grobarch.github.io/2k4-Obsidian
@@ -118,9 +171,11 @@ Uruchamianie lokalne: `node scripts/update-episode-tables.mjs vault/systemy`
 1. Checkout repo
 2. `npm ci` w `quartz/`
 3. Kopiuje `vault/*` → `quartz/content/`
-4. `node scripts/update-episode-tables.mjs quartz/content/systemy` ← aktualizuje tabelki epizodów
-5. `npx quartz build` → `quartz/public/`
-6. Deploy `quartz/public/` na GitHub Pages
+4. `node scripts/vault-tools.mjs normalize --dir quartz/content --apply` ← normalizuje frontmatter
+5. `node scripts/update-episode-tables.mjs quartz/content/systemy` ← aktualizuje tabelki epizodów
+6. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
+7. `npx quartz build` → `quartz/public/`
+8. Deploy `quartz/public/` na GitHub Pages
 
 `quartz/content/` jest pusta w repo — wypełniana tylko w CI.
 

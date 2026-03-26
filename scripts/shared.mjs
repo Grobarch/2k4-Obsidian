@@ -116,3 +116,19 @@ export async function loadFileWithFrontmatter(filePath) {
   const frontmatter = parseFrontmatter(content);
   return { path: filePath, content, frontmatter };
 }
+
+/**
+ * Ustawia pole w YAML tylko jeśli jeszcze nie istnieje.
+ * Zwraca zmodyfikowany YAML lub null jeśli pole już istnieje.
+ */
+export function setFieldIfAbsentInYaml(yaml, fieldName, value) {
+  const regex = new RegExp(`^${escapeRegex(fieldName)}:`, "m");
+  if (regex.test(yaml)) return null;
+  const isArray = value.startsWith("[") && value.endsWith("]");
+  const formattedValue = isArray ? value : `"${value}"`;
+  return yaml.trimEnd() + `\n${fieldName}: ${formattedValue}`;
+}
+
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
