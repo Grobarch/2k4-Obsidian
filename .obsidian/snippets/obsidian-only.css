@@ -1,0 +1,4 @@
+/* Elementy widoczne tylko w Obsidian (przyciski tworzenia postaci/epizodów) */
+.obsidian-only {
+  display: block !important;
+}
