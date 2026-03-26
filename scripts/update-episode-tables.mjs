@@ -44,20 +44,62 @@ const encyklopediaDir = join(dirname(systemyDir), "encyklopedia");
 
 /**
  * Parsuje YAML frontmatter z pliku markdown (prosty parser, bez zależności).
+ * Obsługuje wartości skalarne, tablice inline ([a, b]) i blokowe (- a\n- b).
  */
 function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return {};
   const fm = {};
-  for (const line of match[1].split(/\r?\n/)) {
-    const m = line.match(/^(\w[\w-]*):\s*(.+)/);
+  const lines = match[1].split(/\r?\n/);
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    const m = line.match(/^(\w[\w-]*):\s*(.*)/);
     if (m) {
-      let val = m[2].trim();
-      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
-        val = val.slice(1, -1);
+      const key = m[1];
+      const rest = m[2].trim();
+      if (rest === "") {
+        // Tablica blokowa: kolejne linie zaczynające się od "  - "
+        const arrItems = [];
+        i++;
+        while (i < lines.length && /^\s+-\s/.test(lines[i])) {
+          const itemMatch = lines[i].match(/^\s+-\s+(.*)/);
+          if (itemMatch) {
+            let val = itemMatch[1].trim();
+            if ((val.startsWith('"') && val.endsWith('"')) ||
+                (val.startsWith("'") && val.endsWith("'"))) {
+              val = val.slice(1, -1);
+            }
+            arrItems.push(val);
+          }
+          i++;
+        }
+        fm[key] = arrItems.length > 0 ? arrItems : "";
+        continue;
+      } else if (rest.startsWith("[") && rest.endsWith("]")) {
+        // Tablica inline: [a, b, c]
+        const inner = rest.slice(1, -1);
+        fm[key] = inner
+          .split(",")
+          .map((v) => {
+            let val = v.trim();
+            if ((val.startsWith('"') && val.endsWith('"')) ||
+                (val.startsWith("'") && val.endsWith("'"))) {
+              val = val.slice(1, -1);
+            }
+            return val;
+          })
+          .filter((v) => v !== "");
+      } else {
+        let val = rest;
+        if ((val.startsWith('"') && val.endsWith('"')) ||
+            (val.startsWith("'") && val.endsWith("'"))) {
+          val = val.slice(1, -1);
+        }
+        fm[key] = val;
       }
-      fm[m[1]] = val;
     }
+    i++;
   }
   return fm;
 }
@@ -155,6 +197,7 @@ async function findEpisodesInDir(dir, folderNoteBasename) {
 /**
  * Ładuje wszystkie wpisy encyklopedii pogrupowane wg kampanii i typu.
  * Klucz: `${campaignSlug}:${category}` → array of entries
+ * Obsługuje kampania jako string, tablicę lub string z przecinkami.
  */
 async function loadEncyklopedia(encDir, vaultRoot) {
   const index = {};
@@ -164,9 +207,16 @@ async function loadEncyklopedia(encDir, vaultRoot) {
     const fm = parseFrontmatter(content);
     const category = TYPE_MAP[fm.type];
     if (!category || !fm.kampania) continue;
-    const key = `${fm.kampania}:${category}`;
-    if (!index[key]) index[key] = [];
-    index[key].push({ filePath, fm });
+    const kampanie = Array.isArray(fm.kampania)
+      ? fm.kampania
+      : fm.kampania.split(",").map((s) => s.trim()).filter(Boolean);
+    for (const kamp of kampanie) {
+      const key = `${kamp}:${category}`;
+      if (!index[key]) index[key] = [];
+      if (!index[key].find((e) => e.filePath === filePath)) {
+        index[key].push({ filePath, fm });
+      }
+    }
   }
   return index;
 }
