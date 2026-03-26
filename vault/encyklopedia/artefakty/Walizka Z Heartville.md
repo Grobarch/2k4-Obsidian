@@ -3,8 +3,8 @@ title: Walizka z Heartville
 type: artefakt
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
-kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
-kampania: wszystkie-przebrania-alistaira-kanta
+kampania_link: ["/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"]
+kampania: ["wszystkie-przebrania-alistaira-kanta"]
 tags: [artefakt, deadlands, western, horror]
 ---
 

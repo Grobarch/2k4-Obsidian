@@ -3,8 +3,8 @@ title: Rokugański chłop
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/prawidla-zdrady
-kampania: prawidla-zdrady
+kampania_link: ["/systemy/l5k/prawidla-zdrady"]
+kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 

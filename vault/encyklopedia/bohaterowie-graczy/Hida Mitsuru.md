@@ -3,8 +3,8 @@ title: Hida Mitsuru
 type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/groza-ktora-zawsze-powraca
-kampania: groza-ktora-zawsze-powraca, test
+kampania_link: ["/systemy/l5k/groza-ktora-zawsze-powraca"]
+kampania: ["groza-ktora-zawsze-powraca, test"]
 gracz: Tomasz TYMIŃSKI
 archetyp: bushi z Klanu Kraba
 tags:

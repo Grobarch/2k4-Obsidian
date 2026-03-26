@@ -5,7 +5,7 @@ system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
-tags: [kampania, Wiedźmin, dark-fantasy, fantasy]
+tags: ["kampania", "Wiedźmin", "dark-fantasy", "fantasy", "wiedzmin"]
 draft: true
 ---
 

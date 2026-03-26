@@ -3,8 +3,8 @@ title: Dr. Hans Robke
 type: bohater-niezalezny
 system: cold-city
 system_pelna: Cold City
-kampania_link: /systemy/cold-city/cold-tales
-kampania: cold-tales
+kampania_link: ["/systemy/cold-city/cold-tales"]
+kampania: ["cold-tales"]
 tags: [bohater-niezalezny, cold-city, szpiegowski, horror]
 ---
 

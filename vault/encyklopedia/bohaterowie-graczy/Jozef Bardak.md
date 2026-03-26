@@ -3,8 +3,8 @@ title: Mjr. Józef Bardak
 type: bohater-gracza
 system: cold-city
 system_pelna: Cold City
-kampania_link: /systemy/cold-city/cold-tales
-kampania: cold-tales
+kampania_link: ["/systemy/cold-city/cold-tales"]
+kampania: ["cold-tales"]
 archetyp: Funkcjonariusz PAP, Żołnierz KBW
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
 ---

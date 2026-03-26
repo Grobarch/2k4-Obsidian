@@ -3,8 +3,8 @@ title: Kakita Kubota
 type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/miecze-cnot-i-grzechow
-kampania: miecze-cnot-i-grzechow
+kampania_link: ["/systemy/l5k/miecze-cnot-i-grzechow"]
+kampania: ["miecze-cnot-i-grzechow"]
 gracz: Dawid KOŁACIŃSKI
 archetyp: bushi z Klanu Żurawia
 tags: [bohater-gracza, l5k, samurajski]

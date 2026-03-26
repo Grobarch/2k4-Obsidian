@@ -3,8 +3,8 @@ title: "Testu"
 type: bohater-gracza
 system: 7th-sea
 system_pelna: "7th Sea"
-kampania_link: /systemy/7th-sea/test
-kampania: test
+kampania_link: ["/systemy/7th-sea/test"]
+kampania: ["test"]
 gracz: 
 archetyp: tak
 tags: [bohater-gracza, 7th-sea]

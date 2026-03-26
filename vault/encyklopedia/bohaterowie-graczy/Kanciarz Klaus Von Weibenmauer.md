@@ -3,8 +3,8 @@ title: Kanciarz Klaus von Weibenmauer
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
-kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
-kampania: wszystkie-przebrania-alistaira-kanta
+kampania_link: ["/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"]
+kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Krzysztof OBSTAWSKI
 tags: [bohater-gracza, deadlands, western, horror]
 ---

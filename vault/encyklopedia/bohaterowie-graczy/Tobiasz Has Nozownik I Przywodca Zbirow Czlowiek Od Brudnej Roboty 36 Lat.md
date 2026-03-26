@@ -3,7 +3,7 @@ title: Tobiasz Has, Nożownik i przywódca zbirów, Człowiek od brudnej roboty,
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
-tags: [bohater-gracza, Wiedźmin, dark-fantasy]
+tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
 # Tobiasz Has,

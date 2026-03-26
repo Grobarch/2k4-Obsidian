@@ -3,8 +3,8 @@ title: Archiwum PAP
 type: lokacja
 system: cold-city
 system_pelna: Cold City
-kampania_link: /systemy/cold-city/cold-tales
-kampania: cold-tales
+kampania_link: ["/systemy/cold-city/cold-tales"]
+kampania: ["cold-tales"]
 tags: [lokacja, cold-city, szpiegowski, horror]
 ---
 

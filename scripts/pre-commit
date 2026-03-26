@@ -25,7 +25,7 @@ fi
 MODIFIED_VAULT=$(git diff --name-only -- 'vault/')
 if [ -n "$MODIFIED_VAULT" ]; then
   echo "[pre-commit] Re-staging zmodyfikowanych plików..."
-  echo "$MODIFIED_VAULT" | xargs git add
+  echo "$MODIFIED_VAULT" | while IFS= read -r file; do git add "$file"; done
 fi
 
 echo "[pre-commit] Walidacja frontmatter..."

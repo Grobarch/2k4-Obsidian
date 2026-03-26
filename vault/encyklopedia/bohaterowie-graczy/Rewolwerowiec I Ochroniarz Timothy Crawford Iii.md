@@ -3,8 +3,8 @@ title: Rewolwerowiec i ochroniarz Timothy Crawford III
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
-kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
-kampania: wszystkie-przebrania-alistaira-kanta
+kampania_link: ["/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"]
+kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Paweł Piotrowski
 tags:
   - bohater-gracza

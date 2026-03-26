@@ -8,7 +8,7 @@ kampania: w-maskach
 mg: Arkadiusz RYGIEL
 data: 2010-11-20
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2010/11/7th-sea-odc-2-z-altamiry.html"
-tags: [epizod, 7th-Sea, szpiegowski]
+tags: ["epizod", "7th-Sea", "szpiegowski", "7th-sea"]
 ---
 
 # Epizod 2: "Ucieczka z Altamiry"
