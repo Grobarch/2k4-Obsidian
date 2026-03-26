@@ -1,7 +1,8 @@
 quartz/node_modules/
 quartz/.quartz-cache/
 quartz/public/
-quartz/content/
+quartz/content/*
+!quartz/content/.gitkeep
 vault/.obsidian/
 vault/*.base
 .claude/
