@@ -3,8 +3,8 @@ title: Sasaki Hayato
 type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/miecze-cnot-i-grzechow
-kampania: miecze-cnot-i-grzechow
+kampania_link: ["/systemy/l5k/miecze-cnot-i-grzechow"]
+kampania: ["miecze-cnot-i-grzechow"]
 gracz: Piotr RYGIEL
 archetyp: bushi z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]

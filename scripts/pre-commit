@@ -1,0 +1,42 @@
+#!/bin/bash
+# pre-commit hook: normalize frontmatter + validate before commit
+#
+# Instalacja: cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+#
+# Uruchamia normalize --apply na vault/ i ponownie staguje zmienione pliki.
+# Jeśli walidacja nie przejdzie — commit jest blokowany.
+
+# Sprawdź czy są zmiany w vault/ lub scripts/
+STAGED_VAULT=$(git diff --cached --name-only -- 'vault/' 'scripts/')
+if [ -z "$STAGED_VAULT" ]; then
+  exit 0  # brak zmian w vault/scripts — skip
+fi
+
+echo "[pre-commit] Normalizacja frontmatter..."
+node scripts/vault-tools.mjs normalize --dir vault --apply 2>&1
+NORMALIZE_EXIT=$?
+
+if [ $NORMALIZE_EXIT -ne 0 ]; then
+  echo "[pre-commit] normalize zakończył się błędem!"
+  exit 1
+fi
+
+# Re-stage pliki vault które mogły zostać zmodyfikowane przez normalize
+MODIFIED_VAULT=$(git diff --name-only -- 'vault/')
+if [ -n "$MODIFIED_VAULT" ]; then
+  echo "[pre-commit] Re-staging zmodyfikowanych plików..."
+  echo "$MODIFIED_VAULT" | while IFS= read -r file; do git add "$file"; done
+fi
+
+echo "[pre-commit] Walidacja frontmatter..."
+node scripts/validate-frontmatter.mjs vault 2>&1
+VALIDATE_EXIT=$?
+
+if [ $VALIDATE_EXIT -ne 0 ]; then
+  echo ""
+  echo "[pre-commit] Walidacja nie przeszła! Napraw błędy przed commitem."
+  echo "  Uruchom: node scripts/vault-tools.mjs normalize --dir vault --apply"
+  exit 1
+fi
+
+echo "[pre-commit] OK"

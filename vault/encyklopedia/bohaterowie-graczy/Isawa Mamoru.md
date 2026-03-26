@@ -3,8 +3,8 @@ title: Isawa Mamoru
 type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/groza-ktora-zawsze-powraca
-kampania: groza-ktora-zawsze-powraca
+kampania_link: ["/systemy/l5k/groza-ktora-zawsze-powraca"]
+kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Krzysztof OBSTAWSKI
 archetyp: shugenja z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]

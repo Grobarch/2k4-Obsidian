@@ -3,8 +3,7 @@ title: Baron Richolf z, Hage, Możny, 40 lat
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
-tags:
-  - bohater-gracza
+tags: ["bohater-gracza", "dark-fantasy", "Wiedźmin", "wiedzmin"]
   - dark-fantasy
   - Wiedźmin
 ---

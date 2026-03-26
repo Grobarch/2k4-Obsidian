@@ -6,6 +6,7 @@ system_pelna: 7th Sea
 mg: Krzyś
 gatunek: Test
 tags: [kampania, 7th-sea, test]
+draft: "true"
 ---
 
 # Test

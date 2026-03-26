@@ -3,7 +3,7 @@ title: Axel Adelhoff, Czarodziej, 29 lat
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
-tags: [bohater-gracza, Wiedźmin, dark-fantasy]
+tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
 # Axel Adelhoff, Czarodziej, 29 lat

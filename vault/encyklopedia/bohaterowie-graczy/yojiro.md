@@ -3,8 +3,8 @@ title: Yojiro
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
-kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
-kampania: wszystkie-przebrania-alistaira-kanta
+kampania_link: ["/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"]
+kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Paweł OBSTAWSKI
 archetyp: Ronin i zabójca potworów z Kraju Kwitnącej Wiśni
 tags: [bohater-gracza, deadlands, western, horror]

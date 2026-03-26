@@ -3,8 +3,8 @@ title: Szalony Mickey
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
-kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
-kampania: wszystkie-przebrania-alistaira-kanta
+kampania_link: ["/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"]
+kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Tomasz TYMIŃSKI
 archetyp: Rewolwerowiec
 tags: [bohater-gracza, deadlands, western, horror]

@@ -3,8 +3,8 @@ title: Agasha Damagodetsu
 type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/groza-ktora-zawsze-powraca
-kampania: groza-ktora-zawsze-powraca
+kampania_link: ["/systemy/l5k/groza-ktora-zawsze-powraca"]
+kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Paweł PIOTROWSKI
 archetyp: shugenja z Klanu Smoka i Szmaragdowy Namiestnik
 tags: [bohater-gracza, l5k, samurajski]

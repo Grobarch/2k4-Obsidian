@@ -3,8 +3,8 @@ title: Por. Jacques Rousseau
 type: bohater-gracza
 system: cold-city
 system_pelna: Cold City
-kampania_link: /systemy/cold-city/cold-tales
-kampania: cold-tales
+kampania_link: ["/systemy/cold-city/cold-tales"]
+kampania: ["cold-tales"]
 archetyp: Funkcjonariusz PAP, Oficer Francuskiej Armii
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
 ---
