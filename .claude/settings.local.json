@@ -4,7 +4,9 @@
       "Bash(gh pr:*)",
       "Bash(grep \"kampania:\" \"F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/bohaterowie-niezalezni\"/*)",
       "Bash(grep \"kampania:\" \"F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/lokacje\"/*)",
-      "Bash(wc -l F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/bohaterowie-graczy/*.md F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/lokacje/*.md F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/artefakty/*.md)"
+      "Bash(wc -l F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/bohaterowie-graczy/*.md F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/lokacje/*.md F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/artefakty/*.md)",
+      "Bash(node scripts/vault-tools.mjs normalize --dir vault)",
+      "Bash(node scripts/validate-frontmatter.mjs vault)"
     ]
   }
 }
