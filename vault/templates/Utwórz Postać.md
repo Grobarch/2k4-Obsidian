@@ -130,26 +130,31 @@ if (preSystemId) {
 const system = SYSTEMS.find(s => s.id === systemId) || { id: systemId, name: systemId, pelna: systemId };
 
 // ============================================================
-// 4. Kampania (pominięta jeśli znana z kontekstu, opcjonalna inaczej)
+// 4. Kampanie (wielokrotny wybór, opcjonalne)
 // ============================================================
-let kampaniaId   = preKampaniaId;
-let kampaniaName = preKampaniaName;
-let kampaniaLink = preKampaniaLink;
+let wybraneCampanie = []; // array of {id, name, link}
 
-if (!kampaniaId) {
-  const dostepneKampanie = KAMPANIE[systemId] || [];
-  if (dostepneKampanie.length > 0) {
-    const opcje    = ["— brak / nie dotyczy —", ...dostepneKampanie.map(k => k.name)];
-    const wartosci = ["",                        ...dostepneKampanie.map(k => k.id)];
-    const wybor = await tp.system.suggester(opcje, wartosci);
-    if (wybor === null) { cancel(); return; }
-    if (wybor) {
-      kampaniaId   = wybor;
-      const kamp   = dostepneKampanie.find(k => k.id === wybor);
-      kampaniaName = kamp.name;
-      kampaniaLink = kamp.link;
-    }
-  }
+// Pre-wypełnij z kontekstu kampanii
+if (preKampaniaId) {
+  wybraneCampanie.push({ id: preKampaniaId, name: preKampaniaName, link: preKampaniaLink });
+}
+
+// Pętla wyboru kolejnych kampanii
+const dostepneKampanie = KAMPANIE[systemId] || [];
+let remaining = dostepneKampanie.filter(k => !wybraneCampanie.find(w => w.id === k.id));
+
+while (remaining.length > 0) {
+  const doneLabel = wybraneCampanie.length > 0
+    ? "— gotowe —"
+    : "— brak / nie dotyczy —";
+  const opcje    = [doneLabel, ...remaining.map(k => k.name)];
+  const wartosci = ["__done__", ...remaining.map(k => k.id)];
+  const wybor = await tp.system.suggester(opcje, wartosci);
+  if (wybor === null) { cancel(); return; }
+  if (wybor === "__done__") break;
+  const kamp = remaining.find(k => k.id === wybor);
+  wybraneCampanie.push(kamp);
+  remaining = remaining.filter(k => k.id !== wybor);
 }
 
 // ============================================================
@@ -189,9 +194,14 @@ const fmLines = [
   `system: ${systemId}`,
   `system_pelna: "${system.pelna}"`,
 ];
-if (kampaniaId) {
-  fmLines.push(`kampania_link: ${kampaniaLink}`);
-  fmLines.push(`kampania: ${kampaniaId}`);
+if (wybraneCampanie.length === 1) {
+  fmLines.push(`kampania_link: ${wybraneCampanie[0].link}`);
+  fmLines.push(`kampania: ${wybraneCampanie[0].id}`);
+} else if (wybraneCampanie.length > 1) {
+  fmLines.push(`kampania_link:`);
+  for (const k of wybraneCampanie) fmLines.push(`  - ${k.link}`);
+  fmLines.push(`kampania:`);
+  for (const k of wybraneCampanie) fmLines.push(`  - ${k.id}`);
 }
 if (typeId === "bohater-gracza") fmLines.push(`gracz: ${gracz}`);
 fmLines.push(`archetyp: ${archetyp}`);
@@ -200,8 +210,8 @@ fmLines.push(`tags: [${typeLabel}, ${systemId}]`);
 // ============================================================
 // Sekcja Kampanie
 // ============================================================
-const kampaniaSection = kampaniaId
-  ? `\n## Kampanie\n\n- [${kampaniaName}](${kampaniaLink}/${kampaniaId})\n`
+const kampaniaSection = wybraneCampanie.length > 0
+  ? `\n## Kampanie\n\n` + wybraneCampanie.map(k => `- [${k.name}](${k.link}/${k.id})`).join("\n") + "\n"
   : "";
 
 // ============================================================

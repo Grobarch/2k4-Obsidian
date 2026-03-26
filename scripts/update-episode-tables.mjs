@@ -70,45 +70,62 @@ const encyklopediaDir = join(dirname(systemyDir), "encyklopedia");
 
 /**
  * Parsuje YAML frontmatter z pliku markdown (prosty parser, bez zależności).
+ * Obsługuje wartości skalarne, tablice inline ([a, b]) i blokowe (- a\n- b).
  */
 function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return {};
   const fm = {};
-  let currentKey = null;
-  let currentIsArray = false;
-  for (const line of match[1].split(/\r?\n/)) {
+  const lines = match[1].split(/\r?\n/);
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
     const m = line.match(/^(\w[\w-]*):\s*(.*)/);
     if (m) {
-      currentKey = m[1];
-      let val = m[2].trim();
-      if (val === '') {
-        // Może być lista wieloliniowa – inicjalizujemy jako pustą tablicę tymczasowo
-        fm[currentKey] = null;
-        currentIsArray = true;
+      const key = m[1];
+      const rest = m[2].trim();
+      if (rest === "") {
+        // Tablica blokowa: kolejne linie zaczynające się od "  - "
+        const arrItems = [];
+        i++;
+        while (i < lines.length && /^\s+-\s/.test(lines[i])) {
+          const itemMatch = lines[i].match(/^\s+-\s+(.*)/);
+          if (itemMatch) {
+            let val = itemMatch[1].trim();
+            if ((val.startsWith('"') && val.endsWith('"')) ||
+                (val.startsWith("'") && val.endsWith("'"))) {
+              val = val.slice(1, -1);
+            }
+            arrItems.push(val);
+          }
+          i++;
+        }
+        fm[key] = arrItems.length > 0 ? arrItems : "";
+        continue;
+      } else if (rest.startsWith("[") && rest.endsWith("]")) {
+        // Tablica inline: [a, b, c]
+        const inner = rest.slice(1, -1);
+        fm[key] = inner
+          .split(",")
+          .map((v) => {
+            let val = v.trim();
+            if ((val.startsWith('"') && val.endsWith('"')) ||
+                (val.startsWith("'") && val.endsWith("'"))) {
+              val = val.slice(1, -1);
+            }
+            return val;
+          })
+          .filter((v) => v !== "");
       } else {
-        currentIsArray = false;
-        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        let val = rest;
+        if ((val.startsWith('"') && val.endsWith('"')) ||
+            (val.startsWith("'") && val.endsWith("'"))) {
           val = val.slice(1, -1);
-        } else if (val.startsWith('[') && val.endsWith(']')) {
-          val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, ''));
         }
-        fm[currentKey] = val;
-      }
-    } else if (currentKey && currentIsArray) {
-      const listMatch = line.match(/^\s*-\s+(.+)/);
-      if (listMatch) {
-        if (fm[currentKey] === null) fm[currentKey] = [];
-        let listVal = listMatch[1].trim();
-        if ((listVal.startsWith('"') && listVal.endsWith('"')) || (listVal.startsWith("'") && listVal.endsWith("'"))) {
-          listVal = listVal.slice(1, -1);
-        }
-        fm[currentKey].push(listVal);
-      } else if (line.trim() !== '') {
-        // Koniec listy – jeśli nic nie dodano, traktuj jako pusty string
-        currentIsArray = false;
+        fm[key] = val;
       }
     }
+    i++;
   }
   // Zamień null (puste listy bez elementów) na pusty string
   for (const key of Object.keys(fm)) {
@@ -210,6 +227,7 @@ async function findEpisodesInDir(dir, folderNoteBasename) {
 /**
  * Ładuje wszystkie wpisy encyklopedii pogrupowane wg kampanii i typu.
  * Klucz: `${campaignSlug}:${category}` → array of entries
+ * Obsługuje kampania jako string, tablicę lub string z przecinkami.
  */
 async function loadEncyklopedia(encDir, vaultRoot) {
   const index = {};
@@ -219,15 +237,15 @@ async function loadEncyklopedia(encDir, vaultRoot) {
     const fm = parseFrontmatter(content);
     const category = TYPE_MAP[fm.type];
     if (!category || !fm.kampania) continue;
-    
-    // Obsługa wielu kampanii (z tablicy lub po przecinku)
-    const kampanie = Array.isArray(fm.kampania) ? fm.kampania : fm.kampania.split(',').map(s => s.trim());
-    
+    const kampanie = Array.isArray(fm.kampania)
+      ? fm.kampania
+      : fm.kampania.split(",").map((s) => s.trim()).filter(Boolean);
     for (const kamp of kampanie) {
-      if (!kamp) continue;
       const key = `${kamp}:${category}`;
       if (!index[key]) index[key] = [];
-      index[key].push({ filePath, fm });
+      if (!index[key].find((e) => e.filePath === filePath)) {
+        index[key].push({ filePath, fm });
+      }
     }
   }
   return index;
