@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska edycja klasycznej gry fabularnej Call of Cthulhu wydanej przez Chaosium, opartej na twórczości H.P. Lovecrafta. Gracze wcielają się w zwykłych ludzi -- badaczy, dziennikarzy i detektywów -- którzy odkrywają przerażającą prawdę o kosmicznych istotach czyhających na granicy ludzkiej percepcji. System oparty na procentowych kościach słynie z wysokiej śmiertelności postaci i nieuchronnej utraty poczytalności.
 
 ## Scenariusze samodzielne
 

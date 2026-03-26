@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Lekka gra fabularna stworzona z myślą o jednorazowych sesjach horrorowych w duchu klasycznych filmów grozy. Prosty system oparty na dwóch statystykach pozwala szybko rozpocząć grę i skupić się na budowaniu napięcia. Idealna do odtwarzania klimatu slasherów, nawiedzonych domów i innych horrorowych tropów.
 
 ## Scenariusze samodzielne
 

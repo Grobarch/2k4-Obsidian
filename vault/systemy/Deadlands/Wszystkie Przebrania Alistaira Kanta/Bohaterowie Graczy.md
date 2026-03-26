@@ -1,9 +1,9 @@
 ---
 title: Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta
-type: epizod
+type: artykul
 system: deadlands
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/08/rpg-papierowe-rpg-gry-fabularne_3.html"
-tags: [epizod, deadlands, western, horror]
+tags: [artykul, deadlands, western, horror]
 ---
 
 # Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta

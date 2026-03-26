@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej wersji renesansowej Europy ogarniętej Chaosem, plagą i korupcją. Gracze zaczynają jako zwykli ludzie -- szczurołapy, żebracy i służący -- i próbują przetrwać w świecie, który ich nienawidzi. Kultowy system znany z wysokiej śmiertelności, czarnego humoru i wyjątkowo klimatycznego settingu.
 
 ## Kampanie
 

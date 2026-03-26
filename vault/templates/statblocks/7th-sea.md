@@ -1,10 +1,11 @@
-| Cecha     | Wartość |
-|-----------|---------|
-| Brawn     |         |
-| Finesse   |         |
-| Wits      |         |
-| Resolve   |         |
-| Panache   |         |
+| Cecha   | Wartość |
+| ------- | ------- |
+| Brawn   |         |
+| Finesse |         |
+| Wits    |         |
+| Resolve |         |
+| Panache |         |
+| Pierogi |         |
 
 **Narodowość:** —
 **Zalety (Advantages):** —

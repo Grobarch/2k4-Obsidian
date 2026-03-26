@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Klasyczna gra fabularna autorstwa Mike'a Pondsmitha, wydana przez R. Talsorian Games. Akcja toczy się w dystopijnym Night City roku 2020, gdzie megakorporacje rządzą światem, a uliczni najemnicy, hakerzy i rockerboye walczą o przetrwanie na krawędzi technologii i przestępczości. System Interlock kładzie nacisk na śmiertelny realizm walki i cybertechnologiczne modyfikacje ciała.
 
 ## Scenariusze samodzielne
 

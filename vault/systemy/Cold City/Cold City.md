@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Gra fabularna osadzona w podzielonym Berlinie roku 1950, gdzie międzynarodowa grupa agentów poluje na potwory -- pozostałości nazistowskich eksperymentów z czasów II wojny światowej. System kładzie nacisk na zaufanie i zdradę między postaciami, które mają własne ukryte cele i narodowe lojalności. Wydana przez Contested Ground Studios, łączy szpiegowski thriller z horrorem w klimacie zimnej wojny.
 
 ## Kampanie
 

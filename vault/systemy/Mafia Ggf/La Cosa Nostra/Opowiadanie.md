@@ -1,9 +1,9 @@
 ---
 title: To tylko interes
-type: epizod
+type: artykul
 system: mafia-ggf
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fabularne-wideo.html"
-tags: [epizod, mafia-ggf]
+tags: [artykul, mafia-ggf]
 ---
 
 # To tylko interes

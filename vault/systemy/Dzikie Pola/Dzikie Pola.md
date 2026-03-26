@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska gra fabularna osadzona w realiach XVII-wiecznej Rzeczypospolitej Obojga Narodów -- epoce wojen, szlacheckiej fantazji i sarmackiego honoru. Gracze wcielają się w szlachciców, Kozaków, żołnierzy i awanturników na tle Potopu Szwedzkiego, powstań kozackich i walk z Turkami. Jeden z najbardziej rozbudowanych polskich systemów RPG, słynący z dbałości o historyczny detal.
 
 ## Scenariusze samodzielne
 

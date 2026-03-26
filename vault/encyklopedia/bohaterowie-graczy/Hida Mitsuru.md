@@ -4,10 +4,13 @@ type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
 kampania_link: /systemy/l5k/groza-ktora-zawsze-powraca
-kampania: groza-ktora-zawsze-powraca
+kampania: groza-ktora-zawsze-powraca, test
 gracz: Tomasz TYMIŃSKI
 archetyp: bushi z Klanu Kraba
-tags: [bohater-gracza, l5k, samurajski]
+tags:
+  - bohater-gracza
+  - l5k
+  - samurajski
 ---
 
 # Hida Mitsuru
@@ -17,7 +20,7 @@ tags: [bohater-gracza, l5k, samurajski]
 
 ## Statystyki
 
-<!-- SYSTEM: l5k -->
+
 | Żywioł | Wartość | | Sub-atrybut | Wartość |
 |--------|---------|---|-------------|---------|
 | Ogień | | | Zręczność | |
