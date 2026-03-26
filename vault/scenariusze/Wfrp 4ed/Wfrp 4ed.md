@@ -1,6 +1,5 @@
 ---
 title: Warhammer Fantasy Role Play 4ed
-draft: true
 ---
 
 # Warhammer Fantasy Role Play 4ed

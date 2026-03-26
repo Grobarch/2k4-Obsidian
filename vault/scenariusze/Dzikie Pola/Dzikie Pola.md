@@ -1,6 +1,5 @@
 ---
 title: Dzikie Pola
-draft: true
 ---
 
 # Dzikie Pola

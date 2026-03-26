@@ -5,7 +5,6 @@ system: wideo-rpg
 wydawca: System autorski Arkadiusza RYGLA
 gatunek: uniwersalny
 tags: [system, wideo-rpg, uniwersalny]
-draft: true
 ---
 
 # Wideo RPG

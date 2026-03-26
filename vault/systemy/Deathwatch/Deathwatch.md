@@ -5,7 +5,6 @@ system: deathwatch
 wydawca: Fantasy Flight Games
 gatunek: science fiction, military
 tags: [system, deathwatch, space-fantasy, science-fiction, military]
-draft: true
 ---
 
 # Deathwatch RPG

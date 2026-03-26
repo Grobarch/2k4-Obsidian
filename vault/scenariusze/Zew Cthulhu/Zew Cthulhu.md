@@ -1,6 +1,5 @@
 ---
 title: Zew Cthulhu
-draft: true
 ---
 
 # Zew Cthulhu

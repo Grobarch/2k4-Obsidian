@@ -6,7 +6,6 @@ system_pelna: "Mafia: Gangsterska Gra Fabularna"
 mg: Arkadiusz RYGIEL
 gatunek: gangsterski
 tags: [kampania, mafia-ggf, gangsterski]
-draft: true
 ---
 
 # La Cosa Nostra

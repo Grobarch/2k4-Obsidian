@@ -5,7 +5,6 @@ system: wampir
 wydawca: White Wolf
 gatunek: dark fantasy, horror
 tags: [system, wampir, horror, dark-fantasy]
-draft: true
 ---
 
 # Wampir: Mroczne Wieki

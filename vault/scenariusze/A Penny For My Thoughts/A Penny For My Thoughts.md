@@ -1,6 +1,5 @@
 ---
 title: A Penny For My Thoughts
-draft: true
 ---
 
 # A Penny For My Thoughts

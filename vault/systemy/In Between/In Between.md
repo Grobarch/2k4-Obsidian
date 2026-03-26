@@ -5,7 +5,6 @@ system: in-between
 wydawca: Wydawnictwo Portal
 gatunek: horror, psychologiczny
 tags: [system, in-between, horror, psychologiczny]
-draft: true
 ---
 
 # In Between

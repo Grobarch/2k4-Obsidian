@@ -5,7 +5,6 @@ system: zew-cthulhu
 wydawca: Chaosium / Wydawnictwo Pegasus
 gatunek: horror
 tags: [system, zew-cthulhu, horror]
-draft: true
 ---
 
 # Zew Cthulhu
