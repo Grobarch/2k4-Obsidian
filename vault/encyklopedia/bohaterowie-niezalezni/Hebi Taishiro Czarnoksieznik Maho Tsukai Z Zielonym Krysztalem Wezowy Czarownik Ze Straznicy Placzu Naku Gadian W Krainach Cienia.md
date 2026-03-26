@@ -5,10 +5,8 @@ system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
 kampania_link:
   - /systemy/l5k/miecze-cnot-i-grzechow
-  - /systemy/l5k/groza-ktora-zawsze-powraca
 kampania:
   - miecze-cnot-i-grzechow
-  - groza-ktora-zawsze-powraca
 tags:
   - bohater-niezalezny
   - l5k

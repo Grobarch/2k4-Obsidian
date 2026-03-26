@@ -37,10 +37,10 @@ jobs:
         run: node scripts/vault-tools.mjs normalize --dir quartz/content --apply
 
       - name: Update episode tables
-        run: node scripts/update-episode-tables.mjs quartz/content/systemy
+        run: node scripts/update-tables.mjs quartz/content/systemy
 
       - name: Update scenario lists
-        run: node scripts/update-episode-tables.mjs quartz/content/scenariusze
+        run: node scripts/update-tables.mjs quartz/content/scenariusze
 
       - name: Validate frontmatter
         run: node scripts/validate-frontmatter.mjs quartz/content/
