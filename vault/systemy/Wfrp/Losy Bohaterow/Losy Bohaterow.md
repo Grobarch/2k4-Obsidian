@@ -6,7 +6,6 @@ system_pelna: Warhammer Fantasy Role Play 2ed
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: [kampania, wfrp, dark-fantasy, fantasy]
-draft: true
 ---
 
 # Losy bohaterówprzez żarna czasu ścierane

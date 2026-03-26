@@ -1,6 +1,5 @@
 ---
 title: Warhammer Fantasy Role Play 1ed
-draft: true
 ---
 
 # Warhammer Fantasy Role Play 1ed

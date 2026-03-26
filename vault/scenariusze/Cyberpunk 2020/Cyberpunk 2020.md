@@ -1,6 +1,5 @@
 ---
 title: Cyberpunk 2020
-draft: true
 ---
 
 # Cyberpunk 2020

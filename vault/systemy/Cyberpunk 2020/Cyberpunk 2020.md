@@ -5,7 +5,6 @@ system: cyberpunk-2020
 wydawca: R. Talsorian Games
 gatunek: cyberpunk
 tags: [system, cyberpunk-2020, cyberpunk]
-draft: true
 ---
 
 # Cyberpunk 2020

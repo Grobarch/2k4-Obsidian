@@ -1,6 +1,5 @@
 ---
 title: Deadlands
-draft: true
 ---
 
 # Deadlands

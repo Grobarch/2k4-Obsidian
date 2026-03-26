@@ -6,7 +6,6 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, l5k, samurajski]
-draft: true
 ---
 
 # Prawidła zdrady

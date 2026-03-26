@@ -75,7 +75,6 @@ if (gatunek) {
   gatunek.split(",").map(g => g.trim()).filter(Boolean).forEach(g => tagParts.push(toSlug(g)));
 }
 fmLines.push(`tags: [${tagParts.join(", ")}]`);
-fmLines.push(`draft: true`);
 
 // ============================================================
 // Treść folder note systemu

@@ -5,7 +5,6 @@ system: dzikie-pola
 wydawca: Wydawnictwo Storyha
 gatunek: historyczny, przygodowy
 tags: [system, dzikie-pola, historyczny, przygodowy]
-draft: true
 ---
 
 # Dzikie Pola 2ed

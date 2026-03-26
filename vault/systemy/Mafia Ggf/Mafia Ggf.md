@@ -5,7 +5,6 @@ system: mafia-ggf
 wydawca: Wydawnictwo Portal
 gatunek: gangsterski
 tags: [system, mafia-ggf, gangsterski]
-draft: true
 ---
 
 # Mafia: Gangsterska Gra Fabularna

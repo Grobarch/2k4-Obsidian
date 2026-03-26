@@ -1,6 +1,5 @@
 ---
 title: Deathwatch
-draft: true
 ---
 
 # Deathwatch

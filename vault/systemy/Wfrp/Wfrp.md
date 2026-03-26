@@ -5,7 +5,6 @@ system: wfrp
 wydawca: Games Workshop / Copernicus
 gatunek: dark fantasy
 tags: [system, wfrp, dark-fantasy]
-draft: true
 ---
 
 # Warhammer Fantasy Role Play
