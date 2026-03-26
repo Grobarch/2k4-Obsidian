@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelniensia.*
+Polska gra fabularna wydana przez Portal, łącząca motywy mitologii Cthulhu z postapokaliptycznym klimatem. Świat po katastrofie, w którym Wielcy Przedwieczni przebudzili się, a ludzkość walczy o przetrwanie wśród ruin dawnej cywilizacji. System skupia się na beznadziejnej walce o resztki człowieczeństwa w obliczu kosmicznego horroru.
 
 ## Scenariusze samodzielne
 

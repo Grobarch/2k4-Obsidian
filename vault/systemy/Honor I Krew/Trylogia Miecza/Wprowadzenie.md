@@ -1,9 +1,9 @@
 ---
 title: Wprowadzenie — Trylogia miecza
-type: epizod
+type: artykul
 system: honor-i-krew
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/05/honor-i-krew-temu-w-kraju-kwitnacej.html"
-tags: [epizod, honor-i-krew, fantasy]
+tags: [artykul, honor-i-krew, fantasy]
 ---
 
 # Wprowadzenie — Trylogia miecza

@@ -19,7 +19,7 @@ label: "+ Nowy epizod"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Epizod"
+    templateFile: "Templates/Utwórz Epizod.md"
     openNote: true
 ```
 
@@ -28,7 +28,7 @@ label: "+ Nowa postać"
 style: default
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Postać"
+    templateFile: "Templates/Utwórz Postać.md"
     openNote: true
 ```
 
@@ -39,9 +39,8 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Syn\"](/systemy/Wampir/Diabel%20Z%20Lazareni/Epizod%2001.md) | 2011-01-17 |
-| 2 | [Epizod 2: \"Polowanie\"](/systemy/Wampir/Diabel%20Z%20Lazareni/Epizod%2002.md) | 2011-01-17 |
-| 3 | [Epizod 3: \"Intrygi\"](/systemy/Wampir/Diabel%20Z%20Lazareni/Epizod%2003.md) | 2011-01-18 |
-| 4 | [Epizod 4: \"Zdrada\"](/systemy/Wampir/Diabel%20Z%20Lazareni/Epizod%2004.md) | 2011-01-18 |
-| 5 | [Wprowadzenie — Diabeł z Łazareni](/systemy/Wampir/Diabel%20Z%20Lazareni/Wprowadzenie.md) |  |
+| 1 | [Epizod 1: \"Syn\"](/systemy/wampir/diabel-z-lazareni/epizod-01) | 2011-01-17 |
+| 2 | [Epizod 2: \"Polowanie\"](/systemy/wampir/diabel-z-lazareni/epizod-02) | 2011-01-17 |
+| 3 | [Epizod 3: \"Intrygi\"](/systemy/wampir/diabel-z-lazareni/epizod-03) | 2011-01-18 |
+| 4 | [Epizod 4: \"Zdrada\"](/systemy/wampir/diabel-z-lazareni/epizod-04) | 2011-01-18 |
 <!-- EPISODES_END -->

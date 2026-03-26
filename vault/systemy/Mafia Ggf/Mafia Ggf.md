@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska gra fabularna wydana przez Portal, o świecie zorganizowanej przestępczości, inspirowana filmami gangsterskimi i kryminalnymi sagami. Gracze wcielają się w członków mafijnych rodzin, walcząc o władzę, pieniądze i przetrwanie w bezwzględnym półświatku. System kładzie nacisk na relacje między postaciami, lojalność i zdradę w gangsterskim środowisku.
 
 ## Kampanie
 

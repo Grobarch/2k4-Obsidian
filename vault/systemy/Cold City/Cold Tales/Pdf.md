@@ -1,9 +1,9 @@
 ---
 title: "Cold Tales: Po drugiej stronie Berlina"
-type: epizod
+type: artykul
 system: cold-city
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2016/01/cold-city-tales-po-drugiej-stronie.html"
-tags: [epizod, cold-city, szpiegowski, horror]
+tags: [artykul, cold-city, szpiegowski, horror]
 ---
 
 # Cold Tales: Po drugiej stronie Berlina

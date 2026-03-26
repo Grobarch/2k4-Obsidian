@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska gra fabularna wydana przez Gramel, osadzona w feudalnej Japonii, skupiona na tematyce samurajskiej -- honorze, lojalności i tragicznych wyborach między obowiązkiem a uczuciem. System kładzie nacisk na dramaturgię i konflikty moralne bohaterów w świecie, gdzie miecz i etykieta są równie ważne. Gra inspirowana japońską kulturą i filmami o samurajach.
 
 ## Kampanie
 

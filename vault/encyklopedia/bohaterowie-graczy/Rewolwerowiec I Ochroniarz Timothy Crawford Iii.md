@@ -5,10 +5,13 @@ system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
 kampania_link: /systemy/deadlands/wszystkie-przebrania-alistaira-kanta
 kampania: wszystkie-przebrania-alistaira-kanta
-gracz: Paweł PIOTROWSKI
-tags: [bohater-gracza, deadlands, western, horror]
+gracz: Paweł Piotrowski
+tags:
+  - bohater-gracza
+  - deadlands
+  - western
+  - horror
 ---
-
 # rewolwerowiec i ochroniarz Timothy Crawford III
 
 ![Portret rewolwerowiec i ochroniarz Timothy Crawford III](placeholder.jpg)

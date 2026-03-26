@@ -22,7 +22,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -30,7 +30,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan, inspirowanym feudalną Japonią, Chinami i Koreą. Gracze wcielają się w samurajów, shugenja i mnichów służących swoim klanom w świecie, gdzie honor jest ważniejszy od życia. Wydana przez AEG, system Roll & Keep oferuje dynamiczną mechanikę opartą na kościach k10, a rozgrywka łączy dworskie intrygi z epickim fantasy.
 
 ## Kampanie
 

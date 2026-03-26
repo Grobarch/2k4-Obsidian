@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska gra fabularna osadzona w uniwersum Wiedźmina stworzonego przez Andrzeja Sapkowskiego, wydana przez MAG. Gracze eksplorują mroczny, słowiański świat fantasy pełen potworów, politycznych intryg i moralnych szarości, gdzie nic nie jest czarno-białe. System pozwala wcielić się w wiedźminów, czarodziejki, bardy i innych mieszkańców Kontynentu.
 
 ## Kampanie
 

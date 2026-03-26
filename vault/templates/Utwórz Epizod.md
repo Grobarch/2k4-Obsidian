@@ -95,6 +95,22 @@ tags: [epizod, ${systemId}]
 
 await tp.file.create_new(content, fileName, true, kampaniaFolder);
 
+// ============================================================
+// Aktualizuj tabelkę epizodów w folder note kampanii
+// ============================================================
+const episodeSlug = `epizod-${numStr}`;
+const episodeLink = `[${fullTitle}](/${kampaniaLink}/${episodeSlug})`;
+const newRow = `| ${nextNum} | ${episodeLink} | ${data} |`;
+
+const parentContent = await app.vault.read(parentFile);
+const updated = parentContent.replace(
+  /(<!-- EPISODES_START -->[\s\S]*?)(<!-- EPISODES_END -->)/,
+  `$1${newRow}\n$2`
+);
+if (updated !== parentContent) {
+  await app.vault.modify(parentFile, updated);
+}
+
 tp.hooks.on_all_templates_executed(async () => {
   const f = app.vault.getAbstractFileByPath(triggerFile.path);
   if (f && f.path !== `${kampaniaFolder}/${fileName}.md`) {

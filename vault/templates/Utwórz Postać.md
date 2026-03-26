@@ -174,8 +174,8 @@ const archetyp = a.trim();
 // ============================================================
 let statblock = "";
 const sbAbstract =
-  app.vault.getAbstractFileByPath(`templates/statblocks/${systemId}.md`) ||
-  app.vault.getAbstractFileByPath(`templates/statblocks/generic.md`);
+  app.vault.getAbstractFileByPath(`Templates/statblocks/${systemId}.md`) ||
+  app.vault.getAbstractFileByPath(`Templates/statblocks/generic.md`);
 if (sbAbstract && sbAbstract.stat) {
   statblock = await app.vault.read(sbAbstract);
 }
@@ -232,6 +232,47 @@ ${kampaniaSection}`;
 // Utwórz notatkę i otwórz ją
 // ============================================================
 await tp.file.create_new(content, nameTrimmed, true, folder);
+
+// ============================================================
+// Aktualizuj tabelkę w folder note kampanii (jeśli jest)
+// ============================================================
+if (parentType === "kampania" && parentFile) {
+  function toSlugChar(str) {
+    return str.toLowerCase()
+      .replace(/ą/g, "a").replace(/ć/g, "c").replace(/ę/g, "e")
+      .replace(/ł/g, "l").replace(/ń/g, "n").replace(/ó/g, "o")
+      .replace(/ś/g, "s").replace(/ź/g, "z").replace(/ż/g, "z")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+  const charSlug = toSlugChar(nameTrimmed);
+  const charLink = `/encyklopedia/${typeId === "bohater-gracza" ? "bohaterowie-graczy" : "bohaterowie-niezalezni"}/${charSlug}`;
+
+  const parentContent = await app.vault.read(parentFile);
+  let updated = parentContent;
+
+  if (typeId === "bohater-gracza") {
+    const newRow = `| [${nameTrimmed}](${charLink}) | ${gracz} | ${archetyp} |`;
+    updated = updated.replace(
+      /(<!-- PLAYERS_START -->[\s\S]*?)(<!-- PLAYERS_END -->)/,
+      `$1${newRow}\n$2`
+    );
+  } else {
+    // Policz istniejące BN w tabelce
+    const npcMatch = parentContent.match(/<!-- NPCS_START -->([\s\S]*?)<!-- NPCS_END -->/);
+    const existingRows = npcMatch ? (npcMatch[1].match(/^\|[^|]*\|[^|]*\|/gm) || []).filter(r => !r.includes("---") && !r.includes("Bohater")) : [];
+    const npcNum = existingRows.length + 1;
+    const newRow = `| ${npcNum} | [${nameTrimmed}](${charLink}) |`;
+    updated = updated.replace(
+      /(<!-- NPCS_START -->[\s\S]*?)(<!-- NPCS_END -->)/,
+      `$1${newRow}\n$2`
+    );
+  }
+
+  if (updated !== parentContent) {
+    await app.vault.modify(parentFile, updated);
+  }
+}
 
 tp.hooks.on_all_templates_executed(async () => {
   const f = app.vault.getAbstractFileByPath(triggerFile.path);

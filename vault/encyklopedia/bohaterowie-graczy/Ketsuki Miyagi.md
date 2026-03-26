@@ -3,11 +3,14 @@ title: Ketsuki Miyagi
 type: bohater-gracza
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: /systemy/l5k/miecze-cnot-i-grzechow-inaczej-zwane-mieczami-odwroconych-imion
-kampania: miecze-cnot-i-grzechow-inaczej-zwane-mieczami-odwroconych-imion
+kampania_link: /systemy/l5k/miecze-cnot-i-grzechow
+kampania: miecze-cnot-i-grzechow
 gracz: Paweł PIOTROWSKI
 archetyp: bushi z Klanu Jednorożca
-tags: [bohater-gracza, l5k, samurajski]
+tags:
+  - bohater-gracza
+  - l5k
+  - samurajski
 ---
 
 # Ketsuki Miyagi

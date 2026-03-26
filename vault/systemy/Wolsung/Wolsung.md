@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Polska gra fabularna wydana przez Kuźnię Gier w konwencji steampunk fantasy, osadzona w świecie przypominającym wiktoriańską belle epoque z magią, maszynami parowymi i pulpową przygodą. Gracze wcielają się w bohaterów rodem z powieści Juliusza Verne'a i Arthura Conan Doyle'a -- dżentelmenów-awanturników, wynalazców i magów. Łączy elegancję epoki z dynamiczną akcją i humorem.
 
 ## Scenariusze samodzielne
 

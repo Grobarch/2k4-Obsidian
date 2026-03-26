@@ -19,7 +19,7 @@ label: "+ Nowa kampania"
 style: primary
 actions:
   - type: templaterCreateNote
-    templateFile: "templates/Utwórz Kampanię"
+    templateFile: "Templates/Utwórz Kampanię.md"
     openNote: true
 ```
 
@@ -27,7 +27,7 @@ actions:
 
 ## Opis
 
-*Opis do uzupelnienia.*
+Gra fabularna osadzona w alternatywnej wersji Dzikiego Zachodu, gdzie po Wojnie Secesyjnej duchy i potwory nawiedziły Martwe Ziemie. Gracze wcielają się w rewolwerowców, szamanów, wynalazców i hucksterów, walcząc ze złem nadprzyrodzonym przy użyciu kart do pokera zamiast tradycyjnych kości. Wydana przez Pinnacle Entertainment Group, łączy western z horrorem w niepowtarzalny sposób.
 
 ## Kampanie
 
