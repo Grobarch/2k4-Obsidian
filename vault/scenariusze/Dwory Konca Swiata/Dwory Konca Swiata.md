@@ -8,5 +8,5 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Dźwięki dintojry](/scenariusze/Dwory%20Konca%20Swiata/Dzwieki%20Dintojry.md)
+- [Dźwięki dintojry](/scenariusze/dwory-konca-swiata/dzwieki-dintojry)
 <!-- SCENARIOS_END -->

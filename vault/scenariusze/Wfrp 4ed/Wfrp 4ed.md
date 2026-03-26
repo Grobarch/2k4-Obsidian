@@ -8,5 +8,5 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Sukno z Langre](/scenariusze/Wfrp%204ed/Sukno%20Z%20Langre.md)
+- [Sukno z Langre](/scenariusze/wfrp-4ed/sukno-z-langre)
 <!-- SCENARIOS_END -->

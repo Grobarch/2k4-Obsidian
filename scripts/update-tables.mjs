@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 /**
- * update-episode-tables.mjs
+ * update-tables.mjs
  *
- * Skanuje foldery kampanii w systemy/, czyta frontmatter epizodów
- * i wpisów encyklopedii, i aktualizuje tabelki między markerami
- * w folder notes kampanii.
+ * Skanuje folder vault (systemy/ lub scenariusze/), czyta frontmatter plików
+ * i regeneruje tabelki między markerami HTML w folder notes.
  *
  * Obsługiwane markery:
  *   <!-- EPISODES_START/END -->   — epizody z folderu kampanii
@@ -12,9 +11,11 @@
  *   <!-- NPCS_START/END -->       — bohaterowie niezależni z encyklopedii
  *   <!-- LOCATIONS_START/END -->  — lokacje z encyklopedii
  *   <!-- ARTIFACTS_START/END -->  — artefakty z encyklopedii
+ *   <!-- SCENARIOS_START/END -->  — scenariusze z folderu systemu
+ *   <!-- SYSTEMS_START/END -->    — systemy (tylko Systemy.md)
  *
  * Użycie:
- *   node scripts/update-episode-tables.mjs [ścieżka-do-systemy]
+ *   node scripts/update-tables.mjs [ścieżka-do-folderu]
  *
  * Domyślnie: vault/systemy
  * Encyklopedia szukana jako sibling: vault/encyklopedia

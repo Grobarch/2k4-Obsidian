@@ -8,6 +8,7 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Przypadek Kuby Rozpruwacza](/scenariusze/A%20Penny%20For%20My%20Thoughts/Przypadek%20Kuby%20Rozpruwacza.md)
-- [Komórka Zaida](/scenariusze/A%20Penny%20For%20My%20Thoughts/Komorka%20Zaida.md)
+- [Przypadek Kuby Rozpruwacza](/scenariusze/a-penny-for-my-thoughts/przypadek-kuby-rozpruwacza)
+- [Komórka Zaida](/scenariusze/a-penny-for-my-thoughts/komorka-zaida)
+- [Test](/scenariusze/a-penny-for-my-thoughts/test)
 <!-- SCENARIOS_END -->
