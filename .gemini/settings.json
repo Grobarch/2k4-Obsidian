@@ -1,0 +1,15 @@
+{
+  "codebase_indexing": {
+    "excludes": [
+      "quartz/**",
+      "notes-source/**",
+      ".obsidian/**",
+      "vault/.obsidian/**",
+      "vault/Templates/**",
+      "vault/z-Nie publikuj/**",
+      "*.svg",
+      "*.jpg",
+      "*.png"
+    ]
+  }
+}
