@@ -64,7 +64,8 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
 │   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
-│   └── update-episode-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
+│   ├── update-episode-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
+│   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
 │   └── quartz.config.ts    ← konfiguracja (baseUrl, locale pl-PL)
 ├── .github/
@@ -159,6 +160,15 @@ Komenda `normalize` wykonuje 4 przejścia:
 2. **Computed values** — `system_pelna` z `SYSTEM_NAMES`, `tags` z `[type, system]`, `kampania_link`/`kampania` z path (epizody)
 3. **Defaults** — `draft: true` dla kampanii/systemów, `mg` dla epizodów
 4. **Ostrzeżenia** — brakujące required bez default
+
+### Git pre-commit hook
+
+Hook automatycznie uruchamia `normalize --apply` i `validate` przed każdym commitem dotyczącym `vault/` lub `scripts/`. Blokuje commit jeśli walidacja nie przejdzie.
+
+Instalacja (jednorazowo po klonie):
+```bash
+cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
 
 ## GitHub Pages
 
