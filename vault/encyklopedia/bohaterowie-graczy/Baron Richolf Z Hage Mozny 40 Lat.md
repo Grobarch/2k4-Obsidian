@@ -4,8 +4,6 @@ type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "dark-fantasy", "Wiedźmin", "wiedzmin"]
-  - dark-fantasy
-  - Wiedźmin
 ---
 
 # Baron Richolf z
