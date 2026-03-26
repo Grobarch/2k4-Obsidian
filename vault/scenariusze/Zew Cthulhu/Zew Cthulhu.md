@@ -8,5 +8,5 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Dziesięciu małych ludzi](/scenariusze/Zew%20Cthulhu/Dziesieciu%20Malych%20Ludzi.md)
+- [Dziesięciu małych ludzi](/scenariusze/zew-cthulhu/dziesieciu-malych-ludzi)
 <!-- SCENARIOS_END -->

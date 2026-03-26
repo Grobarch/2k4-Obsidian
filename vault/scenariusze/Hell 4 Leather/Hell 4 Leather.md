@@ -8,7 +8,7 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Człowiek z przestrzeloną twarzą](/scenariusze/Hell%204%20Leather/Czlowiek%20Z%20Przestrzelona%20Twarza.md)
-- [El Diablo](/scenariusze/Hell%204%20Leather/El%20Diablo.md)
-- [Upadek Corneliusa Maximusa](/scenariusze/Hell%204%20Leather/Upadek%20Corneliusa%20Maximusa.md)
+- [Człowiek z przestrzeloną twarzą](/scenariusze/hell-4-leather/czlowiek-z-przestrzelona-twarza)
+- [El Diablo](/scenariusze/hell-4-leather/el-diablo)
+- [Upadek Corneliusa Maximusa](/scenariusze/hell-4-leather/upadek-corneliusa-maximusa)
 <!-- SCENARIOS_END -->

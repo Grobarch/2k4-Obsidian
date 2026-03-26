@@ -53,8 +53,7 @@ actions:
 <!-- NPCS_START -->
 | # | Bohater niezależny |
 |---|--------------------|
-| 1 | [Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wężowy Czarownik ze Strażnicy Płaczu Naku-gadian w Krainach Cienia](/encyklopedia/bohaterowie-niezalezni/hebi-taishiro-czarnoksieznik-maho-tsukai-z-zielonym-krysztalem-wezowy-czarownik-ze-straznicy-placzu-naku-gadian-w-krainach-cienia) |
-| 2 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
+| 1 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
 <!-- NPCS_END -->
 
 ## Spis epizodow

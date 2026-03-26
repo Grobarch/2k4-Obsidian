@@ -64,7 +64,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
 │   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
-│   ├── update-episode-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
+│   ├── update-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
 │   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
 │   └── quartz.config.ts    ← konfiguracja (baseUrl, locale pl-PL)
@@ -107,10 +107,10 @@ otoczone markerami HTML:
 <!-- EPISODES_END -->
 ```
 
-Skrypt `scripts/update-episode-tables.mjs` skanuje pliki z `type: epizod`
+Skrypt `scripts/update-tables.mjs` skanuje pliki z `type: epizod`
 w frontmatter i regeneruje tabelki między markerami.
 
-Uruchamianie lokalne: `node scripts/update-episode-tables.mjs vault/systemy`
+Uruchamianie lokalne: `node scripts/update-tables.mjs vault/systemy`
 
 ## Skrypty vault
 
@@ -151,8 +151,9 @@ node scripts/vault-tools.mjs normalize --dir vault --apply
 # 3. Walidacja
 node scripts/vault-tools.mjs validate --dir vault
 
-# 4. Aktualizuj tabelki
-node scripts/update-episode-tables.mjs vault/systemy
+# 4. Aktualizuj tabelki (kampanie, systemy, scenariusze, postacie, lokacje, artefakty)
+node scripts/update-tables.mjs vault/systemy
+node scripts/update-tables.mjs vault/scenariusze
 ```
 
 Komenda `normalize` wykonuje 4 przejścia:
@@ -163,7 +164,7 @@ Komenda `normalize` wykonuje 4 przejścia:
 
 ### Git pre-commit hook
 
-Hook automatycznie uruchamia `normalize --apply` i `validate` przed każdym commitem dotyczącym `vault/` lub `scripts/`. Blokuje commit jeśli walidacja nie przejdzie.
+Hook automatycznie uruchamia `normalize --apply`, `update-episode-tables` (systemy + scenariusze) i `validate` przed każdym commitem dotyczącym `vault/` lub `scripts/`. Blokuje commit jeśli walidacja nie przejdzie.
 
 Instalacja (jednorazowo po klonie):
 ```bash
@@ -182,7 +183,7 @@ cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 2. `npm ci` w `quartz/`
 3. Kopiuje `vault/*` → `quartz/content/`
 4. `node scripts/vault-tools.mjs normalize --dir quartz/content --apply` ← normalizuje frontmatter
-5. `node scripts/update-episode-tables.mjs quartz/content/systemy` ← aktualizuje tabelki epizodów
+5. `node scripts/update-tables.mjs quartz/content/systemy` ← aktualizuje tabelki epizodów
 6. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
 7. `npx quartz build` → `quartz/public/`
 8. Deploy `quartz/public/` na GitHub Pages
@@ -230,7 +231,7 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 ## Proces aktualizacji wiki
 
 1. Edytuj pliki w `vault/`
-2. Opcjonalnie: `node scripts/update-episode-tables.mjs vault/systemy` (aktualizacja tabelek lokalnie)
+2. Opcjonalnie: `node scripts/update-tables.mjs vault/systemy` (aktualizacja tabelek lokalnie)
 3. `git add` + `git commit` + `git push`
 4. Uruchom workflow ręcznie w GitHub Actions
 

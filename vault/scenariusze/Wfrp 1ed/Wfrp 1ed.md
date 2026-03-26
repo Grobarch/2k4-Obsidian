@@ -8,6 +8,6 @@ draft: true
 ## Scenariusze
 
 <!-- SCENARIOS_START -->
-- [Szlakiem szaleństwa](/scenariusze/Wfrp%201ed/Szlakiem%20Szalenstwa.md)
-- [Obrazy Engela Rosensteina](/scenariusze/Wfrp%201ed/Obrazy%20Engela%20Rosensteina.md)
+- [Szlakiem szaleństwa](/scenariusze/wfrp-1ed/szlakiem-szalenstwa)
+- [Obrazy Engela Rosensteina](/scenariusze/wfrp-1ed/obrazy-engela-rosensteina)
 <!-- SCENARIOS_END -->
