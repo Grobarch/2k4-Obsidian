@@ -6,7 +6,4 @@ vault/.obsidian/workspace-mobile.json
 vault/.obsidian/plugins/*/main.js
 vault/.obsidian/plugins/*/styles.css
 vault/*.base
-.claude/*
-!.claude/commands
-.claude/commands/*
-!.claude/commands/*.md
+.claude/
