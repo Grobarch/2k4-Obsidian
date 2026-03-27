@@ -6,6 +6,7 @@ system_pelna: "Wampir: Mroczne Wieki"
 mg: Arkadiusz RYGIEL
 gatunek: dark-fantasy
 tags: [kampania, wampir, horror, dark-fantasy]
+draft: "true"
 ---
 
 # Diabeł z Łazareni

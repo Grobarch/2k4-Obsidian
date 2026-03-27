@@ -6,6 +6,7 @@ system_pelna: Gasnące Słońca 2ed
 mg: Arkadiusz RYGIEL
 gatunek: space-fantasy
 tags: [kampania, gasnace-slonca, space-fantasy]
+draft: "true"
 ---
 
 # Tajemnice zapomnianej technologii z Hortusa

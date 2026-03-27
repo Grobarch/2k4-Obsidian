@@ -3,9 +3,14 @@ title: Zły duch Oni Arach Dziecię Pająka - Stwór powstały z truchła pajęc
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
-kampania_link: ["/systemy/l5k/miecze-cnot-i-grzechow"]
-kampania: ["miecze-cnot-i-grzechow"]
-tags: [bohater-niezalezny, l5k, samurajski]
+kampania_link:
+  - /systemy/l5k/miecze-cnot-i-grzechow
+kampania:
+  - miecze-cnot-i-grzechow
+tags:
+  - bohater-niezalezny
+  - l5k
+  - samurajski
 ---
 
 # Zły duch Oni Arach Dziecię Pająka - Stwór powstały z truchła pajęczego boga Tkacza Upadłych Losów Atsui-unmei-o-tsumugu-ono

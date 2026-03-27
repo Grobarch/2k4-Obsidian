@@ -5,6 +5,7 @@ system: a-penny-for-my-thoughts
 wydawca: Evil Hat Productions
 gatunek: psychologiczny
 tags: [system, a-penny-for-my-thoughts, psychologiczny]
+draft: "true"
 ---
 
 # A Penny for My Thoughts

@@ -1,6 +1,9 @@
 quartz/node_modules/
 quartz/.quartz-cache/
 quartz/public/
-vault/.obsidian/
+vault/.obsidian/workspace.json
+vault/.obsidian/workspace-mobile.json
+vault/.obsidian/plugins/*/main.js
+vault/.obsidian/plugins/*/styles.css
 vault/*.base
 .claude/

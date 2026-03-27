@@ -5,6 +5,7 @@ system: dead-of-night
 wydawca: Steampower Publishing
 gatunek: horror
 tags: [system, dead-of-night, horror]
+draft: "true"
 ---
 
 # Dead of Night
