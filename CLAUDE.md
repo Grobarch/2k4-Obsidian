@@ -65,6 +65,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
 │   ├── update-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
+│   ├── watch-tables.mjs   ← tryb watch: auto-aktualizacja tabelek podczas edycji lokalnej
 │   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
 │   └── quartz.config.ts    ← konfiguracja (baseUrl, locale pl-PL)
@@ -111,6 +112,9 @@ Skrypt `scripts/update-tables.mjs` skanuje pliki z `type: epizod`
 w frontmatter i regeneruje tabelki między markerami.
 
 Uruchamianie lokalne: `node scripts/update-tables.mjs vault/systemy`
+
+Tryb watch (auto-aktualizacja podczas edycji w Obsidian):
+`node scripts/watch-tables.mjs` — obserwuje `vault/` i regeneruje tabelki przy każdej zmianie .md.
 
 ## Skrypty vault
 
