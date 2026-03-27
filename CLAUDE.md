@@ -16,9 +16,13 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── encyklopedia/
 │   │   ├── Encyklopedia.md     ← folder note (z przyciskiem tworzenia postaci)
 │   │   ├── bohaterowie-graczy/
+│   │   │   └── bohaterowie-graczy.md   ← folder note (draft:true)
 │   │   ├── bohaterowie-niezalezni/
+│   │   │   └── bohaterowie-niezalezni.md ← folder note (draft:true)
 │   │   ├── lokacje/
+│   │   │   └── lokacje.md      ← folder note (draft:true)
 │   │   └── artefakty/
+│   │       └── artefakty.md    ← folder note (draft:true)
 │   ├── scenariusze/        ← gotowe scenariusze i przygody per system
 │   │   ├── Scenariusze.md      ← folder note (indeks systemów)
 │   │   ├── A Penny For My Thoughts/
@@ -91,7 +95,9 @@ Hierarchia: `systemy/ → System/ → Kampania/ → Epizod XX.md`
 
 ### Ukrywanie folder notes w Quartz
 
-Folder notes (systemów, kampanii i sekcji scenariuszy) mają `draft: true` w frontmatter — Quartz ich nie renderuje. Są widoczne tylko lokalnie w Obsidian (do nawigacji po folderach). Strony indeksujące (np. `Scenariusze.md`) linkują bezpośrednio do zawartości, z pominięciem folder notes.
+Folder notes (systemów, kampanii, sekcji scenariuszy i podfolderów encyklopedii) mają `draft: true` w frontmatter — Quartz ich nie renderuje. Są widoczne tylko lokalnie w Obsidian (do nawigacji po folderach). Strony indeksujące (np. `Scenariusze.md`) linkują bezpośrednio do zawartości, z pominięciem folder notes.
+
+**Wyjątek:** `Encyklopedia.md` i `Scenariusze.md` NIE mają `draft: true` — są renderowane przez Quartz jako strony treści.
 
 ### Tabelki epizodów
 
@@ -307,7 +313,7 @@ Wymaga pluginów: **Templater** + **Meta Bind**.
 
 ### Działanie
 
-Przycisk `+ Nowa postać` w folder note kampanii lub `vault/encyklopedia/Encyklopedia.md`
+Przycisk `+ Nowa postać` / `+ Nowy BG` / `+ Nowy BN` w folder note kampanii, `vault/encyklopedia/Encyklopedia.md`, lub folder note podsekcji encyklopedii (`bohaterowie-graczy.md`, `bohaterowie-niezalezni.md`)
 uruchamia `templates/Utwórz Postać.md`. Formularz pyta kolejno o:
 - Imię (wymagane)
 - Typ: Bohater Gracza / Bohater Niezależny (wymagane)
