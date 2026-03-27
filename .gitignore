@@ -3,4 +3,7 @@ quartz/.quartz-cache/
 quartz/public/
 vault/.obsidian/
 vault/*.base
-.claude/
+.claude/*
+!.claude/commands
+.claude/commands/*
+!.claude/commands/*.md
