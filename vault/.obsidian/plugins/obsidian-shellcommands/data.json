@@ -4,7 +4,7 @@
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
-  "working_directory": "{{vault_path}}",
+  "working_directory": "",
   "default_shells": {},
   "environment_variable_path_augmentations": {},
   "show_installation_warnings": true,
@@ -24,13 +24,13 @@
   "max_visible_lines_in_shell_command_fields": false,
   "shell_commands": [
     {
-      "id": "cjqvvf0fw6",
+      "id": "97wfcikv42",
       "platform_specific_commands": {
         "default": "node update-tables.mjs"
       },
       "shells": {},
       "alias": "Update tables",
-      "icon": "lucide-list",
+      "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
