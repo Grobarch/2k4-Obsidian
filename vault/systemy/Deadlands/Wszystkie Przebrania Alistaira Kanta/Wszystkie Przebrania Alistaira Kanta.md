@@ -6,6 +6,7 @@ system_pelna: "Deadlands: Martwe Ziemie"
 mg: Arkadiusz RYGIEL
 gatunek: western
 tags: [kampania, deadlands, western, horror]
+draft: "true"
 ---
 
 # Wszystkie przebrania Alistaira Kanta

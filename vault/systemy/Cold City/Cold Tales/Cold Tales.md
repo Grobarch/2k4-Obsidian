@@ -6,6 +6,7 @@ system_pelna: Cold City
 mg: Arkadiusz RYGIEL
 gatunek: szpiegowski
 tags: [kampania, cold-city, szpiegowski, horror]
+draft: "true"
 ---
 
 # Cold Tales

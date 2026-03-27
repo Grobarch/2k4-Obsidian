@@ -6,6 +6,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, l5k, samurajski]
+draft: "true"
 ---
 
 # Groza, która zawsze powraca
@@ -52,7 +53,8 @@ actions:
 <!-- NPCS_START -->
 | # | Bohater niezależny |
 |---|--------------------|
-| 1 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
+| 1 | [Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu](/encyklopedia/bohaterowie-niezalezni/czlowiek-z-chmur-burzowa-chmura-ronin-dotkniety-przez-pania-slonce-amaterasu) |
+| 2 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
 <!-- NPCS_END -->
 
 ## Spis epizodow

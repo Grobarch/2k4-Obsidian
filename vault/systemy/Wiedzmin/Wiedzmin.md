@@ -5,6 +5,7 @@ system: wiedzmin
 wydawca: MAG / CD Projekt
 gatunek: dark fantasy
 tags: ["system", "Wiedźmin", "dark-fantasy", "wiedzmin"]
+draft: "true"
 ---
 
 # Wiedźmin: Gra Wyobraźni

@@ -5,6 +5,7 @@ system: hell-4-leather
 wydawca: Imagining Games
 gatunek: western, grindhouse
 tags: [system, hell-4-leather, western, grindhouse]
+draft: "true"
 ---
 
 # Hell 4 Leather
