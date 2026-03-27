@@ -31,9 +31,11 @@ Polska gra fabularna wydana przez Gramel, osadzona w oryginalnym uniwersum kosmi
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [Tajemnice zapomnianej technologii z Hortusa](/systemy/gasnace-slonca/tajemnice-z-hortusa) | Arkadiusz RYGIEL | 1 |
+| [[Gasnace Slonca/Tajemnice Z Hortusa/Tajemnice Z Hortusa\|Tajemnice zapomnianej technologii z Hortusa]] | Arkadiusz RYGIEL | 1 |
+<!-- CAMPAIGNS_END -->
 
 ## Wszystkie strony
 

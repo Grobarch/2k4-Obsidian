@@ -39,5 +39,5 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis\"](/systemy/gasnace-slonca/tajemnice-z-hortusa/epizod-01) | 2023-12-30 |
+| 1 | [[Tajemnice Z Hortusa/Epizod 01\|Epizod 1: \"Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis\"]] | 2023-12-30 |
 <!-- EPISODES_END -->

@@ -89,15 +89,15 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-01) | 2023-02-17 |
-| 2 | [Epizod 2: \"Pierwsze ostrze to Pycha Hokori...\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-02) | 2023-03-05 |
-| 3 | [Epizod 3 cz. 1: \"Drugie ostrze to Chciwość Don'yoku...\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-03-cz1) | 2023-03-26 |
-| 4 | [Epizod 3 cz. 2: \"Tajemnica długowieczności Świetlistego Kapłana...\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-03-cz2) | 2023-04-27 |
-| 5 | [Epizod 4 cz. 1: \"Trzecie ostrze to Nieczystość Fujunbutsu...\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz1) | 2023-05-22 |
-| 6 | [Epizod 4 cz. 2: \"Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz2) | 2023-06-30 |
-| 7 | [Epizod 4 cz. 3: \"Mroczny Książę ucieka do Jigoku\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz3) | 2023-07-20 |
-| 8 | [Epizod 5: \"Chciwa klinga szuka dla siebie sługi, nie pana\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-05) | 2023-08-11 |
-| 9 | [Epizod 6: \"Człowiek z Chmur sprzedany przez zabójców z Klanu Czarnej Ręki Kuroi-te\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-06) | 2023-09-30 |
-| 10 | [Epizod 7: \"Rozprawa z Księciem Cienia w Pajęczym Świecie\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-07) | 2023-10-17 |
-| 11 | [Epizod 8: \"Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze\"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-08) | 2023-11-07 |
+| 1 | [[Miecze Cnot I Grzechow/Epizod 01\|Epizod 1: \"Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame\"]] | 2023-02-17 |
+| 2 | [[Miecze Cnot I Grzechow/Epizod 02\|Epizod 2: \"Pierwsze ostrze to Pycha Hokori...\"]] | 2023-03-05 |
+| 3 | [[Miecze Cnot I Grzechow/Epizod 03 Cz1\|Epizod 3 cz. 1: \"Drugie ostrze to Chciwość Don'yoku...\"]] | 2023-03-26 |
+| 4 | [[Miecze Cnot I Grzechow/Epizod 03 Cz2\|Epizod 3 cz. 2: \"Tajemnica długowieczności Świetlistego Kapłana...\"]] | 2023-04-27 |
+| 5 | [[Miecze Cnot I Grzechow/Epizod 04 Cz1\|Epizod 4 cz. 1: \"Trzecie ostrze to Nieczystość Fujunbutsu...\"]] | 2023-05-22 |
+| 6 | [[Miecze Cnot I Grzechow/Epizod 04 Cz2\|Epizod 4 cz. 2: \"Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw\"]] | 2023-06-30 |
+| 7 | [[Miecze Cnot I Grzechow/Epizod 04 Cz3\|Epizod 4 cz. 3: \"Mroczny Książę ucieka do Jigoku\"]] | 2023-07-20 |
+| 8 | [[Miecze Cnot I Grzechow/Epizod 05\|Epizod 5: \"Chciwa klinga szuka dla siebie sługi, nie pana\"]] | 2023-08-11 |
+| 9 | [[Miecze Cnot I Grzechow/Epizod 06\|Epizod 6: \"Człowiek z Chmur sprzedany przez zabójców z Klanu Czarnej Ręki Kuroi-te\"]] | 2023-09-30 |
+| 10 | [[Miecze Cnot I Grzechow/Epizod 07\|Epizod 7: \"Rozprawa z Księciem Cienia w Pajęczym Świecie\"]] | 2023-10-17 |
+| 11 | [[Miecze Cnot I Grzechow/Epizod 08\|Epizod 8: \"Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze\"]] | 2023-11-07 |
 <!-- EPISODES_END -->

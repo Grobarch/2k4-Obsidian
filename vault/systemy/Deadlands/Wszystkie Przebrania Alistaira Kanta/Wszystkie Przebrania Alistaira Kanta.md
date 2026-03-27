@@ -75,14 +75,14 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Walizka z Heartville\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-01) | 2022-08-03 |
-| 2 | [Epizod 2: \"Tajemnicza przeszłość Pani Abigail Croft\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-02) | 2022-08-15 |
-| 3 | [Epizod 3: \"Ręka Czerwonego Szeryfa\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-03) | 2022-09-11 |
-| 4 | [Epizod 4: \"Klucznik z Krainy Wielu Drzwi\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-04) | 2022-10-12 |
-| 5 | [Epizod 5: \"Antoine Malo wypełza z grobu\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-05) | 2022-10-25 |
-| 6 | [Epizod 6: \"Figury Domu La Rue\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-06) | 2022-11-10 |
-| 7 | [Epizod 7: \"Długie szpony Barona Morin\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-07) | 2022-11-16 |
-| 8 | [Epizod 8: \"Porwanie Mistrza Bassarda\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-08) | 2022-11-28 |
-| 9 | [Epizod 9: \"Wędrówka do Drzewa Duchów\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-09) | 2022-12-13 |
-| 10 | [Epizod 10: \"Czerwobog, czyli potworne oblicze Walkelina La Rue\"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-10) | 2023-01-21 |
+| 1 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 01\|Epizod 1: \"Walizka z Heartville\"]] | 2022-08-03 |
+| 2 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 02\|Epizod 2: \"Tajemnicza przeszłość Pani Abigail Croft\"]] | 2022-08-15 |
+| 3 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 03\|Epizod 3: \"Ręka Czerwonego Szeryfa\"]] | 2022-09-11 |
+| 4 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 04\|Epizod 4: \"Klucznik z Krainy Wielu Drzwi\"]] | 2022-10-12 |
+| 5 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 05\|Epizod 5: \"Antoine Malo wypełza z grobu\"]] | 2022-10-25 |
+| 6 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 06\|Epizod 6: \"Figury Domu La Rue\"]] | 2022-11-10 |
+| 7 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 07\|Epizod 7: \"Długie szpony Barona Morin\"]] | 2022-11-16 |
+| 8 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 08\|Epizod 8: \"Porwanie Mistrza Bassarda\"]] | 2022-11-28 |
+| 9 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 09\|Epizod 9: \"Wędrówka do Drzewa Duchów\"]] | 2022-12-13 |
+| 10 | [[Wszystkie Przebrania Alistaira Kanta/Epizod 10\|Epizod 10: \"Czerwobog, czyli potworne oblicze Walkelina La Rue\"]] | 2023-01-21 |
 <!-- EPISODES_END -->

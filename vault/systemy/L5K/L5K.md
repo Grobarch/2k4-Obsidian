@@ -34,12 +34,14 @@ Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [Groza, która zawsze powraca](/systemy/l5k/groza-ktora-zawsze-powraca) | Arkadiusz RYGIEL | 1 |
-| [Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion](/systemy/l5k/miecze-cnot-i-grzechow) | Arkadiusz RYGIEL | 11 |
-| [Prawidła zdrady](/systemy/l5k/prawidla-zdrady) | Arkadiusz RYGIEL | 2 |
-| [Trylogia Klanu Lwa](/systemy/l5k/trylogia-klanu-lwa) | Arkadiusz RYGIEL | 2 |
+| [[L5K/Groza Ktora Zawsze Powraca/Groza Ktora Zawsze Powraca\|Groza, która zawsze powraca]] | Arkadiusz RYGIEL | 1 |
+| [[L5K/Miecze Cnot I Grzechow/Miecze Cnot I Grzechow\|Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion]] | Arkadiusz RYGIEL | 11 |
+| [[L5K/Prawidla Zdrady/Prawidla Zdrady\|Prawidła zdrady]] | Arkadiusz RYGIEL | 2 |
+| [[L5K/Trylogia Klanu Lwa/Trylogia Klanu Lwa\|Trylogia Klanu Lwa]] | Arkadiusz RYGIEL | 2 |
+<!-- CAMPAIGNS_END -->
 
 ## Scenariusze samodzielne
 

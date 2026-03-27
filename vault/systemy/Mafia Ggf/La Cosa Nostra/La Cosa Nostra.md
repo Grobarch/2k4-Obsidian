@@ -39,9 +39,9 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Makaroniarskie porachunki\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-01) | 2011-01-28 |
-| 2 | [Epizod 2: \"Nasza sprawa\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-02) | 2011-01-28 |
-| 3 | [Epizod 3: \"Transport w akompaniamencie wystrzałów\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-03) | 2011-01-28 |
-| 4 | [Epizod 4: \"Włoska robota\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-04) | 2011-01-28 |
-| 5 | [Epizod 5: \"Życie miasta\"](/systemy/mafia-ggf/la-cosa-nostra/epizod-05) | 2011-01-28 |
+| 1 | [[La Cosa Nostra/Epizod 01\|Epizod 1: \"Makaroniarskie porachunki\"]] | 2011-01-28 |
+| 2 | [[La Cosa Nostra/Epizod 02\|Epizod 2: \"Nasza sprawa\"]] | 2011-01-28 |
+| 3 | [[La Cosa Nostra/Epizod 03\|Epizod 3: \"Transport w akompaniamencie wystrzałów\"]] | 2011-01-28 |
+| 4 | [[La Cosa Nostra/Epizod 04\|Epizod 4: \"Włoska robota\"]] | 2011-01-28 |
+| 5 | [[La Cosa Nostra/Epizod 05\|Epizod 5: \"Życie miasta\"]] | 2011-01-28 |
 <!-- EPISODES_END -->

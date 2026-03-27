@@ -75,6 +75,6 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 01: \"Test1\"](/systemy/7th-sea/test/epizod-01) | ??? |
-| 2 | [Epizod 02: \"duppa bladda\"](/systemy/7th-sea/test/epizod-02) | ??? |
+| 1 | [[Test/Epizod 01\|Epizod 01: \"Test1\"]] | ??? |
+| 2 | [[Test/Epizod 02\|Epizod 02: \"duppa bladda\"]] | ??? |
 <!-- EPISODES_END -->

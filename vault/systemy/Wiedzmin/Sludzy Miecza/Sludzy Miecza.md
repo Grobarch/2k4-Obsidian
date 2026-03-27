@@ -39,8 +39,8 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Ostrze ideologii i worek elfich głów\"](/systemy/wiedzmin/sludzy-miecza/epizod-01) | 2011-01-22 |
-| 2 | [Epizod 2: \"Nowy włodarz\"](/systemy/wiedzmin/sludzy-miecza/epizod-02) | 2011-01-22 |
-| 3 | [Epizod 3: \"Masakra w Maden\"](/systemy/wiedzmin/sludzy-miecza/epizod-03) | 2011-01-22 |
-| 4 | [Epizod 4: \"Przywódca Scoia'tael\"](/systemy/wiedzmin/sludzy-miecza/epizod-04) | 2011-01-22 |
+| 1 | [[Sludzy Miecza/Epizod 01\|Epizod 1: \"Ostrze ideologii i worek elfich głów\"]] | 2011-01-22 |
+| 2 | [[Sludzy Miecza/Epizod 02\|Epizod 2: \"Nowy włodarz\"]] | 2011-01-22 |
+| 3 | [[Sludzy Miecza/Epizod 03\|Epizod 3: \"Masakra w Maden\"]] | 2011-01-22 |
+| 4 | [[Sludzy Miecza/Epizod 04\|Epizod 4: \"Przywódca Scoia'tael\"]] | 2011-01-22 |
 <!-- EPISODES_END -->

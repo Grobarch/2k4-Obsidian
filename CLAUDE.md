@@ -104,11 +104,31 @@ otoczone markerami HTML:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: "..."](/systemy/cold-city/cold-tales/epizod-01) | 2010-10-29 |
+| 1 | [[Cold Tales/Epizod 01\|Epizod 1: "..."]] | 2010-10-29 |
 <!-- EPISODES_END -->
 ```
 
-Skrypt `scripts/update-tables.mjs` skanuje pliki z `type: epizod`
+Format linku: wikilink `[[CampaignFolder/EpisodeName\|Tytuł]]` — działa w Obsidian
+niezależnie od wielkości liter i spacji w nazwie pliku. Folder notes mają
+`draft: true`, więc Quartz ich nie renderuje (format linku nie wpływa na web).
+
+### Tabelki kampanii
+
+Folder notes systemów zawierają automatycznie generowane tabelki kampanii:
+
+```markdown
+## Kampanie
+
+<!-- CAMPAIGNS_START -->
+| Kampania | MG | Epizody |
+|----------|-------|---------|
+| [[L5K/Miecze Cnot I Grzechow/Miecze Cnot I Grzechow\|Tytuł kampanii]] | MG | 11 |
+<!-- CAMPAIGNS_END -->
+```
+
+Format linku: wikilink `[[SystemFolder/CampaignFolder/CampaignName\|Tytuł]]`.
+
+Skrypt `scripts/update-tables.mjs` skanuje pliki z `type: epizod` i `type: kampania`
 w frontmatter i regeneruje tabelki między markerami.
 
 Uruchamianie lokalne: `node scripts/update-tables.mjs vault/systemy`

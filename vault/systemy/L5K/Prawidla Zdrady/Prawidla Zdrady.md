@@ -54,6 +54,6 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 2: \"Więzień urodzenia\"](/systemy/l5k/prawidla-zdrady/epizod-02) | 2011-01-15 |
-| 2 | [Epizod 3: \"Echo zemsty\"](/systemy/l5k/prawidla-zdrady/epizod-03) | 2011-01-15 |
+| 1 | [[Prawidla Zdrady/Epizod 02\|Epizod 2: \"Więzień urodzenia\"]] | 2011-01-15 |
+| 2 | [[Prawidla Zdrady/Epizod 03\|Epizod 3: \"Echo zemsty\"]] | 2011-01-15 |
 <!-- EPISODES_END -->

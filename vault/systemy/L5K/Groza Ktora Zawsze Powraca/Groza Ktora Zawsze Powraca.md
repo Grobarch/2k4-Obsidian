@@ -63,5 +63,5 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Szaleństwo Mistrza Okamury\"](/systemy/l5k/groza-ktora-zawsze-powraca/epizod-01) | 2022-12-25 |
+| 1 | [[Groza Ktora Zawsze Powraca/Epizod 01\|Epizod 1: \"Szaleństwo Mistrza Okamury\"]] | 2022-12-25 |
 <!-- EPISODES_END -->

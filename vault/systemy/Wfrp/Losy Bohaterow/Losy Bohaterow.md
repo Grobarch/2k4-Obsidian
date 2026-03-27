@@ -39,7 +39,7 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Ogniste organy z Karak-Din\"](/systemy/wfrp/losy-bohaterow/epizod-01) | 2022-06-19 |
-| 2 | [Epizod 2: \"Szata czyniąca obłęd\"](/systemy/wfrp/losy-bohaterow/epizod-02) | 2022-07-23 |
-| 3 | [Epizod 3: \"Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem\"](/systemy/wfrp/losy-bohaterow/epizod-03) | 2022-09-25 |
+| 1 | [[Losy Bohaterow/Epizod 01\|Epizod 1: \"Ogniste organy z Karak-Din\"]] | 2022-06-19 |
+| 2 | [[Losy Bohaterow/Epizod 02\|Epizod 2: \"Szata czyniąca obłęd\"]] | 2022-07-23 |
+| 3 | [[Losy Bohaterow/Epizod 03\|Epizod 3: \"Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem\"]] | 2022-09-25 |
 <!-- EPISODES_END -->

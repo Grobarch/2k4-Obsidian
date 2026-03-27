@@ -31,9 +31,11 @@ Polska gra fabularna wydana przez Portal, o świecie zorganizowanej przestępczo
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [La Cosa Nostra](/systemy/mafia-ggf/la-cosa-nostra) | Arkadiusz RYGIEL | 5 |
+| [[Mafia Ggf/La Cosa Nostra/La Cosa Nostra\|La Cosa Nostra]] | Arkadiusz RYGIEL | 5 |
+<!-- CAMPAIGNS_END -->
 
 ## Wszystkie strony
 

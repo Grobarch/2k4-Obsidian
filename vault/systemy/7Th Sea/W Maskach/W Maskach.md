@@ -39,9 +39,9 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Zaślubiny ze śmiercią\"](/systemy/7th-sea/w-maskach/epizod-01) | 2010-11-18 |
-| 2 | [Epizod 2: \"Ucieczka z Altamiry\"](/systemy/7th-sea/w-maskach/epizod-02) | 2010-11-20 |
-| 3 | [Epizod 3: \"Tajna służba\"](/systemy/7th-sea/w-maskach/epizod-03) | 2010-11-23 |
+| 1 | [[W Maskach/Epizod 01\|Epizod 1: \"Zaślubiny ze śmiercią\"]] | 2010-11-18 |
+| 2 | [[W Maskach/Epizod 02\|Epizod 2: \"Ucieczka z Altamiry\"]] | 2010-11-20 |
+| 3 | [[W Maskach/Epizod 03\|Epizod 3: \"Tajna służba\"]] | 2010-11-23 |
 <!-- EPISODES_END -->
 
 

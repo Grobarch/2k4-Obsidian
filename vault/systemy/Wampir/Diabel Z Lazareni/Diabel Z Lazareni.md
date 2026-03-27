@@ -39,8 +39,8 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Syn\"](/systemy/wampir/diabel-z-lazareni/epizod-01) | 2011-01-17 |
-| 2 | [Epizod 2: \"Polowanie\"](/systemy/wampir/diabel-z-lazareni/epizod-02) | 2011-01-17 |
-| 3 | [Epizod 3: \"Intrygi\"](/systemy/wampir/diabel-z-lazareni/epizod-03) | 2011-01-18 |
-| 4 | [Epizod 4: \"Zdrada\"](/systemy/wampir/diabel-z-lazareni/epizod-04) | 2011-01-18 |
+| 1 | [[Diabel Z Lazareni/Epizod 01\|Epizod 1: \"Syn\"]] | 2011-01-17 |
+| 2 | [[Diabel Z Lazareni/Epizod 02\|Epizod 2: \"Polowanie\"]] | 2011-01-17 |
+| 3 | [[Diabel Z Lazareni/Epizod 03\|Epizod 3: \"Intrygi\"]] | 2011-01-18 |
+| 4 | [[Diabel Z Lazareni/Epizod 04\|Epizod 4: \"Zdrada\"]] | 2011-01-18 |
 <!-- EPISODES_END -->

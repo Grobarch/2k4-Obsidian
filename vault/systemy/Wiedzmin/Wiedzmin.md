@@ -31,9 +31,11 @@ Polska gra fabularna osadzona w uniwersum Wiedźmina stworzonego przez Andrzeja 
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [Słudzy miecza i brzęczących monet](/systemy/wiedzmin/sludzy-miecza) | Arkadiusz RYGIEL | 4 |
+| [[Wiedzmin/Sludzy Miecza/Sludzy Miecza\|Słudzy miecza i brzęczących monet]] | Arkadiusz RYGIEL | 4 |
+<!-- CAMPAIGNS_END -->
 
 ## Wszystkie strony
 

@@ -9,8 +9,7 @@ tags: [bohater-gracza, wfrp, dark-fantasy]
 
 # Dietrich Launt
 
-![Portret Dietrich Launt](placeholder.jpg)
-
+![[zbroja.jpeg]]
 
 ## Statystyki
 

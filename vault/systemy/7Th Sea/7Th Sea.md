@@ -31,10 +31,12 @@ Gra fabularna osadzona w świecie inspirowanym Europą XVII wieku, pełnym pirat
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [W maskach](/systemy/7th-sea/w-maskach) | Arkadiusz RYGIEL | 3 |
-| [Test](/systemy/7th-sea/test) | Krzyś | 0 |
+| [[7Th Sea/Test/Test\|Test]] | Krzyś | 2 |
+| [[7Th Sea/W Maskach/W Maskach\|W maskach]] | Arkadiusz RYGIEL | 3 |
+<!-- CAMPAIGNS_END -->
 
 
 ## Wszystkie strony

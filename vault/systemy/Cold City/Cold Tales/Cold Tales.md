@@ -66,12 +66,12 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Kryptonim przybysz\"](/systemy/cold-city/cold-tales/epizod-01) | 2010-10-29 |
-| 2 | [Epizod 2: \"Kryptonim pajęczyna\"](/systemy/cold-city/cold-tales/epizod-02) | 2011-03-04 |
-| 3 | [Epizod 3: \"Kryptonim esencja\"](/systemy/cold-city/cold-tales/epizod-03) | 2011-04-03 |
-| 4 | [Epizod 4: \"Kryptonim cthulhukopf\"](/systemy/cold-city/cold-tales/epizod-04) | 2011-04-08 |
-| 5 | [Epizod 5: \"Kryptonim władcy marionetek\"](/systemy/cold-city/cold-tales/epizod-05) | 2011-04-17 |
-| 6 | [Epizod 6: \"Kryptonim strefa 17\"](/systemy/cold-city/cold-tales/epizod-06) | 2011-04-22 |
-| 7 | [Epizod 7: \"Kryptonim szklarnia\"](/systemy/cold-city/cold-tales/epizod-07) | 2011-06-04 |
-| 8 | [Epizod 8: \"Kryptonim światła\"](/systemy/cold-city/cold-tales/epizod-08) | 2011-07-24 |
+| 1 | [[Cold Tales/Epizod 01\|Epizod 1: \"Kryptonim przybysz\"]] | 2010-10-29 |
+| 2 | [[Cold Tales/Epizod 02\|Epizod 2: \"Kryptonim pajęczyna\"]] | 2011-03-04 |
+| 3 | [[Cold Tales/Epizod 03\|Epizod 3: \"Kryptonim esencja\"]] | 2011-04-03 |
+| 4 | [[Cold Tales/Epizod 04\|Epizod 4: \"Kryptonim cthulhukopf\"]] | 2011-04-08 |
+| 5 | [[Cold Tales/Epizod 05\|Epizod 5: \"Kryptonim władcy marionetek\"]] | 2011-04-17 |
+| 6 | [[Cold Tales/Epizod 06\|Epizod 6: \"Kryptonim strefa 17\"]] | 2011-04-22 |
+| 7 | [[Cold Tales/Epizod 07\|Epizod 7: \"Kryptonim szklarnia\"]] | 2011-06-04 |
+| 8 | [[Cold Tales/Epizod 08\|Epizod 8: \"Kryptonim światła\"]] | 2011-07-24 |
 <!-- EPISODES_END -->

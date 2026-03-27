@@ -39,6 +39,6 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Białe kłamstwa\"](/systemy/l5k/trylogia-klanu-lwa/epizod-01) | 2010-11-15 |
-| 2 | [Epizod 2: \"Miecz nienawiści\"](/systemy/l5k/trylogia-klanu-lwa/epizod-02) | 2011-02-13 |
+| 1 | [[Trylogia Klanu Lwa/Epizod 01\|Epizod 1: \"Białe kłamstwa\"]] | 2010-11-15 |
+| 2 | [[Trylogia Klanu Lwa/Epizod 02\|Epizod 2: \"Miecz nienawiści\"]] | 2011-02-13 |
 <!-- EPISODES_END -->

@@ -10,7 +10,7 @@ tags: [bohater-niezalezny, l5k, samurajski]
 
 # Goblin Bakemno
 
-![Portret Goblin Bakemno](placeholder.jpg)
+![[Pasted image 20260327124654.png]]
 
 
 ## Statystyki

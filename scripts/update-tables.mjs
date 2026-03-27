@@ -33,6 +33,7 @@ const MARKERS = {
   artifacts: { start: "<!-- ARTIFACTS_START -->",   end: "<!-- ARTIFACTS_END -->" },
   scenarios: { start: "<!-- SCENARIOS_START -->",   end: "<!-- SCENARIOS_END -->" },
   systems:   { start: "<!-- SYSTEMS_START -->",     end: "<!-- SYSTEMS_END -->" },
+  campaigns: { start: "<!-- CAMPAIGNS_START -->",   end: "<!-- CAMPAIGNS_END -->" },
 };
 
 const TYPE_MAP = {
@@ -68,11 +69,13 @@ function buildEncyklopediaLink(filePath, vaultRoot) {
 }
 
 /**
- * Buduje ścieżkę linku do epizodu.
+ * Buduje target wikilink do epizodu (unikalny w kontekście vault).
+ * Format: "CampaignFolderName/EpisodeName" — Obsidian rozwiązuje po ścieżce.
  */
-function buildEpisodeLink(episodePath, systemyPath) {
-  const rel = relative(systemyPath, episodePath).replace(/\\/g, "/");
-  return `/systemy/${slugify(rel)}`;
+function buildEpisodeWikilink(episodePath) {
+  const episodeName = basename(episodePath, ".md");
+  const campaignFolder = basename(dirname(episodePath));
+  return `${campaignFolder}/${episodeName}`;
 }
 
 /**
@@ -209,17 +212,19 @@ function sortByTitle(entries) {
 }
 
 /**
- * Generuje tabelkę epizodów.
+ * Generuje tabelkę epizodów z wikilinkami (Obsidian-compatible).
+ * Wikilinki: [[CampaignFolder/EpisodeName\|Tytuł]] — działają w Obsidian
+ * niezależnie od wielkości liter i spacji w nazwie pliku.
  */
-function generateEpisodesTable(episodes, systemyPath) {
+function generateEpisodesTable(episodes) {
   const rows = [`| # | Tytuł | Data |`, `|---|-------|------|`];
   for (let i = 0; i < episodes.length; i++) {
     const ep = episodes[i];
     const title = ep.fm.title || basename(ep.name, ".md");
     const safeTitle = title.replace(/\|/g, "\\|");
-    const link = buildEpisodeLink(ep.filePath, systemyPath);
+    const wikiTarget = buildEpisodeWikilink(ep.filePath);
     const data = ep.fm.data || "";
-    rows.push(`| ${i + 1} | [${safeTitle}](${link}) | ${data} |`);
+    rows.push(`| ${i + 1} | [[${wikiTarget}\\|${safeTitle}]] | ${data} |`);
   }
   return rows.join("\n");
 }
@@ -281,6 +286,69 @@ function findMatchingEntries(encIndex, campaignSlug, category) {
     }
   }
   return results;
+}
+
+/**
+ * Generuje tabelkę kampanii dla system folder note z wikilinkami.
+ * Format wiersza: | [[SystemName/CampaignName/CampaignName\|title]] | mg | episodeCount |
+ * Wikilinki działają w Obsidian niezależnie od wielkości liter i spacji.
+ */
+async function generateCampaignsTable(systemFolderPath) {
+  const systemFolderName = basename(systemFolderPath);
+  const rows = [`| Kampania | MG | Epizody |`, `|----------|-------|---------|`];
+  let entries;
+  try {
+    entries = await readdir(systemFolderPath, { withFileTypes: true });
+  } catch {
+    return null;
+  }
+
+  const campaigns = [];
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const campaignFolderName = entry.name;
+    const folderNotePath = join(systemFolderPath, campaignFolderName, `${campaignFolderName}.md`);
+    let content;
+    try {
+      content = await readFile(folderNotePath, "utf-8");
+    } catch {
+      continue;
+    }
+    const fm = parseFrontmatter(content);
+    if (fm.type !== "kampania") continue;
+
+    const title = fm.title || campaignFolderName;
+    const mg = fm.mg || "";
+
+    // Zlicz epizody w folderze kampanii
+    let episodeCount = 0;
+    try {
+      const episodeEntries = await readdir(join(systemFolderPath, campaignFolderName));
+      for (const name of episodeEntries) {
+        if (!name.endsWith(".md") || name === `${campaignFolderName}.md`) continue;
+        const epContent = await readFile(
+          join(systemFolderPath, campaignFolderName, name), "utf-8"
+        );
+        const epFm = parseFrontmatter(epContent);
+        if (epFm.type === "epizod") episodeCount++;
+      }
+    } catch {
+      // brak dostępu do folderu — pomijamy
+    }
+
+    // Wikilink: [[SystemName/CampaignName/CampaignName|title]]
+    const wikiTarget = `${systemFolderName}/${campaignFolderName}/${campaignFolderName}`;
+    campaigns.push({ title, mg, episodeCount, wikiTarget });
+  }
+
+  // Sortuj po tytule
+  campaigns.sort((a, b) => a.title.localeCompare(b.title, "pl"));
+
+  for (const c of campaigns) {
+    const safeTitle = c.title.replace(/\|/g, "\\|");
+    rows.push(`| [[${c.wikiTarget}\\|${safeTitle}]] | ${c.mg} | ${c.episodeCount} |`);
+  }
+  return rows.join("\n");
 }
 
 /**
@@ -373,6 +441,19 @@ async function main() {
 
     console.log(`\n  Kampania: ${campaignSlug} (${notePath})`);
 
+    // --- Kampanie (dla system folder notes) ---
+    if (content.includes(MARKERS.campaigns.start)) {
+      const table = await generateCampaignsTable(dir);
+      if (table) {
+        const result = replaceMarkerContent(content, MARKERS.campaigns.start, MARKERS.campaigns.end, table);
+        if (result && result !== content) {
+          content = result;
+          changed = true;
+          console.log(`    [campaigns] zaktualizowano tabelkę kampanii`);
+        }
+      }
+    }
+
     // --- Scenariusze ---
     if (content.includes(MARKERS.scenarios.start)) {
       const scenarios = await findScenariosInDir(dir, noteBasename);
@@ -393,7 +474,7 @@ async function main() {
       const episodes = await findEpisodesInDir(dir, noteBasename);
       const sorted = sortEpisodes(episodes);
       if (sorted.length > 0) {
-        const table = generateEpisodesTable(sorted, systemyDir);
+        const table = generateEpisodesTable(sorted);
         const result = replaceMarkerContent(content, MARKERS.episodes.start, MARKERS.episodes.end, table);
         if (result && result !== content) {
           content = result;

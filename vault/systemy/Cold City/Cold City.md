@@ -31,9 +31,11 @@ Gra fabularna osadzona w podzielonym Berlinie roku 1950, gdzie międzynarodowa g
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [Cold Tales](/systemy/cold-city/cold-tales) | Arkadiusz RYGIEL | 8 |
+| [[Cold City/Cold Tales/Cold Tales\|Cold Tales]] | Arkadiusz RYGIEL | 8 |
+<!-- CAMPAIGNS_END -->
 
 ## Wszystkie strony
 

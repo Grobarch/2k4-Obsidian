@@ -31,10 +31,12 @@ Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej
 
 ## Kampanie
 
+<!-- CAMPAIGNS_START -->
 | Kampania | MG | Epizody |
 |----------|-------|---------|
-| [Listy z Praag](/systemy/wfrp/listy-z-praag) | Arkadiusz RYGIEL | 4 |
-| [Losy bohaterów przez żarna czasu ścierane](/systemy/wfrp/losy-bohaterow) | Arkadiusz RYGIEL | 3 |
+| [[Wfrp/Listy Z Praag/Listy Z Praag\|Listy z Praag]] | Arkadiusz RYGIEL | 4 |
+| [[Wfrp/Losy Bohaterow/Losy Bohaterow\|Losy bohaterów przez żarna czasu ścierane]] | Arkadiusz RYGIEL | 3 |
+<!-- CAMPAIGNS_END -->
 
 ## Scenariusze samodzielne
 

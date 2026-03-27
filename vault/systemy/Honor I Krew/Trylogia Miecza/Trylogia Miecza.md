@@ -39,7 +39,7 @@ actions:
 <!-- EPISODES_START -->
 | # | Tytuł | Data |
 |---|-------|------|
-| 1 | [Epizod 1: \"Miecz mordu\"](/systemy/honor-i-krew/trylogia-miecza/epizod-01) | 2011-08-09 |
-| 2 | [Epizod 2: \"Kiedy przemówią miecze\"](/systemy/honor-i-krew/trylogia-miecza/epizod-02) | 2011-09-30 |
-| 3 | [Epizod 3: \"Miecz, który całuje raz\"](/systemy/honor-i-krew/trylogia-miecza/epizod-03) | 2011-11-30 |
+| 1 | [[Trylogia Miecza/Epizod 01\|Epizod 1: \"Miecz mordu\"]] | 2011-08-09 |
+| 2 | [[Trylogia Miecza/Epizod 02\|Epizod 2: \"Kiedy przemówią miecze\"]] | 2011-09-30 |
+| 3 | [[Trylogia Miecza/Epizod 03\|Epizod 3: \"Miecz, który całuje raz\"]] | 2011-11-30 |
 <!-- EPISODES_END -->
