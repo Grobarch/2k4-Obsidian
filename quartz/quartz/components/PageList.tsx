@@ -6,6 +6,11 @@ import { GlobalConfiguration } from "../cfg"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
+export type MetaField = {
+  field: string
+  label?: string
+}
+
 export function byDateAndAlphabetical(cfg: GlobalConfiguration): SortFn {
   return (f1, f2) => {
     // Sort by date/alphabetical
@@ -55,9 +60,10 @@ export function byDateAndAlphabeticalFolderFirst(cfg: GlobalConfiguration): Sort
 type Props = {
   limit?: number
   sort?: SortFn
+  metaFields?: MetaField[]
 } & QuartzComponentProps
 
-export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort }: Props) => {
+export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort, metaFields }: Props) => {
   const sorter = sort ?? byDateAndAlphabeticalFolderFirst(cfg)
   let list = allFiles.sort(sorter)
   if (limit) {
@@ -82,6 +88,21 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                     {title}
                   </a>
                 </h3>
+                {metaFields && metaFields.length > 0 && (
+                  <div class="section-meta">
+                    {metaFields.flatMap(({ field, label }) => {
+                      const value = (page.frontmatter as Record<string, unknown>)?.[field]
+                      if (!value) return []
+                      const values = Array.isArray(value) ? value.map(String) : [String(value)]
+                      return values.map((v) => (
+                        <span class={`meta-badge meta-badge-${field}`}>
+                          {label && <span class="meta-label">{label}: </span>}
+                          {v}
+                        </span>
+                      ))
+                    })}
+                  </div>
+                )}
               </div>
               <ul class="tags">
                 {tags.map((tag) => (

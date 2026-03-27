@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 import style from "../styles/listPage.scss"
-import { PageList, SortFn } from "../PageList"
+import { MetaField, PageList, SortFn } from "../PageList"
 import { Root } from "hast"
 import { htmlToJsx } from "../../util/jsx"
 import { i18n } from "../../i18n"
@@ -22,6 +22,31 @@ interface FolderContentOptions {
 const defaultOptions: FolderContentOptions = {
   showFolderCount: true,
   showSubfolders: true,
+}
+
+function getSectionMetaFields(slug: string | undefined): MetaField[] {
+  if (!slug) return []
+  if (slug.startsWith("encyklopedia")) {
+    return [
+      { field: "type" },
+      { field: "system_pelna", label: "System" },
+      { field: "kampania" },
+      { field: "gracz", label: "Gracz" },
+    ]
+  }
+  if (slug.startsWith("systemy")) {
+    return [
+      { field: "gatunek", label: "Gatunek" },
+      { field: "wydawca", label: "Wydawca" },
+    ]
+  }
+  if (slug.startsWith("scenariusze")) {
+    return [
+      { field: "system", label: "System" },
+      { field: "data", label: "Data" },
+    ]
+  }
+  return []
 }
 
 export default ((opts?: Partial<FolderContentOptions>) => {
@@ -90,10 +115,12 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         .filter((page) => page !== undefined) ?? []
     const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
     const classes = cssClasses.join(" ")
+    const metaFields = getSectionMetaFields(fileData.slug)
     const listProps = {
       ...props,
       sort: options.sort,
       allFiles: allPagesInFolder,
+      metaFields,
     }
 
     const content = (

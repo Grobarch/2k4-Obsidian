@@ -195,6 +195,17 @@ Instalacja (jednorazowo po klonie):
 cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
+## Widoki sekcji (Quartz)
+
+Strony folderów mają własne widoki z metadanymi frontmatter (RPG-65).
+Implementacja w `quartz/quartz/components/pages/FolderContent.tsx` +
+`quartz/quartz/components/PageList.tsx`.
+
+Metadane wyświetlane per sekcja (badge'y pod tytułem):
+- `encyklopedia/*` → `type`, `system_pelna`, `kampania`, `gracz`
+- `systemy/*` → `gatunek`, `wydawca`
+- `scenariusze/*` → `system`, `data`
+
 ## GitHub Pages
 
 - URL: https://grobarch.github.io/2k4-Obsidian

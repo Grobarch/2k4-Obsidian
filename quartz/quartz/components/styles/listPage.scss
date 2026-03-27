@@ -30,6 +30,30 @@ li.section-li {
   }
 }
 
+.section-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.75em;
+  background-color: var(--highlight);
+  color: var(--secondary);
+  border: 1px solid var(--gray);
+}
+
+.meta-label {
+  font-weight: 600;
+  opacity: 0.7;
+}
+
 // modifications in popover context
 .popover .section {
   grid-template-columns: fit-content(8em) 1fr !important;
