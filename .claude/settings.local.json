@@ -6,7 +6,13 @@
       "Bash(grep \"kampania:\" \"F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/lokacje\"/*)",
       "Bash(wc -l F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/bohaterowie-graczy/*.md F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/lokacje/*.md F:/RPG/RPG_repo/2k4-Obsidian/vault/encyklopedia/artefakty/*.md)",
       "Bash(node scripts/vault-tools.mjs normalize --dir vault)",
-      "Bash(node scripts/validate-frontmatter.mjs vault)"
+      "Bash(node scripts/validate-frontmatter.mjs vault)",
+      "Bash(node scripts/build-bases.mjs \"vault/Systemy/7Th Sea/W Maskach Test\")",
+      "Bash(node scripts/build-bases.mjs vault)",
+      "Bash(rm -rf /tmp/ci-test)",
+      "Bash(mkdir -p /tmp/ci-test)",
+      "Bash(cp -r vault/* /tmp/ci-test/)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

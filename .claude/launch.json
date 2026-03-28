@@ -4,7 +4,8 @@
     {
       "name": "Quartz Dev Server",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["quartz", "build", "--serve", "-d", "../vault"],
+      "runtimeArgs": ["quartz", "build", "--serve", "--port", "8080"],
+      "cwd": "quartz",
       "port": 8080
     }
   ]

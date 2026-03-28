@@ -1,0 +1,13 @@
+filters:
+  and:
+    - kampania == ["cold-tales"]
+views:
+  - type: table
+    name: Table
+  - type: table
+    name: View
+    order:
+      - file.name
+      - file.basename
+      - file.ctime
+      - file.folder
