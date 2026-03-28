@@ -16,7 +16,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOEtxJm-P036DTUjNwFhDRMixxVeIjVCkcUKZfJrashf8gVtbjk2d3Bg7ACKfP0E3wdi1KyYEUBvhpgQ1E95KmBgqZB81fC-YHkWFk0UFy1dbtt0uEEjkaGFSfcqAo5z9fr6zqp9_LYihPT6kpyvGdupEokS1uYJO1g9ery9NwEXkmkzf6O7IEPlHF/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
 Ilustracja: Piotr RYGIELW piątek 30 września 2022 r. rozgrywaliśmy epizod 5 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Antoine Malo wypełza z grobu".
 
 **Deadlands: Martwe Ziemie**

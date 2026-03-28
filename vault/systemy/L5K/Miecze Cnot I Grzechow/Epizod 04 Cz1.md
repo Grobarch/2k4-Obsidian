@@ -18,7 +18,7 @@ tags: [epizod, l5k, samurajski]
 
 *Kampania do Legendy Pięciu Kręgów 1ed "Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion". Epizod 4 - Część 1 zatytułowany "Trzecie ostrze to Nieczystość Fujunbutsu, która sączy się z serca Cichego Skorpiona". Scenariusz rozgrywaliśmy w piątek 19 maja 2023 roku.*
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA8F9DKQ-x5c0zz7F1B4Om7TxSYD-odIuc3LF1GAUyI3id_g-7L3Tc8DPSOwio4j1Zy4qBjPMMCSNR6kE9xtpBMC-n3tIlHu5ZPASiagX6YZbUYrrN7U3BlC1EnYMNKLZcXMiideyjPay1nUIXURbL2Riz4bv_vcZr9JKTLP-Pw1JWkt1Lz9b0Nfbc/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 6 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 6 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
 
 *Ilustracja: Piotr RYGIEL*
 **Legenda Pięciu Kręgów 1ed**

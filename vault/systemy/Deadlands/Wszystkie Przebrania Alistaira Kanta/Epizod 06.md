@@ -16,7 +16,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpJStJBV87tP0nQtkcmzoDBAVOCAI9Z1T4Q_VrfBRq24hupj3EJy23oIS1MaOvYUokj2vbyBW0GeXiCdBuxkNffSamuMEd6RYBCdHJqfEdh_6l14aD_r6xKvpE5H5E8H1J7BR4z0Zj3YHI88EYE-me_LYgYbsNVJjiJGoiH1HpvgLE5npFAIEltMvI/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 6 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 6 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
 Ilustracja: Piotr RYGIEL
 
 W piątek 14 października 2022 r. rozgrywaliśmy epizod 6 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Figury Domu La Rue".

@@ -17,11 +17,11 @@ Arkadiusz RYGIEL
 
 Poniższy tekst, to drugi scenariusz filmowej sesji w konwencji horroru, osadzony w realiach Settingu Apokalipsa Spełniona: Czas Cthulhu autorstwa Pawła „Chimery" Cybuli.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCm-W475-mHj22fVbOKuqwMeJOUdz_a-Bhfr7w3r2UsXPidGNqvUZjDFcV0VZIXtEW1bQQCNTNOFxlq-zH-drhxyBMHju1GzC9Khr48Ia09ZVk0yv5E4ASWbpLKghUcBqzhsrBe74kTTOR/s320/Cia%25C5%2582o+upad%25C5%2582ego+boga+2+Piotr+Rygiel.png)
+![](Ciało upadłego boga 2 Piotr Rygiel.png)
 
 *Ilustracje: Piotr RYGIEL*
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9fP8foaGQr6ONa0FI7zxo9MpyasvSXgVUkLVBLquSem68TMvvzMSr4b4HabZgZUtKGZlwwAA5PhlC61Lrart5URtcS2fX00-391QZEX04JnVgU2ucpCT-pf3Prk4FQaFDPdeMcDONp3tz/s320/Cia%25C5%2582o+upad%25C5%2582ego+boga+1+Piotr+Rygiel.png)
+![](Ciało upadłego boga 1 Piotr Rygiel.png)
 
 **Konflikt. Świątynia na Czarnej Wodzie.**
 

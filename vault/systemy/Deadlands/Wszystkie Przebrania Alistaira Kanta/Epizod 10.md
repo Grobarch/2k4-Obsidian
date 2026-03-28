@@ -56,7 +56,7 @@ Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 Paweł PIOTROWSKI jako rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUE-avYxCvNnNlpEDuDQAvlRkqOJcaXPoL2cejYnl47NIFHXJ3xFLFU0lTSYccVzWbJ2oElAM-jASKWHZghfgHsooJwxcSHbVdgHFvtepXUmVcewL9j2wTH4R0_vX73jhCIhl1YaCfAjtWnh7fiRk1rKJfb5aGF2Hg0aZOqQ1GjQ3eqrqdAKyqu4We/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Oślizgły Zegarmistrz.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Oślizgły Zegarmistrz.jpg)
 
 W pozostałych rolach:
 

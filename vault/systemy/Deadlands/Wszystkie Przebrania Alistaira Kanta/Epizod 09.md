@@ -16,9 +16,8 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0Jdfd3RcvWuSbRKrFGCHgWHtbBg_ruha7iSWaqVNSi7nXU9SXD2coFGMk4_ue7PlnDZyqHKwGdorZMEZEquYkQwAWDe812JRjZABYAPCpvb_yfGgZODnhYTLuRN9TXfJMbRFtW0-jf3vhaNXV_CdpbG_twJuKbHQF2VvUCRMdsel5M2lZjDK1AM6/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 9 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 9 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
 
-[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY0Jdfd3RcvWuSbRKrFGCHgWHtbBg_ruha7iSWaqVNSi7nXU9SXD2coFGMk4_ue7PlnDZyqHKwGdorZMEZEquYkQwAWDe812JRjZABYAPCpvb_yfGgZODnhYTLuRN9TXfJMbRFtW0-jf3vhaNXV_CdpbG_twJuKbHQF2VvUCRMdsel5M2lZjDK1AM6/s700/Arkadiusz RYGIEL blog autorski - ilustracja nr 9 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
 *Ilustracja: Piotr RYGIEL*
 
 W piątek 10 listopada 2022 r. rozgrywaliśmy epizod 9 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Wędrówka do Drzewa Duchów".

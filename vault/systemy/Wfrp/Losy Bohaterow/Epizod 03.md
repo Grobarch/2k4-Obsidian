@@ -16,7 +16,7 @@ tags: [epizod, wfrp, dark-fantasy]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzY0JqvjX4EQ8LZHx0SHlL2FQcUO3I95XC48kZ1t82jUSfaR3k7sHSI7E3FQL8S-UQNDwX0-TdrYpFsUw23LjQ6wlYX_wfu92roNd5SXPDiJgml50iafgPzvkVcZJYJLTojcUQe4oh_43uwX3rSTQGdqKlE3JA4h1BfKvMxQkCy3vIrF7qTCpT2hRq/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Warhammer 2ed.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Warhammer 2ed.jpg)
 *Ilustracja: Piotr RYGIELW sobotę 10 września 2022 r. rozgrywaliśmy epizod 3 kampanii*
 „Losy bohaterów przez żarna czasu ścierane” zatytułowany: "Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem".
 

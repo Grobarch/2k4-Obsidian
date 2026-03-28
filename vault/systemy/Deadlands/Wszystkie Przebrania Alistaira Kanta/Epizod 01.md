@@ -16,7 +16,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSlQB6Vw31RcXnV3HwfNqFS5K1KGIH6sauAEtrEYFrHNcdk35R8yTtGXLN1COKrtjGBuDvW83B7mt_VpANaYlqgXowrgZEbT7cDGgPuiSwnaGp1_KJW59j2cY8Nimg85_fFNG8eX_0_n3X8p078XGRKfpDA-xfVoI2T18uvmgwrzHBETkgbPb8Ism_/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - western.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - western.jpg)
 *Ilustracja: Piotr RYGIEL*
 
 *W piątek 22 lipca 2022 r. otworzyliśmy kampanię do Deadlands "Wszystkie przebrania Alistaira Kanta". Długa przerwa na Martwych Ziemiach sprawiła, że znaczną część wieczoru poświęciliśmy na proces tworzenia postaci i lekkie przypomnienie zasad. W efekcie czego rozgraliśmy podczas sesji 3 sceny ze scenariusza.*
