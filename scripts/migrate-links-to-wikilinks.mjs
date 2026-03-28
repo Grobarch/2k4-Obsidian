@@ -2,18 +2,26 @@
 /**
  * migrate-links-to-wikilinks.mjs — migracja linków markdown → wikilinki Obsidian
  *
- * Konwertuje [text](/slug/path) → [[Filename|text]] lub [[Filename]]
- * Gdy nazwa pliku nie jest unikalna w vault, używa minimalnej ścieżki
- * wystarczającej do jednoznacznej identyfikacji.
+ * Konwertuje [nazwa](ścieżka) → [[Filename|nazwa]] lub [[Filename]]
+ *
+ * Algorytm dopasowania (hybrydowy):
+ * 1. Próba po nazwie: normalize([nazwa]) === normalize(filename)
+ *    Np. "Za garść ryo" → "zagarscryo" dopasuje "Za Garsc Ryo.md"
+ * 2. Fallback po slug z URL: slugify(relPath) === ścieżka z linku
+ *    Używany gdy nazwa to opis epizodu np. [Epizod 1: "Kryptonim przybysz"]
+ *    a plik to Epizod 01.md
+ *
+ * Gdy nazwa pliku nie jest unikalna, używa minimalnej ścieżki
+ * wystarczającej do jednoznacznej identyfikacji w Obsidian.
  *
  * Użycie:
  *   node scripts/migrate-links-to-wikilinks.mjs           # dry-run (domyślnie)
  *   node scripts/migrate-links-to-wikilinks.mjs --apply   # zastosuj zmiany
- *   node scripts/migrate-links-to-wikilinks.mjs --dir vault/systemy  # tylko podkatalog
+ *   node scripts/migrate-links-to-wikilinks.mjs --dir vault/systemy  # podkatalog
  *
  * Wyjątki (nie konwertowane):
  *   - /tags/* — dynamiczne strony tagów Quartz
- *   - ![[...]] — obrazy i embedy (wikilink z !)
+ *   - ![[...]] — obrazy i embedy
  *   - templates/ — szablony Obsidian
  *   - *.excalidraw.md — pliki Excalidraw
  */
@@ -21,7 +29,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { join, relative, basename, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { findMdFiles, slugify } from "./shared.mjs";
+import { findMdFiles, POLISH_MAP, slugify } from "./shared.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, "..");
@@ -34,9 +42,24 @@ const APPLY = args.includes("--apply");
 const dirIdx = args.indexOf("--dir");
 const VAULT_DIR = dirIdx !== -1 ? join(process.cwd(), args[dirIdx + 1]) : DEFAULT_VAULT;
 
+// ─── Normalizacja do porównań ─────────────────────────────────────────────────
+
+/**
+ * Normalizuje ciąg do celów porównania:
+ * polskie znaki → ASCII, lowercase, usuwa wszystko poza [a-z0-9]
+ * "Za garść ryo" → "zagarscryo"
+ * "Za Garsc Ryo" → "zagarscryo"
+ */
+function normalize(str) {
+  return str
+    .replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, (ch) => POLISH_MAP[ch] || ch)
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+}
+
 // ─── Regex ───────────────────────────────────────────────────────────────────
 
-// Dopasowuje [text](/path) ale NIE ![[...]] (wikilinki obrazów)
+// Dopasowuje [nazwa](ścieżka) ale NIE ![[...]]
 const LINK_RE = /(?<!!)\[([^\]]*)\]\((\/[^)]*)\)/g;
 
 // ─── Faza 1: Budowanie indeksów ───────────────────────────────────────────────
@@ -44,151 +67,151 @@ const LINK_RE = /(?<!!)\[([^\]]*)\]\((\/[^)]*)\)/g;
 async function buildIndexes(vaultDir) {
   const allFiles = await findMdFiles(vaultDir);
 
-  // slugIndex: slug (pełna ścieżka) → [{filePath, relPath, filename}]
+  // nameIndex: normalize(filename) → [{filePath, relPath, filename}]
+  const nameIndex = new Map();
+  // slugIndex: '/slug/path' → [{filePath, relPath, filename}]
   const slugIndex = new Map();
-  // filenameIndex: lowercase(filename) → [{filePath, relPath, filename}]
-  const filenameIndex = new Map();
 
   for (const filePath of allFiles) {
     const relPath = relative(vaultDir, filePath);
-
-    // Pomiń templates i excalidraw
     if (relPath.startsWith("templates/") || relPath.includes(".excalidraw")) continue;
 
-    const slug = "/" + slugify(relPath);
     const filename = basename(filePath, ".md");
-    const filenameLower = filename.toLowerCase();
+    const nameKey = normalize(filename);
+    const slugKey = "/" + slugify(relPath);
 
     const entry = { filePath, relPath, filename };
 
-    if (!slugIndex.has(slug)) slugIndex.set(slug, []);
-    slugIndex.get(slug).push(entry);
+    if (!nameIndex.has(nameKey)) nameIndex.set(nameKey, []);
+    nameIndex.get(nameKey).push(entry);
 
-    if (!filenameIndex.has(filenameLower)) filenameIndex.set(filenameLower, []);
-    filenameIndex.get(filenameLower).push(entry);
+    if (!slugIndex.has(slugKey)) slugIndex.set(slugKey, []);
+    slugIndex.get(slugKey).push(entry);
   }
 
-  return { slugIndex, filenameIndex };
-}
-
-// ─── Lookup z heurystyką folder note ─────────────────────────────────────────
-
-function lookupSlug(slugIndex, path) {
-  const [pathWithoutAnchor] = path.split("#");
-
-  if (slugIndex.has(pathWithoutAnchor)) {
-    return { entries: slugIndex.get(pathWithoutAnchor), usedHeuristic: false };
-  }
-
-  // Heurystyka folder note: /a/b → /a/b/b
-  const segments = pathWithoutAnchor.replace(/^\//, "").split("/");
-  const lastSeg = segments[segments.length - 1];
-  const folderNoteSlug = pathWithoutAnchor + "/" + lastSeg;
-
-  if (slugIndex.has(folderNoteSlug)) {
-    return { entries: slugIndex.get(folderNoteSlug), usedHeuristic: true };
-  }
-
-  return { entries: [], usedHeuristic: false };
+  return { nameIndex, slugIndex };
 }
 
 // ─── Generowanie minimalnej ścieżki wikilinku ─────────────────────────────────
 
 /**
- * Zwraca najkrótszą ścieżkę, która jednoznacznie identyfikuje plik w Obsidian.
+ * Zwraca najkrótszą ścieżkę wystarczającą do jednoznacznej identyfikacji
+ * pliku przez Obsidian (Obsidian rozwiązuje wikilinki po nazwie pliku).
  *
- * Obsidian rozwiązuje wikilinki zaczynając od nazwy pliku. Gdy plik nie jest
- * unikalny po nazwie, używamy minimalnej liczby segmentów ścieżki od prawej.
- *
- * Przykład: vault/systemy/Cold City/Cold Tales/Epizod 01.md
- *   - "Epizod 01" → nieunikalny (wiele kampanii ma Epizod 01)
- *   - "Cold Tales/Epizod 01" → sprawdź czy unikalny
- *   - "Cold City/Cold Tales/Epizod 01" → jeśli dalej nieunikalny, dodaj więcej segmentów
- *
- * relPath: ścieżka względem vault, np. "systemy/Cold City/Cold Tales/Epizod 01.md"
- * filenameIndex: Map<lowercase_filename, [entries]>
+ * relPath: np. "systemy/Cold City/Cold Tales/Epizod 01.md"
+ * nameIndex: globalny indeks nazw — potrzebny do sprawdzenia czy nazwa jest unikalna w całym vault
  */
-function minimalWikilinkPath(relPath, filenameIndex) {
+function minimalWikilinkPath(relPath, nameIndex) {
   const segments = relPath.replace(/\.md$/i, "").split("/");
   const filename = segments[segments.length - 1];
+  const filenameKey = normalize(filename);
 
-  // Sprawdź czy sama nazwa pliku jest unikalna
-  const filenameKey = filename.toLowerCase();
-  const sameNameFiles = filenameIndex.get(filenameKey) || [];
+  // Pobierz wszystkie pliki z taką samą (znormalizowaną) nazwą
+  const sameNameFiles = nameIndex.get(filenameKey) || [];
 
   if (sameNameFiles.length <= 1) {
-    // Unikalna nazwa — wystarczy sama nazwa pliku
+    // Unikalna nazwa w vault — wystarczy sama nazwa pliku
     return filename;
   }
 
-  // Nie jest unikalna — dodawaj segmenty od prawej aż do unikalności
+  // Dodawaj segmenty od prawej aż ścieżka stanie się unikalna
   for (let depth = 2; depth <= segments.length; depth++) {
     const candidate = segments.slice(segments.length - depth).join("/");
     const candidateLower = candidate.toLowerCase();
 
-    // Sprawdź ile plików ma ścieżkę kończącą się na candidate (case-insensitive)
     const matches = sameNameFiles.filter((e) =>
       e.relPath.replace(/\.md$/i, "").toLowerCase().endsWith(candidateLower)
     );
 
     if (matches.length === 1) {
-      // Używamy oryginalnego przypadku z filesystem
       return segments.slice(segments.length - depth).join("/");
     }
   }
 
-  // Fallback: pełna ścieżka
   return segments.join("/");
 }
 
 // ─── Konwersja jednego linku → wikilink ──────────────────────────────────────
 
-function convertLink(text, path, slugIndex, filenameIndex) {
+/**
+ * Fallback: szukaj po slug z URL.
+ * Próbuje też wariant folder note: /a/b → /a/b/b (ostatni segment powtórzony).
+ */
+function lookupBySlug(path, slugIndex) {
+  const [pathNoAnchor] = path.split("#");
+
+  if (slugIndex.has(pathNoAnchor)) return slugIndex.get(pathNoAnchor);
+
+  const segments = pathNoAnchor.replace(/^\//, "").split("/");
+  const last = segments[segments.length - 1];
+  const folderNoteSlug = pathNoAnchor + "/" + last;
+
+  return slugIndex.get(folderNoteSlug) || [];
+}
+
+function convertLink(nazwa, path, nameIndex, slugIndex) {
   // Pomiń tagi
   if (path.startsWith("/tags/")) return null;
 
   const anchor = path.includes("#") ? "#" + path.split("#")[1] : "";
-  const { entries } = lookupSlug(slugIndex, path);
 
-  if (entries.length === 0) {
-    return { type: "not-found", text, path };
+  // ── 1. Dopasowanie po nazwie ─────────────────────────────────────────────
+  const nameKey = normalize(nazwa);
+  if (nameKey) {
+    const byName = nameIndex.get(nameKey) || [];
+
+    if (byName.length === 1) {
+      const { relPath, filename } = byName[0];
+      const wikilinkPath = minimalWikilinkPath(relPath, nameIndex);
+      const wikilink =
+        nazwa === filename
+          ? `[[${wikilinkPath}${anchor}]]`
+          : `[[${wikilinkPath}${anchor}|${nazwa}]]`;
+      return { type: "ok", source: "name", nazwa, path, wikilink };
+    }
+
+    if (byName.length > 1) {
+      return { type: "ambiguous", source: "name", nazwa, path, matches: byName.map((c) => c.relPath) };
+    }
   }
 
-  if (entries.length > 1) {
-    return { type: "ambiguous", text, path, matches: entries.map((e) => e.relPath) };
+  // ── 2. Fallback: dopasowanie po slug z URL ───────────────────────────────
+  const bySlug = lookupBySlug(path, slugIndex);
+
+  if (bySlug.length === 0) {
+    return { type: "not-found", nazwa, path };
   }
 
-  // Unikalne dopasowanie w slug index
-  const { relPath, filename } = entries[0];
-  const wikilinkPath = minimalWikilinkPath(relPath, filenameIndex);
-  const anchorPart = anchor || "";
+  if (bySlug.length > 1) {
+    return { type: "ambiguous", source: "slug", nazwa, path, matches: bySlug.map((c) => c.relPath) };
+  }
 
-  // Jeśli display text jest identyczny z nazwą pliku → pomiń alias
+  const { relPath, filename } = bySlug[0];
+  const wikilinkPath = minimalWikilinkPath(relPath, nameIndex);
   const wikilink =
-    text === filename
-      ? `[[${wikilinkPath}${anchorPart}]]`
-      : `[[${wikilinkPath}${anchorPart}|${text}]]`;
-
-  return { type: "ok", text, path, wikilink };
+    nazwa === filename
+      ? `[[${wikilinkPath}${anchor}]]`
+      : `[[${wikilinkPath}${anchor}|${nazwa}]]`;
+  return { type: "ok", source: "slug", nazwa, path, wikilink };
 }
 
 // ─── Faza 2: Przetwarzanie pliku ─────────────────────────────────────────────
 
-function processFileContent(content, slugIndex, filenameIndex) {
+function processFileContent(content, nameIndex, slugIndex) {
   const issues = { ambiguous: [], notFound: [] };
 
-  const newContent = content.replace(LINK_RE, (match, text, path) => {
-    const result = convertLink(text, path, slugIndex, filenameIndex);
+  const newContent = content.replace(LINK_RE, (match, nazwa, path) => {
+    const result = convertLink(nazwa, path, nameIndex, slugIndex);
 
-    if (result === null) return match; // pominięty
+    if (result === null) return match;
 
     if (result.type === "not-found") {
-      issues.notFound.push({ match, text, path });
+      issues.notFound.push({ match, nazwa, path });
       return match;
     }
 
     if (result.type === "ambiguous") {
-      issues.ambiguous.push({ match, text, path, matches: result.matches });
+      issues.ambiguous.push({ match, nazwa, path, matches: result.matches });
       return match;
     }
 
@@ -206,8 +229,8 @@ async function main() {
   console.log(`Vault: ${VAULT_DIR}`);
   console.log(`Tryb:  ${APPLY ? "APPLY (zapisuje zmiany)" : "DRY-RUN (tylko podgląd)"}\n`);
 
-  const { slugIndex, filenameIndex } = await buildIndexes(VAULT_DIR);
-  console.log(`Zaindeksowano ${slugIndex.size} slugów, ${filenameIndex.size} unikalnych nazw plików.\n`);
+  const { nameIndex, slugIndex } = await buildIndexes(VAULT_DIR);
+  console.log(`Zaindeksowano ${nameIndex.size} unikalnych nazw, ${slugIndex.size} slugów.\n`);
 
   const allFiles = await findMdFiles(VAULT_DIR);
   const filesToProcess = allFiles.filter((f) => {
@@ -224,20 +247,15 @@ async function main() {
     const relPath = relative(VAULT_DIR, filePath);
     const content = await readFile(filePath, "utf-8");
 
-    const { newContent, changed, issues } = processFileContent(
-      content,
-      slugIndex,
-      filenameIndex
-    );
+    const { newContent, changed, issues } = processFileContent(content, nameIndex, slugIndex);
 
     if (issues.ambiguous.length > 0) allAmbiguous.push({ relPath, links: issues.ambiguous });
     if (issues.notFound.length > 0) allNotFound.push({ relPath, links: issues.notFound });
 
     if (!changed) continue;
 
-    // Policz skonwertowane linki
     const converted = [...content.matchAll(LINK_RE)].filter((m) => {
-      const r = convertLink(m[1], m[2], slugIndex, filenameIndex);
+      const r = convertLink(m[1], m[2], nameIndex, slugIndex);
       return r && r.type === "ok";
     }).length;
 
@@ -250,9 +268,10 @@ async function main() {
     } else {
       console.log(`  ~ ${relPath} (${converted} linków do konwersji)`);
       for (const m of [...content.matchAll(LINK_RE)]) {
-        const r = convertLink(m[1], m[2], slugIndex, filenameIndex);
+        const r = convertLink(m[1], m[2], nameIndex, slugIndex);
         if (r && r.type === "ok") {
-          console.log(`      ${m[0]}  →  ${r.wikilink}`);
+          console.log(`      ${m[0]}`);
+          console.log(`    → ${r.wikilink}`);
         }
       }
     }
@@ -262,12 +281,13 @@ async function main() {
 
   if (allAmbiguous.length > 0) {
     console.log("\n" + "─".repeat(60));
-    console.log("## AMBIGUOUS — wymagają ręcznej poprawki\n");
+    console.log("## AMBIGUOUS — niejednoznaczne, wymagają ręcznej poprawki\n");
     for (const { relPath, links } of allAmbiguous) {
-      for (const { match, path, matches } of links) {
-        console.log(`  AMBIGUOUS: ${path} (${matches.length} dopasowania)`);
-        for (const m of matches) console.log(`    → ${m}`);
-        console.log(`    Użycie: ${relPath}  ›  ${match}`);
+      for (const { match, nazwa, path, matches } of links) {
+        console.log(`  [${nazwa}]  →  ${matches.length} pliki o podobnej nazwie:`);
+        for (const m of matches) console.log(`    • ${m}`);
+        console.log(`  w: ${relPath}`);
+        console.log();
       }
     }
   }
@@ -276,18 +296,19 @@ async function main() {
 
   if (allNotFound.length > 0) {
     console.log("\n" + "─".repeat(60));
-    console.log("## NOT FOUND — linki do nieistniejących notatek\n");
+    console.log("## NOT FOUND — brak notatki o takiej nazwie\n");
     for (const { relPath, links } of allNotFound) {
-      for (const { match, path } of links) {
-        console.log(`  NOT FOUND: ${path}`);
-        console.log(`    Użycie: ${relPath}  ›  ${match}`);
+      for (const { match, nazwa, path } of links) {
+        console.log(`  [${nazwa}]  (${path})`);
+        console.log(`  w: ${relPath}`);
+        console.log();
       }
     }
   }
 
   // ─── Podsumowanie ───────────────────────────────────────────────────────────
 
-  console.log("\n" + "=".repeat(60));
+  console.log("=".repeat(60));
   console.log(`Podsumowanie:`);
   console.log(`  Pliki przetworzone:  ${filesToProcess.length}`);
   console.log(`  Pliki do zmiany:     ${totalFilesChanged}`);
@@ -295,8 +316,9 @@ async function main() {
   console.log(`  Ambiguous:           ${allAmbiguous.reduce((s, f) => s + f.links.length, 0)}`);
   console.log(`  Not found:           ${allNotFound.reduce((s, f) => s + f.links.length, 0)}`);
 
-  if (!APPLY && totalFilesChanged > 0) {
+  if (!APPLY && (totalFilesChanged > 0 || allAmbiguous.length > 0 || allNotFound.length > 0)) {
     console.log(`\nUruchom z --apply żeby zastosować zmiany.`);
+    console.log(`Linki AMBIGUOUS i NOT FOUND pozostaną bez zmian.`);
   }
 }
 
