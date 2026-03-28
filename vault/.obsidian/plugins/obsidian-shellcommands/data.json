@@ -26,10 +26,10 @@
     {
       "id": "97wfcikv42",
       "platform_specific_commands": {
-        "default": "node update-tables.mjs"
+        "default": "node ../scripts/build-bases.mjs"
       },
       "shells": {},
-      "alias": "Update tables",
+      "alias": "Build bases",
       "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
