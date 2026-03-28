@@ -31,6 +31,70 @@ quartz/             Quartz 4.5.2 (konfiguracja + build)
 4. **Quartz** buduje strone HTML z przetworzonych plikow markdown
 5. Strona deployowana na **GitHub Pages**
 
+## Setup dla edytorow
+
+### Wymagania
+
+- [Node.js 22+](https://nodejs.org)
+- [Git](https://git-scm.com)
+- [Obsidian](https://obsidian.md) (dowolna aktualna wersja)
+
+### Instalacja
+
+```bash
+git clone https://github.com/Grobarch/2k4-Obsidian.git
+cd 2k4-Obsidian
+
+# Zainstaluj zaleznosci Quartz (jednorazowo)
+cd quartz && npm ci && cd ..
+
+# Zainstaluj pre-commit hook (jednorazowo)
+cp scripts/pre-commit .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+### Otwieranie vault w Obsidian
+
+1. Otworz Obsidian
+2. Kliknij **"Open folder as vault"**
+3. Wybierz folder `vault/` w sklonowanym repo
+4. Obsidian automatycznie zaladuje konfiguracje i wtyczki z `.obsidian/`
+5. W Settings → Community Plugins — kliknij **"Enable community plugins"** i wlacz wszystkie
+
+Wtyczki zainstalowane w repo (wczytuja sie automatycznie):
+
+| Wtyczka | Rola |
+|---------|------|
+| **Templater** | Formularze tworzenia nowych notatek (systemy, kampanie, postacie) |
+| **Meta Bind** | Przyciski uruchamiajace szablony w notatkach |
+| **Folder Notes** | Klikniecie folderu otwiera notatke folderu |
+| **Obsidian Git** | Automatyczny auto-commit i sync z GitHub |
+
+### Konfiguracja Git (jednorazowo)
+
+```bash
+git config --global user.name "Twoje Imie"
+git config --global user.email "twoj@email.com"
+```
+
+Obsidian Git jest skonfigurowany do auto-commitu co 10 minut i auto-pull przy starcie.
+Na Windows wymagany zainstalowany Git dostepny w PATH.
+
+### Workflow edytora
+
+1. Edytuj notatki w `vault/` przez Obsidian (lub dowolny edytor markdown)
+2. Uzywaj przyciskow w folder notes do tworzenia nowych systemow/kampanii/postaci/epizodow
+3. Pre-commit hook automatycznie normalizuje frontmatter i konwertuje bloki `base`
+4. Push na GitHub: `git push`
+5. Deploy strony: ręcznie z zakladki **Actions** w GitHub → `Deploy Wiki to GitHub Pages`
+
+### Najlepsze praktyki
+
+- Edytuj wylacznie pliki w `vault/` — nie zmieniaj `quartz/content/` (generowany automatycznie)
+- Kazdemu systemowi/kampanii odpowiada folder note o tej samej nazwie co folder
+- Frontmatter YAML jest walidowany przed commitem — bledy blokuja commit
+- Lokalne podglad przed pushem: `bash scripts/local-build.sh` → http://localhost:8080
+
 ## Lokalne uruchomienie
 
 ```bash
