@@ -7,3 +7,4 @@ vault/.obsidian/plugins/*/main.js
 vault/.obsidian/plugins/*/styles.css
 vault/*.base
 .claude/
+.vscode/
