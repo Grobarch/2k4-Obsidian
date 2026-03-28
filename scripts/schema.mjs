@@ -55,13 +55,13 @@ export const TYPE_SCHEMAS = {
     required:    ["title", "type", "system", "system_pelna", "mg", "gatunek", "tags", "draft"],
     arrayFields: ["tags"],
     computed:    ["system_pelna", "tags"],
-    defaults:    { draft: "true", mg: "Arkadiusz RYGIEL" },
+    defaults:    { draft: "false", mg: "Arkadiusz RYGIEL" },
   },
   "system": {
     required:    ["title", "type", "system", "wydawca", "gatunek", "tags", "draft"],
     arrayFields: ["tags"],
     computed:    ["tags"],
-    defaults:    { draft: "true" },
+    defaults:    { draft: "false" },
   },
   "lokacja": {
     required:    ["title", "type", "system", "system_pelna", "tags"],

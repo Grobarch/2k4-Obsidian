@@ -16,13 +16,13 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── encyklopedia/
 │   │   ├── Encyklopedia.md     ← folder note (z przyciskiem tworzenia postaci)
 │   │   ├── bohaterowie-graczy/
-│   │   │   └── bohaterowie-graczy.md   ← folder note (draft:true)
+│   │   │   └── bohaterowie-graczy.md   ← folder note
 │   │   ├── bohaterowie-niezalezni/
-│   │   │   └── bohaterowie-niezalezni.md ← folder note (draft:true)
+│   │   │   └── bohaterowie-niezalezni.md ← folder note
 │   │   ├── lokacje/
-│   │   │   └── lokacje.md      ← folder note (draft:true)
+│   │   │   └── lokacje.md      ← folder note
 │   │   └── artefakty/
-│   │       └── artefakty.md    ← folder note (draft:true)
+│   │       └── artefakty.md    ← folder note
 │   ├── scenariusze/        ← gotowe scenariusze i przygody per system
 │   │   ├── Scenariusze.md      ← folder note (indeks systemów)
 │   │   ├── A Penny For My Thoughts/
@@ -43,24 +43,12 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   └── Zew Cthulhu/
 │   ├── templates/          ← szablony Obsidian (ignorowane przez Quartz)
 │   │   ├── Utwórz Postać.md    ← skrypt Templater: formularz tworzenia postaci
-│   │   └── statblocks/         ← statbloki per system
-│   │       ├── generic.md
-│   │       ├── l5k.md
-│   │       ├── cold-city.md
-│   │       ├── deadlands.md
-│   │       ├── wolsung.md
-│   │       ├── wiedzmin.md
-│   │       ├── wfrp.md
-│   │       ├── gasnace-slonca.md
-│   │       ├── 7th-sea.md
-│   │       ├── wampir.md
-│   │       ├── mafia-ggf.md
-│   │       └── honor-i-krew.md
+│   │   └── statblocks/         ← statbloki per system (l5k, wfrp, cold-city, ...)
 │   └── systemy/            ← systemy RPG + kampanie + epizody
 │       └── Cold City/          ← folder systemu
-│           ├── Cold City.md    ← folder note systemu
+│           ├── Cold City.md    ← folder note systemu (z blokami base)
 │           └── Cold Tales/         ← folder kampanii
-│               ├── Cold Tales.md   ← folder note kampanii (z przyciskiem + tabelkami)
+│               ├── Cold Tales.md   ← folder note kampanii (z blokami base)
 │               ├── Epizod 01.md
 │               └── ...
 ├── scripts/
@@ -68,8 +56,11 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
 │   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
-│   ├── update-tables.mjs  ← skrypt pre-build: aktualizuje tabelki epizodów
-│   ├── watch-tables.mjs   ← tryb watch: auto-aktualizacja tabelek podczas edycji lokalnej
+│   ├── build-bases.mjs            ← konwersja Obsidian Bases → statyczne tabele/listy/karty
+│   ├── migrate-to-bases.mjs       ← jednorazowy skrypt migracji markerów → bloki base
+│   ├── update-tables.mjs          ← [LEGACY] stary system markerów (do usunięcia — RPG-77)
+│   ├── watch-tables.mjs           ← [LEGACY] watch dla update-tables (do usunięcia — RPG-77)
+│   ├── local-build.sh             ← lokalny build pipeline (symulacja CI)
 │   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
 │   └── quartz.config.ts    ← konfiguracja (baseUrl, locale pl-PL)
@@ -93,54 +84,60 @@ Quartz automatycznie slugifikuje je do lowercase z myślnikami (np. `cold-city/c
 
 Hierarchia: `systemy/ → System/ → Kampania/ → Epizod XX.md`
 
-### Ukrywanie folder notes w Quartz
+### Widoczność folder notes
 
-Folder notes (systemów, kampanii, sekcji scenariuszy i podfolderów encyklopedii) mają `draft: true` w frontmatter — Quartz ich nie renderuje. Są widoczne tylko lokalnie w Obsidian (do nawigacji po folderach). Strony indeksujące (np. `Scenariusze.md`) linkują bezpośrednio do zawartości, z pominięciem folder notes.
+Folder notes kampanii i systemów mają `draft: "false"` — Quartz je renderuje, bo zawierają
+bloki `base` konwertowane na statyczne tabele podczas buildu.
 
-**Wyjątek:** `Encyklopedia.md` i `Scenariusze.md` NIE mają `draft: true` — są renderowane przez Quartz jako strony treści.
+Folder notes podfolderów encyklopedii i sekcji scenariuszy mają `draft: "true"` — Quartz ich
+nie renderuje. Strony indeksujące (`Encyklopedia.md`, `Scenariusze.md`) NIE mają `draft: true`.
 
-### Tabelki epizodów
+### Obsidian Bases (dynamiczne widoki)
 
-Folder notes kampanii zawierają automatycznie generowane tabelki epizodów
-otoczone markerami HTML:
+Folder notes używają bloków **Obsidian Bases** (od Obsidian v1.8.0) do wyświetlania
+dynamicznych tabel, list i kart. Format:
 
-```markdown
-## Spis epizodow
+````markdown
+## Spis epizodów
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Cold Tales/Epizod 01\|Epizod 1: "..."]] | 2010-10-29 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/Cold City/Cold Tales")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
 ```
+````
 
-Format linku: wikilink `[[CampaignFolder/EpisodeName\|Tytuł]]` — działa w Obsidian
-niezależnie od wielkości liter i spacji w nazwie pliku. Folder notes mają
-`draft: true`, więc Quartz ich nie renderuje (format linku nie wpływa na web).
+**Jak to działa:**
+- **Obsidian**: renderuje bloki `base` jako interaktywne widoki (tabele, karty, listy)
+- **Quartz (web)**: skrypt `build-bases.mjs` konwertuje bloki na statyczny markdown/HTML
 
-### Tabelki kampanii
+**Typy widoków:**
+- `table` — tabela markdown z kolumnami z `order[]`
+- `list` — lista punktowana z metadanymi (`- [Tytuł](/url) — Meta: val`)
+- `cards` — HTML grid (`<div class="base-cards">`) ze stylami w `custom.scss`
 
-Folder notes systemów zawierają automatycznie generowane tabelki kampanii:
+**Obsługiwane filtry:**
+- `field == "value"` / `field == ["val1", "val2"]` — równość (scalar/array)
+- `field != "value"` — nierówność
+- `file.inFolder("path")` — pliki w podanym folderze
 
-```markdown
-## Kampanie
+**Dwa sposoby osadzania:**
+1. Inline code block: ` ```base ... ``` ` — YAML w treści notatki
+2. Wikilink embed: `![[NazwaBazy.base]]` — plik `.base` z YAML
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[L5K/Miecze Cnot I Grzechow/Miecze Cnot I Grzechow\|Tytuł kampanii]] | MG | 11 |
-<!-- CAMPAIGNS_END -->
-```
-
-Format linku: wikilink `[[SystemFolder/CampaignFolder/CampaignName\|Tytuł]]`.
-
-Skrypt `scripts/update-tables.mjs` skanuje pliki z `type: epizod` i `type: kampania`
-w frontmatter i regeneruje tabelki między markerami.
-
-Uruchamianie lokalne: `node scripts/update-tables.mjs vault/systemy`
-
-Tryb watch (auto-aktualizacja podczas edycji w Obsidian):
-`node scripts/watch-tables.mjs` — obserwuje `vault/` i regeneruje tabelki przy każdej zmianie .md.
+Skrypt `build-bases.mjs` obsługuje oba wzorce.
 
 ## Skrypty vault
 
@@ -169,6 +166,26 @@ Komendy:
 
 Opcje: `--where "pole=wartość"`, `--type <typ>`, `--dir <ścieżka>`, `--dry-run` (domyślne), `--apply`
 
+### build-bases.mjs — konwersja Obsidian Bases
+
+```bash
+node scripts/build-bases.mjs [dir]   # domyślnie: vault
+```
+
+Skanuje `.md` w podanym katalogu i zastępuje bloki `base` (inline i `![[*.base]]`)
+statycznymi tabelami/listami/kartami. Używany w CI (na `quartz/content/`)
+i opcjonalnie lokalnie.
+
+### migrate-to-bases.mjs — jednorazowa migracja
+
+```bash
+node scripts/migrate-to-bases.mjs [dir] [--apply]
+```
+
+Zastępuje stare markery HTML (`<!-- EPISODES_START/END -->` itp.) blokami `base`.
+Obsługuje 8 typów markerów: episodes, campaigns, players, npcs, locations, artifacts,
+scenarios, systems. Domyślnie dry-run.
+
 ### Workflow normalizacji
 
 ```bash
@@ -180,26 +197,32 @@ node scripts/vault-tools.mjs normalize --dir vault --apply
 
 # 3. Walidacja
 node scripts/vault-tools.mjs validate --dir vault
-
-# 4. Aktualizuj tabelki (kampanie, systemy, scenariusze, postacie, lokacje, artefakty)
-node scripts/update-tables.mjs vault/systemy
-node scripts/update-tables.mjs vault/scenariusze
 ```
 
 Komenda `normalize` wykonuje 4 przejścia:
 1. **Migracja scalar → array** — pola z `arrayFields` (np. `kampania`, `kampania_link` dla bohaterów)
 2. **Computed values** — `system_pelna` z `SYSTEM_NAMES`, `tags` z `[type, system]`, `kampania_link`/`kampania` z path (epizody)
-3. **Defaults** — `draft: true` dla kampanii/systemów, `mg` dla epizodów
+3. **Defaults** — `draft: "false"` dla kampanii/systemów, `mg` dla epizodów
 4. **Ostrzeżenia** — brakujące required bez default
 
 ### Git pre-commit hook
 
-Hook automatycznie uruchamia `normalize --apply`, `update-episode-tables` (systemy + scenariusze) i `validate` przed każdym commitem dotyczącym `vault/` lub `scripts/`. Blokuje commit jeśli walidacja nie przejdzie.
+Hook automatycznie uruchamia `normalize --apply` i `validate` przed każdym commitem
+dotyczącym `vault/` lub `scripts/`. Blokuje commit jeśli walidacja nie przejdzie.
 
 Instalacja (jednorazowo po klonie):
 ```bash
 cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
+
+### Lokalny build
+
+```bash
+bash scripts/local-build.sh          # build + serve na localhost:8080
+bash scripts/local-build.sh --build  # tylko build, bez serve
+```
+
+Symuluje pipeline CI: copy vault → normalize → build-bases → quartz build.
 
 ## Widoki sekcji (Quartz)
 
@@ -224,12 +247,17 @@ Metadane wyświetlane per sekcja (badge'y pod tytułem):
 2. `npm ci` w `quartz/`
 3. Kopiuje `vault/*` → `quartz/content/`
 4. `node scripts/vault-tools.mjs normalize --dir quartz/content --apply` ← normalizuje frontmatter
-5. `node scripts/update-tables.mjs quartz/content/systemy` ← aktualizuje tabelki epizodów
-6. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
-7. `npx quartz build` → `quartz/public/`
-8. Deploy `quartz/public/` na GitHub Pages
+5. `node scripts/update-tables.mjs quartz/content/systemy` ← [LEGACY] tabelki markerowe
+6. `node scripts/update-tables.mjs quartz/content/scenariusze` ← [LEGACY] tabelki markerowe
+7. `node scripts/build-bases.mjs quartz/content` ← **konwertuje bloki base → statyczne tabele**
+8. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
+9. `npx quartz build` → `quartz/public/`
+10. Deploy `quartz/public/` na GitHub Pages
 
 `quartz/content/` jest pusta w repo — wypełniana tylko w CI.
+
+**Uwaga:** Kroki 5-6 (update-tables) są legacy i zostaną usunięte (RPG-77).
+Krok 7 (build-bases) obsługuje wszystkie dynamiczne widoki.
 
 ## Format plików vault
 
@@ -271,16 +299,16 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 
 ## Proces aktualizacji wiki
 
-1. Edytuj pliki w `vault/`
-2. Opcjonalnie: `node scripts/update-tables.mjs vault/systemy` (aktualizacja tabelek lokalnie)
-3. `git add` + `git commit` + `git push`
-4. Uruchom workflow ręcznie w GitHub Actions
+1. Edytuj pliki w `vault/` (Obsidian renderuje bloki `base` interaktywnie)
+2. `git add` + `git commit` + `git push`
+3. Uruchom workflow ręcznie w GitHub Actions
+4. Opcjonalnie: `bash scripts/local-build.sh` (podgląd lokalny przed push)
 
 ## Dodawanie nowego epizodu
 
-1. Utwórz plik `Epizod XX.md` w folderze kampanii
+1. Utwórz plik `Epizod XX.md` w folderze kampanii (lub użyj przycisku `+ Nowy epizod` w Obsidian)
 2. Dodaj frontmatter z `type: epizod`, `data:`, `kampania_link:`, `title:`
-3. Skrypt pre-build automatycznie doda go do tabelki w folder note kampanii
+3. Blok `base` w folder note kampanii automatycznie pokaże nowy epizod (Obsidian: natychmiast, web: po deploy)
 
 ## Dodawanie nowego scenariusza
 
@@ -300,10 +328,21 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 4. Dodaj system do `vault/scenariusze/Scenariusze.md`
 5. Źródłowe pliki w `notes-source/scenariusze/` zawierają H1 tytuł i blok metadanych — przy konwersji przenosimy je do frontmatter, a treść zaczyna się po separatorze `---`
 
-## Tworzenie postaci (Obsidian)
+## Templater — formularze tworzenia treści (Obsidian)
 
-Formularz uruchamiany przyciskiem w folder note kampanii lub encyklopedii.
+Formularze uruchamiane przyciskami w folder notes.
 Wymaga pluginów: **Templater** + **Meta Bind**.
+
+### Dostępne szablony
+
+| Szablon | Uruchamiany z | Tworzy |
+|---------|---------------|--------|
+| `Utwórz System.md` | strona Systemy | folder note systemu z blokami `base` |
+| `Utwórz Kampanię.md` | folder note systemu | folder note kampanii z blokami `base` |
+| `Utwórz Epizod.md` | folder note kampanii | notatkę epizodu w folderze kampanii |
+| `Utwórz Postać.md` | kampania / encyklopedia | notatkę postaci w encyklopedii |
+
+### Tworzenie postaci
 
 ### Konfiguracja (jednorazowo)
 
