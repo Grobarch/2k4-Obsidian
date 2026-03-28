@@ -36,20 +36,7 @@ actions:
 
 ## Spis epizodow
 
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/L5K/Trylogia Klanu Lwa")
-    order:
-      - title
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
+| Tytuł | Data |
+| --- | --- |
+| [Epizod 1: "Białe kłamstwa"](/systemy/l5k/trylogia-klanu-lwa/epizod-01) | 2010-11-15 |
+| [Epizod 2: "Miecz nienawiści"](/systemy/l5k/trylogia-klanu-lwa/epizod-02) | 2011-02-13 |

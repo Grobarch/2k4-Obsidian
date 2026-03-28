@@ -36,20 +36,8 @@ actions:
 
 ## Spis epizodow
 
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/Honor I Krew/Trylogia Miecza")
-    order:
-      - title
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
+| Tytuł | Data |
+| --- | --- |
+| [Epizod 1: "Miecz mordu"](/systemy/honor-i-krew/trylogia-miecza/epizod-01) | 2011-08-09 |
+| [Epizod 2: "Kiedy przemówią miecze"](/systemy/honor-i-krew/trylogia-miecza/epizod-02) | 2011-09-30 |
+| [Epizod 3: "Miecz, który całuje raz"](/systemy/honor-i-krew/trylogia-miecza/epizod-03) | 2011-11-30 |

@@ -36,20 +36,9 @@ actions:
 
 ## Spis epizodow
 
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/Wfrp/Listy Z Praag")
-    order:
-      - title
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
+| Tytuł | Data |
+| --- | --- |
+| [Epizod 1: "Mówiące mury"](/systemy/wfrp/listy-z-praag/epizod-01) | 2012-07-19 |
+| [Epizod 2: "Miecz w skale spaczenia"](/systemy/wfrp/listy-z-praag/epizod-02) | 2013-05-29 |
+| [Epizod 3: "Partia ze Ślimakogłowym"](/systemy/wfrp/listy-z-praag/epizod-03) | 2013-06-04 |
+| [Epizod 4: "Dziecię w czarny pancerz zakute"](/systemy/wfrp/listy-z-praag/epizod-04) | 2013-06-09 |

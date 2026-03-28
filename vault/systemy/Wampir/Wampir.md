@@ -31,23 +31,9 @@ Polska edycja gry Vampire: The Dark Ages wydanej przez White Wolf, osadzona w mr
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/Wampir")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Diabeł z Łazareni](/systemy/wampir/diabel-z-lazareni/diabel-z-lazareni) | Arkadiusz RYGIEL |
 
 ## Wszystkie strony
 

@@ -31,23 +31,9 @@ Polska gra fabularna wydana przez Portal, o świecie zorganizowanej przestępczo
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/Mafia Ggf")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [La Cosa Nostra](/systemy/mafia-ggf/la-cosa-nostra/la-cosa-nostra) | Arkadiusz RYGIEL |
 
 ## Wszystkie strony
 

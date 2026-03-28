@@ -58,8 +58,6 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
 │   ├── build-bases.mjs            ← konwersja Obsidian Bases → statyczne tabele/listy/karty
 │   ├── migrate-to-bases.mjs       ← jednorazowy skrypt migracji markerów → bloki base
-│   ├── update-tables.mjs          ← [LEGACY] stary system markerów (do usunięcia — RPG-77)
-│   ├── watch-tables.mjs           ← [LEGACY] watch dla update-tables (do usunięcia — RPG-77)
 │   ├── local-build.sh             ← lokalny build pipeline (symulacja CI)
 │   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
@@ -247,17 +245,12 @@ Metadane wyświetlane per sekcja (badge'y pod tytułem):
 2. `npm ci` w `quartz/`
 3. Kopiuje `vault/*` → `quartz/content/`
 4. `node scripts/vault-tools.mjs normalize --dir quartz/content --apply` ← normalizuje frontmatter
-5. `node scripts/update-tables.mjs quartz/content/systemy` ← [LEGACY] tabelki markerowe
-6. `node scripts/update-tables.mjs quartz/content/scenariusze` ← [LEGACY] tabelki markerowe
-7. `node scripts/build-bases.mjs quartz/content` ← **konwertuje bloki base → statyczne tabele**
-8. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
-9. `npx quartz build` → `quartz/public/`
-10. Deploy `quartz/public/` na GitHub Pages
+5. `node scripts/build-bases.mjs quartz/content` ← **konwertuje bloki base → statyczne tabele**
+6. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
+7. `npx quartz build` → `quartz/public/`
+8. Deploy `quartz/public/` na GitHub Pages
 
 `quartz/content/` jest pusta w repo — wypełniana tylko w CI.
-
-**Uwaga:** Kroki 5-6 (update-tables) są legacy i zostaną usunięte (RPG-77).
-Krok 7 (build-bases) obsługuje wszystkie dynamiczne widoki.
 
 ## Format plików vault
 

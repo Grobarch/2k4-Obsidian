@@ -36,12 +36,6 @@ jobs:
       - name: Normalize frontmatter
         run: node scripts/vault-tools.mjs normalize --dir quartz/content --apply
 
-      - name: Update episode tables
-        run: node scripts/update-tables.mjs quartz/content/systemy
-
-      - name: Update scenario lists
-        run: node scripts/update-tables.mjs quartz/content/scenariusze
-
       - name: Convert Obsidian Bases to static tables
         run: node scripts/build-bases.mjs quartz/content
 

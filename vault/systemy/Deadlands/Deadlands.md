@@ -31,23 +31,9 @@ Gra fabularna osadzona w alternatywnej wersji Dzikiego Zachodu, gdzie po Wojnie 
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/Deadlands")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta) | Arkadiusz RYGIEL |
 
 ## Scenariusze samodzielne
 

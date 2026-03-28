@@ -31,23 +31,9 @@ Polska gra fabularna osadzona w uniwersum Wiedźmina stworzonego przez Andrzeja 
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/Wiedzmin")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Słudzy miecza i brzęczących monet](/systemy/wiedzmin/sludzy-miecza/sludzy-miecza) | Arkadiusz RYGIEL |
 
 ## Wszystkie strony
 

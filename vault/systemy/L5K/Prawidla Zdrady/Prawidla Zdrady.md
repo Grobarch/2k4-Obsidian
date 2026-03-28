@@ -36,37 +36,20 @@ actions:
 
 ## Bohaterowie Niezalezni
 
-```base
-filters:
-  and:
-    - type == "bohater-niezalezny"
-    - kampania == ["prawidla-zdrady"]
-views:
-  - type: table
-    name: Bohaterowie Niezależni
-    order:
-      - title
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł |
+| --- |
+| [Akodo Monzo](/encyklopedia/bohaterowie-niezalezni/akodo-monzo) |
+| [Akodo Raizo](/encyklopedia/bohaterowie-niezalezni/akodo-raizo) |
+| [Były żołnierz na usługach Horikoshi Imochiego](/encyklopedia/bohaterowie-niezalezni/byly-zolnierz-na-uslugach-horikoshi-imochiego) |
+| [Horigato Manro](/encyklopedia/bohaterowie-niezalezni/horigato-manro) |
+| [Horikoshi Imochi](/encyklopedia/bohaterowie-niezalezni/horikoshi-imochi) |
+| [Immamura Sakutaro](/encyklopedia/bohaterowie-niezalezni/immamura-sakutaro) |
+| [Rokugański chłop](/encyklopedia/bohaterowie-niezalezni/rokuganski-chlop) |
+| [Yojimbo cesarskiego namiestnika Immamury Sakutaro](/encyklopedia/bohaterowie-niezalezni/yojimbo-cesarskiego-namiestnika-immamury-sakutaro) |
 
 ## Spis epizodow
 
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/L5K/Prawidla Zdrady")
-    order:
-      - title
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
+| Tytuł | Data |
+| --- | --- |
+| [Epizod 2: "Więzień urodzenia"](/systemy/l5k/prawidla-zdrady/epizod-02) | 2011-01-15 |
+| [Epizod 3: "Echo zemsty"](/systemy/l5k/prawidla-zdrady/epizod-03) | 2011-01-15 |

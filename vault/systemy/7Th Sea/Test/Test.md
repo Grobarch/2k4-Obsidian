@@ -41,90 +41,27 @@ actions:
 
 ## Bohaterowie Graczy
 
-```base
-filters:
-  and:
-    - type == "bohater-gracza"
-    - kampania == ["test"]
-views:
-  - type: table
-    name: Bohaterowie Graczy
-    order:
-      - title
-      - gracz
-      - archetyp
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | Gracz | Archetyp |
+| --- | --- | --- |
+| [Hida Mitsuru](/encyklopedia/bohaterowie-graczy/hida-mitsuru) | Tomasz TYMIŃSKI | bushi z Klanu Kraba |
+| [Testu](/encyklopedia/bohaterowie-graczy/testu-1) |  | tak |
+| [Testu 3](/encyklopedia/bohaterowie-graczy/testu-3) |  |  |
 
 ## Bohaterowie Niezależni
 
-```base
-filters:
-  and:
-    - type == "bohater-niezalezny"
-    - kampania == ["test"]
-views:
-  - type: table
-    name: Bohaterowie Niezależni
-    order:
-      - title
-    sort:
-      - property: title
-        direction: ASC
-```
+_Brak wyników._
 
 ## Lokacje
 
-```base
-filters:
-  and:
-    - type == "lokacja"
-    - kampania == ["test"]
-views:
-  - type: table
-    name: Lokacje
-    order:
-      - title
-    sort:
-      - property: title
-        direction: ASC
-```
+_Brak wyników._
 
 ## Artefakty
 
-```base
-filters:
-  and:
-    - type == "artefakt"
-    - kampania == ["test"]
-views:
-  - type: table
-    name: Artefakty
-    order:
-      - title
-    sort:
-      - property: title
-        direction: ASC
-```
+_Brak wyników._
 
 ## Spis epizodów
 
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/7Th Sea/Test")
-    order:
-      - title
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
+| Tytuł | Data |
+| --- | --- |
+| [Epizod 01: "Test1"](/systemy/7th-sea/test/epizod-01) | ??? |
+| [Epizod 02: "duppa bladda"](/systemy/7th-sea/test/epizod-02) | ??? |

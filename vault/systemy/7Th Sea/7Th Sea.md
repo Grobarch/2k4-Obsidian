@@ -31,23 +31,10 @@ Gra fabularna osadzona w świecie inspirowanym Europą XVII wieku, pełnym pirat
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/7Th Sea")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Test](/systemy/7th-sea/test/test) | Krzyś |
+| [W maskach](/systemy/7th-sea/w-maskach/w-maskach) | Arkadiusz RYGIEL |
 
 
 ## Wszystkie strony

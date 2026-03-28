@@ -36,20 +36,10 @@ actions:
 
 ## Spis epizodow
 
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/Mafia Ggf/La Cosa Nostra")
-    order:
-      - title
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
+| Tytuł | Data |
+| --- | --- |
+| [Epizod 1: "Makaroniarskie porachunki"](/systemy/mafia-ggf/la-cosa-nostra/epizod-01) | 2011-01-28 |
+| [Epizod 2: "Nasza sprawa"](/systemy/mafia-ggf/la-cosa-nostra/epizod-02) | 2011-01-28 |
+| [Epizod 3: "Transport w akompaniamencie wystrzałów"](/systemy/mafia-ggf/la-cosa-nostra/epizod-03) | 2011-01-28 |
+| [Epizod 4: "Włoska robota"](/systemy/mafia-ggf/la-cosa-nostra/epizod-04) | 2011-01-28 |
+| [Epizod 5: "Życie miasta"](/systemy/mafia-ggf/la-cosa-nostra/epizod-05) | 2011-01-28 |

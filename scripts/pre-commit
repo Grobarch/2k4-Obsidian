@@ -28,22 +28,19 @@ if [ -n "$MODIFIED_VAULT" ]; then
   echo "$MODIFIED_VAULT" | while IFS= read -r file; do git add "$file"; done
 fi
 
-echo "[pre-commit] Aktualizacja tabelek..."
-node scripts/update-tables.mjs vault/systemy 2>&1
-UPDATE_SYSTEMY_EXIT=$?
+echo "[pre-commit] Konwersja Obsidian Bases..."
+node scripts/build-bases.mjs vault 2>&1
+BUILD_BASES_EXIT=$?
 
-node scripts/update-tables.mjs vault/scenariusze 2>&1
-UPDATE_SCENARIUSZE_EXIT=$?
-
-if [ $UPDATE_SYSTEMY_EXIT -ne 0 ] || [ $UPDATE_SCENARIUSZE_EXIT -ne 0 ]; then
-  echo "[pre-commit] update-episode-tables zakończył się błędem!"
+if [ $BUILD_BASES_EXIT -ne 0 ]; then
+  echo "[pre-commit] build-bases zakończył się błędem!"
   exit 1
 fi
 
-# Re-stage pliki vault które mogły zostać zmodyfikowane przez update-episode-tables
+# Re-stage pliki vault które mogły zostać zmodyfikowane przez build-bases
 MODIFIED_VAULT2=$(git diff --name-only -- 'vault/')
 if [ -n "$MODIFIED_VAULT2" ]; then
-  echo "[pre-commit] Re-staging zaktualizowanych tabelek..."
+  echo "[pre-commit] Re-staging zaktualizowanych plików..."
   echo "$MODIFIED_VAULT2" | while IFS= read -r file; do git add "$file"; done
 fi
 

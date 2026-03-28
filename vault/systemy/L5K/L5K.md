@@ -34,23 +34,12 @@ Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/L5K")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Groza, która zawsze powraca](/systemy/l5k/groza-ktora-zawsze-powraca/groza-ktora-zawsze-powraca) | Arkadiusz RYGIEL |
+| [Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion](/systemy/l5k/miecze-cnot-i-grzechow/miecze-cnot-i-grzechow) | Arkadiusz RYGIEL |
+| [Prawidła zdrady](/systemy/l5k/prawidla-zdrady/prawidla-zdrady) | Arkadiusz RYGIEL |
+| [Trylogia Klanu Lwa](/systemy/l5k/trylogia-klanu-lwa/trylogia-klanu-lwa) | Arkadiusz RYGIEL |
 
 ## Scenariusze samodzielne
 

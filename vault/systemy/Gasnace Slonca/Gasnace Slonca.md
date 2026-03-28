@@ -31,23 +31,9 @@ Polska gra fabularna wydana przez Gramel, osadzona w oryginalnym uniwersum kosmi
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/Gasnace Slonca")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Tajemnice zapomnianej technologii z Hortusa](/systemy/gasnace-slonca/tajemnice-z-hortusa/tajemnice-z-hortusa) | Arkadiusz RYGIEL |
 
 ## Wszystkie strony
 

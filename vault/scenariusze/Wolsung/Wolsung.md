@@ -6,19 +6,6 @@ title: Wolsung
 
 ## Scenariusze
 
-```base
-filters:
-  and:
-    - type == "scenariusz"
-views:
-  - type: list
-    name: Scenariusze
-    filters:
-      and:
-        - file.inFolder("Scenariusze/Wolsung")
-    order:
-      - title
-    sort:
-      - property: data
-        direction: ASC
-```
+- [Szpiegowska gra](/scenariusze/wolsung/szpiegowska-gra)
+- [Bestia z Crystal Creek](/scenariusze/wolsung/bestia-z-crystal-creek)
+- [Most na rzece Anok](/scenariusze/wolsung/most-na-rzece-anok)

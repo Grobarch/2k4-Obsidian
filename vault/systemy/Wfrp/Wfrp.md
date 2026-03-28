@@ -31,23 +31,10 @@ Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej
 
 ## Kampanie
 
-```base
-filters:
-  and:
-    - type == "kampania"
-views:
-  - type: table
-    name: Kampanie
-    filters:
-      and:
-        - file.inFolder("Systemy/Wfrp")
-    order:
-      - title
-      - mg
-    sort:
-      - property: title
-        direction: ASC
-```
+| Tytuł | MG |
+| --- | --- |
+| [Listy z Praag](/systemy/wfrp/listy-z-praag/listy-z-praag) | Arkadiusz RYGIEL |
+| [Losy bohaterów przez żarna czasu ścierane](/systemy/wfrp/losy-bohaterow/losy-bohaterow) | Arkadiusz RYGIEL |
 
 ## Scenariusze samodzielne
 

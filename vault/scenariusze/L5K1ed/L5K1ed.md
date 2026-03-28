@@ -6,19 +6,7 @@ title: Legenda Pięciu Kręgów 1ed
 
 ## Scenariusze
 
-```base
-filters:
-  and:
-    - type == "scenariusz"
-views:
-  - type: list
-    name: Scenariusze
-    filters:
-      and:
-        - file.inFolder("Scenariusze/L5K1ed")
-    order:
-      - title
-    sort:
-      - property: data
-        direction: ASC
-```
+- [Pewnego razu w Rokuganie](/scenariusze/l5k1ed/pewnego-razu-w-rokuganie)
+- [Koszmar życia](/scenariusze/l5k1ed/koszmar-zycia)
+- [Krótka opowieść o człowieku bez serca](/scenariusze/l5k1ed/krotka-opowiesc-o-czlowieku-bez-serca)
+- [Szaleństwo Mistrza Okamury](/scenariusze/l5k1ed/szalenstwo-mistrza-okamury)
