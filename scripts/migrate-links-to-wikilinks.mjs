@@ -73,7 +73,8 @@ async function buildIndexes(vaultDir) {
   const slugIndex = new Map();
 
   for (const filePath of allFiles) {
-    const relPath = relative(vaultDir, filePath);
+    // Normalizuj separatory: Windows zwraca \, slugify wymaga /
+    const relPath = relative(vaultDir, filePath).replace(/\\/g, "/");
     if (relPath.startsWith("templates/") || relPath.includes(".excalidraw")) continue;
 
     const filename = basename(filePath, ".md");
@@ -234,7 +235,7 @@ async function main() {
 
   const allFiles = await findMdFiles(VAULT_DIR);
   const filesToProcess = allFiles.filter((f) => {
-    const rel = relative(VAULT_DIR, f);
+    const rel = relative(VAULT_DIR, f).replace(/\\/g, "/");
     return !rel.startsWith("templates/") && !rel.includes(".excalidraw");
   });
 
@@ -244,7 +245,7 @@ async function main() {
   const allNotFound = [];
 
   for (const filePath of filesToProcess) {
-    const relPath = relative(VAULT_DIR, filePath);
+    const relPath = relative(VAULT_DIR, filePath).replace(/\\/g, "/");
     const content = await readFile(filePath, "utf-8");
 
     const { newContent, changed, issues } = processFileContent(content, nameIndex, slugIndex);
