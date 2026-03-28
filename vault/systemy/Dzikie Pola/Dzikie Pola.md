@@ -33,7 +33,7 @@ Polska gra fabularna osadzona w realiach XVII-wiecznej Rzeczypospolitej Obojga N
 
 | Scenariusz | Data |
 |------------|------|
-| [Białogłowa](/scenariusze/dzikie-pola-2ed/bialoglowa) | 2011-02-19 |
+| [Białogłowa](/scenariusze/dzikie-pola/bialoglowa) | 2011-02-19 |
 
 ## Wszystkie strony
 

@@ -22,7 +22,9 @@ tags: [epizod, wfrp, dark-fantasy]
 
 *W piątek 15 lipca późnym wieczorem rozgrywaliśmy epizod 2 kampanii**„Losy bohaterów przez żarna czasu ścierane” zatytułowany: "Szata czyniąca obłęd". Podczas krótkiej sesji w ramach rozgrywki przeprowadziliśmy 3 sceny.*
 
-**Warhammer Fantasy Role Play 2ed****Kampania „Losy bohaterów przez żarna czasu ścierane”**
+**Warhammer Fantasy Role Play 2ed**
+
+**Kampania „Losy bohaterów przez żarna czasu ścierane”**
 
 **Epizod 2: „Szata czyniąca obłęd”**
 

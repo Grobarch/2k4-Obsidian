@@ -33,7 +33,7 @@ Gra fabularna osadzona w mrocznym uniwersum Warhammer 40,000, w której gracze w
 
 | Scenariusz | Data |
 |------------|------|
-| [Wyprawa Estariusza](/scenariusze/deathwatch-rpg/wyprawa-estariusza) | 2020-07-25 |
+| [Wyprawa Estariusza](/scenariusze/deathwatch/wyprawa-estariusza) | 2020-07-25 |
 
 ## Wszystkie strony
 

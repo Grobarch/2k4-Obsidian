@@ -20,7 +20,9 @@ tags: [epizod, wfrp, dark-fantasy]
 *Ilustracja: Piotr RYGIELW sobotę 10 września 2022 r. rozgrywaliśmy epizod 3 kampanii*
 „Losy bohaterów przez żarna czasu ścierane” zatytułowany: "Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem".
 
-**Warhammer Fantasy Role Play 2ed****Kampania „Losy bohaterów przez żarna czasu ścierane”**
+**Warhammer Fantasy Role Play 2ed**
+
+**Kampania „Losy bohaterów przez żarna czasu ścierane”**
 
 **Epizod 3: „Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem”**
 

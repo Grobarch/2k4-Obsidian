@@ -42,10 +42,14 @@ Pobyt w pracy, papiery do podpisania, rozmowa na temat kondycji przedsiębiorstw
 **Scena 5 „Kolacja w domu Franco Capelli”**
 Rozmowa z Santo Capellą na temat zaginionej skrzyni z bronią z ostatniego transportu, prośba o zajęcie się sprawą starego cwaniaka z kasyna Paulo Affiniego, który załatwia swoje sprawy manewrując pomiędzy rodziną Capella i Nizzola, rozmowa o przyprowadzeniu do porządku Nicka Nelsona, niesfornego alfonsa i wyperswadowaniu raz na zawsze, żeby przestał bić dziewczyny, ostatnim tematem branym pod obrady są mieszający w mieście niczym kijem w mrowisku Irlandczycy.
 
-**Rozdział 2 „ Poker Craxiego”****Scena 1 „Mieszkanie pasera Jeffa Russo”**
+**Rozdział 2 „ Poker Craxiego”**
+
+**Scena 1 „Mieszkanie pasera Jeffa Russo”**
 Mieszkanie zastawione pudłami z whisky i innymi gratami, świeczniki, harfa, poroża, obrazy, lampa oświetlająca zielony stół, zadymione pomieszczenie, przy stole ludzie pracujący dla pasera, Jacob, Michael, Neil, gęsta atmosfera po przegranej Jeffa, powrót do domu.
 
-**Rozdział 3 „Sprawy miłosne Trivianiego”****Scena 1 „Mieszkanie”**
+**Rozdział 3 „Sprawy miłosne Trivianiego”**
+
+**Scena 1 „Mieszkanie”**
 Przygotowanie do spotkania z Doris, prysznic, golenie, wzrok utkwiony w pękniętym lustrze, zdjęcie dziewczyny na szafce, czyszczenie butów, perfumy, wyjście z mieszkania.
 
 **Scena 2 „Podróż”**
@@ -57,13 +61,17 @@ Dźwięk skrzypiącego łóżka dochodzący z wewnątrz, nakrycie panienki z jej
 **Scena 4 „Restauracja Piera Rene”**
 Próba utopienia wszystkich smutków w szklaneczce czegoś mocniejszego.
 
-**Rozdział 4 „Pobyt braci Orsini na wyścigach”****Scena 1 „Tor wyścigów konnych”**
+**Rozdział 4 „Pobyt braci Orsini na wyścigach”**
+
+**Scena 1 „Tor wyścigów konnych”**
 Budka z hot dogami, sprzedawca Hank bawiący się ze swoim psem Gino, informacje z miasta, wiadomość o potencjalnej wygranej Huraganu w dzisiejszych wyścigach, informacje o Irlandczykach, wyścigi, rozmowa z grubasem obżerającym się na trybunach, wygrana Giacomo w zakładach.
 
 **Scena 2 „Restauracja Piera Rene”**
 Rozmowa na temat roboty.
 
-**Rozdział 5 „Praca”****Scena 1 „Parking przed domem Nelsona”**
+**Rozdział 5 „Praca”**
+
+**Scena 1 „Parking przed domem Nelsona”**
 Policyjny samochód, kryształowi gliniarze, Jose Haymon, Matthew Farmer, noc, zapada zmrok.
 
 **Scena 2 „Kamienica”**

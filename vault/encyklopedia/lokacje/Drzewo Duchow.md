@@ -15,7 +15,7 @@ tags: [lokacja, deadlands, western, horror]
 
 ## Opis
 
-Drzewo Duchów****"**Nieumarły koń galopuje na horyzoncie. Jest strażnikiem pradawnego miejsca. Za nim majaczy Szkarłatne Drzewo Duchów.
+Nieumarły koń galopuje na horyzoncie. Jest strażnikiem pradawnego miejsca. Za nim majaczy Szkarłatne Drzewo Duchów.
 
 ## Wystąpienia
 

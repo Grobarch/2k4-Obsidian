@@ -49,5 +49,5 @@ Płaszcz, ręczny karabin Gatlinga, 2 colty peacemakery,**koń, siodło, koc, ol
 ## Wystąpienia
 
 
-- [Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta](Bohaterowie%20Graczy.md)
+- [Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta](/encyklopedia/bohaterowie-graczy)
 
