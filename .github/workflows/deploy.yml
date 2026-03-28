@@ -2,6 +2,12 @@ name: Deploy Wiki to GitHub Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "vault/**"
+      - "scripts/**"
+      - "quartz/**"
 
 permissions:
   contents: read
@@ -10,7 +16,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
