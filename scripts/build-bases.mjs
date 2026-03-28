@@ -199,6 +199,17 @@ function matchExpr(expr, fm, filePath, vaultRoot) {
 
   if (op === "==") return valueArr.some(v => fmArr.map(String).includes(v));
   if (op === "!=") return !valueArr.some(v => fmArr.map(String).includes(v));
+
+  // Comparison operators — compare as dates if YYYY-MM-DD, otherwise as strings
+  const cmpVal = String(value);
+  const fmStr = String(fmVal);
+  const isDate = /^\d{4}-\d{2}-\d{2}/.test(cmpVal) && /^\d{4}-\d{2}-\d{2}/.test(fmStr);
+  const a = isDate ? new Date(fmStr) : fmStr;
+  const b = isDate ? new Date(cmpVal) : cmpVal;
+  if (op === ">")  return a > b;
+  if (op === "<")  return a < b;
+  if (op === ">=") return a >= b;
+  if (op === "<=") return a <= b;
   return false;
 }
 

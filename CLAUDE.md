@@ -129,7 +129,11 @@ views:
 **Obsługiwane filtry:**
 - `field == "value"` / `field == ["val1", "val2"]` — równość (scalar/array)
 - `field != "value"` — nierówność
+- `field > "value"` / `field >= "value"` / `field < "value"` / `field <= "value"` — porównania (daty YYYY-MM-DD lub stringi)
 - `file.inFolder("path")` — pliki w podanym folderze
+- `file.name == "plik.md"` — nazwa pliku z rozszerzeniem
+- `file.basename == "plik"` — nazwa pliku bez rozszerzenia
+- `file.folder == "Systemy/Cold City"` — folder nadrzędny pliku
 
 **Dwa sposoby osadzania:**
 1. Inline code block: ` ```base ... ``` ` — YAML w treści notatki
