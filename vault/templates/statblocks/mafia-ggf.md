@@ -1,12 +1,33 @@
-| Cecha       | Wartość |
-|-------------|---------|
-| Siła        |         |
-| Zręczność   |         |
-| Inteligencja|         |
-| Percepcja   |         |
-| Charyzma    |         |
+| Cecha        | Wartość |
+|--------------|:-------:|
+| Siła         |         |
+| Zręczność    |         |
+| Inteligencja |         |
+| Percepcja    |         |
+| Charyzma     |         |
 
-**Profesja:** —
+**Profesja:** — **Frakcja:** —
+
+---
+
 **Umiejętności:** —
-**Ekwipunek:** —
+
+**Specjalność:** —
+
+---
+
+**Żywotność:** __ / __ `○ ○ ○ ○ ○ ○ ○ ○ ○ ○`
+
+**Inicjatywa:** — **Obrona:** —
+
+| Broń | Obrażenia | Zasięg | Właściwości |
+|------|:---------:|--------|-------------|
+|      |           |        |             |
+
+---
+
 **Kontakty:** —
+
+**Ekwipunek:** —
+
+**Kasa:** —
