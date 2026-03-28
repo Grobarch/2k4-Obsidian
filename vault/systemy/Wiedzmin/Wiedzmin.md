@@ -5,7 +5,7 @@ system: wiedzmin
 wydawca: MAG / CD Projekt
 gatunek: dark fantasy
 tags: ["system", "Wiedźmin", "dark-fantasy", "wiedzmin"]
-draft: "true"
+draft: "false"
 ---
 
 # Wiedźmin: Gra Wyobraźni
@@ -31,11 +31,23 @@ Polska gra fabularna osadzona w uniwersum Wiedźmina stworzonego przez Andrzeja 
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Wiedzmin/Sludzy Miecza/Sludzy Miecza\|Słudzy miecza i brzęczących monet]] | Arkadiusz RYGIEL | 4 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Wiedzmin")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

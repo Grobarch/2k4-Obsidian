@@ -5,7 +5,7 @@ system: mafia-ggf
 wydawca: Wydawnictwo Portal
 gatunek: gangsterski
 tags: [system, mafia-ggf, gangsterski]
-draft: "true"
+draft: "false"
 ---
 
 # Mafia: Gangsterska Gra Fabularna
@@ -31,11 +31,23 @@ Polska gra fabularna wydana przez Portal, o świecie zorganizowanej przestępczo
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Mafia Ggf/La Cosa Nostra/La Cosa Nostra\|La Cosa Nostra]] | Arkadiusz RYGIEL | 5 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Mafia Ggf")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

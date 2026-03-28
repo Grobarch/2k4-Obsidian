@@ -6,7 +6,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, l5k, samurajski]
-draft: "true"
+draft: "false"
 ---
 
 # Groza, która zawsze powraca
@@ -36,32 +36,56 @@ actions:
 
 ## Bohaterowie Graczy
 
-<!-- PLAYERS_START -->
-| Postać | Gracz | Archetyp |
-|--------|-------|----------|
-| [Agasha Damagodetsu](/encyklopedia/bohaterowie-graczy/agasha-damagodetsu) | Paweł PIOTROWSKI | shugenja z Klanu Smoka i Szmaragdowy Namiestnik |
-| [Akodo Nushiro](/encyklopedia/bohaterowie-graczy/akodo-nushiro) | Piotr RYGIEL | bushi z Klanu Lwa |
-| [Hida Hikaru](/encyklopedia/bohaterowie-graczy/hida-hikaru) | Dawid KOŁACIŃSKI | bushi z Klanu Kraba |
-| [Hida Mitsuru](/encyklopedia/bohaterowie-graczy/hida-mitsuru) | Tomasz TYMIŃSKI | bushi z Klanu Kraba |
-| [Isawa Mamoru](/encyklopedia/bohaterowie-graczy/isawa-mamoru) | Krzysztof OBSTAWSKI | shugenja z Klanu Feniksa |
-| [Kuni Takajiro](/encyklopedia/bohaterowie-graczy/kuni-takajiro) | Paweł OBSTAWSKI | tsukai-sagasu z Klanu Kraba |
-| [Shiba Tetsu](/encyklopedia/bohaterowie-graczy/shiba-tetsu) | Radosław RYBIŃSKI | bushi z Klanu Feniksa |
-<!-- PLAYERS_END -->
+```base
+filters:
+  and:
+    - type == "bohater-gracza"
+    - kampania == ["groza-ktora-zawsze-powraca"]
+views:
+  - type: table
+    name: Bohaterowie Graczy
+    order:
+      - title
+      - gracz
+      - archetyp
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Bohaterowie Niezalezni
 
-<!-- NPCS_START -->
-| # | Bohater niezależny |
-|---|--------------------|
-| 1 | [Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](/encyklopedia/bohaterowie-niezalezni/cien-kobiety-jedna-z-mrocznych-zjaw-poddanych-woli-cichego-skorpiona-z-zamku-zadel-w-miescie-slodkich-klamstw) |
-| 2 | [Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu](/encyklopedia/bohaterowie-niezalezni/czlowiek-z-chmur-burzowa-chmura-ronin-dotkniety-przez-pania-slonce-amaterasu) |
-| 3 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
-<!-- NPCS_END -->
+```base
+filters:
+  and:
+    - type == "bohater-niezalezny"
+    - kampania == ["groza-ktora-zawsze-powraca"]
+views:
+  - type: table
+    name: Bohaterowie Niezależni
+    order:
+      - title
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Groza Ktora Zawsze Powraca/Epizod 01\|Epizod 1: \"Szaleństwo Mistrza Okamury\"]] | 2022-12-25 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/L5K/Groza Ktora Zawsze Powraca")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

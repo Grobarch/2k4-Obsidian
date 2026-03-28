@@ -5,7 +5,7 @@ system: cold-city
 wydawca: Contested Ground Studios
 gatunek: szpiegowski, horror
 tags: [system, cold-city, szpiegowski, horror]
-draft: "true"
+draft: "false"
 ---
 
 # Cold City
@@ -31,11 +31,23 @@ Gra fabularna osadzona w podzielonym Berlinie roku 1950, gdzie międzynarodowa g
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Cold City/Cold Tales/Cold Tales\|Cold Tales]] | Arkadiusz RYGIEL | 8 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Cold City")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

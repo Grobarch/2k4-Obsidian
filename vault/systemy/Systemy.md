@@ -23,7 +23,17 @@ actions:
 
 ## Spis systemów
 
-<!-- SYSTEMS_START -->
-| System | Gatunek | Kampanie |
-|--------|---------|----------|
-<!-- SYSTEMS_END -->
+```base
+filters:
+  and:
+    - type == "system"
+views:
+  - type: table
+    name: Systemy
+    order:
+      - title
+      - gatunek
+    sort:
+      - property: title
+        direction: ASC
+```

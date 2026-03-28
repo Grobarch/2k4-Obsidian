@@ -6,6 +6,19 @@ title: Warhammer Fantasy Role Play 4ed
 
 ## Scenariusze
 
-<!-- SCENARIOS_START -->
-- [Sukno z Langre](/scenariusze/wfrp-4ed/sukno-z-langre)
-<!-- SCENARIOS_END -->
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("Scenariusze/Wfrp 4ed")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

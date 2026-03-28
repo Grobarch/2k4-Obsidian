@@ -5,7 +5,7 @@ system: wolsung
 wydawca: Kuźnia Gier
 gatunek: steampunk, przygodowy
 tags: [system, wolsung, steampunk, przygodowy]
-draft: "true"
+draft: "false"
 ---
 
 # Wolsung: Magia Wieku Pary

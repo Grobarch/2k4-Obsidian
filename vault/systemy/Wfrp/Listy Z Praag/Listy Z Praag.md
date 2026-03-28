@@ -6,7 +6,7 @@ system_pelna: Warhammer Fantasy Role Play 2ed
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: [kampania, wfrp, dark-fantasy, fantasy]
-draft: "true"
+draft: "false"
 ---
 
 # Listy z Praag
@@ -36,11 +36,20 @@ actions:
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Listy Z Praag/Epizod 01\|Epizod 1: \"Mówiące mury\"]] | 2012-07-19 |
-| 2 | [[Listy Z Praag/Epizod 02\|Epizod 2: \"Miecz w skale spaczenia\"]] | 2013-05-29 |
-| 3 | [[Listy Z Praag/Epizod 03\|Epizod 3: \"Partia ze Ślimakogłowym\"]] | 2013-06-04 |
-| 4 | [[Listy Z Praag/Epizod 04\|Epizod 4: \"Dziecię w czarny pancerz zakute\"]] | 2013-06-09 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/Wfrp/Listy Z Praag")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

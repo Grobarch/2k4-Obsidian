@@ -8,7 +8,7 @@ tags:
   - system
   - l5k
   - samurajski
-draft: "true"
+draft: "false"
 ---
 
 # Legenda Pięciu Kręgów 1ed
@@ -34,14 +34,23 @@ Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[L5K/Groza Ktora Zawsze Powraca/Groza Ktora Zawsze Powraca\|Groza, która zawsze powraca]] | Arkadiusz RYGIEL | 1 |
-| [[L5K/Miecze Cnot I Grzechow/Miecze Cnot I Grzechow\|Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion]] | Arkadiusz RYGIEL | 11 |
-| [[L5K/Prawidla Zdrady/Prawidla Zdrady\|Prawidła zdrady]] | Arkadiusz RYGIEL | 2 |
-| [[L5K/Trylogia Klanu Lwa/Trylogia Klanu Lwa\|Trylogia Klanu Lwa]] | Arkadiusz RYGIEL | 2 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/L5K")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Scenariusze samodzielne
 

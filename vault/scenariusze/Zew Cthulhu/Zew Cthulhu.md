@@ -6,6 +6,19 @@ title: Zew Cthulhu
 
 ## Scenariusze
 
-<!-- SCENARIOS_START -->
-- [Dziesięciu małych ludzi](/scenariusze/zew-cthulhu/dziesieciu-malych-ludzi)
-<!-- SCENARIOS_END -->
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("Scenariusze/Zew Cthulhu")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

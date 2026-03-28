@@ -42,6 +42,9 @@ jobs:
       - name: Update scenario lists
         run: node scripts/update-tables.mjs quartz/content/scenariusze
 
+      - name: Convert Obsidian Bases to static tables
+        run: node scripts/build-bases.mjs quartz/content
+
       - name: Validate frontmatter
         run: node scripts/validate-frontmatter.mjs quartz/content/
 

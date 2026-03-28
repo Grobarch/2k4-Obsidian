@@ -84,6 +84,17 @@ function computeFolderInfo(
     if (folders.has(slug)) {
       folderInfo[slug] = [tree, file]
     }
+
+    // Match Obsidian Folder Notes convention: FolderName/FolderName.md
+    const parts = slug.split("/")
+    if (parts.length >= 2) {
+      const lastPart = parts[parts.length - 1]
+      const parentFolder = parts[parts.length - 2]
+      const parentPath = parts.slice(0, -1).join("/") as SimpleSlug
+      if (lastPart === parentFolder && folders.has(parentPath)) {
+        folderInfo[parentPath] = [tree, file]
+      }
+    }
   }
 
   return folderInfo

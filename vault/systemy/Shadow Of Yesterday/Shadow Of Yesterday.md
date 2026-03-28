@@ -5,7 +5,7 @@ system: shadow-of-yesterday
 wydawca: CRN Games
 gatunek: fantasy
 tags: [system, shadow-of-yesterday, fantasy]
-draft: "true"
+draft: "false"
 ---
 
 # The Shadow of Yesterday

@@ -6,7 +6,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, l5k, samurajski]
-draft: "true"
+draft: "false"
 ---
 
 # Prawidła zdrady
@@ -36,24 +36,37 @@ actions:
 
 ## Bohaterowie Niezalezni
 
-<!-- NPCS_START -->
-| # | Bohater niezależny |
-|---|--------------------|
-| 1 | [Akodo Monzo](/encyklopedia/bohaterowie-niezalezni/akodo-monzo) |
-| 2 | [Akodo Raizo](/encyklopedia/bohaterowie-niezalezni/akodo-raizo) |
-| 3 | [Były żołnierz na usługach Horikoshi Imochiego](/encyklopedia/bohaterowie-niezalezni/byly-zolnierz-na-uslugach-horikoshi-imochiego) |
-| 4 | [Horigato Manro](/encyklopedia/bohaterowie-niezalezni/horigato-manro) |
-| 5 | [Horikoshi Imochi](/encyklopedia/bohaterowie-niezalezni/horikoshi-imochi) |
-| 6 | [Immamura Sakutaro](/encyklopedia/bohaterowie-niezalezni/immamura-sakutaro) |
-| 7 | [Rokugański chłop](/encyklopedia/bohaterowie-niezalezni/rokuganski-chlop) |
-| 8 | [Yojimbo cesarskiego namiestnika Immamury Sakutaro](/encyklopedia/bohaterowie-niezalezni/yojimbo-cesarskiego-namiestnika-immamury-sakutaro) |
-<!-- NPCS_END -->
+```base
+filters:
+  and:
+    - type == "bohater-niezalezny"
+    - kampania == ["prawidla-zdrady"]
+views:
+  - type: table
+    name: Bohaterowie Niezależni
+    order:
+      - title
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Prawidla Zdrady/Epizod 02\|Epizod 2: \"Więzień urodzenia\"]] | 2011-01-15 |
-| 2 | [[Prawidla Zdrady/Epizod 03\|Epizod 3: \"Echo zemsty\"]] | 2011-01-15 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/L5K/Prawidla Zdrady")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

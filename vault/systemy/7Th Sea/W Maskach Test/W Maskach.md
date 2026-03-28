@@ -1,15 +1,15 @@
 ---
-title: Tajemnice zapomnianej technologii z Hortusa
+title: W maskach
 type: kampania
-system: gasnace-slonca
-system_pelna: Gasnące Słońca 2ed
+system: 7th-sea
+system_pelna: 7th Sea
 mg: Arkadiusz RYGIEL
-gatunek: space-fantasy
-tags: [kampania, gasnace-slonca, space-fantasy]
+gatunek: fantasy
+tags: ["kampania", "7th-Sea", "szpiegowski", "fantasy", "7th-sea"]
 draft: "false"
 ---
 
-# Tajemnice zapomnianej technologii z Hortusa
+# W maskach
 
 
 <div class="obsidian-only">
@@ -45,7 +45,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("Systemy/Gasnace Slonca/Tajemnice Z Hortusa")
+        - file.inFolder("Systemy/7Th Sea/W Maskach Test")
     order:
       - title
       - data
@@ -53,3 +53,6 @@ views:
       - property: data
         direction: ASC
 ```
+
+
+<!-- NPCS_START -->

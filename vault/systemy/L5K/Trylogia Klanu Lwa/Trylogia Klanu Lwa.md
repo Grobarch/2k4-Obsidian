@@ -6,7 +6,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, l5k, samurajski]
-draft: "true"
+draft: "false"
 ---
 
 # Trylogia Klanu Lwa
@@ -36,9 +36,20 @@ actions:
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Trylogia Klanu Lwa/Epizod 01\|Epizod 1: \"Białe kłamstwa\"]] | 2010-11-15 |
-| 2 | [[Trylogia Klanu Lwa/Epizod 02\|Epizod 2: \"Miecz nienawiści\"]] | 2011-02-13 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/L5K/Trylogia Klanu Lwa")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

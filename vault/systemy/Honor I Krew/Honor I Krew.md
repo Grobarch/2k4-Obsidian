@@ -5,7 +5,7 @@ system: honor-i-krew
 wydawca: Gramel
 gatunek: samurajski
 tags: [system, honor-i-krew, fantasy, samurajski]
-draft: "true"
+draft: "false"
 ---
 
 # Honor i Krew
@@ -31,11 +31,23 @@ Polska gra fabularna wydana przez Gramel, osadzona w feudalnej Japonii, skupiona
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Honor I Krew/Trylogia Miecza/Trylogia Miecza\|Trylogia miecza]] | Arkadiusz RYGIEL | 3 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Honor I Krew")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

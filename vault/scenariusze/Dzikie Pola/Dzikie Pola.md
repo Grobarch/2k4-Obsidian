@@ -6,6 +6,19 @@ title: Dzikie Pola
 
 ## Scenariusze
 
-<!-- SCENARIOS_START -->
-- [Białogłowa](/scenariusze/dzikie-pola/bialoglowa)
-<!-- SCENARIOS_END -->
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("Scenariusze/Dzikie Pola")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

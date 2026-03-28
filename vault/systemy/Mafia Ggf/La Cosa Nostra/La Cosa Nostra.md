@@ -6,7 +6,7 @@ system_pelna: "Mafia: Gangsterska Gra Fabularna"
 mg: Arkadiusz RYGIEL
 gatunek: gangsterski
 tags: [kampania, mafia-ggf, gangsterski]
-draft: "true"
+draft: "false"
 ---
 
 # La Cosa Nostra
@@ -36,12 +36,20 @@ actions:
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[La Cosa Nostra/Epizod 01\|Epizod 1: \"Makaroniarskie porachunki\"]] | 2011-01-28 |
-| 2 | [[La Cosa Nostra/Epizod 02\|Epizod 2: \"Nasza sprawa\"]] | 2011-01-28 |
-| 3 | [[La Cosa Nostra/Epizod 03\|Epizod 3: \"Transport w akompaniamencie wystrzałów\"]] | 2011-01-28 |
-| 4 | [[La Cosa Nostra/Epizod 04\|Epizod 4: \"Włoska robota\"]] | 2011-01-28 |
-| 5 | [[La Cosa Nostra/Epizod 05\|Epizod 5: \"Życie miasta\"]] | 2011-01-28 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/Mafia Ggf/La Cosa Nostra")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

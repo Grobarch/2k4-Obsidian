@@ -6,8 +6,19 @@ title: Dead of Night
 
 ## Scenariusze
 
-<!-- SCENARIOS_START -->
-- [Tajemnica New Heaven](/scenariusze/dead-of-night/tajemnica-new-heaven)
-- [Zombie market](/scenariusze/dead-of-night/zombie-market)
-- [Wirus Sam](/scenariusze/dead-of-night/wirus-sam)
-<!-- SCENARIOS_END -->
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("Scenariusze/Dead Of Night")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

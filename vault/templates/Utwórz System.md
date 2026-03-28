@@ -106,8 +106,23 @@ actions:
 
 ## Kampanie
 
-| Kampania | MG | Epizody |
-|----------|-------|---------|
+\`\`\`base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("${systemFolder}")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+\`\`\`
 
 ## Wszystkie strony
 
@@ -119,50 +134,6 @@ Przeglądaj: [wszystkie strony z tagiem *${systemId}*](/tags/${systemId})
 // ============================================================
 await app.vault.createFolder(systemFolder).catch(() => {});
 await tp.file.create_new(content, nazwa, true, systemFolder);
-
-// ============================================================
-// Aktualizuj tabelkę systemów w Systemy.md
-// ============================================================
-const systemyNotePath = "Systemy/Systemy.md";
-const systemyFile = app.vault.getAbstractFileByPath(systemyNotePath);
-if (systemyFile) {
-  const systemyContent = await app.vault.read(systemyFile);
-  const systemLink = `/systemy/${systemId}/${systemId}`;
-  const displayLink = `[${nazwa}](${systemLink})`;
-  const newRow = `| ${displayLink} | ${gatunek} | 0 |`;
-
-  // Wstaw wiersz przed marker END, zachowując porządek alfabetyczny
-  const startMarker = "<!-- SYSTEMS_START -->";
-  const endMarker = "<!-- SYSTEMS_END -->";
-  const startIdx = systemyContent.indexOf(startMarker);
-  const endIdx = systemyContent.indexOf(endMarker);
-
-  if (startIdx !== -1 && endIdx !== -1) {
-    const before = systemyContent.substring(0, startIdx + startMarker.length);
-    const tableContent = systemyContent.substring(startIdx + startMarker.length, endIdx);
-    const after = systemyContent.substring(endIdx);
-
-    // Parsuj istniejące wiersze tabelki
-    const lines = tableContent.split("\n").filter(l => l.trim());
-    const headerLines = lines.filter(l => l.includes("System") || l.match(/^\|[-\s|]+\|$/));
-    const dataLines = lines.filter(l => !l.includes("System") && !l.match(/^\|[-\s|]+\|$/) && l.startsWith("|"));
-
-    // Dodaj nowy wiersz i posortuj alfabetycznie po nazwie systemu
-    dataLines.push(newRow);
-    dataLines.sort((a, b) => {
-      const nameA = (a.match(/\[([^\]]+)\]/) || ["", ""])[1].toLowerCase();
-      const nameB = (b.match(/\[([^\]]+)\]/) || ["", ""])[1].toLowerCase();
-      return nameA.localeCompare(nameB, "pl");
-    });
-
-    const newTable = [...headerLines, ...dataLines].join("\n");
-    const updated = `${before}\n${newTable}\n${after}`;
-
-    if (updated !== systemyContent) {
-      await app.vault.modify(systemyFile, updated);
-    }
-  }
-}
 
 tp.hooks.on_all_templates_executed(async () => {
   const f = app.vault.getAbstractFileByPath(triggerFile.path);

@@ -6,8 +6,19 @@ title: A Penny For My Thoughts
 
 ## Scenariusze
 
-<!-- SCENARIOS_START -->
-- [Przypadek Kuby Rozpruwacza](/scenariusze/a-penny-for-my-thoughts/przypadek-kuby-rozpruwacza)
-- [Komórka Zaida](/scenariusze/a-penny-for-my-thoughts/komorka-zaida)
-- [Test](/scenariusze/a-penny-for-my-thoughts/test)
-<!-- SCENARIOS_END -->
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("Scenariusze/A Penny For My Thoughts")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

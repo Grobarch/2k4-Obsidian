@@ -6,7 +6,7 @@ system_pelna: Honor i Krew
 mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, honor-i-krew, fantasy, samurajski]
-draft: "true"
+draft: "false"
 ---
 
 # Trylogia miecza
@@ -36,10 +36,20 @@ actions:
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Trylogia Miecza/Epizod 01\|Epizod 1: \"Miecz mordu\"]] | 2011-08-09 |
-| 2 | [[Trylogia Miecza/Epizod 02\|Epizod 2: \"Kiedy przemówią miecze\"]] | 2011-09-30 |
-| 3 | [[Trylogia Miecza/Epizod 03\|Epizod 3: \"Miecz, który całuje raz\"]] | 2011-11-30 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/Honor I Krew/Trylogia Miecza")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

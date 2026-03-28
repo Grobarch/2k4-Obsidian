@@ -5,7 +5,7 @@ system: gasnace-slonca
 wydawca: Gramel
 gatunek: space fantasy
 tags: [system, gasnace-slonca, space-fantasy]
-draft: "true"
+draft: "false"
 ---
 
 # Gasnące Słońca 2ed
@@ -31,11 +31,23 @@ Polska gra fabularna wydana przez Gramel, osadzona w oryginalnym uniwersum kosmi
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Gasnace Slonca/Tajemnice Z Hortusa/Tajemnice Z Hortusa\|Tajemnice zapomnianej technologii z Hortusa]] | Arkadiusz RYGIEL | 1 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Gasnace Slonca")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

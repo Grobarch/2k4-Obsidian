@@ -5,7 +5,7 @@ system: wampir
 wydawca: White Wolf
 gatunek: dark fantasy, horror
 tags: [system, wampir, horror, dark-fantasy]
-draft: "true"
+draft: "false"
 ---
 
 # Wampir: Mroczne Wieki
@@ -31,11 +31,23 @@ Polska edycja gry Vampire: The Dark Ages wydanej przez White Wolf, osadzona w mr
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Wampir/Diabel Z Lazareni/Diabel Z Lazareni\|Diabeł z Łazareni]] | Arkadiusz RYGIEL | 4 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Wampir")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

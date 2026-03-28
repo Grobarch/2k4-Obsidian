@@ -5,7 +5,7 @@ system: wfrp
 wydawca: Games Workshop / Copernicus
 gatunek: dark fantasy
 tags: [system, wfrp, dark-fantasy]
-draft: "true"
+draft: "false"
 ---
 
 # Warhammer Fantasy Role Play
@@ -31,12 +31,23 @@ Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Wfrp/Listy Z Praag/Listy Z Praag\|Listy z Praag]] | Arkadiusz RYGIEL | 4 |
-| [[Wfrp/Losy Bohaterow/Losy Bohaterow\|Losy bohaterów przez żarna czasu ścierane]] | Arkadiusz RYGIEL | 3 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Wfrp")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Scenariusze samodzielne
 

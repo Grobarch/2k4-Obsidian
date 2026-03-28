@@ -5,7 +5,7 @@ system: 7th-sea
 wydawca: AEG / John Wick Presents
 gatunek: przygodowy, fantasy
 tags: ["system", "7th-Sea", "szpiegowski", "przygodowy", "fantasy", "7th-sea"]
-draft: "true"
+draft: "false"
 ---
 
 # 7th Sea
@@ -31,12 +31,23 @@ Gra fabularna osadzona w świecie inspirowanym Europą XVII wieku, pełnym pirat
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[7Th Sea/Test/Test\|Test]] | Krzyś | 2 |
-| [[7Th Sea/W Maskach/W Maskach\|W maskach]] | Arkadiusz RYGIEL | 3 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/7Th Sea")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 
 ## Wszystkie strony

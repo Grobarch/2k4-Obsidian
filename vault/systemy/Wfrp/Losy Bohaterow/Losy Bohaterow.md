@@ -6,7 +6,7 @@ system_pelna: Warhammer Fantasy Role Play 2ed
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: [kampania, wfrp, dark-fantasy, fantasy]
-draft: "true"
+draft: "false"
 ---
 
 # Losy bohaterówprzez żarna czasu ścierane
@@ -36,10 +36,20 @@ actions:
 
 ## Spis epizodow
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-| 1 | [[Losy Bohaterow/Epizod 01\|Epizod 1: \"Ogniste organy z Karak-Din\"]] | 2022-06-19 |
-| 2 | [[Losy Bohaterow/Epizod 02\|Epizod 2: \"Szata czyniąca obłęd\"]] | 2022-07-23 |
-| 3 | [[Losy Bohaterow/Epizod 03\|Epizod 3: \"Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem\"]] | 2022-09-25 |
-<!-- EPISODES_END -->
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("Systemy/Wfrp/Losy Bohaterow")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

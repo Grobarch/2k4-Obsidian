@@ -5,7 +5,7 @@ system: deadlands
 wydawca: Pinnacle Entertainment Group
 gatunek: western, horror
 tags: [system, deadlands, western, horror]
-draft: "true"
+draft: "false"
 ---
 
 # Deadlands: Martwe Ziemie
@@ -31,11 +31,23 @@ Gra fabularna osadzona w alternatywnej wersji Dzikiego Zachodu, gdzie po Wojnie 
 
 ## Kampanie
 
-<!-- CAMPAIGNS_START -->
-| Kampania | MG | Epizody |
-|----------|-------|---------|
-| [[Deadlands/Wszystkie Przebrania Alistaira Kanta/Wszystkie Przebrania Alistaira Kanta\|Wszystkie przebrania Alistaira Kanta]] | Arkadiusz RYGIEL | 10 |
-<!-- CAMPAIGNS_END -->
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("Systemy/Deadlands")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Scenariusze samodzielne
 

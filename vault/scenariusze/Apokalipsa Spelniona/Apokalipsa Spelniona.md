@@ -6,7 +6,19 @@ title: Apokalipsa Spełniona
 
 ## Scenariusze
 
-<!-- SCENARIOS_START -->
-- [Kontinuum zagłady](/scenariusze/apokalipsa-spelniona/kontinuum-zaglady)
-- [Ciało upadłego boga](/scenariusze/apokalipsa-spelniona/cialo-upadlego-boga)
-<!-- SCENARIOS_END -->
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("Scenariusze/Apokalipsa Spelniona")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

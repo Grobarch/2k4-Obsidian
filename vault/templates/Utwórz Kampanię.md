@@ -122,38 +122,93 @@ actions:
 
 ## Bohaterowie Graczy
 
-<!-- PLAYERS_START -->
-| Postać | Gracz | Archetyp |
-|--------|-------|----------|
-<!-- PLAYERS_END -->
+\`\`\`base
+filters:
+  and:
+    - type == "bohater-gracza"
+    - kampania == ["${kampaniaSlug}"]
+views:
+  - type: table
+    name: Bohaterowie Graczy
+    order:
+      - title
+      - gracz
+      - archetyp
+    sort:
+      - property: title
+        direction: ASC
+\`\`\`
 
 ## Bohaterowie Niezależni
 
-<!-- NPCS_START -->
-| # | Bohater niezależny |
-|---|---|
-<!-- NPCS_END -->
+\`\`\`base
+filters:
+  and:
+    - type == "bohater-niezalezny"
+    - kampania == ["${kampaniaSlug}"]
+views:
+  - type: table
+    name: Bohaterowie Niezależni
+    order:
+      - title
+    sort:
+      - property: title
+        direction: ASC
+\`\`\`
 
 ## Lokacje
 
-<!-- LOCATIONS_START -->
-| # | Lokacja |
-|---|---------|
-<!-- LOCATIONS_END -->
+\`\`\`base
+filters:
+  and:
+    - type == "lokacja"
+    - kampania == ["${kampaniaSlug}"]
+views:
+  - type: table
+    name: Lokacje
+    order:
+      - title
+    sort:
+      - property: title
+        direction: ASC
+\`\`\`
 
 ## Artefakty
 
-<!-- ARTIFACTS_START -->
-| # | Artefakt |
-|---|----------|
-<!-- ARTIFACTS_END -->
+\`\`\`base
+filters:
+  and:
+    - type == "artefakt"
+    - kampania == ["${kampaniaSlug}"]
+views:
+  - type: table
+    name: Artefakty
+    order:
+      - title
+    sort:
+      - property: title
+        direction: ASC
+\`\`\`
 
 ## Spis epizodów
 
-<!-- EPISODES_START -->
-| # | Tytuł | Data |
-|---|-------|------|
-<!-- EPISODES_END -->
+\`\`\`base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("${kampaniaFolder}")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+\`\`\`
 `;
 
 // ============================================================
@@ -161,25 +216,6 @@ actions:
 // ============================================================
 await app.vault.createFolder(kampaniaFolder).catch(() => {});
 await tp.file.create_new(content, nazwa, true, kampaniaFolder);
-
-// ============================================================
-// Aktualizuj tabelkę kampanii w folder note systemu
-// ============================================================
-const parentContent = await app.vault.read(parentFile);
-const kampaniaDisplayLink = `[${nazwa}](${kampaniaLink})`;
-const newRow = `| ${kampaniaDisplayLink} | ${mg} | 0 |`;
-
-// Szukaj tabelki kampanii (po nagłówku "## Kampanie")
-const kampTableRegex = /(## Kampanie\s*\n\s*\|[^\n]+\|\s*\n\s*\|[-| ]+\|\s*\n)([\s\S]*?)(\n\s*##|\n*$)/;
-const match = parentContent.match(kampTableRegex);
-if (match) {
-  const existingRows = match[2].trimEnd();
-  const rowsWithNew = existingRows ? `${existingRows}\n${newRow}` : newRow;
-  const updated = parentContent.replace(kampTableRegex, `$1${rowsWithNew}\n$3`);
-  if (updated !== parentContent) {
-    await app.vault.modify(parentFile, updated);
-  }
-}
 
 tp.hooks.on_all_templates_executed(async () => {
   const f = app.vault.getAbstractFileByPath(triggerFile.path);
