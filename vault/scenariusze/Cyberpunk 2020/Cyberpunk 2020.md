@@ -6,5 +6,20 @@ title: Cyberpunk 2020
 
 ## Scenariusze
 
-- [Niewygodny człowiek](/scenariusze/cyberpunk-2020/niewygodny-czlowiek)
-- [Jimmy's Juice](/scenariusze/cyberpunk-2020/jimmys-juice)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/Cyberpunk 2020")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -14,7 +14,6 @@ draft: "false"
 # Legenda Pięciu Kręgów 1ed
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -34,21 +33,45 @@ Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [Groza, która zawsze powraca](/systemy/l5k/groza-ktora-zawsze-powraca/groza-ktora-zawsze-powraca) | Arkadiusz RYGIEL |
-| [Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion](/systemy/l5k/miecze-cnot-i-grzechow/miecze-cnot-i-grzechow) | Arkadiusz RYGIEL |
-| [Prawidła zdrady](/systemy/l5k/prawidla-zdrady/prawidla-zdrady) | Arkadiusz RYGIEL |
-| [Trylogia Klanu Lwa](/systemy/l5k/trylogia-klanu-lwa/trylogia-klanu-lwa) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/L5K")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Pewnego razu w Rokuganie](/scenariusze/l5k1ed/pewnego-razu-w-rokuganie) | 2010-11-26 |
-| [Koszmar życia](/scenariusze/l5k1ed/koszmar-zycia) | 2011-12-30 |
-| [Krótka opowieść o człowieku bez serca](/scenariusze/l5k1ed/krotka-opowiesc-o-czlowieku-bez-serca) | 2013-01-04 |
-| [Szaleństwo Mistrza Okamury](/scenariusze/l5k1ed/szalenstwo-mistrza-okamury) | 2022-12-25 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "l5k1ed"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

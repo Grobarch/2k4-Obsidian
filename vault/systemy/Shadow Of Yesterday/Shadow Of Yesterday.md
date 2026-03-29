@@ -11,7 +11,6 @@ draft: "false"
 # The Shadow of Yesterday
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Niezależna gra fabularna autorstwa Clintona R. Nixona, osadzona w postkatastrof
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Cień dni minionych](/scenariusze/the-shadow-of-yesterday/cien-dni-minionych) | 2012-01-02 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "the-shadow-of-yesterday"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

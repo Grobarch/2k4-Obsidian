@@ -11,7 +11,6 @@ draft: "false"
 # Wampir: Mroczne Wieki
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska edycja gry Vampire: The Dark Ages wydanej przez White Wolf, osadzona w mr
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [Diabeł z Łazareni](/systemy/wampir/diabel-z-lazareni/diabel-z-lazareni) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/Wampir")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

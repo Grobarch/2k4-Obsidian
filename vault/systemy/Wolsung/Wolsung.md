@@ -11,7 +11,6 @@ draft: "false"
 # Wolsung: Magia Wieku Pary
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,11 +30,24 @@ Polska gra fabularna wydana przez Kuźnię Gier w konwencji steampunk fantasy, o
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Szpiegowska gra](/scenariusze/wolsung/szpiegowska-gra) | 2011-01-20 |
-| [Bestia z Crystal Creek](/scenariusze/wolsung/bestia-z-crystal-creek) | 2011-01-21 |
-| [Most na rzece Anok](/scenariusze/wolsung/most-na-rzece-anok) | 2011-01-21 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "wolsung"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

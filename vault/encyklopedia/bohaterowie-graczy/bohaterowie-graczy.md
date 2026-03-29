@@ -20,3 +20,20 @@ actions:
 ```
 
 </div>
+
+```base
+filters:
+  and:
+    - type == "bohater-gracza"
+views:
+  - type: cards
+    name: Bohaterowie Graczy
+    order:
+      - title
+      - system_pelna
+      - gracz
+      - archetyp
+    sort:
+      - property: title
+        direction: ASC
+```

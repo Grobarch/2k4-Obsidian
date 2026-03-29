@@ -36,9 +36,21 @@ actions:
 
 ## Spis epizodow
 
-| Tytuł | Data |
-| --- | --- |
-| [Epizod 1: "Ostrze ideologii i worek elfich głów"](/systemy/wiedzmin/sludzy-miecza/epizod-01) | 2011-01-22 |
-| [Epizod 2: "Nowy włodarz"](/systemy/wiedzmin/sludzy-miecza/epizod-02) | 2011-01-22 |
-| [Epizod 3: "Masakra w Maden"](/systemy/wiedzmin/sludzy-miecza/epizod-03) | 2011-01-22 |
-| [Epizod 4: "Przywódca Scoia'tael"](/systemy/wiedzmin/sludzy-miecza/epizod-04) | 2011-01-22 |
+
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("systemy/Wiedzmin/Sludzy Miecza")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

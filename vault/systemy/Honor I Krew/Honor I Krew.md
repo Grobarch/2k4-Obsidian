@@ -11,7 +11,6 @@ draft: "false"
 # Honor i Krew
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska gra fabularna wydana przez Gramel, osadzona w feudalnej Japonii, skupiona
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [Trylogia miecza](/systemy/honor-i-krew/trylogia-miecza/trylogia-miecza) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/Honor I Krew")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

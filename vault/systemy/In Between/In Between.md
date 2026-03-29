@@ -11,7 +11,6 @@ draft: "false"
 # In Between
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska gra fabularna wydana przez Portal, o tematyce horroru psychologicznego, w
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [W kajdanach przeszłości](/scenariusze/in-between/w-kajdanach-przeszlosci) | 2012-12-21 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "in-between"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

@@ -36,9 +36,21 @@ actions:
 
 ## Spis epizodow
 
-| Tytuł | Data |
-| --- | --- |
-| [Epizod 1: "Syn"](/systemy/wampir/diabel-z-lazareni/epizod-01) | 2011-01-17 |
-| [Epizod 2: "Polowanie"](/systemy/wampir/diabel-z-lazareni/epizod-02) | 2011-01-17 |
-| [Epizod 3: "Intrygi"](/systemy/wampir/diabel-z-lazareni/epizod-03) | 2011-01-18 |
-| [Epizod 4: "Zdrada"](/systemy/wampir/diabel-z-lazareni/epizod-04) | 2011-01-18 |
+
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("systemy/Wampir/Diabel Z Lazareni")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

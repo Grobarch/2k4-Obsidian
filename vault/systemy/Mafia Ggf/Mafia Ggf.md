@@ -11,7 +11,6 @@ draft: "false"
 # Mafia: Gangsterska Gra Fabularna
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska gra fabularna wydana przez Portal, o świecie zorganizowanej przestępczo
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [La Cosa Nostra](/systemy/mafia-ggf/la-cosa-nostra/la-cosa-nostra) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/Mafia Ggf")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

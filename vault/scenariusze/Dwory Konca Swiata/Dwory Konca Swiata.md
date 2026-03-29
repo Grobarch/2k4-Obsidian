@@ -6,4 +6,20 @@ title: Dwory Końca Świata
 
 ## Scenariusze
 
-- [Dźwięki dintojry](/scenariusze/dwory-konca-swiata/dzwieki-dintojry)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/Dwory Konca Swiata")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

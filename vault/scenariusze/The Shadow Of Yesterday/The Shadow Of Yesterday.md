@@ -6,4 +6,20 @@ title: The Shadow of Yesterday
 
 ## Scenariusze
 
-- [Cień dni minionych](/scenariusze/the-shadow-of-yesterday/cien-dni-minionych)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/The Shadow Of Yesterday")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

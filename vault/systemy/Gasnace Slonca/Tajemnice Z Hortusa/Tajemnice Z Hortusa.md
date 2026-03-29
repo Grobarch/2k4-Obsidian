@@ -36,6 +36,21 @@ actions:
 
 ## Spis epizodow
 
-| Tytuł | Data |
-| --- | --- |
-| [Epizod 1: "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis"](/systemy/gasnace-slonca/tajemnice-z-hortusa/epizod-01) | 2023-12-30 |
+
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("systemy/Gasnace Slonca/Tajemnice Z Hortusa")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

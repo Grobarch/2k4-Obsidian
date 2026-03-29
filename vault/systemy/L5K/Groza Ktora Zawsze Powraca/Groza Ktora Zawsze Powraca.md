@@ -36,26 +36,63 @@ actions:
 
 ## Bohaterowie Graczy
 
-| Tytuł | Gracz | Archetyp |
-| --- | --- | --- |
-| [Agasha Damagodetsu](/encyklopedia/bohaterowie-graczy/agasha-damagodetsu) | Paweł PIOTROWSKI | shugenja z Klanu Smoka i Szmaragdowy Namiestnik |
-| [Akodo Nushiro](/encyklopedia/bohaterowie-graczy/akodo-nushiro) | Piotr RYGIEL | bushi z Klanu Lwa |
-| [Hida Hikaru](/encyklopedia/bohaterowie-graczy/hida-hikaru) | Dawid KOŁACIŃSKI | bushi z Klanu Kraba |
-| [Hida Mitsuru](/encyklopedia/bohaterowie-graczy/hida-mitsuru) | Tomasz TYMIŃSKI | bushi z Klanu Kraba |
-| [Isawa Mamoru](/encyklopedia/bohaterowie-graczy/isawa-mamoru) | Krzysztof OBSTAWSKI | shugenja z Klanu Feniksa |
-| [Kuni Takajiro](/encyklopedia/bohaterowie-graczy/kuni-takajiro) | Paweł OBSTAWSKI | tsukai-sagasu z Klanu Kraba |
-| [Shiba Tetsu](/encyklopedia/bohaterowie-graczy/shiba-tetsu) | Radosław RYBIŃSKI | bushi z Klanu Feniksa |
+
+```base
+filters:
+  and:
+    - type == "bohater-gracza"
+views:
+  - type: table
+    name: Bohaterowie Graczy
+    filters:
+      and:
+        - kampania == "groza-ktora-zawsze-powraca"
+    order:
+      - title
+      - gracz
+      - archetyp
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Bohaterowie Niezalezni
 
-| Tytuł |
-| --- |
-| [Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](/encyklopedia/bohaterowie-niezalezni/cien-kobiety-jedna-z-mrocznych-zjaw-poddanych-woli-cichego-skorpiona-z-zamku-zadel-w-miescie-slodkich-klamstw) |
-| [Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu](/encyklopedia/bohaterowie-niezalezni/czlowiek-z-chmur-burzowa-chmura-ronin-dotkniety-przez-pania-slonce-amaterasu) |
-| [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
+
+```base
+filters:
+  and:
+    - type == "bohater-niezalezny"
+views:
+  - type: table
+    name: Bohaterowie Niezależni
+    filters:
+      and:
+        - kampania == "groza-ktora-zawsze-powraca"
+    order:
+      - title
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Spis epizodow
 
-| Tytuł | Data |
-| --- | --- |
-| [Epizod 1: "Szaleństwo Mistrza Okamury"](/systemy/l5k/groza-ktora-zawsze-powraca/epizod-01) | 2022-12-25 |
+
+```base
+filters:
+  and:
+    - type == "epizod"
+views:
+  - type: table
+    name: Epizody
+    filters:
+      and:
+        - file.inFolder("systemy/L5K/Groza Ktora Zawsze Powraca")
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
