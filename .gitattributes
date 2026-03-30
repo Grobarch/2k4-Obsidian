@@ -1,0 +1,5 @@
+# Force LF line endings for shell scripts (prevent Windows CRLF conversion)
+*.sh text eol=lf
+
+# Default: auto line ending detection
+* text=auto
