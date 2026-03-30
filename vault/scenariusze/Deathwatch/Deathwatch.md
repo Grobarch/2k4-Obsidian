@@ -6,4 +6,20 @@ title: Deathwatch
 
 ## Scenariusze
 
-- [Wyprawa Estariusza](/scenariusze/deathwatch/wyprawa-estariusza)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/Deathwatch")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

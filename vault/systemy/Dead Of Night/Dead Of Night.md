@@ -11,7 +11,6 @@ draft: "false"
 # Dead of Night
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,11 +30,24 @@ Lekka gra fabularna stworzona z myślą o jednorazowych sesjach horrorowych w du
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Tajemnica New Heaven](/scenariusze/dead-of-night/tajemnica-new-heaven) | 2011-02-27 |
-| [Zombie market](/scenariusze/dead-of-night/zombie-market) | 2011-04-26 |
-| [Wirus Sam](/scenariusze/dead-of-night/wirus-sam) | 2011-04-29 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "dead-of-night"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

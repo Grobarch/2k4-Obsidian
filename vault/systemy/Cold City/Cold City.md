@@ -11,7 +11,6 @@ draft: "false"
 # Cold City
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Gra fabularna osadzona w podzielonym Berlinie roku 1950, gdzie międzynarodowa g
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [Cold Tales](/systemy/cold-city/cold-tales/cold-tales) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/Cold City")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

@@ -20,3 +20,18 @@ actions:
 ```
 
 </div>
+
+```base
+filters:
+  and:
+    - type == "lokacja"
+views:
+  - type: cards
+    name: Lokacje
+    order:
+      - title
+      - system_pelna
+    sort:
+      - property: title
+        direction: ASC
+```

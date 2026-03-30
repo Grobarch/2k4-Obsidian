@@ -20,3 +20,18 @@ actions:
 ```
 
 </div>
+
+```base
+filters:
+  and:
+    - type == "bohater-niezalezny"
+views:
+  - type: cards
+    name: Bohaterowie Niezależni
+    order:
+      - title
+      - system_pelna
+    sort:
+      - property: title
+        direction: ASC
+```

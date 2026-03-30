@@ -11,7 +11,6 @@ draft: "false"
 # Gasnące Słońca 2ed
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska gra fabularna wydana przez Gramel, osadzona w oryginalnym uniwersum kosmi
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [Tajemnice zapomnianej technologii z Hortusa](/systemy/gasnace-slonca/tajemnice-z-hortusa/tajemnice-z-hortusa) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/Gasnace Slonca")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

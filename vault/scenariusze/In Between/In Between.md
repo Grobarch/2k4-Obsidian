@@ -6,4 +6,20 @@ title: In Between
 
 ## Scenariusze
 
-- [W kajdanach przeszłości](/scenariusze/in-between/w-kajdanach-przeszlosci)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/In Between")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

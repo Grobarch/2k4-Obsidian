@@ -11,7 +11,6 @@ draft: "false"
 # Zew Cthulhu
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska edycja klasycznej gry fabularnej Call of Cthulhu wydanej przez Chaosium, 
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Dziesięciu małych ludzi](/scenariusze/zew-cthulhu/dziesieciu-malych-ludzi) | 2011-02-05 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "zew-cthulhu"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

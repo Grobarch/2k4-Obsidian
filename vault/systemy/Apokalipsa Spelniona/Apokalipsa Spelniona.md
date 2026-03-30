@@ -11,7 +11,6 @@ draft: "false"
 # Apokalipsa Spełniona: Czas Cthulhu
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,10 +30,24 @@ Polska gra fabularna wydana przez Portal, łącząca motywy mitologii Cthulhu z 
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Kontinuum zagłady](/scenariusze/apokalipsa-spelniona/kontinuum-zaglady) | 2012-08-09 |
-| [Ciało upadłego boga](/scenariusze/apokalipsa-spelniona/cialo-upadlego-boga) | 2012-10-21 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "apokalipsa-spelniona"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

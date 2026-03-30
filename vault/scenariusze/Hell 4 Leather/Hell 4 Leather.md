@@ -6,6 +6,20 @@ title: Hell 4 Leather
 
 ## Scenariusze
 
-- [Człowiek z przestrzeloną twarzą](/scenariusze/hell-4-leather/czlowiek-z-przestrzelona-twarza)
-- [El Diablo](/scenariusze/hell-4-leather/el-diablo)
-- [Upadek Corneliusa Maximusa](/scenariusze/hell-4-leather/upadek-corneliusa-maximusa)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/Hell 4 Leather")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

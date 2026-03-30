@@ -11,7 +11,6 @@ draft: "false"
 # Wiedźmin: Gra Wyobraźni
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska gra fabularna osadzona w uniwersum Wiedźmina stworzonego przez Andrzeja 
 
 ## Kampanie
 
-| Tytuł | MG |
-| --- | --- |
-| [Słudzy miecza i brzęczących monet](/systemy/wiedzmin/sludzy-miecza/sludzy-miecza) | Arkadiusz RYGIEL |
+
+```base
+filters:
+  and:
+    - type == "kampania"
+views:
+  - type: table
+    name: Kampanie
+    filters:
+      and:
+        - file.inFolder("systemy/Wiedzmin")
+    order:
+      - title
+      - mg
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ## Wszystkie strony
 

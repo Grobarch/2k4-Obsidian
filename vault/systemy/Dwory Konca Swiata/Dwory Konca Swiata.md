@@ -11,7 +11,6 @@ draft: "false"
 # Dwory Końca Świata: Dziedzictwo Imperium
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,24 @@ Polska gra fabularna wydana przez Gramel, rozgrywająca się w umierającym impe
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Dźwięki dintojry](/scenariusze/dwory-konca-swiata/dzwieki-dintojry) | 2013-06-15 |
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: table
+    name: Scenariusze
+    filters:
+      and:
+        - system == "dwory-konca-swiata"
+    order:
+      - title
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
 
 ## Wszystkie strony
 

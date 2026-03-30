@@ -6,5 +6,20 @@ title: Warhammer Fantasy Role Play 1ed
 
 ## Scenariusze
 
-- [Szlakiem szaleństwa](/scenariusze/wfrp-1ed/szlakiem-szalenstwa)
-- [Obrazy Engela Rosensteina](/scenariusze/wfrp-1ed/obrazy-engela-rosensteina)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/Wfrp 1ed")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

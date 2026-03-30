@@ -6,5 +6,20 @@ title: Deadlands
 
 ## Scenariusze
 
-- [Teksańskie love story](/scenariusze/deadlands/teksanskie-love-story)
-- [Historia pewnej miłości, pieniędzy i ołowiu](/scenariusze/deadlands/historia-pewnej-milosci-pieniedzy-i-olowiu)
+
+```base
+filters:
+  and:
+    - type == "scenariusz"
+views:
+  - type: list
+    name: Scenariusze
+    filters:
+      and:
+        - file.inFolder("scenariusze/Deadlands")
+    order:
+      - title
+    sort:
+      - property: data
+        direction: ASC
+```

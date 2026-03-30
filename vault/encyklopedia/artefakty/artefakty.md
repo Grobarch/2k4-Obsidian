@@ -20,3 +20,18 @@ actions:
 ```
 
 </div>
+
+```base
+filters:
+  and:
+    - type == "artefakt"
+views:
+  - type: cards
+    name: Artefakty
+    order:
+      - title
+      - system_pelna
+    sort:
+      - property: title
+        direction: ASC
+```
