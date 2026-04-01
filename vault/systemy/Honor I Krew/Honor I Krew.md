@@ -42,7 +42,6 @@ views:
       and:
         - file.inFolder("systemy/Honor I Krew")
     order:
-      - title
       - mg
     sort:
       - property: title

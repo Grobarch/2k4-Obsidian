@@ -306,23 +306,21 @@ function sortFiles(matchedFiles, sortSpec, vaultRoot) {
 }
 
 /**
- * Zwraca kolumny na podstawie view.order (z fallbackiem do ["title"]).
+ * Zwraca kolumny dodatkowe (property) na podstawie view.order.
+ * Filtruje "title" — kolumna tytułu/linku jest generowana osobno.
  */
 function resolveColumns(view) {
-  let columns = (view.order || []).filter(c => !c.startsWith("file.ctime") && !c.startsWith("file.mtime"));
-  const fileOnlyCols = columns.every(c => c.startsWith("file."));
-  if (columns.length === 0 || fileOnlyCols) {
-    columns = ["title"];
-  }
-  return columns;
+  return (view.order || [])
+    .filter(c => c !== "title" && !c.startsWith("file.ctime") && !c.startsWith("file.mtime"));
 }
 
 /**
  * Generuje tabelę markdown z pasujących plików.
+ * Pierwsza kolumna to zawsze link do pliku (z fm.title), reszta z order[].
  */
 function generateTable(baseConfig, matchedFiles, vaultRoot) {
   const view = baseConfig.views[0] || {};
-  const columns = resolveColumns(view);
+  const extraCols = resolveColumns(view);
 
   sortFiles(matchedFiles, view.sort || [], vaultRoot);
 
@@ -330,19 +328,15 @@ function generateTable(baseConfig, matchedFiles, vaultRoot) {
     return "_Brak wyników._\n";
   }
 
-  const headers = columns.map(c => COLUMN_HEADERS[c] || c);
-  const sep     = columns.map(() => "---");
+  const headers = ["Tytuł", ...extraCols.map(c => COLUMN_HEADERS[c] || c)];
+  const sep     = headers.map(() => "---");
 
   const rows = matchedFiles.map(({ fm, path }) => {
-    return columns.map((col, i) => {
-      const val = getCellValue(col, fm, path, vaultRoot);
-      if (i === 0 || col === "title") {
-        const url   = buildUrl(path, vaultRoot);
-        const label = cleanFmVal(fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, ""));
-        return `[${label}](${url})`;
-      }
-      return val || "";
-    });
+    const url   = buildUrl(path, vaultRoot);
+    const label = cleanFmVal(fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, ""));
+    const link  = `[${label}](${url})`;
+    const extra = extraCols.map(col => getCellValue(col, fm, path, vaultRoot) || "");
+    return [link, ...extra];
   });
 
   const lines = [

@@ -42,7 +42,6 @@ views:
       and:
         - system == "dzikie-pola"
     order:
-      - title
       - data
     sort:
       - property: data

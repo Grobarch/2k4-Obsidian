@@ -42,7 +42,6 @@ views:
       and:
         - system == "wolsung"
     order:
-      - title
       - data
     sort:
       - property: data

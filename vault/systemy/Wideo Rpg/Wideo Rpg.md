@@ -42,7 +42,6 @@ views:
       and:
         - system == "wideo-rpg"
     order:
-      - title
       - data
     sort:
       - property: data

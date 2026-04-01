@@ -48,7 +48,6 @@ views:
       and:
         - kampania == "cold-tales"
     order:
-      - title
       - gracz
       - archetyp
     sort:
@@ -69,8 +68,6 @@ views:
     filters:
       and:
         - kampania == "cold-tales"
-    order:
-      - title
     sort:
       - property: title
         direction: ASC
@@ -89,8 +86,6 @@ views:
     filters:
       and:
         - kampania == "cold-tales"
-    order:
-      - title
     sort:
       - property: title
         direction: ASC
@@ -110,7 +105,6 @@ views:
       and:
         - file.inFolder("systemy/Cold City/Cold Tales")
     order:
-      - title
       - data
     sort:
       - property: data

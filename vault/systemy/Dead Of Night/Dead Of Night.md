@@ -42,7 +42,6 @@ views:
       and:
         - system == "dead-of-night"
     order:
-      - title
       - data
     sort:
       - property: data

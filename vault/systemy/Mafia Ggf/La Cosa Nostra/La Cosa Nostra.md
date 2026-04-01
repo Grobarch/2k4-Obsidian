@@ -48,7 +48,6 @@ views:
       and:
         - file.inFolder("systemy/Mafia Ggf/La Cosa Nostra")
     order:
-      - title
       - data
     sort:
       - property: data

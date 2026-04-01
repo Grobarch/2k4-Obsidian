@@ -48,7 +48,6 @@ views:
       and:
         - file.inFolder("systemy/Wfrp/Listy Z Praag")
     order:
-      - title
       - data
     sort:
       - property: data

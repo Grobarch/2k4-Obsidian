@@ -32,7 +32,6 @@ views:
   - type: table
     name: Systemy
     order:
-      - title
       - gatunek
     sort:
       - property: title

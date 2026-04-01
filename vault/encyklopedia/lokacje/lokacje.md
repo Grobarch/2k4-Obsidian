@@ -29,7 +29,6 @@ views:
   - type: cards
     name: Lokacje
     order:
-      - title
       - system_pelna
     sort:
       - property: title

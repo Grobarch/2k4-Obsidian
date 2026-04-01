@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/A Penny For My Thoughts")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

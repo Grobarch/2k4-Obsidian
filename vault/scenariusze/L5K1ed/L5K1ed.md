@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/L5K1ed")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

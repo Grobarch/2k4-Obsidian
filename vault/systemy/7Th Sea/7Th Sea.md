@@ -42,7 +42,6 @@ views:
       and:
         - file.inFolder("systemy/7Th Sea")
     order:
-      - title
       - mg
     sort:
       - property: title
