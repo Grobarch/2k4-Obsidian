@@ -36,6 +36,7 @@ actions:
 
 ## Bohaterowie Graczy
 
+
 | Tytuł | Gracz | Archetyp |
 | --- | --- | --- |
 | [Agasha Damagodetsu](/encyklopedia/bohaterowie-graczy/agasha-damagodetsu) | Paweł PIOTROWSKI | shugenja z Klanu Smoka i Szmaragdowy Namiestnik |
@@ -48,6 +49,7 @@ actions:
 
 ## Bohaterowie Niezalezni
 
+
 | Tytuł |
 | --- |
 | [Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](/encyklopedia/bohaterowie-niezalezni/cien-kobiety-jedna-z-mrocznych-zjaw-poddanych-woli-cichego-skorpiona-z-zamku-zadel-w-miescie-slodkich-klamstw) |
@@ -55,6 +57,7 @@ actions:
 | [Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri) |
 
 ## Spis epizodow
+
 
 | Tytuł | Data |
 | --- | --- |

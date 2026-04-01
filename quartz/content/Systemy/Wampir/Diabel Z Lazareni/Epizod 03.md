@@ -20,7 +20,9 @@ tags: [epizod, wampir, horror]
 
 Plemię Złodziei Oczu zostaje rozbite a jego przewodnik Cyryl Dzieciojad zabity. Zdrajcy Igorowi Lupei udaję się zbiec. Kainici lojalni wobec kniazia próbują rozszyfrować zdradę i znaleźć winnych.
 
-**Powinność****Rozważania Możnych Panów**
+**Powinność**
+
+**Rozważania Możnych Panów**
 Zamek Lazareni, dziedziniec, studnia, brukowany plac, kocie łby, szopy, kuźnia na uboczu, stajnie, wozownie, spichlerze, stodoły, służba zajmująca się swoimi codziennymi obowiązkami, wozy, kowal ostrzący broń, deszcz, jesienna aura, wilgoć, liście opadłe z drzew, komnata tronowa, czerwone dywany, złote kandelabry, zdobne boazerie, gustowne obrazy, ciepły kominek, dwa zgulone harty leżące przy palenisku, zgiełk możnych pochłoniętych rozmowami o zdradzie, służba roznosząca vitae na srebrnych tacach, atmosfera przepychu i bogactwa, kniaź otoczony przez tuzin sług nieodstępujących go na krok.
 
 Dochodzi do rozmów o zdradzie. Po wszystkim Kniaź nakazuje zostać Klaudiu Antonescu i zleca mu zadanie wymanewrowania inkwizytora i zbicia jego sług na fałszywe tropy. Książę przyobiecuje alchemikowi nagrodę jeśli ten dobrze się sprawi. Klaudiu postanawia stworzyć swojego sobowtóra i sobowtóry swoich przyjaciół, którzy byli obecni w czasie pościgu w Adunati. Zguleni słudzy oddadzą się w ręce inkwizytora po zmianie wyglądu dokonanej za pomocą straszliwego zniekształcenia. W zadaniu dopomagają mu Jan z Łysej Góry i Możny Sieciech.

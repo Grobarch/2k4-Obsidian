@@ -11,7 +11,6 @@ draft: "false"
 # Mafia: Gangsterska Gra Fabularna
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -30,6 +29,7 @@ actions:
 Polska gra fabularna wydana przez Portal, o świecie zorganizowanej przestępczości, inspirowana filmami gangsterskimi i kryminalnymi sagami. Gracze wcielają się w członków mafijnych rodzin, walcząc o władzę, pieniądze i przetrwanie w bezwzględnym półświatku. System kładzie nacisk na relacje między postaciami, lojalność i zdradę w gangsterskim środowisku.
 
 ## Kampanie
+
 
 | Tytuł | MG |
 | --- | --- |

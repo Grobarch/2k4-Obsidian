@@ -11,7 +11,6 @@ draft: "false"
 # Hell 4 Leather
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,8 +30,9 @@ Niezależna gra fabularna w klimacie westernowego grindhouse'u, inspirowana film
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
+
+| Tytuł | Data |
+| --- | --- |
 | [Człowiek z przestrzeloną twarzą](/scenariusze/hell-4-leather/czlowiek-z-przestrzelona-twarza) | 2011-02-11 |
 | [El Diablo](/scenariusze/hell-4-leather/el-diablo) | 2011-02-20 |
 | [Upadek Corneliusa Maximusa](/scenariusze/hell-4-leather/upadek-corneliusa-maximusa) | 2011-02-28 |

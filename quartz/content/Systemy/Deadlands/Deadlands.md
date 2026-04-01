@@ -11,7 +11,6 @@ draft: "false"
 # Deadlands: Martwe Ziemie
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,14 +30,16 @@ Gra fabularna osadzona w alternatywnej wersji Dzikiego Zachodu, gdzie po Wojnie 
 
 ## Kampanie
 
+
 | Tytuł | MG |
 | --- | --- |
 | [Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta) | Arkadiusz RYGIEL |
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
+
+| Tytuł | Data |
+| --- | --- |
 | [Teksańskie love story](/scenariusze/deadlands/teksanskie-love-story) | 2011-01-31 |
 | [Historia pewnej miłości, pieniędzy i ołowiu](/scenariusze/deadlands/historia-pewnej-milosci-pieniedzy-i-olowiu) | 2011-02-07 |
 

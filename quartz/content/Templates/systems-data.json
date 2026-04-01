@@ -1,0 +1,152 @@
+{
+  "systems": [
+    {
+      "id": "cold-city",
+      "name": "Cold City",
+      "pelna": "Cold City"
+    },
+    {
+      "id": "deadlands",
+      "name": "Deadlands",
+      "pelna": "Deadlands: Martwe Ziemie"
+    },
+    {
+      "id": "gasnace-slonca",
+      "name": "Gasnące Słońca",
+      "pelna": "Gasnące Słońca 2ed"
+    },
+    {
+      "id": "honor-i-krew",
+      "name": "Honor i Krew",
+      "pelna": "Honor i Krew"
+    },
+    {
+      "id": "l5k",
+      "name": "Legenda Pięciu Kręgów",
+      "pelna": "Legenda Pięciu Kręgów 1ed"
+    },
+    {
+      "id": "mafia-ggf",
+      "name": "Mafia",
+      "pelna": "Mafia: Gangsterska Gra Fabularna"
+    },
+    {
+      "id": "7th-sea",
+      "name": "7th Sea",
+      "pelna": "7th Sea"
+    },
+    {
+      "id": "wampir",
+      "name": "Wampir",
+      "pelna": "Wampir: Mroczne Wieki"
+    },
+    {
+      "id": "wiedzmin",
+      "name": "Wiedźmin",
+      "pelna": "Wiedźmin: Gra Wyobraźni"
+    },
+    {
+      "id": "wfrp",
+      "name": "Warhammer Fantasy Role Play",
+      "pelna": "Warhammer Fantasy Role Play"
+    },
+    {
+      "id": "wolsung",
+      "name": "Wolsung",
+      "pelna": "Wolsung: Magia Wieku Pary"
+    }
+  ],
+  "campaigns": {
+    "cold-city": [
+      {
+        "id": "cold-tales",
+        "name": "Cold Tales",
+        "link": "/systemy/cold-city/cold-tales"
+      }
+    ],
+    "deadlands": [
+      {
+        "id": "wszystkie-przebrania-alistaira-kanta",
+        "name": "Wszystkie Przebrania Alistaira Kanta",
+        "link": "/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"
+      }
+    ],
+    "gasnace-slonca": [
+      {
+        "id": "tajemnice-z-hortusa",
+        "name": "Tajemnice Z Hortusa",
+        "link": "/systemy/gasnace-slonca/tajemnice-z-hortusa"
+      }
+    ],
+    "honor-i-krew": [
+      {
+        "id": "trylogia-miecza",
+        "name": "Trylogia Miecza",
+        "link": "/systemy/honor-i-krew/trylogia-miecza"
+      }
+    ],
+    "l5k": [
+      {
+        "id": "groza-ktora-zawsze-powraca",
+        "name": "Groza Ktora Zawsze Powraca",
+        "link": "/systemy/l5k/groza-ktora-zawsze-powraca"
+      },
+      {
+        "id": "miecze-cnot-i-grzechow",
+        "name": "Miecze Cnot I Grzechow",
+        "link": "/systemy/l5k/miecze-cnot-i-grzechow"
+      },
+      {
+        "id": "prawidla-zdrady",
+        "name": "Prawidla Zdrady",
+        "link": "/systemy/l5k/prawidla-zdrady"
+      },
+      {
+        "id": "trylogia-klanu-lwa",
+        "name": "Trylogia Klanu Lwa",
+        "link": "/systemy/l5k/trylogia-klanu-lwa"
+      }
+    ],
+    "mafia-ggf": [
+      {
+        "id": "la-cosa-nostra",
+        "name": "La Cosa Nostra",
+        "link": "/systemy/mafia-ggf/la-cosa-nostra"
+      }
+    ],
+    "7th-sea": [
+      {
+        "id": "w-maskach",
+        "name": "W Maskach",
+        "link": "/systemy/7th-sea/w-maskach"
+      }
+    ],
+    "wampir": [
+      {
+        "id": "diabel-z-lazareni",
+        "name": "Diabel Z Lazareni",
+        "link": "/systemy/wampir/diabel-z-lazareni"
+      }
+    ],
+    "wiedzmin": [
+      {
+        "id": "sludzy-miecza",
+        "name": "Sludzy Miecza",
+        "link": "/systemy/wiedzmin/sludzy-miecza"
+      }
+    ],
+    "wfrp": [
+      {
+        "id": "listy-z-praag",
+        "name": "Listy Z Praag",
+        "link": "/systemy/wfrp/listy-z-praag"
+      },
+      {
+        "id": "losy-bohaterow",
+        "name": "Losy Bohaterow",
+        "link": "/systemy/wfrp/losy-bohaterow"
+      }
+    ],
+    "wolsung": []
+  }
+}

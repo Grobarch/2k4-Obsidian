@@ -11,7 +11,6 @@ draft: "false"
 # Gasnące Słońca 2ed
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -30,6 +29,7 @@ actions:
 Polska gra fabularna wydana przez Gramel, osadzona w oryginalnym uniwersum kosmicznego fantasy, gdzie ludzkość skolonizowała odległe gwiazdy, a cywilizacja opiera się na mistycznych mocach i feudalnych strukturach. Świat gry łączy elementy space opery z baśniową estetyką i motywami słowiańskimi. System oferuje unikatowe połączenie przygody kosmicznej z duchowością i magią.
 
 ## Kampanie
+
 
 | Tytuł | MG |
 | --- | --- |

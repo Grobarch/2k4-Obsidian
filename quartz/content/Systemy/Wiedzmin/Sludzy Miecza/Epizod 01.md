@@ -16,7 +16,7 @@ tags: ["epizod", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 
 ---
 
-**Epizod 1 "Ostrze ideologii i w****orek elfich głów"**
+**Epizod 1 "Ostrze ideologii i worek elfich głów"**
 
 **Wprowadzenie**
 Zima 1255 roku, dachy domostw pokryte śniegiem, zaspy, śliski bruk, ludzie w ciepłych płaszczach, kapturach i rękawicach, słońce odbijające się od śniegowej pokrywy, nieprzejezdne trakty, mnogość podróżnych, wozy kupieckie, tabory, wiatr nawiewający śnieg, zamarzająca woda, woń zimnego, świeżego powietrza, mróz na szybach, śnieg w futrynach okien, ślady pozostawiane przez podróżnych i inwentarz na drodze, zimno odczuwalne na zębach, ciepłe opary wydobywające się z ust i nosa, drzewa ośnieżone, pozbawione liści.

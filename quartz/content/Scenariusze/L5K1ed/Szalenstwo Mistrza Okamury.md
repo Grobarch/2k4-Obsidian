@@ -7,7 +7,7 @@ data: 2022-12-25
 tags: [scenariusz, l5k1ed]
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRRdXlPzGlmTFPfyTZ92ll5fZOrWWvCODWoAlfJhWuTm2CqekMe_VQHXWzt4ZXm7XZ3hMxM5OyRFVX1LGAeE1wEbne6WJOHcqoWkWZDClfT1pYFpydRe_ualxpRy6Vq_fFAJR1pU4fPWovs14YLqlLr1rY3tPaAI4NCdmfaM61RxnbIsj51Fdk77cf/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 1 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 1 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
 Ilustracja: Piotr RYGIEL
 Kampania do Legendy Pięciu Kręgów 1ed "Groza, która zawsze powraca". Epizod 1 zatytułowany "Szaleństwo Mistrza Okamury".
 
