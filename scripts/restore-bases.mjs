@@ -43,7 +43,6 @@ views:
       and:
         - file.inFolder("${systemFolderRel}")
     order:
-      - title
       - mg
     sort:
       - property: title
@@ -66,7 +65,6 @@ views:
       and:
         - system == "${slugs[0]}"
     order:
-      - title
       - data
     sort:
       - property: data
@@ -86,7 +84,6 @@ views:
       and:
         - system == ${arrayVal}
     order:
-      - title
       - data
     sort:
       - property: data
@@ -107,7 +104,6 @@ views:
       and:
         - file.inFolder("${campaignFolderRel}")
     order:
-      - title
       - data
     sort:
       - property: data
@@ -128,7 +124,6 @@ views:
       and:
         - kampania == "${kampaniaSlug}"
     order:
-      - title
       - gracz
       - archetyp
     sort:
@@ -149,8 +144,6 @@ views:
     filters:
       and:
         - kampania == "${kampaniaSlug}"
-    order:
-      - title
     sort:
       - property: title
         direction: ASC
@@ -169,8 +162,6 @@ views:
     filters:
       and:
         - kampania == "${kampaniaSlug}"
-    order:
-      - title
     sort:
       - property: title
         direction: ASC
@@ -189,8 +180,6 @@ views:
     filters:
       and:
         - kampania == "${kampaniaSlug}"
-    order:
-      - title
     sort:
       - property: title
         direction: ASC
@@ -207,7 +196,6 @@ views:
   - type: table
     name: Systemy
     order:
-      - title
       - gatunek
     sort:
       - property: title
@@ -227,8 +215,6 @@ views:
     filters:
       and:
         - file.inFolder("${scenarioFolderRel}")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC
@@ -245,7 +231,6 @@ views:
   - type: cards
     name: Bohaterowie Graczy
     order:
-      - title
       - system_pelna
       - gracz
       - archetyp
@@ -265,7 +250,6 @@ views:
   - type: cards
     name: Bohaterowie Niezależni
     order:
-      - title
       - system_pelna
     sort:
       - property: title
@@ -283,7 +267,6 @@ views:
   - type: cards
     name: Lokacje
     order:
-      - title
       - system_pelna
     sort:
       - property: title
@@ -301,7 +284,6 @@ views:
   - type: cards
     name: Artefakty
     order:
-      - title
       - system_pelna
     sort:
       - property: title

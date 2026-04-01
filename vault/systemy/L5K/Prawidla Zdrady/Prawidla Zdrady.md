@@ -47,8 +47,6 @@ views:
     filters:
       and:
         - kampania == "prawidla-zdrady"
-    order:
-      - title
     sort:
       - property: title
         direction: ASC
@@ -68,7 +66,6 @@ views:
       and:
         - file.inFolder("systemy/L5K/Prawidla Zdrady")
     order:
-      - title
       - data
     sort:
       - property: data

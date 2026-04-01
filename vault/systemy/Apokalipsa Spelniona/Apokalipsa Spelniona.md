@@ -42,7 +42,6 @@ views:
       and:
         - system == "apokalipsa-spelniona"
     order:
-      - title
       - data
     sort:
       - property: data

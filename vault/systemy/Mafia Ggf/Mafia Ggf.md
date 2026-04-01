@@ -42,7 +42,6 @@ views:
       and:
         - file.inFolder("systemy/Mafia Ggf")
     order:
-      - title
       - mg
     sort:
       - property: title

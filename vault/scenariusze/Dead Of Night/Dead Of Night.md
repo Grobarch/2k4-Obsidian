@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Dead Of Night")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

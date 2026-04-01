@@ -48,7 +48,6 @@ views:
       and:
         - file.inFolder("systemy/Wiedzmin/Sludzy Miecza")
     order:
-      - title
       - data
     sort:
       - property: data

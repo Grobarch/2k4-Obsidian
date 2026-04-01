@@ -42,7 +42,6 @@ views:
       and:
         - system == "the-shadow-of-yesterday"
     order:
-      - title
       - data
     sort:
       - property: data

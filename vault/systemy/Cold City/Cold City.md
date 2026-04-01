@@ -42,7 +42,6 @@ views:
       and:
         - file.inFolder("systemy/Cold City")
     order:
-      - title
       - mg
     sort:
       - property: title

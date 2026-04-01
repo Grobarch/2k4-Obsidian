@@ -42,7 +42,6 @@ views:
       and:
         - system == "dwory-konca-swiata"
     order:
-      - title
       - data
     sort:
       - property: data

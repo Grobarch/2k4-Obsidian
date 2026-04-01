@@ -42,7 +42,6 @@ views:
       and:
         - system == "hell-4-leather"
     order:
-      - title
       - data
     sort:
       - property: data

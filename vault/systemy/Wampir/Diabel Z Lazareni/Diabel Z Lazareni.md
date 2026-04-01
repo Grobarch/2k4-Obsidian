@@ -48,7 +48,6 @@ views:
       and:
         - file.inFolder("systemy/Wampir/Diabel Z Lazareni")
     order:
-      - title
       - data
     sort:
       - property: data

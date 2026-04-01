@@ -29,7 +29,6 @@ views:
   - type: cards
     name: Bohaterowie Graczy
     order:
-      - title
       - system_pelna
       - gracz
       - archetyp
