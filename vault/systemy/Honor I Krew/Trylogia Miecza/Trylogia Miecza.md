@@ -48,7 +48,6 @@ views:
       and:
         - file.inFolder("systemy/Honor I Krew/Trylogia Miecza")
     order:
-      - title
       - data
     sort:
       - property: data

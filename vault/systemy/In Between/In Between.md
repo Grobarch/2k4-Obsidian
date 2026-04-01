@@ -42,7 +42,6 @@ views:
       and:
         - system == "in-between"
     order:
-      - title
       - data
     sort:
       - property: data

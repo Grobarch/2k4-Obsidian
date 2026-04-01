@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Wfrp 1ed")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

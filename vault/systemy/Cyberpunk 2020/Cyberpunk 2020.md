@@ -42,7 +42,6 @@ views:
       and:
         - system == "cyberpunk-2020"
     order:
-      - title
       - data
     sort:
       - property: data

@@ -42,7 +42,6 @@ views:
       and:
         - file.inFolder("systemy/Wfrp")
     order:
-      - title
       - mg
     sort:
       - property: title
@@ -63,7 +62,6 @@ views:
       and:
         - system == ["wfrp-1ed", "wfrp-4ed"]
     order:
-      - title
       - data
     sort:
       - property: data

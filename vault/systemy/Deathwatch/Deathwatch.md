@@ -42,7 +42,6 @@ views:
       and:
         - system == "deathwatch"
     order:
-      - title
       - data
     sort:
       - property: data

@@ -42,7 +42,6 @@ views:
       and:
         - system == "a-penny-for-my-thoughts"
     order:
-      - title
       - data
     sort:
       - property: data

@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Wolsung")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

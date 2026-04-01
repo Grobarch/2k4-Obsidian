@@ -42,7 +42,6 @@ views:
       and:
         - system == "zew-cthulhu"
     order:
-      - title
       - data
     sort:
       - property: data

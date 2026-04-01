@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Deadlands")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

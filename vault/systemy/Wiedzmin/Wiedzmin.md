@@ -42,7 +42,6 @@ views:
       and:
         - file.inFolder("systemy/Wiedzmin")
     order:
-      - title
       - mg
     sort:
       - property: title

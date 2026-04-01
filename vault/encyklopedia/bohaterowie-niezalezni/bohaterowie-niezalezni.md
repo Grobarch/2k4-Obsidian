@@ -29,7 +29,6 @@ views:
   - type: cards
     name: Bohaterowie Niezależni
     order:
-      - title
       - system_pelna
     sort:
       - property: title

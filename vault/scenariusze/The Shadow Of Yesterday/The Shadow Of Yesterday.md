@@ -17,8 +17,6 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/The Shadow Of Yesterday")
-    order:
-      - title
     sort:
       - property: data
         direction: ASC

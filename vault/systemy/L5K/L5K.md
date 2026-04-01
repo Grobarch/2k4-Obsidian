@@ -45,7 +45,6 @@ views:
       and:
         - file.inFolder("systemy/L5K")
     order:
-      - title
       - mg
     sort:
       - property: title
@@ -66,7 +65,6 @@ views:
       and:
         - system == "l5k1ed"
     order:
-      - title
       - data
     sort:
       - property: data
