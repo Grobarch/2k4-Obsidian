@@ -16,7 +16,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlTAv_JmNpdYFOLoDprgKFl5WV8U_vqXINkeeV9ZHxhDVXUwT3K1CoQ9XeHHagIsFGVydu9VGF3NdNWUFHHhSp4G2z2wTAfiEoLlZpEiYNL7IV9igOfjY2IWvubV4Fv-IfQDlcrwg9RAjCGEigoX8i9ncEfPQLOdGfhd2YMqUBkZLwj1oMmiTfP-j9/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Klucznik.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Klucznik.jpg)
 
 *Ilustracja: Piotr RYGIEL*
 

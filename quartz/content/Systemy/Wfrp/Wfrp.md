@@ -11,7 +11,6 @@ draft: "false"
 # Warhammer Fantasy Role Play
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,6 +30,7 @@ Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej
 
 ## Kampanie
 
+
 | Tytuł | MG |
 | --- | --- |
 | [Listy z Praag](/systemy/wfrp/listy-z-praag/listy-z-praag) | Arkadiusz RYGIEL |
@@ -38,8 +38,9 @@ Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
+
+| Tytuł | Data |
+| --- | --- |
 | [Szlakiem szaleństwa](/scenariusze/wfrp-1ed/szlakiem-szalenstwa) | 2011-03-02 |
 | [Obrazy Engela Rosensteina](/scenariusze/wfrp-1ed/obrazy-engela-rosensteina) | 2013-12-19 |
 | [Sukno z Langre](/scenariusze/wfrp-4ed/sukno-z-langre) | 2019-01-19 |

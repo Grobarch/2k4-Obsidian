@@ -11,7 +11,6 @@ draft: "false"
 # Dzikie Pola 2ed
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,10 @@ Polska gra fabularna osadzona w realiach XVII-wiecznej Rzeczypospolitej Obojga N
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Białogłowa](/scenariusze/dzikie-pola-2ed/bialoglowa) | 2011-02-19 |
+
+| Tytuł | Data |
+| --- | --- |
+| [Białogłowa](/scenariusze/dzikie-pola/bialoglowa) | 2011-02-19 |
 
 ## Wszystkie strony
 

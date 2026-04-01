@@ -18,7 +18,7 @@ tags: [epizod, l5k, samurajski]
 
 *Kampania do Legendy Pięciu Kręgów 1ed "Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion". Epizod 2 zatytułowany "Pierwsze ostrze to Pycha Hokori, która dosięgnęła Władców Koni". Scenariusz rozgrywaliśmy w piątek 17 lutego 2023 roku.*
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGSDEEeTNDejp7bJO35AJwCvMOVtzTU9RDQQ2kpbqk-F6mplymCwa96J2FjdcnimfA6p5Sz3WaPIgEHD8rgZeHzdPwjGd5d0pft68N6QqvuVmdnRik1MecHScA4i9OyO1_2ASfEw8zZuxMsLDCFj0HOL6FHUEUyr8KzrrpqHhkR26oP1OUcASCrT5l/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 3 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 3 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
 
 *Ilustracja: Piotr RYGIEL*
 **Legenda Pięciu Kręgów 1edKampania "Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion"Epizod 2: "Pierwsze ostrze to Pycha Hokori, która dosięgnęła Władców Koni"**

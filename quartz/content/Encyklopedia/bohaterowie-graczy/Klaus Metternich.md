@@ -50,5 +50,5 @@ Laska z ukrytym ostrzem, kamizelka kuloodporna
 ## Wystąpienia
 
 
-- [Szpiegowska gra](/raporty-z-testow/szpiegowska-gra)
+- [Szpiegowska gra](/scenariusze/wolsung/szpiegowska-gra)
 

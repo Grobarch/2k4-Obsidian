@@ -11,7 +11,7 @@ tags: [artykul, cold-city, szpiegowski, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeZ64MnDwKam1OGY3rHEn13KdTtlDxyPpwp-BOT_RTlIfkaZLNgwsTw3Tz9vfcwIboC0lTj3Evly24ajAYUG7RZguRZhUM4TAS63bBJRBb-lZFVQJOSklfIWTLnusCmD1KgwLRkA2AQlsj/s320/Cold+Tales+Po+drugiej+stronie+Berlina+Arkadiusz+Rygiel.png)
+![](Cold Tales Po drugiej stronie Berlina Arkadiusz Rygiel.png)
 
 Ilustracja: Piotr RYGIEL
 

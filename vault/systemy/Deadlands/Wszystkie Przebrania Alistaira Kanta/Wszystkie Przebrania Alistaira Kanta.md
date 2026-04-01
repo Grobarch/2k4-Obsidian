@@ -53,8 +53,10 @@ views:
       - archetyp
     sort:
       - property: title
-        direction: ASC
+        direction: DESC
+
 ```
+
 
 ## Lokacje
 

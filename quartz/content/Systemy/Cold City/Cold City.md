@@ -11,7 +11,6 @@ draft: "false"
 # Cold City
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -30,6 +29,7 @@ actions:
 Gra fabularna osadzona w podzielonym Berlinie roku 1950, gdzie międzynarodowa grupa agentów poluje na potwory -- pozostałości nazistowskich eksperymentów z czasów II wojny światowej. System kładzie nacisk na zaufanie i zdradę między postaciami, które mają własne ukryte cele i narodowe lojalności. Wydana przez Contested Ground Studios, łączy szpiegowski thriller z horrorem w klimacie zimnej wojny.
 
 ## Kampanie
+
 
 | Tytuł | MG |
 | --- | --- |

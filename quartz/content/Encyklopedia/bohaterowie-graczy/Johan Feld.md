@@ -48,5 +48,5 @@ wystrzeliwany z kabury sprężynowej w rękawie
 ## Wystąpienia
 
 
-- [Szpiegowska gra](/raporty-z-testow/szpiegowska-gra)
+- [Szpiegowska gra](/scenariusze/wolsung/szpiegowska-gra)
 

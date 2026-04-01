@@ -36,6 +36,7 @@ actions:
 
 ## Bohaterowie Graczy
 
+
 | Tytuł | Gracz | Archetyp |
 | --- | --- | --- |
 | [Mjr. Iwan Gorki](/encyklopedia/bohaterowie-graczy/iwan-gorki) |  | Funkcjonariusz PAP, Agent GRU |
@@ -44,11 +45,13 @@ actions:
 
 ## Bohaterowie Niezalezni
 
+
 | Tytuł |
 | --- |
 | [Dr. Hans Robke](/encyklopedia/bohaterowie-niezalezni/hans-robke) |
 
 ## Lokacje
+
 
 | Tytuł |
 | --- |
@@ -56,6 +59,7 @@ actions:
 | [Berlin Zachodni](/encyklopedia/lokacje/berlin-zachodni) |
 
 ## Spis epizodow
+
 
 | Tytuł | Data |
 | --- | --- |

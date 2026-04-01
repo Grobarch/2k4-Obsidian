@@ -11,7 +11,6 @@ draft: "false"
 # Wiedźmin: Gra Wyobraźni
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -30,6 +29,7 @@ actions:
 Polska gra fabularna osadzona w uniwersum Wiedźmina stworzonego przez Andrzeja Sapkowskiego, wydana przez MAG. Gracze eksplorują mroczny, słowiański świat fantasy pełen potworów, politycznych intryg i moralnych szarości, gdzie nic nie jest czarno-białe. System pozwala wcielić się w wiedźminów, czarodziejki, bardy i innych mieszkańców Kontynentu.
 
 ## Kampanie
+
 
 | Tytuł | MG |
 | --- | --- |

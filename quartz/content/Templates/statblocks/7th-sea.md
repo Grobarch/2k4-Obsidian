@@ -1,13 +1,25 @@
-| Cecha   | Wartość |
-| ------- | ------- |
-| Brawn   |         |
-| Finesse |         |
-| Wits    |         |
-| Resolve |         |
-| Panache |         |
-| Pierogi |         |
+| Cecha | Wartość |
+|-------|:-------:|
+| Krzepkość (Brawn)    | |
+| Zwinność (Finesse)   | |
+| Spryt (Wits)         | |
+| Wytrwałość (Resolve) | |
+| Wdzięk (Panache)     | |
 
-**Narodowość:** —
-**Zalety (Advantages):** —
+**Naród:** — **Tajne Towarzystwo:** —
+**Przeszłości:** —
+**Zalety:** —
+
+---
+
 **Umiejętności:** —
-**Sekretne Stowarzyszenie:** —
+
+**Arkana — Cnota:** — **Arkana — Ułomność:** —
+
+---
+
+**Wątki (Stories):** —
+
+**Ekwipunek:** —
+
+**Punkty Bohatera:** —

@@ -18,7 +18,7 @@ tags: [epizod, l5k, samurajski]
 
 *Kampania do Legendy Pięciu Kręgów 1ed "Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion". Epizod 1 zatytułowany "Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame". Scenariusz rozgrywaliśmy w piątek 3 lutego 2023 roku.*
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwInQNvXttvta_P6xqrMndopevu2_M7M901rjno72TsIGFJcyrzR2A_kGsKdqQSEUBjPAb7yJ4ax6p59u37vplpcHSNYWbHOVcSwbGlm0WVRSAuJAxJcEWFNJzqbS5z_M3qXGoaWUr52HOXGXe6KErorSdasbrVGRl-qfUpRyzVx04dnZY0ZojxJ2Q/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 2 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.png)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 2 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.png)
 
 Ilustracja: Piotr RYGIEL
 

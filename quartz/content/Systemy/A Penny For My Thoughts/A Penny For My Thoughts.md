@@ -11,7 +11,6 @@ draft: "false"
 # A Penny for My Thoughts
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,10 +30,12 @@ Kameralna gra fabularna autorstwa Paula Tevis'a, w której gracze wcielają się
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
+
+| Tytuł | Data |
+| --- | --- |
 | [Przypadek Kuby Rozpruwacza](/scenariusze/a-penny-for-my-thoughts/przypadek-kuby-rozpruwacza) | 2011-08-30 |
 | [Komórka Zaida](/scenariusze/a-penny-for-my-thoughts/komorka-zaida) | 2011-09-03 |
+| [Test](/scenariusze/a-penny-for-my-thoughts/test) | 2026-03-26 |
 
 ## Wszystkie strony
 

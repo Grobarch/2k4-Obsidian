@@ -16,10 +16,12 @@ tags: [epizod, wfrp, dark-fantasy]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGxoYkiq4jBQFZfoSHH2BYJqvfAe9lmylEIqQ-WbnZ56AtYM6C7MDtCRL2vZaB1Q_qD106IiG6xlCNf4HBuOt9rqXRxeLpLSfR3MwL2IwEyZSFMuqgXlii9p7n4B5DafwfyLEKVKUVXX-ZVpUSFtcpxilf2DwwmqhIJJVVUZMP4W9PSLfEqKcWdrK0/s320/Arkadiusz RYGIEL - blog - ilustracja Piotr RYGIEL.jpg)
+![](Arkadiusz RYGIEL - blog - ilustracja Piotr RYGIEL.jpg)
 *Ilustracja: Piotr RYGIELPo kolejnej długiej przerwie w środę 15 czerwca 2022 r. udało nam się rozegrać sesję w klasycznego Warhammera edycję 2. W związku z tym mamy początek Kampanii o tytule „Losy bohaterów przez żarna czasu ścierane”, która "dziedziczy" cześć elementów fabularnych z 2 Sag - Kampanii rozegranej lata temu zatytułowanej "Potęga nie dla głupców", w której Gracze wcielali się w Wojowników Chaosu stojących po drugiej stronie barykady dobra oraz Kampanii "Listy z Praag", w której Bohaterowie Graczy zwalczali Armię Wielkiego Wodza Chaosu Grobara Błądzącego jako herosi Imperium. W historii znalazły się również nawiązania do jednostrzałowej sesji rozegranej na 4 edycji Warhammera "Sukno z Langre".*
 
-**Warhammer Fantasy Role Play 2ed****Kampania „Losy bohaterów przez żarna czasu ścierane”**
+**Warhammer Fantasy Role Play 2ed**
+
+**Kampania „Losy bohaterów przez żarna czasu ścierane”**
 
 **Epizod 1: „Ogniste organy z Karak-Din”**
 
@@ -59,7 +61,9 @@ przemocy.
 Finał. „Obłąkaniec, który sam wystrzelił się z trebusza w powietrze”.**Kunibald w akcie szaleństwa wystrzeliwuje się poza mury miasta w stronę idącej
 na zabudowania armii chaosu. Możny okazuje się zdrajcą, który przekazał plany obronne najeźdźcom.
 
-**Scena 7. Epilog. „Podpalony donżon”.**Miasto płonie. Kultyści podpalają wewnętrzny zamek. Bohaterowie Graczy ruszają
+**Scena 7. Epilog. „Podpalony donżon”.**
+
+Miasto płonie. Kultyści podpalają wewnętrzny zamek. Bohaterowie Graczy ruszają
 w pościg za Kunibaldem. Hrabia zostaje schwytany żywy na polach za miastem. Sukno
 z Żywego Chaosu umożliwiło mu przeżycie śmiertelnego upadku. Zamek liżą płomienie.
 Na horyzoncie majaczy awangarda armii Małego Wodza Chaosu Borgora Pełzającego.
