@@ -411,11 +411,10 @@ const SECTION_MAP = {
   "scenariusze-samodzielne": "standalone-scenarios",
   "scenariusze":           "scenarios",
   "spis-epizodow":         "episodes",
-  "bohaterowie-graczy":    "players",
-  "bohaterowie-niezalezni":"npcs",
-  "bohaterowie-niezalezni":"npcs",
-  "lokacje":               "locations",
-  "artefakty":             "artifacts",
+  "Bohaterowie Graczy":    "players",
+  "Bohaterowie Niezalezni":"npcs",
+  "Lokacje":               "locations",
+  "Artefakty":             "artifacts",
   "spis-systemow":         "systems",
 };
 
@@ -596,10 +595,10 @@ function processEncyclopediaNote(filePath, content, fm) {
   // Dobierz blok base na podstawie nazwy folderu
   let baseContent;
   switch (folderName) {
-    case "bohaterowie-graczy":    baseContent = baseEncyclopediaBG(); break;
-    case "bohaterowie-niezalezni": baseContent = baseEncyclopediaBN(); break;
-    case "lokacje":              baseContent = baseEncyclopediaLocations(); break;
-    case "artefakty":            baseContent = baseEncyclopediaArtifacts(); break;
+    case "Bohaterowie Graczy":    baseContent = baseEncyclopediaBG(); break;
+    case "Bohaterowie Niezalezni": baseContent = baseEncyclopediaBN(); break;
+    case "Lokacje":              baseContent = baseEncyclopediaLocations(); break;
+    case "Artefakty":            baseContent = baseEncyclopediaArtifacts(); break;
     default: return null;
   }
 

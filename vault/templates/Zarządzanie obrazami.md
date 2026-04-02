@@ -26,7 +26,7 @@ Obsidian jest skonfigurowany (`attachmentFolderPath: "./assets"`) żeby automaty
 ```
 vault/
 └── Encyklopedia/
-    └── bohaterowie-graczy/
+    └── Bohaterowie Graczy/
         ├── Alban Caron.md          ← notatka
         └── assets/
             ├── alban-portrait.jpg  ← wklejony Ctrl+V / przeciągnięty
@@ -98,5 +98,5 @@ W vaultcie istnieje `placeholder.jpg` — osadzony w `placeholder.jpg.md` jako:
 ## Uwagi
 
 - Quartz obsługuje ścieżki bez podawania pełnej ścieżki — wystarczy sama nazwa pliku (Obsidian wikilink)
-- Jeśli dwa pliki mają tę samą nazwę w różnych folderach, podaj pełną ścieżkę względną: `![[Encyklopedia/bohaterowie-graczy/portrait.jpg]]`
+- Jeśli dwa pliki mają tę samą nazwę w różnych folderach, podaj pełną ścieżkę względną: `![[Encyklopedia/Bohaterowie Graczy/portrait.jpg]]`
 - Pliki graficzne **nie** generują własnych stron HTML — nie są "notatkami"
