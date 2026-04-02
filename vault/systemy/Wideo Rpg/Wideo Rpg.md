@@ -42,6 +42,7 @@ views:
       and:
         - system == "wideo-rpg"
     order:
+      - file.name
       - data
     sort:
       - property: data

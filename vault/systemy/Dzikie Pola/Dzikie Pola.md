@@ -42,6 +42,7 @@ views:
       and:
         - system == "dzikie-pola"
     order:
+      - file.name
       - data
     sort:
       - property: data

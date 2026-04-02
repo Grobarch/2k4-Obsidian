@@ -42,6 +42,7 @@ views:
       and:
         - system == "apokalipsa-spelniona"
     order:
+      - file.name
       - data
     sort:
       - property: data

@@ -17,6 +17,8 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Dzikie Pola")
+    order:
+      - file.name
     sort:
       - property: data
         direction: ASC

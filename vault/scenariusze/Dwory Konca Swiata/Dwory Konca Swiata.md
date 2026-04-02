@@ -17,6 +17,8 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Dwory Konca Swiata")
+    order:
+      - file.name
     sort:
       - property: data
         direction: ASC

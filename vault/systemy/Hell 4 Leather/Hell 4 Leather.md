@@ -42,6 +42,7 @@ views:
       and:
         - system == "hell-4-leather"
     order:
+      - file.name
       - data
     sort:
       - property: data

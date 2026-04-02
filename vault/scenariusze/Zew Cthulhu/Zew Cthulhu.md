@@ -17,6 +17,8 @@ views:
     filters:
       and:
         - file.inFolder("scenariusze/Zew Cthulhu")
+    order:
+      - file.name
     sort:
       - property: data
         direction: ASC

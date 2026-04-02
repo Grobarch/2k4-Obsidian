@@ -42,6 +42,7 @@ views:
       and:
         - system == "cyberpunk-2020"
     order:
+      - file.name
       - data
     sort:
       - property: data

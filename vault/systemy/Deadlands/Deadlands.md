@@ -42,6 +42,7 @@ views:
       and:
         - file.inFolder("systemy/Deadlands")
     order:
+      - file.name
       - mg
     sort:
       - property: title
@@ -62,6 +63,7 @@ views:
       and:
         - system == "deadlands"
     order:
+      - file.name
       - data
     sort:
       - property: data

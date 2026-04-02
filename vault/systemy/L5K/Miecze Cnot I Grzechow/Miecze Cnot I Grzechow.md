@@ -48,6 +48,7 @@ views:
       and:
         - kampania == "miecze-cnot-i-grzechow"
     order:
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -68,6 +69,8 @@ views:
     filters:
       and:
         - kampania == "miecze-cnot-i-grzechow"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -86,6 +89,8 @@ views:
     filters:
       and:
         - kampania == "miecze-cnot-i-grzechow"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -104,6 +109,8 @@ views:
     filters:
       and:
         - kampania == "miecze-cnot-i-grzechow"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -123,6 +130,7 @@ views:
       and:
         - file.inFolder("systemy/L5K/Miecze Cnot I Grzechow")
     order:
+      - file.name
       - data
     sort:
       - property: data

@@ -48,6 +48,7 @@ views:
       and:
         - file.inFolder("systemy/L5K/Trylogia Klanu Lwa")
     order:
+      - file.name
       - data
     sort:
       - property: data

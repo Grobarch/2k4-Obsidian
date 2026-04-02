@@ -48,6 +48,7 @@ views:
       and:
         - file.inFolder("systemy/Wfrp/Losy Bohaterow")
     order:
+      - file.name
       - data
     sort:
       - property: data
