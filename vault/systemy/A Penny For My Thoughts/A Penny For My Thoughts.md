@@ -42,6 +42,7 @@ views:
       and:
         - system == "a-penny-for-my-thoughts"
     order:
+      - file.name
       - data
     sort:
       - property: data

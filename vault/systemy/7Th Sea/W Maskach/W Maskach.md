@@ -48,6 +48,7 @@ views:
       and:
         - file.inFolder("systemy/7Th Sea/W Maskach")
     order:
+      - file.name
       - data
     sort:
       - property: data

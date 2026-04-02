@@ -42,6 +42,7 @@ views:
       and:
         - system == "deathwatch"
     order:
+      - file.name
       - data
     sort:
       - property: data

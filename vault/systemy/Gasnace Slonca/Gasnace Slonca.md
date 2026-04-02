@@ -42,6 +42,7 @@ views:
       and:
         - file.inFolder("systemy/Gasnace Slonca")
     order:
+      - file.name
       - mg
     sort:
       - property: title

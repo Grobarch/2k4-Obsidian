@@ -48,6 +48,7 @@ views:
       and:
         - file.inFolder("systemy/Gasnace Slonca/Tajemnice Z Hortusa")
     order:
+      - file.name
       - data
     sort:
       - property: data

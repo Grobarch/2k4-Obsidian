@@ -48,6 +48,7 @@ views:
       and:
         - kampania == "groza-ktora-zawsze-powraca"
     order:
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -68,6 +69,8 @@ views:
     filters:
       and:
         - kampania == "groza-ktora-zawsze-powraca"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -87,6 +90,7 @@ views:
       and:
         - file.inFolder("systemy/L5K/Groza Ktora Zawsze Powraca")
     order:
+      - file.name
       - data
     sort:
       - property: data

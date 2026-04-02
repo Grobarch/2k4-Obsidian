@@ -29,6 +29,7 @@ views:
   - type: cards
     name: Artefakty
     order:
+      - file.name
       - system_pelna
     sort:
       - property: title

@@ -42,6 +42,7 @@ views:
       and:
         - system == "the-shadow-of-yesterday"
     order:
+      - file.name
       - data
     sort:
       - property: data

@@ -42,6 +42,7 @@ views:
       and:
         - system == "zew-cthulhu"
     order:
+      - file.name
       - data
     sort:
       - property: data

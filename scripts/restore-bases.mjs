@@ -43,6 +43,7 @@ views:
       and:
         - file.inFolder("${systemFolderRel}")
     order:
+      - file.name
       - mg
     sort:
       - property: title
@@ -65,6 +66,7 @@ views:
       and:
         - system == "${slugs[0]}"
     order:
+      - file.name
       - data
     sort:
       - property: data
@@ -84,6 +86,7 @@ views:
       and:
         - system == ${arrayVal}
     order:
+      - file.name
       - data
     sort:
       - property: data
@@ -104,6 +107,7 @@ views:
       and:
         - file.inFolder("${campaignFolderRel}")
     order:
+      - file.name
       - data
     sort:
       - property: data
@@ -124,6 +128,7 @@ views:
       and:
         - kampania == "${kampaniaSlug}"
     order:
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -144,6 +149,8 @@ views:
     filters:
       and:
         - kampania == "${kampaniaSlug}"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -162,6 +169,8 @@ views:
     filters:
       and:
         - kampania == "${kampaniaSlug}"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -180,6 +189,8 @@ views:
     filters:
       and:
         - kampania == "${kampaniaSlug}"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -196,6 +207,7 @@ views:
   - type: table
     name: Systemy
     order:
+      - file.name
       - gatunek
     sort:
       - property: title
@@ -215,6 +227,8 @@ views:
     filters:
       and:
         - file.inFolder("${scenarioFolderRel}")
+    order:
+      - file.name
     sort:
       - property: data
         direction: ASC
@@ -231,6 +245,7 @@ views:
   - type: cards
     name: Bohaterowie Graczy
     order:
+      - file.name
       - system_pelna
       - gracz
       - archetyp
@@ -250,6 +265,7 @@ views:
   - type: cards
     name: Bohaterowie Niezależni
     order:
+      - file.name
       - system_pelna
     sort:
       - property: title
@@ -267,6 +283,7 @@ views:
   - type: cards
     name: Lokacje
     order:
+      - file.name
       - system_pelna
     sort:
       - property: title
@@ -284,6 +301,7 @@ views:
   - type: cards
     name: Artefakty
     order:
+      - file.name
       - system_pelna
     sort:
       - property: title

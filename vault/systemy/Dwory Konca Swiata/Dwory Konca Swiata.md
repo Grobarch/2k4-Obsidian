@@ -42,6 +42,7 @@ views:
       and:
         - system == "dwory-konca-swiata"
     order:
+      - file.name
       - data
     sort:
       - property: data

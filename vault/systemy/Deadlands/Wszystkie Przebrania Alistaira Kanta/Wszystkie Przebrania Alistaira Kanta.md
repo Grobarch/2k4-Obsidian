@@ -48,6 +48,7 @@ views:
       and:
         - kampania == "wszystkie-przebrania-alistaira-kanta"
     order:
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -70,6 +71,8 @@ views:
     filters:
       and:
         - kampania == "wszystkie-przebrania-alistaira-kanta"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -88,6 +91,8 @@ views:
     filters:
       and:
         - kampania == "wszystkie-przebrania-alistaira-kanta"
+    order:
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -107,6 +112,7 @@ views:
       and:
         - file.inFolder("systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta")
     order:
+      - file.name
       - data
     sort:
       - property: data
