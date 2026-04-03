@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/Wfrp/Listy Z Praag")
+        - file.inFolder("systemy/Wfrp/Listy Z Praag")
     order:
       - file.name
       - data

@@ -43,7 +43,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("vault/systemy/L5K")
+        - file.inFolder("systemy/L5K")
     order:
       - file.name
       - mg

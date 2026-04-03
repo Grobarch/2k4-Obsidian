@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/In Between")
+        - file.inFolder("scenariusze/In Between")
     order:
       - file.name
     sort:

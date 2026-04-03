@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/Deathwatch")
+        - file.inFolder("scenariusze/Deathwatch")
     order:
       - file.name
     sort:

@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/Dead Of Night")
+        - file.inFolder("scenariusze/Dead Of Night")
     order:
       - file.name
     sort:

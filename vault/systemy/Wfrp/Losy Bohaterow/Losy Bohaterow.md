@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/Wfrp/Losy Bohaterow")
+        - file.inFolder("systemy/Wfrp/Losy Bohaterow")
     order:
       - file.name
       - data

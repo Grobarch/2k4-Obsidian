@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/Mafia Ggf/La Cosa Nostra")
+        - file.inFolder("systemy/Mafia Ggf/La Cosa Nostra")
     order:
       - file.name
       - data

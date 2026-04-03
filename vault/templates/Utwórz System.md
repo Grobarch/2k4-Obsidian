@@ -115,7 +115,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("vault/${systemFolder}")
+        - file.inFolder("${systemFolder}")
     order:
       - file.name
       - mg

@@ -201,7 +201,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/${kampaniaFolder}")
+        - file.inFolder("${kampaniaFolder}")
     order:
       - file.name
       - data

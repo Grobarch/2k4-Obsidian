@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/Wiedzmin/Sludzy Miecza")
+        - file.inFolder("systemy/Wiedzmin/Sludzy Miecza")
     order:
       - file.name
       - data

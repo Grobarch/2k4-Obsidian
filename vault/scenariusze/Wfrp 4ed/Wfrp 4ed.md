@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/Wfrp 4ed")
+        - file.inFolder("scenariusze/Wfrp 4ed")
     order:
       - file.name
     sort:

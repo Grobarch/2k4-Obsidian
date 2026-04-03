@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("vault/systemy/Gasnace Slonca")
+        - file.inFolder("systemy/Gasnace Slonca")
     order:
       - file.name
       - mg

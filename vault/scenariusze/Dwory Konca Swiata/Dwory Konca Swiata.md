@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/Dwory Konca Swiata")
+        - file.inFolder("scenariusze/Dwory Konca Swiata")
     order:
       - file.name
     sort:

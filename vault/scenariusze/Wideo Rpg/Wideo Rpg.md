@@ -14,7 +14,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/Wideo Rpg")
+        - file.inFolder("scenariusze/Wideo Rpg")
     order:
       - file.name
     sort:

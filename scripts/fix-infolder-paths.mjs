@@ -3,8 +3,8 @@
  * fix-infolder-paths.mjs
  *
  * Naprawia ścieżki file.inFolder() w blokach base w vault.
- * Obsidian vault root = repo root (nie vault/), więc ścieżki
- * muszą zawierać prefix "vault/".
+ * Obsidian vault root = vault/, więc ścieżki NIE powinny
+ * zawierać prefixu "vault/".
  *
  * Użycie:
  *   node scripts/fix-infolder-paths.mjs [--apply]
@@ -32,13 +32,13 @@ async function main() {
     // Match file.inFolder("...") patterns
     const re = /file\.inFolder\(["'](.+?)["']\)/g;
     const newContent = content.replace(re, (match, path) => {
-      // Skip if already has vault/ prefix
-      if (path.startsWith("vault/")) return match;
-
       // Skip template interpolations like ${systemFolder}
       if (path.includes("${")) return match;
 
-      const newPath = `vault/${path}`;
+      // Strip vault/ prefix if present
+      if (!path.startsWith("vault/")) return match;
+
+      const newPath = path.replace(/^vault\//, "");
       console.log(`  ${rel}: "${path}" → "${newPath}"`);
       totalFixed++;
       changed = true;

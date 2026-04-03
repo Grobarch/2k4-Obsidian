@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/The Shadow Of Yesterday")
+        - file.inFolder("scenariusze/The Shadow Of Yesterday")
     order:
       - file.name
     sort:

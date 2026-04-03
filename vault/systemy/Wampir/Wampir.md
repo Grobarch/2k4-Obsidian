@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("vault/systemy/Wampir")
+        - file.inFolder("systemy/Wampir")
     order:
       - file.name
       - mg
