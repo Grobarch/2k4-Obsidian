@@ -28,7 +28,7 @@ if (!fm || fm.type !== "system") {
 
 const systemId    = fm.system;
 const systemTitle = fm.title;
-const systemFolder = parentFile.parent.path; // np. systemy/Cold City
+const systemFolder = parentFile.parent.path; // np. Systemy/Cold City
 
 // ============================================================
 // 1. Nazwa kampanii (wymagana)

@@ -430,7 +430,7 @@ async function buildScenarioSlugMap() {
   if (scenarioSlugMap) return scenarioSlugMap;
   scenarioSlugMap = {};
 
-  const scenarDir = join(targetDir, "scenariusze");
+  const scenarDir = join(targetDir, "Scenariusze");
   const scenFiles = await findMdFiles(scenarDir);
 
   // Zbierz unikalne system slugi z plików scenariuszy
@@ -444,7 +444,7 @@ async function buildScenarioSlugMap() {
   }
 
   // Zbierz system slugi z system notes
-  const sysDir = join(targetDir, "systemy");
+  const sysDir = join(targetDir, "Systemy");
   const sysFiles = await findMdFiles(sysDir);
   for (const f of sysFiles) {
     const txt = await readFile(f, "utf-8");
@@ -649,7 +649,7 @@ async function main() {
       newContent = await processCampaignNote(filePath, content, fm);
     }
     // Scenario folder notes (w scenariusze/)
-    else if (rel.startsWith("scenariusze/") && !fm.type?.includes("scenariusz")) {
+    else if (rel.startsWith("Scenariusze/") && !fm.type?.includes("scenariusz")) {
       // Folder note w scenariusze/ (nie sam scenariusz)
       const depth = rel.split("/").length;
       if (depth === 3) { // scenariusze/System/System.md — folder note
@@ -657,7 +657,7 @@ async function main() {
       }
     }
     // Encyclopedia subfolder notes
-    else if (fm.type === "index" && rel.startsWith("encyklopedia/") && rel.split("/").length === 3) {
+    else if (fm.type === "index" && rel.startsWith("Encyklopedia/") && rel.split("/").length === 3) {
       newContent = processEncyclopediaNote(filePath, content, fm);
     }
 
