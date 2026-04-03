@@ -11,20 +11,20 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 
 ```
 2k4-Obsidian/               ← root repo (F:\RPG\RPG_repo\2k4-Obsidian)
-├── vault/                  ← Obsidian vault
+├── vault/                  ← Obsidian vault (root dla Obsidian — .obsidian/ jest tu)
 │   ├── index.md            ← strona główna wiki
-│   ├── encyklopedia/
-│   │   ├── Encyklopedia.md     ← folder note (z przyciskiem tworzenia postaci)
-│   │   ├── bohaterowie-graczy/
-│   │   │   └── bohaterowie-graczy.md   ← folder note
-│   │   ├── bohaterowie-niezalezni/
-│   │   │   └── bohaterowie-niezalezni.md ← folder note
-│   │   ├── lokacje/
-│   │   │   └── lokacje.md      ← folder note
-│   │   └── artefakty/
-│   │       └── artefakty.md    ← folder note
-│   ├── scenariusze/        ← gotowe scenariusze i przygody per system
-│   │   ├── Scenariusze.md      ← folder note (indeks systemów)
+│   ├── Encyklopedia/
+│   │   ├── Encyklopedia.md     ← folder note (z przyciskiem tworzenia postaci + tabelą base)
+│   │   ├── Bohaterowie Graczy/
+│   │   │   └── Bohaterowie Graczy.md   ← folder note
+│   │   ├── Bohaterowie Niezalezni/
+│   │   │   └── Bohaterowie Niezalezni.md ← folder note
+│   │   ├── Lokacje/
+│   │   │   └── Lokacje.md      ← folder note
+│   │   └── Artefakty/
+│   │       └── Artefakty.md    ← folder note
+│   ├── Scenariusze/        ← gotowe scenariusze i przygody per system
+│   │   ├── Scenariusze.md      ← folder note (tabelka base zamiast statycznych linków)
 │   │   ├── A Penny For My Thoughts/
 │   │   ├── Apokalipsa Spelniona/
 │   │   ├── Cyberpunk 2020/
@@ -39,12 +39,19 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   ├── The Shadow Of Yesterday/
 │   │   ├── Wfrp 1ed/
 │   │   ├── Wfrp 4ed/
+│   │   ├── Wideo Rpg/
 │   │   ├── Wolsung/
 │   │   └── Zew Cthulhu/
 │   ├── templates/          ← szablony Obsidian (ignorowane przez Quartz)
-│   │   ├── Utwórz Postać.md    ← skrypt Templater: formularz tworzenia postaci
+│   │   ├── Utwórz Postać.md    ← formularz tworzenia postaci
+│   │   ├── Utwórz Artefakt.md  ← formularz tworzenia artefaktu
+│   │   ├── Utwórz Lokację.md   ← formularz tworzenia lokacji
+│   │   ├── Utwórz Kampanię.md  ← formularz tworzenia kampanii (z blokami base)
+│   │   ├── Utwórz System.md    ← formularz tworzenia systemu (z blokami base)
+│   │   ├── Utwórz Epizod.md    ← formularz tworzenia epizodu
+│   │   ├── systems-data.json    ← dane systemów i kampanii (single source for templates)
 │   │   └── statblocks/         ← statbloki per system (l5k, wfrp, cold-city, ...)
-│   └── systemy/            ← systemy RPG + kampanie + epizody
+│   └── Systemy/            ← systemy RPG + kampanie + epizody
 │       └── Cold City/          ← folder systemu
 │           ├── Cold City.md    ← folder note systemu (z blokami base)
 │           └── Cold Tales/         ← folder kampanii
@@ -57,7 +64,9 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
 │   ├── build-bases.mjs            ← konwersja Obsidian Bases → statyczne tabele/listy/karty
-│   ├── migrate-to-bases.mjs       ← jednorazowy skrypt migracji markerów → bloki base
+│   ├── restore-bases.mjs          ← odtwarzanie bloków base w folder notes (odwrotność build-bases)
+│   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
+│   ├── fix-infolder-paths.mjs     ← naprawa ścieżek file.inFolder w blokach base
 │   ├── local-build.sh             ← lokalny build pipeline (symulacja CI)
 │   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
@@ -65,11 +74,11 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml      ← GitHub Actions: buduje i deployuje na Pages
-├── .obsidian/
-│   └── snippets/
-│       └── obsidian-only.css   ← CSS snippet: pokazuje przyciski lokalnie
 ├── .gitignore
 └── CLAUDE.md               ← ten plik
+
+# Uwaga: .obsidian/ znajduje się wewnątrz vault/ (vault jest rootem Obsidian)
+# vault/.obsidian/snippets/obsidian-only.css — CSS snippet: pokazuje przyciski lokalnie
 ```
 
 ## Folder Notes
@@ -80,7 +89,7 @@ Plugin Folder Notes w Obsidian otwiera tę notatkę po kliknięciu folderu.
 Nazwy folderów i plików używają Title Case ze spacjami (np. `Cold City/Cold City.md`).
 Quartz automatycznie slugifikuje je do lowercase z myślnikami (np. `cold-city/cold-city`).
 
-Hierarchia: `systemy/ → System/ → Kampania/ → Epizod XX.md`
+Hierarchia: `Systemy/ → System/ → Kampania/ → Epizod XX.md`
 
 ### Widoczność folder notes
 
@@ -89,6 +98,19 @@ bloki `base` konwertowane na statyczne tabele podczas buildu.
 
 Folder notes podfolderów encyklopedii i sekcji scenariuszy mają `draft: "true"` — Quartz ich
 nie renderuje. Strony indeksujące (`Encyklopedia.md`, `Scenariusze.md`) NIE mają `draft: true`.
+
+### Dwa rodzaje ścieżek — ważne rozróżnienie
+
+1. **Ścieżki systemowe (folder paths)** — używane w `file.inFolder()`, szablonach Templater,
+   skryptach Node.js. Muszą odpowiadać **nazwie folderu na dysku** (Title Case):
+   `Systemy/Cold City/Cold Tales`, `Encyklopedia/Bohaterowie Graczy`, `Scenariusze/Deadlands`
+
+2. **Ścieżki URL (slugi Quartz)** — używane w linkach `[tekst](/ścieżka)`, `kampania_link`,
+   wewnątrz frontmatter. Quartz automatycznie slugifikuje do **lowercase z myślnikami**:
+   `/systemy/cold-city/cold-tales`, `/encyklopedia/bohaterowie-graczy/bayushi-tokuno`
+
+**Zasada:** `vault/` jest rootem Obsidian — ścieżki w `file.inFolder()` pomijają `vault/` prefix.
+Np. `file.inFolder("Systemy/Cold City/Cold Tales")` — NIE `file.inFolder("vault/Systemy/...")`.
 
 ### Obsidian Bases (dynamiczne widoki)
 
@@ -109,13 +131,18 @@ views:
       and:
         - file.inFolder("Systemy/Cold City/Cold Tales")
     order:
-      - title
+      - file.name
       - data
     sort:
       - property: data
         direction: ASC
 ```
 ````
+
+**Uwaga o `file.name` vs `title`:**
+- `file.name` w `order[]` → renderuje jako **klikalny link** do notatki (w Obsidian i po konwersji build-bases)
+- `title` w `order[]` → renderuje jako **zwykły tekst** (nieklikalny)
+- Preferuj `file.name` w tabelach i listach dla lepszej nawigacji
 
 **Jak to działa:**
 - **Obsidian**: renderuje bloki `base` jako interaktywne widoki (tabele, karty, listy)
@@ -130,10 +157,15 @@ views:
 - `field == "value"` / `field == ["val1", "val2"]` — równość (scalar/array)
 - `field != "value"` — nierówność
 - `field > "value"` / `field >= "value"` / `field < "value"` / `field <= "value"` — porównania (daty YYYY-MM-DD lub stringi)
-- `file.inFolder("path")` — pliki w podanym folderze
+- `file.inFolder("path")` — pliki w podanym folderze (ścieżka Title Case, bez `vault/` prefix)
 - `file.name == "plik.md"` — nazwa pliku z rozszerzeniem
 - `file.basename == "plik"` — nazwa pliku bez rozszerzenia
 - `file.folder == "Systemy/Cold City"` — folder nadrzędny pliku
+
+**Obsługiwane kolumny w `order[]`:**
+- `file.name` — klikalny link do notatki (preferowane)
+- `file.folder` — folder nadrzędny pliku (nagłówek: "Folder")
+- `title`, `data`, `system`, `kampania`, `gracz`, `archetyp`, `gatunek`, `wydawca`, `zrodlo` — pola frontmatter
 
 **Dwa sposoby osadzania:**
 1. Inline code block: ` ```base ... ``` ` — YAML w treści notatki
@@ -178,15 +210,34 @@ Skanuje `.md` w podanym katalogu i zastępuje bloki `base` (inline i `![[*.base]
 statycznymi tabelami/listami/kartami. Używany w CI (na `quartz/content/`)
 i opcjonalnie lokalnie.
 
-### migrate-to-bases.mjs — jednorazowa migracja
+### restore-bases.mjs — odtwarzanie bloków base
 
 ```bash
-node scripts/migrate-to-bases.mjs [dir] [--apply]
+node scripts/restore-bases.mjs [dir] [--apply]
 ```
 
-Zastępuje stare markery HTML (`<!-- EPISODES_START/END -->` itp.) blokami `base`.
-Obsługuje 8 typów markerów: episodes, campaigns, players, npcs, locations, artifacts,
-scenarios, systems. Domyślnie dry-run.
+Odwrotność `build-bases.mjs` — odtwarza bloki `base` w folder notes, które zostały
+skonwertowane na statyczne tabele (np. po przypadkowym uruchomieniu build-bases na vault).
+Rozpoznaje typy folder notes: system, kampania, scenariusz, encyklopedia.
+Domyślnie dry-run.
+
+### sync-systems.mjs — synchronizacja danych systemów
+
+```bash
+node scripts/sync-systems.mjs [--apply]
+```
+
+Skanuje vault i generuje `vault/templates/systems-data.json` — single source of truth
+dla danych systemów i kampanii używanych przez szablony Templater.
+
+### fix-infolder-paths.mjs — naprawa ścieżek file.inFolder
+
+```bash
+node scripts/fix-infolder-paths.mjs [--apply]
+```
+
+Skanuje vault i naprawia ścieżki `file.inFolder()` w blokach base (np. usuwanie
+prefixu `vault/`). Domyślnie dry-run.
 
 ### Workflow normalizacji
 
@@ -233,15 +284,17 @@ Implementacja w `quartz/quartz/components/pages/FolderContent.tsx` +
 `quartz/quartz/components/PageList.tsx`.
 
 Metadane wyświetlane per sekcja (badge'y pod tytułem):
-- `encyklopedia/*` → `type`, `system_pelna`, `kampania`, `gracz`
-- `systemy/*` → `gatunek`, `wydawca`
-- `scenariusze/*` → `system`, `data`
+- `Encyklopedia/*` (slug: `encyklopedia/*`) → `type`, `system_pelna`, `kampania`, `gracz`
+- `Systemy/*` (slug: `systemy/*`) → `gatunek`, `wydawca`
+- `Scenariusze/*` (slug: `scenariusze/*`) → `system`, `data`
+
+Quartz FolderContent porównuje **slugi** (zawsze lowercase) — nie zmieniać na Title Case w kodzie Quartz.
 
 ## GitHub Pages
 
 - URL: https://grobarch.github.io/2k4-Obsidian
 - Repo: https://github.com/Grobarch/2k4-Obsidian
-- Deploy: ręczny (workflow_dispatch)
+- Deploy: automatyczny (push na main) lub ręczny (workflow_dispatch)
 
 ## Workflow deploy (GitHub Actions)
 
@@ -309,8 +362,8 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 
 ## Dodawanie nowego scenariusza
 
-1. Utwórz folder systemu w `vault/scenariusze/System Name/` (jeśli nie istnieje)
-2. Utwórz folder note systemu `System Name.md` z listą linków do scenariuszy
+1. Utwórz folder systemu w `vault/Scenariusze/System Name/` (jeśli nie istnieje)
+2. Utwórz folder note systemu `System Name.md` z blokiem `base` (lista scenariuszy)
 3. Utwórz plik scenariusza z frontmatterem:
    ```yaml
    ---
@@ -322,7 +375,7 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
    tags: [scenariusz, slug-systemu]
    ---
    ```
-4. Dodaj system do `vault/scenariusze/Scenariusze.md`
+4. Scenariusz pojawi się automatycznie w tabelce `Scenariusze.md` (filtruje po `type == "scenariusz"`)
 5. Źródłowe pliki w `notes-source/scenariusze/` zawierają H1 tytuł i blok metadanych — przy konwersji przenosimy je do frontmatter, a treść zaczyna się po separatorze `---`
 
 ## Templater — formularze tworzenia treści (Obsidian)
@@ -338,6 +391,8 @@ Wymaga pluginów: **Templater** + **Meta Bind**.
 | `Utwórz Kampanię.md` | folder note systemu | folder note kampanii z blokami `base` |
 | `Utwórz Epizod.md` | folder note kampanii | notatkę epizodu w folderze kampanii |
 | `Utwórz Postać.md` | kampania / encyklopedia | notatkę postaci w encyklopedii |
+| `Utwórz Artefakt.md` | kampania / encyklopedia | notatkę artefaktu w `Encyklopedia/Artefakty/` |
+| `Utwórz Lokację.md` | kampania / encyklopedia | notatkę lokacji w `Encyklopedia/Lokacje/` |
 
 ### Tworzenie postaci
 
@@ -349,7 +404,7 @@ Wymaga pluginów: **Templater** + **Meta Bind**.
 
 ### Działanie
 
-Przycisk `+ Nowa postać` / `+ Nowy BG` / `+ Nowy BN` w folder note kampanii, `vault/encyklopedia/Encyklopedia.md`, lub folder note podsekcji encyklopedii (`bohaterowie-graczy.md`, `bohaterowie-niezalezni.md`)
+Przycisk `+ Nowa postać` / `+ Nowy BG` / `+ Nowy BN` w folder note kampanii, `vault/Encyklopedia/Encyklopedia.md`, lub folder note podsekcji encyklopedii (`Bohaterowie Graczy.md`, `Bohaterowie Niezalezni.md`)
 uruchamia `templates/Utwórz Postać.md`. Formularz pyta kolejno o:
 - Imię (wymagane)
 - Typ: Bohater Gracza / Bohater Niezależny (wymagane)
@@ -358,7 +413,7 @@ uruchamia `templates/Utwórz Postać.md`. Formularz pyta kolejno o:
 - Gracz (opcjonalne, tylko BG)
 - Archetyp (opcjonalne)
 
-Notatka tworzona w `encyklopedia/bohaterowie-graczy/` lub `.../bohaterowie-niezalezni/`.
+Notatka tworzona w `Encyklopedia/Bohaterowie Graczy/` lub `Encyklopedia/Bohaterowie Niezalezni/`.
 
 ### Format notatki postaci
 
