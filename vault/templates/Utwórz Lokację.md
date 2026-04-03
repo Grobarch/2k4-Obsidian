@@ -167,7 +167,7 @@ const kampaniaSection = wybraneCampanie.length > 0
 // ============================================================
 // Treść notatki
 // ============================================================
-const folder = "encyklopedia/Lokacje";
+const folder = "Encyklopedia/Lokacje";
 const content = `---
 ${fmLines.join("\n")}
 ---
