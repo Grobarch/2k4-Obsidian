@@ -131,7 +131,7 @@ views:
   - type: table
     name: Bohaterowie Graczy
     order:
-      - title
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -150,7 +150,7 @@ views:
   - type: table
     name: Bohaterowie Niezależni
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -167,7 +167,7 @@ views:
   - type: table
     name: Lokacje
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -184,7 +184,7 @@ views:
   - type: table
     name: Artefakty
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -201,9 +201,9 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("${kampaniaFolder}")
+        - file.inFolder("vault/${kampaniaFolder}")
     order:
-      - title
+      - file.name
       - data
     sort:
       - property: data

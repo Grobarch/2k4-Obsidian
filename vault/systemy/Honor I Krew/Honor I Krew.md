@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("systemy/Honor I Krew")
+        - file.inFolder("vault/systemy/Honor I Krew")
     order:
       - file.name
       - mg

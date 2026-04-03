@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("systemy/Mafia Ggf")
+        - file.inFolder("vault/systemy/Mafia Ggf")
     order:
       - file.name
       - mg

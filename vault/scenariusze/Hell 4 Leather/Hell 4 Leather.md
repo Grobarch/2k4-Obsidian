@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Hell 4 Leather")
+        - file.inFolder("vault/scenariusze/Hell 4 Leather")
     order:
       - file.name
     sort:

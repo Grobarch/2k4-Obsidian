@@ -108,7 +108,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/Cold City/Cold Tales")
+        - file.inFolder("vault/systemy/Cold City/Cold Tales")
     order:
       - file.name
       - data

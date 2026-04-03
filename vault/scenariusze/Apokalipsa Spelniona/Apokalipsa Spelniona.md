@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Apokalipsa Spelniona")
+        - file.inFolder("vault/scenariusze/Apokalipsa Spelniona")
     order:
       - file.name
     sort:

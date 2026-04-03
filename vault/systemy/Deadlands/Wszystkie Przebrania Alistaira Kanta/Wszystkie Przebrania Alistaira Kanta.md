@@ -110,7 +110,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta")
+        - file.inFolder("vault/systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta")
     order:
       - file.name
       - data

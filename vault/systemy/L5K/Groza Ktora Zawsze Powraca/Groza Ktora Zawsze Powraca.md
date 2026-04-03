@@ -88,7 +88,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/L5K/Groza Ktora Zawsze Powraca")
+        - file.inFolder("vault/systemy/L5K/Groza Ktora Zawsze Powraca")
     order:
       - file.name
       - data

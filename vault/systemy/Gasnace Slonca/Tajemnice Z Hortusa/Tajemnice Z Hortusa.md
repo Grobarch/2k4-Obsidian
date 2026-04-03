@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/Gasnace Slonca/Tajemnice Z Hortusa")
+        - file.inFolder("vault/systemy/Gasnace Slonca/Tajemnice Z Hortusa")
     order:
       - file.name
       - data

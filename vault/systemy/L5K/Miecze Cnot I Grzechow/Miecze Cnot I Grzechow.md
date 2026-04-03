@@ -128,7 +128,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/L5K/Miecze Cnot I Grzechow")
+        - file.inFolder("vault/systemy/L5K/Miecze Cnot I Grzechow")
     order:
       - file.name
       - data
