@@ -66,7 +66,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/L5K/Prawidla Zdrady")
+        - file.inFolder("vault/systemy/L5K/Prawidla Zdrady")
     order:
       - file.name
       - data

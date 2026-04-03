@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("systemy/Wfrp")
+        - file.inFolder("vault/systemy/Wfrp")
     order:
       - file.name
       - mg

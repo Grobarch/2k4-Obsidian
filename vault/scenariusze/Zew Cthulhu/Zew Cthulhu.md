@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Zew Cthulhu")
+        - file.inFolder("vault/scenariusze/Zew Cthulhu")
     order:
       - file.name
     sort:

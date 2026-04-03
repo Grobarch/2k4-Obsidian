@@ -27,3 +27,21 @@ actions:
 ```
 
 </div>
+
+## Wszystkie wpisy
+
+```base
+filters:
+  and:
+    - type == ["bohater-gracza", "bohater-niezalezny", "lokacja", "artefakt"]
+views:
+  - type: table
+    name: Encyklopedia
+    order:
+      - file.name
+      - file.folder
+      - kampania
+    sort:
+      - property: title
+        direction: ASC
+```

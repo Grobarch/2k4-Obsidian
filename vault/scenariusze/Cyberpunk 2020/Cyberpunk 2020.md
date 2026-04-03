@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Cyberpunk 2020")
+        - file.inFolder("vault/scenariusze/Cyberpunk 2020")
     order:
       - file.name
     sort:

@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Dzikie Pola")
+        - file.inFolder("vault/scenariusze/Dzikie Pola")
     order:
       - file.name
     sort:

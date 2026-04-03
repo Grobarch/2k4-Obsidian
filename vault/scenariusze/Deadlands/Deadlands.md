@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Deadlands")
+        - file.inFolder("vault/scenariusze/Deadlands")
     order:
       - file.name
     sort:

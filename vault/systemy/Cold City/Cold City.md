@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("systemy/Cold City")
+        - file.inFolder("vault/systemy/Cold City")
     order:
       - file.name
       - mg

@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("scenariusze/Wolsung")
+        - file.inFolder("vault/scenariusze/Wolsung")
     order:
       - file.name
     sort:

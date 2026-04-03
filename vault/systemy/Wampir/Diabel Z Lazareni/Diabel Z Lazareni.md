@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("systemy/Wampir/Diabel Z Lazareni")
+        - file.inFolder("vault/systemy/Wampir/Diabel Z Lazareni")
     order:
       - file.name
       - data

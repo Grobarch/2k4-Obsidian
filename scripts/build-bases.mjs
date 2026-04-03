@@ -172,7 +172,10 @@ function matchExpr(expr, fm, filePath, vaultRoot) {
   // Specjalna: file.inFolder
   if (parsed.special === "inFolder") {
     const rel = relative(vaultRoot, dirname(filePath)).replace(/\\/g, "/").toLowerCase();
-    return rel.includes(parsed.path.toLowerCase());
+    // Strip "vault/" prefix — base blocks use vault-relative paths for Obsidian,
+    // but build-bases runs on quartz/content/ where there's no vault/ prefix.
+    const p = parsed.path.toLowerCase().replace(/^vault\//, "");
+    return rel.includes(p);
   }
 
   const { field, op, value } = parsed;
@@ -259,7 +262,7 @@ const COLUMN_HEADERS = {
   title: "Tytuł", data: "Data", system_pelna: "System", system: "System",
   kampania: "Kampania", gracz: "Gracz", archetyp: "Archetyp",
   type: "Typ", mg: "MG", gatunek: "Gatunek", wydawca: "Wydawca",
-  "file.name": "Tytuł", "file.basename": "Tytuł",
+  "file.name": "Tytuł", "file.basename": "Tytuł", "file.folder": "Folder",
 };
 
 /**

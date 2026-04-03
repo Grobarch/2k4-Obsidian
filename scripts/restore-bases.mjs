@@ -41,7 +41,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("${systemFolderRel}")
+        - file.inFolder("vault/${systemFolderRel}")
     order:
       - file.name
       - mg
@@ -105,7 +105,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("${campaignFolderRel}")
+        - file.inFolder("vault/${campaignFolderRel}")
     order:
       - file.name
       - data
@@ -226,7 +226,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("${scenarioFolderRel}")
+        - file.inFolder("vault/${scenarioFolderRel}")
     order:
       - file.name
     sort:

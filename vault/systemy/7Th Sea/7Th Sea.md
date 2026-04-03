@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("systemy/7Th Sea")
+        - file.inFolder("vault/systemy/7Th Sea")
     order:
       - file.name
       - mg
