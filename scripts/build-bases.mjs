@@ -172,10 +172,7 @@ function matchExpr(expr, fm, filePath, vaultRoot) {
   // Specjalna: file.inFolder
   if (parsed.special === "inFolder") {
     const rel = relative(vaultRoot, dirname(filePath)).replace(/\\/g, "/").toLowerCase();
-    // Strip "vault/" prefix — base blocks use vault-relative paths for Obsidian,
-    // but build-bases runs on quartz/content/ where there's no vault/ prefix.
-    const p = parsed.path.toLowerCase().replace(/^vault\//, "");
-    return rel.includes(p);
+    return rel.includes(parsed.path.toLowerCase());
   }
 
   const { field, op, value } = parsed;

@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("vault/systemy/Wiedzmin")
+        - file.inFolder("systemy/Wiedzmin")
     order:
       - file.name
       - mg

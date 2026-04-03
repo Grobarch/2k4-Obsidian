@@ -40,7 +40,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("vault/systemy/Deadlands")
+        - file.inFolder("systemy/Deadlands")
     order:
       - file.name
       - mg

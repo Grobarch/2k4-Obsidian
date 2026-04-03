@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/7Th Sea/W Maskach")
+        - file.inFolder("systemy/7Th Sea/W Maskach")
     order:
       - file.name
       - data

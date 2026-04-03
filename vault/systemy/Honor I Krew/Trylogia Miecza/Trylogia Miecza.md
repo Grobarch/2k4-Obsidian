@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/Honor I Krew/Trylogia Miecza")
+        - file.inFolder("systemy/Honor I Krew/Trylogia Miecza")
     order:
       - file.name
       - data

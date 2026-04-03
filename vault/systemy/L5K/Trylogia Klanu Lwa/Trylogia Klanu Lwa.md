@@ -46,7 +46,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("vault/systemy/L5K/Trylogia Klanu Lwa")
+        - file.inFolder("systemy/L5K/Trylogia Klanu Lwa")
     order:
       - file.name
       - data

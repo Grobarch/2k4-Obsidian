@@ -16,7 +16,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - file.inFolder("vault/scenariusze/A Penny For My Thoughts")
+        - file.inFolder("scenariusze/A Penny For My Thoughts")
     order:
       - file.name
     sort:
