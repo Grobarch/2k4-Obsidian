@@ -1,9 +1,7 @@
 <<<<<<< HEAD
 # Force LF line endings for shell scripts (prevent Windows CRLF conversion)
 *.sh text eol=lf
-
-# Default: auto line ending detection
-* text=auto
+scripts/pre-commit text eol=lf
 =======
 *.sh text eol=lf
 scripts/pre-commit text eol=lf
