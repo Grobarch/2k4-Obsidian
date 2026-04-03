@@ -36,11 +36,9 @@ actions:
 
 ## Spis epizodow
 
+
 | Tytuł | Data |
 | --- | --- |
 | [Epizod 1: "Zaślubiny ze śmiercią"](/systemy/7th-sea/w-maskach/epizod-01) | 2010-11-18 |
 | [Epizod 2: "Ucieczka z Altamiry"](/systemy/7th-sea/w-maskach/epizod-02) | 2010-11-20 |
 | [Epizod 3: "Tajna służba"](/systemy/7th-sea/w-maskach/epizod-03) | 2010-11-23 |
-
-
-<!-- NPCS_START -->

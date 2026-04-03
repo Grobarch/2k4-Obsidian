@@ -11,7 +11,6 @@ draft: "false"
 # Cyberpunk 2020
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,8 +30,9 @@ Klasyczna gra fabularna autorstwa Mike'a Pondsmitha, wydana przez R. Talsorian G
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
+
+| Tytuł | Data |
+| --- | --- |
 | [Niewygodny człowiek](/scenariusze/cyberpunk-2020/niewygodny-czlowiek) | 2012-04-03 |
 | [Jimmy's Juice](/scenariusze/cyberpunk-2020/jimmys-juice) | 2012-12-09 |
 

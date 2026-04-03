@@ -1,5 +1,5 @@
 | Atrybut   | Wartość |
-|-----------|---------|
+|-----------|:-------:|
 | Siła      |         |
 | Zwinność  |         |
 | Refleks   |         |
@@ -7,7 +7,29 @@
 | Wola      |         |
 | Charyzma  |         |
 
-**Szkoła / Profesja:** —
-**Styl walki:** —
+**Profesja / Szkoła:** — **Styl walki:** —
+**Honor:** — **Sława:** —
+
+---
+
 **Umiejętności:** —
-**Honor:** — **Ekwipunek:** —
+
+**Zdolności specjalne / Sztuczki:** —
+
+---
+
+**Żywotność:** __ / __ `○ ○ ○ ○ ○ ○ ○ ○ ○ ○`
+
+**Inicjatywa:** — **Obrona (Unik/Parowanie):** —
+
+| Broń | Obrażenia | Zasięg | Właściwości |
+|------|:---------:|--------|-------------|
+|      |           |        |             |
+
+| Pancerz | Absorpcja | Pokrycie |
+|---------|:---------:|---------|
+|         |           |          |
+
+**Ekwipunek:** —
+
+**Złote / Srebrne / Miedziane:** — / — / —

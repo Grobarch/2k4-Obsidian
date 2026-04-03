@@ -7,7 +7,7 @@ data: 2019-01-19
 tags: [scenariusz, wfrp-4ed]
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm_hL9Q1q1ITnwXw-TNciCNfz9WSXoUjnSBqy0WKOhHKweG3VZsBRQDcQQyfk9DP2NgMQFzB6UAbIgO8yv9qsajqnay2e4qyVbM-t8VOffmum2lnM2YXB9eWpvUNXShQo2S8CZhB7Z9okJeydyhQtfHhEs2XSavq6sHv-Lg2T_61kCG7_3UEpon4ss/s320/Sukno z Langre - Arkadiusz RYGIEL - blog autorski.jpg)
+![](Sukno z Langre - Arkadiusz RYGIEL - blog autorski.jpg)
 
 *Ilustracja: Piotr RYGIEL*
 

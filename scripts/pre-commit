@@ -28,22 +28,6 @@ if [ -n "$MODIFIED_VAULT" ]; then
   echo "$MODIFIED_VAULT" | while IFS= read -r file; do git add "$file"; done
 fi
 
-echo "[pre-commit] Konwersja Obsidian Bases..."
-node scripts/build-bases.mjs vault 2>&1
-BUILD_BASES_EXIT=$?
-
-if [ $BUILD_BASES_EXIT -ne 0 ]; then
-  echo "[pre-commit] build-bases zakończył się błędem!"
-  exit 1
-fi
-
-# Re-stage pliki vault które mogły zostać zmodyfikowane przez build-bases
-MODIFIED_VAULT2=$(git diff --name-only -- 'vault/')
-if [ -n "$MODIFIED_VAULT2" ]; then
-  echo "[pre-commit] Re-staging zaktualizowanych plików..."
-  echo "$MODIFIED_VAULT2" | while IFS= read -r file; do git add "$file"; done
-fi
-
 echo "[pre-commit] Walidacja frontmatter..."
 node scripts/validate-frontmatter.mjs vault 2>&1
 VALIDATE_EXIT=$?

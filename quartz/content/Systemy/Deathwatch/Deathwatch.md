@@ -11,7 +11,6 @@ draft: "false"
 # Deathwatch RPG
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,9 +30,10 @@ Gra fabularna osadzona w mrocznym uniwersum Warhammer 40,000, w której gracze w
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
-| [Wyprawa Estariusza](/scenariusze/deathwatch-rpg/wyprawa-estariusza) | 2020-07-25 |
+
+| Tytuł | Data |
+| --- | --- |
+| [Wyprawa Estariusza](/scenariusze/deathwatch/wyprawa-estariusza) | 2020-07-25 |
 
 ## Wszystkie strony
 

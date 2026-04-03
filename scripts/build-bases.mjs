@@ -259,7 +259,7 @@ const COLUMN_HEADERS = {
   title: "Tytuł", data: "Data", system_pelna: "System", system: "System",
   kampania: "Kampania", gracz: "Gracz", archetyp: "Archetyp",
   type: "Typ", mg: "MG", gatunek: "Gatunek", wydawca: "Wydawca",
-  "file.name": "Plik", "file.basename": "Nazwa",
+  "file.name": "Tytuł", "file.basename": "Tytuł", "file.folder": "Folder",
 };
 
 /**
@@ -306,19 +306,20 @@ function sortFiles(matchedFiles, sortSpec, vaultRoot) {
 }
 
 /**
- * Zwraca kolumny na podstawie view.order (z fallbackiem do ["title"]).
+ * Zwraca kolumny na podstawie view.order.
+ * Jeśli brak order lub pusty, zwraca ["file.name"].
  */
 function resolveColumns(view) {
   let columns = (view.order || []).filter(c => !c.startsWith("file.ctime") && !c.startsWith("file.mtime"));
-  const fileOnlyCols = columns.every(c => c.startsWith("file."));
-  if (columns.length === 0 || fileOnlyCols) {
-    columns = ["title"];
+  if (columns.length === 0) {
+    columns = ["file.name"];
   }
   return columns;
 }
 
 /**
  * Generuje tabelę markdown z pasujących plików.
+ * Kolumny file.name / file.basename → link do pliku z fm.title jako etykietą.
  */
 function generateTable(baseConfig, matchedFiles, vaultRoot) {
   const view = baseConfig.views[0] || {};
@@ -334,14 +335,13 @@ function generateTable(baseConfig, matchedFiles, vaultRoot) {
   const sep     = columns.map(() => "---");
 
   const rows = matchedFiles.map(({ fm, path }) => {
-    return columns.map((col, i) => {
-      const val = getCellValue(col, fm, path, vaultRoot);
-      if (i === 0 || col === "title") {
+    return columns.map(col => {
+      if (col === "file.name" || col === "file.basename") {
         const url   = buildUrl(path, vaultRoot);
         const label = cleanFmVal(fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, ""));
         return `[${label}](${url})`;
       }
-      return val || "";
+      return getCellValue(col, fm, path, vaultRoot) || "";
     });
   });
 

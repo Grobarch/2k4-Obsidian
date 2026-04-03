@@ -36,6 +36,7 @@ actions:
 
 ## Bohaterowie Graczy
 
+
 | Tytuł | Gracz | Archetyp |
 | --- | --- | --- |
 | [Kanciarz Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/kanciarz-klaus-von-weibenmauer) | Krzysztof OBSTAWSKI |  |
@@ -51,6 +52,7 @@ actions:
 
 ## Lokacje
 
+
 | Tytuł |
 | --- |
 | [Drzewo Duchów](/encyklopedia/lokacje/drzewo-duchow) |
@@ -60,11 +62,13 @@ actions:
 
 ## Artefakty
 
+
 | Tytuł |
 | --- |
 | [Walizka z Heartville](/encyklopedia/artefakty/walizka-z-heartville) |
 
 ## Spis epizodow
+
 
 | Tytuł | Data |
 | --- | --- |

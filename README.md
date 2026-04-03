@@ -14,10 +14,10 @@ Publiczna wiki dokumentująca kampanie TTRPG Arkadiusza Rygla.
 
 ```
 vault/              Obsidian vault (tresc wiki)
-  systemy/          systemy RPG > kampanie > epizody
-  encyklopedia/     postacie, lokacje, artefakty
-  scenariusze/      gotowe scenariusze per system
-  Templates/        szablony Templater (formularze tworzenia tresci)
+  Systemy/          systemy RPG > kampanie > epizody
+  Encyklopedia/     postacie, lokacje, artefakty
+  Scenariusze/      gotowe scenariusze per system
+  templates/        szablony Templater (formularze tworzenia tresci)
 scripts/            narzedzia Node.js (normalize, validate, build-bases)
 quartz/             Quartz 4.5.2 (konfiguracja + build)
 .github/workflows/  CI/CD (deploy na GitHub Pages)
@@ -86,7 +86,7 @@ Na Windows wymagany zainstalowany Git dostepny w PATH.
 2. Uzywaj przyciskow w folder notes do tworzenia nowych systemow/kampanii/postaci/epizodow
 3. Pre-commit hook automatycznie normalizuje frontmatter i konwertuje bloki `base`
 4. Push na GitHub: `git push`
-5. Deploy strony: ręcznie z zakladki **Actions** w GitHub → `Deploy Wiki to GitHub Pages`
+5. Deploy strony: automatyczny po push na `main`, lub recznie z zakladki **Actions** w GitHub
 
 ### Najlepsze praktyki
 
@@ -110,7 +110,7 @@ bash scripts/local-build.sh --build
 
 ## Deploy
 
-Deploy jest reczny — uruchamiany z zakladki Actions w GitHub (`workflow_dispatch`).
+Deploy jest automatyczny (push na `main`) lub reczny (zakladka Actions → `workflow_dispatch`).
 
 Pipeline CI:
 1. Kopiuje `vault/` -> `quartz/content/`
@@ -126,6 +126,9 @@ Pipeline CI:
 |--------|------|
 | `scripts/vault-tools.mjs` | CLI do masowych operacji na vault (normalize, validate, set-field...) |
 | `scripts/build-bases.mjs` | Konwersja Obsidian Bases -> statyczne tabele/listy/karty |
+| `scripts/restore-bases.mjs` | Odtwarzanie blokow base z statycznych tabel (odwrotnosc build-bases) |
+| `scripts/sync-systems.mjs` | Synchronizacja systems-data.json z vault |
+| `scripts/fix-infolder-paths.mjs` | Naprawa sciezek file.inFolder w blokach base |
 | `scripts/validate-frontmatter.mjs` | Walidator frontmatter (CI gate) |
 | `scripts/schema.mjs` | Kanoniczny schemat frontmatter (single source of truth) |
 | `scripts/local-build.sh` | Lokalny build pipeline |

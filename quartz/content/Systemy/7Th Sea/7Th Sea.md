@@ -11,7 +11,6 @@ draft: "false"
 # 7th Sea
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -31,11 +30,10 @@ Gra fabularna osadzona w świecie inspirowanym Europą XVII wieku, pełnym pirat
 
 ## Kampanie
 
+
 | Tytuł | MG |
 | --- | --- |
-| [Test](/systemy/7th-sea/test/test) | Krzyś |
 | [W maskach](/systemy/7th-sea/w-maskach/w-maskach) | Arkadiusz RYGIEL |
-
 
 ## Wszystkie strony
 

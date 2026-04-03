@@ -43,7 +43,7 @@ views:
       and:
         - file.inFolder("${systemFolderRel}")
     order:
-      - title
+      - file.name
       - mg
     sort:
       - property: title
@@ -66,7 +66,7 @@ views:
       and:
         - system == "${slugs[0]}"
     order:
-      - title
+      - file.name
       - data
     sort:
       - property: data
@@ -86,7 +86,7 @@ views:
       and:
         - system == ${arrayVal}
     order:
-      - title
+      - file.name
       - data
     sort:
       - property: data
@@ -107,7 +107,7 @@ views:
       and:
         - file.inFolder("${campaignFolderRel}")
     order:
-      - title
+      - file.name
       - data
     sort:
       - property: data
@@ -128,7 +128,7 @@ views:
       and:
         - kampania == "${kampaniaSlug}"
     order:
-      - title
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -150,7 +150,7 @@ views:
       and:
         - kampania == "${kampaniaSlug}"
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -170,7 +170,7 @@ views:
       and:
         - kampania == "${kampaniaSlug}"
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -190,7 +190,7 @@ views:
       and:
         - kampania == "${kampaniaSlug}"
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -207,7 +207,7 @@ views:
   - type: table
     name: Systemy
     order:
-      - title
+      - file.name
       - gatunek
     sort:
       - property: title
@@ -228,7 +228,7 @@ views:
       and:
         - file.inFolder("${scenarioFolderRel}")
     order:
-      - title
+      - file.name
     sort:
       - property: data
         direction: ASC
@@ -245,7 +245,7 @@ views:
   - type: cards
     name: Bohaterowie Graczy
     order:
-      - title
+      - file.name
       - system_pelna
       - gracz
       - archetyp
@@ -265,7 +265,7 @@ views:
   - type: cards
     name: Bohaterowie Niezależni
     order:
-      - title
+      - file.name
       - system_pelna
     sort:
       - property: title
@@ -283,7 +283,7 @@ views:
   - type: cards
     name: Lokacje
     order:
-      - title
+      - file.name
       - system_pelna
     sort:
       - property: title
@@ -301,7 +301,7 @@ views:
   - type: cards
     name: Artefakty
     order:
-      - title
+      - file.name
       - system_pelna
     sort:
       - property: title
@@ -411,11 +411,10 @@ const SECTION_MAP = {
   "scenariusze-samodzielne": "standalone-scenarios",
   "scenariusze":           "scenarios",
   "spis-epizodow":         "episodes",
-  "bohaterowie-graczy":    "players",
-  "bohaterowie-niezalezni":"npcs",
-  "bohaterowie-niezalezni":"npcs",
-  "lokacje":               "locations",
-  "artefakty":             "artifacts",
+  "Bohaterowie Graczy":    "players",
+  "Bohaterowie Niezalezni":"npcs",
+  "Lokacje":               "locations",
+  "Artefakty":             "artifacts",
   "spis-systemow":         "systems",
 };
 
@@ -431,7 +430,7 @@ async function buildScenarioSlugMap() {
   if (scenarioSlugMap) return scenarioSlugMap;
   scenarioSlugMap = {};
 
-  const scenarDir = join(targetDir, "scenariusze");
+  const scenarDir = join(targetDir, "Scenariusze");
   const scenFiles = await findMdFiles(scenarDir);
 
   // Zbierz unikalne system slugi z plików scenariuszy
@@ -445,7 +444,7 @@ async function buildScenarioSlugMap() {
   }
 
   // Zbierz system slugi z system notes
-  const sysDir = join(targetDir, "systemy");
+  const sysDir = join(targetDir, "Systemy");
   const sysFiles = await findMdFiles(sysDir);
   for (const f of sysFiles) {
     const txt = await readFile(f, "utf-8");
@@ -596,10 +595,10 @@ function processEncyclopediaNote(filePath, content, fm) {
   // Dobierz blok base na podstawie nazwy folderu
   let baseContent;
   switch (folderName) {
-    case "bohaterowie-graczy":    baseContent = baseEncyclopediaBG(); break;
-    case "bohaterowie-niezalezni": baseContent = baseEncyclopediaBN(); break;
-    case "lokacje":              baseContent = baseEncyclopediaLocations(); break;
-    case "artefakty":            baseContent = baseEncyclopediaArtifacts(); break;
+    case "Bohaterowie Graczy":    baseContent = baseEncyclopediaBG(); break;
+    case "Bohaterowie Niezalezni": baseContent = baseEncyclopediaBN(); break;
+    case "Lokacje":              baseContent = baseEncyclopediaLocations(); break;
+    case "Artefakty":            baseContent = baseEncyclopediaArtifacts(); break;
     default: return null;
   }
 
@@ -650,7 +649,7 @@ async function main() {
       newContent = await processCampaignNote(filePath, content, fm);
     }
     // Scenario folder notes (w scenariusze/)
-    else if (rel.startsWith("scenariusze/") && !fm.type?.includes("scenariusz")) {
+    else if (rel.startsWith("Scenariusze/") && !fm.type?.includes("scenariusz")) {
       // Folder note w scenariusze/ (nie sam scenariusz)
       const depth = rel.split("/").length;
       if (depth === 3) { // scenariusze/System/System.md — folder note
@@ -658,7 +657,7 @@ async function main() {
       }
     }
     // Encyclopedia subfolder notes
-    else if (fm.type === "index" && rel.startsWith("encyklopedia/") && rel.split("/").length === 3) {
+    else if (fm.type === "index" && rel.startsWith("Encyklopedia/") && rel.split("/").length === 3) {
       newContent = processEncyclopediaNote(filePath, content, fm);
     }
 

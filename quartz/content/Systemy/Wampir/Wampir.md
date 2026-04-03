@@ -11,7 +11,6 @@ draft: "false"
 # Wampir: Mroczne Wieki
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -30,6 +29,7 @@ actions:
 Polska edycja gry Vampire: The Dark Ages wydanej przez White Wolf, osadzona w mrocznym średniowieczu Świata Mroku (World of Darkness). Gracze wcielają się w wampiry -- nieśmiertelne istoty rozdarte między Bestią a resztkami człowieczeństwa, uwikłane w odwieczne intrygi klanów i tajnych sekt. System Storyteller kładzie nacisk na dramat osobisty, politykę wampirów i walkę z wewnętrzną ciemnością.
 
 ## Kampanie
+
 
 | Tytuł | MG |
 | --- | --- |
