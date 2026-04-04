@@ -38,7 +38,10 @@ jobs:
         run: npm ci
 
       - name: Copy vault to Quartz content
-        run: mkdir -p quartz/content && cp -r vault/* quartz/content/
+        run: |
+          mkdir -p quartz/content
+          cp -r vault/* quartz/content/
+          sed -i '/^quartz\/content\//d' .gitignore
 
       - name: Normalize frontmatter
         run: node scripts/vault-tools.mjs normalize --dir quartz/content --apply
