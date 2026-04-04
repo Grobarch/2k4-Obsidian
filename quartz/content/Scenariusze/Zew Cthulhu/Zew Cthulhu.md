@@ -7,4 +7,4 @@ title: Zew Cthulhu
 ## Scenariusze
 
 
-- [Dziesięciu małych ludzi](/scenariusze/zew-cthulhu/dziesieciu-malych-ludzi)
+- [Dziesięciu małych ludzi](/scenariusze/zew-cthulhu/dziesieciu-malych-ludzi) — Tytuł: Dziesieciu Malych Ludzi.md

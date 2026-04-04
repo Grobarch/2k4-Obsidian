@@ -28,7 +28,7 @@ if (!fm || fm.type !== "system") {
 
 const systemId    = fm.system;
 const systemTitle = fm.title;
-const systemFolder = parentFile.parent.path; // np. systemy/Cold City
+const systemFolder = parentFile.parent.path; // np. Systemy/Cold City
 
 // ============================================================
 // 1. Nazwa kampanii (wymagana)
@@ -131,7 +131,7 @@ views:
   - type: table
     name: Bohaterowie Graczy
     order:
-      - title
+      - file.name
       - gracz
       - archetyp
     sort:
@@ -150,7 +150,7 @@ views:
   - type: table
     name: Bohaterowie Niezależni
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -167,7 +167,7 @@ views:
   - type: table
     name: Lokacje
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -184,7 +184,7 @@ views:
   - type: table
     name: Artefakty
     order:
-      - title
+      - file.name
     sort:
       - property: title
         direction: ASC
@@ -203,7 +203,7 @@ views:
       and:
         - file.inFolder("${kampaniaFolder}")
     order:
-      - title
+      - file.name
       - data
     sort:
       - property: data

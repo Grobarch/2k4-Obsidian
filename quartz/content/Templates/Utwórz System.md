@@ -117,7 +117,7 @@ views:
       and:
         - file.inFolder("${systemFolder}")
     order:
-      - title
+      - file.name
       - mg
     sort:
       - property: title

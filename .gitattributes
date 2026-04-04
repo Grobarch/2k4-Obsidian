@@ -1,2 +1,8 @@
+<<<<<<< HEAD
+# Force LF line endings for shell scripts (prevent Windows CRLF conversion)
 *.sh text eol=lf
 scripts/pre-commit text eol=lf
+=======
+*.sh text eol=lf
+scripts/pre-commit text eol=lf
+>>>>>>> 53031ae (fix: force LF line endings for shell scripts on Windows)

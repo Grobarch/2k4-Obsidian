@@ -7,4 +7,4 @@ title: Warhammer Fantasy Role Play 4ed
 ## Scenariusze
 
 
-- [Sukno z Langre](/scenariusze/wfrp-4ed/sukno-z-langre)
+- [Sukno z Langre](/scenariusze/wfrp-4ed/sukno-z-langre) — Tytuł: Sukno Z Langre.md

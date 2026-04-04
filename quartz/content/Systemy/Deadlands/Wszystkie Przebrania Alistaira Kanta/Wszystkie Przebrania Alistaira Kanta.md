@@ -39,16 +39,18 @@ actions:
 
 | Tytuł | Gracz | Archetyp |
 | --- | --- | --- |
-| [Kanciarz Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/kanciarz-klaus-von-weibenmauer) | Krzysztof OBSTAWSKI |  |
-| [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer) | Krzysztof OBSTAWSKI | Kanciarz z Rodziny Grimmów |
-| [Poszukiwacz Jacob](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob) | oraz Piotr RYGIEL |  |
-| [Poszukiwacz Jacob Hoover](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob-hoover) | oraz Piotr RYGIEL |  |
-| [Rewolwerowiec i ochroniarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-i-ochroniarz-timothy-crawford-iii) | Paweł Piotrowski |  |
-| [Rewolwerowiec Szalony Mickey](/encyklopedia/bohaterowie-graczy/rewolwerowiec-szalony-mickey) | Tomasz TYMIŃSKI |  |
-| [Rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-ochroniarz-i-poczatkujacy-kanciarz-timothy-crawford-iii) | Paweł PIOTROWSKI |  |
-| [Ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro) | Paweł OBSTAWSKI |  |
-| [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey) | Tomasz TYMIŃSKI | Rewolwerowiec |
 | [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro) | Paweł OBSTAWSKI | Ronin i zabójca potworów z Kraju Kwitnącej Wiśni |
+| [test](/encyklopedia/bohaterowie-graczy/test) |  |  |
+| [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey) | Tomasz TYMIŃSKI | Rewolwerowiec |
+| [Ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro) | Paweł OBSTAWSKI |  |
+| [Rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-ochroniarz-i-poczatkujacy-kanciarz-timothy-crawford-iii) | Paweł PIOTROWSKI |  |
+| [Rewolwerowiec Szalony Mickey](/encyklopedia/bohaterowie-graczy/rewolwerowiec-szalony-mickey) | Tomasz TYMIŃSKI |  |
+| [Rewolwerowiec i ochroniarz Timothy Crawford III](/encyklopedia/bohaterowie-graczy/rewolwerowiec-i-ochroniarz-timothy-crawford-iii) | Paweł Piotrowski |  |
+| [Poszukiwacz Jacob Hoover](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob-hoover) | oraz Piotr RYGIEL |  |
+| [Poszukiwacz Jacob](/encyklopedia/bohaterowie-graczy/poszukiwacz-jacob) | oraz Piotr RYGIEL |  |
+| [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer) | Krzysztof OBSTAWSKI | Kanciarz z Rodziny Grimmów |
+| [Kanciarz Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/kanciarz-klaus-von-weibenmauer) | Krzysztof OBSTAWSKI |  |
+
 
 ## Lokacje
 

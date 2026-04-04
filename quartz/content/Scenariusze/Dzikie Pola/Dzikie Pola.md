@@ -7,4 +7,4 @@ title: Dzikie Pola
 ## Scenariusze
 
 
-- [Białogłowa](/scenariusze/dzikie-pola/bialoglowa)
+- [Białogłowa](/scenariusze/dzikie-pola/bialoglowa) — Tytuł: Bialoglowa.md
