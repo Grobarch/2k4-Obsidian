@@ -3,8 +3,8 @@ title: Hortus
 type: lokacja
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
-kampania_link: ["/systemy/gasnace-slonca/hortus"]
-kampania: ["hortus"]
+kampania_link: ["/systemy/gasnace-slonca/tajemnice-z-hortusa"]
+kampania: ["tajemnice-z-hortusa"]
 tags: [lokacja, gasnace-slonca, space-fantasy]
 ---
 

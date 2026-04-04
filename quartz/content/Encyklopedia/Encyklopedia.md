@@ -1,5 +1,6 @@
 ---
 title: Encyklopedia
+type: index
 ---
 
 # Encyklopedia

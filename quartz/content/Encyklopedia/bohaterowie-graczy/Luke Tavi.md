@@ -43,5 +43,5 @@ karabin
 ## Wystąpienia
 
 
-- [Most na rzece Anok](/raporty-z-testow/most-na-rzece-anok)
+- [Most na rzece Anok](/scenariusze/wolsung/most-na-rzece-anok)
 

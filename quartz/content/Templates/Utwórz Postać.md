@@ -8,43 +8,11 @@
 
 const triggerFile = tp.config.target_file;
 
-// --- Systemy ---
-const SYSTEMS = [
-  { id: "cold-city",      name: "Cold City",             pelna: "Cold City" },
-  { id: "deadlands",      name: "Deadlands",             pelna: "Deadlands: Martwe Ziemie" },
-  { id: "gasnace-slonca", name: "Gasnące Słońca 2ed",    pelna: "Gasnące Słońca 2ed" },
-  { id: "honor-i-krew",   name: "Honor i Krew",          pelna: "Honor i Krew" },
-  { id: "l5k",            name: "L5K 1ed",               pelna: "Legenda Pięciu Kręgów 1ed" },
-  { id: "mafia-ggf",      name: "Mafia GGF",             pelna: "Mafia: Gangsterska Gra Fabularna" },
-  { id: "7th-sea",        name: "7th Sea",               pelna: "7th Sea" },
-  { id: "wampir",         name: "Wampir: Mroczne Wieki", pelna: "Wampir: Mroczne Wieki" },
-  { id: "wiedzmin",       name: "Wiedźmin",              pelna: "Wiedźmin: Gra Wyobraźni" },
-  { id: "wfrp",           name: "WFRP 2ed",              pelna: "Warhammer Fantasy Role Play" },
-  { id: "wolsung",        name: "Wolsung",               pelna: "Wolsung: Magia Wieku Pary" },
-];
-
-// --- Kampanie per system ---
-const KAMPANIE = {
-  "cold-city":      [{ id: "cold-tales",                              name: "Cold Tales",                          link: "/systemy/cold-city/cold-tales" }],
-  "deadlands":      [{ id: "wszystkie-przebrania-alistaira-kanta",    name: "Wszystkie przebrania Alistaira Kanta", link: "/systemy/deadlands/wszystkie-przebrania-alistaira-kanta" }],
-  "gasnace-slonca": [{ id: "tajemnice-z-hortusa",                     name: "Tajemnice z Hortusa",                 link: "/systemy/gasnace-slonca/tajemnice-z-hortusa" }],
-  "honor-i-krew":   [{ id: "trylogia-miecza",                         name: "Trylogia miecza",                     link: "/systemy/honor-i-krew/trylogia-miecza" }],
-  "l5k":            [
-    { id: "groza-ktora-zawsze-powraca", name: "Groza, która zawsze powraca", link: "/systemy/l5k/groza-ktora-zawsze-powraca" },
-    { id: "miecze-cnot-i-grzechow",    name: "Miecze cnót i grzechów",      link: "/systemy/l5k/miecze-cnot-i-grzechow" },
-    { id: "prawidla-zdrady",           name: "Prawidła zdrady",             link: "/systemy/l5k/prawidla-zdrady" },
-    { id: "trylogia-klanu-lwa",        name: "Trylogia Klanu Lwa",          link: "/systemy/l5k/trylogia-klanu-lwa" },
-  ],
-  "mafia-ggf":      [{ id: "la-cosa-nostra", name: "La Cosa Nostra", link: "/systemy/mafia-ggf/la-cosa-nostra" }],
-  "7th-sea":        [{ id: "w-maskach",       name: "W maskach",      link: "/systemy/7th-sea/w-maskach" }],
-  "wampir":         [{ id: "diabel-z-lazareni", name: "Diabeł z Łazareni", link: "/systemy/wampir/diabel-z-lazareni" }],
-  "wiedzmin":       [{ id: "sludzy-miecza",   name: "Słudzy miecza",  link: "/systemy/wiedzmin/sludzy-miecza" }],
-  "wfrp":           [
-    { id: "listy-z-praag",  name: "Listy z Praag",  link: "/systemy/wfrp/listy-z-praag" },
-    { id: "losy-bohaterow", name: "Losy bohaterów", link: "/systemy/wfrp/losy-bohaterow" },
-  ],
-  "wolsung": [],
-};
+// --- Systemy i kampanie z systems-data.json ---
+const systemsDataFile = app.vault.getAbstractFileByPath("Templates/systems-data.json");
+const systemsData = JSON.parse(await app.vault.read(systemsDataFile));
+const SYSTEMS = systemsData.systems;
+const KAMPANIE = systemsData.campaigns;
 
 function cancel(msg) {
   new Notice(msg || "Anulowano tworzenie postaci.");

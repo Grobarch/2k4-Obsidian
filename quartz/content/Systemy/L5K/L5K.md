@@ -14,7 +14,6 @@ draft: "false"
 # Legenda Pięciu Kręgów 1ed
 
 
-
 <div class="obsidian-only">
 
 ```meta-bind-button
@@ -34,6 +33,7 @@ Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan
 
 ## Kampanie
 
+
 | Tytuł | MG |
 | --- | --- |
 | [Groza, która zawsze powraca](/systemy/l5k/groza-ktora-zawsze-powraca/groza-ktora-zawsze-powraca) | Arkadiusz RYGIEL |
@@ -43,8 +43,9 @@ Pierwsza edycja kultowej gry fabularnej osadzonej w fikcyjnym cesarstwie Rokugan
 
 ## Scenariusze samodzielne
 
-| Scenariusz | Data |
-|------------|------|
+
+| Tytuł | Data |
+| --- | --- |
 | [Pewnego razu w Rokuganie](/scenariusze/l5k1ed/pewnego-razu-w-rokuganie) | 2010-11-26 |
 | [Koszmar życia](/scenariusze/l5k1ed/koszmar-zycia) | 2011-12-30 |
 | [Krótka opowieść o człowieku bez serca](/scenariusze/l5k1ed/krotka-opowiesc-o-czlowieku-bez-serca) | 2013-01-04 |

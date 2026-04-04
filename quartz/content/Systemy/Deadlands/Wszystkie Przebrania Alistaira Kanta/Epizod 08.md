@@ -16,7 +16,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqZ4jFqgQAa2FeJseyb3c9B-x5iGE1z6B6f1OaL4_1mpGq6eaSN-LmyD4lR01C44gWVlSSbaB0J6t1kttweAepSiWFvXtPNpU4Lp3RvRNEvZbxQ46gMtAWmD6lEQhLUaBKF3yWmN2j3-1LhSdKPotbxh6eDbAvZ1HDR9S12y8LOoQ8VduAwQ979W4A/s320/Arkadiusz RYGIEL blog autorski - ilustracja nr 8 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja nr 8 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
 Ilustracja: Piotr RYGIEL
 W piątek 4 listopada 2022 r. rozgrywaliśmy epizod 8 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Porwanie Mistrza Bassarda".
 
@@ -25,15 +25,25 @@ W piątek 4 listopada 2022 r. rozgrywaliśmy epizod 8 kampanii do Deadlands "Wsz
 
 **Epizod 8: "Porwanie Mistrza Bassarda"**
 
-**Scena 1. "Spojrzenie grzechotnika - przeprawa na rzece Hollow River - przystań****"**Szalony Mickey podczas przygotowań do przejścia przez rzekę zauważa dziwne zachowanie swoich towarzyszy. Doświadczone oko rewolwerowca dostrzega, że Jack Bilton i Henry Green ustawiają się na "zasadzie trójkąta", aby jednemu strzelcowi trudno było objąć ich wzrokiem. Mickey nie czeka już dłużej. Lśnią oczy całej trójki. Spojrzenia spotykają się. Dłonie sięgają po broń. Słychać kilka szybkich wystrzałów. Wkrótce później stoi już jedynie Szalony Mickey. Grzechotnik tańczy raz ze swoją ofiarą. Mickey opatruje i pęta byłych współpracowników.
+**Scena 1. "Spojrzenie grzechotnika - przeprawa na rzece Hollow River - przystań"**
 
-**Scena 2. "Powóz na pokładzie - przesłuchanie zbirów - dymne wersety maszyny do pisania Barona Morin - parowiec****"**Czarny Dyliżans pojawia się na pokładzie a wraz z nim Jacob Hoover. Na miejsce przybywa również Mickey wraz ze schwytanymi Banditos. Zbiry próbują być twardzi. Szybko jednak nóż Twika rozmiękcza obu. Bohaterowie Graczy dowiadują się, że Jack Bilton i Gatling Gary Gallagher otrzymali zadanie schwytania Jean-Pierre Bassarda. Mickey po przesłuchaniu faszeruje zbirów ołowiem. Na pokładzie statku Ronin Yojiro odnajduje w kajucie Barona Morin dziwną maszynę do pisania. Urządzenie jest dziwacznie zdobione. Weibenmauer odkrywa, że za pośrednictwem maszyny można komunikować się z Domem La Rue. Nad urządzeniem pojawiają się całe zdania w formie dymowych liter, które szybko znikają.
+Szalony Mickey podczas przygotowań do przejścia przez rzekę zauważa dziwne zachowanie swoich towarzyszy. Doświadczone oko rewolwerowca dostrzega, że Jack Bilton i Henry Green ustawiają się na "zasadzie trójkąta", aby jednemu strzelcowi trudno było objąć ich wzrokiem. Mickey nie czeka już dłużej. Lśnią oczy całej trójki. Spojrzenia spotykają się. Dłonie sięgają po broń. Słychać kilka szybkich wystrzałów. Wkrótce później stoi już jedynie Szalony Mickey. Grzechotnik tańczy raz ze swoją ofiarą. Mickey opatruje i pęta byłych współpracowników.
 
-**Scena 3. "Podróże Czarnym Dyliżansem poszerzają horyzonty - Biuro Czerwonego Szeryfa w Widmowym Mieście - odnaleziona karta****"**Jacob Hoover chcąc szybko przemieścić się w okolice Redstone wykorzystuje moc Dyliżansu. Posse trafia najpierw na obrzeża Stanu, a następnie do Widmowego Miasta. Bohaterowie wracają do Biura Szeryfa. Protagoniści otrzymują od Truposza pustą kartę z Domu La Rue nie posiadającą wartości numerycznej. Uwalniają z celi Roda Lake'a, który tego samego dnia wygrzebuje się z grobu.
+**Scena 2. "Powóz na pokładzie - przesłuchanie zbirów - dymne wersety maszyny do pisania Barona Morin - parowiec"**
 
-**Scena 4. "Kolonialny dom płonie - zniknięcie malarza****"**Bohaterowie Graczy trafiają do posiadłości Bassarda. Dom trawią płomienie. Protagoniści dowiadują się, że Gang Białych Olstr Gatling Gary'ego Gallaghera porwał artystę na zlecenie Walkelina La Rue. Tropy prowadzą do opuszczonej kopalni w Bridgestone. Protagoniści wiedzą, że banda jest liczna i dobrze uzbrojona. Szalony Mickey dobija targu z bandą Skipy'ego. Posse oddaje Hoganowi zdobyty parowiec w zamian za pomoc.
+Czarny Dyliżans pojawia się na pokładzie a wraz z nim Jacob Hoover. Na miejsce przybywa również Mickey wraz ze schwytanymi Banditos. Zbiry próbują być twardzi. Szybko jednak nóż Twika rozmiękcza obu. Bohaterowie Graczy dowiadują się, że Jack Bilton i Gatling Gary Gallagher otrzymali zadanie schwytania Jean-Pierre Bassarda. Mickey po przesłuchaniu faszeruje zbirów ołowiem. Na pokładzie statku Ronin Yojiro odnajduje w kajucie Barona Morin dziwną maszynę do pisania. Urządzenie jest dziwacznie zdobione. Weibenmauer odkrywa, że za pośrednictwem maszyny można komunikować się z Domem La Rue. Nad urządzeniem pojawiają się całe zdania w formie dymowych liter, które szybko znikają.
 
-**Scena 5. "W cieniach kopalni Bridgestone - strzelanina z Bandą Białych Olstr w tunelach****"**Posse podchodzi bandziorów od strony tylnego wejścia. Od frontu atak przypuszczają ludzie Skipy'ego Hogana. Strzelcy eliminują wartowników. Wrzucają kilka lasek dynamitu do środka. I dokonują szturmu z bronią strzelecką w kłębach dymu. Na tyłach Weibenmauer za pośrednictwem kantów podkręca fizyczne zdolności ronina. Obaj ruszają w korytarze kopalni. Ubezpieczają ich Jacob i Szalony Mickey. Yojiro w sposób skryty pozbywa się za pomocą ostrza miecza katana pięciu strażników. Jacob strzałem z rewolweru kładzie jednego z kowbojów. Drugiego powalają kule Mickeya. W dużym korytarzu dochodzi do walki. Gary z ręcznego karabinu Gatlinga rani kanciarza i ronina. Niefart w kartach wyłącza Weibenmauera z kantowania. Ronin Yojiro rozpoczyna krwawy taniec z mieczem. Po wszystkim pada na ziemię. Ostatnią przytomną osobą jest spętany na krześle Bassard. Mickey i Jacob zabierają artystę i kumpli. Po opuszczeniu korytarzy zawalają drugie z wejść do kopalni. Jean-Pierre jest wolny.
+**Scena 3. "Podróże Czarnym Dyliżansem poszerzają horyzonty - Biuro Czerwonego Szeryfa w Widmowym Mieście - odnaleziona karta"**
+
+Jacob Hoover chcąc szybko przemieścić się w okolice Redstone wykorzystuje moc Dyliżansu. Posse trafia najpierw na obrzeża Stanu, a następnie do Widmowego Miasta. Bohaterowie wracają do Biura Szeryfa. Protagoniści otrzymują od Truposza pustą kartę z Domu La Rue nie posiadającą wartości numerycznej. Uwalniają z celi Roda Lake'a, który tego samego dnia wygrzebuje się z grobu.
+
+**Scena 4. "Kolonialny dom płonie - zniknięcie malarza"**
+
+Bohaterowie Graczy trafiają do posiadłości Bassarda. Dom trawią płomienie. Protagoniści dowiadują się, że Gang Białych Olstr Gatling Gary'ego Gallaghera porwał artystę na zlecenie Walkelina La Rue. Tropy prowadzą do opuszczonej kopalni w Bridgestone. Protagoniści wiedzą, że banda jest liczna i dobrze uzbrojona. Szalony Mickey dobija targu z bandą Skipy'ego. Posse oddaje Hoganowi zdobyty parowiec w zamian za pomoc.
+
+**Scena 5. "W cieniach kopalni Bridgestone - strzelanina z Bandą Białych Olstr w tunelach"**
+
+Posse podchodzi bandziorów od strony tylnego wejścia. Od frontu atak przypuszczają ludzie Skipy'ego Hogana. Strzelcy eliminują wartowników. Wrzucają kilka lasek dynamitu do środka. I dokonują szturmu z bronią strzelecką w kłębach dymu. Na tyłach Weibenmauer za pośrednictwem kantów podkręca fizyczne zdolności ronina. Obaj ruszają w korytarze kopalni. Ubezpieczają ich Jacob i Szalony Mickey. Yojiro w sposób skryty pozbywa się za pomocą ostrza miecza katana pięciu strażników. Jacob strzałem z rewolweru kładzie jednego z kowbojów. Drugiego powalają kule Mickeya. W dużym korytarzu dochodzi do walki. Gary z ręcznego karabinu Gatlinga rani kanciarza i ronina. Niefart w kartach wyłącza Weibenmauera z kantowania. Ronin Yojiro rozpoczyna krwawy taniec z mieczem. Po wszystkim pada na ziemię. Ostatnią przytomną osobą jest spętany na krześle Bassard. Mickey i Jacob zabierają artystę i kumpli. Po opuszczeniu korytarzy zawalają drugie z wejść do kopalni. Jean-Pierre jest wolny.
 
 Ciąg dalszy nastąpi...
 Czarne tło...

@@ -43,5 +43,5 @@ pistolet, paramobil
 ## Wystąpienia
 
 
-- [Bestia z Crystal Creek](/raporty-z-testow/bestia-z-crystal-creek)
+- [Bestia z Crystal Creek](/scenariusze/wolsung/bestia-z-crystal-creek)
 

@@ -36,6 +36,7 @@ actions:
 
 ## Bohaterowie Niezalezni
 
+
 | Tytuł |
 | --- |
 | [Akodo Monzo](/encyklopedia/bohaterowie-niezalezni/akodo-monzo) |
@@ -48,6 +49,7 @@ actions:
 | [Yojimbo cesarskiego namiestnika Immamury Sakutaro](/encyklopedia/bohaterowie-niezalezni/yojimbo-cesarskiego-namiestnika-immamury-sakutaro) |
 
 ## Spis epizodow
+
 
 | Tytuł | Data |
 | --- | --- |

@@ -16,7 +16,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7zm7FMwOWQWCw8ewkddAQdVdDyDdEJ5K5P_6JEBqChB0GvwQY0yIXJgvT-PgJZDcThs9_7o3hBHK71aPOjK7kapWZdIWxaGfsLMrf--aRFgS7F5n8oFVtgcZe39tg5hJR98rsqTjgTiHcvSdN7lONwLU59bDOpkMWE3b7FB0afsOFfHazpyz-yQ0R/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Czerwony Szeryf.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Czerwony Szeryf.jpg)
 
 *Ilustracja: Piotr RYGIEL*
 

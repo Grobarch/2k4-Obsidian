@@ -23,6 +23,7 @@ actions:
 
 ## Spis systemów
 
+
 | Tytuł | Gatunek |
 | --- | --- |
 | [7th Sea](/systemy/7th-sea/7th-sea) | przygodowy, fantasy |

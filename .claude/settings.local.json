@@ -15,7 +15,14 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(for f:*)",
       "Bash(do echo:*)",
-      "Read(//f/RPG/RPG_repo/2k4-Obsidian/**)"
+      "Read(//f/RPG/RPG_repo/2k4-Obsidian/**)",
+      "mcp__29a118e7-d9d3-4809-b2be-100fae582c1f__save_issue",
+      "Bash(node scripts/vault-tools.mjs normalize --dir vault --apply)",
+      "Bash(node scripts/vault-tools.mjs validate --dir vault)",
+      "Bash(cd \"f:/RPG/RPG_repo/2k4-Obsidian\" git ls-tree HEAD -- \"vault/encyklopedia\")",
+      "Bash(cd \"f:/RPG/RPG_repo/2k4-Obsidian\" git ls-tree -r HEAD --name-only)",
+      "Bash(cd \"F:/RPG/RPG_repo/2k4-Obsidian/.claude/worktrees/xenodochial-stonebraker/quartz\" npm ci)",
+      "Bash(cd \"F:/RPG/RPG_repo/2k4-Obsidian/.claude/worktrees/xenodochial-stonebraker/quartz\" npx quartz build)"
     ]
   }
 }

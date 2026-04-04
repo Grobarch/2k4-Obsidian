@@ -36,6 +36,7 @@ actions:
 
 ## Bohaterowie Graczy
 
+
 | Tytuł | Gracz | Archetyp |
 | --- | --- | --- |
 | [Bayushi Tokuno](/encyklopedia/bohaterowie-graczy/bayushi-tokuno) | Paweł OBSTAWSKI | bushi z Klanu Skorpiona |
@@ -49,6 +50,7 @@ actions:
 
 ## Bohaterowie Niezalezni
 
+
 | Tytuł |
 | --- |
 | [Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](/encyklopedia/bohaterowie-niezalezni/cien-kobiety-jedna-z-mrocznych-zjaw-poddanych-woli-cichego-skorpiona-z-zamku-zadel-w-miescie-slodkich-klamstw) |
@@ -61,6 +63,7 @@ actions:
 
 ## Lokacje
 
+
 | Tytuł |
 | --- |
 | [Miasto Słodkich Kłamstw](/encyklopedia/lokacje/miasto-slodkich-klamstw) |
@@ -68,6 +71,7 @@ actions:
 | [Zimowy Dwór](/encyklopedia/lokacje/zimowy-dwor) |
 
 ## Artefakty
+
 
 | Tytuł |
 | --- |
@@ -77,6 +81,7 @@ actions:
 | [Ostrze Pychy Hokori](/encyklopedia/artefakty/ostrze-pychy-hokori) |
 
 ## Spis epizodow
+
 
 | Tytuł | Data |
 | --- | --- |

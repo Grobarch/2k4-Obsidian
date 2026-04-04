@@ -26,7 +26,7 @@ tags: [epizod, l5k, samurajski]
 
 **Gatunek: samurajski, horror**
 
-**Scena 1. "Przeklęte miecze pokazują swoje prawdziwe oblicze w Wiosce Pochylonych Drzew****Katamuita-ki-no-mura"**
+**Scena 1. "Przeklęte miecze pokazują swoje prawdziwe oblicze w Wiosce Pochylonych DrzewKatamuita-ki-no-mura"**
 
 Protagoniści mają czas do Północy, aby ochronić Człowieka z Chmur przed Księciem Shosuro Kuno. Bohaterowie obozują. Przy ognisku zostaje jedynie Pan Sasaki Hayato dopiekając ostatni kawałek ryby. Panowie Bayushi Tokuno i Kakita Miyagi ruszają do pobliskiej wioski po zaopatrzenie. Skorpion i Jednorożec budzą się wśród zmasakrowanej ludności. Wszyscy nie żyją. Na mieczach jest krew niewinnych wieśniaków. Ostrza przejęły kontrolę nad swoimi użytkownikami, zostawiając po sobie śmiertelne żniwo. Miyagi podchodzi do studni, aby obmyć dłonie. W tafli widzi swoje wykrzywione oblicze. W zbiorniku na powierzchni utrzymuje się ścięta głowa jednego z nieszczęśników. Samuraje doprowadzają się do porządku. Zabierają zapasy ryżu i suszonego mięsa. Na koniec podpalają całą osadę. Chcą zapomnieć o wydarzeniach, których byli uczestnikami po utracie świadomości. Nad siedliskiem pojawia się wielka łuna. Na jej tle widać dwóch oddalających się jeźdźców.
 

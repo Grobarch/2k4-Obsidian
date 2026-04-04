@@ -17,13 +17,13 @@ Arkadiusz RYGIEL
 
 Poniższy tekst, to scenariusz filmowej sesji w konwencji horroru, rozgrywający się w realiach Settingu Apokalipsa Spełniona: Czas Cthulhu autorstwa Pawła „Chimery" Cybuli.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFxteJzXEmqw3T7mblMcjYIpUFzSHvlpyl4KwLSpbFmzJDStAA7jx9C2vxQ-CW3WnFOI0F5TIbM57dWti14aCnt9SHYO_LU39FSCRGgYyYPD8zTTXTpdjKRPFtDqi6PEEUSzej8xByr93_/s320/Kontinuum+zag%25C5%2582ady+1+Piotr+Rygiel.jpg)
+![](Kontinuum zagłady 1 Piotr Rygiel.jpg)
 
 *Ilustracje: Piotr RYGIEL*
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHQLNqoCTswwLncEjKxgmpfF1cngBdh5y7zoFLgHii8swJWoDuyxnkU5VJLaiG6PB45rYAYtVt7Tu45GqIF3XnNv-aDUD3cQSCzYnCfvsXmwx69y6PHsbOYwiQgcwwI5UFtlk6seZYq7s/s320/Kontinuum+zag%25C5%2582ady+2+Piotr+Rygiel.jpg)
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfC_7dy6mFrvuKQQ1Tyzioa69yZ4RNz4UnkWM6Um8qMudtfY_w17XDvx5d2jygUh7JUAhJNUsTh78548uuHiwsQgsdk8K455et_XSdOfSbErMqGUJlprcmCNkIwVcAWJa05tTSD3pzyDaZ/s320/Kontinuum+zag%25C5%2582ady+3+Piotr+Rygiel.jpg)
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-DuGwCN57yhdEsEL-QTVmwQBcLwoW02YjRCeNX52wX2FUeukHU2stgPU9kOll1LSoprE9B9lf6sw1TY_CDAumfd8HnEMgf33R8B67hNJlnjeBbcwvw2jgfkV2Z2GJwVfBS8ibY62M5Tyj/s320/Kontinuum+zag%25C5%2582ady+4+Piotr+Rygiel.jpg)
+![](Kontinuum zagłady 2 Piotr Rygiel.jpg)
+![](Kontinuum zagłady 3 Piotr Rygiel.jpg)
+![](Kontinuum zagłady 4 Piotr Rygiel.jpg)
 
 **W grupie siła, czyli kilka słów o Bohaterach**
 

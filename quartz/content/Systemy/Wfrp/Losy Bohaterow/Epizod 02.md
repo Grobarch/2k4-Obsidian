@@ -16,13 +16,15 @@ tags: [epizod, wfrp, dark-fantasy]
 
 ---
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinjcPHWIcXRn5w_qqhMkN_qw3EUkosB_9Kanps_1opGa9Rg2BmyMjWrdfQa3Lpjtq4V_h9-xnDjO9p4WWiFvqOv4Dn4LEl1JbrJwR3j77jGnJOQZV2d20uRS1s0vtI0w9iy4wLuSrr7MPoCgEa-8ExiRLaxcqStujAHr0Ddm5MzPLw1_4vYZ7QjQ8q/s320/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL.jpg)
+![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL.jpg)
 
 *Ilustracja: Piotr RYGIEL*
 
 *W piątek 15 lipca późnym wieczorem rozgrywaliśmy epizod 2 kampanii**„Losy bohaterów przez żarna czasu ścierane” zatytułowany: "Szata czyniąca obłęd". Podczas krótkiej sesji w ramach rozgrywki przeprowadziliśmy 3 sceny.*
 
-**Warhammer Fantasy Role Play 2ed****Kampania „Losy bohaterów przez żarna czasu ścierane”**
+**Warhammer Fantasy Role Play 2ed**
+
+**Kampania „Losy bohaterów przez żarna czasu ścierane”**
 
 **Epizod 2: „Szata czyniąca obłęd”**
 
