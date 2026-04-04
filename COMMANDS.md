@@ -2,24 +2,38 @@
 
 Przydatne komendy do pracy z projektem.
 
-## Podgląd lokalny (Quartz dev server)
+## Podgląd lokalny (pełny pipeline — ZALECANE)
 
 ```bash
-cd f:\RPG\RPG_repo\2k4-Obsidian\quartz
-npx quartz build --serve -d ../vault
+cd f:\RPG\RPG_repo\2k4-Obsidian
+bash scripts/local-build.sh
 ```
+
+Wykonuje pełny pipeline identyczny z CI:
+1. Kopiuje `vault/` → `quartz/content/`
+2. Normalizuje frontmatter (`vault-tools.mjs normalize`)
+3. Konwertuje Obsidian Bases → statyczne tabele/listy/karty (`build-bases.mjs`)
+4. Buduje i serwuje Quartz na `localhost:8080`
 
 Otwórz w przeglądarce: http://localhost:8080
 
 Zatrzymaj serwer: `Ctrl+C`
+
+Tylko build (bez serwera):
+```bash
+bash scripts/local-build.sh --build
+```
+
+> **Uwaga:** Komenda `npx quartz build --serve -d ../vault` pomija kroki 1-3,
+> przez co bloki `base` wyświetlają się jako surowy YAML zamiast tabel/kart.
+> Używaj `local-build.sh` do pełnego podglądu.
 
 ---
 
 ## Budowanie statycznych plików (bez serwera)
 
 ```bash
-cd f:\RPG\RPG_repo\2k4-Obsidian\quartz
-npx quartz build -d ../vault
+bash scripts/local-build.sh --build
 ```
 
 Wynik trafia do `quartz/public/`.
