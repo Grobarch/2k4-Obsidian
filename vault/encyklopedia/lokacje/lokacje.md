@@ -1,7 +1,7 @@
 ---
 title: Lokacje
 type: index
-draft: "true"
+draft: "false"
 ---
 
 # Lokacje

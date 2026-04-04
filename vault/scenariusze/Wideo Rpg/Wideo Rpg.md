@@ -1,6 +1,6 @@
 ---
 title: Wideo RPG — scenariusze
-draft: "true"
+draft: "false"
 ---
 
 # Wideo RPG — scenariusze
