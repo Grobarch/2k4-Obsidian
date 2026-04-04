@@ -8,6 +8,7 @@ on:
       - "vault/**"
       - "scripts/**"
       - "quartz/**"
+      - ".github/workflows/**"
 
 permissions:
   contents: read
