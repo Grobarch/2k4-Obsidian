@@ -79,8 +79,8 @@ const typeId = await tp.system.suggester(
 if (!typeId) { cancel(); return; }
 const typeLabel = typeId;
 const folder    = typeId === "bohater-gracza"
-  ? "encyklopedia/bohaterowie-graczy"
-  : "encyklopedia/bohaterowie-niezalezni";
+  ? "Encyklopedia/Bohaterowie Graczy"
+  : "Encyklopedia/Bohaterowie Niezalezni";
 
 // ============================================================
 // 3. System (pominięty jeśli znany z kontekstu)

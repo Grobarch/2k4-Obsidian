@@ -7,4 +7,4 @@ title: Dwory Końca Świata
 ## Scenariusze
 
 
-- [Dźwięki dintojry](/scenariusze/dwory-konca-swiata/dzwieki-dintojry)
+- [Dźwięki dintojry](/scenariusze/dwory-konca-swiata/dzwieki-dintojry) — Tytuł: Dzwieki Dintojry.md
