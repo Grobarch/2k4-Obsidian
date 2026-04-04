@@ -1,7 +1,7 @@
 ---
 title: Artefakty
 type: index
-draft: "true"
+draft: "false"
 ---
 
 # Artefakty

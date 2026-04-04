@@ -1,7 +1,7 @@
 ---
 title: Bohaterowie Graczy
 type: index
-draft: "true"
+draft: "false"
 ---
 
 # Bohaterowie Graczy

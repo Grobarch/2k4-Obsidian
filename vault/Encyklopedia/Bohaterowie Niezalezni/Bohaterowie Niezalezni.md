@@ -1,7 +1,7 @@
 ---
 title: Bohaterowie Niezależni
 type: index
-draft: "true"
+draft: "false"
 ---
 
 # Bohaterowie Niezależni
