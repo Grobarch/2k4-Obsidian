@@ -1,5 +1,0 @@
-**Cechy:** —
-
-**Umiejętności:** —
-
-**Ekwipunek:** —
