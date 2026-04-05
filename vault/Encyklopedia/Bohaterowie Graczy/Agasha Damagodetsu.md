@@ -10,8 +10,6 @@ archetyp: shugenja z Klanu Smoka i Szmaragdowy Namiestnik
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Agasha Damagodetsu
-
 ![Portret Agasha Damagodetsu](placeholder.jpg)
 
 

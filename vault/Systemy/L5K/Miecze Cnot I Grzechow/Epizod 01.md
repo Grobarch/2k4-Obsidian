@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame\""
+title: 'Epizod 1: "Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-02-17
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/02/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 1: "Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame"
 
 
 ---

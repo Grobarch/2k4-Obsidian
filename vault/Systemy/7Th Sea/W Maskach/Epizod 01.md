@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Zaślubiny ze śmiercią\""
+title: 'Epizod 1: "Zaślubiny ze śmiercią"'
 type: epizod
 system: 7th-sea
 system_pelna: 7th Sea
@@ -10,8 +10,6 @@ data: 2010-11-18
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2010/11/7th-sea-odc-1-ze-smiercia.html"
 tags: ["epizod", "7th-Sea", "szpiegowski", "7th-sea"]
 ---
-
-# Epizod 1: "Zaślubiny ze śmiercią"
 
 
 ---

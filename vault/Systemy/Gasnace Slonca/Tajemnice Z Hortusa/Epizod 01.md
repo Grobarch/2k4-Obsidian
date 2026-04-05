@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis\""
+title: 'Epizod 1: "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis"'
 type: epizod
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
@@ -10,8 +10,6 @@ data: 2023-12-30
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/12/rpg-papierowe-rpg-gry-fabularne-gasnace.html"
 tags: [epizod, gasnace-slonca, space-fantasy]
 ---
-
-# Epizod 1: "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis"
 
 
 ---

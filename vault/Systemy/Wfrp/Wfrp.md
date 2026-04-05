@@ -8,8 +8,6 @@ tags: [system, wfrp, dark-fantasy]
 draft: "false"
 ---
 
-# Warhammer Fantasy Role Play
-
 
 <div class="obsidian-only">
 

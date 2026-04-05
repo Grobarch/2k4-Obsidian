@@ -9,8 +9,6 @@ tags: [kampania, l5k, samurajski]
 draft: "false"
 ---
 
-# Prawidła zdrady
-
 
 <div class="obsidian-only">
 

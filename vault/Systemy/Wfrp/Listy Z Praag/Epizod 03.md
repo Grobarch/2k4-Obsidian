@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Partia ze Ślimakogłowym\""
+title: 'Epizod 3: "Partia ze Ślimakogłowym"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2013-06-04
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2013/06/warhammer-fantasy-role-play-2ed-z-praag_4.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 3: "Partia ze Ślimakogłowym"
 
 
 ---

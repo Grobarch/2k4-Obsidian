@@ -6,6 +6,4 @@ data: 2017-03-18
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Na dnie studni Baba Jaga mieszka
-
 *Opis do uzupełnienia.*

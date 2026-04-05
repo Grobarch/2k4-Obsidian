@@ -8,8 +8,6 @@ tags: [system, hell-4-leather, western, grindhouse]
 draft: "false"
 ---
 
-# Hell 4 Leather
-
 
 <div class="obsidian-only">
 

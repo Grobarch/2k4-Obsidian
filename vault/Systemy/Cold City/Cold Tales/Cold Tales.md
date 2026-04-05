@@ -9,8 +9,6 @@ tags: [kampania, cold-city, szpiegowski, horror]
 draft: "false"
 ---
 
-# Cold Tales
-
 
 <div class="obsidian-only">
 

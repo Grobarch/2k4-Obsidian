@@ -8,8 +8,6 @@ tags: [system, deathwatch, space-fantasy, science-fiction, military]
 draft: "false"
 ---
 
-# Deathwatch RPG
-
 
 <div class="obsidian-only">
 

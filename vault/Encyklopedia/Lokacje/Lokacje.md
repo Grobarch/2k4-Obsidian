@@ -4,8 +4,6 @@ type: index
 draft: "false"
 ---
 
-# Lokacje
-
 Miejsca i lokacje ze wszystkich kampanii.
 
 <div class="obsidian-only">

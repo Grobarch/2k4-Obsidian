@@ -8,8 +8,6 @@ tags: [system, wolsung, steampunk, przygodowy]
 draft: "false"
 ---
 
-# Wolsung: Magia Wieku Pary
-
 
 <div class="obsidian-only">
 

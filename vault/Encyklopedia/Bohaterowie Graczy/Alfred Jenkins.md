@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Alfred Jenkins
-
 ![Portret Alfred Jenkins](placeholder.jpg)
 
 

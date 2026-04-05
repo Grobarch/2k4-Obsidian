@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Mówiące mury\""
+title: 'Epizod 1: "Mówiące mury"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2012-07-19
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2012/07/warhammer-fantasy-role-play-2ed-z-praag.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 1: "Mówiące mury"
 
 
 ---

@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# William Ackerman
-
 ![Portret William Ackerman](placeholder.jpg)
 
 

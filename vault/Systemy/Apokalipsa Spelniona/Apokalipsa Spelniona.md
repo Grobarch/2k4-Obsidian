@@ -8,8 +8,6 @@ tags: [system, apokalipsa-spelniona, apokaliptyczny, horror, postapokalipsa]
 draft: "false"
 ---
 
-# Apokalipsa Spełniona: Czas Cthulhu
-
 
 <div class="obsidian-only">
 

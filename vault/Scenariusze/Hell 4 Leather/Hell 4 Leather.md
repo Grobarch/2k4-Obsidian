@@ -2,8 +2,6 @@
 title: Hell 4 Leather
 ---
 
-# Hell 4 Leather
-
 ## Scenariusze
 
 

@@ -2,8 +2,6 @@
 title: A Penny For My Thoughts
 ---
 
-# A Penny For My Thoughts
-
 ## Scenariusze
 
 

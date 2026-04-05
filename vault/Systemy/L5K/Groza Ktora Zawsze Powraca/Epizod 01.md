@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Szaleństwo Mistrza Okamury\""
+title: 'Epizod 1: "Szaleństwo Mistrza Okamury"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2022-12-25
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/12/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 1: "Szaleństwo Mistrza Okamury"
 
 
 ---

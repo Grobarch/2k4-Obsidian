@@ -1,5 +1,5 @@
 ---
-title: Ronin Yojiro
+title: "ronin Yojiro"
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Paweł OBSTAWSKI
 tags: [bohater-gracza, deadlands, western, horror]
 ---
-
-# ronin Yojiro
 
 ![Portret ronin Yojiro](placeholder.jpg)
 

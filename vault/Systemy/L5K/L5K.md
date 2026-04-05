@@ -11,8 +11,6 @@ tags:
 draft: "false"
 ---
 
-# Legenda Pięciu Kręgów 1ed
-
 
 <div class="obsidian-only">
 

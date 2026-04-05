@@ -10,8 +10,6 @@ archetyp: shugenja z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Shiba Takeshi
-
 ![Portret Shiba Takeshi](placeholder.jpg)
 
 

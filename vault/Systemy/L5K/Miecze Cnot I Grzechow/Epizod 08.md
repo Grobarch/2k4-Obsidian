@@ -1,5 +1,5 @@
 ---
-title: "Epizod 8: \"Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze\""
+title: 'Epizod 8: "Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-11-07
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/11/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 8: "Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze"
 
 
 ---

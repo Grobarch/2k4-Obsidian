@@ -6,7 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Tobiasz Has,
 Nożownik i przywódca zbirów, Człowiek od brudnej roboty, 36 lat
 
 ![Portret Tobiasz Has,

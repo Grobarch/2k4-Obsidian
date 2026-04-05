@@ -9,8 +9,6 @@ archetyp: Funkcjonariusz PAP, Agent GRU
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
 ---
 
-# Mjr. Iwan Gorki
-
 ![Portret Mjr. Iwan Gorki](placeholder.jpg)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4 cz. 2: \"Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw\""
+title: 'Epizod 4 cz. 2: "Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-06-30
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/06/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 4 cz. 2: "Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw"
 
 
 ---

@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Skorpiona
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Bayushi Tokuno
-
 ![Portret Bayushi Tokuno](placeholder.jpg)
 
 

@@ -6,8 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Grunt Syn Herga, Sierżant Siedmiu Krasnoludków, 85 lat
-
 ![Portret Grunt Syn Herga, Sierżant Siedmiu Krasnoludków, 85 lat](placeholder.jpg)
 
 

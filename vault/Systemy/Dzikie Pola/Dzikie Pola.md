@@ -8,8 +8,6 @@ tags: [system, dzikie-pola, historyczny, przygodowy]
 draft: "false"
 ---
 
-# Dzikie Pola 2ed
-
 
 <div class="obsidian-only">
 

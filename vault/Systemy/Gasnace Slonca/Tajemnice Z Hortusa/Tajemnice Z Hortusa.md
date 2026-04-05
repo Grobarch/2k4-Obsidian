@@ -9,8 +9,6 @@ tags: [kampania, gasnace-slonca, space-fantasy]
 draft: "false"
 ---
 
-# Tajemnice zapomnianej technologii z Hortusa
-
 
 <div class="obsidian-only">
 

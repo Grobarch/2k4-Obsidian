@@ -15,8 +15,6 @@ tags:
   - samurajski
 ---
 
-# Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw
-
 ![Portret Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](placeholder.jpg)
 
 

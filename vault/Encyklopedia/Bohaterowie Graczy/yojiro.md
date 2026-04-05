@@ -10,8 +10,6 @@ archetyp: Ronin i zabójca potworów z Kraju Kwitnącej Wiśni
 tags: [bohater-gracza, deadlands, western, horror]
 ---
 
-# Yojiro
-
 ![Portret Yojiro](placeholder.jpg)
 
 

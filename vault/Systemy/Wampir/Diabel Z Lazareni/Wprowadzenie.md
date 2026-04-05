@@ -6,8 +6,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/wampir-mroczne-wieki-z-la
 tags: [artykul, wampir, horror]
 ---
 
-# Wprowadzenie — Diabeł z Łazareni
-
 
 ---
 

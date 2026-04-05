@@ -2,8 +2,6 @@
 title: Zew Cthulhu
 ---
 
-# Zew Cthulhu
-
 ## Scenariusze
 
 

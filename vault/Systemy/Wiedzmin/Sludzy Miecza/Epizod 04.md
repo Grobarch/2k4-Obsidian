@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4: \"Przywódca Scoia'tael\""
+title: 'Epizod 4: "Przywódca Scoia'tael"'
 type: epizod
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
@@ -10,8 +10,6 @@ data: 2011-01-22
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fabularne_21.html"
 tags: ["epizod", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
-
-# Epizod 4: "Przywódca Scoia'tael"
 
 
 ---

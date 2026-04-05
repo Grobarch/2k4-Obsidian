@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Florian Caron
-
 ![Portret Florian Caron](placeholder.jpg)
 
 

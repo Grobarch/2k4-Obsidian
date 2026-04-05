@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Johan Feld
-
 ![Portret Johan Feld](placeholder.jpg)
 
 

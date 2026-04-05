@@ -1,5 +1,5 @@
 ---
-title: "Epizod 10: \"Czerwobog, czyli potworne oblicze Walkelina La Rue\""
+title: 'Epizod 10: "Czerwobog, czyli potworne oblicze Walkelina La Rue"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2023-01-21
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/01/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 10: "Czerwobog, czyli potworne oblicze Walkelina La Rue"
 
 
 ---

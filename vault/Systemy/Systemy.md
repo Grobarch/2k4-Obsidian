@@ -4,8 +4,6 @@ type: index
 tags: [systemy]
 ---
 
-# Systemy
-
 Indeks wszystkich systemów RPG, w których prowadzono kampanie i pisano scenariusze.
 
 <div class="obsidian-only">

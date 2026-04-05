@@ -4,8 +4,6 @@ type: index
 draft: "false"
 ---
 
-# Bohaterowie Graczy
-
 Postacie graczy ze wszystkich kampanii.
 
 <div class="obsidian-only">

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Syn\""
+title: 'Epizod 1: "Syn"'
 type: epizod
 system: wampir
 system_pelna: "Wampir: Mroczne Wieki"
@@ -10,8 +10,6 @@ data: 2011-01-17
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/wampir-mroczne-wieki_49.html"
 tags: [epizod, wampir, horror]
 ---
-
-# Epizod 1: "Syn"
 
 
 ---

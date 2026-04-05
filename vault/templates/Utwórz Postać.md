@@ -189,8 +189,6 @@ const content = `---
 ${fmLines.join("\n")}
 ---
 
-# ${nameTrimmed}
-
 ![Portret ${nameTrimmed}](placeholder.jpg)
 
 

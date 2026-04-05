@@ -6,8 +6,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/mafia-gangsterska-gra-fab
 tags: [artykul, mafia-ggf]
 ---
 
-# Rys Fabularny — La Cosa Nostra
-
 
 ---
 

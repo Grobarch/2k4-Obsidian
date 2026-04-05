@@ -6,8 +6,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/05/honor-i-krew-temu-w-kraju
 tags: [artykul, honor-i-krew, fantasy]
 ---
 
-# Wprowadzenie — Trylogia miecza
-
 
 ---
 

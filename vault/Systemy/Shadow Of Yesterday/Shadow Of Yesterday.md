@@ -8,8 +8,6 @@ tags: [system, shadow-of-yesterday, fantasy]
 draft: "false"
 ---
 
-# The Shadow of Yesterday
-
 
 <div class="obsidian-only">
 

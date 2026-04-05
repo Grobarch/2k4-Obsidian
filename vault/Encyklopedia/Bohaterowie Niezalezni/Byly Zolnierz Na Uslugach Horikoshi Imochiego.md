@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Były żołnierz na usługach Horikoshi Imochiego
-
 ![Portret Były żołnierz na usługach Horikoshi Imochiego](placeholder.jpg)
 
 

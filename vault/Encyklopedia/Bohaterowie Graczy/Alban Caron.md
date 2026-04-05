@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Alban Caron
-
 ![Portret Alban Caron](placeholder.jpg)
 
 

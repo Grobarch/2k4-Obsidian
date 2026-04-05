@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Tajna służba\""
+title: 'Epizod 3: "Tajna służba"'
 type: epizod
 system: 7th-sea
 system_pelna: 7th Sea
@@ -10,8 +10,6 @@ data: 2010-11-23
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2010/11/7th-sea-odc-3-suzba.html"
 tags: ["epizod", "7th-Sea", "szpiegowski", "7th-sea"]
 ---
-
-# Epizod 3: "Tajna służba"
 
 
 ---

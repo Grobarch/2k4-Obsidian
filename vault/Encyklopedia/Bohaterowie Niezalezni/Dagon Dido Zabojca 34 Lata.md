@@ -6,8 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-niezalezny", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Dagon Dido, Zabójca, 34 lata
-
 ![Portret Dagon Dido, Zabójca, 34 lata](placeholder.jpg)
 
 

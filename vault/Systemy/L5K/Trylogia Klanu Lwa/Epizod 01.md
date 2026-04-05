@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Białe kłamstwa\""
+title: 'Epizod 1: "Białe kłamstwa"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2010-11-15
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2010/11/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 1: "Białe kłamstwa"
 
 
 ---

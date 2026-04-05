@@ -7,8 +7,6 @@ gracz: oraz Piotr RYGIEL
 tags: [bohater-gracza, wfrp, dark-fantasy]
 ---
 
-# Simon Gerb
-
 ![Portret Simon Gerb](placeholder.jpg)
 
 

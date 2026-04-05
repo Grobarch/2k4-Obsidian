@@ -2,8 +2,6 @@
 title: Dwory Końca Świata
 ---
 
-# Dwory Końca Świata
-
 ## Scenariusze
 
 

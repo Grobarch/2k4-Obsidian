@@ -1,8 +1,6 @@
 ---
-title: Wiki RPG — Papierowe RPG
+title: "🐉 Wiki RPG — Papierowe RPG"
 ---
-
-# 🐉 Wiki RPG — Papierowe RPG
 
 > [!quote] Witaj, Wędrowcze!
 > Znajdujesz się w otwartej wiki dokumentującej dziesiątki kampanii, barwne postacie i niesamowite światy papierowego RPG tworzone i prowadzone przez **[Arkadiusza Rygla](https://arkadiusz-rygiel.blogspot.com)**.

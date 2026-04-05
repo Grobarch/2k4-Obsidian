@@ -8,8 +8,6 @@ tags: [system, mafia-ggf, gangsterski]
 draft: "false"
 ---
 
-# Mafia: Gangsterska Gra Fabularna
-
 
 <div class="obsidian-only">
 

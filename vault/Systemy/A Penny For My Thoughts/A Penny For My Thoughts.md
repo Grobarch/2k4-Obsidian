@@ -8,8 +8,6 @@ tags: [system, a-penny-for-my-thoughts, psychologiczny]
 draft: "false"
 ---
 
-# A Penny for My Thoughts
-
 
 <div class="obsidian-only">
 

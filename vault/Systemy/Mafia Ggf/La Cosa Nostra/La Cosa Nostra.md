@@ -9,8 +9,6 @@ tags: [kampania, mafia-ggf, gangsterski]
 draft: "false"
 ---
 
-# La Cosa Nostra
-
 
 <div class="obsidian-only">
 

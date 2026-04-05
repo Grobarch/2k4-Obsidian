@@ -15,8 +15,6 @@ tags:
   - samurajski
 ---
 
-# Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu
-
 ![Portret Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu](placeholder.jpg)
 
 

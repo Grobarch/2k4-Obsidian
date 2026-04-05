@@ -8,8 +8,6 @@ tags: ["system", "7th-Sea", "szpiegowski", "przygodowy", "fantasy", "7th-sea"]
 draft: "false"
 ---
 
-# 7th Sea
-
 
 <div class="obsidian-only">
 

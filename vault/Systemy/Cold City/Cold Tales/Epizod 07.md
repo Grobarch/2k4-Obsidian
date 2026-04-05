@@ -1,5 +1,5 @@
 ---
-title: "Epizod 7: \"Kryptonim szklarnia\""
+title: 'Epizod 7: "Kryptonim szklarnia"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-06-04
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/06/cold-city-odc-7-szklarnia.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 7: "Kryptonim szklarnia"
 
 
 ---

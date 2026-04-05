@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Sasaki Hayato
-
 ![Portret Sasaki Hayato](placeholder.jpg)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Ręka Czerwonego Szeryfa\""
+title: 'Epizod 3: "Ręka Czerwonego Szeryfa"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-09-11
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/09/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 3: "Ręka Czerwonego Szeryfa"
 
 
 ---

@@ -8,8 +8,6 @@ tags: [system, wampir, horror, dark-fantasy]
 draft: "false"
 ---
 
-# Wampir: Mroczne Wieki
-
 
 <div class="obsidian-only">
 

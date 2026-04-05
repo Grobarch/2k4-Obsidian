@@ -6,6 +6,4 @@ data: 2013-06-15
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Wideo RPG — Podręcznik podstawowy
-
 *Opis do uzupełnienia.*

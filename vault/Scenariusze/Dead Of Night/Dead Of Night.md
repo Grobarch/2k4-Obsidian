@@ -2,8 +2,6 @@
 title: Dead of Night
 ---
 
-# Dead of Night
-
 ## Scenariusze
 
 

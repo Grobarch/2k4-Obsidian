@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Miecz mordu\""
+title: 'Epizod 1: "Miecz mordu"'
 type: epizod
 system: honor-i-krew
 system_pelna: Honor i Krew
@@ -10,8 +10,6 @@ data: 2011-08-09
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/08/honor-i-krew-mordu.html"
 tags: [epizod, honor-i-krew, fantasy]
 ---
-
-# Epizod 1: "Miecz mordu"
 
 
 ---

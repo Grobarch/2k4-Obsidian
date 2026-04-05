@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Echo zemsty\""
+title: 'Epizod 3: "Echo zemsty"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2011-01-15
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/legenda-pieciu-kregow-1ed-zemsty.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 3: "Echo zemsty"
 
 
 ---

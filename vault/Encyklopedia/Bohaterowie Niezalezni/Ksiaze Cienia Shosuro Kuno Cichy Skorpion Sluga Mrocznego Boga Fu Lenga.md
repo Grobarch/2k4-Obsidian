@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Książę Cienia Shosuro Kuno - Cichy Skorpion - Sługa Mrocznego boga Fu Lenga
-
 ![Portret Książę Cienia Shosuro Kuno - Cichy Skorpion - Sługa Mrocznego boga Fu Lenga](placeholder.jpg)
 
 

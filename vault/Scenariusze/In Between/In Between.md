@@ -2,8 +2,6 @@
 title: In Between
 ---
 
-# In Between
-
 ## Scenariusze
 
 

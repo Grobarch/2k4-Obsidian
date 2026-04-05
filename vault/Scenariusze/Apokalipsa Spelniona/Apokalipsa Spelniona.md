@@ -2,8 +2,6 @@
 title: Apokalipsa Spełniona
 ---
 
-# Apokalipsa Spełniona
-
 ## Scenariusze
 
 

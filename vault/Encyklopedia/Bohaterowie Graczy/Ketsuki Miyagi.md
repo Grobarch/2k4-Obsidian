@@ -13,8 +13,6 @@ tags:
   - samurajski
 ---
 
-# Ketsuki Miyagi
-
 ![Portret Ketsuki Miyagi](placeholder.jpg)
 
 

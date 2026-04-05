@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem\""
+title: 'Epizod 3: "Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2022-09-25
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/09/rpg-papierowe-rpg-gry-fabularne_25.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 3: "Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem"
 
 
 ---

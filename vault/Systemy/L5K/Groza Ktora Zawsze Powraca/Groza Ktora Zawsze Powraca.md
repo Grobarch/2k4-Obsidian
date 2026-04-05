@@ -9,8 +9,6 @@ tags: [kampania, l5k, samurajski]
 draft: "false"
 ---
 
-# Groza, która zawsze powraca
-
 
 <div class="obsidian-only">
 

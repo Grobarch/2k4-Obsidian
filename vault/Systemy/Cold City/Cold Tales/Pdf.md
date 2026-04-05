@@ -6,8 +6,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/2016/01/cold-city-tales-po-drugie
 tags: [artykul, cold-city, szpiegowski, horror]
 ---
 
-# Cold Tales: Po drugiej stronie Berlina
-
 
 ---
 

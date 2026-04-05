@@ -1,5 +1,5 @@
 ---
-title: Losy bohaterów przez żarna czasu ścierane
+title: "Losy bohaterówprzez żarna czasu ścierane"
 type: kampania
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -8,8 +8,6 @@ gatunek: fantasy
 tags: [kampania, wfrp, dark-fantasy, fantasy]
 draft: "false"
 ---
-
-# Losy bohaterówprzez żarna czasu ścierane
 
 
 <div class="obsidian-only">

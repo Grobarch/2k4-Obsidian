@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4: \"Dziecię w czarny pancerz zakute\""
+title: 'Epizod 4: "Dziecię w czarny pancerz zakute"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2013-06-09
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2013/06/warhammer-fantasy-role-play-2ed-z-praag.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 4: "Dziecię w czarny pancerz zakute"
 
 
 ---

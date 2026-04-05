@@ -2,8 +2,6 @@
 title: The Shadow of Yesterday
 ---
 
-# The Shadow of Yesterday
-
 ## Scenariusze
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Masakra w Maden\""
+title: 'Epizod 3: "Masakra w Maden"'
 type: epizod
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
@@ -10,8 +10,6 @@ data: 2011-01-22
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fabularne_33.html"
 tags: ["epizod", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
-
-# Epizod 3: "Masakra w Maden"
 
 
 ---

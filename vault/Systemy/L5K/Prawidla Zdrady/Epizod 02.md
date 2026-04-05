@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Więzień urodzenia\""
+title: 'Epizod 2: "Więzień urodzenia"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2011-01-15
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/legenda-pieciu-kregow-1ed-urodzenia.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 2: "Więzień urodzenia"
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Miecz nienawiści\""
+title: 'Epizod 2: "Miecz nienawiści"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2011-02-13
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/02/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 2: "Miecz nienawiści"
 
 
 ---

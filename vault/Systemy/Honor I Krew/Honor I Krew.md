@@ -8,8 +8,6 @@ tags: [system, honor-i-krew, fantasy, samurajski]
 draft: "false"
 ---
 
-# Honor i Krew
-
 
 <div class="obsidian-only">
 

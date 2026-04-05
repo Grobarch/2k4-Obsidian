@@ -9,8 +9,6 @@ gracz: Monika ŁYŻWA
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Noya Ayame
-
 ![Portret Noya Ayame](placeholder.jpg)
 
 

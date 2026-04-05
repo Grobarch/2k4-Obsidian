@@ -2,8 +2,6 @@
 title: Wolsung
 ---
 
-# Wolsung
-
 ## Scenariusze
 
 

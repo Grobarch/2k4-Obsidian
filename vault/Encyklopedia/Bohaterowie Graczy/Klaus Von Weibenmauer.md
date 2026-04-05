@@ -16,8 +16,6 @@ tags:
   - horror
 ---
 
-# Klaus von Weibenmauer
-
 ![Portret Klaus von Weibenmauer](placeholder.jpg)
 
 

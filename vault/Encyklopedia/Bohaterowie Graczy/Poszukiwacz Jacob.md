@@ -1,5 +1,5 @@
 ---
-title: Poszukiwacz Jacob
+title: "poszukiwacz Jacob"
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: oraz Piotr RYGIEL
 tags: [bohater-gracza, deadlands, western, horror]
 ---
-
-# poszukiwacz Jacob
 
 ![Portret poszukiwacz Jacob](placeholder.jpg)
 

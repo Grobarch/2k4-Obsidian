@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Szata czyniąca obłęd\""
+title: 'Epizod 2: "Szata czyniąca obłęd"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2022-07-23
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/07/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 2: "Szata czyniąca obłęd"
 
 
 ---

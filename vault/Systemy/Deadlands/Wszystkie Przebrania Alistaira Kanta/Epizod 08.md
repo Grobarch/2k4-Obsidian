@@ -1,5 +1,5 @@
 ---
-title: "Epizod 8: \"Porwanie Mistrza Bassarda\""
+title: 'Epizod 8: "Porwanie Mistrza Bassarda"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-11-28
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/11/rpg-papierowe-rpg-gry-fabularne_28.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 8: "Porwanie Mistrza Bassarda"
 
 
 ---

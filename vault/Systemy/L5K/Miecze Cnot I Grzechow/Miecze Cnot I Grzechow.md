@@ -9,8 +9,6 @@ tags: [kampania, l5k, samurajski]
 draft: "false"
 ---
 
-# Miecze cnót i grzechów, inaczej zwane mieczami odwróconych imion
-
 
 <div class="obsidian-only">
 

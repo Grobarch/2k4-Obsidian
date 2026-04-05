@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Hipolit Montagne
-
 ![Portret Hipolit Montagne](placeholder.jpg)
 
 

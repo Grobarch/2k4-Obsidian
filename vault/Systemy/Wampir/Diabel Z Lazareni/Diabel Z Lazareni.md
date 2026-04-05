@@ -9,8 +9,6 @@ tags: [kampania, wampir, horror, dark-fantasy]
 draft: "false"
 ---
 
-# Diabeł z Łazareni
-
 
 <div class="obsidian-only">
 

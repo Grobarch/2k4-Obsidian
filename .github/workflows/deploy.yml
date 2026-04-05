@@ -46,6 +46,9 @@ jobs:
       - name: Normalize frontmatter
         run: node scripts/vault-tools.mjs normalize --dir quartz/content --apply
 
+      - name: Strip duplicate H1 headings
+        run: node scripts/strip-h1.mjs quartz/content --apply
+
       - name: Convert Obsidian Bases to static tables
         run: node scripts/build-bases.mjs quartz/content
 

@@ -1,13 +1,11 @@
 ---
-title: Kawaler Jose Owiedo Alcazar Toledo
+title: "kawaler Jose Owiedo Alcazar Toledo"
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Dawid KOŁACIŃSKI
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
 ---
-
-# kawaler Jose Owiedo Alcazar Toledo
 
 ![Portret kawaler Jose Owiedo Alcazar Toledo](placeholder.jpg)
 

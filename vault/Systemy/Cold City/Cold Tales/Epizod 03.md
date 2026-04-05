@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Kryptonim esencja\""
+title: 'Epizod 3: "Kryptonim esencja"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-04-03
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/04/cold-city-odc-3-esencja.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 3: "Kryptonim esencja"
 
 
 ---

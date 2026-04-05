@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3 cz. 1: \"Drugie ostrze to Chciwość Don'yoku...\""
+title: 'Epizod 3 cz. 1: "Drugie ostrze to Chciwość Don'yoku..."'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-03-26
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/03/rpg-papierowe-rpg-gry-fabularne-legenda_26.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 3 cz. 1: "Drugie ostrze to Chciwość Don'yoku..."
 
 
 ---

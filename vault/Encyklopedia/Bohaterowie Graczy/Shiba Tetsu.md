@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Shiba Tetsu
-
 ![Portret Shiba Tetsu](placeholder.jpg)
 
 

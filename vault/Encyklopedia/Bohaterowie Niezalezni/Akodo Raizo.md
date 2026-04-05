@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Akodo Raizo
-
 ![Portret Akodo Raizo](placeholder.jpg)
 
 

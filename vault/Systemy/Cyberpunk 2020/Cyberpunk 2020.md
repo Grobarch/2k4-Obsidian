@@ -8,8 +8,6 @@ tags: [system, cyberpunk-2020, cyberpunk]
 draft: "false"
 ---
 
-# Cyberpunk 2020
-
 
 <div class="obsidian-only">
 

@@ -8,8 +8,6 @@ kampania: ["groza-ktora-zawsze-powraca"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri
-
 ![Portret Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](placeholder.jpg)
 
 

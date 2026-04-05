@@ -8,8 +8,6 @@ archetyp: Elf, eksplorator
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Klaus Metternich
-
 ![Portret Klaus Metternich](placeholder.jpg)
 
 Obstawski

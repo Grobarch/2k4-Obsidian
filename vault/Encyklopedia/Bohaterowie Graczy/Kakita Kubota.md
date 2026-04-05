@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Żurawia
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Kakita Kubota
-
 ![Portret Kakita Kubota](placeholder.jpg)
 
 

@@ -10,8 +10,6 @@ archetyp: Rewolwerowiec
 tags: [bohater-gracza, deadlands, western, horror]
 ---
 
-# Szalony Mickey
-
 ![Portret Szalony Mickey](placeholder.jpg)
 
 

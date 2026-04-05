@@ -6,8 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Turin Siekacz, Najemnik, 25 lat
-
 ![Portret Turin Siekacz, Najemnik, 25 lat](placeholder.jpg)
 
 

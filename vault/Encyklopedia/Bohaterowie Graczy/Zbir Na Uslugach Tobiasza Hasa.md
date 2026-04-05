@@ -6,7 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Zbir na usługach
 Tobiasza Hasa
 
 ![Portret Zbir na usługach
