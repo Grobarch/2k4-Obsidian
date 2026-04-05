@@ -1,5 +1,5 @@
 ---
-title: "🐉 Wiki RPG — Papierowe RPG"
+title: "Wiki RPG — Papierowe RPG"
 ---
 
 > [!quote] Witaj, Wędrowcze!
