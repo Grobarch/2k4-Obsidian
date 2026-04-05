@@ -88,7 +88,7 @@ async function main() {
     } else {
       // H1 differs — update title in frontmatter, then remove H1
       const fmRaw = fmMatch[0];
-      const escapedTitle = h1Text.includes('"') ? `'${h1Text}'` : `"${h1Text}"`;
+      const escapedTitle = `"${h1Text.replace(/"/g, '\\"')}"`;
       const updatedFm = fmRaw.replace(
         /^(title:\s*).*$/m,
         `$1${escapedTitle}`
