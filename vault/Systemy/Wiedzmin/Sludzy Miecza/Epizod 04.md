@@ -1,5 +1,5 @@
 ---
-title: 'Epizod 4: "Przywódca Scoia'tael"'
+title: "Epizod 4: \"Przywódca Scoia'tael\""
 type: epizod
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

@@ -1,5 +1,5 @@
 ---
-title: 'Epizod 3 cz. 1: "Drugie ostrze to Chciwość Don'yoku..."'
+title: "Epizod 3 cz. 1: \"Drugie ostrze to Chciwość Don'yoku...\""
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
