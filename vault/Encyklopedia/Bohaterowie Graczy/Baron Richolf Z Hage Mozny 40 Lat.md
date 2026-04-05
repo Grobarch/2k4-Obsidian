@@ -6,7 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "dark-fantasy", "Wiedźmin", "wiedzmin"]
 ---
 
-# Baron Richolf z
 Hage, Możny, 40 lat
 
 ![Portret Baron Richolf z

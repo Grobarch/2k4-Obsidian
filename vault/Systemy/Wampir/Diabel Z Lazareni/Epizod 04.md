@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4: \"Zdrada\""
+title: 'Epizod 4: "Zdrada"'
 type: epizod
 system: wampir
 system_pelna: "Wampir: Mroczne Wieki"
@@ -10,8 +10,6 @@ data: 2011-01-18
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/wampir-mroczne-wieki.html"
 tags: [epizod, wampir, horror]
 ---
-
-# Epizod 4: "Zdrada"
 
 
 ---

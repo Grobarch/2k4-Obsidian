@@ -4,8 +4,6 @@ type: index
 draft: "false"
 ---
 
-# Bohaterowie Niezależni
-
 Postacie niezależne (BN) ze wszystkich kampanii.
 
 <div class="obsidian-only">

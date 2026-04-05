@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4: \"Kryptonim cthulhukopf\""
+title: 'Epizod 4: "Kryptonim cthulhukopf"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-04-08
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/04/cold-city-odc-4-cthulhukopf.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 4: "Kryptonim cthulhukopf"
 
 
 ---

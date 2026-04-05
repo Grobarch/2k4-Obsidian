@@ -9,8 +9,6 @@ archetyp: Funkcjonariusz PAP, Żołnierz KBW
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
 ---
 
-# Mjr. Józef Bardak
-
 ![Portret Mjr. Józef Bardak](placeholder.jpg)
 
 

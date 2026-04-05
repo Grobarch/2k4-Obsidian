@@ -90,8 +90,6 @@ const content = `---
 ${fmLines.join("\n")}
 ---
 
-# ${nazwa}
-
 ![${nazwa}](placeholder.jpg)
 
 <div class="obsidian-only">

@@ -2,8 +2,6 @@
 title: Deadlands
 ---
 
-# Deadlands
-
 ## Scenariusze
 
 

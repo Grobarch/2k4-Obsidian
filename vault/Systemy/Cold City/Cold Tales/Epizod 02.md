@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Kryptonim pajęczyna\""
+title: 'Epizod 2: "Kryptonim pajęczyna"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-03-04
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/03/cold-city-odc-2-pajeczyna.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 2: "Kryptonim pajęczyna"
 
 
 ---

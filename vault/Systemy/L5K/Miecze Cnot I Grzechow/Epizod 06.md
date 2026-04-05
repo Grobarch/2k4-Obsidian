@@ -1,5 +1,5 @@
 ---
-title: "Epizod 6: \"Człowiek z Chmur sprzedany przez zabójców z Klanu Czarnej Ręki Kuroi-te\""
+title: 'Epizod 6: "Człowiek z Chmur sprzedany przez zabójców z Klanu Czarnej Ręki Kuroi-te"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-09-30
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/09/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 6: "Człowiek z Chmur sprzedany przez zabójców z Klanu Czarnej Ręki Kuroi-te"
 
 
 ---

@@ -9,8 +9,6 @@ tags: [kampania, wfrp, dark-fantasy, fantasy]
 draft: "false"
 ---
 
-# Listy z Praag
-
 
 <div class="obsidian-only">
 

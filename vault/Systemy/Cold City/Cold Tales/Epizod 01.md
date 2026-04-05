@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Kryptonim przybysz\""
+title: 'Epizod 1: "Kryptonim przybysz"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2010-10-29
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2010/10/cold-city-odc-1-przybysz.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 1: "Kryptonim przybysz"
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 6: \"Figury Domu La Rue\""
+title: 'Epizod 6: "Figury Domu La Rue"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-11-10
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/11/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 6: "Figury Domu La Rue"
 
 
 ---

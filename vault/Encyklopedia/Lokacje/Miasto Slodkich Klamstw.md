@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [lokacja, l5k, samurajski]
 ---
 
-# Miasto Słodkich Kłamstw
-
 ![Miasto Słodkich Kłamstw](placeholder.jpg)
 
 

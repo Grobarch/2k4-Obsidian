@@ -1,5 +1,5 @@
 ---
-title: "Epizod 5: \"Chciwa klinga szuka dla siebie sługi, nie pana\""
+title: 'Epizod 5: "Chciwa klinga szuka dla siebie sługi, nie pana"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-08-11
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/08/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 5: "Chciwa klinga szuka dla siebie sługi, nie pana"
 
 
 ---

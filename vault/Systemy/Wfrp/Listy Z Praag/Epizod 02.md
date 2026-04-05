@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Miecz w skale spaczenia\""
+title: 'Epizod 2: "Miecz w skale spaczenia"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2013-05-29
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2013/05/warhammer-fantasy-role-play-2ed-z-praag.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 2: "Miecz w skale spaczenia"
 
 
 ---

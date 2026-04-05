@@ -172,8 +172,6 @@ const content = `---
 ${fmLines.join("\n")}
 ---
 
-# ${nameTrimmed}
-
 ![${nameTrimmed}](placeholder.jpg)
 
 ## Opis

@@ -8,8 +8,6 @@ tags: [system, in-between, horror, psychologiczny]
 draft: "false"
 ---
 
-# In Between
-
 
 <div class="obsidian-only">
 

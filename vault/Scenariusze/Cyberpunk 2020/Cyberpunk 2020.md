@@ -2,8 +2,6 @@
 title: Cyberpunk 2020
 ---
 
-# Cyberpunk 2020
-
 ## Scenariusze
 
 

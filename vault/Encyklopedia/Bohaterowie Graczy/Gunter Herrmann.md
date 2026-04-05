@@ -7,8 +7,6 @@ gracz: Paweł PIOTROWSKI
 tags: [bohater-gracza, wfrp, dark-fantasy]
 ---
 
-# Gunter Herrmann
-
 ![Portret Gunter Herrmann](placeholder.jpg)
 
 

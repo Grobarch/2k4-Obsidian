@@ -3,8 +3,6 @@ title: Wideo RPG — scenariusze
 draft: "false"
 ---
 
-# Wideo RPG — scenariusze
-
 ```base
 filters:
   and:

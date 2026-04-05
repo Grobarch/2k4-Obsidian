@@ -6,6 +6,4 @@ data: 2016-02-22
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Saga o Ulfie i oku Odyna
-
 *Opis do uzupełnienia.*

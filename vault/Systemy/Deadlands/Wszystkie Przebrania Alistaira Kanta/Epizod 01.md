@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Walizka z Heartville\""
+title: 'Epizod 1: "Walizka z Heartville"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-08-03
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/08/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 1: "Walizka z Heartville"
 
 
 ---

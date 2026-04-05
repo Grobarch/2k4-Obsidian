@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Ostrze ideologii i worek elfich głów\""
+title: 'Epizod 1: "Ostrze ideologii i worek elfich głów"'
 type: epizod
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
@@ -10,8 +10,6 @@ data: 2011-01-22
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fabularne.html"
 tags: ["epizod", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
-
-# Epizod 1: "Ostrze ideologii i worek elfich głów"
 
 
 ---

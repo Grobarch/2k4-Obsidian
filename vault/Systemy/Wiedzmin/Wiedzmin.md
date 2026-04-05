@@ -8,8 +8,6 @@ tags: ["system", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 draft: "false"
 ---
 
-# Wiedźmin: Gra Wyobraźni
-
 
 <div class="obsidian-only">
 

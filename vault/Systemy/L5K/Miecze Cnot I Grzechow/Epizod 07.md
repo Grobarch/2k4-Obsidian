@@ -1,5 +1,5 @@
 ---
-title: "Epizod 7: \"Rozprawa z Księciem Cienia w Pajęczym Świecie\""
+title: 'Epizod 7: "Rozprawa z Księciem Cienia w Pajęczym Świecie"'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-10-17
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/10/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 7: "Rozprawa z Księciem Cienia w Pajęczym Świecie"
 
 
 ---

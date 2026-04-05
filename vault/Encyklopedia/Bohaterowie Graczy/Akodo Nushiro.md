@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Lwa
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Akodo Nushiro
-
 ![Portret Akodo Nushiro](placeholder.jpg)
 
 

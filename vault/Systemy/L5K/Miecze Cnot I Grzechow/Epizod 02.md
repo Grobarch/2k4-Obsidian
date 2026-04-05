@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Pierwsze ostrze to Pycha Hokori...\""
+title: 'Epizod 2: "Pierwsze ostrze to Pycha Hokori..."'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-03-05
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/03/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 2: "Pierwsze ostrze to Pycha Hokori..."
 
 
 ---

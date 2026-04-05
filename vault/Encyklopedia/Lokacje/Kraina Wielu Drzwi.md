@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 tags: [lokacja, deadlands, western, horror]
 ---
 
-# Kraina Wielu Drzwi
-
 ![Kraina Wielu Drzwi](placeholder.jpg)
 
 

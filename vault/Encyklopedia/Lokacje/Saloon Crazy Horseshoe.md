@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 tags: [lokacja, deadlands, western, horror]
 ---
 
-# Saloon Crazy Horseshoe
-
 ![Saloon Crazy Horseshoe](placeholder.jpg)
 
 

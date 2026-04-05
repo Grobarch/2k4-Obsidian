@@ -6,8 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Donatan z Tulendalu h. Niedźwiedź, Rycerz Zakonu Białej Róży, 32 lata, znany również jako 'Łowca Elfów'
-
 ![Portret Donatan z Tulendalu h. Niedźwiedź, Rycerz Zakonu Białej Róży, 32 lata, znany również jako 'Łowca Elfów'](placeholder.jpg)
 
 

@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [artefakt, l5k, samurajski]
 ---
 
-# Ostrze Nieczystości
-
 ![Ostrze Nieczystości](placeholder.jpg)
 
 

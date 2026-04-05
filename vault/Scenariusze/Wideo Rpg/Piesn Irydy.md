@@ -6,6 +6,4 @@ data: 2014-02-01
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Pieśń Irydy
-
 *Opis do uzupełnienia.*

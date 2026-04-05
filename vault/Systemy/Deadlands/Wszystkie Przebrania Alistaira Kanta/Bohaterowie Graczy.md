@@ -6,8 +6,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/08/rpg-papierowe-rpg-gry-fab
 tags: [artykul, deadlands, western, horror]
 ---
 
-# Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta
-
 
 ---
 

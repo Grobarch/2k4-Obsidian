@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3 cz. 2: \"Tajemnica długowieczności Świetlistego Kapłana...\""
+title: 'Epizod 3 cz. 2: "Tajemnica długowieczności Świetlistego Kapłana..."'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-04-27
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/04/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 3 cz. 2: "Tajemnica długowieczności Świetlistego Kapłana..."
 
 
 ---

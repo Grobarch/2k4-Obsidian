@@ -1,13 +1,11 @@
 ---
-title: Baron Kamden Wyndon Hawkwood
+title: "baron Kamden Wyndon Hawkwood"
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: oraz Arkadiusz RYGIEL
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
 ---
-
-# baron Kamden Wyndon Hawkwood
 
 ![Portret baron Kamden Wyndon Hawkwood](placeholder.jpg)
 

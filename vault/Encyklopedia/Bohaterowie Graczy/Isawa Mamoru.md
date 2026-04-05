@@ -10,8 +10,6 @@ archetyp: shugenja z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Isawa Mamoru
-
 ![Portret Isawa Mamoru](placeholder.jpg)
 
 

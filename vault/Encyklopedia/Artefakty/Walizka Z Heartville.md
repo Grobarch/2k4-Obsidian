@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 tags: [artefakt, deadlands, western, horror]
 ---
 
-# Walizka z Heartville
-
 ![Walizka z Heartville](placeholder.jpg)
 
 

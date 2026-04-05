@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [artefakt, l5k, samurajski]
 ---
 
-# Ostrze Chciwości Don'yoku
-
 ![Ostrze Chciwości Don'yoku](placeholder.jpg)
 
 

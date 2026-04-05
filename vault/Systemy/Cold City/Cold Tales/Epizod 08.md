@@ -1,5 +1,5 @@
 ---
-title: "Epizod 8: \"Kryptonim światła\""
+title: 'Epizod 8: "Kryptonim światła"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-07-24
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/07/cold-city-odc-8-swiata.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 8: "Kryptonim światła"
 
 
 ---

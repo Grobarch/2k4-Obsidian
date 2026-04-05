@@ -1,13 +1,11 @@
 ---
-title: Gannokański pilot Speedy Tuk-Tuk
+title: "gannokański pilot Speedy Tuk-Tuk"
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Paweł OBSTAWSKI
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
 ---
-
-# gannokański pilot Speedy Tuk-Tuk
 
 ![Portret gannokański pilot Speedy Tuk-Tuk](placeholder.jpg)
 

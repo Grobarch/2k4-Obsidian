@@ -8,8 +8,6 @@ tags: [system, cold-city, szpiegowski, horror]
 draft: "false"
 ---
 
-# Cold City
-
 
 <div class="obsidian-only">
 

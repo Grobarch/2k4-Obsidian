@@ -8,8 +8,6 @@ tags: [system, gasnace-slonca, space-fantasy]
 draft: "false"
 ---
 
-# Gasnące Słońca 2ed
-
 
 <div class="obsidian-only">
 

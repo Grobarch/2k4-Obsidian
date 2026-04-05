@@ -2,8 +2,6 @@
 title: Warhammer Fantasy Role Play 4ed
 ---
 
-# Warhammer Fantasy Role Play 4ed
-
 ## Scenariusze
 
 

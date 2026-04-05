@@ -2,8 +2,6 @@
 title: Warhammer Fantasy Role Play 1ed
 ---
 
-# Warhammer Fantasy Role Play 1ed
-
 ## Scenariusze
 
 

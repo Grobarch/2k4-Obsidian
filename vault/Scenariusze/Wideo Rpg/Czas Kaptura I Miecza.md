@@ -6,6 +6,4 @@ data: 2015-10-19
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Czas kaptura i miecza
-
 *Opis do uzupełnienia.*

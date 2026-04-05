@@ -1,13 +1,11 @@
 ---
-title: Psionik Hayat Yuksel
+title: "psionik Hayat Yuksel"
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Monika ŁYŻWA
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
 ---
-
-# psionik Hayat Yuksel
 
 ![Portret psionik Hayat Yuksel](placeholder.jpg)
 

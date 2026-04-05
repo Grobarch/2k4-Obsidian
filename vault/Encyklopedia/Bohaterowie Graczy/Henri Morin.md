@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Henri Morin
-
 ![Portret Henri Morin](placeholder.jpg)
 
 

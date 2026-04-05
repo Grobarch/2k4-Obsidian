@@ -11,8 +11,6 @@ tags:
   - samurajski
 ---
 
-# Horigato Manro
-
 ![Portret Horigato Manro](placeholder.jpg)
 
 

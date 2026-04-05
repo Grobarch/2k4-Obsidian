@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Luke Tavi
-
 ![Portret Luke Tavi](placeholder.jpg)
 
 

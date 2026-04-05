@@ -1,5 +1,5 @@
 ---
-title: "Epizod 7: \"Długie szpony Barona Morin\""
+title: 'Epizod 7: "Długie szpony Barona Morin"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-11-16
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/11/rpg-papierowe-rpg-gry-fabularne_16.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 7: "Długie szpony Barona Morin"
 
 
 ---

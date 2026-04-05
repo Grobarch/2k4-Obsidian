@@ -10,8 +10,6 @@ archetyp: tsukai-sagasu z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Kuni Takajiro
-
 ![Portret Kuni Takajiro](placeholder.jpg)
 
 

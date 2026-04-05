@@ -1,5 +1,5 @@
 ---
-title: "Epizod 2: \"Kiedy przemówią miecze\""
+title: 'Epizod 2: "Kiedy przemówią miecze"'
 type: epizod
 system: honor-i-krew
 system_pelna: Honor i Krew
@@ -10,8 +10,6 @@ data: 2011-09-30
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/09/honor-i-krew-przemowia-miecze.html"
 tags: [epizod, honor-i-krew, fantasy]
 ---
-
-# Epizod 2: "Kiedy przemówią miecze"
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 5: \"Kryptonim władcy marionetek\""
+title: 'Epizod 5: "Kryptonim władcy marionetek"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-04-17
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/04/cold-city-odc-5-wadcy-marionetek.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 5: "Kryptonim władcy marionetek"
 
 
 ---

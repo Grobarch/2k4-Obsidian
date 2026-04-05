@@ -6,6 +6,4 @@ data: 2013-09-29
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Bez kapeluszy
-
 *Opis do uzupełnienia.*

@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Akodo Monzo
-
 ![Portret Akodo Monzo](placeholder.jpg)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 6: \"Kryptonim strefa 17\""
+title: 'Epizod 6: "Kryptonim strefa 17"'
 type: epizod
 system: cold-city
 system_pelna: Cold City
@@ -10,8 +10,6 @@ data: 2011-04-22
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/04/cold-city-odc-6-strefa-17.html"
 tags: [epizod, cold-city, szpiegowski, horror]
 ---
-
-# Epizod 6: "Kryptonim strefa 17"
 
 
 ---

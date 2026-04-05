@@ -6,7 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Vica Labelli,
 Czarodziejka, 146 lat
 
 ![Portret Vica Labelli,

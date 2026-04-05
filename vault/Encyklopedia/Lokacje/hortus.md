@@ -8,8 +8,6 @@ kampania: ["tajemnice-z-hortusa"]
 tags: [lokacja, gasnace-slonca, space-fantasy]
 ---
 
-# Hortus
-
 ![Hortus](placeholder.jpg)
 
 

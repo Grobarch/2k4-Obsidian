@@ -6,8 +6,6 @@ zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fab
 tags: [artykul, mafia-ggf]
 ---
 
-# To tylko interes
-
 
 ---
 

@@ -8,8 +8,6 @@ tags: [system, dwory-konca-swiata, science-fiction, polityczny]
 draft: "false"
 ---
 
-# Dwory Końca Świata: Dziedzictwo Imperium
-
 
 <div class="obsidian-only">
 

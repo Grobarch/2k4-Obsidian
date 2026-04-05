@@ -1,5 +1,5 @@
 ---
-title: "Epizod 5: \"Antoine Malo wypełza z grobu\""
+title: 'Epizod 5: "Antoine Malo wypełza z grobu"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-10-25
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/10/rpg-papierowe-rpg-gry-fabularne_25.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 5: "Antoine Malo wypełza z grobu"
 
 
 ---

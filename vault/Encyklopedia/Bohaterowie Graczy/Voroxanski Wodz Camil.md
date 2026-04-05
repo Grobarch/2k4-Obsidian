@@ -1,13 +1,11 @@
 ---
-title: Voroxański wódz Camil
+title: "voroxański wódz Camil"
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Piotr RYGIEL
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
 ---
-
-# voroxański wódz Camil
 
 ![Portret voroxański wódz Camil](placeholder.jpg)
 

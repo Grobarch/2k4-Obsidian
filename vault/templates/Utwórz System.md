@@ -83,10 +83,6 @@ const content = `---
 ${fmLines.join("\n")}
 ---
 
-# ${nazwa}
-
-
-
 <div class="obsidian-only">
 
 \`\`\`meta-bind-button

@@ -9,8 +9,6 @@ archetyp: Funkcjonariusz PAP, Oficer Francuskiej Armii
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
 ---
 
-# Por. Jacques Rousseau
-
 ![Portret Por. Jacques Rousseau](placeholder.jpg)
 
 

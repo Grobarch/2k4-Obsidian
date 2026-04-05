@@ -2,8 +2,6 @@
 title: Dzikie Pola
 ---
 
-# Dzikie Pola
-
 ## Scenariusze
 
 

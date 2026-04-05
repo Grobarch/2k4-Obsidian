@@ -1,5 +1,5 @@
 ---
-title: Rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
+title: "rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III"
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Paweł PIOTROWSKI
 tags: [bohater-gracza, deadlands, western, horror]
 ---
-
-# rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
 
 ![Portret rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III](placeholder.jpg)
 

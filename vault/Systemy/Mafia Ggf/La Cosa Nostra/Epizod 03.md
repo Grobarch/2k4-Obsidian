@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Transport w akompaniamencie wystrzałów\""
+title: 'Epizod 3: "Transport w akompaniamencie wystrzałów"'
 type: epizod
 system: mafia-ggf
 system_pelna: "Mafia: Gangsterska Gra Fabularna"
@@ -10,8 +10,6 @@ data: 2011-01-28
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fabularne-wideo_86.html"
 tags: [epizod, mafia-ggf]
 ---
-
-# Epizod 3: "Transport w akompaniamencie wystrzałów"
 
 
 ---

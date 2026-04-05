@@ -2,8 +2,6 @@
 title: Deathwatch
 ---
 
-# Deathwatch
-
 ## Scenariusze
 
 

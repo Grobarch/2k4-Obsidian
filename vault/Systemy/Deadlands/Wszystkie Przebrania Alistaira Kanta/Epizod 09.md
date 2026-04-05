@@ -1,5 +1,5 @@
 ---
-title: "Epizod 9: \"Wędrówka do Drzewa Duchów\""
+title: 'Epizod 9: "Wędrówka do Drzewa Duchów"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-12-13
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/12/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 9: "Wędrówka do Drzewa Duchów"
 
 
 ---

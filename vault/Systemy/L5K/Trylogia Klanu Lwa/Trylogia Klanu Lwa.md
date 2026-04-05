@@ -9,8 +9,6 @@ tags: [kampania, l5k, samurajski]
 draft: "false"
 ---
 
-# Trylogia Klanu Lwa
-
 
 <div class="obsidian-only">
 

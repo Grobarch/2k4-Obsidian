@@ -2,8 +2,6 @@
 title: Scenariusze
 ---
 
-# Scenariusze
-
 Zbiór gotowych scenariuszy i przygód z różnych systemów RPG.
 
 ```base

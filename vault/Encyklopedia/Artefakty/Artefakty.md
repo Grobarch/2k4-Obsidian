@@ -4,8 +4,6 @@ type: index
 draft: "false"
 ---
 
-# Artefakty
-
 Przedmioty i artefakty ze wszystkich kampanii.
 
 <div class="obsidian-only">

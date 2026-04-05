@@ -6,6 +6,4 @@ data: 2014-03-22
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Ballada na pistolet maszynowy
-
 *Opis do uzupełnienia.*

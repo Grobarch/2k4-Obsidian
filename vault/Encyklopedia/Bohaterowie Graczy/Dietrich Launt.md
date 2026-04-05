@@ -7,8 +7,6 @@ gracz: Krzysztof OBSTAWSKI
 tags: [bohater-gracza, wfrp, dark-fantasy]
 ---
 
-# Dietrich Launt
-
 ![[zbroja.jpeg]]
 
 ## Statystyki

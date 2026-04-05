@@ -8,8 +8,6 @@ tags: [system, zew-cthulhu, horror]
 draft: "false"
 ---
 
-# Zew Cthulhu
-
 
 <div class="obsidian-only">
 

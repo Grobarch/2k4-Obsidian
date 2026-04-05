@@ -8,8 +8,6 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 tags: [lokacja, deadlands, western, horror]
 ---
 
-# Drzewo Duchów
-
 ![Drzewo Duchów](placeholder.jpg)
 
 

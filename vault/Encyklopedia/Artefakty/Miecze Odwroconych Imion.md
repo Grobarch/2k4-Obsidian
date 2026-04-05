@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [artefakt, l5k, samurajski]
 ---
 
-# Miecze odwróconych imion
-
 ![Miecze odwróconych imion](placeholder.jpg)
 
 

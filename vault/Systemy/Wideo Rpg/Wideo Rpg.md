@@ -8,8 +8,6 @@ tags: [system, wideo-rpg, uniwersalny]
 draft: "false"
 ---
 
-# Wideo RPG
-
 
 <div class="obsidian-only">
 

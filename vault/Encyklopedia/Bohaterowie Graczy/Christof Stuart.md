@@ -8,8 +8,6 @@ archetyp: Krasnolud, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Christof Stuart
-
 ![Portret Christof Stuart](placeholder.jpg)
 
 

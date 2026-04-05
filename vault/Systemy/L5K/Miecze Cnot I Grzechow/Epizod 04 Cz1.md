@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4 cz. 1: \"Trzecie ostrze to Nieczystość Fujunbutsu...\""
+title: 'Epizod 4 cz. 1: "Trzecie ostrze to Nieczystość Fujunbutsu..."'
 type: epizod
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
@@ -10,8 +10,6 @@ data: 2023-05-22
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2023/05/rpg-papierowe-rpg-gry-fabularne-legenda.html"
 tags: [epizod, l5k, samurajski]
 ---
-
-# Epizod 4 cz. 1: "Trzecie ostrze to Nieczystość Fujunbutsu..."
 
 
 ---

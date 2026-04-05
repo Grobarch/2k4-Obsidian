@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Nocny Szpon Naitokuro
-
 ![Portret Nocny Szpon Naitokuro](placeholder.jpg)
 
 

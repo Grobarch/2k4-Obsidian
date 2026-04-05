@@ -9,8 +9,6 @@ tags: [kampania, honor-i-krew, fantasy, samurajski]
 draft: "false"
 ---
 
-# Trylogia miecza
-
 
 <div class="obsidian-only">
 

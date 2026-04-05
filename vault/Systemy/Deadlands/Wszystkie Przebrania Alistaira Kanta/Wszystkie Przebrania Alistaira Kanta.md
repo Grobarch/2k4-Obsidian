@@ -9,8 +9,6 @@ tags: [kampania, deadlands, western, horror]
 draft: "false"
 ---
 
-# Wszystkie przebrania Alistaira Kanta
-
 
 <div class="obsidian-only">
 

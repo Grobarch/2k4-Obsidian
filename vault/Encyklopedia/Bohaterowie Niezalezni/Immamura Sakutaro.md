@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Immamura Sakutaro
-
 ![Portret Immamura Sakutaro](placeholder.jpg)
 
 

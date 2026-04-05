@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Horikoshi Imochi
-
 ![Portret Horikoshi Imochi](placeholder.jpg)
 
 

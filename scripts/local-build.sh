@@ -16,13 +16,16 @@ rm -rf quartz/content
 mkdir -p quartz/content
 cp -r vault/* quartz/content/
 
-echo "[2/4] Normalizacja frontmatter..."
+echo "[2/5] Normalizacja frontmatter..."
 node scripts/vault-tools.mjs normalize --dir quartz/content --apply 2>&1 | tail -1
 
-echo "[3/4] Konwersja Obsidian Bases → markdown..."
+echo "[3/5] Usuwanie duplikatów H1..."
+node scripts/strip-h1.mjs quartz/content --apply 2>&1 | tail -1
+
+echo "[4/5] Konwersja Obsidian Bases → markdown..."
 node scripts/build-bases.mjs quartz/content 2>&1
 
-echo "[4/4] Budowanie Quartz..."
+echo "[5/5] Budowanie Quartz..."
 cd quartz
 if [ "$1" = "--build" ]; then
   npx quartz build

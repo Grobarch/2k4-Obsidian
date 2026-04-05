@@ -6,7 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Kahil Savis,
 Przywódca Scoia’tael, 78 lat
 
 ![Portret Kahil Savis,

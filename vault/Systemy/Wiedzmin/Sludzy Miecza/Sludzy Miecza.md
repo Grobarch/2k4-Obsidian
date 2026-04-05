@@ -9,8 +9,6 @@ tags: ["kampania", "Wiedźmin", "dark-fantasy", "fantasy", "wiedzmin"]
 draft: "false"
 ---
 
-# Słudzy miecza i brzęczących monet
-
 
 <div class="obsidian-only">
 

@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Smoka
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Mirumoto Kenzo
-
 ![Portret Mirumoto Kenzo](placeholder.jpg)
 
 

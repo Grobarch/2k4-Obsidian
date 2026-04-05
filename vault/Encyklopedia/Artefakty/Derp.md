@@ -6,8 +6,6 @@ system_pelna: "Cold City"
 tags: [artefakt, cold-city]
 ---
 
-# Derp
-
 ![Derp](placeholder.jpg)
 
 ## Opis

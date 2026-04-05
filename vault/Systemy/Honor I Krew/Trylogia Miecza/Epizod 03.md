@@ -1,5 +1,5 @@
 ---
-title: "Epizod 3: \"Miecz, który całuje raz\""
+title: 'Epizod 3: "Miecz, który całuje raz"'
 type: epizod
 system: honor-i-krew
 system_pelna: Honor i Krew
@@ -10,8 +10,6 @@ data: 2011-11-30
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/11/honor-i-krew-ktory-cauje-raz.html"
 tags: [epizod, honor-i-krew, fantasy]
 ---
-
-# Epizod 3: "Miecz, który całuje raz"
 
 
 ---

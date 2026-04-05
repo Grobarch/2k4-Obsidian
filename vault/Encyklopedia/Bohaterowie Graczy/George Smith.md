@@ -8,8 +8,6 @@ archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# George Smith
-
 ![Portret George Smith](placeholder.jpg)
 
 

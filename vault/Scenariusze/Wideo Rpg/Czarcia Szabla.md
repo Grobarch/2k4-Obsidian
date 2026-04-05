@@ -6,6 +6,4 @@ data: 2012-06-16
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Czarcia szabla
-
 *Opis do uzupełnienia.*

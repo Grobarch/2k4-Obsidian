@@ -13,8 +13,6 @@ tags:
   - samurajski
 ---
 
-# Hida Mitsuru
-
 ![Portret Hida Mitsuru](placeholder.jpg)
 
 

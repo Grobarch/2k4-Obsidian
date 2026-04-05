@@ -6,8 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Włodarz Tis Seval, Współpracownik Scoia’tael, 38 lat
-
 ![Portret Włodarz Tis Seval, Współpracownik Scoia’tael, 38 lat](placeholder.jpg)
 
 

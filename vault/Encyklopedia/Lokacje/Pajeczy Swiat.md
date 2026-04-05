@@ -8,8 +8,6 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [lokacja, l5k, samurajski]
 ---
 
-# Pajęczy Świat
-
 ![Pajęczy Świat](placeholder.jpg)
 
 

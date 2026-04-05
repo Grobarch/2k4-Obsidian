@@ -3,8 +3,6 @@ title: Encyklopedia
 type: index
 ---
 
-# Encyklopedia
-
 Baza postaci, lokacji i artefaktów ze wszystkich kampanii.
 
 ## Sekcje

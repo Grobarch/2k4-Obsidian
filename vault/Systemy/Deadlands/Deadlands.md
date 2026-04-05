@@ -8,8 +8,6 @@ tags: [system, deadlands, western, horror]
 draft: "false"
 ---
 
-# Deadlands: Martwe Ziemie
-
 
 <div class="obsidian-only">
 

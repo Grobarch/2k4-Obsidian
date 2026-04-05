@@ -10,8 +10,6 @@ archetyp: bushi z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]
 ---
 
-# Hida Hikaru
-
 ![Portret Hida Hikaru](placeholder.jpg)
 
 

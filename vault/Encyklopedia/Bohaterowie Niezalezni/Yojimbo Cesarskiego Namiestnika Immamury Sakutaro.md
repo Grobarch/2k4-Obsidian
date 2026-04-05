@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Yojimbo cesarskiego namiestnika Immamury Sakutaro
-
 ![Portret Yojimbo cesarskiego namiestnika Immamury Sakutaro](placeholder.jpg)
 
 

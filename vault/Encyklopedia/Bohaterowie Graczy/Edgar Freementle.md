@@ -8,8 +8,6 @@ archetyp: Krasnolud, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
 ---
 
-# Edgar Freementle
-
 ![Portret Edgar Freementle](placeholder.jpg)
 
 

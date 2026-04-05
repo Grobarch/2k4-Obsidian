@@ -7,8 +7,6 @@ gracz: Paweł OBSTAWSKI
 tags: [bohater-gracza, wfrp, dark-fantasy]
 ---
 
-# Ragesh Astuana
-
 ![Portret Ragesh Astuana](placeholder.jpg)
 
 

@@ -8,8 +8,6 @@ kampania: ["cold-tales"]
 tags: [lokacja, cold-city, szpiegowski, horror]
 ---
 
-# Berlin Zachodni
-
 ![Berlin Zachodni](placeholder.jpg)
 
 

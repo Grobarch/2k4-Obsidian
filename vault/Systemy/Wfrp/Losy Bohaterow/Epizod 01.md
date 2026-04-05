@@ -1,5 +1,5 @@
 ---
-title: "Epizod 1: \"Ogniste organy z Karak-Din\""
+title: 'Epizod 1: "Ogniste organy z Karak-Din"'
 type: epizod
 system: wfrp
 system_pelna: Warhammer Fantasy Role Play 2ed
@@ -10,8 +10,6 @@ data: 2022-06-19
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/06/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, wfrp, dark-fantasy]
 ---
-
-# Epizod 1: "Ogniste organy z Karak-Din"
 
 
 ---

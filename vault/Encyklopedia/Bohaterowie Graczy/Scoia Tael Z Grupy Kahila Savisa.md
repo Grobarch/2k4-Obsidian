@@ -6,7 +6,6 @@ system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 ---
 
-# Scoia’tael z grupy
 Kahila Savisa
 
 ![Portret Scoia’tael z grupy

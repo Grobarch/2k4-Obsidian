@@ -9,8 +9,6 @@ tags: ["kampania", "7th-Sea", "szpiegowski", "fantasy", "7th-sea"]
 draft: "false"
 ---
 
-# W maskach
-
 
 <div class="obsidian-only">
 

@@ -8,8 +8,6 @@ kampania: ["tajemnice-z-hortusa"]
 tags: [artefakt, gasnace-slonca, space-fantasy]
 ---
 
-# Insygnia technologiczne
-
 ![Insygnia technologiczne](placeholder.jpg)
 
 

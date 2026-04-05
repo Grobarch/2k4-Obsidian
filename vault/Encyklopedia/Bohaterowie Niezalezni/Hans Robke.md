@@ -8,8 +8,6 @@ kampania: ["cold-tales"]
 tags: [bohater-niezalezny, cold-city, szpiegowski, horror]
 ---
 
-# Dr. Hans Robke
-
 ![Portret Dr. Hans Robke](placeholder.jpg)
 
 

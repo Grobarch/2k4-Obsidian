@@ -6,6 +6,4 @@ data: 2011-06-19
 tags: [scenariusz, wideo-rpg]
 ---
 
-# Za garść ryo
-
 *Opis do uzupełnienia.*

@@ -8,8 +8,6 @@ kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-# Rokugański chłop
-
 ![Portret Rokugański chłop](placeholder.jpg)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Epizod 4: \"Klucznik z Krainy Wielu Drzwi\""
+title: 'Epizod 4: "Klucznik z Krainy Wielu Drzwi"'
 type: epizod
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
@@ -10,8 +10,6 @@ data: 2022-10-12
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/10/rpg-papierowe-rpg-gry-fabularne.html"
 tags: [epizod, deadlands, western, horror]
 ---
-
-# Epizod 4: "Klucznik z Krainy Wielu Drzwi"
 
 
 ---

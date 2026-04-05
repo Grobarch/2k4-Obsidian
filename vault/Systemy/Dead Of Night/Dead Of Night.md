@@ -8,8 +8,6 @@ tags: [system, dead-of-night, horror]
 draft: "false"
 ---
 
-# Dead of Night
-
 
 <div class="obsidian-only">
 
