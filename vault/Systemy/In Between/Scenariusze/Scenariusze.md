@@ -3,6 +3,20 @@ title: Scenariusze
 draft: "true"
 ---
 
+<div class="obsidian-only">
+
+```meta-bind-button
+label: "+ Nowy scenariusz"
+style: primary
+actions:
+  - type: templaterCreateNote
+    templateFile: "Templates/Utwórz Scenariusz.md"
+    openNote: true
+```
+
+</div>
+
+
 ## Scenariusze
 
 
