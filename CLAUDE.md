@@ -23,25 +23,15 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   │   └── Lokacje.md      ← folder note
 │   │   └── Artefakty/
 │   │       └── Artefakty.md    ← folder note
-│   ├── Scenariusze/        ← gotowe scenariusze i przygody per system
-│   │   ├── Scenariusze.md      ← folder note (tabelka base zamiast statycznych linków)
-│   │   ├── A Penny For My Thoughts/
-│   │   ├── Apokalipsa Spelniona/
-│   │   ├── Cyberpunk 2020/
-│   │   ├── Dead Of Night/
-│   │   ├── Deadlands/
-│   │   ├── Deathwatch/
-│   │   ├── Dwory Konca Swiata/
-│   │   ├── Dzikie Pola/
-│   │   ├── Hell 4 Leather/
-│   │   ├── In Between/
-│   │   ├── L5K1ed/
-│   │   ├── The Shadow Of Yesterday/
-│   │   ├── Wfrp 1ed/
-│   │   ├── Wfrp 4ed/
-│   │   ├── Wideo Rpg/
-│   │   ├── Wolsung/
-│   │   └── Zew Cthulhu/
+│   ├── Systemy/            ← systemy RPG + kampanie + epizody + scenariusze
+│   │   └── Cold City/          ← folder systemu
+│   │       ├── Cold City.md    ← folder note systemu (z blokami base)
+│   │       ├── Cold Tales/         ← folder kampanii
+│   │       │   ├── Cold Tales.md   ← folder note kampanii (z blokami base)
+│   │       │   └── Epizod 01.md
+│   │       └── Scenariusze/        ← scenariusze systemu
+│   │           ├── Scenariusze.md  ← folder note (base: file.inFolder)
+│   │           └── Scenariusz.md
 │   ├── templates/          ← szablony Obsidian (ignorowane przez Quartz)
 │   │   ├── Utwórz Postać.md    ← formularz tworzenia postaci
 │   │   ├── Utwórz Artefakt.md  ← formularz tworzenia artefaktu
@@ -67,6 +57,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── restore-bases.mjs          ← odtwarzanie bloków base w folder notes (odwrotność build-bases)
 │   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
 │   ├── fix-infolder-paths.mjs     ← naprawa ścieżek file.inFolder w blokach base
+│   ├── migrate-scenarios.mjs      ← jednorazowa migracja: Scenariusze/→Systemy/[Sys]/Scenariusze/
 │   ├── local-build.sh             ← lokalny build pipeline (symulacja CI)
 │   └── pre-commit                 ← git hook: normalize + validate przed commitem
 ├── quartz/                 ← Quartz 4.5.2 (statyczny generator stron)
@@ -90,20 +81,21 @@ Nazwy folderów i plików używają Title Case ze spacjami (np. `Cold City/Cold 
 Quartz automatycznie slugifikuje je do lowercase z myślnikami (np. `cold-city/cold-city`).
 
 Hierarchia: `Systemy/ → System/ → Kampania/ → Epizod XX.md`
+           `Systemy/ → System/ → Scenariusze/ → Scenariusz.md`
 
 ### Widoczność folder notes
 
 Folder notes kampanii i systemów mają `draft: "false"` — Quartz je renderuje, bo zawierają
 bloki `base` konwertowane na statyczne tabele podczas buildu.
 
-Folder notes podfolderów encyklopedii i sekcji scenariuszy mają `draft: "true"` — Quartz ich
-nie renderuje. Strony indeksujące (`Encyklopedia.md`, `Scenariusze.md`) NIE mają `draft: true`.
+Folder notes podfolderów encyklopedii i podfoldera `Scenariusze/` w systemach mają `draft: "true"` — Quartz ich
+nie renderuje.
 
 ### Dwa rodzaje ścieżek — ważne rozróżnienie
 
 1. **Ścieżki systemowe (folder paths)** — używane w `file.inFolder()`, szablonach Templater,
    skryptach Node.js. Muszą odpowiadać **nazwie folderu na dysku** (Title Case):
-   `Systemy/Cold City/Cold Tales`, `Encyklopedia/Bohaterowie Graczy`, `Scenariusze/Deadlands`
+   `Systemy/Cold City/Cold Tales`, `Encyklopedia/Bohaterowie Graczy`, `Systemy/Deadlands/Scenariusze`
 
 2. **Ścieżki URL (slugi Quartz)** — używane w linkach `[tekst](/ścieżka)`, `kampania_link`,
    wewnątrz frontmatter. Quartz automatycznie slugifikuje do **lowercase z myślnikami**:
@@ -286,7 +278,7 @@ Implementacja w `quartz/quartz/components/pages/FolderContent.tsx` +
 Metadane wyświetlane per sekcja (badge'y pod tytułem):
 - `Encyklopedia/*` (slug: `encyklopedia/*`) → `type`, `system_pelna`, `kampania`, `gracz`
 - `Systemy/*` (slug: `systemy/*`) → `gatunek`, `wydawca`
-- `Scenariusze/*` (slug: `scenariusze/*`) → `system`, `data`
+- `Systemy/*/Scenariusze/*` (slug: `systemy/[system]/scenariusze/*`) → `system`, `data`
 
 Quartz FolderContent porównuje **slugi** (zawsze lowercase) — nie zmieniać na Title Case w kodzie Quartz.
 
@@ -362,9 +354,9 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 
 ## Dodawanie nowego scenariusza
 
-1. Utwórz folder systemu w `vault/Scenariusze/System Name/` (jeśli nie istnieje)
-2. Utwórz folder note systemu `System Name.md` z blokiem `base` (lista scenariuszy)
-3. Utwórz plik scenariusza z frontmatterem:
+1. Utwórz plik scenariusza w `vault/Systemy/[System]/Scenariusze/[Tytuł].md`
+   - Jeśli podfolder `Scenariusze/` nie istnieje — utwórz go wraz z `Scenariusze.md` (folder note)
+2. Dodaj frontmatter:
    ```yaml
    ---
    title: "Tytuł scenariusza"
@@ -375,7 +367,8 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
    tags: [scenariusz, slug-systemu]
    ---
    ```
-4. Scenariusz pojawi się automatycznie w tabelce `Scenariusze.md` (filtruje po `type == "scenariusz"`)
+3. Blok `base` w folder note systemu (`Scenariusze samodzielne`) automatycznie pokaże nowy scenariusz (filtr `system == "slug"`)
+4. Blok `base` w `Scenariusze.md` podfoldera (filtr `file.inFolder("Systemy/[System]/Scenariusze")`) też go pokaże
 5. Źródłowe pliki w `notes-source/scenariusze/` zawierają H1 tytuł i blok metadanych — przy konwersji przenosimy je do frontmatter, a treść zaczyna się po separatorze `---`
 
 ## Templater — formularze tworzenia treści (Obsidian)
