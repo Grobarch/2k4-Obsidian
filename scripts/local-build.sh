@@ -11,6 +11,12 @@ cd "$(dirname "$0")/.."
 # Ensure node/npx are in PATH (Git Bash launched from PowerShell may not inherit it)
 export PATH="/c/Program Files/nodejs:$PATH"
 
+# globby (używane przez Quartz) respektuje .gitignore, które ma wpis quartz/content/
+# — tymczasowo usuwamy ten wpis, żeby Quartz widział pliki treści
+cp .gitignore .gitignore.bak
+trap 'mv .gitignore.bak .gitignore' EXIT
+sed -i '/^quartz\/content\/$/d' .gitignore
+
 echo "[1/4] Kopiowanie vault → quartz/content..."
 rm -rf quartz/content
 mkdir -p quartz/content
