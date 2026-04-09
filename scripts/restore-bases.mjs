@@ -430,8 +430,16 @@ async function buildScenarioSlugMap() {
   if (scenarioSlugMap) return scenarioSlugMap;
   scenarioSlugMap = {};
 
-  const scenarDir = join(targetDir, "Scenariusze");
-  const scenFiles = await findMdFiles(scenarDir);
+  // Skanuj Systemy/*/Scenariusze/ (nowa lokalizacja po migracji)
+  const sysBaseDir = join(targetDir, "Systemy");
+  let sysDirEntries = [];
+  try { sysDirEntries = await (await import("node:fs/promises")).readdir(sysBaseDir, { withFileTypes: true }); } catch {}
+  const scenFiles = [];
+  for (const entry of sysDirEntries) {
+    if (entry.isDirectory()) {
+      scenFiles.push(...(await findMdFiles(join(sysBaseDir, entry.name, "Scenariusze"))));
+    }
+  }
 
   // Zbierz unikalne system slugi z plików scenariuszy
   const slugsInScenarios = new Set();
@@ -648,13 +656,10 @@ async function main() {
     else if (fm.type === "kampania") {
       newContent = await processCampaignNote(filePath, content, fm);
     }
-    // Scenario folder notes (w scenariusze/)
-    else if (rel.startsWith("Scenariusze/") && !fm.type?.includes("scenariusz")) {
-      // Folder note w scenariusze/ (nie sam scenariusz)
-      const depth = rel.split("/").length;
-      if (depth === 3) { // scenariusze/System/System.md — folder note
-        newContent = await processScenarioFolderNote(filePath, content, fm);
-      }
+    // Scenario folder notes (Systemy/[System]/Scenariusze/Scenariusze.md)
+    else if (rel.match(/^Systemy\/[^/]+\/Scenariusze\/[^/]+\.md$/) && !fm.type?.includes("scenariusz")) {
+      // Folder note podfoldera Scenariusze w systemie
+      newContent = await processScenarioFolderNote(filePath, content, fm);
     }
     // Encyclopedia subfolder notes
     else if (fm.type === "index" && rel.startsWith("Encyklopedia/") && rel.split("/").length === 3) {

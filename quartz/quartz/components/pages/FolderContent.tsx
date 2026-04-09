@@ -40,7 +40,7 @@ function getSectionMetaFields(slug: string | undefined): MetaField[] {
       { field: "wydawca", label: "Wydawca" },
     ]
   }
-  if (slug.startsWith("scenariusze")) {
+  if (slug.startsWith("scenariusze") || /^systemy\/[^/]+\/scenariusze/.test(slug)) {
     return [
       { field: "system", label: "System" },
       { field: "data", label: "Data" },
