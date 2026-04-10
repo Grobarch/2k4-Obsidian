@@ -14,7 +14,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja nr 8 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 8 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg]]
 Ilustracja: Piotr RYGIEL
 W piątek 4 listopada 2022 r. rozgrywaliśmy epizod 8 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Porwanie Mistrza Bassarda".
 

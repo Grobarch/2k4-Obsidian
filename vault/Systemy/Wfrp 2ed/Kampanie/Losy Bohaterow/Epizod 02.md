@@ -14,7 +14,7 @@ tags: [epizod, wfrp-2ed, dark-fantasy]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL.jpg)
+![[Systemy/Wfrp/Losy Bohaterow/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL.jpg]]
 
 *Ilustracja: Piotr RYGIEL*
 

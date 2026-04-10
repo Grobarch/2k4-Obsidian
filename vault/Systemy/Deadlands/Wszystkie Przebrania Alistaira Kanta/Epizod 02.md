@@ -14,7 +14,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - pistolero.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - pistolero.jpg]]
 Ilustracja: Piotr RYGIEL
 
 *W piątek 5 sierpnia 2022 r. rozgrywaliśmy epizod 2 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Tajemnicza przeszłość Pani Abigail Croft"*

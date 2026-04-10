@@ -9,7 +9,7 @@ kampania: [losy-bohaterow]
 tags: [bohater-gracza, wfrp-2ed, dark-fantasy]
 ---
 
-![[zbroja.jpeg]]
+![[Encyklopedia/Bohaterowie Graczy/assets/zbroja.jpeg]]
 
 ## Statystyki
 
