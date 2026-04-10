@@ -23,6 +23,8 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   │   └── Lokacje.md      ← folder note
 │   │   └── Artefakty/
 │   │       └── Artefakty.md    ← folder note
+│   ├── Artykuły/
+│   │   └── Artykuły.md        ← folder note (tabela base: type == "artykul")
 │   ├── Systemy/            ← systemy RPG + kampanie + epizody + scenariusze
 │   │   └── Cold City/          ← folder systemu
 │   │       ├── Cold City.md    ← folder note systemu (z blokami base)
