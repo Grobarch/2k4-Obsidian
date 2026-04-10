@@ -143,105 +143,24 @@ Skrypt `build-bases.mjs` obsługuje oba wzorce.
 ## Skrypty vault
 
 Wszystkie skrypty w `scripts/` działają bez zależności npm (czysty Node.js ESM).
+Opisy każdego skryptu → drzewo repo powyżej (sekcja `scripts/`).
 
-### Schema (`scripts/schema.mjs`)
-
-Single source of truth dla schematów frontmatter. Eksportuje:
-- `SYSTEM_NAMES` — mapa `system_id → system_pelna`
-- `TYPE_SCHEMAS` — per-type definicje: `required[]`, `arrayFields[]`, `computed[]`, `defaults{}`
-
-### vault-tools.mjs — CLI do masowych operacji
+### Workflow normalizacji (najczęstsze zadanie)
 
 ```bash
-node scripts/vault-tools.mjs <komenda> [argumenty] [opcje]
+node scripts/vault-tools.mjs normalize --dir vault          # podgląd
+node scripts/vault-tools.mjs normalize --dir vault --apply  # zastosuj
+node scripts/vault-tools.mjs validate --dir vault           # walidacja
 ```
 
-Komendy:
-- `normalize` — napraw frontmatter do kanonicznego formatu (migracje, computed values, defaults)
-- `validate` — raport brakujących pól
-- `list` — listuj pliki i ich frontmatter
-- `rename-field <stare> <nowe>` — zmień nazwę pola YAML
-- `set-field <pole> <wartość>` — ustaw pole na wartość
-- `delete-field <pole>` — usuń pole z frontmatter
-- `migrate-to-array <pole>` — konwertuj skalarne pole na tablicę
+`normalize` wykonuje 4 przejścia: migracja scalar→array, computed values (`system_pelna`, `tags`, `kampania_link`), defaults (`draft`, `mg`), ostrzeżenia o brakujących polach.
 
-Opcje: `--where "pole=wartość"`, `--type <typ>`, `--dir <ścieżka>`, `--dry-run` (domyślne), `--apply`
-
-### build-bases.mjs — konwersja Obsidian Bases
-
-```bash
-node scripts/build-bases.mjs [dir]   # domyślnie: vault
-```
-
-Skanuje `.md` w podanym katalogu i zastępuje bloki `base` (inline i `![[*.base]]`)
-statycznymi tabelami/listami/kartami. Używany w CI (na `quartz/content/`)
-i opcjonalnie lokalnie.
-
-### restore-bases.mjs — odtwarzanie bloków base
-
-```bash
-node scripts/restore-bases.mjs [dir] [--apply]
-```
-
-Odwrotność `build-bases.mjs` — odtwarza bloki `base` w folder notes, które zostały
-skonwertowane na statyczne tabele (np. po przypadkowym uruchomieniu build-bases na vault).
-Rozpoznaje typy folder notes: system, kampania, scenariusz, encyklopedia.
-Domyślnie dry-run.
-
-### sync-systems.mjs — synchronizacja danych systemów
-
-```bash
-node scripts/sync-systems.mjs [--apply]
-```
-
-Skanuje vault i generuje `vault/templates/systems-data.json` — single source of truth
-dla danych systemów i kampanii używanych przez szablony Templater.
-
-### fix-infolder-paths.mjs — naprawa ścieżek file.inFolder
-
-```bash
-node scripts/fix-infolder-paths.mjs [--apply]
-```
-
-Skanuje vault i naprawia ścieżki `file.inFolder()` w blokach base (np. usuwanie
-prefixu `vault/`). Domyślnie dry-run.
-
-### strip-h1.mjs — usuwanie duplikatów H1
-
-```bash
-node scripts/strip-h1.mjs [dir]           # dry-run (domyślnie vault)
-node scripts/strip-h1.mjs [dir] --apply   # zapisz zmiany
-```
-
-Quartz renderuje tytuł z frontmatter (`ArticleTitle`), więc H1 w treści powoduje duplikat.
-Skrypt usuwa pierwszy H1 z notatek i — jeśli różni się od `title` — aktualizuje frontmatter.
-Używany w CI (po normalize, przed build-bases) i w local-build.
-
-### Workflow normalizacji
-
-```bash
-# 1. Podgląd co trzeba naprawić
-node scripts/vault-tools.mjs normalize --dir vault
-
-# 2. Zastosuj poprawki
-node scripts/vault-tools.mjs normalize --dir vault --apply
-
-# 3. Walidacja
-node scripts/vault-tools.mjs validate --dir vault
-```
-
-Komenda `normalize` wykonuje 4 przejścia:
-1. **Migracja scalar → array** — pola z `arrayFields` (np. `kampania`, `kampania_link` dla bohaterów)
-2. **Computed values** — `system_pelna` z `SYSTEM_NAMES`, `tags` z `[type, system]`, `kampania_link`/`kampania` z path (epizody)
-3. **Defaults** — `draft: "false"` dla kampanii/systemów, `mg` dla epizodów
-4. **Ostrzeżenia** — brakujące required bez default
+`vault-tools.mjs` przyjmuje też: `--where "pole=wartość"`, `--type <typ>`, `--dry-run` / `--apply`.
 
 ### Git pre-commit hook
 
-Hook automatycznie uruchamia `normalize --apply` i `validate` przed każdym commitem
-dotyczącym `vault/` lub `scripts/`. Blokuje commit jeśli walidacja nie przejdzie.
+Uruchamia `normalize --apply` + `validate` przed każdym commitem dot. `vault/` lub `scripts/`.
 
-Instalacja (jednorazowo po klonie):
 ```bash
 cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
@@ -252,8 +171,6 @@ cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 bash scripts/local-build.sh          # build + serve na localhost:8080
 bash scripts/local-build.sh --build  # tylko build, bez serve
 ```
-
-Symuluje pipeline CI: copy vault → normalize → strip-h1 → build-bases → quartz build.
 
 ## Widoki sekcji (Quartz)
 
@@ -276,16 +193,9 @@ Quartz FolderContent porównuje **slugi** (zawsze lowercase) — nie zmieniać n
 
 ## Workflow deploy (GitHub Actions)
 
-1. Checkout repo
-2. `npm ci` w `quartz/`
-3. Kopiuje `vault/*` → `quartz/content/`
-4. `node scripts/vault-tools.mjs normalize --dir quartz/content --apply` ← normalizuje frontmatter
-5. `node scripts/strip-h1.mjs quartz/content --apply` ← usuwa duplikaty H1
-6. `node scripts/build-bases.mjs quartz/content` ← **konwertuje bloki base → statyczne tabele**
-7. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
-8. `node ./quartz/bootstrap-cli.mjs build` → `quartz/public/`
-9. Deploy `quartz/public/` na GitHub Pages
+→ szczegóły: `.github/workflows/deploy.yml`
 
+Pipeline: normalize → strip-h1 → build-bases → validate → quartz build → GitHub Pages.
 `quartz/content/` jest pusta w repo — wypełniana tylko w CI.
 
 ## Format plików vault
@@ -333,73 +243,6 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 
 ## Templater — formularze tworzenia treści (Obsidian)
 
-Formularze uruchamiane przyciskami w folder notes.
-Wymaga pluginów: **Templater** + **Meta Bind**.
+Szablony w `vault/templates/` — uruchamiane przyciskami w folder notes (pluginy: **Templater** + **Meta Bind**).
+Szczegóły konfiguracji, opis formularzy i statbloki → `/templater`.
 
-### Dostępne szablony
-
-| Szablon | Uruchamiany z | Tworzy |
-|---------|---------------|--------|
-| `Utwórz System.md` | strona Systemy | folder note systemu z blokami `base` |
-| `Utwórz Kampanię.md` | folder note systemu | folder note kampanii z blokami `base` |
-| `Utwórz Epizod.md` | folder note kampanii | notatkę epizodu w folderze kampanii |
-| `Utwórz Scenariusz.md` | folder note systemu | notatkę scenariusza w `Systemy/[System]/Scenariusze/` |
-| `Utwórz Postać.md` | kampania / encyklopedia | notatkę postaci w encyklopedii |
-| `Utwórz Artefakt.md` | kampania / encyklopedia | notatkę artefaktu w `Encyklopedia/Artefakty/` |
-| `Utwórz Lokację.md` | kampania / encyklopedia | notatkę lokacji w `Encyklopedia/Lokacje/` |
-
-### Tworzenie postaci
-
-### Konfiguracja (jednorazowo)
-
-1. Zainstaluj pluginy **Templater** i **Meta Bind** w Obsidian
-2. W Templater: ustaw "Template folder location" → `templates`
-3. W Obsidian Settings → Appearance → CSS snippets: włącz `obsidian-only`
-
-### Działanie
-
-Przycisk `+ Nowa postać` / `+ Nowy BG` / `+ Nowy BN` w folder note kampanii, `vault/Encyklopedia/Encyklopedia.md`, lub folder note podsekcji encyklopedii (`Bohaterowie Graczy.md`, `Bohaterowie Niezalezni.md`)
-uruchamia `templates/Utwórz Postać.md`. Formularz pyta kolejno o:
-- Imię (wymagane)
-- Typ: Bohater Gracza / Bohater Niezależny (wymagane)
-- System (wymagane)
-- Kampania (opcjonalna — lista filtrowana po systemie)
-- Gracz (opcjonalne, tylko BG)
-- Archetyp (opcjonalne)
-
-Notatka tworzona w `Encyklopedia/Bohaterowie Graczy/` lub `Encyklopedia/Bohaterowie Niezalezni/`.
-
-### Format notatki postaci
-
-→ przykład: `vault/Encyklopedia/Bohaterowie Graczy/Bayushi Tokuno.md`
-
-### Statbloki systemów
-
-Pliki w `vault/templates/statblocks/` — jeden na system. Dodawanie nowego statbloku:
-1. Utwórz `vault/templates/statblocks/{system-id}.md`
-2. Wpisz czysty markdown (bez frontmatter) — tabela atrybutów, pola tekstowe
-3. Skrypt Templater wczyta plik przez `app.vault.read()` i wklei go do notatki
-
-Dostępne: `7th-sea`, `cold-city`, `deadlands`, `gasnace-slonca`, `generic` (fallback),
-`honor-i-krew`, `l5k`, `mafia-ggf`, `wampir`, `wfrp`, `wfrp2`, `wfrp4`,
-`wideo-rpg`, `wiedzmin`, `wolsung`.
-
-### Ukrywanie przycisków w widoku web
-
-Przyciski są owinięte w `<div class="obsidian-only">`.
-- **Obsidian**: CSS snippet `obsidian-only.css` → `display: block`
-- **Quartz**: `quartz/quartz/styles/custom.scss` → `display: none`
-
-## Ignorowane w .gitignore
-
-- `quartz/node_modules/`
-- `quartz/.quartz-cache/`
-- `quartz/public/`
-- `quartz/content/`
-- `vault/.obsidian/workspace.json`
-- `vault/.obsidian/workspace-mobile.json`
-- `vault/.obsidian/plugins/*/main.js`
-- `vault/.obsidian/plugins/*/styles.css`
-- `vault/*.base`
-- `.claude/`
-- `.vscode/`
