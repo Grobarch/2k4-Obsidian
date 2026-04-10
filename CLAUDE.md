@@ -41,7 +41,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   ├── Utwórz Epizod.md    ← formularz tworzenia epizodu
 │   │   ├── Utwórz Scenariusz.md ← formularz tworzenia scenariusza
 │   │   ├── systems-data.json    ← dane systemów i kampanii (single source for templates)
-│   │   └── statblocks/         ← statbloki per system (l5k, wfrp, cold-city, ...)
+│   │   └── statblocks/         ← statbloki per system (l5k, wfrp-1ed, wfrp-2ed, wfrp-4ed, cold-city, ...)
 ├── scripts/
 │   ├── schema.mjs                 ← kanoniczny schemat frontmatter (single source of truth)
 │   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
@@ -315,7 +315,7 @@ Każdy plik ma YAML frontmatter. Kluczowe pola:
 ```yaml
 title: Tytuł strony
 type: bohater-gracza | bohater-niezalezny | lokacja | artefakt | epizod | kampania | system | scenariusz
-system: l5k | deadlands | wfrp | cold-city | wiedzmin | 7th-sea | ...
+system: l5k | deadlands | wfrp-1ed | wfrp-2ed | wfrp-4ed | cold-city | wiedzmin | 7th-sea | ...
 tags: [tag1, tag2]
 ```
 
@@ -458,7 +458,7 @@ Pliki w `vault/templates/statblocks/` — jeden na system. Dodawanie nowego stat
 3. Skrypt Templater wczyta plik przez `app.vault.read()` i wklei go do notatki
 
 Dostępne: `7th-sea`, `cold-city`, `deadlands`, `gasnace-slonca`, `generic` (fallback),
-`honor-i-krew`, `l5k`, `mafia-ggf`, `wampir`, `wfrp`, `wfrp2`, `wfrp4`,
+`honor-i-krew`, `l5k`, `mafia-ggf`, `wampir`, `wfrp-1ed`, `wfrp-2ed`, `wfrp-4ed`,
 `wideo-rpg`, `wiedzmin`, `wolsung`.
 
 ### Ukrywanie przycisków w widoku web
