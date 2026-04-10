@@ -23,8 +23,6 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   │   └── Lokacje.md      ← folder note
 │   │   └── Artefakty/
 │   │       └── Artefakty.md    ← folder note
-│   ├── Artykuły/
-│   │   └── Artykuły.md        ← folder note (tabela base: type == "artykul")
 │   ├── Systemy/            ← systemy RPG + kampanie + epizody + scenariusze
 │   │   └── Cold City/          ← folder systemu
 │   │       ├── Cold City.md    ← folder note systemu (z blokami base)
@@ -316,7 +314,7 @@ Każdy plik ma YAML frontmatter. Kluczowe pola:
 
 ```yaml
 title: Tytuł strony
-type: bohater-gracza | bohater-niezalezny | lokacja | artefakt | epizod | kampania | system | scenariusz | artykul
+type: bohater-gracza | bohater-niezalezny | lokacja | artefakt | epizod | kampania | system | scenariusz
 system: l5k | deadlands | wfrp | cold-city | wiedzmin | 7th-sea | ...
 tags: [tag1, tag2]
 ```

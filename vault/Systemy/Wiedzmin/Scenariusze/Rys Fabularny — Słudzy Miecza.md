@@ -1,9 +1,10 @@
 ---
 title: Rys Fabularny — Słudzy miecza i brzęczących monet
-type: artykul
+type: scenariusz
 system: wiedzmin
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/wiedzmin-gra-wyobrazni-robota.html"
-tags: ["artykul", "Wiedźmin", "dark-fantasy", "wiedzmin"]
+data: 2011-01-01
+tags: [scenariusz, wiedzmin]
 ---
 
 

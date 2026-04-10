@@ -1,9 +1,10 @@
 ---
 title: Wprowadzenie — Diabeł z Łazareni
-type: artykul
+type: scenariusz
 system: wampir
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/wampir-mroczne-wieki-z-lazareni.html"
-tags: [artykul, wampir, horror]
+data: 2011-01-01
+tags: [scenariusz, wampir]
 ---
 
 

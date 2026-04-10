@@ -1,9 +1,10 @@
 ---
 title: To tylko interes
-type: artykul
+type: scenariusz
 system: mafia-ggf
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/01/rpg-papierowe-rpg-gry-fabularne-wideo.html"
-tags: [artykul, mafia-ggf]
+data: 2011-01-01
+tags: [scenariusz, mafia-ggf]
 ---
 
 
