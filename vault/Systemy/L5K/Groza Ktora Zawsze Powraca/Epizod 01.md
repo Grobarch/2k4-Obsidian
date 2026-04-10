@@ -14,7 +14,7 @@ tags: [epizod, l5k, samurajski]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja nr 1 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg)
+![[Systemy/L5K/Groza Ktora Zawsze Powraca/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 1 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg]]
 Ilustracja: Piotr RYGIEL
 Kampania do Legendy Pięciu Kręgów 1ed "Groza, która zawsze powraca". Epizod 1 zatytułowany "Szaleństwo Mistrza Okamury".
 
