@@ -82,7 +82,7 @@ export const TYPE_SCHEMAS = {
     defaults:    {},
   },
   "artykul": {
-    required:    ["title", "type", "system", "tags"],
+    required:    ["title", "type", "tags"],
     arrayFields: ["tags"],
     computed:    ["tags"],
     defaults:    {},
