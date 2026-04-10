@@ -102,29 +102,9 @@ Np. `file.inFolder("Systemy/Cold City/Cold Tales")` — NIE `file.inFolder("vaul
 ### Obsidian Bases (dynamiczne widoki)
 
 Folder notes używają bloków **Obsidian Bases** (od Obsidian v1.8.0) do wyświetlania
-dynamicznych tabel, list i kart. Format:
+dynamicznych tabel, list i kart.
 
-````markdown
-## Spis epizodów
-
-```base
-filters:
-  and:
-    - type == "epizod"
-views:
-  - type: table
-    name: Epizody
-    filters:
-      and:
-        - file.inFolder("Systemy/Cold City/Cold Tales")
-    order:
-      - file.name
-      - data
-    sort:
-      - property: data
-        direction: ASC
-```
-````
+→ przykład: `vault/Systemy/Cold City/Cold Tales/Cold Tales.md`
 
 **Uwaga o `file.name` vs `title`:**
 - `file.name` w `order[]` → renderuje jako **klikalny link** do notatki (w Obsidian i po konwersji build-bases)
@@ -310,28 +290,12 @@ Quartz FolderContent porównuje **slugi** (zawsze lowercase) — nie zmieniać n
 
 ## Format plików vault
 
-Każdy plik ma YAML frontmatter. Kluczowe pola:
+Każdy plik ma YAML frontmatter. Kanoniczne definicje pól → `scripts/schema.mjs` (`TYPE_SCHEMAS`, `SYSTEM_NAMES`).
 
-```yaml
-title: Tytuł strony
-type: bohater-gracza | bohater-niezalezny | lokacja | artefakt | epizod | kampania | system | scenariusz
-system: l5k | deadlands | wfrp | cold-city | wiedzmin | 7th-sea | ...
-tags: [tag1, tag2]
-```
-
-Epizody mają dodatkowe pola:
-```yaml
-kampania_link: /systemy/cold-city/cold-tales
-kampania: cold-tales
-data: 2010-10-29
-```
-
-Scenariusze mają dodatkowe pola:
-```yaml
-type: scenariusz
-zrodlo: "https://arkadiusz-rygiel.blogspot.com/..."
-data: 2011-02-27
-```
+Przykłady rzeczywistych plików:
+- epizod: `vault/Systemy/Cold City/Cold Tales/Epizod 01.md`
+- scenariusz: `vault/Systemy/Deadlands/Scenariusze/Teksanskie Love Story.md`
+- postać BG: `vault/Encyklopedia/Bohaterowie Graczy/Bayushi Tokuno.md`
 
 ## Linki wewnętrzne
 
@@ -363,17 +327,7 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
 
 1. Utwórz plik scenariusza w `vault/Systemy/[System]/Scenariusze/[Tytuł].md`
    - Jeśli podfolder `Scenariusze/` nie istnieje — utwórz go wraz z `Scenariusze.md` (folder note)
-2. Dodaj frontmatter:
-   ```yaml
-   ---
-   title: "Tytuł scenariusza"
-   type: scenariusz
-   system: slug-systemu
-   zrodlo: "https://arkadiusz-rygiel.blogspot.com/..."
-   data: YYYY-MM-DD
-   tags: [scenariusz, slug-systemu]
-   ---
-   ```
+2. Dodaj frontmatter (→ przykład: `vault/Systemy/Deadlands/Scenariusze/Teksanskie Love Story.md`)
 3. Blok `base` w folder note systemu (`Scenariusze samodzielne`) automatycznie pokaże nowy scenariusz (filtr `system == "slug"`)
 4. Blok `base` w `Scenariusze.md` podfoldera (filtr `file.inFolder("Systemy/[System]/Scenariusze")`) też go pokaże
 
@@ -417,38 +371,7 @@ Notatka tworzona w `Encyklopedia/Bohaterowie Graczy/` lub `Encyklopedia/Bohatero
 
 ### Format notatki postaci
 
-```markdown
----
-title: "Imię Postaci"
-type: bohater-gracza          # lub bohater-niezalezny
-system: l5k
-system_pelna: "Legenda Pięciu Kręgów 1ed"
-kampania_link: /systemy/l5k/miecze-cnot-i-grzechow
-kampania: miecze-cnot-i-grzechow
-gracz: Jan Kowalski           # tylko BG
-archetyp: bushi z Klanu Lwa
-tags: [bohater-gracza, l5k]
----
-
-# Imię Postaci
-
-![Portret Imię Postaci](placeholder.jpg)
-
-## Statystyki
-
-<!-- SYSTEM: l5k -->
-← zawartość z templates/statblocks/l5k.md
-
-## Opis
-
-*Opis do uzupełnienia.*
-
-## Wystąpienia
-
-## Kampanie
-
-- [Miecze cnót i grzechów](/systemy/l5k/miecze-cnot-i-grzechow/miecze-cnot-i-grzechow)
-```
+→ przykład: `vault/Encyklopedia/Bohaterowie Graczy/Bayushi Tokuno.md`
 
 ### Statbloki systemów
 
