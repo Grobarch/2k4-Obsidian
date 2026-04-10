@@ -314,7 +314,7 @@ Każdy plik ma YAML frontmatter. Kluczowe pola:
 
 ```yaml
 title: Tytuł strony
-type: bohater-gracza | bohater-niezalezny | lokacja | artefakt | epizod | kampania | system
+type: bohater-gracza | bohater-niezalezny | lokacja | artefakt | epizod | kampania | system | scenariusz | artykul
 system: l5k | deadlands | wfrp | cold-city | wiedzmin | 7th-sea | ...
 tags: [tag1, tag2]
 ```
