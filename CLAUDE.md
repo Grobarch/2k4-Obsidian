@@ -10,7 +10,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 ## Struktura repo
 
 ```
-2k4-Obsidian/               ← root repo (F:\RPG\RPG_repo\2k4-Obsidian)
+2k4-Obsidian/               ← root repo
 ├── vault/                  ← Obsidian vault (root dla Obsidian — .obsidian/ jest tu)
 │   ├── index.md            ← strona główna wiki
 │   ├── Encyklopedia/
@@ -39,20 +39,15 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   ├── Utwórz Kampanię.md  ← formularz tworzenia kampanii (z blokami base)
 │   │   ├── Utwórz System.md    ← formularz tworzenia systemu (z blokami base)
 │   │   ├── Utwórz Epizod.md    ← formularz tworzenia epizodu
+│   │   ├── Utwórz Scenariusz.md ← formularz tworzenia scenariusza
 │   │   ├── systems-data.json    ← dane systemów i kampanii (single source for templates)
 │   │   └── statblocks/         ← statbloki per system (l5k, wfrp, cold-city, ...)
-│   └── Systemy/            ← systemy RPG + kampanie + epizody
-│       └── Cold City/          ← folder systemu
-│           ├── Cold City.md    ← folder note systemu (z blokami base)
-│           └── Cold Tales/         ← folder kampanii
-│               ├── Cold Tales.md   ← folder note kampanii (z blokami base)
-│               ├── Epizod 01.md
-│               └── ...
 ├── scripts/
 │   ├── schema.mjs                 ← kanoniczny schemat frontmatter (single source of truth)
 │   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
 │   ├── vault-tools.mjs            ← CLI do masowych operacji na vault (normalize, validate, set-field...)
 │   ├── validate-frontmatter.mjs   ← walidator frontmatter (CI gate)
+│   ├── strip-h1.mjs              ← usuwanie duplikatów H1 (Quartz renderuje title z frontmatter)
 │   ├── build-bases.mjs            ← konwersja Obsidian Bases → statyczne tabele/listy/karty
 │   ├── restore-bases.mjs          ← odtwarzanie bloków base w folder notes (odwrotność build-bases)
 │   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
@@ -231,6 +226,17 @@ node scripts/fix-infolder-paths.mjs [--apply]
 Skanuje vault i naprawia ścieżki `file.inFolder()` w blokach base (np. usuwanie
 prefixu `vault/`). Domyślnie dry-run.
 
+### strip-h1.mjs — usuwanie duplikatów H1
+
+```bash
+node scripts/strip-h1.mjs [dir]           # dry-run (domyślnie vault)
+node scripts/strip-h1.mjs [dir] --apply   # zapisz zmiany
+```
+
+Quartz renderuje tytuł z frontmatter (`ArticleTitle`), więc H1 w treści powoduje duplikat.
+Skrypt usuwa pierwszy H1 z notatek i — jeśli różni się od `title` — aktualizuje frontmatter.
+Używany w CI (po normalize, przed build-bases) i w local-build.
+
 ### Workflow normalizacji
 
 ```bash
@@ -267,11 +273,11 @@ bash scripts/local-build.sh          # build + serve na localhost:8080
 bash scripts/local-build.sh --build  # tylko build, bez serve
 ```
 
-Symuluje pipeline CI: copy vault → normalize → build-bases → quartz build.
+Symuluje pipeline CI: copy vault → normalize → strip-h1 → build-bases → quartz build.
 
 ## Widoki sekcji (Quartz)
 
-Strony folderów mają własne widoki z metadanymi frontmatter (RPG-65).
+Strony folderów mają własne widoki z metadanymi frontmatter.
 Implementacja w `quartz/quartz/components/pages/FolderContent.tsx` +
 `quartz/quartz/components/PageList.tsx`.
 
@@ -286,7 +292,7 @@ Quartz FolderContent porównuje **slugi** (zawsze lowercase) — nie zmieniać n
 
 - URL: https://grobarch.github.io/2k4-Obsidian
 - Repo: https://github.com/Grobarch/2k4-Obsidian
-- Deploy: automatyczny (push na main) lub ręczny (workflow_dispatch)
+- Deploy: automatyczny (push na main, ścieżki: `vault/**`, `scripts/**`, `quartz/**`, `.github/workflows/**`) lub ręczny (workflow_dispatch)
 
 ## Workflow deploy (GitHub Actions)
 
@@ -294,10 +300,11 @@ Quartz FolderContent porównuje **slugi** (zawsze lowercase) — nie zmieniać n
 2. `npm ci` w `quartz/`
 3. Kopiuje `vault/*` → `quartz/content/`
 4. `node scripts/vault-tools.mjs normalize --dir quartz/content --apply` ← normalizuje frontmatter
-5. `node scripts/build-bases.mjs quartz/content` ← **konwertuje bloki base → statyczne tabele**
-6. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
-7. `npx quartz build` → `quartz/public/`
-8. Deploy `quartz/public/` na GitHub Pages
+5. `node scripts/strip-h1.mjs quartz/content --apply` ← usuwa duplikaty H1
+6. `node scripts/build-bases.mjs quartz/content` ← **konwertuje bloki base → statyczne tabele**
+7. `node scripts/validate-frontmatter.mjs quartz/content` ← walidacja (CI gate)
+8. `node ./quartz/bootstrap-cli.mjs build` → `quartz/public/`
+9. Deploy `quartz/public/` na GitHub Pages
 
 `quartz/content/` jest pusta w repo — wypełniana tylko w CI.
 
@@ -369,7 +376,6 @@ Quartz skonfigurowany z `markdownLinkResolution: "absolute"` — nie zmieniać.
    ```
 3. Blok `base` w folder note systemu (`Scenariusze samodzielne`) automatycznie pokaże nowy scenariusz (filtr `system == "slug"`)
 4. Blok `base` w `Scenariusze.md` podfoldera (filtr `file.inFolder("Systemy/[System]/Scenariusze")`) też go pokaże
-5. Źródłowe pliki w `notes-source/scenariusze/` zawierają H1 tytuł i blok metadanych — przy konwersji przenosimy je do frontmatter, a treść zaczyna się po separatorze `---`
 
 ## Templater — formularze tworzenia treści (Obsidian)
 
@@ -383,6 +389,7 @@ Wymaga pluginów: **Templater** + **Meta Bind**.
 | `Utwórz System.md` | strona Systemy | folder note systemu z blokami `base` |
 | `Utwórz Kampanię.md` | folder note systemu | folder note kampanii z blokami `base` |
 | `Utwórz Epizod.md` | folder note kampanii | notatkę epizodu w folderze kampanii |
+| `Utwórz Scenariusz.md` | folder note systemu | notatkę scenariusza w `Systemy/[System]/Scenariusze/` |
 | `Utwórz Postać.md` | kampania / encyklopedia | notatkę postaci w encyklopedii |
 | `Utwórz Artefakt.md` | kampania / encyklopedia | notatkę artefaktu w `Encyklopedia/Artefakty/` |
 | `Utwórz Lokację.md` | kampania / encyklopedia | notatkę lokacji w `Encyklopedia/Lokacje/` |
@@ -450,8 +457,9 @@ Pliki w `vault/templates/statblocks/` — jeden na system. Dodawanie nowego stat
 2. Wpisz czysty markdown (bez frontmatter) — tabela atrybutów, pola tekstowe
 3. Skrypt Templater wczyta plik przez `app.vault.read()` i wklei go do notatki
 
-Dostępne: `l5k`, `cold-city`, `deadlands`, `wolsung`, `wiedzmin`, `wfrp`,
-`gasnace-slonca`, `7th-sea`, `wampir`, `mafia-ggf`, `honor-i-krew`, `generic` (fallback).
+Dostępne: `7th-sea`, `cold-city`, `deadlands`, `gasnace-slonca`, `generic` (fallback),
+`honor-i-krew`, `l5k`, `mafia-ggf`, `wampir`, `wfrp`, `wfrp2`, `wfrp4`,
+`wideo-rpg`, `wiedzmin`, `wolsung`.
 
 ### Ukrywanie przycisków w widoku web
 
@@ -464,3 +472,11 @@ Przyciski są owinięte w `<div class="obsidian-only">`.
 - `quartz/node_modules/`
 - `quartz/.quartz-cache/`
 - `quartz/public/`
+- `quartz/content/`
+- `vault/.obsidian/workspace.json`
+- `vault/.obsidian/workspace-mobile.json`
+- `vault/.obsidian/plugins/*/main.js`
+- `vault/.obsidian/plugins/*/styles.css`
+- `vault/*.base`
+- `.claude/`
+- `.vscode/`
