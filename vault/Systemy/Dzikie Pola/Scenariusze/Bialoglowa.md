@@ -7,7 +7,7 @@ data: 2011-02-19
 tags: [scenariusz, dzikie-pola]
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Białogłowa.jpg)
+![[Systemy/Dzikie Pola/Scenariusze/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Białogłowa.jpg]]
 
 *Ilustracja: Piotr RYGIEL**Poniżej, zamieszczam skrót scenariusza prowadzonego na Zamczysku. Pozdrowienia dla Graczy, których bohaterowie w imię miłości i własnej sprawy musieli wdawać się w lokalną politykę, siedzieć w beczce po kapuście, dwór spalić i wrogom śmiertelnym życie darować.*
 

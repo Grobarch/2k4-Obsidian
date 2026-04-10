@@ -14,7 +14,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - western.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - western.jpg]]
 *Ilustracja: Piotr RYGIEL*
 
 *W piątek 22 lipca 2022 r. otworzyliśmy kampanię do Deadlands "Wszystkie przebrania Alistaira Kanta". Długa przerwa na Martwych Ziemiach sprawiła, że znaczną część wieczoru poświęciliśmy na proces tworzenia postaci i lekkie przypomnienie zasad. W efekcie czego rozgraliśmy podczas sesji 3 sceny ze scenariusza.*

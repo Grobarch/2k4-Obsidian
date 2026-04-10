@@ -14,7 +14,7 @@ tags: [epizod, wfrp, dark-fantasy]
 
 ---
 
-![](Arkadiusz RYGIEL - blog - ilustracja Piotr RYGIEL.jpg)
+![[Systemy/Wfrp/Losy Bohaterow/assets/Arkadiusz RYGIEL - blog - ilustracja Piotr RYGIEL.jpg]]
 *Ilustracja: Piotr RYGIELPo kolejnej długiej przerwie w środę 15 czerwca 2022 r. udało nam się rozegrać sesję w klasycznego Warhammera edycję 2. W związku z tym mamy początek Kampanii o tytule „Losy bohaterów przez żarna czasu ścierane”, która "dziedziczy" cześć elementów fabularnych z 2 Sag - Kampanii rozegranej lata temu zatytułowanej "Potęga nie dla głupców", w której Gracze wcielali się w Wojowników Chaosu stojących po drugiej stronie barykady dobra oraz Kampanii "Listy z Praag", w której Bohaterowie Graczy zwalczali Armię Wielkiego Wodza Chaosu Grobara Błądzącego jako herosi Imperium. W historii znalazły się również nawiązania do jednostrzałowej sesji rozegranej na 4 edycji Warhammera "Sukno z Langre".*
 
 **Warhammer Fantasy Role Play 2ed**

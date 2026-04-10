@@ -8,7 +8,7 @@ kampania: ["miecze-cnot-i-grzechow"]
 tags: [bohater-niezalezny, l5k, samurajski]
 ---
 
-![[Pasted image 20260327124654.png]]
+![[Encyklopedia/Bohaterowie Niezalezni/assets/Pasted image 20260327124654.png]]
 
 
 ## Statystyki

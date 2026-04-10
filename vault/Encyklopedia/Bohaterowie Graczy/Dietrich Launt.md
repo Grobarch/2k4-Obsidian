@@ -7,7 +7,7 @@ gracz: Krzysztof OBSTAWSKI
 tags: [bohater-gracza, wfrp, dark-fantasy]
 ---
 
-![[zbroja.jpeg]]
+![[Encyklopedia/Bohaterowie Graczy/assets/zbroja.jpeg]]
 
 ## Statystyki
 

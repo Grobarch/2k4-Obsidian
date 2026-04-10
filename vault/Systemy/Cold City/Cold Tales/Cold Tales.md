@@ -9,6 +9,8 @@ tags: [kampania, cold-city, szpiegowski, horror]
 draft: "false"
 ---
 
+![[Systemy/Cold City/Cold Tales/assets/Cold Tales Po drugiej stronie Berlina Arkadiusz Rygiel.png]]
+*Ilustracja: Arkadiusz Rygiel*
 
 <div class="obsidian-only">
 

@@ -14,7 +14,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja nr 7 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 7 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg]]
 Ilustracja: Piotr RYGIEL
 
 W piątek 21 października 2022 r. rozgrywaliśmy epizod 7 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Długie szpony Barona Morin".

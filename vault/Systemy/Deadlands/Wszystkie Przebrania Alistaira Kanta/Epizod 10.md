@@ -54,7 +54,7 @@ Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 Paweł PIOTROWSKI jako rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Oślizgły Zegarmistrz.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Oślizgły Zegarmistrz.jpg]]
 
 W pozostałych rolach:
 
