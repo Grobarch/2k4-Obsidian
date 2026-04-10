@@ -1,14 +1,14 @@
 ---
 title: 'Epizod 4: "Dziecię w czarny pancerz zakute"'
 type: epizod
-system: wfrp
+system: wfrp-2ed
 system_pelna: Warhammer Fantasy Role Play 2ed
-kampania_link: /systemy/wfrp/listy-z-praag
+kampania_link: /systemy/wfrp-2ed/kampanie/listy-z-praag
 kampania: listy-z-praag
 mg: Arkadiusz RYGIEL
 data: 2013-06-09
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2013/06/warhammer-fantasy-role-play-2ed-z-praag.html"
-tags: [epizod, wfrp, dark-fantasy]
+tags: [epizod, wfrp-2ed, dark-fantasy]
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 title: "Losy bohaterówprzez żarna czasu ścierane"
 type: kampania
-system: wfrp
+system: wfrp-2ed
 system_pelna: Warhammer Fantasy Role Play 2ed
 mg: Arkadiusz RYGIEL
 gatunek: fantasy
-tags: [kampania, wfrp, dark-fantasy, fantasy]
+tags: [kampania, wfrp-2ed, dark-fantasy, fantasy]
 draft: "false"
 ---
 
@@ -44,7 +44,7 @@ views:
     name: Epizody
     filters:
       and:
-        - file.inFolder("Systemy/Wfrp/Losy Bohaterow")
+        - file.inFolder("Systemy/Wfrp 2ed/Kampanie/Losy Bohaterow")
     order:
       - file.name
       - data

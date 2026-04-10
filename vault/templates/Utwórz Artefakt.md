@@ -19,7 +19,9 @@ const SYSTEMS = [
   { id: "7th-sea",        name: "7th Sea",               pelna: "7th Sea" },
   { id: "wampir",         name: "Wampir: Mroczne Wieki", pelna: "Wampir: Mroczne Wieki" },
   { id: "wiedzmin",       name: "Wiedźmin",              pelna: "Wiedźmin: Gra Wyobraźni" },
-  { id: "wfrp",           name: "WFRP 2ed",              pelna: "Warhammer Fantasy Role Play" },
+  { id: "wfrp-1ed",       name: "Warhammer 1ed",         pelna: "Warhammer Fantasy Role Play 1ed" },
+  { id: "wfrp-2ed",       name: "Warhammer 2ed",         pelna: "Warhammer Fantasy Role Play 2ed" },
+  { id: "wfrp-4ed",       name: "Warhammer 4ed",         pelna: "Warhammer Fantasy Role Play 4ed" },
   { id: "wolsung",        name: "Wolsung",               pelna: "Wolsung: Magia Wieku Pary" },
 ];
 
@@ -39,10 +41,12 @@ const KAMPANIE = {
   "7th-sea":        [{ id: "w-maskach",       name: "W maskach",      link: "/systemy/7th-sea/w-maskach" }],
   "wampir":         [{ id: "diabel-z-lazareni", name: "Diabeł z Łazareni", link: "/systemy/wampir/diabel-z-lazareni" }],
   "wiedzmin":       [{ id: "sludzy-miecza",   name: "Słudzy miecza",  link: "/systemy/wiedzmin/sludzy-miecza" }],
-  "wfrp":           [
-    { id: "listy-z-praag",  name: "Listy z Praag",  link: "/systemy/wfrp/listy-z-praag" },
-    { id: "losy-bohaterow", name: "Losy bohaterów", link: "/systemy/wfrp/losy-bohaterow" },
+  "wfrp-1ed":       [],
+  "wfrp-2ed":       [
+    { id: "listy-z-praag",  name: "Listy z Praag",  link: "/systemy/wfrp-2ed/kampanie/listy-z-praag" },
+    { id: "losy-bohaterow", name: "Losy bohaterów", link: "/systemy/wfrp-2ed/kampanie/losy-bohaterow" },
   ],
+  "wfrp-4ed":       [],
   "wolsung": [],
 };
 

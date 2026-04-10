@@ -26,7 +26,9 @@ export const SYSTEM_NAMES = {
   "7th-sea":        "7th Sea",
   "wampir":         "Wampir: Mroczne Wieki",
   "wiedzmin":       "Wiedźmin: Gra Wyobraźni",
-  "wfrp":           "Warhammer Fantasy Role Play",
+  "wfrp-1ed":       "Warhammer Fantasy Role Play 1ed",
+  "wfrp-2ed":       "Warhammer Fantasy Role Play 2ed",
+  "wfrp-4ed":       "Warhammer Fantasy Role Play 4ed",
   "wolsung":        "Wolsung: Magia Wieku Pary",
 };
 

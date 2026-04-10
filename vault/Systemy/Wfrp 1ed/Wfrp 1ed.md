@@ -1,10 +1,10 @@
 ---
-title: Warhammer Fantasy Role Play
+title: Warhammer Fantasy Role Play 1ed
 type: system
-system: wfrp
-wydawca: Games Workshop / Copernicus
+system: wfrp-1ed
+wydawca: Games Workshop / Pegasus
 gatunek: dark fantasy
-tags: [system, wfrp, dark-fantasy]
+tags: [system, wfrp-1ed, dark-fantasy]
 draft: "false"
 ---
 
@@ -24,7 +24,7 @@ actions:
 
 ## Opis
 
-Gra fabularna osadzona w mrocznym świecie Warhammer Fantasy -- ponurej, brudnej wersji renesansowej Europy ogarniętej Chaosem, plagą i korupcją. Gracze zaczynają jako zwykli ludzie -- szczurołapy, żebracy i służący -- i próbują przetrwać w świecie, który ich nienawidzi. Kultowy system znany z wysokiej śmiertelności, czarnego humoru i wyjątkowo klimatycznego settingu.
+Pierwsza edycja kultowego systemu RPG osadzonego w mrocznym świecie Warhammer Fantasy — ponurej, brudnej wersji renesansowej Europy ogarniętej Chaosem, plagą i korupcją. Gracze zaczynają jako zwykli ludzie — szczurołapy, żebracy i służący — i próbują przetrwać w świecie, który ich nienawidzi. Kultowy system znany z wysokiej śmiertelności, czarnego humoru i wyjątkowo klimatycznego settingu.
 
 ## Kampanie
 
@@ -38,7 +38,7 @@ views:
     name: Kampanie
     filters:
       and:
-        - file.inFolder("Systemy/Wfrp")
+        - file.inFolder("Systemy/Wfrp 1ed/Kampanie")
     order:
       - file.name
       - mg
@@ -59,7 +59,7 @@ views:
     name: Scenariusze
     filters:
       and:
-        - system == ["wfrp-1ed", "wfrp-4ed"]
+        - file.inFolder("Systemy/Wfrp 1ed/Scenariusze")
     order:
       - file.name
       - data
@@ -70,4 +70,4 @@ views:
 
 ## Wszystkie strony
 
-Przegladaj: [wszystkie strony z tagiem *wfrp*](/tags/wfrp)
+Przegladaj: [wszystkie strony z tagiem *wfrp-1ed*](/tags/wfrp-1ed)

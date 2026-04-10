@@ -46,9 +46,19 @@
       "pelna": "Wiedźmin: Gra Wyobraźni"
     },
     {
-      "id": "wfrp",
-      "name": "Warhammer Fantasy Role Play",
-      "pelna": "Warhammer Fantasy Role Play"
+      "id": "wfrp-1ed",
+      "name": "Warhammer 1ed",
+      "pelna": "Warhammer Fantasy Role Play 1ed"
+    },
+    {
+      "id": "wfrp-2ed",
+      "name": "Warhammer 2ed",
+      "pelna": "Warhammer Fantasy Role Play 2ed"
+    },
+    {
+      "id": "wfrp-4ed",
+      "name": "Warhammer 4ed",
+      "pelna": "Warhammer Fantasy Role Play 4ed"
     },
     {
       "id": "wolsung",
@@ -135,18 +145,20 @@
         "link": "/systemy/wiedzmin/sludzy-miecza"
       }
     ],
-    "wfrp": [
+    "wfrp-1ed": [],
+    "wfrp-2ed": [
       {
         "id": "listy-z-praag",
         "name": "Listy Z Praag",
-        "link": "/systemy/wfrp/listy-z-praag"
+        "link": "/systemy/wfrp-2ed/kampanie/listy-z-praag"
       },
       {
         "id": "losy-bohaterow",
         "name": "Losy Bohaterow",
-        "link": "/systemy/wfrp/losy-bohaterow"
+        "link": "/systemy/wfrp-2ed/kampanie/losy-bohaterow"
       }
     ],
+    "wfrp-4ed": [],
     "wolsung": []
   }
 }

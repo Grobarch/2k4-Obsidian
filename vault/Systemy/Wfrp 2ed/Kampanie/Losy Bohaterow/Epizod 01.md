@@ -1,14 +1,14 @@
 ---
 title: 'Epizod 1: "Ogniste organy z Karak-Din"'
 type: epizod
-system: wfrp
+system: wfrp-2ed
 system_pelna: Warhammer Fantasy Role Play 2ed
-kampania_link: /systemy/wfrp/losy-bohaterow
+kampania_link: /systemy/wfrp-2ed/kampanie/losy-bohaterow
 kampania: losy-bohaterow
 mg: Arkadiusz RYGIEL
 data: 2022-06-19
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2022/06/rpg-papierowe-rpg-gry-fabularne.html"
-tags: [epizod, wfrp, dark-fantasy]
+tags: [epizod, wfrp-2ed, dark-fantasy]
 ---
 
 

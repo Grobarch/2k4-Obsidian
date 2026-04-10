@@ -1,14 +1,14 @@
 ---
 title: 'Epizod 1: "Mówiące mury"'
 type: epizod
-system: wfrp
+system: wfrp-2ed
 system_pelna: Warhammer Fantasy Role Play 2ed
-kampania_link: /systemy/wfrp/listy-z-praag
+kampania_link: /systemy/wfrp-2ed/kampanie/listy-z-praag
 kampania: listy-z-praag
 mg: Arkadiusz RYGIEL
 data: 2012-07-19
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2012/07/warhammer-fantasy-role-play-2ed-z-praag.html"
-tags: [epizod, wfrp, dark-fantasy]
+tags: [epizod, wfrp-2ed, dark-fantasy]
 ---
 
 
