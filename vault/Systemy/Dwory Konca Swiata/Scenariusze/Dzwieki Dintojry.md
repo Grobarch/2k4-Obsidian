@@ -7,6 +7,6 @@ data: 2013-06-15
 tags: [scenariusz, dwory-konca-swiata]
 ---
 
-![](Dziedzictwo Imperium Dźwięki dintojry Arkadiusz Rygiel.png)
+![[Systemy/Dwory Konca Swiata/Scenariusze/assets/Dziedzictwo Imperium Dźwięki dintojry Arkadiusz Rygiel.png]]
 Ilustracja: Konrad "Pan Vinek" WINNIEWSKI
 [Dziedzictwo Imperium "Dźwięki dintojry" PDF (Pobierz)](https://drive.google.com/file/d/1WQUjJ52RTjrrTgeBv3g5owKtol-vGp3N/view?usp=sharing)

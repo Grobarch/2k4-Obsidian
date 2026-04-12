@@ -1,10 +1,12 @@
 ---
 title: Ragesh Astuana
 type: bohater-gracza
-system: wfrp
-system_pelna: Warhammer Fantasy Role Play
+system: wfrp-2ed
+system_pelna: Warhammer Fantasy Role Play 2ed
 gracz: Paweł OBSTAWSKI
-tags: [bohater-gracza, wfrp, dark-fantasy]
+kampania_link: ["/systemy/wfrp-2ed/kampanie/losy-bohaterow"]
+kampania: [losy-bohaterow]
+tags: [bohater-gracza, wfrp-2ed, dark-fantasy]
 ---
 
 ![Portret Ragesh Astuana](placeholder.jpg)
@@ -12,7 +14,7 @@ tags: [bohater-gracza, wfrp, dark-fantasy]
 
 ## Statystyki
 
-<!-- SYSTEM: wfrp -->
+<!-- SYSTEM: wfrp-2ed -->
 *Brak statystyk mechanicznych — postać opisana narracyjnie.*
 
 ## Opis

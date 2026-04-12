@@ -14,7 +14,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja nr 9 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 9 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg]]
 
 *Ilustracja: Piotr RYGIEL*
 

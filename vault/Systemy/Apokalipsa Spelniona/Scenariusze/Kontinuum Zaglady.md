@@ -17,13 +17,13 @@ Arkadiusz RYGIEL
 
 Poniższy tekst, to scenariusz filmowej sesji w konwencji horroru, rozgrywający się w realiach Settingu Apokalipsa Spełniona: Czas Cthulhu autorstwa Pawła „Chimery" Cybuli.
 
-![](Kontinuum zagłady 1 Piotr Rygiel.jpg)
+![[Systemy/Apokalipsa Spelniona/Scenariusze/assets/Kontinuum zagłady 1 Piotr Rygiel.jpg]]
 
 *Ilustracje: Piotr RYGIEL*
 
-![](Kontinuum zagłady 2 Piotr Rygiel.jpg)
-![](Kontinuum zagłady 3 Piotr Rygiel.jpg)
-![](Kontinuum zagłady 4 Piotr Rygiel.jpg)
+![[Systemy/Apokalipsa Spelniona/Scenariusze/assets/Kontinuum zagłady 2 Piotr Rygiel.jpg]]
+![[Systemy/Apokalipsa Spelniona/Scenariusze/assets/Kontinuum zagłady 3 Piotr Rygiel.jpg]]
+![[Systemy/Apokalipsa Spelniona/Scenariusze/assets/Kontinuum zagłady 4 Piotr Rygiel.jpg]]
 
 **W grupie siła, czyli kilka słów o Bohaterach**
 

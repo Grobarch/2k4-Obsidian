@@ -14,7 +14,7 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-![](Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Czerwony Szeryf.jpg)
+![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - Czerwony Szeryf.jpg]]
 
 *Ilustracja: Piotr RYGIEL*
 

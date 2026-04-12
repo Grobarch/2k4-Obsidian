@@ -55,6 +55,9 @@ jobs:
       - name: Validate frontmatter
         run: node scripts/validate-frontmatter.mjs quartz/content/
 
+      - name: Verify internal links (warnings)
+        run: node scripts/verify-links.mjs --dir quartz/content --warn-only
+
       - name: Build Quartz
         working-directory: quartz
         run: node ./quartz/bootstrap-cli.mjs build

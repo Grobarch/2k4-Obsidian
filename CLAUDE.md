@@ -41,7 +41,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   │   ├── Utwórz Epizod.md    ← formularz tworzenia epizodu
 │   │   ├── Utwórz Scenariusz.md ← formularz tworzenia scenariusza
 │   │   ├── systems-data.json    ← dane systemów i kampanii (single source for templates)
-│   │   └── statblocks/         ← statbloki per system (l5k, wfrp, cold-city, ...)
+│   │   └── statblocks/         ← statbloki per system (l5k, wfrp-1ed, wfrp-2ed, wfrp-4ed, cold-city, ...)
 ├── scripts/
 │   ├── schema.mjs                 ← kanoniczny schemat frontmatter (single source of truth)
 │   ├── shared.mjs                 ← wspólne utility (parseFrontmatter, slugify, findMdFiles)
