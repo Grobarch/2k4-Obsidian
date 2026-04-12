@@ -7,6 +7,8 @@ vault/.obsidian/plugins/*/main.js
 vault/.obsidian/plugins/*/styles.css
 vault/*.base
 quartz/content/
+.claude/launch.json
+.claude/settings.local.json
 .claude/*
 !.claude/skills/
 .vscode/
