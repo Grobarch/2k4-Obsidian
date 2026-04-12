@@ -461,6 +461,11 @@ Dostępne: `7th-sea`, `cold-city`, `deadlands`, `gasnace-slonca`, `generic` (fal
 `honor-i-krew`, `l5k`, `mafia-ggf`, `wampir`, `wfrp-1ed`, `wfrp-2ed`, `wfrp-4ed`,
 `wideo-rpg`, `wiedzmin`, `wolsung`.
 
+Do tworzenia/aktualizacji użyj skillu `/statblock` (`.claude/skills/statblock/SKILL.md`) —
+dokumentuje konwencje, prowadzi przez rejestrację w `SYSTEM_NAMES` i automatyzuje
+propagację zmian na 78 istniejących notatek BG/BN przez `scripts/apply-statblock.mjs`
+(bezpiecznie nadpisuje tylko puste statbloki, wypełnione zgłasza do ręcznej migracji).
+
 ### Ukrywanie przycisków w widoku web
 
 Przyciski są owinięte w `<div class="obsidian-only">`.
