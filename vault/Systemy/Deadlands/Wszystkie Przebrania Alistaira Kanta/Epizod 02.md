@@ -24,7 +24,7 @@ Ilustracja: Piotr RYGIEL
 
 **Epizod 2: "Tajemnicza przeszłość Pani Abigail Croft"**
 
-**Scena 1. "Machając kapeluszami stróżom prawa na pożegnanie - ucieczka z Heartville"**
+**Scena 1. "Machając kapeluszami stróżom prawa na pożegnanie - ucieczka z [[Heartville]]"**
 Ledwo co opadł dym po strzelaninie ze Stróżami Prawa. Szalony Mickey znajduje u jednego z Rangerów list gończy za Antoine Malo oraz notatnik. Z zapisków wynika, że podejrzany przemieszczał się w stronę miasteczka Redstone, aby wziąć udział w jakiejś tajemniczej grze. Dziwna walizka natomiast miała być elementem puli wejściowej w karcianej rozgrywce o bardzo wysokie stawki.
 
 **Scena 2. "Poganiajcie konie, Pistoleros - widzę gwiazdy i nie są to gwiazdy na niebie"**

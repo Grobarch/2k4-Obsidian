@@ -18,5 +18,17 @@ Wiosna 1106 roku kalendarza Szmaragdowego Cesarstwa. Pan Ketsuki Miyagi udaje s
 
 ## Wystąpienia
 
-
-- [Epizod 4 cz. 1: "Trzecie ostrze to Nieczystość Fujunbutsu..."](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz1)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -59,6 +59,17 @@ księga Hoyle'a niezawodność 16 na stronach: Lustereczko
 
 ## Wystąpienia
 
-
-- [Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta](/encyklopedia/bohaterowie-graczy)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

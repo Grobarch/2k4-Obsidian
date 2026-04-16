@@ -40,9 +40,17 @@ tags:
 
 ## Wystąpienia
 
-
-- [Epizod 3: "Ręka Czerwonego Szeryfa"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-03)
-- [Epizod 5: "Antoine Malo wypełza z grobu"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-05)
-- [Epizod 6: "Figury Domu La Rue"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-06)
-- [Epizod 7: "Długie szpony Barona Morin"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-07)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

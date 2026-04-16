@@ -13,12 +13,24 @@ tags: [artefakt, deadlands, western, horror]
 
 ## Opis
 
-Walizka z Heartville"**
+Walizka z Heartville
 
 **Scena 1. "Duszna atmosfera w Saloonie Crazy Horseshoe"**
 Skonfederowane Stany Zjednoczone. Heartville w Stanie Missouri.
 
 ## Wystąpienia
 
-
-- [Epizod 1: "Walizka z Heartville"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-01)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

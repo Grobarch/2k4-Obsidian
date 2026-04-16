@@ -47,6 +47,17 @@ Komplet mieczy daisho długi miecz katana z czarnej stali obrażenia 4z4 i krót
 
 ## Wystąpienia
 
-
-- [Epizod 7: "Rozprawa z Księciem Cienia w Pajęczym Świecie"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-07)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -41,8 +41,17 @@ tags: [bohater-gracza, l5k, samurajski]
 
 ## Wystąpienia
 
-
-- [Epizod 4 cz. 1: "Trzecie ostrze to Nieczystość Fujunbutsu..."](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz1)
-- [Epizod 4 cz. 2: "Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz2)
-- [Epizod 8: "Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-08)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

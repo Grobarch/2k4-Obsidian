@@ -39,6 +39,17 @@ Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri, Zmiennokształtn
 
 ## Wystąpienia
 
-
-- [Szaleństwo Mistrza Okamury](/scenariusze/l5k1ed/szalenstwo-mistrza-okamury)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

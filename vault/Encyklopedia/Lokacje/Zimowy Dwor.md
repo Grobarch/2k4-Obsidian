@@ -17,5 +17,17 @@ Zimowy Dwór w dzień pojedynku. Żurawie i Lwy są już w mieście. Dworzanie z
 
 ## Wystąpienia
 
-
-- [Epizod 8: "Niedokończony pojedynek Żurawia i Lwa w Zimowym Dworze"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-08)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

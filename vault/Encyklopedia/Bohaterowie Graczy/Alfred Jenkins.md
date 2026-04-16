@@ -40,6 +40,17 @@ pistolet, szabla
 
 ## Wystąpienia
 
-
-- [Bestia z Crystal Creek](/scenariusze/wolsung/bestia-z-crystal-creek)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

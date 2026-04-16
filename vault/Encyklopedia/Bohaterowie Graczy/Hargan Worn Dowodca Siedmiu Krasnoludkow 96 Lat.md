@@ -30,6 +30,17 @@ Krasnolud o rudych włosach, nosi czarną opaskę przesłaniającą lewy oczodó
 
 ## Wystąpienia
 
-
-- [Rys Fabularny — Słudzy miecza i brzęczących monet](/systemy/wiedzmin/sludzy-miecza/rys-fabularny)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -17,5 +17,17 @@ Nieumarły koń galopuje na horyzoncie. Jest strażnikiem pradawnego miejsca. Za
 
 ## Wystąpienia
 
-
-- [Epizod 9: "Wędrówka do Drzewa Duchów"](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/epizod-09)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -47,6 +47,17 @@ Broń odebrana wrogom lub pobratymcom
 
 ## Wystąpienia
 
-
-- [Epizod 1: "Niebiański Kowal Sorakara porwany do Krain Cienia przez Martwe Oczy Shindame"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-01)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

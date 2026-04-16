@@ -47,4 +47,17 @@ daisho, wachlarz, dużo pieniędzy
 
 ## Wystąpienia
 
-- Legenda Pięciu Kręgów 1ed - Kampania do L5K1ed "Prawidła zdrady" - Scenariusz RPG - Epizod 1: "Droga wilka"
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

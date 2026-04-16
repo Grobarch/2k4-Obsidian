@@ -23,8 +23,17 @@ tags: [bohater-gracza, wfrp-2ed, dark-fantasy]
 
 ## Wystąpienia
 
-
-- [Epizod 1: "Ogniste organy z Karak-Din"](/systemy/wfrp/losy-bohaterow/epizod-01)
-- [Epizod 2: "Szata czyniąca obłęd"](/systemy/wfrp/losy-bohaterow/epizod-02)
-- [Epizod 3: "Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem"](/systemy/wfrp/losy-bohaterow/epizod-03)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

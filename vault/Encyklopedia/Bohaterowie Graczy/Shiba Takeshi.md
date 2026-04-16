@@ -41,9 +41,17 @@ tags: [bohater-gracza, l5k, samurajski]
 
 ## Wystąpienia
 
-
-- [Epizod 3 cz. 2: "Tajemnica długowieczności Świetlistego Kapłana..."](/systemy/l5k/miecze-cnot-i-grzechow/epizod-03-cz2)
-- [Epizod 4 cz. 1: "Trzecie ostrze to Nieczystość Fujunbutsu..."](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz1)
-- [Epizod 4 cz. 3: "Mroczny Książę ucieka do Jigoku"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz3)
-- [Epizod 5: "Chciwa klinga szuka dla siebie sługi, nie pana"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-05)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

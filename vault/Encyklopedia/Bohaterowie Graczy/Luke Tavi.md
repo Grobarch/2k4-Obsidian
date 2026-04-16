@@ -40,6 +40,17 @@ karabin
 
 ## Wystąpienia
 
-
-- [Most na rzece Anok](/scenariusze/wolsung/most-na-rzece-anok)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

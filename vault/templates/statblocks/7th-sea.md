@@ -1,25 +1,43 @@
-| Cecha | Wartość |
-|-------|:-------:|
-| Krzepkość (Brawn)    | |
-| Zwinność (Finesse)   | |
-| Spryt (Wits)         | |
-| Wytrwałość (Resolve) | |
-| Wdzięk (Panache)     | |
-
 **Naród:** — **Tajne Towarzystwo:** —
-**Przeszłości:** —
-**Zalety:** —
+**Przeszłość:** —
 
 ---
 
-**Umiejętności:** —
+| Cecha                | Ocena | Kości |
+| -------------------- | :---: | :---: |
+| Krzepkość (Brawn)    |       |       |
+| Zwinność (Finesse)   |       |       |
+| Spryt (Wits)         |       |       |
+| Wytrwałość (Resolve) |       |       |
+| Wdzięk (Panache)     |       |       |
 
-**Arkana — Cnota:** — **Arkana — Ułomność:** —
+**Zalety:** — **Wady:** —
 
 ---
 
-**Wątki (Stories):** —
+**Knacki:**
+
+| Knack                | Cecha | Rangi | | Knack                | Cecha | Rangi |
+| -------------------- | :---: | :---: |-| -------------------- | :---: | :---: |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+|                      |       |       | |                      |       |       |
+
+---
+
+**Szkoła szermierki:** — **Manewry:** —
+
+**Magia:** —
+
+---
+
+**Rany Dramatyczne:** ○ ○ ○ ○ ○
 
 **Ekwipunek:** —
 
-**Punkty Bohatera:** —
+**Kości Dramatyczne:** —

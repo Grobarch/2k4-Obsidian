@@ -44,6 +44,17 @@ Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wężowy C
 
 ## Wystąpienia
 
-
-- [Epizod 4 cz. 3: "Mroczny Książę ucieka do Jigoku"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz3)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

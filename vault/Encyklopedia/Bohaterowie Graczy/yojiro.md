@@ -43,6 +43,17 @@ Ubranie podróżne, kimona, miecz katana, miecz wakizashi,**koń, siodło, koc, 
 
 ## Wystąpienia
 
-
-- [Bohaterowie Graczy — Wszystkie przebrania Alistaira Kanta](/encyklopedia/bohaterowie-graczy)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

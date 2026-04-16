@@ -46,6 +46,17 @@ Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku 
 
 ## Wystąpienia
 
-
-- [Epizod 4 cz. 2: "Szturm na Mały Zamek Żądeł w Mieście Słodkich Kłamstw"](/systemy/l5k/miecze-cnot-i-grzechow/epizod-04-cz2)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -17,5 +17,17 @@ Hortusa". Epizod 1 "Banda wyrzutków staje się grupą poszukiwaczy na usługach
 
 ## Wystąpienia
 
-
-- [Epizod 1: "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis"](/systemy/gasnace-slonca/tajemnice-z-hortusa/epizod-01)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

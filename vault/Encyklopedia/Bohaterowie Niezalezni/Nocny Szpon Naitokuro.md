@@ -39,6 +39,17 @@ Nocny Szpon Naitokuro, Zmiennokształtny mutant z Mrocznej Szkoły Zabójców Cz
 
 ## Wystąpienia
 
-
-- [Epizod 2: "Pierwsze ostrze to Pycha Hokori..."](/systemy/l5k/miecze-cnot-i-grzechow/epizod-02)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

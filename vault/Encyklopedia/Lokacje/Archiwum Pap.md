@@ -19,5 +19,17 @@ Długie i mozolne poszukiwania w stosach akt, przynoszą efekty. Gorki znajduje 
 
 ## Wystąpienia
 
-
-- [Epizod 1: "Kryptonim przybysz"](/systemy/cold-city/cold-tales/epizod-01)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

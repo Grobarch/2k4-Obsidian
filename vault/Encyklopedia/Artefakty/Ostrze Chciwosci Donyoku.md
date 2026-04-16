@@ -17,5 +17,17 @@ Ostrze Chciwości Don'yoku"***Obrażenia 3z3. Szermierz dzierżący miecz otrzym
 
 ## Wystąpienia
 
-
-- [Epizod 3 cz. 2: "Tajemnica długowieczności Świetlistego Kapłana..."](/systemy/l5k/miecze-cnot-i-grzechow/epizod-03-cz2)
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

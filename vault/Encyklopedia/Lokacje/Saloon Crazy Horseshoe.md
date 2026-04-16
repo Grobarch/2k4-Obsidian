@@ -17,4 +17,17 @@ tags: [lokacja, deadlands, western, horror]
 
 ## Wystąpienia
 
-*Do uzupełnienia.*
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

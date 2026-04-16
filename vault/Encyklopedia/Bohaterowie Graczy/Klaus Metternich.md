@@ -47,6 +47,17 @@ Laska z ukrytym ostrzem, kamizelka kuloodporna
 
 ## Wystąpienia
 
-
-- [Szpiegowska gra](/scenariusze/wolsung/szpiegowska-gra)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

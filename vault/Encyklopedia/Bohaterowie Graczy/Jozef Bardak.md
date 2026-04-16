@@ -23,7 +23,17 @@ Pracuje w PAP jako jeden z asystentów ppłk. Arkadego Kazakowa. Sowieci próbuj
 
 ## Wystąpienia
 
-
-- [Epizod 1: "Kryptonim przybysz"](/systemy/cold-city/cold-tales/epizod-01)
-- [Epizod 2: "Kryptonim pajęczyna"](/systemy/cold-city/cold-tales/epizod-02)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

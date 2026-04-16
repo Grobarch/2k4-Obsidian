@@ -30,6 +30,17 @@ tags: ["bohater-niezalezny", "Wiedźmin", "dark-fantasy", "wiedzmin"]
 
 ## Wystąpienia
 
-
-- [Epizod 4: "Przywódca Scoia'tael"](/systemy/wiedzmin/sludzy-miecza/epizod-04)
-
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
