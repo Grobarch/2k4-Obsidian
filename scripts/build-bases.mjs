@@ -137,6 +137,15 @@ function parseExpr(expr) {
   const folderMatch = expr.match(/^file\.inFolder\(["'](.+?)["']\)$/);
   if (folderMatch) return { special: "inFolder", path: folderMatch[1] };
 
+  // Specjalne: file.hasLink(this.file) — backlinki (kto linkuje do bieżącej notatki)
+  if (/^file\.hasLink\(this\.file\)$/.test(expr)) {
+    return { special: "hasLinkIncoming" };
+  }
+  // Specjalne: this.file.hasLink(file) — outlinki (bieżąca notatka linkuje do kandydata)
+  if (/^this\.file\.hasLink\(file\)$/.test(expr)) {
+    return { special: "hasLinkOutgoing" };
+  }
+
   // Nieobsługiwane — wyrażenia z dowolnymi wywołaniami funkcji lub this.*
   if (/\(/.test(expr) || /\bthis\b/.test(expr)) {
     return { unsupported: true, expr };
@@ -161,13 +170,113 @@ function parseExpr(expr) {
   return { field, op, value };
 }
 
+// ---------------------------------------------------------------------------
+// Graf linków (do obsługi file.hasLink / this.file.hasLink)
+// ---------------------------------------------------------------------------
+
+const _norm = p => p.replace(/\\/g, "/");
+
+/**
+ * Wyciąga cele linków wychodzących z treści pliku markdown.
+ * Zwraca Set<string> z surowych celów (slugi lub ścieżki wikilinków).
+ */
+function extractLinkTargets(content) {
+  const targets = new Set();
+  let m;
+
+  // Markdown links: [text](/slug/path) — absolutne linki Quartz
+  const mdRe = /\[[^\]]*\]\(\/([^)#?]+)\)/g;
+  while ((m = mdRe.exec(content)) !== null) {
+    targets.add(m[1]); // slug bez wiodącego /
+  }
+
+  // Wikilinks: [[target]] lub [[target|alias]], z pominięciem embedów ![[...]]
+  const wikiRe = /(?<!!)\[\[([^\]|#]+?)(?:[#|][^\]]*?)?\]\]/g;
+  while ((m = wikiRe.exec(content)) !== null) {
+    const t = m[1].trim();
+    if (/\.(jpg|jpeg|png|gif|svg|webp|bmp|mp3|mp4|pdf|css|js|base)$/i.test(t)) continue;
+    targets.add(t);
+  }
+
+  return targets;
+}
+
+/**
+ * Buduje graf linków: Map<znormalizowana ścieżka pliku → Set<znormalizowana ścieżka celu>>.
+ * Rozwiązuje surowe linki (slugi, wikilinki) do ścieżek plików.
+ */
+async function buildLinkGraph(allFiles, vaultRoot) {
+  // Mapy do rozwiązywania linków
+  const slugToPath = new Map();    // slug → znormalizowana ścieżka
+  const relToPath  = new Map();    // ścieżka względna bez .md → znormalizowana ścieżka
+  const basenameToPath = new Map(); // basename bez .md → [znormalizowane ścieżki]
+
+  for (const fp of allFiles) {
+    const nfp = _norm(fp);
+    const rel = _norm(relative(vaultRoot, fp));
+    const slug = slugify(rel);
+    const relNoExt = rel.replace(/\.md$/i, "");
+    const basename = nfp.split("/").pop().replace(/\.md$/i, "");
+
+    slugToPath.set(slug, nfp);
+    relToPath.set(relNoExt, nfp);
+
+    if (!basenameToPath.has(basename)) basenameToPath.set(basename, []);
+    basenameToPath.get(basename).push(nfp);
+  }
+
+  // Budowanie grafu — odczyt treści i rozwiązywanie linków
+  const graph = new Map();
+
+  for (const fp of allFiles) {
+    const nfp = _norm(fp);
+    const content = await readFile(fp, "utf-8");
+    const rawLinks = extractLinkTargets(content);
+    const resolved = new Set();
+
+    for (const link of rawLinks) {
+      // Jako slug (z markdown linków [text](/slug))
+      let target = slugToPath.get(link);
+      if (target) { resolved.add(target); continue; }
+
+      // Jako ścieżka względna (z wikilinków [[Folder/Plik]])
+      target = relToPath.get(link);
+      if (target) { resolved.add(target); continue; }
+
+      // Po basename (z wikilinków [[Plik]])
+      const candidates = basenameToPath.get(link);
+      if (candidates?.length === 1) { resolved.add(candidates[0]); continue; }
+    }
+
+    graph.set(nfp, resolved);
+  }
+
+  return graph;
+}
+
+// ---------------------------------------------------------------------------
+
 /**
  * Sprawdza czy pojedyncze wyrażenie pasuje do frontmatter + ścieżki pliku.
  */
-function matchExpr(expr, fm, filePath, vaultRoot) {
+function matchExpr(expr, fm, filePath, vaultRoot, linkGraph, currentFile) {
   const parsed = parseExpr(expr);
   if (!parsed) return false;
   if (parsed.unsupported) throw new Error(`unsupported:${parsed.expr}`);
+
+  // file.hasLink(this.file) — kandydat linkuje do bieżącej notatki (backlink)
+  if (parsed.special === "hasLinkIncoming") {
+    if (!linkGraph || !currentFile) return false;
+    const candidateLinks = linkGraph.get(_norm(filePath));
+    return candidateLinks ? candidateLinks.has(_norm(currentFile)) : false;
+  }
+
+  // this.file.hasLink(file) — bieżąca notatka linkuje do kandydata (outlink)
+  if (parsed.special === "hasLinkOutgoing") {
+    if (!linkGraph || !currentFile) return false;
+    const currentLinks = linkGraph.get(_norm(currentFile));
+    return currentLinks ? currentLinks.has(_norm(filePath)) : false;
+  }
 
   // Specjalna: file.inFolder
   if (parsed.special === "inFolder") {
@@ -218,15 +327,15 @@ function matchExpr(expr, fm, filePath, vaultRoot) {
  * Globalne filtry AND view-specific filtry (AND-łączone).
  * Rzuca Error("unsupported:...") gdy filtr zawiera nieobsługiwane wyrażenie.
  */
-function matchesFilters(globalFilters, viewFilters, fm, filePath, vaultRoot) {
+function matchesFilters(globalFilters, viewFilters, fm, filePath, vaultRoot, linkGraph, currentFile) {
   const andConds = [...(globalFilters.and || []), ...(viewFilters?.and || [])];
   const orConds  = [...(globalFilters.or  || []), ...(viewFilters?.or  || [])];
 
   if (andConds.length > 0) {
-    if (!andConds.every(e => matchExpr(e, fm, filePath, vaultRoot))) return false;
+    if (!andConds.every(e => matchExpr(e, fm, filePath, vaultRoot, linkGraph, currentFile))) return false;
   }
   if (orConds.length > 0) {
-    if (!orConds.some(e => matchExpr(e, fm, filePath, vaultRoot))) return false;
+    if (!orConds.some(e => matchExpr(e, fm, filePath, vaultRoot, linkGraph, currentFile))) return false;
   }
   return true;
 }
@@ -459,7 +568,7 @@ function generateOutput(baseConfig, matchedFiles, vaultRoot) {
  * Przetwarza jeden plik .md — zastępuje ![[*.base]] i ```base ... ``` bloki.
  * Zwraca nową treść (lub null jeśli bez zmian).
  */
-async function processMarkdownFile(mdPath, allFiles, vaultRoot) {
+async function processMarkdownFile(mdPath, allFiles, vaultRoot, linkGraph) {
   let content = await readFile(mdPath, "utf-8");
   let changed = false;
 
@@ -496,7 +605,7 @@ async function processMarkdownFile(mdPath, allFiles, vaultRoot) {
     }
 
     const filtered = matched.filter(({ fm, path }) =>
-      matchesFilters(baseConfig.filters, viewFilters, fm, path, vaultRoot)
+      matchesFilters(baseConfig.filters, viewFilters, fm, path, vaultRoot, linkGraph, mdPath)
     );
 
     const output = generateOutput(baseConfig, filtered, vaultRoot);
@@ -533,7 +642,7 @@ async function processMarkdownFile(mdPath, allFiles, vaultRoot) {
     }
 
     const filtered = matched.filter(({ fm, path }) =>
-      matchesFilters(baseConfig.filters, viewFilters, fm, path, vaultRoot)
+      matchesFilters(baseConfig.filters, viewFilters, fm, path, vaultRoot, linkGraph, mdPath)
     );
 
     const output = generateOutput(baseConfig, filtered, vaultRoot);
@@ -555,11 +664,14 @@ async function main() {
   const allFiles = await findMdFiles(targetDir);
   console.log(`[build-bases] Znaleziono ${allFiles.length} plików .md`);
 
+  const linkGraph = await buildLinkGraph(allFiles, targetDir);
+  console.log(`[build-bases] Zbudowano graf linków (${linkGraph.size} plików)`);
+
   let processed = 0;
   let modified = 0;
 
   for (const mdPath of allFiles) {
-    const result = await processMarkdownFile(mdPath, allFiles, targetDir);
+    const result = await processMarkdownFile(mdPath, allFiles, targetDir, linkGraph);
     processed++;
     if (result !== null) {
       await writeFile(mdPath, result, "utf-8");
