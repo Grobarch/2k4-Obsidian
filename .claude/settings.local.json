@@ -15,7 +15,15 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(for f:*)",
       "Bash(do echo:*)",
-      "Read(//f/RPG/RPG_repo/2k4-Obsidian/**)"
+      "Read(//f/RPG/RPG_repo/2k4-Obsidian/**)",
+      "Bash(node scripts/backlinks.mjs --help)",
+      "Bash(node scripts/backlinks.mjs --all)",
+      "Bash(awk '/^---$/{n++} n<2 || \\(n==2 && /^---$/\\){print; if\\(n==2\\)exit}' /tmp/epizod01-before.md)",
+      "Bash(awk '/^---$/{n++} n<2 || \\(n==2 && /^---$/\\){print; if\\(n==2\\)exit}' /tmp/epizod01-after.md)",
+      "Bash(grep -c '```' \"vault/Systemy/Cold City/Cold Tales/Epizod 01.md\")",
+      "Bash(node scripts/backlinks.mjs --file \"vault/templates/backlinks-test-fixture.md\")",
+      "Bash(node -e \"import\\('./scripts/shared.mjs'\\).then\\(async \\({findMdFiles}\\) => { const paths = await findMdFiles\\('vault'\\); const tpl = paths.filter\\(p => p.includes\\('templates'\\)\\); console.log\\('Template paths sample:'\\); console.log\\(tpl.slice\\(0,3\\)\\); const {relative} = await import\\('node:path'\\); for \\(const p of tpl.slice\\(0,3\\)\\) { const rel = relative\\('vault', p\\).replace\\(/\\\\\\\\\\\\\\\\/g, '/'\\); console.log\\('rel:', JSON.stringify\\(rel\\), 'startsWith:', rel.startsWith\\('templates/'\\)\\); } }\\);\")",
+      "Bash(node scripts/_debug_paths.mjs)"
     ]
   }
 }

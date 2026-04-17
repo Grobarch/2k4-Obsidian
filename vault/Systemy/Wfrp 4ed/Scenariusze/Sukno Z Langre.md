@@ -7,7 +7,7 @@ data: 2019-01-19
 tags: [scenariusz, wfrp-4ed]
 ---
 
-![[Systemy/Wfrp/Scenariusze/assets/Sukno z Langre - Arkadiusz RYGIEL - blog autorski.jpg]]
+![[Sukno z Langre - Arkadiusz RYGIEL - blog autorski.jpg]]
 
 *Ilustracja: Piotr RYGIEL*
 
