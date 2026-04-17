@@ -18,7 +18,7 @@ Tekst pierwotnie został opublikowany w 43 numerze Gwiezdnego Pirata.Arkadiusz R
 
 **"Kiedy przemówią miecze"**
 
-Scenariusz do gry fabularnej [Honor i Krew](/systemy/honor-i-krew/honor-i-krew)
+Scenariusz do gry fabularnej Honor i Krew
 
 **Wgrywanie tła.**
 

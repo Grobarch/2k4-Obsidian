@@ -7,7 +7,7 @@ data: 2011-02-20
 tags: [scenariusz, hell-4-leather]
 ---
 
-Poniżej, wrzucam drugi już skrót z sesji [Hell 4 Leather](/systemy/hell-4-leather/hell-4-leather). Gierka rządzi. Można w nią grać o każdej porze i bez żadnych przygotowań. Na dodatek, jest bardzo skutecznym narzędziem do budowania dobrej opowieści i daje dużo frajdy.
+Poniżej, wrzucam drugi już skrót z sesji Hell 4 Leather. Gierka rządzi. Można w nią grać o każdej porze i bez żadnych przygotowań. Na dodatek, jest bardzo skutecznym narzędziem do budowania dobrej opowieści i daje dużo frajdy.
 
 Tym razem, zdecydowaliśmy się na western, dość nietypowy western…
 

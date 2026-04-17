@@ -32,8 +32,8 @@ Krasnoludy kłócą się o pieniądze z Donatanem z Tulendalu. Rycerz negocjuje 
 Zostaje przeprowadzona egzekucja zbirów Tobiasza Hasa, później strażnicy którzy nie stanęli po stronie ludzi barona otrzymują karę chłosty.
 
 **Bohaterowie niezależni**
-**[Dagon Dido, Zabójca, 34 lata](/encyklopedia/bohaterowie-niezalezni/dagon-dido-zabojca-34-lata).**
+**Dagon Dido, Zabójca, 34 lata.**
 Średniej budowy człowiek o oczach różnego koloru. Mężczyzna z blizną przecinającą usta i podbródek. Mistrz czarnego humoru. Nosi metalowe karwasze i czarny płaszcz.
 
-**[Germin Salog, Nożownik, 34 lata](/encyklopedia/bohaterowie-niezalezni/germin-salog-nozownik-34-lata).**
+**Germin Salog, Nożownik, 34 lata.**
 Średniej budowy, łysy człowiek o czarnych oczach. Mężczyzna z blizną i bielmem na prawym oku. Nosi czarny płaszcz.

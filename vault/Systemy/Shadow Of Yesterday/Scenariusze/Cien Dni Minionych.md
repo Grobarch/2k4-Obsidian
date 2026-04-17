@@ -7,7 +7,7 @@ data: 2012-01-02
 tags: [scenariusz, the-shadow-of-yesterday]
 ---
 
-Witam wszystkich w nowym roku! Trochę w ramach rozliczania się z zaległości, dzisiaj będzie kilka słów o **[The Shadow of Yesterday](/systemy/shadow-of-yesterday/shadow-of-yesterday)** oraz krótki gameplay, z uwagami do scenariusza o tym samym tytule. Miłej lektury wszystkim zainteresowanym.
+Witam wszystkich w nowym roku! Trochę w ramach rozliczania się z zaległości, dzisiaj będzie kilka słów o **The Shadow of Yesterday** oraz krótki gameplay, z uwagami do scenariusza o tym samym tytule. Miłej lektury wszystkim zainteresowanym.
 
 **Klucz**
 

@@ -20,7 +20,7 @@ Arkadiusz RYGIEL
 
 **"Miecz Mordu"**
 
-Scenariusz do gry fabularnej [Honor i Krew](/systemy/honor-i-krew/honor-i-krew).
+Scenariusz do gry fabularnej Honor i Krew.
 
 **Słodka trucizna władzy.**
 

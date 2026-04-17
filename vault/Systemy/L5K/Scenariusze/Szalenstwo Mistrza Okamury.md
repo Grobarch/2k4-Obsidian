@@ -9,9 +9,9 @@ tags: [scenariusz, l5k1ed]
 
 ![[Systemy/L5K/Groza Ktora Zawsze Powraca/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 1 Piotr RYGIEL - Legenda Pięciu Kręgów 1ed.jpg]]
 Ilustracja: Piotr RYGIEL
-Kampania do Legendy Pięciu Kręgów 1ed "[Groza, która zawsze powraca](/systemy/l5k/groza-ktora-zawsze-powraca/groza-ktora-zawsze-powraca)". Epizod 1 zatytułowany "Szaleństwo Mistrza Okamury".
+Kampania do Legendy Pięciu Kręgów 1ed "Groza, która zawsze powraca". Epizod 1 zatytułowany "Szaleństwo Mistrza Okamury".
 
-**[Legenda Pięciu Kręgów 1ed](/systemy/l5k/l5k)**
+**Legenda Pięciu Kręgów 1ed**
 **Kampania "Groza, która zawsze powraca"**
 
 **Epizod 1: "Szaleństwo Mistrza Okamury"**
@@ -36,7 +36,7 @@ Pan Mirumoto Haruki jest młodzieńcem w wieku dwudziestu trzech wiosen. Otrzyma
 Uczeń szkoły Mirumoto. Ma trzydzieści trzy lata. Jest wojownikiem potężnej postury. Ma czarne włosy i zielone oczy. Świetnie włada toporem bojowym Ono. Obecnie w jego posiadaniu znajduje się relikt z wyrytymi na stylisku jadeitowym znakami. Do tej pory nikomu nie było dane zidentyfikować pisma na broni. Topór jest bronią rodową, którą dzierżył dziadek Yojimbo Pan Mirumoto Masuchi. Wojownik darzy broń wielkim szacunkiem. Każdego wieczoru rytualnie czyści i ostrzy topór, któremu zawdzięcza życie. Ono nosi ślady wielokrotnego użytkowania. Mimo tego, jego ostrze jest ostre jak brzytwa.
 *OGIEŃ 3, Zręczność 3, Inteligencja 3, ZIEMIA 3, Wytrzymałość 3, Siła Woli 3, POWIETRZE 2, Refleks 2, Intuicja 2, WODA 2, Siła 4, Spostrzegawczość 2, PUSTKA 3, ono atak 7z3, ono obrażenia 7z3, PT trafienia 10/20 (+10 ze względu na ciężką zbroję), RANGA 2 w szkole bushi Mirumoto, TECHNIKI: Droga smoka, Silny i szybki, HONOR 2.5, CHWAŁA 4.5, UMIEJĘTNOŚCI: Kenjutsu 3, Kyujutsu 3, Onojutsu 4, Obrona 2, Medytacja 2, Wiedza o shugenja 2, Heraldyka 2, Historia 2, Taktyka 4, Jeździectwo 3, ZALETY: Potęga ziemi 8, WADY: Zbyt pewny siebie 3, RANY 6:0, 12:-1, 18:-2, 24:-3, 30:-4, 36:Obalony, 42:Nieprzytomny, 48:Martwy, MAJĄTEK: Zielone kimono dobrej jakości, komplet mieczy daisho długi miecz katana obrażenia 3z2 i krótki miecz wakizashi obrażenia 2z2, koń z siodłem i oporządzeniem, Relikt: topór bojowy Ono "Czerpak krwi" - zadaje obrażenia 4z3, emanuje jasnością, gdy sługi Krain Cienia są w pobliżu, ciężka zbroja O-yoroi w kolorze zieleni.*
 
-**Pan [Hida Mitsuru](/encyklopedia/bohaterowie-graczy/hida-mitsuru), Dowódca pododdziału, Doświadczony żołnierz.**
+**Pan Hida Mitsuru, Dowódca pododdziału, Doświadczony żołnierz.**
 
 Pan Hida Mitsuru jest w średnim wieku. Wysoki. Przeciętnej budowy ciała. Ma ciemne włosy i niebieskie oczy. Harmonię jego twarzy burzy blizna biegnąca od prawego oka, przechodząca przez podbródek aż do szyi. To pamiątka z młodzieńczych lat. Dowódca jest człowiekiem pogodnym i wielce honorowym. Kiedy trzeba bez problemu potrafi utrzymać swoich ludzi w ryzach. Wraz ze swoim pododdziałem został przydzielony do zadania zgładzenia złego ducha Oni, który zabijał zwiadowców. Ma służyć pod rozkazami Pana Hidy Hikaru. Będzie starał się wypełnić obowiązki jak najlepiej.
 *OGIEŃ 3, Zręczność 3, Inteligencja 3, ZIEMIA 3, Wytrzymałość 3, Siła Woli 3, POWIETRZE 2, Refleks 3, Intuicja 2, WODA 2, Siła 3, Spostrzegawczość 2, PUSTKA 2, katana atak 6z2, katana obrażenia 6z2, PT trafienia 15/25 (+10 ze względu na ciężką zbroję), RANGA 2 w szkole bushi Hida, TECHNIKI: Droga kraba, Gór nie można poruszyć, HONOR 2.0, CHWAŁA 5.5, UMIEJĘTNOŚCI: Kenjutsu 4, Kyujutsu 4, Onojutsu 3, Obrona 4, Heraldyka 2, Historia 3, Taktyka 4, Jeździectwo 5, Wiedza: o Krainach Cienia 4, ZALETY: Edeityczna pamięć 3, WADY: Przekleństwo Benten 3, RANY 6:0, 12:-1, 18:-2, 24:-3, 30:-4, 36:Obalony, 42:Nieprzytomny, 48:Martwy, MAJĄTEK: Czarne kimono dobrej jakości, komplet mieczy daisho długi miecz katana obrażenia 3z2 i krótki miecz wakizashi obrażenia 2z2, koń z siodłem i oporządzeniem, ciężka zbroja O-yoroi w kolorze czerni.*
@@ -71,7 +71,7 @@ Położona pomiędzy wzgórzami. Potężna i niezdobyta. Wieńczy zachodnią cz�
 Przybycie do Twierdzy Ostrza Brzasku. Zadanie odnalezienia pism Mistrza Okamury. Rozkaz zorganizowania wyprawy w celu zabicia złego ducha Oni Odrzyskóry Hifu-Hosshin mordującego zwiadowców w okolicach Góry Grot Dokutsu. Panowie Nushiro i Tetsu otrzymują listy zawiadamiające o uzbrojonej ekspedycji do Krain Cienia w celu zgładzenia bestii.
 
 **Scena 2. "Powiewające sztandary nad Twierdzą Ostrza Brzasku - Stary Smok pośród strzegących swych tajemnic Krabów"**
-Twierdza. Na wietrze powiewają sztandary Klanu Kraba i Rodziny Kaiu. Przy drodze ukrzyżowani głowami w dół złoczyńcy. Twierdzę otacza niewielka liczba wiosek. Obecne domy gry, domy gejsz, palarnie opium i herbaciarnie. Na polach ciężko pracują wieśniacy zahartowani przez los. Zakwaterowanie i pobyt w warowni. Spotkanie z Panem Mirumoto Yoshim, który także wybiera się na Górę Grot Dokutsu, aby odnaleźć córkę Panią Yoko. Pobyt w herbaciarni. Pan Tetsu i Pan Nushiro są wypytywani o samuraja imieniem [Hida Hikaru](/encyklopedia/bohaterowie-graczy/hida-hikaru).
+Twierdza. Na wietrze powiewają sztandary Klanu Kraba i Rodziny Kaiu. Przy drodze ukrzyżowani głowami w dół złoczyńcy. Twierdzę otacza niewielka liczba wiosek. Obecne domy gry, domy gejsz, palarnie opium i herbaciarnie. Na polach ciężko pracują wieśniacy zahartowani przez los. Zakwaterowanie i pobyt w warowni. Spotkanie z Panem Mirumoto Yoshim, który także wybiera się na Górę Grot Dokutsu, aby odnaleźć córkę Panią Yoko. Pobyt w herbaciarni. Pan Tetsu i Pan Nushiro są wypytywani o samuraja imieniem Hida Hikaru.
 
 **Scena 3. "Dni ciszy w Krainach Cienia - starcie z bandą goblinów Bakemono - zasadzka płatnego mordercy Aoki Goro w jaskiniach Góry Grot Dokutsu"**
 Wyprawa do Góry Grot Dokutsu. Podróż zajmuje trzy dni marszu. Góra oddalona jest około stu mil od Muru Cieśli. Na pierwszy rzut oka Krainy Cienia nie różnią się niczym zewnętrznie od pozostałych ziem. Niepokojąca może być nienaturalna cisza. Promienie boskiej Amaterasu z trudem przebijają się przez skłębione ciemne chmury i opary. Dalej w głąb krajobraz ulega większym wypaczeniom. Widoczna obecność wszechobecnego żywiołu zepsucia. Magia również ulega zniekształceniom za sprawą złych duchów Kansen. Drugiego dnia dochodzi do zbrojnego ataku zorganizowanego przez bandę goblinów Bakemono. Trzeciego dnia przybycie do stóp góry. Widoczna na szczycie świątynia bogini słońca Amaterasu. Długa droga wśród jaskiń. Zasadzka pośród ciasnych grot przygotowana przez płatnego mordercę o imieniu Aoki Goro. Postój i nocleg.
@@ -90,16 +90,16 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Paweł PIOTROWSKI jako shugenja z Klanu Smoka i Szmaragdowy Namiestnik Pan [Agasha Damagodetsu](/encyklopedia/bohaterowie-graczy/agasha-damagodetsu)
-Radosław RYBIŃSKI jako bushi z Klanu Feniksa Pan [Shiba Tetsu](/encyklopedia/bohaterowie-graczy/shiba-tetsu)
-Krzysztof OBSTAWSKI jako shugenja z Klanu Feniksa Pan [Isawa Mamoru](/encyklopedia/bohaterowie-graczy/isawa-mamoru)
+Paweł PIOTROWSKI jako shugenja z Klanu Smoka i Szmaragdowy Namiestnik Pan Agasha Damagodetsu
+Radosław RYBIŃSKI jako bushi z Klanu Feniksa Pan Shiba Tetsu
+Krzysztof OBSTAWSKI jako shugenja z Klanu Feniksa Pan Isawa Mamoru
 Dawid KOŁACIŃSKI jako bushi z Klanu Kraba Pan Hida Hikaru
 Tomasz TYMIŃSKI jako bushi z Klanu Kraba Pan Hida Mitsuru
-Paweł OBSTAWSKI jako tsukai-sagasu z Klanu Kraba Pan [Kuni Takajiro](/encyklopedia/bohaterowie-graczy/kuni-takajiro)
+Paweł OBSTAWSKI jako tsukai-sagasu z Klanu Kraba Pan Kuni Takajiro
 
-oraz Piotr RYGIEL jako bushi z Klanu Lwa Pan [Akodo Nushiro](/encyklopedia/bohaterowie-graczy/akodo-nushiro)
+oraz Piotr RYGIEL jako bushi z Klanu Lwa Pan Akodo Nushiro
 
 W pozostałych rolach:
 
-**[Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](/encyklopedia/bohaterowie-niezalezni/zly-duch-oni-odrzyskora-hifu-hosshin-z-mglistych-bagien-kiri), Zmiennokształtny koszmar potrafiący przybierać różne postaci i formy.**
+**Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri, Zmiennokształtny koszmar potrafiący przybierać różne postaci i formy.**
 OGIEŃ 5, Zręczność 5, Inteligencja 5, ZIEMIA 5, Wytrzymałość 5, Siła Woli 5, POWIETRZE 3, Refleks 5, Intuicja 3, WODA 5, Siła 6, Spostrzegawczość 5, PUSTKA 4, szpony atak 9z5, kły atak 9z5, szpony obrażenia 9z4, kły obrażenia 9z2, PT trafienia 25, UMIEJĘTNOŚCI: Walka: szpony 2, RANY 10:0, 20:-1, 30:-2, 40:-3, 50:-4, 60:Obalony, 70:Nieprzytomny, 80:Martwy.

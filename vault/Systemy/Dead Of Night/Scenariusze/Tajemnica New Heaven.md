@@ -7,7 +7,7 @@ data: 2011-02-27
 tags: [scenariusz, dead-of-night]
 ---
 
-**[Dead of Night](/systemy/dead-of-night/dead-of-night)** to kolejny nowy system, w który grałem po raz pierwszy u Chimery. Co do gry, pisałem o niej trochę wcześniej w notce podsumowującej Falkon i Zjavę. Emuluje horror i dynamicznie napędza rozwój akcji. Mechanika wspiera narrację, a tworzenie postaci zajmuje chwilę. Jeśli lubicie kiepskie horrory to ta gra jest stworzona właśnie dla Was. Poniżej tradycyjnie skrót scenariusza. Miłej lektury wszystkim zainteresowanym.
+**Dead of Night** to kolejny nowy system, w który grałem po raz pierwszy u Chimery. Co do gry, pisałem o niej trochę wcześniej w notce podsumowującej Falkon i Zjavę. Emuluje horror i dynamicznie napędza rozwój akcji. Mechanika wspiera narrację, a tworzenie postaci zajmuje chwilę. Jeśli lubicie kiepskie horrory to ta gra jest stworzona właśnie dla Was. Poniżej tradycyjnie skrót scenariusza. Miłej lektury wszystkim zainteresowanym.
 
 W trakcie gry, wykorzystałem patent Chimery do tworzenia BNów. Każdy z graczy miał okazje stworzyć dwie postaci tła, opisując je na małych karteczkach. Jest to o tyle przydatne, że w pewnym momencie, bohaterowie tła giną jak muchy. Dzięki temu zabiegowi, mamy ich trochę lepiej zarysowanych, w szybki sposób i przy udziale wszystkich graczy. Taka mała burza mózgów na zapełnienie świata przedstawionego.
 

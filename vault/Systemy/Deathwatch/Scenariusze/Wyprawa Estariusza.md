@@ -7,7 +7,7 @@ data: 2020-07-25
 tags: [scenariusz, deathwatch]
 ---
 
-**[Deathwatch RPG](/systemy/deathwatch/deathwatch)**
+**Deathwatch RPG**
 
 **„Wyprawa Estariusa"**
 

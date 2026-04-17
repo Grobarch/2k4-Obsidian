@@ -17,9 +17,9 @@ tags: [epizod, deadlands, western, horror]
 ![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 6 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg]]
 Ilustracja: Piotr RYGIEL
 
-W piątek 14 października 2022 r. rozgrywaliśmy epizod 6 kampanii do Deadlands "[Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta)" zatytułowany "Figury Domu La Rue".
+W piątek 14 października 2022 r. rozgrywaliśmy epizod 6 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Figury Domu La Rue".
 
-**[Deadlands: Martwe Ziemie](/systemy/deadlands/deadlands)**
+**Deadlands: Martwe Ziemie**
 **Kampania "Wszystkie przebrania Alistaira Kanta"**
 
 **Epizod 6: "Figury Domu La Rue"**
@@ -44,6 +44,6 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Krzysztof OBSTAWSKI jako kanciarz [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer)
-Paweł PIOTROWSKI jako rewolwerowiec i ochroniarz [Timothy Crawford III](/encyklopedia/bohaterowie-graczy/timothy-crawford-iii)
-oraz Tomasz TYMIŃSKI jako rewolwerowiec [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey)
+Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
+Paweł PIOTROWSKI jako rewolwerowiec i ochroniarz Timothy Crawford III
+oraz Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey

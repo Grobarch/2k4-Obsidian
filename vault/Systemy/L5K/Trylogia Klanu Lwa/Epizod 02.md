@@ -14,7 +14,7 @@ tags: [epizod, l5k, samurajski]
 
 ---
 
-**Legenda Pięciu KręgówKampania "[Trylogia Klanu Lwa](/systemy/l5k/trylogia-klanu-lwa/trylogia-klanu-lwa)"Epizod 2: „Miecz nienawiści”**
+**Legenda Pięciu KręgówKampania "Trylogia Klanu Lwa"Epizod 2: „Miecz nienawiści”**
 
 Rokugan stojący przed widmem wojny domowej. Głód pogrąża kraj. Bunty chłopskie są kwestią czasu w tych niespokojnych czasach.
 

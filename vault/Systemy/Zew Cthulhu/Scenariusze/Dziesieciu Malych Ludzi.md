@@ -7,7 +7,7 @@ data: 2011-02-05
 tags: [scenariusz, zew-cthulhu]
 ---
 
-Poniżej skrót scenariusza do [Zew Cthulhu](/systemy/zew-cthulhu/zew-cthulhu). Opowieść utrzymana w stylistyce starego horroru i filmu noir. Życzę miłej lektury wszystkim zainteresowanym.
+Poniżej skrót scenariusza do Zew Cthulhu. Opowieść utrzymana w stylistyce starego horroru i filmu noir. Życzę miłej lektury wszystkim zainteresowanym.
 
 **"Dziesięciu małych ludzi"**
 

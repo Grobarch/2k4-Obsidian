@@ -10,7 +10,7 @@ tags: [scenariusz, wiedzmin]
 
 ---
 
-**Kampania "[Słudzy miecza i brzęczących monet](/systemy/wiedzmin/sludzy-miecza/sludzy-miecza)"**
+**Kampania "Słudzy miecza i brzęczących monet"**
 
 Słudzy miecza i pobrzękujących monet to kampania do gry fabularnej Wiedźmin. Opowiadający o najemnikach, ludziach którzy przelewają krew dla pieniędzy. Traktujący o świecie w którym życie jest towarem, a śmierć usługą. Gdzie jedynie głupiec czuje się bezpiecznie. W tych realiach pojęcia takie jak wiara, miłość, honor i przyjaźń, często stają się pustymi słowami, nabierającymi jeszcze bardziej mglistego znaczenia w trudnych nieprzewidzianych sytuacjach.
 
@@ -24,27 +24,27 @@ Małe miasto handlowe z kamienia we wschodniej Temerii o brudnym, prowincjonalny
 
 **Bohaterowie graczy**
 
-**[Donatan z Tulendalu h. Niedźwiedź, Rycerz Zakonu Białej Róży, 32 lata, znany również jako 'Łowca Elfów'](/encyklopedia/bohaterowie-graczy/donatan-z-tulendalu-h-niedzwiedz-rycerz-zakonu-bialej-rozy-32-lata-znany-rowniez-jako-lowca-elfow).**
+**Donatan z Tulendalu h. Niedźwiedź, Rycerz Zakonu Białej Róży, 32 lata, znany również jako 'Łowca Elfów'.**
 
 Możny pan ze szklanym lewym okiem o blond włosach przystrzyżonych do hełmu. Ma bliznę na prawym ramieniu od elfiego grotu. Jego ojca Hugona z Tulendalu zabiły elfy. Nosi białą zakonną szatę z czarnymi elementami uzupełnianą przez karminowy płaszcz z emblematem białej róży. Walczy mieczem dwuręcznym.
 
-**[Turin Siekacz, Najemnik, 25 lat](/encyklopedia/bohaterowie-graczy/turin-siekacz-najemnik-25-lat).**
+**Turin Siekacz, Najemnik, 25 lat.**
 
 Człowiek o piwnych oczach i szerokiej, płaskiej twarzy z wyrazem wiecznego niezadowolenia. Nosi proste, pocerowane ubranie.
 
-**[Axel Adelhoff, Czarodziej, 29 lat](/encyklopedia/bohaterowie-graczy/axel-adelhoff-czarodziej-29-lat).**
+**Axel Adelhoff, Czarodziej, 29 lat.**
 
 Łysy z tatuażem na głowie. Ubiera długą szatę z rozcięciami i szerokimi rękawami. Nosi misternie zdobiony złoty amulet i duży pierścień na prawej dłoni. Na czas podróży zawsze zakłada napierśnik.
 
-**[Meth Zin, Czarodziej, 28 lat](/encyklopedia/bohaterowie-graczy/meth-zin-czarodziej-28-lat).**
+**Meth Zin, Czarodziej, 28 lat.**
 
 Młody adept magii. Karierowicz, który dla władzy zrobi wszystko. Znawca kultury elfów i dziwożon. Oddelegowany do specjalnego oddziału Barona Richolfa z Hage.
 
-**[Hargan Worn, Dowódca Siedmiu Krasnoludków, 96 lat](/encyklopedia/bohaterowie-graczy/hargan-worn-dowodca-siedmiu-krasnoludkow-96-lat).**
+**Hargan Worn, Dowódca Siedmiu Krasnoludków, 96 lat.**
 
 Krasnolud o rudych włosach, nosi czarną opaskę przesłaniającą lewy oczodół. Prawą nogę ma strzaskaną dlatego nosi na  niej szynę skonstruowaną przez gnomy. Łysieje, nosi kolczyki w prawym uchu. No co dzień ubiera się w prosty żołnierski strój. Nienawidzi elfów. Ma wytatuowane ramiona.
 
-**[Grunt Syn Herga, Sierżant Siedmiu Krasnoludków, 85 lat](/encyklopedia/bohaterowie-graczy/grunt-syn-herga-sierzant-siedmiu-krasnoludkow-85-lat).**
+**Grunt Syn Herga, Sierżant Siedmiu Krasnoludków, 85 lat.**
 
 Łysol z tatuażami na głowie o źle zrośniętym nosie, bezoki, na opasce przesłaniającej oczodół ma namalowane oko. Nosi dumnie swe blizny. Wszył czerwoną nicią runy ochronne w kołnierzyk. Na co dzień ubiera proste ubranie.
 
@@ -194,7 +194,7 @@ Hage, Możny, 40 lat.**
 Rudzielec o paskudnym charakterze. Dobrze ubrany.
 Wyróżniający się częstą zmianą nastrojów. Furiat i rasista.
 
-**[Włodarz Tis Seval, Współpracownik Scoia’tael, 38 lat](/encyklopedia/bohaterowie-graczy/wlodarz-tis-seval-wspolpracownik-scoia-tael-38-lat).**
+**Włodarz Tis Seval, Współpracownik Scoia’tael, 38 lat.**
 
 Dobrze ubrany półelf.
 

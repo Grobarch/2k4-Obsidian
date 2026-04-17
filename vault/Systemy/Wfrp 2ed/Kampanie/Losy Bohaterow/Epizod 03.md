@@ -18,7 +18,7 @@ tags: [epizod, wfrp-2ed, dark-fantasy]
 *Ilustracja: Piotr RYGIELW sobotę 10 września 2022 r. rozgrywaliśmy epizod 3 kampanii*
 „Losy bohaterów przez żarna czasu ścierane” zatytułowany: "Umowa z Szarym Prorokiem Snitrilem Płonącym Językiem".
 
-**[Warhammer Fantasy Role Play 2ed](/systemy/wfrp-2ed/wfrp-2ed)**
+**Warhammer Fantasy Role Play 2ed**
 
 **Kampania „Losy bohaterów przez żarna czasu ścierane”**
 
@@ -31,7 +31,7 @@ W śmierdzących tunelach pod miastem Bohaterowie Graczy ścierają się z Wojow
 Z ciemnicy korytarzy wyłaniają się zwiadowcy Szczuroludzi. Chcą nałożyć Bohaterom Graczy worki na głowy i przeprowadzić ukrytym przejściem do swojego pana. Protagoniści decydują się spotkać w wybranym przez siebie miejscu i na swoich warunkach. Po kwadransie zjawia się przywódca Skavenów. Postacie Graczy zaczynają otaczać zewsząd iskrzące się szczurze oczy. Snitril jest kaleką przemieszczającym się na lewitującym, zawansowanym technologicznie tronie. Towarzyszy mu Szczurogr z mechanicznymi ramionami, z których bucha para, imieniem Tuat Żelaznoręki oraz kilkunastu doborowych Sztormverminów. Płonący Język pragnie dobić targu z Protagonistami. Informuje Bohaterów o wpływie wiedźmy Morgalis Czerwonowłosej na Małego Wodza Chaosu Borgora Pełzającego. Armia Chaosu wierzy, że póki wiedźma jest z nimi nie mogą ponieść klęski. Szary Prorok zdradza, że kobieta znajduje się w zrujnowanej świątyni Sigmara na Żółtym Wzgórzu, około trzech dni drogi na północny-wschód od miasta. Szczuroludzie mają otrzymać Sukno z Langre po odparciu armii najeźdźców. Skaveni przekazują ponadto Rageshowi Astuana spaczokarabin, spaczopistolet i dziesięć granatów swojej produkcji, które mają pomóc w porwaniu wiedźmy.
 
 **Scena 3. "Szalona szarża Wyznawców Chaosu na mury miasta - szańce"**
-[Dietrich Launt](/encyklopedia/bohaterowie-graczy/dietrich-launt) organizuje podjazd pod rozstawiające się Siły Chaosu. Arcykapłan dzięki meldunkom swoich zwiadowców orientuje się, że Wojownicy Chaosu zbierają się do morderczej szarży, którą mają zamiar wykonać z marszu. Sługa Ulryka w porę organizuje obronę dedykowaną na ten wariant przeciwnika. Ogniste Organy z Karak-Din z wysokich murów dziesiątkują Barbarzyńców i Zwierzoludzi. Obrońcy odrzucają drabiny przystawiane przez krwiożerczych napastników. Atak zostaje przełamany przez uderzenie lekkiej jazdy z flanki, która rozbija główne ugrupowanie najeźdźców i doprowadza do przerwania w linii natarcia.
+Dietrich Launt organizuje podjazd pod rozstawiające się Siły Chaosu. Arcykapłan dzięki meldunkom swoich zwiadowców orientuje się, że Wojownicy Chaosu zbierają się do morderczej szarży, którą mają zamiar wykonać z marszu. Sługa Ulryka w porę organizuje obronę dedykowaną na ten wariant przeciwnika. Ogniste Organy z Karak-Din z wysokich murów dziesiątkują Barbarzyńców i Zwierzoludzi. Obrońcy odrzucają drabiny przystawiane przez krwiożerczych napastników. Atak zostaje przełamany przez uderzenie lekkiej jazdy z flanki, która rozbija główne ugrupowanie najeźdźców i doprowadza do przerwania w linii natarcia.
 
 **Scena 4. "Imperialny podjazd - plan porwania wiedźmy - wrzosowiska"**
 W podjazd wyrusza dziewięciu członków Połączonego Kolegium Obrony Starego Świata. Bohaterowie Graczy prowadzeni przez Ragesha Astuana wymykają się szczelnie ustawionym patrolom, które osobiście podlegają pod Zastępcę Wodza Chaosu - Krota Rdzawego. Protagoniści likwidują po drodze jedną z czujek przeciwnika. Postacie Graczy docierają do ruin świątyni Sigmara na Żółtym Wzgórzu. Czarownicy strzeże sześciu Wojowników Chaosu dowodzonych przez bezwzględnego Gezuma Ropiejącego...
@@ -44,6 +44,6 @@ Napisy końcowe...
 W rolach głównych wystąpili:
 
 Krzysztof OBSTAWSKI jako Dietrich Launt
-Paweł OBSTAWSKI jako [Ragesh Astuana](/encyklopedia/bohaterowie-graczy/ragesh-astuana)
-Paweł PIOTROWSKI jako [Gunter Herrmann](/encyklopedia/bohaterowie-graczy/gunter-herrmann)
-oraz Piotr RYGIEL jako [Simon Gerb](/encyklopedia/bohaterowie-graczy/simon-gerb)
+Paweł OBSTAWSKI jako Ragesh Astuana
+Paweł PIOTROWSKI jako Gunter Herrmann
+oraz Piotr RYGIEL jako Simon Gerb

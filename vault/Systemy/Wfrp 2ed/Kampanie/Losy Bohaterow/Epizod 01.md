@@ -15,9 +15,9 @@ tags: [epizod, wfrp-2ed, dark-fantasy]
 ---
 
 ![[Systemy/Wfrp/Losy Bohaterow/assets/Arkadiusz RYGIEL - blog - ilustracja Piotr RYGIEL.jpg]]
-*Ilustracja: Piotr RYGIELPo kolejnej długiej przerwie w środę 15 czerwca 2022 r. udało nam się rozegrać sesję w klasycznego Warhammera edycję 2. W związku z tym mamy początek Kampanii o tytule „Losy bohaterów przez żarna czasu ścierane”, która "dziedziczy" cześć elementów fabularnych z 2 Sag - Kampanii rozegranej lata temu zatytułowanej "Potęga nie dla głupców", w której Gracze wcielali się w Wojowników Chaosu stojących po drugiej stronie barykady dobra oraz Kampanii "[Listy z Praag](/systemy/wfrp-2ed/kampanie/listy-z-praag/listy-z-praag)", w której Bohaterowie Graczy zwalczali Armię Wielkiego Wodza Chaosu Grobara Błądzącego jako herosi Imperium. W historii znalazły się również nawiązania do jednostrzałowej sesji rozegranej na 4 edycji Warhammera "Sukno z Langre".*
+*Ilustracja: Piotr RYGIELPo kolejnej długiej przerwie w środę 15 czerwca 2022 r. udało nam się rozegrać sesję w klasycznego Warhammera edycję 2. W związku z tym mamy początek Kampanii o tytule „Losy bohaterów przez żarna czasu ścierane”, która "dziedziczy" cześć elementów fabularnych z 2 Sag - Kampanii rozegranej lata temu zatytułowanej "Potęga nie dla głupców", w której Gracze wcielali się w Wojowników Chaosu stojących po drugiej stronie barykady dobra oraz Kampanii "Listy z Praag", w której Bohaterowie Graczy zwalczali Armię Wielkiego Wodza Chaosu Grobara Błądzącego jako herosi Imperium. W historii znalazły się również nawiązania do jednostrzałowej sesji rozegranej na 4 edycji Warhammera "Sukno z Langre".*
 
-**[Warhammer Fantasy Role Play 2ed](/systemy/wfrp-2ed/wfrp-2ed)**
+**Warhammer Fantasy Role Play 2ed**
 
 **Kampania „Losy bohaterów przez żarna czasu ścierane”**
 
@@ -73,7 +73,7 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Krzysztof OBSTAWSKI jako [Dietrich Launt](/encyklopedia/bohaterowie-graczy/dietrich-launt)
-Paweł OBSTAWSKI jako [Ragesh Astuana](/encyklopedia/bohaterowie-graczy/ragesh-astuana)
-Paweł PIOTROWSKI jako [Gunter Herrmann](/encyklopedia/bohaterowie-graczy/gunter-herrmann)
-oraz Piotr RYGIEL jako [Simon Gerb](/encyklopedia/bohaterowie-graczy/simon-gerb)
+Krzysztof OBSTAWSKI jako Dietrich Launt
+Paweł OBSTAWSKI jako Ragesh Astuana
+Paweł PIOTROWSKI jako Gunter Herrmann
+oraz Piotr RYGIEL jako Simon Gerb

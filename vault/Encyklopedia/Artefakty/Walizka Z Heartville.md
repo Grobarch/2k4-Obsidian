@@ -13,7 +13,7 @@ tags: [artefakt, deadlands, western, horror]
 
 ## Opis
 
-Walizka z [Heartville](/encyklopedia/lokacje/heartville)
+Walizka z Heartville
 
 **Scena 1. "Duszna atmosfera w Saloonie Crazy Horseshoe"**
 Skonfederowane Stany Zjednoczone. Heartville w Stanie Missouri.
