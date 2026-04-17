@@ -20,7 +20,7 @@ Amerykanie po raz kolejny, mają wielki problem. Akcja planowana przez Cthulhuko
 
 **Bohaterowie**
 
-**Mjr. Józef Bardak, Funkcjonariusz PAP, Żołnierz KBW.**
+**[[Jozef Bardak|Mjr. Józef Bardak]], Funkcjonariusz PAP, Żołnierz KBW.**
 
 Po ostatnich spektakularnych akcjach, zyskał sobie kilku ważnych przyjaciół. Rywalizuje z Sowietami, starając się pokazać swoją wartość jako dobry komunista i żołnierz. Dąży do umocnienia pozycji personelu pomocniczego z Polskiej Rzeczypospolitej Ludowej. Kandydat na podwójnego agenta, zarówno dla Sowietów, jak i Amerykanów. CIA bada jego powiązania. Amerykanie uważają, że Polak mógł już rozpocząć współpracę z GRU. Co potwierdzałoby hipotezę, o eliminowaniu amerykańskich funkcjonariuszy, w trakcie wykonywanych zadań. Jako jedyny, przetrwał krwawe spotkanie z odmieńcem i żołnierzami Cthulhukopf, w trakcie działań operacyjnych, prowadzonych na terenie opuszczonych magazynów, na obrzeżach Berlina.
 

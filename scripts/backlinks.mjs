@@ -146,6 +146,7 @@ async function buildTargetIndex(rootDir) {
       : (fm.aliases && String(fm.aliases).trim() ? [String(fm.aliases).trim()] : []);
     targets.push({
       url: computeTargetUrl(p, rootDir),
+      wikiTarget: basename(p, ".md"),
       title: String(fm.title).trim(),
       aliases: aliases.map((a) => String(a).trim()),
       filePath: resolve(p),
@@ -157,9 +158,9 @@ async function buildTargetIndex(rootDir) {
 function buildMatchableList(targets) {
   const entries = [];
   for (const t of targets) {
-    entries.push({ phrase: t.title, url: t.url, filePath: t.filePath });
+    entries.push({ phrase: t.title, url: t.url, wikiTarget: t.wikiTarget, filePath: t.filePath });
     for (const alias of t.aliases) {
-      entries.push({ phrase: alias, url: t.url, filePath: t.filePath });
+      entries.push({ phrase: alias, url: t.url, wikiTarget: t.wikiTarget, filePath: t.filePath });
     }
   }
   // Najdłuższe frazy najpierw — żeby "Baron Kamden" trafił przed "Kamden".
@@ -212,31 +213,39 @@ function processNote(content, matchables, sourceFilePath, opts) {
   // Inline code `...`
   masked = masked.replace(/`[^`\n]+`/g, (m) => createMask(m));
 
-  // URL-e już polinkowane w body (wyłuskiwane z originalnego body przez istniejący regex)
+  // Już polinkowane cele — śledzimy po URL (markdown links) i wikiTarget (wikilinks)
   const existingUrls = new Set();
+  const existingWikiTargets = new Set();
   const linkRe = /\]\(([^)]+)\)/g;
+  const wikiRe = /\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g;
   let lm;
   while ((lm = linkRe.exec(body)) !== null) existingUrls.add(lm[1]);
+  while ((lm = wikiRe.exec(body)) !== null) existingWikiTargets.add(lm[1].trim());
 
   const linksInserted = [];
   const usedUrls = new Set(existingUrls);
+  const usedWikiTargets = new Set(existingWikiTargets);
   const resolvedSource = resolve(sourceFilePath);
 
   for (const entry of matchables) {
     if (entry.filePath === resolvedSource) continue; // self-reference
     if (usedUrls.has(entry.url)) continue;
+    if (usedWikiTargets.has(entry.wikiTarget)) continue;
 
     const re = makePhraseRegex(entry.phrase, opts.caseInsensitive);
     const match = masked.match(re);
     if (!match) continue;
 
     const matchedText = match[0];
-    const replacement = `[${matchedText}](${entry.url})`;
-    const token = createMask(replacement);
+    const wikilink = matchedText === entry.wikiTarget
+      ? `[[${entry.wikiTarget}]]`
+      : `[[${entry.wikiTarget}|${matchedText}]]`;
+    const token = createMask(wikilink);
     masked = masked.slice(0, match.index) + token + masked.slice(match.index + matchedText.length);
 
     usedUrls.add(entry.url);
-    linksInserted.push({ phrase: matchedText, url: entry.url });
+    usedWikiTargets.add(entry.wikiTarget);
+    linksInserted.push({ phrase: matchedText, url: entry.wikiTarget });
   }
 
   // Unmask — każdy token pojawia się dokładnie raz.

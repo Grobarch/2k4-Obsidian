@@ -14,13 +14,13 @@ tags: [epizod, cold-city, szpiegowski, horror]
 
 ---
 
-Poniżej, zapis z krótkiej sesji Cold City. W ostatnim odcinku, funkcjonariusze spotkali się z odmienionym przez dziwną „substancję” człowiekiem. Kontakt przeżył jedynie sławny mjr. Józef Bardak. Cthulhukopf sprawdzał siłę i możliwości wykorzystania sterowanych żołnierzy. Eksperyment został oceniony pozytywnie. Zakonspirowane nazistowskie gremia w związku z nasiloną aktywnością, są podejrzewane o planowanie złożonej akcji na dużą skalę. PAP stawia swoje struktury w podwyższonej gotowości…
+Poniżej, zapis z krótkiej sesji [[Cold City]]. W ostatnim odcinku, funkcjonariusze spotkali się z odmienionym przez dziwną „substancję” człowiekiem. Kontakt przeżył jedynie sławny mjr. Józef Bardak. Cthulhukopf sprawdzał siłę i możliwości wykorzystania sterowanych żołnierzy. Eksperyment został oceniony pozytywnie. Zakonspirowane nazistowskie gremia w związku z nasiloną aktywnością, są podejrzewane o planowanie złożonej akcji na dużą skalę. PAP stawia swoje struktury w podwyższonej gotowości…
 
 **"Kryptonim władcy marionetek”**
 
 **Bohaterowie**
 
-**Mjr. Józef Bardak, Funkcjonariusz PAP, Żołnierz KBW.**
+**[[Jozef Bardak|Mjr. Józef Bardak]], Funkcjonariusz PAP, Żołnierz KBW.**
 
 Po ostatnich spektakularnych akcjach, zyskał sobie kilku ważnych przyjaciół. Rywalizuje z Sowietami, starając się pokazać swoją wartość jako dobry komunista i żołnierz. Dąży do umocnienia pozycji personelu pomocniczego z Polskiej Rzeczypospolitej Ludowej. Kandydat na podwójnego agenta, zarówno dla Sowietów, jak i Amerykanów. CIA bada jego powiązania. Amerykanie uważają, że Polak mógł już rozpocząć współpracę z GRU. Co potwierdzałoby hipotezę, o eliminowaniu amerykańskich funkcjonariuszy, w trakcie wykonywanych zadań. Jako jedyny przetrwał krwawe spotkanie z odmieńcem i żołnierzami Cthulhukopf, w trakcie działań operacyjnych, prowadzonych na terenie opuszczonych magazynów, na obrzeżach Berlina.
 

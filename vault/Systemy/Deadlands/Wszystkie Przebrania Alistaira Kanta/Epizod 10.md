@@ -14,17 +14,17 @@ tags: [epizod, deadlands, western, horror]
 
 ---
 
-*W czwartek 5 stycznia 2023 r. rozgrywaliśmy epizod 10 kończący kampanię do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Czerwobog, czyli potworne oblicze Walkelina La Rue".*Ilustracja: Piotr RYGIEL
+*W czwartek 5 stycznia 2023 r. rozgrywaliśmy epizod 10 kończący kampanię do Deadlands "[[Wszystkie Przebrania Alistaira Kanta|Wszystkie przebrania Alistaira Kanta]]" zatytułowany "Czerwobog, czyli potworne oblicze Walkelina La Rue".*Ilustracja: Piotr RYGIEL
 **Deadlands: Martwe ZiemieKampania "Wszystkie przebrania Alistaira Kanta"Epizod 10: "Czerwobog, czyli potworne oblicze Walkelina La Rue"**
 
 **Scena 1. "Gałęzie Drzewa Duchów Ihitaka - broń na mrocznego maga - skalp z Trupiogrzywego"**
-Bohaterowie Graczy sięgają po gałęzie nieziemskiego drzewa. Budulec zdaje się przeszywać rzeczywistość. Drewno posłuży za broń przeciwko mrocznemu władcy Domu La Rue. Timothy Crawford III zabiera ogon Trupiogrzywego jako skalp.
+Bohaterowie Graczy sięgają po gałęzie nieziemskiego drzewa. Budulec zdaje się przeszywać rzeczywistość. Drewno posłuży za broń przeciwko mrocznemu władcy Domu La Rue. [[Timothy Crawford III]] zabiera ogon Trupiogrzywego jako skalp.
 
 **Scena 2. "Narada przy bilardowym stole w saloonie 10 Shots w Redstone w Stanie Missouri"**
 Posse omawia szczegóły wejścia do Tajemniczego Domu. Compadres zbroją się na potęgę przed spotkaniem z nieznanymi sobie zagrożeniami.
 
 **Scena 3. "Celne jest oko Truposza - strzelec na skale - po drugiej stronie tafli jeziora Circle Lake"**
-Hombres trafiają do miejsca tajemniczego portalu prowadzące do Domu La Rue. Wejście ukryte jest w odbiciu w wodzie. Przybytek jest niewidoczny dla ludzkich oczu. Jedynie przejście przez wyobrażenie drzwi, objawiające się w tafli jeziora, umożliwia przedostanie się „na drugą stronę”. Nagle z ukrycia padają strzały. Pierwsza kula trafia w głowę Panią Abigail Croft odbierając jej życie na miejscu. Druga przeszywa udo małego Herberta. Chłopiec umiera. Posse udaje się wykryć strzelca na jednej ze skał. Rozpoczyna się regularna wymiana ognia. Timothy trafia śmiertelnie napastnika w ramię. Mimo tego, postać zaczyna odczołgiwać się na ziemi. Mickey chce dobić Wygrzebańca. Powstrzymują go Yojiro i Weibenmauer. Jacob Hoover dobiega do rannego. Strzelcem okazuje się Rod Lake, którego dusza została uwolniona przez Protagonistów z więzienia Czerwonego Szeryfa. Żywy Trup ma włożone w czaszkę dziwne, promieniujące niebieską poświatą oczy. Przemawiając słowami Alistaira Kanta zaprasza do domu bez "niepotrzebnych przewodników". Hoover strzela w głowę Truposza. Jedynym żywym uciekinierem z domostwa jest Jean-Pierre Bassard. Malarz wprowadza Bohaterów do Dziwnego Domu.
+Hombres trafiają do miejsca tajemniczego portalu prowadzące do Domu La Rue. Wejście ukryte jest w odbiciu w wodzie. Przybytek jest niewidoczny dla ludzkich oczu. Jedynie przejście przez wyobrażenie drzwi, objawiające się w tafli jeziora, umożliwia przedostanie się „na drugą stronę”. Nagle z ukrycia padają strzały. Pierwsza kula trafia w głowę Panią Abigail Croft odbierając jej życie na miejscu. Druga przeszywa udo małego Herberta. Chłopiec umiera. Posse udaje się wykryć strzelca na jednej ze skał. Rozpoczyna się regularna wymiana ognia. Timothy trafia śmiertelnie napastnika w ramię. Mimo tego, postać zaczyna odczołgiwać się na ziemi. Mickey chce dobić Wygrzebańca. Powstrzymują go [[yojiro|Yojiro]] i Weibenmauer. [[Jacob Hoover]] dobiega do rannego. Strzelcem okazuje się Rod Lake, którego dusza została uwolniona przez Protagonistów z więzienia Czerwonego Szeryfa. Żywy Trup ma włożone w czaszkę dziwne, promieniujące niebieską poświatą oczy. Przemawiając słowami Alistaira Kanta zaprasza do domu bez "niepotrzebnych przewodników". Hoover strzela w głowę Truposza. Jedynym żywym uciekinierem z domostwa jest Jean-Pierre Bassard. Malarz wprowadza Bohaterów do Dziwnego Domu.
 
 **Scena 4. "Podróże przez własne koszmary - najlepszym wyjściem ze złych snów jest wyzbycie się strachu"**
 Protagoniści rzucają się w wodę. Timothy trafia do miasteczka, w którym Indianie torturują jego rodzinę. Jacob jest w płonącym szybie kopalnianym. Yojiro trafia do Drzewa Duchów. Na gałęzi siedzi jego przyjaciel z zaszytymi ustami - japoński zabójca potworów Pan Todawa Ujinaga. Mickey wychodzi na Main Street do pojedynku. Na zegarze wybija dwunasta. Żaden z jego rewolwerów nie jest sprawny. Weibenmauer spotyka swojego ojca w mieście trawionym przez zarazę. Timothy pokonuje Indian i uwalnia rodzinę. Jacob odnajduje wyjście z kopalni. Yojiro rozcina usta samuraja. Mickey rzuca się w drzwi salonu balwierza i ucieka ze strzelaniny. Weibenmauer otrzymuje od ojca niesamowity kieszonkowy zegarek z kosmicznymi zdobieniami, który umożliwia mu opuszczenie pogrążonego w epidemii miasteczka.
@@ -48,9 +48,9 @@ Koniec kampanii "Wszystkie przebrania Alistaira Kanta"
 
 W rolach głównych wystąpili:
 
-Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł OBSTAWSKI jako ronin Yojiro
-Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
+Krzysztof OBSTAWSKI jako kanciarz [[Klaus Von Weibenmauer|Klaus von Weibenmauer]]
+Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
+Tomasz TYMIŃSKI jako rewolwerowiec [[Szalony Mickey]]
 Paweł PIOTROWSKI jako rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 
@@ -58,7 +58,7 @@ oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 
 W pozostałych rolach:
 
-Ilustracja: Piotr RYGIELOślizgły Zegarmistrz po raz pierwszy pojawia się w scenariuszu zatytułowanym "Kontinuum zagłady" osadzonym w realiach settingu według pomysłu Pawła "Chimery" CYBULI "Apokalipsa Spełniona: Czas Cthulhu". Tekst pierwotnie został opublikowany 9 sierpnia 2012 roku na witrynie zewcthulhu.pl**Walkelin La Rue, Król Głupców, mag i właściciel Dziwnego Domostwa z Redstone. Wierny uczeń i szafarz Alistaira Kanta.**
+Ilustracja: Piotr RYGIELOślizgły Zegarmistrz po raz pierwszy pojawia się w scenariuszu zatytułowanym "Kontinuum zagłady" osadzonym w realiach settingu według pomysłu Pawła "Chimery" CYBULI "[[Apokalipsa Spelniona|Apokalipsa Spełniona: Czas Cthulhu]]". Tekst pierwotnie został opublikowany 9 sierpnia 2012 roku na witrynie zewcthulhu.pl**Walkelin La Rue, Król Głupców, mag i właściciel Dziwnego Domostwa z Redstone. Wierny uczeń i szafarz Alistaira Kanta.**
 *CHARYZMA: 2k12, Dowodzenie 4, Tresura 3, Zastraszanie 5, DUCH: 5k12, Jaja 5, Wiara: Mściciele 6, Wiara: Istoty z Mitów Cthulhu, SIŁA: 4k6, SPOSTRZEGAWCZOŚĆ: 2k10, Przenikliwość 5, Szukanie 4, Tropienie 2, SPRAWNOŚĆ: 4k10, Jeździectwo 4, Pływanie 4, Skradanie 4, Uniki 4, Walka: drewniana laska z ukrytym ostrzem 5, Wspinaczka 4, SPRYT: 4k10, Blef 5, SZYBKOŚĆ: 4k12, Dobywanie:**drewniana laska z ukrytym ostrzem 4**, Dobywanie: rewolwery 2, Dobywanie: karabiny 2, Dobywanie: strzelby 2, WIEDZA: 5k12, Wykształcenie: okultyzm 6, Wykształcenie: mity cthulhu 6, Znajomość terenu: Kraina Wiecznych Łowów 6, WIGOR: 5k12, ZRĘCZNOŚĆ: 2k12, Rzucanie: gromy zagłady 6, Strzelanie: rewolwery 2,*Strzelanie: karabiny 2, Strzelanie: strzelby 2, TEMPO: 12, ROZMIAR: 6, MOCE: Gromy zagłady 5, Iluzja 4, Mroczna ochrona 5, Nawiedzenie 3, Niewidzialny sługa 3, Ogłuszenie 4, Pakt 4, Peleryna zła 5, Przemiana 5 (Czerwobog), Przerażenie 4, Władca Marionetek 5, Zaraza 5, Zombi 3, DECH: NIE DOTYCZY, KLAMOTY: Smoking w kolorze czerni, gustowny melonik, rzeźbiona laska z motywami wijących się macek z ukrytym ostrzem obrażenia S+2k6.
 
 **Walkelin La Rue w postaci stujardowego Praojca Wszystkich Czerwi Czerwoboga.**

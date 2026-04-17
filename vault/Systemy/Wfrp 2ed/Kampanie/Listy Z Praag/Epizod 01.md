@@ -14,7 +14,7 @@ tags: [epizod, wfrp-2ed, dark-fantasy]
 
 ---
 
-Dzisiaj, będzie trochę o wyjmowaniu trupa z szafy, czyli o drugiej edycji Warhammera. W ten weekend, prowadziłem starej ekipie pierwszą sesję z planowanej minikampanii „Listy z Praag”. Ostatnimi czasy, z Mainstreamu mistrzowałem Black Crusade’a, a i od tego czasu, trochę minęło. Niemniej jednak, rokowania na przyszłość są dobre, bo wszystkim się chce, co jest jak dla mnie już połową sukcesu.
+Dzisiaj, będzie trochę o wyjmowaniu trupa z szafy, czyli o drugiej edycji Warhammera. W ten weekend, prowadziłem starej ekipie pierwszą sesję z planowanej minikampanii „[[Listy Z Praag|Listy z Praag]]”. Ostatnimi czasy, z Mainstreamu mistrzowałem Black Crusade’a, a i od tego czasu, trochę minęło. Niemniej jednak, rokowania na przyszłość są dobre, bo wszystkim się chce, co jest jak dla mnie już połową sukcesu.
 
 Postacie Graczy tworzone były dzień przed sesją, a że doszło do spontanicznego grillowania, sama rozgrywka została przełożona na następny dzień, co wszystkim wyszło tylko na dobre. W związku z tym, przed grą musieliśmy zająć się jedynie dopracowaniem szczegółów.
 

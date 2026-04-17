@@ -7,7 +7,7 @@ data: 2011-02-28
 tags: [scenariusz, hell-4-leather]
 ---
 
-W Hell 4 Leather przyszedł w końcu czas na historie zdradziecko zamordowanego wodza rzymskiego Corneliusa Maximusa. Graliśmy po sesji Warhammera, czekając na kumpla. Przez ten czas, udało nam się ukuć dość ciekawą opowieść. Oto i ona…
+W [[Hell 4 Leather]] przyszedł w końcu czas na historie zdradziecko zamordowanego wodza rzymskiego Corneliusa Maximusa. Graliśmy po sesji Warhammera, czekając na kumpla. Przez ten czas, udało nam się ukuć dość ciekawą opowieść. Oto i ona…
 
 "Upadek Corneliusa Maximusa"
 

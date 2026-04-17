@@ -20,7 +20,7 @@ Kolejna opowieść prosto z Zimnego Miasta. Akta sprawy do wglądu poniżej. Z t
 
 **Bohaterowie**
 
-**Mjr. Józef Bardak, Funkcjonariusz PAP, Żołnierz KBW.**
+**[[Jozef Bardak|Mjr. Józef Bardak]], Funkcjonariusz PAP, Żołnierz KBW.**
 
 Po ostatnich spektakularnych akcjach, zyskał sobie kilku ważnych przyjaciół. Rywalizuje z Sowietami, starając się pokazać swoją wartość jako dobry komunista i żołnierz. Dąży do umocnienia pozycji personelu pomocniczego z Polskiej Rzeczypospolitej Ludowej. Kandydat na podwójnego agenta, zarówno dla Sowietów, jak i Amerykanów.
 

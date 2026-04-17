@@ -14,7 +14,7 @@ tags: ["epizod", "7th-Sea", "szpiegowski", "7th-sea"]
 
 ---
 
-Krótki materiał z trzeciej sesji 7th Sea. Bohaterowie Graczy rozpoczynają właściwą działalność szpiegowską. Po dotarciu do Avalonu, muszą zjednać sobie przyjaźń ambasadora Pita Carsona.
+Krótki materiał z trzeciej sesji [[7Th Sea|7th Sea]]. Bohaterowie Graczy rozpoczynają właściwą działalność szpiegowską. Po dotarciu do Avalonu, muszą zjednać sobie przyjaźń ambasadora Pita Carsona.
 
 **"Tajna służba"**
 

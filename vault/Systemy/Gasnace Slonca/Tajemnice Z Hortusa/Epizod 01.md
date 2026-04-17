@@ -14,11 +14,11 @@ tags: [epizod, gasnace-slonca, space-fantasy]
 
 ---
 
-*Kampania do Gasnących Słońc 2ed "Tajemnice zapomnianej technologii z Hortusa". Epizod 1 "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis". Scenariusz rozgrywaliśmy w sobotę 14 października 2023 roku.*
+*Kampania do Gasnących Słońc 2ed "[[Tajemnice Z Hortusa|Tajemnice zapomnianej technologii z Hortusa]]". Epizod 1 "Banda wyrzutków staje się grupą poszukiwaczy na usługach rodu de Voltis". Scenariusz rozgrywaliśmy w sobotę 14 października 2023 roku.*
 
 **Mistrz Gry: Krzysztof OBSTAWSKI**
 
-**Gasnące Słońca 2ed**
+**[[Gasnace Slonca|Gasnące Słońca 2ed]]**
 
 **Kampania "Tajemnice zapomnianej technologii z Hortusa"**
 
@@ -26,7 +26,7 @@ tags: [epizod, gasnace-slonca, space-fantasy]
 
 **Gatunek: space fantasy, eksploracja**
 
-**Scena 1. "Pustynna planeta Hortus - krajobraz po apokalipsie - de Voltis dłonią Decadosów"**
+**Scena 1. "Pustynna planeta [[hortus|Hortus]] - krajobraz po apokalipsie - de Voltis dłonią Decadosów"**
 Hortus, czyli pustynny świat po apokalipsie, rządzony przez ród de Voltis, będący pod protekcją potężnych Decadosów. Siwy, długowłosy Wyndon Hawkwood przemierza spaloną promieniami słońca agorę. Lepione budynki o okrągłych kopułach zdają się rozpływać w codziennym żarze. Stary baron Kamden odziany w długi, skórzany płaszcz z pistoletem pojedynkowym przewieszonym przez pierś i mieczem na pasie, kieruje się do siedziby lokalnego Fixera. Mehdi Ahmadi przyjmuje gościa i szybko przedstawia robotę do wzięcia. Piaski o tej porze odsłoniły wejście do dawnej stolicy Hortusa, gdzie spoczywają Technologiczne Insygnia Władzy Rodziny Królewskiej. Na wykonanie zadania jest tylko 3 tygodnie, przy ograniczeniu, że sama podróż do miejsca potrwa 1 tydzień. Baron będzie musiał zebrać najemników, którzy zdecydują się zejść do zasypanego piaskiem miasta.
 
 **Scena 2. "Dzika banda w kosmosie - stary magazyn za miastem - umowa to umowa"**
@@ -38,12 +38,12 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Paweł OBSTAWSKI jako gannokański pilot Speedy Tuk-Tuk
+Paweł OBSTAWSKI jako [[Gannokanski Pilot Speedy Tuk Tuk|gannokański pilot Speedy Tuk-Tuk]]
 
-Monika ŁYŻWA jako psionik Hayat Yuksel
+Monika ŁYŻWA jako [[Psionik Hayat Yuksel|psionik Hayat Yuksel]]
 
-Paweł PIOTROWSKI jako mnich Kylian
-Dawid KOŁACIŃSKI jako kawaler Jose Owiedo Alcazar Toledo
-Piotr RYGIEL jako voroxański wódz Camil
+Paweł PIOTROWSKI jako [[Mnich Kylian|mnich Kylian]]
+Dawid KOŁACIŃSKI jako [[Kawaler Jose Owiedo Alcazar Toledo|kawaler Jose Owiedo Alcazar Toledo]]
+Piotr RYGIEL jako [[Voroxanski Wodz Camil|voroxański wódz Camil]]
 
-oraz Arkadiusz RYGIEL jako baron Kamden Wyndon Hawkwood
+oraz Arkadiusz RYGIEL jako [[Baron Kamden Wyndon Hawkwood|baron Kamden Wyndon Hawkwood]]

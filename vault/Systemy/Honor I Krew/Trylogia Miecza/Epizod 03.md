@@ -20,7 +20,7 @@ Arkadiusz RYGIEL
 
 **Miecz, który całuje raz**
 
-Scenariusz do gry fabularnej Honor i Krew
+Scenariusz do gry fabularnej [[Honor I Krew|Honor i Krew]]
 
 **Trylogia Miecza**
 

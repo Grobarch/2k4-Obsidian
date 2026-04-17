@@ -11,7 +11,7 @@ Dwa tygodnie temu wiedzeni chęcią powrotu do Ponurego Świata Niebezpiecznych 
 
 Początkowo planowałem poprowadzić "Pieśń o upadku Doros" mając w pamięci mega mocną sesję z tegorocznego Falkonu. Przy okazji jako pewną alternatywę dla zaserwowania innych klimatów, rozważałem również rozegranie scenariusza traktującego o zabójcach potworów w quasiśredniowiecznym settingu, okraszonym wątkami postmodern.
 
-Sam Młot miał być grany w późniejszych terminach. Whitlow rzucił jednak pomysł, aby rozegrać Warha na Wideo RPG – generalnie wszyscy szybko na to przystali, mając najpewniej w umysłach obraz czasu poświęcanego na tworzenie postaci i powrót do domów po rozrzucone po siołach pody.
+Sam Młot miał być grany w późniejszych terminach. Whitlow rzucił jednak pomysł, aby rozegrać Warha na [[Wideo Rpg|Wideo RPG]] – generalnie wszyscy szybko na to przystali, mając najpewniej w umysłach obraz czasu poświęcanego na tworzenie postaci i powrót do domów po rozrzucone po siołach pody.
 
 Co do grania w Warha na Wideo nie była to pierwszyzna, bo prowadziłem już wcześniej takie sesje – z tym, że ich  fabuła rozgrywała się w świecie 40k, opowiadając historie Space Marinów z czasów przed herezją Horusa – właściwie to wspomniane jednostrzały układały się w kształt małej kampanii – i to wszystko dzięki udanemu wykorzystaniu zajawki sporej części ludzi z grupy na świat czterdziestego tysiąclecia, w którym jest już tylko wojna :-D
 

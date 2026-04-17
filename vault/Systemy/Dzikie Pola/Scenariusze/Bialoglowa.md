@@ -11,7 +11,7 @@ tags: [scenariusz, dzikie-pola]
 
 *Ilustracja: Piotr RYGIEL**Poniżej, zamieszczam skrót scenariusza prowadzonego na Zamczysku. Pozdrowienia dla Graczy, których bohaterowie w imię miłości i własnej sprawy musieli wdawać się w lokalną politykę, siedzieć w beczce po kapuście, dwór spalić i wrogom śmiertelnym życie darować.*
 
-**Dzikie Pola 2ed: Rzeczpospolita w ogniu "Białogłowa" Wprowadzenie**
+**[[Dzikie Pola|Dzikie Pola 2ed]]: Rzeczpospolita w ogniu "Białogłowa" Wprowadzenie**
 
 Jest rok 1612. Bohaterowie Graczy powracają z Wyprawy Moskiewskiej. Zawiązuje się wielka konfederacja wojskowa. Nieopłacani żołnierze dopuszczają się gwałtów i grabieży. Kompanija powraca na Ukrainę. Jeden z Panów Braci ma zamiar prosić na wesele, okazuje się jednak, że jego wybranka ma zostać wydana za siwego starca. Panna ma być poślubiona jednemu z kresowych magnatów. W tej sytuacji, nie pozostaje nic innego, jak ratować niewiastę od okrutnego losu, który zgotowała jej zła rodzina.
 

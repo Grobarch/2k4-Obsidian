@@ -18,16 +18,16 @@ tags: [epizod, deadlands, western, horror]
 
 *Ilustracja: Piotr RYGIEL*
 
-W piątek 10 listopada 2022 r. rozgrywaliśmy epizod 9 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Wędrówka do Drzewa Duchów".
+W piątek 10 listopada 2022 r. rozgrywaliśmy epizod 9 kampanii do Deadlands "[[Wszystkie Przebrania Alistaira Kanta|Wszystkie przebrania Alistaira Kanta]]" zatytułowany "Wędrówka do Drzewa Duchów".
 
-**Deadlands: Martwe Ziemie**
+**[[Deadlands|Deadlands: Martwe Ziemie]]**
 **Kampania "Wszystkie przebrania Alistaira Kanta"**
 
 **Epizod 9: "Wędrówka do Drzewa Duchów"**
 
 **Scena 1. "Wysadzona kopalnia - zbieranie rannych - Bridgestone"**
 
-Szalony Mickey i Jacob Hoover wyciągają z korytarzy rannych ronina Yojiro i kanciarza Weibenmauera. Posse wysadza tylne wejście do kopalni. Ludzie z bandy Skipy'ego Hogana zbierają swoich kumpli, którzy zostali postrzeleni w całej awanturze. Grupa zawala zasadnicze wejście do kompleksu. Zbiry z szajki Białych Olstr są martwi.
+[[Szalony Mickey]] i [[Jacob Hoover]] wyciągają z korytarzy rannych ronina [[yojiro|Yojiro]] i kanciarza Weibenmauera. Posse wysadza tylne wejście do kopalni. Ludzie z bandy Skipy'ego Hogana zbierają swoich kumpli, którzy zostali postrzeleni w całej awanturze. Grupa zawala zasadnicze wejście do kompleksu. Zbiry z szajki Białych Olstr są martwi.
 
 **Scena 2. "Powrót do miasteczka Redstone - rozmowa z Panią Abigail i małym Herbertem - historia Półczłowieka"**
 
@@ -37,7 +37,7 @@ Bohaterowie Graczy liżą rany w Saloonie. Posse dowiaduje się od Abigail i Her
 
 Posse dociera Czarnym Dyliżansem na Wielkie Równiny. Prerię pokrywa śnieg. Bohaterowie Graczy zabierają sakwy, koce i cały sprzęt podróżny. Postaci ruszają na poszukiwania starego Indianina z bielmem na prawym oku, który zna tajemnicę przejścia do Szkarłatnego Drzewa. Po tygodniu błądzenia i niemal całkowitym wycieńczeniu odnajdują tlące się na horyzoncie małe ognisko. Przy iskrzących drwach siedzi Indianin, z którego oczu można wyczytać, że mógł być obecny przy narodzinach świata. Półczłowiek częstuje Bohaterów strawą. Protagoniści palą fajkę z Tajemniczym Wędrowcem. Z kłębów dymu wyłania się portal, który jest przejściem do Świata Szkarłatnego Drzewa. Bohaterowie Graczy przekraczają granicę znanej rzeczywistości.
 
-**Scena 4. "Trupiogrzywy - polowanie - Szkarłatne Drzewo Duchów"**
+**Scena 4. "Trupiogrzywy - polowanie - Szkarłatne [[Drzewo Duchow|Drzewo Duchów]]"**
 
 Nieumarły koń galopuje na horyzoncie. Jest strażnikiem pradawnego miejsca. Za nim majaczy Szkarłatne Drzewo Duchów. Bohaterowie Graczy zaczynają szyć do wynaturzenia. Jego karmazynowe oczy i buchająca, trująca para z pyska zdają się przybliżać z każdą sekundą. Karty Weibenmauera nabierają świetlistych barw. Mickey prowadzi ogień z ręcznego karabinka Gatlinga. Jacob Hoover strzela z colta. Rewolwer Timothy'ego nie przestaje wypluwać z lufy gorącego ołowiu. Miecz katana błyska raniąc istotę, która już dawno powinna nie żyć. W końcu pod naporem kul, kantów i wystrzelonych nabojów wynaturzenie pada, wydobywając się z siebie przerażające rżenie.
 
@@ -49,10 +49,10 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł OBSTAWSKI jako ronin Yojiro
+Krzysztof OBSTAWSKI jako kanciarz [[Klaus Von Weibenmauer|Klaus von Weibenmauer]]
+Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
-Paweł PIOTROWSKI jako rewolwerowiec, ochroniarz i początkujący kanciarz Timothy Crawford III
+Paweł PIOTROWSKI jako rewolwerowiec, ochroniarz i początkujący kanciarz [[Timothy Crawford III]]
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 
 W pozostałych rolach:

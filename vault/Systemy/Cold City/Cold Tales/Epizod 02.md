@@ -14,17 +14,17 @@ tags: [epizod, cold-city, szpiegowski, horror]
 
 ---
 
-Cold City to gra wyjątkowa. Bohaterowie poruszają się w wyrazistych sceneriach i posiadają ugruntowane motywacje. W grze, mamy do czynienia z usuwaniem efektów okultystycznych eksperymentów i walką wywiadów. Poniższy skrót scenariusza, traktuje o obu przypadkach z różnym natężeniem. Miłej lektury wszystkim zainteresowanym.
+[[Cold City]] to gra wyjątkowa. Bohaterowie poruszają się w wyrazistych sceneriach i posiadają ugruntowane motywacje. W grze, mamy do czynienia z usuwaniem efektów okultystycznych eksperymentów i walką wywiadów. Poniższy skrót scenariusza, traktuje o obu przypadkach z różnym natężeniem. Miłej lektury wszystkim zainteresowanym.
 
 **"Kryptonim pajęczyna"**
 
 **Bohaterowie**
 
-**Mjr. Iwan Gorki, Funkcjonariusz PAP, Agent GRU.**
+**[[Iwan Gorki|Mjr. Iwan Gorki]], Funkcjonariusz PAP, Agent GRU.**
 
 Towarzysz Gorki trafił do PAP jako specjalista od zjawisk paranormalnych. Na co dzień, zajmuje się likwidacją skutków nazistowskich eksperymentów. Dodatkowo przesyła istotne informacje do centrali w Moskwie. Likwiduje także ludzi niewygodnych dla interesów Związku Radzieckiego.
 
-**Mjr. Józef Bardak, Funkcjonariusz PAP, Żołnierz KBW.**
+**[[Jozef Bardak|Mjr. Józef Bardak]], Funkcjonariusz PAP, Żołnierz KBW.**
 
 Pracuje w PAP jako jeden z asystentów ppłk. Arkadego Kazakowa. Sowieci próbują uczynić z niego agenta, który w przyszłości mógłby szpiegować amerykanów.
 

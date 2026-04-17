@@ -14,7 +14,7 @@ tags: [epizod, mafia-ggf]
 
 ---
 
-**Kampania "La Cosa Nostra"**
+**Kampania "[[La Cosa Nostra]]"**
 
 New Medford, Południowy Oregon, Zachodnie Wybrzeże, Stany Zjednoczone, Lata 30.
 

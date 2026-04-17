@@ -14,7 +14,7 @@ tags: [lokacja, l5k, samurajski]
 ## Opis
 
 Miasto Słodkich Kłamstw Amai-yuki-no-machi - niewyjawione sekrety pozostają sekretami - kolejny miecz, który zatruwa ludzkie serca"**
-Wiosna 1106 roku kalendarza Szmaragdowego Cesarstwa. Pan Ketsuki Miyagi udaje się do Przystani Płaczących Drzew Shidare-ki, aby odebrać listy z Miasta Władców Koni Uma na temat stanu zdrowia schorowanego młodego Księcia Akagi Taro. Bohaterowie trafiają do Miasta Słodkich Kłamstw na ziemiach Klanu Skorpiona.
+Wiosna 1106 roku kalendarza Szmaragdowego Cesarstwa. Pan [[Ketsuki Miyagi]] udaje się do Przystani Płaczących Drzew Shidare-ki, aby odebrać listy z Miasta Władców Koni Uma na temat stanu zdrowia schorowanego młodego Księcia Akagi Taro. Bohaterowie trafiają do Miasta Słodkich Kłamstw na ziemiach Klanu Skorpiona.
 
 ## Wystąpienia
 
