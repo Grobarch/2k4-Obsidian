@@ -50,6 +50,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── strip-h1.mjs              ← usuwanie duplikatów H1 (Quartz renderuje title z frontmatter)
 │   ├── build-bases.mjs            ← konwersja Obsidian Bases → statyczne tabele/listy/karty
 │   ├── restore-bases.mjs          ← odtwarzanie bloków base w folder notes (odwrotność build-bases)
+│   ├── backlinks.mjs              ← wstawianie linków markdown do body notatek (per-note lub batch); nie dotyka frontmatteru
 │   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
 │   ├── fix-infolder-paths.mjs     ← naprawa ścieżek file.inFolder w blokach base
 │   ├── migrate-scenarios.mjs      ← jednorazowa migracja: Scenariusze/→Systemy/[Sys]/Scenariusze/
@@ -156,6 +157,17 @@ node scripts/vault-tools.mjs validate --dir vault           # walidacja
 `normalize` wykonuje 4 przejścia: migracja scalar→array, computed values (`system_pelna`, `tags`, `kampania_link`), defaults (`draft`, `mg`), ostrzeżenia o brakujących polach.
 
 `vault-tools.mjs` przyjmuje też: `--where "pole=wartość"`, `--type <typ>`, `--dry-run` / `--apply`.
+
+### Wstawianie backlinków (skill `backlinks`)
+
+```bash
+node scripts/backlinks.mjs --file "vault/<ścieżka>"   # dry-run per-note
+node scripts/backlinks.mjs --file "vault/..." --apply
+node scripts/backlinks.mjs --all                      # dry-run batch
+node scripts/backlinks.mjs --all --apply
+```
+
+Linkuje pierwsze wystąpienie tytułu/aliasu każdego celu (bohaterowie, artefakty, lokacje, systemy, kampanie) w body notatek. **Nigdy nie dotyka frontmatteru** — prefix YAML kopiowany bit-for-bit. Pomija code blocks, inline code, istniejące linki `[...](...)`, wikilinki, image embeds. Nie dubluje linków. Opcjonalne pole `aliases: [...]` we frontmatterze celu dodaje dodatkowe formy matchowania. Skill: `.claude/skills/backlinks/SKILL.md`.
 
 ### Git pre-commit hook
 
