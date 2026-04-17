@@ -27,7 +27,7 @@ W piątek 10 listopada 2022 r. rozgrywaliśmy epizod 9 kampanii do Deadlands "[[
 
 **Scena 1. "Wysadzona kopalnia - zbieranie rannych - Bridgestone"**
 
-[[Szalony Mickey]] i [[Jacob Hoover]] wyciągają z korytarzy rannych ronina [[yojiro|Yojiro]] i kanciarza Weibenmauera. Posse wysadza tylne wejście do kopalni. Ludzie z bandy Skipy'ego Hogana zbierają swoich kumpli, którzy zostali postrzeleni w całej awanturze. Grupa zawala zasadnicze wejście do kompleksu. Zbiry z szajki Białych Olstr są martwi.
+[[Szalony Mickey]] i [[Jacob Hoover]] wyciągają z korytarzy rannych ronina [[Yojiro]] i kanciarza Weibenmauera. Posse wysadza tylne wejście do kopalni. Ludzie z bandy Skipy'ego Hogana zbierają swoich kumpli, którzy zostali postrzeleni w całej awanturze. Grupa zawala zasadnicze wejście do kompleksu. Zbiry z szajki Białych Olstr są martwi.
 
 **Scena 2. "Powrót do miasteczka Redstone - rozmowa z Panią Abigail i małym Herbertem - historia Półczłowieka"**
 
@@ -50,7 +50,7 @@ Napisy końcowe...
 W rolach głównych wystąpili:
 
 Krzysztof OBSTAWSKI jako kanciarz [[Klaus Von Weibenmauer|Klaus von Weibenmauer]]
-Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
+Paweł OBSTAWSKI jako [[Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 Paweł PIOTROWSKI jako rewolwerowiec, ochroniarz i początkujący kanciarz [[Timothy Crawford III]]
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover

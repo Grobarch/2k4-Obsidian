@@ -29,7 +29,7 @@ W piątek 4 listopada 2022 r. rozgrywaliśmy epizod 8 kampanii do Deadlands "[[W
 
 **Scena 2. "Powóz na pokładzie - przesłuchanie zbirów - dymne wersety maszyny do pisania Barona Morin - parowiec"**
 
-Czarny Dyliżans pojawia się na pokładzie a wraz z nim [[Jacob Hoover]]. Na miejsce przybywa również Mickey wraz ze schwytanymi Banditos. Zbiry próbują być twardzi. Szybko jednak nóż Twika rozmiękcza obu. Bohaterowie Graczy dowiadują się, że Jack Bilton i Gatling Gary Gallagher otrzymali zadanie schwytania Jean-Pierre Bassarda. Mickey po przesłuchaniu faszeruje zbirów ołowiem. Na pokładzie statku Ronin [[yojiro|Yojiro]] odnajduje w kajucie Barona Morin dziwną maszynę do pisania. Urządzenie jest dziwacznie zdobione. Weibenmauer odkrywa, że za pośrednictwem maszyny można komunikować się z Domem La Rue. Nad urządzeniem pojawiają się całe zdania w formie dymowych liter, które szybko znikają.
+Czarny Dyliżans pojawia się na pokładzie a wraz z nim [[Jacob Hoover]]. Na miejsce przybywa również Mickey wraz ze schwytanymi Banditos. Zbiry próbują być twardzi. Szybko jednak nóż Twika rozmiękcza obu. Bohaterowie Graczy dowiadują się, że Jack Bilton i Gatling Gary Gallagher otrzymali zadanie schwytania Jean-Pierre Bassarda. Mickey po przesłuchaniu faszeruje zbirów ołowiem. Na pokładzie statku Ronin [[Yojiro]] odnajduje w kajucie Barona Morin dziwną maszynę do pisania. Urządzenie jest dziwacznie zdobione. Weibenmauer odkrywa, że za pośrednictwem maszyny można komunikować się z Domem La Rue. Nad urządzeniem pojawiają się całe zdania w formie dymowych liter, które szybko znikają.
 
 **Scena 3. "Podróże Czarnym Dyliżansem poszerzają horyzonty - Biuro Czerwonego Szeryfa w Widmowym Mieście - odnaleziona karta"**
 
@@ -52,7 +52,7 @@ Napisy końcowe...
 W rolach głównych wystąpili:
 
 Krzysztof OBSTAWSKI jako kanciarz [[Klaus Von Weibenmauer|Klaus von Weibenmauer]]
-Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
+Paweł OBSTAWSKI jako [[Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 

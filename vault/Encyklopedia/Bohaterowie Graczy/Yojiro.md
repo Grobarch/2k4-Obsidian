@@ -1,5 +1,6 @@
 ---
 title: Yojiro
+aliases: ["Ronin Yojiro", "ronin Yojiro"]
 type: bohater-gracza
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
