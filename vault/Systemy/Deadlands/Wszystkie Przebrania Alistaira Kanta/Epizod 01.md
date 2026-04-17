@@ -31,7 +31,7 @@ Skonfederowane Stany Zjednoczone. [[heartville|Heartville]] w Stanie Missouri. 1
 
 **Rewolwerowiec [[Szalony Mickey]]** - Strzelec w starym prochowcu, którego rewolwery peacemakera są szybsze od myśli, co często przysparza mu wrogów i kłopotów.
 
-**Ronin [[yojiro|Yojiro]]** - Wojownik bez Pana z rodziny Bayushi (z tych Bayushi :D). Silnej budowy przybysz z Japonii ubrany na modłę amerykańską. Facet z innej bajki, który przybył na Dziwny Zachód, aby dotrzymać przysięgi złożonej swemu, dawnemu Panu.
+**Ronin [[Yojiro]]** - Wojownik bez Pana z rodziny Bayushi (z tych Bayushi :D). Silnej budowy przybysz z Japonii ubrany na modłę amerykańską. Facet z innej bajki, który przybył na Dziwny Zachód, aby dotrzymać przysięgi złożonej swemu, dawnemu Panu.
 
 **Poszukiwacz Jacob** - Ogarnięty żądzą zarobku brodacz poszukujący naprawdę dużych pieniędzy. Szukał złota na obszarze całego Zachodu. Wychodził cało z niejednej kabały dzięki swojemu sprytowi i perswazji colta.
 
@@ -49,6 +49,6 @@ Napisy końcowe...
 W rolach głównych wystąpili:
 
 Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
+Paweł OBSTAWSKI jako [[Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob

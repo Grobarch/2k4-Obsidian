@@ -44,6 +44,6 @@ Napisy końcowe...
 W rolach głównych wystąpili:
 
 Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
+Paweł OBSTAWSKI jako [[Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob
