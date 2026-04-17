@@ -14,13 +14,13 @@ tags: [epizod, cold-city, szpiegowski, horror]
 
 ---
 
-Czas przedstawić, kolejny tom tajnych akt z Zimnego Miasta. Tym razem, będzie to otwarcie do Crossovera Cold City i Mitologii Cthulhu. Śledztwo dotyczy masakry w szpitalu położonym w amerykańskiej strefie odpowiedzialności. Wszystko wskazuje na to, że sprawa nosi znamiona nadnaturalności. Śledztwem ma pokierować mjr. Carl Bronson przy współpracy z mjr. Józefem Bardakiem. Miłej lektury wszystkim zainteresowanym.
+Czas przedstawić, kolejny tom tajnych akt z Zimnego Miasta. Tym razem, będzie to otwarcie do Crossovera [Cold City](/systemy/cold-city/cold-city) i Mitologii Cthulhu. Śledztwo dotyczy masakry w szpitalu położonym w amerykańskiej strefie odpowiedzialności. Wszystko wskazuje na to, że sprawa nosi znamiona nadnaturalności. Śledztwem ma pokierować mjr. Carl Bronson przy współpracy z mjr. Józefem Bardakiem. Miłej lektury wszystkim zainteresowanym.
 
 **"Kryptonim cthulhukopf"**
 
 **Bohaterowie**
 
-**Mjr. Józef Bardak, Funkcjonariusz PAP, Żołnierz KBW.**
+**[Mjr. Józef Bardak](/encyklopedia/bohaterowie-graczy/jozef-bardak), Funkcjonariusz PAP, Żołnierz KBW.**
 
 Po ostatnich spektakularnych akcjach, zyskał sobie kilku ważnych przyjaciół. Rywalizuje z Sowietami, starając się pokazać swoją wartość jako dobry komunista i żołnierz. Dąży do umocnienia pozycji personelu pomocniczego z Polskiej Rzeczypospolitej Ludowej. Kandydat na podwójnego agenta, Zarówno dla Sowietów, jak i Amerykanów. CIA bada jego powiązania. Amerykanie uważają, że Polak mógł już rozpocząć współpracę z GRU. Co potwierdzałoby hipotezę, o eliminowaniu amerykańskich funkcjonariuszy, w trakcie wykonywanych zadań.
 

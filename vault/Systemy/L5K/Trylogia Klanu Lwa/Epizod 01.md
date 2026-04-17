@@ -14,7 +14,7 @@ tags: [epizod, l5k, samurajski]
 
 ---
 
-**Legenda Pięciu Kręgów 1edKampania "Trylogia Klanu Lwa"Epizod 1: "Białe kłamstwa"**
+**Legenda Pięciu Kręgów 1edKampania "[Trylogia Klanu Lwa](/systemy/l5k/trylogia-klanu-lwa/trylogia-klanu-lwa)"Epizod 1: "Białe kłamstwa"**
 
 Cesarski dwór. Intryga goni intrygę. A muszą się na Nim odnaleźć uczciwy dyplomata i szmaragdowy namiestnik pan Bayushi Kaderu oraz Jego yoriki wesoła panna wojny Otaku Mizuko, zapalczywa pani Matsu Aniko i dumny następca Swojego ojca w Mieście Mostów pan Akodo Yurei.
 

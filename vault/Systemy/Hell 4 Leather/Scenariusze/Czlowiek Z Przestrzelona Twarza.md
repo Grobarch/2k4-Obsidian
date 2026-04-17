@@ -9,7 +9,7 @@ tags: [scenariusz, hell-4-leather]
 
 Zacznę od podziękowań dla Chimery i wszystkich graczy, z którymi miałem okazję po raz pierwszy grać w tę grę. Tytuł jest warty uwagi. Funkcjonalna i prosta mechanika to jego podstawowe atuty. Do tego, trzeba dodać świetny klimat i twórcze wykorzystanie schematów. Granie w różnych konwencjach po prostu wbija w ziemię. Możecie się o tym przekonać na Zjavie.
 
-Mój znajomy MG, u którego zdobywałem lata temu pierwsze szlify w grach fabularnych, zwykł mówić, że gdy gracze pukają do twoich drzwi, a Ty dopiero zaczynasz tworzyć scenariusz, to robi się ciekawie.  Jeśli do tej pory, nie opublikowano twoich reakcji w rubryce ostatnie słowa MG, to dobrze :-) W takiej sytuacji, może lepiej zagrać w Hell 4 Leather niż ściemniać :-) W końcu, to gra improwizacyjna. Podobną rolę do MG, w pewnych aspektach, pełni tu osoba, która jest organizatorem.
+Mój znajomy MG, u którego zdobywałem lata temu pierwsze szlify w grach fabularnych, zwykł mówić, że gdy gracze pukają do twoich drzwi, a Ty dopiero zaczynasz tworzyć scenariusz, to robi się ciekawie.  Jeśli do tej pory, nie opublikowano twoich reakcji w rubryce ostatnie słowa MG, to dobrze :-) W takiej sytuacji, może lepiej zagrać w [Hell 4 Leather](/systemy/hell-4-leather/hell-4-leather) niż ściemniać :-) W końcu, to gra improwizacyjna. Podobną rolę do MG, w pewnych aspektach, pełni tu osoba, która jest organizatorem.
 
 Tytuł w prosty sposób obrazuje, na czym polegają gry fabularne. Może też być pomocny osobą, które dopiero zaczynają swoją przygodę (zabrzmiało bardzo dosłownie :-)) z tą tematyką. Istotą gry jest budowanie scen w oparciu o proste zasady.
 

@@ -18,15 +18,15 @@ tags: [epizod, deadlands, western, horror]
 
 *Ilustracja: Piotr RYGIEL*
 
-*W niedzielę 14 sierpnia 2022 r. rozgrywaliśmy epizod 3 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Ręka Czerwonego Szeryfa"*
+*W niedzielę 14 sierpnia 2022 r. rozgrywaliśmy epizod 3 kampanii do Deadlands "[Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta)" zatytułowany "Ręka Czerwonego Szeryfa"*
 
-**Deadlands: Martwe Ziemie**
+**[Deadlands: Martwe Ziemie](/systemy/deadlands/deadlands)**
 **Kampania "Wszystkie przebrania Alistaira Kanta"**
 
 **Epizod 3: "Ręka Czerwonego Szeryfa"**
 
 **Scena 1. "Dokąd Pan leci, Panie Bird? - kanciarz i jego obstawa w Saloonie Greenscarf - zapada zmierzch".**
-Bohaterowie, prosto z drogi trafiają do miasteczka Whitehall. Ronin Yojiro wyrusza w podróż za napotkanym, nieznanym przybyszem z Kraju Kwitnącej Wiśni. Protagoniści mają się spotkać w Redstone. Zaczyna zmierzchać. Lekko prószący śnieg pokrywa konstrukcje drewnianych budynków. Posse trafia do Saloonu Greenscarf. W środku miejscowa menażeria gra w pokera. Przy jednym ze stolików daje się zauważyć kilku charakterystycznych jegomościów. Dandysa z podkręconym wąsem, w dobrze skrojonym garniturze i różą w klapie marynarki o nazwisku Bird. Wysokiego ochroniarza do wynajęcia Timothy'ego Crawforda III oraz jego dwóch Compadres - krewniaka z długą brodą o opanowanym spojrzeniu, który nie rozstaje się ze swoim nożem, imieniem Twik oraz włóczącego się za nimi lekko pomylonego Timmy'ego. Szalony Mickey rozpoznaje w Crawfordzie członka bandy Białych Olstr Gary'ego Gallaghera, która współpracowała z gangiem Skipy'ego Hogana w przerzucie nielegalnych towarów pomiędzy Północą i Południem. Bird dowiaduje się, że Posse kieruje się do Domu La Rue. Okazuje się, że kanciarz zmierza do tej samej lokalizacji, aby wziąć udział w grze, która przywróci mu zdrowie. Dandys docieka, co jest w okutym kufrze, który eskortują Bohaterowie Graczy. Pani Abigail Croft zdradza, że podczas rozgrywki w Domu La Rue chce odzyskać syna. Kobieta jako jedyna była gościem dziwnego przybytku. Protagoniści decydują się połączyć siły i razem dotrzeć na miejsce.
+Bohaterowie, prosto z drogi trafiają do miasteczka Whitehall. Ronin [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro) wyrusza w podróż za napotkanym, nieznanym przybyszem z Kraju Kwitnącej Wiśni. Protagoniści mają się spotkać w Redstone. Zaczyna zmierzchać. Lekko prószący śnieg pokrywa konstrukcje drewnianych budynków. Posse trafia do Saloonu Greenscarf. W środku miejscowa menażeria gra w pokera. Przy jednym ze stolików daje się zauważyć kilku charakterystycznych jegomościów. Dandysa z podkręconym wąsem, w dobrze skrojonym garniturze i różą w klapie marynarki o nazwisku Bird. Wysokiego ochroniarza do wynajęcia Timothy'ego Crawforda III oraz jego dwóch Compadres - krewniaka z długą brodą o opanowanym spojrzeniu, który nie rozstaje się ze swoim nożem, imieniem Twik oraz włóczącego się za nimi lekko pomylonego Timmy'ego. [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey) rozpoznaje w Crawfordzie członka bandy Białych Olstr Gary'ego Gallaghera, która współpracowała z gangiem Skipy'ego Hogana w przerzucie nielegalnych towarów pomiędzy Północą i Południem. Bird dowiaduje się, że Posse kieruje się do Domu La Rue. Okazuje się, że kanciarz zmierza do tej samej lokalizacji, aby wziąć udział w grze, która przywróci mu zdrowie. Dandys docieka, co jest w okutym kufrze, który eskortują Bohaterowie Graczy. Pani Abigail Croft zdradza, że podczas rozgrywki w Domu La Rue chce odzyskać syna. Kobieta jako jedyna była gościem dziwnego przybytku. Protagoniści decydują się połączyć siły i razem dotrzeć na miejsce.
 
 **Scena 2. "Tylko głupiec stawia swoje życie w grze w karty - Szeryf Rod Hoper, niegdyś poszukiwacz złota znany jako Rod Lake - biuro szeryfa w Whitehall - zimowa noc".**
 Podczas zamawiania kolejki w Saloonie Greenscarf poszukiwacz Jacob poznaje dawnego znajomego - Roda Lake'a. Mężczyzna będąc rozpoznanym w tłumie dziwnie się zachowuje. W dyskretny sposób chowa gwiazdę szeryfa, którą wcześniej miał wpiętą w klapę kamizelki. Jacob nie daje za wygraną i demaskuje prawdziwą tożsamość Lake'a. "Przebieraniec" prosi o pomoc i  spotkanie w biurze szeryfa. Z rozmowy wynika, że ma informacje o Tajemniczym Domostwie z Redstone. Posse przybywa do siedziby stróża prawa. Okazuje się, że Rod Lake brał udział w pokerowej grze w Domu La Rue. Po utracie zastawionego złota zażartował, że teraz zostało mu do przegrania jedynie życie. Współgracze zaproponowali, że przecież mógłby o nie zagrać. Podpity Lake przystał na dziwną propozycję. Po kilkugodzinnej grze Rod przegrał. Od tego czasu śledzili go ubrani w czerń ludzie. Często zmieniał miejsca pobytu. Podróżował pod zmienionym nazwiskiem. Trafił do Whitehall, gdzie się osiedlił. Rozpoczął życie porządnego obywatela. W ostatnich wyborach miejscowi obrali go lokalnym przedstawicielem prawa. Rod myślał, że Posse to banda zbirów, która miała po niego przyjść. W Tajemniczym Domostwie w Redstone powiedziano mu, że nie minie 33 miesiące a on będzie musiał oddać, to co przegrał. Jutrzejszy dzień jest dniem granicznym.
@@ -42,8 +42,8 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł PIOTROWSKI jako rewolwerowiec i ochroniarz Timothy Crawford III
+Krzysztof OBSTAWSKI jako kanciarz [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer)
+Paweł PIOTROWSKI jako rewolwerowiec i ochroniarz [Timothy Crawford III](/encyklopedia/bohaterowie-graczy/timothy-crawford-iii)
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob
 
