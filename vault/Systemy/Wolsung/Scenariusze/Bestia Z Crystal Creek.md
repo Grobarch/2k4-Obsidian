@@ -9,7 +9,7 @@ tags: [scenariusz, wolsung]
 
 **"Bestia z Crystal Creek"**
 
-Scenariusz w konwencji przygodowej do gry fabularnej [Wolsung: Magia Wieku Pary](/systemy/wolsung/wolsung). Gracze wcielają się w awanturniczych przemysłowców będących współudziałowcami spółki Crystal Company zajmującej się wydobyciem kryształu. Po otrzymaniu informacji o tajemniczych zaginięciach górników bohaterowie na prośbę Lorda Edmunda Hensona wyruszają do Crystal Creek w celu wyjaśnienia sprawy i doprowadzenia do wznowienia pełnego wydobycia.
+Scenariusz w konwencji przygodowej do gry fabularnej [[Wolsung|Wolsung: Magia Wieku Pary]]. Gracze wcielają się w awanturniczych przemysłowców będących współudziałowcami spółki Crystal Company zajmującej się wydobyciem kryształu. Po otrzymaniu informacji o tajemniczych zaginięciach górników bohaterowie na prośbę Lorda Edmunda Hensona wyruszają do Crystal Creek w celu wyjaśnienia sprawy i doprowadzenia do wznowienia pełnego wydobycia.
 
 **Wprowadzenie**
 

@@ -17,21 +17,21 @@ tags: [epizod, deadlands, western, horror]
 ![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja Piotr RYGIEL - western.jpg]]
 *Ilustracja: Piotr RYGIEL*
 
-*W piątek 22 lipca 2022 r. otworzyliśmy kampanię do Deadlands "[Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta)". Długa przerwa na Martwych Ziemiach sprawiła, że znaczną część wieczoru poświęciliśmy na proces tworzenia postaci i lekkie przypomnienie zasad. W efekcie czego rozgraliśmy podczas sesji 3 sceny ze scenariusza.*
+*W piątek 22 lipca 2022 r. otworzyliśmy kampanię do Deadlands "[[Wszystkie Przebrania Alistaira Kanta|Wszystkie przebrania Alistaira Kanta]]". Długa przerwa na Martwych Ziemiach sprawiła, że znaczną część wieczoru poświęciliśmy na proces tworzenia postaci i lekkie przypomnienie zasad. W efekcie czego rozgraliśmy podczas sesji 3 sceny ze scenariusza.*
 
-**[Deadlands: Martwe Ziemie](/systemy/deadlands/deadlands)**
+**[[Deadlands|Deadlands: Martwe Ziemie]]**
 **Kampania "Wszystkie przebrania Alistaira Kanta"**
 
-**Epizod 1: "[Walizka z Heartville](/encyklopedia/artefakty/walizka-z-heartville)"**
+**Epizod 1: "[[Walizka Z Heartville|Walizka z Heartville]]"**
 
 **Scena 1. "Duszna atmosfera w Saloonie Crazy Horseshoe"**
-Skonfederowane Stany Zjednoczone. [Heartville](/encyklopedia/lokacje/heartville) w Stanie Missouri. 10 listopada 1876 roku. Bohaterowie Graczy przybywają do miasteczka na zaproszenie Pani Abigail Croft. Mieścina to zapadła dziura pobudowana na trasie przepędu bydła. Każdy tutaj pilnuje własnego nosa i nie szuka na siłę kłopotów. Miejsce zlokalizowane w ten sposób wydawało się idealnym punktem do spotkania z pistoleros, którzy chcą zarobić za wszelką cenę. A taka będzie praca, którą oferuje Pani ze wschodniego wybrzeża. Posse to typy, których nikt nie chciałby spotkać na drodze bez naładowanego obrzyna i wiadra naboi:
+Skonfederowane Stany Zjednoczone. [[heartville|Heartville]] w Stanie Missouri. 10 listopada 1876 roku. Bohaterowie Graczy przybywają do miasteczka na zaproszenie Pani Abigail Croft. Mieścina to zapadła dziura pobudowana na trasie przepędu bydła. Każdy tutaj pilnuje własnego nosa i nie szuka na siłę kłopotów. Miejsce zlokalizowane w ten sposób wydawało się idealnym punktem do spotkania z pistoleros, którzy chcą zarobić za wszelką cenę. A taka będzie praca, którą oferuje Pani ze wschodniego wybrzeża. Posse to typy, których nikt nie chciałby spotkać na drodze bez naładowanego obrzyna i wiadra naboi:
 
-**Kanciarz [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer)** - Wysoki blondyn o pociągłych rysach twarzy. Dandys z Europy. Zawsze dobrze ubrany i spostrzegawczy. W chwilach namysłu bawiący się swoim złotym, bogato zdobionym zegarkiem.
+**Kanciarz [[Klaus Von Weibenmauer|Klaus von Weibenmauer]]** - Wysoki blondyn o pociągłych rysach twarzy. Dandys z Europy. Zawsze dobrze ubrany i spostrzegawczy. W chwilach namysłu bawiący się swoim złotym, bogato zdobionym zegarkiem.
 
-**Rewolwerowiec [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey)** - Strzelec w starym prochowcu, którego rewolwery peacemakera są szybsze od myśli, co często przysparza mu wrogów i kłopotów.
+**Rewolwerowiec [[Szalony Mickey]]** - Strzelec w starym prochowcu, którego rewolwery peacemakera są szybsze od myśli, co często przysparza mu wrogów i kłopotów.
 
-**Ronin [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro)** - Wojownik bez Pana z rodziny Bayushi (z tych Bayushi :D). Silnej budowy przybysz z Japonii ubrany na modłę amerykańską. Facet z innej bajki, który przybył na Dziwny Zachód, aby dotrzymać przysięgi złożonej swemu, dawnemu Panu.
+**Ronin [[yojiro|Yojiro]]** - Wojownik bez Pana z rodziny Bayushi (z tych Bayushi :D). Silnej budowy przybysz z Japonii ubrany na modłę amerykańską. Facet z innej bajki, który przybył na Dziwny Zachód, aby dotrzymać przysięgi złożonej swemu, dawnemu Panu.
 
 **Poszukiwacz Jacob** - Ogarnięty żądzą zarobku brodacz poszukujący naprawdę dużych pieniędzy. Szukał złota na obszarze całego Zachodu. Wychodził cało z niejednej kabały dzięki swojemu sprytowi i perswazji colta.
 
@@ -49,6 +49,6 @@ Napisy końcowe...
 W rolach głównych wystąpili:
 
 Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł OBSTAWSKI jako [ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro)
+Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob

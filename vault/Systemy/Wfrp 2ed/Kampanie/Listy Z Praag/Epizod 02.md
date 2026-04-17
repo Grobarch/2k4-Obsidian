@@ -14,7 +14,7 @@ tags: [epizod, wfrp-2ed, dark-fantasy]
 
 ---
 
-Warhammerowa kampania **„[Listy z Praag](/systemy/wfrp-2ed/kampanie/listy-z-praag/listy-z-praag)”**, o której pisałem wcześniej na polterblogu, stanęła na pierwszym odcinku. Po długim czasie udało się ją reaktywować w okrojonym składzie, w postaci dalszej kontynuacji fabuły, ale z perspektywy innych bohaterów.
+Warhammerowa kampania **„[[Listy Z Praag|Listy z Praag]]”**, o której pisałem wcześniej na polterblogu, stanęła na pierwszym odcinku. Po długim czasie udało się ją reaktywować w okrojonym składzie, w postaci dalszej kontynuacji fabuły, ale z perspektywy innych bohaterów.
 
 **Bohaterowie Graczy**
 

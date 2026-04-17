@@ -15,7 +15,7 @@ Arkadiusz RYGIEL
 
 **Przedmowa**
 
-Poniższy tekst, to drugi scenariusz filmowej sesji w konwencji horroru, osadzony w realiach Settingu [Apokalipsa Spełniona: Czas Cthulhu](/systemy/apokalipsa-spelniona/apokalipsa-spelniona) autorstwa Pawła „Chimery" Cybuli.
+Poniższy tekst, to drugi scenariusz filmowej sesji w konwencji horroru, osadzony w realiach Settingu [[Apokalipsa Spelniona|Apokalipsa Spełniona: Czas Cthulhu]] autorstwa Pawła „Chimery" Cybuli.
 
 ![[Systemy/Apokalipsa Spelniona/Scenariusze/assets/Ciało upadłego boga 2 Piotr Rygiel.png]]
 

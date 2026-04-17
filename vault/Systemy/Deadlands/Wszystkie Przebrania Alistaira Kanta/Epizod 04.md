@@ -18,15 +18,15 @@ tags: [epizod, deadlands, western, horror]
 
 *Ilustracja: Piotr RYGIEL*
 
-*W piątek 23 września 2022 r. rozgrywaliśmy epizod 4 kampanii do Deadlands "[Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta)" zatytułowany "Klucznik z Krainy Wielu Drzwi".*
+*W piątek 23 września 2022 r. rozgrywaliśmy epizod 4 kampanii do Deadlands "[[Wszystkie Przebrania Alistaira Kanta|Wszystkie przebrania Alistaira Kanta]]" zatytułowany "Klucznik z Krainy Wielu Drzwi".*
 
-**[Deadlands: Martwe Ziemie](/systemy/deadlands/deadlands)**
+**[[Deadlands|Deadlands: Martwe Ziemie]]**
 **Kampania "Wszystkie przebrania Alistaira Kanta"**
 
 **Epizod 4: "Klucznik z Krainy Wielu Drzwi"**
 
 **Scena 1. "Palarnia opium Chai Maia - Redstone".**
-[Jacob Hoover](/encyklopedia/bohaterowie-graczy/jacob-hoover), [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro) i [Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey) trafiają do palarni zlokalizowanej w środkowej części miasteczka. Na miejscu korzystają z przybytku paląc opium i pijąc whisky. Poszukiwacz i rewolwerowiec relacjonują roninowi, co wydarzyło się na farmie Lake'a pod Whitehall. Czas zdaje się nie mieć znaczenia. Rzeczywistość staje się nieprzenikniona i oniryczna. Goście lokalu wydają się zaburzonymi sylwetkami wśród zniekształconych głosów. W fantasmagorycznej wizji dostrzegają zaginionego w [Heartville](/encyklopedia/lokacje/heartville) syna Pani Abigail - małego Herberta.
+[[Jacob Hoover]], [[yojiro|Yojiro]] i [[Szalony Mickey]] trafiają do palarni zlokalizowanej w środkowej części miasteczka. Na miejscu korzystają z przybytku paląc opium i pijąc whisky. Poszukiwacz i rewolwerowiec relacjonują roninowi, co wydarzyło się na farmie Lake'a pod Whitehall. Czas zdaje się nie mieć znaczenia. Rzeczywistość staje się nieprzenikniona i oniryczna. Goście lokalu wydają się zaburzonymi sylwetkami wśród zniekształconych głosów. W fantasmagorycznej wizji dostrzegają zaginionego w [[heartville|Heartville]] syna Pani Abigail - małego Herberta.
 
 **Scena 2. "Wielodrzwi - senna rzeczywistość w zaburzonym wymiarze - Klucznik z Krainy - As Przejść".**
 Bohaterowie Graczy podążając za chłopcem wchodzą do dziwnego korytarza. W nowej lokacji szybko orientują się, że pomieszczenie za ich plecami przesłało istnieć. Przed nimi i za nimi jawi się jedynie ten sam monotonny korytarz, skąpany w toni zielonej tapety, ozdobiony drewnianą sztukaterią i słabo żarzącymi się lampami. Dzieciak szybko wyjawia im, że nie może się stąd wydostać. Nie pamięta, jak znalazł się w tym miejscu. Posse szybko orientuje się, że dzieciuch nie mówi im całej prawdy. Chłopiec tłumaczy, że rządcą jest tutaj stwór nazywany Klucznikiem. To on decyduje, kto może wejść do określonych pomieszczeń. Herbert chce zabrać Protagonistów do pokoju luster, w którym można znaleźć nieprzeniknionego włodarza. Bohaterowie decydują się poczekać na potwora. Czas mija w niemierzalny sposób. Słychać brzęk kluczy. Mroczny starzec w skórzanym, rzemieślniczym fartuchu wyłania się z półcieni. Ma ze sobą dziesiątki kluczy pasujących do różnych przejść. Jacob szybko dobywa sześciostrzałowca. Pozostali członkowie Posse nie zasypiają gruszek w popiele i również sięgają po broń. Siwy włóczęga miota chmarą magicznych kluczy w poszukiwacza. Przedmioty mijają o cale głowę Jacoba. Hoover oddaje kilka strzałów w tułów istoty. Dziad pada z brzękiem. Zostaje po nim jedynie pęk kluczy.
@@ -45,7 +45,7 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Paweł OBSTAWSKI jako [ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro)
+Paweł OBSTAWSKI jako [[Ronin Yojiro|ronin Yojiro]]
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 

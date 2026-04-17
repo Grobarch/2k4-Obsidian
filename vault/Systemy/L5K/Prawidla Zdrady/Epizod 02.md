@@ -62,7 +62,7 @@ kenjutsu 3, obrona 2, uniki 2, dyplomacja 4, szczerość 3, etykieta 4, heraldyk
 3, jeździectwo 3, zalety: prawomyślny 4, wady: idealista 2, rany 6:0, 12:-1,
 18:-2, 24:-3, 30:-4, 36:obalony, 42:nieprzytomny, 48:martwy, przy sobie:
 daisho, wachlarz, dużo pieniędzy.Okada Tsuji, Sługa
-[Akodo Raizo](/encyklopedia/bohaterowie-niezalezni/akodo-raizo), 30 lat.Służalczy, chciwy,
+[[Akodo Raizo]], 30 lat.Służalczy, chciwy,
 rozsądny.ogień 2, zręczność 3, inteligencja 2, ziemia 2,
 wytrzymałość 3, siła woli 2, powietrze 2, refleks 3, intuicja 2, woda 2, siła
 3, spostrzegawczość 2, pustka 2, katana atak 6z3, katana obrażenia 6z2, PT

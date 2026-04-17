@@ -17,7 +17,7 @@ Po długiej przerwie spowodowanej rozlicznymi kwestiami osobistymi i zawodowymi 
 
 System oferuje rdzeń mechaniki, którą wszyscy dobrze znamy w mocno stuningowanej formie. Mnie znaczna część zasad przypadła do gustu, zwłaszcza iż wiele spraw uproszczono oraz wprowadzone liczne rozwiązania opcjonalne, co wyszło nowej edycji tylko na dobre.
 
-**[Warhammer Fantasy Role Play 4ed](/systemy/wfrp-4ed/wfrp-4ed)**
+**[[Wfrp 4ed|Warhammer Fantasy Role Play 4ed]]**
 
 **„Sukno z Langre"**
 
