@@ -16,7 +16,7 @@ Arkadiusz RYGIEL
 
 **"Dawno temu w Kraju Kwitnącej Wiśni"**
 
-Prezentacja gry fabularnej Honor i Krew
+Prezentacja gry fabularnej [Honor i Krew](/systemy/honor-i-krew/honor-i-krew)
 
 **Honor i Krew**
 

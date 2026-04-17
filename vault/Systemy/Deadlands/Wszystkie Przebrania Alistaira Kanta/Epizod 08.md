@@ -16,20 +16,20 @@ tags: [epizod, deadlands, western, horror]
 
 ![[Systemy/Deadlands/Wszystkie Przebrania Alistaira Kanta/assets/Arkadiusz RYGIEL blog autorski - ilustracja nr 8 Piotr RYGIEL - Deadlands Martwe Ziemie.jpg]]
 Ilustracja: Piotr RYGIEL
-W piątek 4 listopada 2022 r. rozgrywaliśmy epizod 8 kampanii do Deadlands "Wszystkie przebrania Alistaira Kanta" zatytułowany "Porwanie Mistrza Bassarda".
+W piątek 4 listopada 2022 r. rozgrywaliśmy epizod 8 kampanii do Deadlands "[Wszystkie przebrania Alistaira Kanta](/systemy/deadlands/wszystkie-przebrania-alistaira-kanta/wszystkie-przebrania-alistaira-kanta)" zatytułowany "Porwanie Mistrza Bassarda".
 
-**Deadlands: Martwe Ziemie**
+**[Deadlands: Martwe Ziemie](/systemy/deadlands/deadlands)**
 **Kampania "Wszystkie przebrania Alistaira Kanta"**
 
 **Epizod 8: "Porwanie Mistrza Bassarda"**
 
 **Scena 1. "Spojrzenie grzechotnika - przeprawa na rzece Hollow River - przystań"**
 
-Szalony Mickey podczas przygotowań do przejścia przez rzekę zauważa dziwne zachowanie swoich towarzyszy. Doświadczone oko rewolwerowca dostrzega, że Jack Bilton i Henry Green ustawiają się na "zasadzie trójkąta", aby jednemu strzelcowi trudno było objąć ich wzrokiem. Mickey nie czeka już dłużej. Lśnią oczy całej trójki. Spojrzenia spotykają się. Dłonie sięgają po broń. Słychać kilka szybkich wystrzałów. Wkrótce później stoi już jedynie Szalony Mickey. Grzechotnik tańczy raz ze swoją ofiarą. Mickey opatruje i pęta byłych współpracowników.
+[Szalony Mickey](/encyklopedia/bohaterowie-graczy/szalony-mickey) podczas przygotowań do przejścia przez rzekę zauważa dziwne zachowanie swoich towarzyszy. Doświadczone oko rewolwerowca dostrzega, że Jack Bilton i Henry Green ustawiają się na "zasadzie trójkąta", aby jednemu strzelcowi trudno było objąć ich wzrokiem. Mickey nie czeka już dłużej. Lśnią oczy całej trójki. Spojrzenia spotykają się. Dłonie sięgają po broń. Słychać kilka szybkich wystrzałów. Wkrótce później stoi już jedynie Szalony Mickey. Grzechotnik tańczy raz ze swoją ofiarą. Mickey opatruje i pęta byłych współpracowników.
 
 **Scena 2. "Powóz na pokładzie - przesłuchanie zbirów - dymne wersety maszyny do pisania Barona Morin - parowiec"**
 
-Czarny Dyliżans pojawia się na pokładzie a wraz z nim Jacob Hoover. Na miejsce przybywa również Mickey wraz ze schwytanymi Banditos. Zbiry próbują być twardzi. Szybko jednak nóż Twika rozmiękcza obu. Bohaterowie Graczy dowiadują się, że Jack Bilton i Gatling Gary Gallagher otrzymali zadanie schwytania Jean-Pierre Bassarda. Mickey po przesłuchaniu faszeruje zbirów ołowiem. Na pokładzie statku Ronin Yojiro odnajduje w kajucie Barona Morin dziwną maszynę do pisania. Urządzenie jest dziwacznie zdobione. Weibenmauer odkrywa, że za pośrednictwem maszyny można komunikować się z Domem La Rue. Nad urządzeniem pojawiają się całe zdania w formie dymowych liter, które szybko znikają.
+Czarny Dyliżans pojawia się na pokładzie a wraz z nim [Jacob Hoover](/encyklopedia/bohaterowie-graczy/jacob-hoover). Na miejsce przybywa również Mickey wraz ze schwytanymi Banditos. Zbiry próbują być twardzi. Szybko jednak nóż Twika rozmiękcza obu. Bohaterowie Graczy dowiadują się, że Jack Bilton i Gatling Gary Gallagher otrzymali zadanie schwytania Jean-Pierre Bassarda. Mickey po przesłuchaniu faszeruje zbirów ołowiem. Na pokładzie statku Ronin [Yojiro](/encyklopedia/bohaterowie-graczy/yojiro) odnajduje w kajucie Barona Morin dziwną maszynę do pisania. Urządzenie jest dziwacznie zdobione. Weibenmauer odkrywa, że za pośrednictwem maszyny można komunikować się z Domem La Rue. Nad urządzeniem pojawiają się całe zdania w formie dymowych liter, które szybko znikają.
 
 **Scena 3. "Podróże Czarnym Dyliżansem poszerzają horyzonty - Biuro Czerwonego Szeryfa w Widmowym Mieście - odnaleziona karta"**
 
@@ -51,8 +51,8 @@ Napisy końcowe...
 
 W rolach głównych wystąpili:
 
-Krzysztof OBSTAWSKI jako kanciarz Klaus von Weibenmauer
-Paweł OBSTAWSKI jako ronin Yojiro
+Krzysztof OBSTAWSKI jako kanciarz [Klaus von Weibenmauer](/encyklopedia/bohaterowie-graczy/klaus-von-weibenmauer)
+Paweł OBSTAWSKI jako [ronin Yojiro](/encyklopedia/bohaterowie-graczy/ronin-yojiro)
 Tomasz TYMIŃSKI jako rewolwerowiec Szalony Mickey
 oraz Piotr RYGIEL jako poszukiwacz Jacob Hoover
 

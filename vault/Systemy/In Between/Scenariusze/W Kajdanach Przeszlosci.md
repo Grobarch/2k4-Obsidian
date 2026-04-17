@@ -7,7 +7,7 @@ data: 2012-12-21
 tags: [scenariusz, in-between]
 ---
 
-Wracamy do tematu Indiedasów, które pozwalają pobiegać w trochę innych tematach niż Mainstream. Tym razem, powoli zakładamy na nogi grę In Between autorstwa Daniela „Dana the Bouldera" McKenny i szybko oddalamy się z tego świata, aby przenieść się na Pustkowie, przypominające w pewnych aspektach czyściec z popkulturowych wyobrażeń.
+Wracamy do tematu Indiedasów, które pozwalają pobiegać w trochę innych tematach niż Mainstream. Tym razem, powoli zakładamy na nogi grę [In Between](/systemy/in-between/in-between) autorstwa Daniela „Dana the Bouldera" McKenny i szybko oddalamy się z tego świata, aby przenieść się na Pustkowie, przypominające w pewnych aspektach czyściec z popkulturowych wyobrażeń.
 
 Od razu, trzeba nadmienić, że In Between to gra, która nie wszystkim przypadnie do gustu, a głównym elementem odpychającym, niczym niektóre Miejsca Mocy odpychające Grzechy w grze, może być tematyka poruszana przez tytuł. Ale jak to z grami bywa, jednym się podobają, innym nie – ot, kwestia preferencji.
 

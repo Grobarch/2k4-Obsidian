@@ -11,7 +11,7 @@ tags: [bohater-gracza, wolsung, steampunk]
 ![Portret Klaus Metternich](placeholder.jpg)
 
 Obstawski
-> **System**: Wolsung: Magia Wieku Pary
+> **System**: [Wolsung: Magia Wieku Pary](/systemy/wolsung/wolsung)
 > **Archetyp/Rola**: Elf, eksplorator
 
 ## Statystyki
