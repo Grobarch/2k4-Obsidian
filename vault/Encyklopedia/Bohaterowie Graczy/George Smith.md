@@ -14,21 +14,50 @@ tags: [bohater-gracza, wolsung, steampunk]
 ## Statystyki
 
 <!-- SYSTEM: wolsung -->
-| Atrybut | Wartość |
-|---------|---------|
-| Krzepa | |
-| Zręczność | |
-| Przenikliwość | |
-| Charyzma | |
-| Opanowanie | |
+| Atrybut       | Wartość |
+|---------------|:-------:|
+| Krzepa        |    9+   |
+| Zręczność     |    8+   |
+| Przenikliwość |   10+   |
+| Charyzma      |   10+   |
+| Opanowanie    |   10+   |
 
-**Archetyp**: — **Rasa**: —
-**Umiejętności**: —
-**Gadżety**: —
+**Archetyp:** — **Rasa:** — **Przynależność / Loża:** —
 
-### Dane surowe
+**Maniera:** — **Motto:** —
 
-Atrybuty: Krzepa 9+, Zręczność 8+, Przenikliwość 10+, Charyzma 10+, Opanowanie 10+, Umiejętności: Analiza 3, Blef 3, Ekspresja 3, Empatia 3, Odwaga 3, Okultyzm 3, Perswazja 3, Pojazdy 3, Półświatek 3, Przyroda 6, Spostrzegawczość 9, Strzelanie(strzelba) 6, Strzelanie(pistolet) 9, Technika 3, Ukrywanie się 6, Wiedza akademicka 3, Walka(szabla) 6, Walka(pięści) 9, Wysportowanie 6, Zastraszanie 3, Złodziejstwo 3,
+---
+
+**Umiejętności:** Analiza 3, Blef 3, Ekspresja 3, Empatia 3, Odwaga 3, Okultyzm 3, Perswazja 3, Pojazdy 3, Półświatek 3, Przyroda 6, Spostrzegawczość 9, Strzelanie(strzelba) 6, Strzelanie(pistolet) 9, Technika 3, Ukrywanie się 6, Wiedza akademicka 3, Walka(szabla) 6, Walka(pięści) 9, Wysportowanie 6, Zastraszanie 3, Złodziejstwo 3
+
+**Atuty:** —
+
+**Wyczyny (Akcje specjalne):** —
+
+**Magia / Nauka / Gadżety:** —
+
+---
+
+**Żywotność:**
+
+`○ ○ ○` Siniaki · `○ ○ ○` Rany · `○` Ciężka rana · `○` Martwy
+
+**Inicjatywa:** — **Obrona:** — **Odporność:** —
+
+| Broń | Obrażenia | Zasięg | Właściwości |
+|------|:---------:|--------|-------------|
+|      |           |        |             |
+
+**Pancerz / Strój ochronny:** —
+
+---
+
+**Ekwipunek:** —
+
+**Gadżety / Wynalazki:** —
+
+**Funty / Szylingi / Pensy:** — / — / —
+
 
 ## Opis
 
