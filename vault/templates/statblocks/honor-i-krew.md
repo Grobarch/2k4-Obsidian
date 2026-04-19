@@ -7,29 +7,34 @@
 | Wola      |         |
 | Charyzma  |         |
 
-**Profesja / Szkoła:** — **Styl walki:** —
-**Honor:** — **Sława:** —
+**Klan / Ród:** — **Profesja / Szkoła:** — **Styl walki:** —
+
+**Honor:** — **Sława:** — **Giri (obowiązek):** — **Ninjō (uczucia):** —
+
+**Kodeks (Bushidō / On):** —
 
 ---
 
 **Umiejętności:** —
 
-**Zdolności specjalne / Sztuczki:** —
+**Zdolności specjalne / Techniki:** —
+
+**Zaklęcia / Kami / Modlitwy:** —
 
 ---
 
 **Żywotność:** __ / __ `○ ○ ○ ○ ○ ○ ○ ○ ○ ○`
 
-**Inicjatywa:** — **Obrona (Unik/Parowanie):** —
+**Inicjatywa:** — **Obrona (Unik / Parowanie):** —
 
-| Broń | Obrażenia | Zasięg | Właściwości |
-|------|:---------:|--------|-------------|
-|      |           |        |             |
+| Broń  | Obrażenia | Zasięg | Właściwości |
+|-------|:---------:|--------|-------------|
+|       |           |        |             |
 
 | Pancerz | Absorpcja | Pokrycie |
-|---------|:---------:|---------|
+|---------|:---------:|----------|
 |         |           |          |
 
 **Ekwipunek:** —
 
-**Złote / Srebrne / Miedziane:** — / — / —
+**Koku / Bu / Mon:** — / — / —

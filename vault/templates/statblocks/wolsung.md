@@ -6,31 +6,38 @@
 | Charyzma      |         |
 | Opanowanie    |         |
 
-**Archetyp:** — **Rasa:** — **Przynależność:** —
+**Archetyp:** — **Rasa:** — **Przynależność / Loża:** —
+
+**Maniera:** — **Motto:** —
 
 ---
 
 **Umiejętności:** —
 
-**Zdolności specjalne:** —
+**Atuty:** —
 
-**Gadżety:** —
+**Wyczyny (Akcje specjalne):** —
+
+**Magia / Nauka / Gadżety:** —
 
 ---
 
 **Żywotność:**
+
 `○ ○ ○` Siniaki · `○ ○ ○` Rany · `○` Ciężka rana · `○` Martwy
 
-**Inicjatywa:** — **Obrona:** —
+**Inicjatywa:** — **Obrona:** — **Odporność:** —
 
 | Broń | Obrażenia | Zasięg | Właściwości |
 |------|:---------:|--------|-------------|
 |      |           |        |             |
 
-**Pancerz:** —
+**Pancerz / Strój ochronny:** —
 
 ---
 
 **Ekwipunek:** —
 
-**Funty / Szylingi:** — / —
+**Gadżety / Wynalazki:** —
+
+**Funty / Szylingi / Pensy:** — / — / —
