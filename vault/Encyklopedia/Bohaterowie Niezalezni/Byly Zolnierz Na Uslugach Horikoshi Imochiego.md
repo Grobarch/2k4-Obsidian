@@ -14,28 +14,48 @@ tags: [bohater-niezalezny, l5k, samurajski]
 ## Statystyki
 
 <!-- SYSTEM: l5k -->
-| Żywioł | Wartość | | Sub-atrybut | Wartość |
-|--------|---------|---|-------------|---------|
-| Ogień | | | Zręczność | |
-| | | | Inteligencja | |
-| Ziemia | | | Wytrzymałość | |
-| | | | Siła woli | |
-| Powietrze | | | Refleks | |
-| | | | Intuicja | |
-| Woda | | | Siła | |
-| | | | Spostrzegawczość | |
-| Pustka | | | | |
+| Żywioł    | Wartość | | Sub-atrybut  | Wartość |
+|-----------|:-------:|-|--------------|:-------:|
+| Ogień     |         | | Zręczność    |         |
+|           |         | | Inteligencja |         |
+| Ziemia    |         | | Wytrzymałość |         |
+|           |         | | Siła woli    |         |
+| Powietrze |         | | Refleks      |         |
+|           |         | | Intuicja     |         |
+| Woda      |         | | Siła         |         |
+|           |         | | Spostrzeg.   |         |
+| Pustka    |         | |              |         |
 
-**Szkoła**: — **Ranga**: —
-**Techniki**: —
-**Honor**: — **Chwała**: —
-**Umiejętności**: —
-**Zalety**: — **Wady**: —
-**Ekwipunek**: —
+**Wgląd (Insight):** — **Ranga:** — **Szkoła:** —
+**Honor:** — **Chwała:** — **Status:** —
 
-### Dane surowe
+---
 
-Ogień 2, zręczność 2, inteligencja 2, ziemia 2,  wytrzymałość 3, siła woli 2, powietrze 2, refleks 3, intuicja 2, woda 2, siła 2, spostrzegawczość 2, pustka 2, katana atak 5z2, katana obrażenia 5z2, PT trafienia 15, honor 0.5, chwała 0.5, umiejętności: kenjutsu 3, kyujutsu 2, obrona 2, skradanie się 2, rzucanie nożami 2, rany 4:0, 8:-1, 12:-2, 16:-3, 20:-4, 24:obalony, 28:nieprzytomny, 32:martwy, przy sobie: daisho, łuk yumi, kołczan ze strzałami/noże, kilka bu.
+**Umiejętności:** —
+
+**Techniki:** —
+
+**Zalety:** — **Wady:** —
+
+---
+
+**Punkty Pustki:** `○ ○ ○ ○ ○`
+
+**Poziomy ran:**
+
+| Poziom | Modyfikator | Skrzynki |
+|--------|:-----------:|:--------:|
+| Zdrowy      | +0 | ○ ○ ○ ○ ○ |
+| Lekko ranny | –1 | ○ ○ ○ ○ ○ |
+| Ranny       | –2 | ○ ○ ○ ○ ○ |
+| Poważnie r. | –3 | ○ ○ ○ ○ ○ |
+| Ciężko r.   | –4 | ○ ○ ○ ○ ○ |
+| Umierający  | –5 | ○ ○ ○ ○ ○ |
+| Martwy      | —  |           |
+
+**Ekwipunek:** —
+
+**Koku:** —
 
 ## Opis
 

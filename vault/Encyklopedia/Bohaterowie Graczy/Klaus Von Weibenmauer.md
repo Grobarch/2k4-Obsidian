@@ -22,30 +22,56 @@ tags:
 ## Statystyki
 
 <!-- SYSTEM: deadlands -->
-| Cecha | Wartość |
-|-------|---------|
-| Cielesność | |
-| Zwinność | |
-| Czujność | |
-| Charyzma | |
-| Mądrość | |
-| Duch | |
+**Profesja:** — **Mistyczne Powołanie:** — **Wiek:** —
 
-**Przewagi**: — **Zawady**: —
-**Umiejętności**: —
-**Ekwipunek**: —
+---
 
-### Dane surowe
+| Cecha | XkY | Umiejętności (nazwa: poziom) |
+|-------|:---:|------------------------------|
+| ***— Cielesne —*** | | |
+| Zręczność  | | Strzelanie: — · Rzucanie: — · Szybkie ładowanie: — |
+| Sprawność  | | Wspinaczka: — · Uniki: — · Jeździectwo: — · Skradanie: — · Pływanie: — · Walka: — |
+| Siła       | | *(bezpośrednio: obrażenia)* |
+| Szybkość   | | Dobywanie: — |
+| Wigor      | | *(bezpośrednio: DECH)* |
+| ***— Umysłowe —*** | | |
+| Spostrzeg. | | Przenikliwość: — · Szukanie: — · Tropienie: — |
+| Wiedza     | | Znajomość terenu: — · Medycyna: — · Okultyzm: — · Fach: — · Wysadzanie: — · Język: — |
+| Charyzma   | | Blef: — · Zastraszanie: — · Perswazja: — · Bajanie: — |
+| Spryt      | | Hazard: — · Przetrwanie: — · Majsterkowanie: — · Kantowanie: — |
+| Duch       | | Jaja: — |
 
-CHARYZMA: 2k6, Bajanie 2, Perswazja 2, DUCH: 4k12, Jaja 4, Kantowanie 6, SIŁA: 3k6, SPOSTRZEGAWCZOŚĆ: 3k10, Przenikliwość 3, Szukanie 3, Tropienie 2, SPRAWNOŚĆ: 3k6, Jeździectwo 4, Skradanie 3, Uniki 2, Walka: pięści 2, Wspinaczka 1, SPRYT: 1k12, Blef 2, Hazard 4, Majsterkowanie 1, SZYBKOŚĆ: 4k10, WIEDZA: 2k10, Fach: zegarmistrzostwo 2, Język: greka 2,*
-Język: łacina 2
-,
-Język: angielski 2,
-Język: hiszpański 1, Wykształcenie: okultyzm 5,
-Znajomość terenu: rodzinny okręg 2, WIGOR: 4k6, ZRĘCZNOŚĆ: 1k8, Rzucanie: noże 2, Strzelanie: rewolwery 5, Strzelanie: strzelby 5, TEMPO: 6, ROZMIAR: 6, DECH: 18, HART: 2. PRZEWAGI: Mistyczna przeszłość: kanciarz 3, Weteran Dziwnego Zachodu 0 - ścigany, Stary wyga 3, Cudowne dziecko 3, Chowaniec 1 - kruk. ZAWADY: Bohater 3, Honorowy 3, Mądrala 3, Przysięga 1, Fetysz: złoty zegarek 1. MOCE: Dark vision, Służący, Kopia, Podkręcenie fizyczne, Przyduszenie, Człowiek widmo, Ochrona, Niewidzialna ręka, Ogar, Rozproszenie, Przesłyszenie, Lustereczko. PUNKTY DOŚWIADCZENIA: 0. SZTONY: Niebieskie 1, Czerwone 3, Białe 5. KLAMOTY: Rewolwer Colt Army, Karabin Winchester, eleganckie ubrania, sprzęt obozowy,
-koń, siodło, koc, olstro, manierka,
-księga Hoyle'a niezawodność 16 na stronach: Lustereczko,
-Relikt 5: Nóż lalkarza "Strugacz tożsamości" - obrażenia SIŁA+3k6, zwiększa modyfikator trafienia w walce wręcz o 2, umożliwia "ożywianie" przedmiotów i nieboszczyków po zdanym teście DUCHA na PT13.
+---
+
+| DECH | HART | TEMPO | ROZMIAR |
+|:----:|:----:|:-----:|:-------:|
+|      |      |       |         |
+
+| Sztony Białe | Sztony Czerwone | Sztony Niebieskie |
+|:------------:|:---------------:|:-----------------:|
+|              |                 |                   |
+
+**Przewagi:** — **Zawady:** —
+
+---
+
+| Lokalizacja | 1° | 2° | 3° | 4° |
+|-------------|:--:|:--:|:--:|:--:|
+| Głowa       | ○  | ○  | ○  | ○  |
+| Klatka      | ○  | ○  | ○  | ○  |
+| Brzuch      | ○  | ○  | ○  | ○  |
+| Prawe ramię | ○  | ○  | ○  | ○  |
+| Lewe ramię  | ○  | ○  | ○  | ○  |
+| Prawa noga  | ○  | ○  | ○  | ○  |
+| Lewa noga   | ○  | ○  | ○  | ○  |
+
+**Pancerz:** —
+
+---
+
+**Moce / Księga Hoyle'a:** —
+
+**Klamoty:** —
 
 ## Opis
 

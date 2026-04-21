@@ -16,22 +16,56 @@ tags: [bohater-gracza, deadlands, western, horror]
 ## Statystyki
 
 <!-- SYSTEM: deadlands -->
-| Cecha | Wartość |
-|-------|---------|
-| Cielesność | |
-| Zwinność | |
-| Czujność | |
-| Charyzma | |
-| Mądrość | |
-| Duch | |
+**Profesja:** — **Mistyczne Powołanie:** — **Wiek:** —
 
-**Przewagi**: — **Zawady**: —
-**Umiejętności**: —
-**Ekwipunek**: —
+---
 
-### Dane surowe
+| Cecha | XkY | Umiejętności (nazwa: poziom) |
+|-------|:---:|------------------------------|
+| ***— Cielesne —*** | | |
+| Zręczność  | | Strzelanie: — · Rzucanie: — · Szybkie ładowanie: — |
+| Sprawność  | | Wspinaczka: — · Uniki: — · Jeździectwo: — · Skradanie: — · Pływanie: — · Walka: — |
+| Siła       | | *(bezpośrednio: obrażenia)* |
+| Szybkość   | | Dobywanie: — |
+| Wigor      | | *(bezpośrednio: DECH)* |
+| ***— Umysłowe —*** | | |
+| Spostrzeg. | | Przenikliwość: — · Szukanie: — · Tropienie: — |
+| Wiedza     | | Znajomość terenu: — · Medycyna: — · Okultyzm: — · Fach: — · Wysadzanie: — · Język: — |
+| Charyzma   | | Blef: — · Zastraszanie: — · Perswazja: — · Bajanie: — |
+| Spryt      | | Hazard: — · Przetrwanie: — · Majsterkowanie: — · Kantowanie: — |
+| Duch       | | Jaja: — |
 
-CHARYZMA: 1k8, Zastraszanie 4, DUCH: 2k10, Jaja 4, SIŁA: 4k6, SPOSTRZEGAWCZOŚĆ: 4k6, Szukanie 1, SPRAWNOŚĆ: 2k6, Jeździectwo 4, Skradanie 1, Uniki 3, Walka: pięści 3, Wspinaczka 1, SPRYT: 2k8, Hazard 2, SZYBKOŚĆ: 5k12, Dobywanie: rewolwery 4, WIEDZA: 2k12, Medycyna 4, Wysadzanie 3,**Znajomość terenu: rodzinny okręg 2, WIGOR: 3k8, ZRĘCZNOŚĆ: 1k12, Rzucanie: noże 2, Strzelanie: rewolwery 6, Strzelanie: karabiny 5, Szybkie ładowanie 3, TEMPO: 6, ROZMIAR: 6, DECH: 18,**HART: 2.**PRZEWAGI:* Pan dwie spluwy 5, oburęczny 3, W czepku urodzony, Uzdolniony technicznie 1, Zimna krew 5, Sokole oko 1, Stalowe nerwy 1, *Weteran Dziwnego Zachodu 0 - psuj. ZAWADY: Gwałtownik 3, Mściwy 3, Zobowiązanie: uratowane życie 5.**PUNKTY DOŚWIADCZENIA: 0.**SZTONY: Niebieskie 4, Czerwone 6, Białe 7.**KLAMOTY: Płaszcz, ręczny karabin Gatlinga, 2 colty peacemakery,**koń, siodło, koc, olstro, manierka.
+---
+
+| DECH | HART | TEMPO | ROZMIAR |
+|:----:|:----:|:-----:|:-------:|
+|      |      |       |         |
+
+| Sztony Białe | Sztony Czerwone | Sztony Niebieskie |
+|:------------:|:---------------:|:-----------------:|
+|              |                 |                   |
+
+**Przewagi:** — **Zawady:** —
+
+---
+
+| Lokalizacja | 1° | 2° | 3° | 4° |
+|-------------|:--:|:--:|:--:|:--:|
+| Głowa       | ○  | ○  | ○  | ○  |
+| Klatka      | ○  | ○  | ○  | ○  |
+| Brzuch      | ○  | ○  | ○  | ○  |
+| Prawe ramię | ○  | ○  | ○  | ○  |
+| Lewe ramię  | ○  | ○  | ○  | ○  |
+| Prawa noga  | ○  | ○  | ○  | ○  |
+| Lewa noga   | ○  | ○  | ○  | ○  |
+
+**Pancerz:** —
+
+---
+
+**Moce / Księga Hoyle'a:** —
+
+**Klamoty:** —
 
 ## Opis
 
