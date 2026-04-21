@@ -14,28 +14,48 @@ tags: [bohater-niezalezny, l5k, samurajski]
 ## Statystyki
 
 <!-- SYSTEM: l5k -->
-| Żywioł | Wartość | | Sub-atrybut | Wartość |
-|--------|---------|---|-------------|---------|
-| Ogień | | | Zręczność | |
-| | | | Inteligencja | |
-| Ziemia | | | Wytrzymałość | |
-| | | | Siła woli | |
-| Powietrze | | | Refleks | |
-| | | | Intuicja | |
-| Woda | | | Siła | |
-| | | | Spostrzegawczość | |
-| Pustka | | | | |
+| Żywioł    | Wartość | | Sub-atrybut  | Wartość |
+|-----------|:-------:|-|--------------|:-------:|
+| Ogień     |         | | Zręczność    |         |
+|           |         | | Inteligencja |         |
+| Ziemia    |         | | Wytrzymałość |         |
+|           |         | | Siła woli    |         |
+| Powietrze |         | | Refleks      |         |
+|           |         | | Intuicja     |         |
+| Woda      |         | | Siła         |         |
+|           |         | | Spostrzeg.   |         |
+| Pustka    |         | |              |         |
 
-**Szkoła**: — **Ranga**: —
-**Techniki**: —
-**Honor**: — **Chwała**: —
-**Umiejętności**: —
-**Zalety**: — **Wady**: —
-**Ekwipunek**: —
+**Wgląd (Insight):** — **Ranga:** — **Szkoła:** —
+**Honor:** — **Chwała:** — **Status:** —
 
-### Dane surowe
+---
 
-Ogień 1, zręczność 1, inteligencja 1, ziemia 1, wytrzymałość 2, siła woli 1, powietrze 1, refleks 1, intuicja 1, woda 1, siła 2, spostrzegawczość 1, pustka 1, broń improwizowana atak 3z1, broń improwizowana obrażenia 3z1, honor 0.0, chwała 0.0, rany 2:0, 4:-1, 6:-2, 8:-3, 10:-4, 12:obalony, 14:nieprzytomny, 16:martwy, przy sobie: cep, motyka.
+**Umiejętności:** —
+
+**Techniki:** —
+
+**Zalety:** — **Wady:** —
+
+---
+
+**Punkty Pustki:** `○ ○ ○ ○ ○`
+
+**Poziomy ran:**
+
+| Poziom | Modyfikator | Skrzynki |
+|--------|:-----------:|:--------:|
+| Zdrowy      | +0 | ○ ○ ○ ○ ○ |
+| Lekko ranny | –1 | ○ ○ ○ ○ ○ |
+| Ranny       | –2 | ○ ○ ○ ○ ○ |
+| Poważnie r. | –3 | ○ ○ ○ ○ ○ |
+| Ciężko r.   | –4 | ○ ○ ○ ○ ○ |
+| Umierający  | –5 | ○ ○ ○ ○ ○ |
+| Martwy      | —  |           |
+
+**Ekwipunek:** —
+
+**Koku:** —
 
 ## Opis
 

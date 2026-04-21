@@ -14,28 +14,48 @@ tags: [bohater-niezalezny, l5k, samurajski]
 ## Statystyki
 
 <!-- SYSTEM: l5k -->
-| Żywioł | Wartość | | Sub-atrybut | Wartość |
-|--------|---------|---|-------------|---------|
-| Ogień | | | Zręczność | |
-| | | | Inteligencja | |
-| Ziemia | | | Wytrzymałość | |
-| | | | Siła woli | |
-| Powietrze | | | Refleks | |
-| | | | Intuicja | |
-| Woda | | | Siła | |
-| | | | Spostrzegawczość | |
-| Pustka | | | | |
+| Żywioł    | Wartość | | Sub-atrybut  | Wartość |
+|-----------|:-------:|-|--------------|:-------:|
+| Ogień     |         | | Zręczność    |         |
+|           |         | | Inteligencja |         |
+| Ziemia    |         | | Wytrzymałość |         |
+|           |         | | Siła woli    |         |
+| Powietrze |         | | Refleks      |         |
+|           |         | | Intuicja     |         |
+| Woda      |         | | Siła         |         |
+|           |         | | Spostrzeg.   |         |
+| Pustka    |         | |              |         |
 
-**Szkoła**: — **Ranga**: —
-**Techniki**: —
-**Honor**: — **Chwała**: —
-**Umiejętności**: —
-**Zalety**: — **Wady**: —
-**Ekwipunek**: —
+**Wgląd (Insight):** — **Ranga:** — **Szkoła:** —
+**Honor:** — **Chwała:** — **Status:** —
 
-### Dane surowe
+---
 
-OGIEŃ 3, Zręczność 6, Inteligencja 3, ZIEMIA 2, Wytrzymałość 4, Siła Woli 2, POWIETRZE 2, Refleks 6, Intuicja 2, WODA 2, Siła 6, Spostrzegawczość 2, PUSTKA 5, katana atak 12z6, katana obrażenia 10z4, PT trafienia 40/30 (+10 ze względu na ciężką zbroję), HONOR 0.0, CHWAŁA 7.0, UMIEJĘTNOŚCI: Kenjutsu 6, Kyujutsu 6, Obrona 4, Medytacja 2, Wiedza o Krainach Cienia 7, Wiedza o shugenja 6, Taktyka 2, Jeździectwo 6, RANY 4:0, 8:-1, 12:-2, 16:-3, 20:-4, 24:Obalony, 28:Nieprzytomny, 32:Martwy, MAJĄTEK: Komplet mieczy daisho długi miecz katana z czarnej stali obrażenia 4z4 i krótki miecz wakizashi z czarnej stali obrażenia 3z3, wachlarz, ciężka zbroja O-yoroi w kolorze czerni z naniesionymi mrocznymi znakami Krain Cienia.
+**Umiejętności:** —
+
+**Techniki:** —
+
+**Zalety:** — **Wady:** —
+
+---
+
+**Punkty Pustki:** `○ ○ ○ ○ ○`
+
+**Poziomy ran:**
+
+| Poziom | Modyfikator | Skrzynki |
+|--------|:-----------:|:--------:|
+| Zdrowy      | +0 | ○ ○ ○ ○ ○ |
+| Lekko ranny | –1 | ○ ○ ○ ○ ○ |
+| Ranny       | –2 | ○ ○ ○ ○ ○ |
+| Poważnie r. | –3 | ○ ○ ○ ○ ○ |
+| Ciężko r.   | –4 | ○ ○ ○ ○ ○ |
+| Umierający  | –5 | ○ ○ ○ ○ ○ |
+| Martwy      | —  |           |
+
+**Ekwipunek:** —
+
+**Koku:** —
 
 ## Opis
 
