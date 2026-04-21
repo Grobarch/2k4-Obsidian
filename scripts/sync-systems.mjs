@@ -17,7 +17,7 @@ import { SYSTEM_NAMES } from "./schema.mjs";
 const __dir = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dir, "..");
 const VAULT_SYSTEMY = join(ROOT, "vault", "Systemy");
-const OUTPUT = join(ROOT, "vault", "Templates", "systems-data.json");
+const OUTPUT = join(ROOT, "vault", "templates", "systems-data.json");
 
 const APPLY = process.argv.includes("--apply");
 

@@ -11,6 +11,11 @@
       "pelna": "Deadlands: Martwe Ziemie"
     },
     {
+      "id": "deathwatch",
+      "name": "Deathwatch",
+      "pelna": "Deathwatch"
+    },
+    {
       "id": "gasnace-slonca",
       "name": "Gasnące Słońca",
       "pelna": "Gasnące Słońca 2ed"
@@ -47,17 +52,17 @@
     },
     {
       "id": "wfrp-1ed",
-      "name": "Warhammer 1ed",
+      "name": "Warhammer Fantasy Role Play",
       "pelna": "Warhammer Fantasy Role Play 1ed"
     },
     {
       "id": "wfrp-2ed",
-      "name": "Warhammer 2ed",
+      "name": "Warhammer Fantasy Role Play",
       "pelna": "Warhammer Fantasy Role Play 2ed"
     },
     {
       "id": "wfrp-4ed",
-      "name": "Warhammer 4ed",
+      "name": "Warhammer Fantasy Role Play",
       "pelna": "Warhammer Fantasy Role Play 4ed"
     },
     {
@@ -72,16 +77,38 @@
         "id": "cold-tales",
         "name": "Cold Tales",
         "link": "/systemy/cold-city/cold-tales"
+      },
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/cold-city/scenariusze"
       }
     ],
     "deadlands": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/deadlands/scenariusze"
+      },
       {
         "id": "wszystkie-przebrania-alistaira-kanta",
         "name": "Wszystkie Przebrania Alistaira Kanta",
         "link": "/systemy/deadlands/wszystkie-przebrania-alistaira-kanta"
       }
     ],
+    "deathwatch": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/deathwatch/scenariusze"
+      }
+    ],
     "gasnace-slonca": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/gasnace-slonca/scenariusze"
+      },
       {
         "id": "tajemnice-z-hortusa",
         "name": "Tajemnice Z Hortusa",
@@ -89,6 +116,11 @@
       }
     ],
     "honor-i-krew": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/honor-i-krew/scenariusze"
+      },
       {
         "id": "trylogia-miecza",
         "name": "Trylogia Miecza",
@@ -112,6 +144,11 @@
         "link": "/systemy/l5k/prawidla-zdrady"
       },
       {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/l5k/scenariusze"
+      },
+      {
         "id": "trylogia-klanu-lwa",
         "name": "Trylogia Klanu Lwa",
         "link": "/systemy/l5k/trylogia-klanu-lwa"
@@ -122,9 +159,19 @@
         "id": "la-cosa-nostra",
         "name": "La Cosa Nostra",
         "link": "/systemy/mafia-ggf/la-cosa-nostra"
+      },
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/mafia-ggf/scenariusze"
       }
     ],
     "7th-sea": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/7th-sea/scenariusze"
+      },
       {
         "id": "w-maskach",
         "name": "W Maskach",
@@ -136,29 +183,67 @@
         "id": "diabel-z-lazareni",
         "name": "Diabel Z Lazareni",
         "link": "/systemy/wampir/diabel-z-lazareni"
+      },
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/wampir/scenariusze"
       }
     ],
     "wiedzmin": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/wiedzmin/scenariusze"
+      },
       {
         "id": "sludzy-miecza",
         "name": "Sludzy Miecza",
         "link": "/systemy/wiedzmin/sludzy-miecza"
       }
     ],
-    "wfrp-1ed": [],
-    "wfrp-2ed": [
+    "wfrp-1ed": [
       {
-        "id": "listy-z-praag",
-        "name": "Listy Z Praag",
-        "link": "/systemy/wfrp-2ed/kampanie/listy-z-praag"
+        "id": "kampanie",
+        "name": "Kampanie",
+        "link": "/systemy/wfrp-1ed/kampanie"
       },
       {
-        "id": "losy-bohaterow",
-        "name": "Losy Bohaterow",
-        "link": "/systemy/wfrp-2ed/kampanie/losy-bohaterow"
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/wfrp-1ed/scenariusze"
       }
     ],
-    "wfrp-4ed": [],
-    "wolsung": []
+    "wfrp-2ed": [
+      {
+        "id": "kampanie",
+        "name": "Kampanie",
+        "link": "/systemy/wfrp-2ed/kampanie"
+      },
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/wfrp-2ed/scenariusze"
+      }
+    ],
+    "wfrp-4ed": [
+      {
+        "id": "kampanie",
+        "name": "Kampanie",
+        "link": "/systemy/wfrp-4ed/kampanie"
+      },
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/wfrp-4ed/scenariusze"
+      }
+    ],
+    "wolsung": [
+      {
+        "id": "scenariusze",
+        "name": "Scenariusze",
+        "link": "/systemy/wolsung/scenariusze"
+      }
+    ]
   }
 }
