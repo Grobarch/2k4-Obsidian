@@ -18,7 +18,10 @@
 
 export const SYSTEM_NAMES = {
   "cold-city":      "Cold City",
+  "cyberpunk-2020": "Cyberpunk 2020",
   "deadlands":      "Deadlands: Martwe Ziemie",
+  "deathwatch":     "Deathwatch",
+  "dzikie-pola":    "Dzikie Pola",
   "gasnace-slonca": "Gasnące Słońca 2ed",
   "honor-i-krew":   "Honor i Krew",
   "l5k":            "Legenda Pięciu Kręgów 1ed",
