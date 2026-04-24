@@ -52,6 +52,13 @@ if (gatunekRaw === null) { cancel(); return; }
 const gatunek = gatunekRaw.trim();
 
 // ============================================================
+// 4. Status kampanii (aktywna / zawieszona / zakończona)
+// ============================================================
+const STATUSES = ["aktywna", "zawieszona", "zakończona"];
+const status = await tp.system.suggester(STATUSES, STATUSES, false, "Status kampanii (Esc → aktywna)");
+const statusFinal = status || "aktywna";
+
+// ============================================================
 // Oblicz ścieżki
 // ============================================================
 function toSlug(str) {
@@ -76,6 +83,7 @@ const fmLines = [
   `system: ${systemId}`,
   `system_pelna: ${systemTitle}`,
   `mg: ${mg}`,
+  `status: ${statusFinal}`,
 ];
 if (gatunek) fmLines.push(`gatunek: ${gatunek}`);
 const tagLine = gatunek

@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: szpiegowski
 tags: [kampania, cold-city, szpiegowski, horror]
 draft: "false"
+status: "zakończona"
 ---
 
 ![[Systemy/Cold City/Cold Tales/assets/Cold Tales Po drugiej stronie Berlina Arkadiusz Rygiel.png]]

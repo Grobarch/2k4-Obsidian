@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, honor-i-krew, fantasy, samurajski]
 draft: "false"
+status: "zakończona"
 ---
 
 

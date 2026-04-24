@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: gangsterski
 tags: [kampania, mafia-ggf, gangsterski]
 draft: "false"
+status: "zakończona"
 ---
 
 

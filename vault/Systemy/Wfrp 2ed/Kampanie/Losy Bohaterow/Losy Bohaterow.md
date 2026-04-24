@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: [kampania, wfrp-2ed, dark-fantasy, fantasy]
 draft: "false"
+status: "zakończona"
 ---
 
 

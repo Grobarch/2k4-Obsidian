@@ -16,8 +16,73 @@
  */
 
 import { readFile, writeFile } from "node:fs/promises";
+import { statSync, existsSync } from "node:fs";
+import { execSync } from "node:child_process";
 import { join, dirname, relative, resolve } from "node:path";
 import { findMdFiles, parseFrontmatter, slugify } from "./shared.mjs";
+
+// Cache stat results — mtimes are stable within a single build run.
+const _statCache = new Map();
+function getFileStat(filePath) {
+  if (!_statCache.has(filePath)) {
+    try { _statCache.set(filePath, statSync(filePath)); }
+    catch { _statCache.set(filePath, null); }
+  }
+  return _statCache.get(filePath);
+}
+
+// Git-based mtime map — last-commit timestamp per path under vault/.
+// Kluczem jest ścieżka względna od vault/ (np. "Encyklopedia/Bohaterowie Graczy/X.md").
+// Dzięki temu mapa działa zarówno dla targetDir=vault/ jak i targetDir=quartz/content/
+// (pipeline CI kopiuje vault/* → quartz/content/ o tych samych ścieżkach względnych,
+// ale bez zachowanych mtime — mtime z filesystemu jest bezużyteczny w CI).
+let _gitMtimeMap = null;
+function buildGitMtimeMap() {
+  if (_gitMtimeMap !== null) return _gitMtimeMap;
+  _gitMtimeMap = new Map();
+  try {
+    // Znajdź git root — idź w górę od cwd szukając .git
+    let gitRoot = process.cwd();
+    while (gitRoot !== dirname(gitRoot)) {
+      if (existsSync(join(gitRoot, ".git"))) break;
+      gitRoot = dirname(gitRoot);
+    }
+    if (!existsSync(join(gitRoot, ".git"))) return _gitMtimeMap;
+
+    const output = execSync('git log --name-only --format="TS %ct" -- vault/', {
+      encoding: "utf-8",
+      cwd: gitRoot,
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    let currentTs = null;
+    for (const line of output.split(/\r?\n/)) {
+      if (line.startsWith("TS ")) {
+        currentTs = parseInt(line.slice(3), 10);
+      } else if (line.trim() && currentTs !== null) {
+        const stripped = line.startsWith("vault/") ? line.slice(6) : line;
+        if (!_gitMtimeMap.has(stripped)) {
+          _gitMtimeMap.set(stripped, currentTs);
+        }
+      }
+    }
+  } catch {
+    // Cichy fallback: brak gita, brak repo, lub błąd wykonania — użyjemy fs mtime.
+  }
+  return _gitMtimeMap;
+}
+
+/**
+ * Zwraca timestamp (sekundy epoki) dla file.mtime, preferując git log nad fs stat.
+ * Git mtime jest stabilny w CI (gdzie fs mtime = czas checkout), fs to fallback.
+ */
+function getEffectiveMtime(filePath, vaultRoot) {
+  const map = buildGitMtimeMap();
+  const rel = relative(vaultRoot, filePath).replace(/\\/g, "/");
+  const gitTs = map.get(rel);
+  if (gitTs) return gitTs * 1000;
+  const s = getFileStat(filePath);
+  return s ? s.mtimeMs : 0;
+}
 
 const targetDir = resolve(process.argv[2] || "vault");
 
@@ -56,6 +121,8 @@ function parseBaseYaml(text) {
     // Top-level keys
     if (/^filters:/.test(trimmed)) { section = "filters"; currentView = null; continue; }
     if (/^views:/.test(trimmed))   { section = "views";   currentView = null; continue; }
+    const limitTop = trimmed.match(/^limit:\s*(\d+)/);
+    if (limitTop) { result.limit = parseInt(limitTop[1], 10); section = null; continue; }
     if (/^\w/.test(trimmed) && trimmed.includes(":")) { section = null; continue; }
 
     if (section === "filters") {
@@ -84,6 +151,8 @@ function parseBaseYaml(text) {
         viewSection = null;
         continue;
       }
+      const limitView = trimmed.match(/^\s{4}limit:\s*(\d+)/);
+      if (limitView) { currentView.limit = parseInt(limitView[1], 10); viewSection = null; continue; }
       if (/^\s{4}order:/.test(trimmed))   { viewSection = "order";   continue; }
       if (/^\s{4}sort:/.test(trimmed))    { viewSection = "sort";    continue; }
       if (/^\s{4}filters:/.test(trimmed)) { viewSection = "filters"; continue; }
@@ -368,7 +437,9 @@ const COLUMN_HEADERS = {
   title: "Tytuł", data: "Data", system_pelna: "System", system: "System",
   kampania: "Kampania", gracz: "Gracz", archetyp: "Archetyp",
   type: "Typ", mg: "MG", gatunek: "Gatunek", wydawca: "Wydawca",
+  status: "Status",
   "file.name": "Tytuł", "file.basename": "Tytuł", "file.folder": "Folder",
+  "file.mtime": "Zmodyfikowano", "file.ctime": "Utworzono",
 };
 
 /**
@@ -382,6 +453,14 @@ function getCellValue(col, fm, filePath, vaultRoot) {
       case "name":     return base;
       case "basename": return base.replace(/\.md$/i, "");
       case "folder":   return relative(vaultRoot, dirname(filePath)).replace(/\\/g, "/");
+      case "mtime": {
+        const ms = getEffectiveMtime(filePath, vaultRoot);
+        return ms ? new Date(ms).toISOString().slice(0, 10) : "";
+      }
+      case "ctime": {
+        const s = getFileStat(filePath);
+        return s ? new Date(s.ctimeMs).toISOString().slice(0, 10) : "";
+      }
       default:         return "";
     }
   }
@@ -419,11 +498,19 @@ function sortFiles(matchedFiles, sortSpec, vaultRoot) {
  * Jeśli brak order lub pusty, zwraca ["file.name"].
  */
 function resolveColumns(view) {
-  let columns = (view.order || []).filter(c => !c.startsWith("file.ctime") && !c.startsWith("file.mtime"));
+  let columns = (view.order || []);
   if (columns.length === 0) {
     columns = ["file.name"];
   }
   return columns;
+}
+
+/**
+ * Zwraca efektywny limit dla widoku (per-view ma priorytet nad top-level).
+ */
+function resolveLimit(baseConfig) {
+  const view = baseConfig.views[0] || {};
+  return view.limit ?? baseConfig.limit ?? null;
 }
 
 /**
@@ -435,6 +522,8 @@ function generateTable(baseConfig, matchedFiles, vaultRoot) {
   const columns = resolveColumns(view);
 
   sortFiles(matchedFiles, view.sort || [], vaultRoot);
+  const limit = resolveLimit(baseConfig);
+  if (limit) matchedFiles = matchedFiles.slice(0, limit);
 
   if (matchedFiles.length === 0) {
     return "_Brak wyników._\n";
@@ -471,6 +560,8 @@ function generateList(baseConfig, matchedFiles, vaultRoot) {
   const columns = resolveColumns(view);
 
   sortFiles(matchedFiles, view.sort || [], vaultRoot);
+  const limit = resolveLimit(baseConfig);
+  if (limit) matchedFiles = matchedFiles.slice(0, limit);
 
   if (matchedFiles.length === 0) {
     return "_Brak wyników._\n";
@@ -481,9 +572,10 @@ function generateList(baseConfig, matchedFiles, vaultRoot) {
     const label = cleanFmVal(fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, ""));
     const link  = `[${label}](${url})`;
 
-    // Dodatkowe kolumny (poza title) jako metadata po linku
+    // Dodatkowe kolumny (poza title / file.name / file.basename) jako metadata po linku
+    // file.name i file.basename są już wyświetlane jako label linku.
     const extra = columns
-      .filter(c => c !== "title")
+      .filter(c => c !== "title" && c !== "file.name" && c !== "file.basename")
       .map(c => {
         const val = getCellValue(c, fm, path, vaultRoot);
         if (!val) return null;
@@ -519,6 +611,8 @@ function generateCards(baseConfig, matchedFiles, vaultRoot) {
   const columns = resolveColumns(view);
 
   sortFiles(matchedFiles, view.sort || [], vaultRoot);
+  const limit = resolveLimit(baseConfig);
+  if (limit) matchedFiles = matchedFiles.slice(0, limit);
 
   if (matchedFiles.length === 0) {
     return "_Brak wyników._\n";
@@ -529,7 +623,7 @@ function generateCards(baseConfig, matchedFiles, vaultRoot) {
     const label = fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, "");
 
     const metaItems = columns
-      .filter(c => c !== "title")
+      .filter(c => c !== "title" && c !== "file.name" && c !== "file.basename")
       .map(c => {
         const val = getCellValue(c, fm, path, vaultRoot);
         if (!val) return "";

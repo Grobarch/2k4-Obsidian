@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: ["kampania", "7th-Sea", "szpiegowski", "fantasy", "7th-sea"]
 draft: "false"
+status: "zakończona"
 ---
 
 

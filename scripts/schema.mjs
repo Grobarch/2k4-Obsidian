@@ -60,7 +60,9 @@ export const TYPE_SCHEMAS = {
     required:    ["title", "type", "system", "system_pelna", "mg", "gatunek", "tags", "draft"],
     arrayFields: ["tags"],
     computed:    ["system_pelna", "tags"],
-    defaults:    { draft: "false", mg: "Arkadiusz RYGIEL" },
+    // status: opcjonalne pole (aktywna | zawieszona | zakończona). Normalize
+    // wypełnia domyślną wartością gdy brak — nowe kampanie dziedziczą z templatki.
+    defaults:    { draft: "false", mg: "Arkadiusz RYGIEL", status: "zakończona" },
   },
   "system": {
     required:    ["title", "type", "system", "wydawca", "gatunek", "tags", "draft"],
