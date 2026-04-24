@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import {
   heuristicCommaSplit,
   heuristicDashSplit,
+  heuristicQuoteExtract,
 } from "./generate-aliases.mjs";
 
 test("heuristicCommaSplit: zwraca segment przed pierwszym przecinkiem", () => {
@@ -50,4 +51,47 @@ test("heuristicDashSplit: null gdy brak ' - ' i ' — '", () => {
 
 test("heuristicDashSplit: pierwsze wystąpienie wygrywa", () => {
   assert.equal(heuristicDashSplit("A - B - C"), "A");
+});
+
+test("heuristicQuoteExtract: wyciąga pojedynczy cytat 'ASCII single'", () => {
+  assert.deepEqual(
+    heuristicQuoteExtract("Donatan, znany również jako 'Łowca Elfów'"),
+    ["Łowca Elfów"]
+  );
+});
+
+test("heuristicQuoteExtract: wyciąga cytat \"ASCII double\"", () => {
+  assert.deepEqual(
+    heuristicQuoteExtract('John "Krwawy Topór" Smith'),
+    ["Krwawy Topór"]
+  );
+});
+
+test("heuristicQuoteExtract: wyciąga polskie „curly quotes\"", () => {
+  assert.deepEqual(
+    heuristicQuoteExtract("Baron \u201EŻelazna Pięść\u201D Hawkwood"),
+    ["Żelazna Pięść"]
+  );
+});
+
+test("heuristicQuoteExtract: wyciąga smart quotes 'typograficzne'", () => {
+  assert.deepEqual(
+    heuristicQuoteExtract("Paweł \u2018Wilk\u2019 Nowak"),
+    ["Wilk"]
+  );
+});
+
+test("heuristicQuoteExtract: wiele cytatów w jednym tytule", () => {
+  assert.deepEqual(
+    heuristicQuoteExtract("'Foo' i 'Bar'"),
+    ["Foo", "Bar"]
+  );
+});
+
+test("heuristicQuoteExtract: pusta tablica gdy brak cudzysłowów", () => {
+  assert.deepEqual(heuristicQuoteExtract("Akodo Monzo"), []);
+});
+
+test("heuristicQuoteExtract: pomija puste cytaty", () => {
+  assert.deepEqual(heuristicQuoteExtract("''"), []);
 });

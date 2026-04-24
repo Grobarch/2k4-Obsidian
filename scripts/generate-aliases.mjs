@@ -57,7 +57,22 @@ export function heuristicDashSplit(title) {
  * Obsługuje: '...', "...", „..." (polskie curly), '...' / '...' (smart).
  */
 export function heuristicQuoteExtract(title) {
-  return []; // TODO task 4
+  const patterns = [
+    /'([^']+)'/g,                    // ASCII single
+    /"([^"]+)"/g,                    // ASCII double
+    /\u201E([^\u201D]+)\u201D/g,     // „..." polskie curly
+    /\u2018([^\u2019]+)\u2019/g,     // '...' smart single
+    /\u201C([^\u201D]+)\u201D/g,     // "..." smart double
+  ];
+  const results = [];
+  for (const re of patterns) {
+    let m;
+    while ((m = re.exec(title)) !== null) {
+      const v = m[1].trim();
+      if (v.length > 0) results.push(v);
+    }
+  }
+  return results;
 }
 
 /**
