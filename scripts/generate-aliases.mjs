@@ -96,11 +96,31 @@ export function heuristicPrefixStrip(title) {
 // ─── Kompozycja ──────────────────────────────────────────────────────────────
 
 export function generateCandidates(title) {
-  return []; // TODO task 6
+  const out = [];
+  const a = heuristicCommaSplit(title);
+  if (a) out.push({ alias: a, source: "comma-split" });
+  const b = heuristicDashSplit(title);
+  if (b) out.push({ alias: b, source: "dash-split" });
+  for (const q of heuristicQuoteExtract(title)) {
+    out.push({ alias: q, source: "quote-extract" });
+  }
+  const d = heuristicPrefixStrip(title);
+  if (d) out.push({ alias: d, source: "prefix-strip" });
+  return out;
 }
 
 export function filterCandidates(candidates, title) {
-  return []; // TODO task 6
+  const seen = new Set();
+  const out = [];
+  for (const c of candidates) {
+    const a = (c.alias ?? "").trim();
+    if (a.length < 2) continue;
+    if (a === title) continue;
+    if (seen.has(a)) continue;
+    seen.add(a);
+    out.push({ alias: a, source: c.source });
+  }
+  return out;
 }
 
 // ─── YAML helper ─────────────────────────────────────────────────────────────

@@ -6,6 +6,8 @@ import {
   heuristicDashSplit,
   heuristicQuoteExtract,
   heuristicPrefixStrip,
+  generateCandidates,
+  filterCandidates,
 } from "./generate-aliases.mjs";
 
 test("heuristicCommaSplit: zwraca segment przed pierwszym przecinkiem", () => {
@@ -119,4 +121,42 @@ test("heuristicPrefixStrip: null gdy cały tytuł lowercase (zostałby pusty)", 
 
 test("heuristicPrefixStrip: null gdy single-word lowercase", () => {
   assert.equal(heuristicPrefixStrip("baron"), null);
+});
+
+test("generateCandidates: łączy wyniki A+B+C+D w kolejności", () => {
+  const title = "Donatan z Tulendalu h. Niedźwiedź, Rycerz Zakonu, znany jako 'Łowca Elfów'";
+  const result = generateCandidates(title);
+  assert.deepEqual(result, [
+    { alias: "Donatan z Tulendalu h. Niedźwiedź", source: "comma-split" },
+    { alias: "Łowca Elfów", source: "quote-extract" },
+  ]);
+});
+
+test("generateCandidates: dash-split i prefix-strip dla baron z myślnikiem", () => {
+  const title = "baron Kamden - Wyndon Hawkwood";
+  const result = generateCandidates(title);
+  assert.deepEqual(result, [
+    { alias: "baron Kamden", source: "dash-split" },
+    { alias: "Kamden - Wyndon Hawkwood", source: "prefix-strip" },
+  ]);
+});
+
+test("generateCandidates: pusta lista dla prostego tytułu", () => {
+  assert.deepEqual(generateCandidates("Akodo Monzo"), []);
+});
+
+test("filterCandidates: usuwa pusty, ≠title, ≥2 znaki, dedup", () => {
+  const candidates = [
+    { alias: "Foo Bar", source: "comma-split" },
+    { alias: "Foo Bar", source: "prefix-strip" },
+    { alias: "A", source: "quote-extract" },
+    { alias: "Full Title", source: "dash-split" },
+    { alias: "", source: "comma-split" },
+    { alias: "Valid Alias", source: "dash-split" },
+  ];
+  const result = filterCandidates(candidates, "Full Title");
+  assert.deepEqual(result, [
+    { alias: "Foo Bar", source: "comma-split" },
+    { alias: "Valid Alias", source: "dash-split" },
+  ]);
 });
