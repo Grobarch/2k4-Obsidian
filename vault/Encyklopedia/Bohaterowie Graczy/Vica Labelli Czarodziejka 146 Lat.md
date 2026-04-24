@@ -1,5 +1,6 @@
 ---
 title: Vica Labelli, Czarodziejka, 146 lat
+aliases: ["Vica Labelli"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

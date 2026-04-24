@@ -1,5 +1,6 @@
 ---
 title: Turin Siekacz, Najemnik, 25 lat
+aliases: ["Turin Siekacz"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

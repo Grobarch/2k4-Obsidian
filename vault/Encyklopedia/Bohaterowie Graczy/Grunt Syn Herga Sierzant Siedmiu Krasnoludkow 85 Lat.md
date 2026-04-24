@@ -1,5 +1,6 @@
 ---
 title: Grunt Syn Herga, Sierżant Siedmiu Krasnoludków, 85 lat
+aliases: ["Grunt Syn Herga"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

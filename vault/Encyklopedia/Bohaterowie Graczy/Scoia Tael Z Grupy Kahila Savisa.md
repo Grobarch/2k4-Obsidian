@@ -1,5 +1,6 @@
 ---
 title: Scoia’tael z grupy, Kahila Savisa
+aliases: ["Scoia’tael z grupy"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

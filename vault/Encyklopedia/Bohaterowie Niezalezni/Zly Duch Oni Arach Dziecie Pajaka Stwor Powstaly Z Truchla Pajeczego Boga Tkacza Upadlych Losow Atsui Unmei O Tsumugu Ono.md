@@ -1,5 +1,6 @@
 ---
 title: Zły duch Oni Arach Dziecię Pająka - Stwór powstały z truchła pajęczego boga Tkacza Upadłych Losów Atsui-unmei-o-tsumugu-ono
+aliases: ["Zły duch Oni Arach Dziecię Pająka"]
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed

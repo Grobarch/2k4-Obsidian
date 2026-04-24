@@ -1,5 +1,6 @@
 ---
 title: Tobiasz Has, Nożownik i przywódca zbirów, Człowiek od brudnej roboty, 36 lat
+aliases: ["Tobiasz Has"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

@@ -1,5 +1,6 @@
 ---
 title: Germin Salog, Nożownik, 34 lata
+aliases: ["Germin Salog"]
 type: bohater-niezalezny
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

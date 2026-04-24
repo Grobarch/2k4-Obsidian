@@ -1,5 +1,6 @@
 ---
 title: Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw
+aliases: ["Cień Kobiety"]
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed

@@ -1,5 +1,6 @@
 ---
 title: "mnich Kylian"
+aliases: ["Kylian"]
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

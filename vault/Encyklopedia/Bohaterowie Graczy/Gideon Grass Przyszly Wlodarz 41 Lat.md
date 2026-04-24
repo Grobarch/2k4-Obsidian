@@ -1,5 +1,6 @@
 ---
 title: Gideon Grass, Przyszły włodarz, 41 lat
+aliases: ["Gideon Grass"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

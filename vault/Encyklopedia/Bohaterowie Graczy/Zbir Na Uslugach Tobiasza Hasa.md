@@ -1,5 +1,6 @@
 ---
 title: Zbir na usługach, Tobiasza Hasa
+aliases: ["Zbir na usługach"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

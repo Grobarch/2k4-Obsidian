@@ -1,5 +1,6 @@
 ---
 title: "baron Kamden Wyndon Hawkwood"
+aliases: ["Kamden Wyndon Hawkwood"]
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
