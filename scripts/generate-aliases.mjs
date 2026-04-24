@@ -80,7 +80,17 @@ export function heuristicQuoteExtract(title) {
  * Polskie znaki (ąćęłńóśźż) traktowane jak małe.
  */
 export function heuristicPrefixStrip(title) {
-  return null; // TODO task 5
+  const isLowerStart = (s) => /^[a-ząćęłńóśźż]/.test(s);
+  let remaining = title.trim();
+  let changed = false;
+  while (isLowerStart(remaining)) {
+    const m = remaining.match(/^\S+\s+/);
+    if (!m) return null;
+    remaining = remaining.slice(m[0].length);
+    changed = true;
+  }
+  if (!changed) return null;
+  return remaining.length > 0 ? remaining : null;
 }
 
 // ─── Kompozycja ──────────────────────────────────────────────────────────────

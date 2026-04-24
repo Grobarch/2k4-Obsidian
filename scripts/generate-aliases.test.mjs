@@ -5,6 +5,7 @@ import {
   heuristicCommaSplit,
   heuristicDashSplit,
   heuristicQuoteExtract,
+  heuristicPrefixStrip,
 } from "./generate-aliases.mjs";
 
 test("heuristicCommaSplit: zwraca segment przed pierwszym przecinkiem", () => {
@@ -94,4 +95,28 @@ test("heuristicQuoteExtract: pusta tablica gdy brak cudzysłowów", () => {
 
 test("heuristicQuoteExtract: pomija puste cytaty", () => {
   assert.deepEqual(heuristicQuoteExtract("''"), []);
+});
+
+test("heuristicPrefixStrip: zdejmuje jedno słowo lowercase", () => {
+  assert.equal(heuristicPrefixStrip("baron Kamden Wyndon Hawkwood"), "Kamden Wyndon Hawkwood");
+});
+
+test("heuristicPrefixStrip: zdejmuje słowo zaczynające się polskim lowercase", () => {
+  assert.equal(heuristicPrefixStrip("żołnierz Yojimbo"), "Yojimbo");
+});
+
+test("heuristicPrefixStrip: zdejmuje iteracyjnie wiele słów lowercase", () => {
+  assert.equal(heuristicPrefixStrip("gannokański pilot Speedy Tuk-Tuk"), "Speedy Tuk-Tuk");
+});
+
+test("heuristicPrefixStrip: null gdy pierwsze słowo wielką literą", () => {
+  assert.equal(heuristicPrefixStrip("Akodo Monzo"), null);
+});
+
+test("heuristicPrefixStrip: null gdy cały tytuł lowercase (zostałby pusty)", () => {
+  assert.equal(heuristicPrefixStrip("baron kamden"), null);
+});
+
+test("heuristicPrefixStrip: null gdy single-word lowercase", () => {
+  assert.equal(heuristicPrefixStrip("baron"), null);
 });
