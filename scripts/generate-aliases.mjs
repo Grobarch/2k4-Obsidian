@@ -44,7 +44,12 @@ export function heuristicCommaSplit(title) {
  * Wymagane spacje z obu stron — nie łamie słów złożonych („Maho-tsukai", „Tuk-Tuk").
  */
 export function heuristicDashSplit(title) {
-  return null; // TODO task 3
+  const hyphenIdx = title.indexOf(" - ");
+  const emDashIdx = title.indexOf(" — ");
+  const idx = [hyphenIdx, emDashIdx].filter((i) => i >= 0).sort((a, b) => a - b)[0];
+  if (idx === undefined) return null;
+  const seg = title.slice(0, idx).trim();
+  return seg.length > 0 ? seg : null;
 }
 
 /**
