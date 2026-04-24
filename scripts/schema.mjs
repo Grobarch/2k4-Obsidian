@@ -40,13 +40,13 @@ export const SYSTEM_NAMES = {
 export const TYPE_SCHEMAS = {
   "bohater-gracza": {
     required:    ["title", "type", "system", "system_pelna", "tags"],
-    arrayFields: ["tags", "kampania", "kampania_link"],
+    arrayFields: ["tags", "kampania", "kampania_link", "aliases"],
     computed:    ["system_pelna", "tags"],
     defaults:    {},
   },
   "bohater-niezalezny": {
     required:    ["title", "type", "system", "system_pelna", "tags"],
-    arrayFields: ["tags", "kampania", "kampania_link"],
+    arrayFields: ["tags", "kampania", "kampania_link", "aliases"],
     computed:    ["system_pelna", "tags"],
     defaults:    {},
   },
@@ -58,7 +58,7 @@ export const TYPE_SCHEMAS = {
   },
   "kampania": {
     required:    ["title", "type", "system", "system_pelna", "mg", "gatunek", "tags", "draft"],
-    arrayFields: ["tags"],
+    arrayFields: ["tags", "aliases"],
     computed:    ["system_pelna", "tags"],
     // status: opcjonalne pole (aktywna | zawieszona | zakończona). Normalize
     // wypełnia domyślną wartością gdy brak — nowe kampanie dziedziczą z templatki.
@@ -66,19 +66,19 @@ export const TYPE_SCHEMAS = {
   },
   "system": {
     required:    ["title", "type", "system", "wydawca", "gatunek", "tags", "draft"],
-    arrayFields: ["tags"],
+    arrayFields: ["tags", "aliases"],
     computed:    ["tags"],
     defaults:    { draft: "false" },
   },
   "lokacja": {
     required:    ["title", "type", "system", "system_pelna", "tags"],
-    arrayFields: ["tags", "kampania", "kampania_link"],
+    arrayFields: ["tags", "kampania", "kampania_link", "aliases"],
     computed:    ["system_pelna", "tags"],
     defaults:    {},
   },
   "artefakt": {
     required:    ["title", "type", "system", "system_pelna", "tags"],
-    arrayFields: ["tags", "kampania", "kampania_link"],
+    arrayFields: ["tags", "kampania", "kampania_link", "aliases"],
     computed:    ["system_pelna", "tags"],
     defaults:    {},
   },
