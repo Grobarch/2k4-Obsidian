@@ -126,7 +126,11 @@ export function filterCandidates(candidates, title) {
 // ─── YAML helper ─────────────────────────────────────────────────────────────
 
 export function insertAliasesAfterTitle(yaml, aliasList) {
-  return null; // TODO task 7
+  const escape = (s) => s.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+  const flowArray = `[${aliasList.map((a) => `"${escape(a)}"`).join(", ")}]`;
+  const re = /^(title:.*)$/m;
+  if (!re.test(yaml)) return null;
+  return yaml.replace(re, `$1\naliases: ${flowArray}`);
 }
 
 // ─── CLI ─────────────────────────────────────────────────────────────────────

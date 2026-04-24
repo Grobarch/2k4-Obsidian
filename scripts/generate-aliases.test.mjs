@@ -8,6 +8,7 @@ import {
   heuristicPrefixStrip,
   generateCandidates,
   filterCandidates,
+  insertAliasesAfterTitle,
 } from "./generate-aliases.mjs";
 
 test("heuristicCommaSplit: zwraca segment przed pierwszym przecinkiem", () => {
@@ -159,4 +160,33 @@ test("filterCandidates: usuwa pusty, ≠title, ≥2 znaki, dedup", () => {
     { alias: "Foo Bar", source: "comma-split" },
     { alias: "Valid Alias", source: "dash-split" },
   ]);
+});
+
+test("insertAliasesAfterTitle: wstawia flow-style array po linii title", () => {
+  const yaml = "title: Foo\ntype: bohater-gracza\nsystem: l5k";
+  const result = insertAliasesAfterTitle(yaml, ["Bar", "Baz"]);
+  assert.equal(result, 'title: Foo\naliases: ["Bar", "Baz"]\ntype: bohater-gracza\nsystem: l5k');
+});
+
+test("insertAliasesAfterTitle: escape cudzysłowów w aliasach", () => {
+  const yaml = "title: Foo\ntype: bohater-gracza";
+  const result = insertAliasesAfterTitle(yaml, ['Alias "with quote"']);
+  assert.equal(result, 'title: Foo\naliases: ["Alias \\"with quote\\""]\ntype: bohater-gracza');
+});
+
+test("insertAliasesAfterTitle: escape backslash", () => {
+  const yaml = "title: Foo\ntype: x";
+  const result = insertAliasesAfterTitle(yaml, ["back\\slash"]);
+  assert.equal(result, 'title: Foo\naliases: ["back\\\\slash"]\ntype: x');
+});
+
+test("insertAliasesAfterTitle: null gdy brak linii title", () => {
+  const yaml = "type: bohater-gracza\nsystem: l5k";
+  assert.equal(insertAliasesAfterTitle(yaml, ["Foo"]), null);
+});
+
+test("insertAliasesAfterTitle: działa z title w cudzysłowach", () => {
+  const yaml = 'title: "Foo Bar"\ntype: x';
+  const result = insertAliasesAfterTitle(yaml, ["Foo"]);
+  assert.equal(result, 'title: "Foo Bar"\naliases: ["Foo"]\ntype: x');
 });
