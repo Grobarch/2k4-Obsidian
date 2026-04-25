@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: samurajski
 tags: [kampania, l5k, samurajski]
 draft: "false"
+status: "zakończona"
 ---
 
 

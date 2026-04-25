@@ -15,7 +15,13 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(for f:*)",
       "Bash(do echo:*)",
-      "Read(//f/RPG/RPG_repo/2k4-Obsidian/**)"
+      "Read(//f/RPG/RPG_repo/2k4-Obsidian/**)",
+      "Bash(node scripts/vault-tools.mjs set-field status \"zakończona\" --type kampania)",
+      "Bash(node scripts/vault-tools.mjs set-field status \"zakończona\" --type kampania --apply)",
+      "Bash(rm -rf /tmp/wiki-test)",
+      "Bash(mkdir -p /tmp/wiki-test)",
+      "Bash(cp -r vault/* /tmp/wiki-test/)",
+      "Bash(node scripts/build-bases.mjs /tmp/wiki-test)"
     ]
   }
 }

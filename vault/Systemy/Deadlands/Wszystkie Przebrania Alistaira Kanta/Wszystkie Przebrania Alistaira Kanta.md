@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: western
 tags: [kampania, deadlands, western, horror]
 draft: "false"
+status: "aktywna"
 ---
 
 

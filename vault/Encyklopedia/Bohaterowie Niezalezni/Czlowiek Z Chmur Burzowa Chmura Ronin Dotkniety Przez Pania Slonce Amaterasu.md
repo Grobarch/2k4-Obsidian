@@ -1,5 +1,6 @@
 ---
 title: Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu
+aliases: ["Człowiek z Chmur"]
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed

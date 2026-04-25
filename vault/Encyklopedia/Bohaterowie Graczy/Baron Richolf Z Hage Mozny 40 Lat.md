@@ -1,5 +1,6 @@
 ---
 title: Baron Richolf z, Hage, Możny, 40 lat
+aliases: ["Baron Richolf z Hage", "Baron Richolf"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

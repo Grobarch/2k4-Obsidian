@@ -1,5 +1,6 @@
 ---
 title: Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wężowy Czarownik ze Strażnicy Płaczu Naku-gadian w Krainach Cienia
+aliases: ["Hebi Taishiro"]
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed

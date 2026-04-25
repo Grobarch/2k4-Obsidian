@@ -408,8 +408,11 @@ async function cmdNormalize(files, opts) {
       mutations.push(`  kampania: (brak) → "${kampaniaSlug}"  [computed]`);
     }
 
-    // ── Pass 3: Fill defaults for missing required fields ───────────────
-    for (const field of schema.required) {
+    // ── Pass 3: Fill defaults for missing fields ────────────────────────
+    // Iterates union of required + defaults, so optional fields with defaults
+    // (np. status dla kampanii) też dostaną wartość domyślną gdy brak.
+    const defaultFields = new Set([...schema.required, ...Object.keys(schema.defaults)]);
+    for (const field of defaultFields) {
       if ((!fm[field] || fm[field] === "") && schema.defaults[field]) {
         const result = setFieldIfAbsentInYaml(yaml, field, schema.defaults[field]);
         if (result !== null) {

@@ -1,5 +1,6 @@
 ---
 title: "psionik Hayat Yuksel"
+aliases: ["Hayat Yuksel"]
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

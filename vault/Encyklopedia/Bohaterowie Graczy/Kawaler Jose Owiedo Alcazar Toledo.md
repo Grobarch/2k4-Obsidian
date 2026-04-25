@@ -1,5 +1,6 @@
 ---
 title: "kawaler Jose Owiedo Alcazar Toledo"
+aliases: ["Jose Owiedo Alcazar Toledo"]
 type: bohater-gracza
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed

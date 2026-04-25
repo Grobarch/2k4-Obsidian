@@ -1,5 +1,6 @@
 ---
 title: Hargan Worn, Dowódca Siedmiu Krasnoludków, 96 lat
+aliases: ["Hargan Worn"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

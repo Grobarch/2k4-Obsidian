@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: fantasy
 tags: ["kampania", "Wiedźmin", "dark-fantasy", "fantasy", "wiedzmin"]
 draft: "false"
+status: "zakończona"
 ---
 
 

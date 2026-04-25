@@ -1,5 +1,6 @@
 ---
 title: Meth Zin, Czarodziej, 28 lat
+aliases: ["Meth Zin"]
 type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"

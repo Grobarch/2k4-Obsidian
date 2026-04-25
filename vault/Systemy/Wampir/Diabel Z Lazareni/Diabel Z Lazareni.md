@@ -7,6 +7,7 @@ mg: Arkadiusz RYGIEL
 gatunek: dark-fantasy
 tags: [kampania, wampir, horror, dark-fantasy]
 draft: "false"
+status: "zakończona"
 ---
 
 

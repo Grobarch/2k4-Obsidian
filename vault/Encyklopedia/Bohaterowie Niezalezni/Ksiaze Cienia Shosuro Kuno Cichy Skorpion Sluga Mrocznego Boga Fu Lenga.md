@@ -1,5 +1,6 @@
 ---
 title: Książę Cienia Shosuro Kuno - Cichy Skorpion - Sługa Mrocznego boga Fu Lenga
+aliases: ["Książę Cienia Shosuro Kuno"]
 type: bohater-niezalezny
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
