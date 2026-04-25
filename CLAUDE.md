@@ -52,6 +52,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── restore-bases.mjs          ← odtwarzanie bloków base w folder notes (odwrotność build-bases)
 │   ├── backlinks.mjs              ← wstawianie linków markdown do body notatek (per-note lub batch); nie dotyka frontmatteru
 │   ├── report-statblocks.mjs      ← raport kompletności statbloków BG/BN (per system, lista brakujących pól)
+│   ├── generate-aliases.mjs       ← heurystyczny generator aliasów dla BG/BN (comma/dash/quote/prefix)
 │   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
 │   ├── fix-infolder-paths.mjs     ← naprawa ścieżek file.inFolder w blokach base
 │   ├── migrate-scenarios.mjs      ← jednorazowa migracja: Scenariusze/→Systemy/[Sys]/Scenariusze/
@@ -180,6 +181,28 @@ node scripts/report-statblocks.mjs --md raport.md         # dodatkowo zapisz md
 ```
 
 Skanuje pliki z `type: bohater-gracza` / `bohater-niezalezny` i drukuje raport markdown: podsumowanie per system (pełne / niepełne / bez statblocka) oraz listę niepełnych postaci z nazwami brakujących pól. Heurystyka: wykrywa inline placeholdery `**Label:** —` i `**Label**: —` (em-dash U+2014). Świadomie pomija puste komórki tabel (`| — |`) — fałszywe pozytywy w L5K i innych interlaced statblockach. Exit code zawsze 0 (raport nie blokuje CI).
+
+### Generator aliasów
+
+```bash
+node scripts/generate-aliases.mjs                        # dry-run, cały vault
+node scripts/generate-aliases.mjs --apply                # zapis zmian
+node scripts/generate-aliases.mjs --system l5k           # filtr system
+node scripts/generate-aliases.mjs --type bohater-niezalezny  # filtr type
+node scripts/generate-aliases.mjs --file vault/path.md   # pojedynczy plik
+```
+
+Heurystyczny generator aliasów dla postaci BG/BN. Cztery heurystyki:
+- **comma-split** — segment przed pierwszym `,` (wiedzmin: "Donatan…, Rycerz Zakonu, 32 lata" → "Donatan…")
+- **dash-split** — segment przed ` - ` / ` — ` ze spacjami (l5k: "Hebi Taishiro - Czarnoksiężnik…" → "Hebi Taishiro")
+- **quote-extract** — zawartość `'...'`, `"..."`, `„..."` (np. `'Łowca Elfów'`)
+- **prefix-strip** — iteracyjnie zdejmij pierwsze słowo lowercase (gasnace: "baron Kamden…" → "Kamden…")
+
+**Policy**: jeśli plik ma już klucz `aliases:` — pomijamy w całości (hand-curated wartości nigdy nie nadpisywane). Aby wygenerować na nowo, usuń ręcznie linię i uruchom ponownie.
+
+Tryb domyślny to **dry-run** — wypisuje propozycje do stdout. `--apply` zapisuje zmiany: wstawia `aliases: [...]` flow-style array bezpośrednio po linii `title:`. Nie dotyka body notatki. Integracja z `backlinks.mjs`: nowe aliasy trafiają do indeksu matchowalnych fraz przy kolejnym `backlinks --all`.
+
+Testy jednostkowe heurystyk: `node --test scripts/generate-aliases.test.mjs`.
 
 ### Git pre-commit hook
 
