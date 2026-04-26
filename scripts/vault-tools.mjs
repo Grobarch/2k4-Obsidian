@@ -28,6 +28,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { relative, dirname, basename } from "node:path";
 import { findMdFiles, parseFrontmatter, extractRawFrontmatter, slugify, setFieldIfAbsentInYaml } from "./shared.mjs";
 import { TYPE_SCHEMAS, SYSTEM_NAMES } from "./schema.mjs";
+import { computeStatblockStatus } from "./statblock-detect.mjs";
 
 // ─── Parsowanie argumentów ───────────────────────────────────────────────────
 
@@ -406,6 +407,16 @@ async function cmdNormalize(files, opts) {
       const kampaniaSlug = slugify(parentFolderName);
       yaml = setFieldInYaml(yaml, "kampania", kampaniaSlug);
       mutations.push(`  kampania: (brak) → "${kampaniaSlug}"  [computed]`);
+    }
+
+    // 2e: statblock_status — strict recompute z body (zawsze, nie tylko gdy brak)
+    if (schema.computed.includes("statblock_status")) {
+      const newStatus = computeStatblockStatus(f.content);
+      const oldStatus = fm.statblock_status || "(brak)";
+      if (oldStatus !== newStatus) {
+        yaml = setFieldInYaml(yaml, "statblock_status", newStatus);
+        mutations.push(`  statblock_status: ${oldStatus} → "${newStatus}"  [computed]`);
+      }
     }
 
     // ── Pass 3: Fill defaults for missing fields ────────────────────────
