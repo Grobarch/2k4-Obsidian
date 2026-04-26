@@ -63,7 +63,7 @@ Expected: identyczna liczba ostrzeżeń jak baseline (`⚠ 23/286 plików ma bra
 
 ```bash
 git add scripts/schema.mjs
-git commit -m "feat(RPG-92): statblock_status w computed[] dla BG/BN"
+git commit -m "feat(statblock-status): statblock_status w computed[] dla BG/BN"
 ```
 
 ---
@@ -180,7 +180,7 @@ Expected: `# pass 5 # fail 0` (5 testów `extractBody` przechodzi; stuby pozosta
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
-git commit -m "feat(RPG-92): szkielet statblock-detect + extractBody"
+git commit -m "feat(statblock-status): szkielet statblock-detect + extractBody"
 ```
 
 ---
@@ -270,7 +270,7 @@ Expected: `# pass 12 # fail 0`.
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
-git commit -m "feat(RPG-92): findMissingFields heurystyka"
+git commit -m "feat(statblock-status): findMissingFields heurystyka"
 ```
 
 ---
@@ -342,7 +342,7 @@ Expected: `# pass 18 # fail 0`.
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
-git commit -m "feat(RPG-92): hasStatblock heurystyka"
+git commit -m "feat(statblock-status): hasStatblock heurystyka"
 ```
 
 ---
@@ -412,7 +412,7 @@ Expected: `# pass 23 # fail 0`.
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
-git commit -m "feat(RPG-92): computeStatblockStatus (kompozycja 3 heurystyk)"
+git commit -m "feat(statblock-status): computeStatblockStatus (kompozycja 3 heurystyk)"
 ```
 
 ---
@@ -477,7 +477,7 @@ Expected: `# pass 23 # fail 0`.
 
 ```bash
 git add scripts/report-statblocks.mjs
-git commit -m "refactor(RPG-92): report-statblocks używa statblock-detect"
+git commit -m "refactor(statblock-status): report-statblocks używa statblock-detect"
 ```
 
 ---
@@ -551,7 +551,7 @@ Expected: 3 wartości (`pelny`, `niepelny`, `brak-statblocka`) z rozsądnymi lic
 
 ```bash
 git add scripts/vault-tools.mjs
-git commit -m "feat(RPG-92): vault-tools normalize Pass 2e (strict recompute statblock_status)"
+git commit -m "feat(statblock-status): vault-tools normalize Pass 2e (strict recompute statblock_status)"
 ```
 
 ---
@@ -624,7 +624,7 @@ Jeśli widzisz inne zmiany — STOP, zgłoś jako concern.
 
 ```bash
 git add vault/
-git commit -m "data(RPG-92): backfill statblock_status dla BG/BN"
+git commit -m "data(statblock-status): backfill statblock_status dla BG/BN"
 ```
 
 ---
@@ -715,7 +715,7 @@ Expected: brak linii `SKIP: nieobsługiwane wyrażenie` ani `ERROR` dla `index.m
 
 ```bash
 git add vault/index.md
-git commit -m "feat(RPG-92): widget BG/BN do statowania w index.md"
+git commit -m "feat(statblock-status): widget BG/BN do statowania w index.md"
 ```
 
 ---
@@ -781,7 +781,7 @@ Expected: nowa zawartość widoczna; brak nieparowanych ``` ani `#`.
 
 ```bash
 git add CLAUDE.md
-git commit -m "docs(RPG-92): statblock-detect + computed statblock_status w CLAUDE.md"
+git commit -m "docs(statblock-status): statblock-detect + computed statblock_status w CLAUDE.md"
 ```
 
 - [ ] **Step 7: Final verification — wszystkie testy zielone**

@@ -1,6 +1,6 @@
 # Spec — `statblock_status` jako computed field + widget "BG/BN do statowania"
 
-**Linear ticket:** RPG-92 (do utworzenia)
+**Linear ticket:** brak (zadanie spoza Linear, prefix commitów: `statblock-status`)
 **Data:** 2026-04-26
 **Powiązane:** RPG-89 (dashboard placeholder), RPG-90 (raport statblocks heurystyka), RPG-91 (precedens computed array — `aliases`)
 
@@ -282,7 +282,7 @@ Ekspektowane mutacje: ~80 plików BG/BN dostanie pole `statblock_status`. Mix wa
 - Wszystkie 19 obecnie niepełnych BN → `niepelny`
 - Reszta zależy od stanu body — `pelny` jeśli body ma statblock i zero em-dashy; `brak-statblocka` jeśli body puste
 
-Single commit: `data(RPG-92): backfill statblock_status dla BG/BN`.
+Single commit: `data(statblock-status): backfill statblock_status dla BG/BN`.
 
 ## Testy
 
