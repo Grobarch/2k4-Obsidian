@@ -6,6 +6,7 @@ system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Paweł OBSTAWSKI
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
+statblock_status: "niepelny"
 ---
 
 ![Portret gannokański pilot Speedy Tuk-Tuk](placeholder.jpg)

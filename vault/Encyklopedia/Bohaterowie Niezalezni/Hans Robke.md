@@ -6,6 +6,7 @@ system_pelna: Cold City
 kampania_link: ["/systemy/cold-city/cold-tales"]
 kampania: ["cold-tales"]
 tags: [bohater-niezalezny, cold-city, szpiegowski, horror]
+statblock_status: "niepelny"
 ---
 
 ![Portret Dr. Hans Robke](placeholder.jpg)

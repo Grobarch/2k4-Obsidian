@@ -13,6 +13,7 @@ tags:
   - deadlands
   - western
   - horror
+statblock_status: "niepelny"
 ---
 
 ![Portret rewolwerowiec i ochroniarz Timothy Crawford III](placeholder.jpg)

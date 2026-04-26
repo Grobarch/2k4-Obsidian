@@ -7,6 +7,7 @@ kampania_link: ["/systemy/l5k/miecze-cnot-i-grzechow"]
 kampania: ["miecze-cnot-i-grzechow"]
 gracz: Monika ŁYŻWA
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Noya Ayame](placeholder.jpg)

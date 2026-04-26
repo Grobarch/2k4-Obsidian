@@ -6,6 +6,7 @@ system_pelna: "Wolsung: Magia Wieku Pary"
 gracz: Krzysiek Obstawski
 archetyp: Elf, eksplorator
 tags: [bohater-gracza, wolsung, steampunk]
+statblock_status: "niepelny"
 ---
 
 ![Portret Klaus Metternich](placeholder.jpg)

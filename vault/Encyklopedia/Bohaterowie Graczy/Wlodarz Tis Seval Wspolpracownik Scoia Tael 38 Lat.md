@@ -5,6 +5,7 @@ type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
+statblock_status: "niepelny"
 ---
 
 ![Portret Włodarz Tis Seval, Współpracownik Scoia’tael, 38 lat](placeholder.jpg)

@@ -6,6 +6,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 kampania_link: ["/systemy/l5k/groza-ktora-zawsze-powraca"]
 kampania: ["groza-ktora-zawsze-powraca"]
 tags: [bohater-niezalezny, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri](placeholder.jpg)

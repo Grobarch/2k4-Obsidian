@@ -13,6 +13,7 @@ tags:
   - deadlands
   - western
   - horror
+statblock_status: "niepelny"
 ---
 
 ![Portret poszukiwacz Jacob Hoover](placeholder.jpg)

@@ -14,6 +14,7 @@ tags:
   - bohater-niezalezny
   - l5k
   - samurajski
+statblock_status: "niepelny"
 ---
 
 ![Portret Cień Kobiety - Jedna z Mrocznych Zjaw poddanych woli Cichego Skorpiona z Zamku Żądeł w Mieście Słodkich Kłamstw](placeholder.jpg)

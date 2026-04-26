@@ -8,6 +8,7 @@ kampania: ["miecze-cnot-i-grzechow"]
 gracz: Rafał KAMIŃSKI
 archetyp: bushi z Klanu Żurawia
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Kakita Kim](placeholder.jpg)

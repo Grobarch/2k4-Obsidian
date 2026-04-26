@@ -6,6 +6,7 @@ system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Dawid KOŁACIŃSKI
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
+statblock_status: "niepelny"
 ---
 
 ![Portret kawaler Jose Owiedo Alcazar Toledo](placeholder.jpg)

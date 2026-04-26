@@ -14,6 +14,7 @@ tags:
   - bohater-niezalezny
   - l5k
   - samurajski
+statblock_status: "niepelny"
 ---
 
 ![Portret Człowiek z Chmur - Burzowa Chmura - Ronin dotknięty przez Panią Słońce Amaterasu](placeholder.jpg)

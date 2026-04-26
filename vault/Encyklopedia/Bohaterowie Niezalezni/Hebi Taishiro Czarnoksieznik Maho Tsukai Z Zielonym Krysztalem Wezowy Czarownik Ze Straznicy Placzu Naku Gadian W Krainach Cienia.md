@@ -12,6 +12,7 @@ tags:
   - bohater-niezalezny
   - l5k
   - samurajski
+statblock_status: "niepelny"
 ---
 
 ![Portret Hebi Taishiro - Czarnoksiężnik Maho-tsukai z Zielonym Kryształem - Wężowy Czarownik ze Strażnicy Płaczu Naku-gadian w Krainach Cienia](placeholder.jpg)

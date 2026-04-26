@@ -8,6 +8,7 @@ kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Paweł PIOTROWSKI
 archetyp: shugenja z Klanu Smoka i Szmaragdowy Namiestnik
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Agasha Damagodetsu](placeholder.jpg)

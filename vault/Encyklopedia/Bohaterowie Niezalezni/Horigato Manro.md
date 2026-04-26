@@ -9,6 +9,7 @@ tags:
   - bohater-niezalezny
   - l5k
   - samurajski
+statblock_status: "niepelny"
 ---
 
 ![Portret Horigato Manro](placeholder.jpg)

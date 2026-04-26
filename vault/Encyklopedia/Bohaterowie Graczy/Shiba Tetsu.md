@@ -8,6 +8,7 @@ kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Radosław RYBIŃSKI
 archetyp: bushi z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Shiba Tetsu](placeholder.jpg)

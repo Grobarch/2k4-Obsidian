@@ -8,6 +8,7 @@ kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Piotr RYGIEL
 archetyp: bushi z Klanu Lwa
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Akodo Nushiro](placeholder.jpg)

@@ -7,6 +7,7 @@ kampania_link: ["/systemy/cold-city/cold-tales"]
 kampania: ["cold-tales"]
 archetyp: Funkcjonariusz PAP, Żołnierz KBW
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
+statblock_status: "niepelny"
 ---
 
 ![Portret Mjr. Józef Bardak](placeholder.jpg)

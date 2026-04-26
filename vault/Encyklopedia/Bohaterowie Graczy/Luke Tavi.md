@@ -6,6 +6,7 @@ system_pelna: "Wolsung: Magia Wieku Pary"
 gracz: Radek Rybiński
 archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
+statblock_status: "niepelny"
 ---
 
 ![Portret Luke Tavi](placeholder.jpg)

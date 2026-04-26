@@ -5,6 +5,7 @@ type: bohater-gracza
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-gracza", "Wiedźmin", "dark-fantasy", "wiedzmin"]
+statblock_status: "niepelny"
 ---
 
 ![Portret Hargan Worn, Dowódca Siedmiu Krasnoludków, 96 lat](placeholder.jpg)

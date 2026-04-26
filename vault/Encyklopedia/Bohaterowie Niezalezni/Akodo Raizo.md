@@ -6,6 +6,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 kampania_link: ["/systemy/l5k/prawidla-zdrady"]
 kampania: ["prawidla-zdrady"]
 tags: [bohater-niezalezny, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Akodo Raizo](placeholder.jpg)

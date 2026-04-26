@@ -7,6 +7,7 @@ kampania_link: ["/systemy/cold-city/cold-tales"]
 kampania: ["cold-tales"]
 archetyp: Funkcjonariusz PAP, Oficer Francuskiej Armii
 tags: [bohater-gracza, cold-city, szpiegowski, horror]
+statblock_status: "niepelny"
 ---
 
 ![Portret Por. Jacques Rousseau](placeholder.jpg)

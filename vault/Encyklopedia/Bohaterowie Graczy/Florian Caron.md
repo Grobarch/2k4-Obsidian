@@ -6,6 +6,7 @@ system_pelna: "Wolsung: Magia Wieku Pary"
 gracz: Paweł Obstawski
 archetyp: Człowiek, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
+statblock_status: "niepelny"
 ---
 
 ![Portret Florian Caron](placeholder.jpg)

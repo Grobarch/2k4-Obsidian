@@ -12,6 +12,7 @@ tags:
   - bohater-niezalezny
   - l5k
   - samurajski
+statblock_status: "niepelny"
 ---
 
 ![Portret Zły duch Oni Arach Dziecię Pająka - Stwór powstały z truchła pajęczego boga Tkacza Upadłych Losów Atsui-unmei-o-tsumugu-ono](placeholder.jpg)

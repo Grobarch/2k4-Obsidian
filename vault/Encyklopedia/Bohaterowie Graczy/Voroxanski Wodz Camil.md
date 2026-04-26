@@ -6,6 +6,7 @@ system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 gracz: Piotr RYGIEL
 tags: [bohater-gracza, gasnace-slonca, space-fantasy]
+statblock_status: "niepelny"
 ---
 
 ![Portret voroxański wódz Camil](placeholder.jpg)

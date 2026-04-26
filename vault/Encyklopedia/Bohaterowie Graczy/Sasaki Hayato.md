@@ -8,6 +8,7 @@ kampania: ["miecze-cnot-i-grzechow"]
 gracz: Piotr RYGIEL
 archetyp: bushi z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Sasaki Hayato](placeholder.jpg)
