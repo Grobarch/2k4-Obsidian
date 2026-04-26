@@ -58,5 +58,8 @@ export function hasStatblock(body) {
  *   "brak-statblocka" — body nie ma statblocka
  */
 export function computeStatblockStatus(content) {
-  return "brak-statblocka"; // TODO task 5
+  const body = extractBody(content);
+  if (!hasStatblock(body)) return "brak-statblocka";
+  if (findMissingFields(body).length === 0) return "pelny";
+  return "niepelny";
 }

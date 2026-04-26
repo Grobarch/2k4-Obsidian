@@ -96,3 +96,30 @@ test("hasStatblock: brak tabeli i markera — false", () => {
 test("hasStatblock: pusty body — false", () => {
   assert.equal(hasStatblock(""), false);
 });
+
+import { computeStatblockStatus } from "./statblock-detect.mjs";
+
+test("computeStatblockStatus: pełny statblock → 'pelny'", () => {
+  const content = "---\ntitle: Foo\n---\n<!-- SYSTEM: l5k -->\n**Honor:** 3\n**Chwała:** 1.5\n";
+  assert.equal(computeStatblockStatus(content), "pelny");
+});
+
+test("computeStatblockStatus: niepełny (em-dash) → 'niepelny'", () => {
+  const content = "---\ntitle: Foo\n---\n<!-- SYSTEM: l5k -->\n**Honor:** 3\n**Chwała:** —\n";
+  assert.equal(computeStatblockStatus(content), "niepelny");
+});
+
+test("computeStatblockStatus: brak statblocka → 'brak-statblocka'", () => {
+  const content = "---\ntitle: Foo\n---\nJust prose, no statblock.\n";
+  assert.equal(computeStatblockStatus(content), "brak-statblocka");
+});
+
+test("computeStatblockStatus: tabela bez em-dashy → 'pelny'", () => {
+  const content = "---\ntitle: Foo\n---\n| A | B |\n|---|---|\n| 1 | 2 |";
+  assert.equal(computeStatblockStatus(content), "pelny");
+});
+
+test("computeStatblockStatus: tabela z em-dashem w komórce → 'pelny' (świadomie pomijamy puste komórki)", () => {
+  const content = "---\ntitle: Foo\n---\n| A | B |\n|---|---|\n| Martwy | — |";
+  assert.equal(computeStatblockStatus(content), "pelny");
+});
