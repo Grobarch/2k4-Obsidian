@@ -46,7 +46,9 @@ export function findMissingFields(body) {
 
 /** Czy body zawiera tabelę markdown LUB marker <!-- SYSTEM: --> ? */
 export function hasStatblock(body) {
-  return false; // TODO task 4
+  const stripped = body.replace(/```[\s\S]*?```/g, "");
+  if (/<!--\s*SYSTEM:/i.test(stripped)) return true;
+  return /^\s*\|.*\|\s*$/m.test(stripped);
 }
 
 /**

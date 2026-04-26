@@ -65,3 +65,34 @@ test("findMissingFields: body bez placeholderów → []", () => {
   const body = "**Honor:** 3\n**Chwała:** 1.5\n";
   assert.deepEqual(findMissingFields(body), []);
 });
+
+import { hasStatblock } from "./statblock-detect.mjs";
+
+test("hasStatblock: tabela markdown — true", () => {
+  const body = "| Atrybut | Wartość |\n|---------|--------|\n| Honor | 3 |";
+  assert.equal(hasStatblock(body), true);
+});
+
+test("hasStatblock: marker <!-- SYSTEM: l5k --> — true", () => {
+  const body = "<!-- SYSTEM: l5k -->\n**Honor:** 3";
+  assert.equal(hasStatblock(body), true);
+});
+
+test("hasStatblock: marker case-insensitive", () => {
+  const body = "<!-- system: l5k -->\n";
+  assert.equal(hasStatblock(body), true);
+});
+
+test("hasStatblock: tabela tylko w bloku kodu — false", () => {
+  const body = "```\n| A | B |\n|---|---|\n| 1 | 2 |\n```";
+  assert.equal(hasStatblock(body), false);
+});
+
+test("hasStatblock: brak tabeli i markera — false", () => {
+  const body = "Just plain prose without any table.";
+  assert.equal(hasStatblock(body), false);
+});
+
+test("hasStatblock: pusty body — false", () => {
+  assert.equal(hasStatblock(""), false);
+});
