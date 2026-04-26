@@ -59,10 +59,47 @@ views:
         direction: DESC
 ```
 
+## 🎲 BG do statowania
+
+```base
+filters:
+  and:
+    - type == "bohater-gracza"
+    - statblock_status == ["niepelny", "brak-statblocka"]
+limit: 20
+views:
+  - type: list
+    name: BG do statowania
+    order:
+      - file.name
+      - system_pelna
+      - statblock_status
+      - kampania
+    sort:
+      - property: title
+        direction: ASC
+```
+
 ## 🎭 BN do statowania
 
-> [!todo] Raport kompletności statblocków
-> Sekcja zostanie włączona po wdrożeniu raportu kompletności (osobny ticket: lista konkretnych postaci z brakującymi polami statblocka). Do tego czasu: przeglądaj wszystkich BN w [Encyklopedii → Bohaterowie Niezależni](/encyklopedia/bohaterowie-niezalezni/bohaterowie-niezalezni).
+```base
+filters:
+  and:
+    - type == "bohater-niezalezny"
+    - statblock_status == ["niepelny", "brak-statblocka"]
+limit: 20
+views:
+  - type: list
+    name: BN do statowania
+    order:
+      - file.name
+      - system_pelna
+      - statblock_status
+      - kampania
+    sort:
+      - property: title
+        direction: ASC
+```
 
 ***
 
