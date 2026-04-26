@@ -29,7 +29,19 @@ export function extractBody(content) {
  * Zwraca uporządkowaną listę unikalnych nazw pól (zachowuje kolejność).
  */
 export function findMissingFields(body) {
-  return []; // TODO task 3
+  const stripped = body.replace(/```[\s\S]*?```/g, "");
+  const missing = [];
+  const seen = new Set();
+  const re = /\*\*\s*([^*\n:]+?)(?:\s*\([^)\n]*\))?\s*:?\s*\*\*\s*:?\s*—/g;
+  let m;
+  while ((m = re.exec(stripped)) !== null) {
+    const name = m[1].trim();
+    if (name && !seen.has(name)) {
+      seen.add(name);
+      missing.push(name);
+    }
+  }
+  return missing;
 }
 
 /** Czy body zawiera tabelę markdown LUB marker <!-- SYSTEM: --> ? */
