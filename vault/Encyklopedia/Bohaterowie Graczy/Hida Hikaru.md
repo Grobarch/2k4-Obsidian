@@ -8,6 +8,7 @@ kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Dawid KOŁACIŃSKI
 archetyp: bushi z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Hida Hikaru](placeholder.jpg)

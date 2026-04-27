@@ -8,6 +8,7 @@ kampania: ["miecze-cnot-i-grzechow"]
 gracz: Krzysztof OBSTAWSKI
 archetyp: shugenja z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Shiba Takeshi](placeholder.jpg)

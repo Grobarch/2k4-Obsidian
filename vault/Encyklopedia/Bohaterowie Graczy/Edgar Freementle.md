@@ -6,6 +6,7 @@ system_pelna: "Wolsung: Magia Wieku Pary"
 gracz: Paweł Obstawski
 archetyp: Krasnolud, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
+statblock_status: "niepelny"
 ---
 
 ![Portret Edgar Freementle](placeholder.jpg)

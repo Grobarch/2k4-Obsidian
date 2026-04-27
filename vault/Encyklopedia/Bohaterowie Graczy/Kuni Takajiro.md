@@ -8,6 +8,7 @@ kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Paweł OBSTAWSKI
 archetyp: tsukai-sagasu z Klanu Kraba
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Kuni Takajiro](placeholder.jpg)

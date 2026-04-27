@@ -6,6 +6,7 @@ system_pelna: "Wolsung: Magia Wieku Pary"
 gracz: Krzysiek Obstawski
 archetyp: Krasnolud, ryzykant
 tags: [bohater-gracza, wolsung, steampunk]
+statblock_status: "niepelny"
 ---
 
 ![Portret Christof Stuart](placeholder.jpg)

@@ -8,6 +8,7 @@ kampania: ["miecze-cnot-i-grzechow"]
 gracz: Tomasz TYMIŃSKI
 archetyp: bushi z Klanu Smoka
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Mirumoto Kenzo](placeholder.jpg)

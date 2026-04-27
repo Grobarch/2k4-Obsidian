@@ -52,6 +52,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── restore-bases.mjs          ← odtwarzanie bloków base w folder notes (odwrotność build-bases)
 │   ├── backlinks.mjs              ← wstawianie linków markdown do body notatek (per-note lub batch); nie dotyka frontmatteru
 │   ├── report-statblocks.mjs      ← raport kompletności statbloków BG/BN (per system, lista brakujących pól)
+│   ├── statblock-detect.mjs       ← pure heurystyki kompletności statblocka (single source of truth)
 │   ├── generate-aliases.mjs       ← heurystyczny generator aliasów dla BG/BN (comma/dash/quote/prefix)
 │   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
 │   ├── fix-infolder-paths.mjs     ← naprawa ścieżek file.inFolder w blokach base
@@ -248,6 +249,12 @@ Pipeline: normalize → strip-h1 → build-bases → validate → quartz build �
 ## Format plików vault
 
 Każdy plik ma YAML frontmatter. Kanoniczne definicje pól → `scripts/schema.mjs` (`TYPE_SCHEMAS`, `SYSTEM_NAMES`).
+
+**Computed fields** (wypełniane przez `vault-tools.mjs normalize`):
+- `system_pelna` — pełna nazwa systemu (mapping z `SYSTEM_NAMES` w `schema.mjs`)
+- `tags` — `[type, system]` dodawane jeśli brak
+- `kampania_link` / `kampania` — ścieżka i nazwa folderu nadrzędnego (epizod)
+- `statblock_status` (BG/BN) — `pelny | niepelny | brak-statblocka`, **strict recompute** z body przy każdym normalize. Używane przez widget BG/BN w `index.md`.
 
 Przykłady rzeczywistych plików:
 - epizod: `vault/Systemy/Cold City/Cold Tales/Epizod 01.md`

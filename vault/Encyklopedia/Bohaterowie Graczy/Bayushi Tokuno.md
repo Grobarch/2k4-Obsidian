@@ -8,6 +8,7 @@ kampania: ["miecze-cnot-i-grzechow"]
 gracz: Paweł OBSTAWSKI
 archetyp: bushi z Klanu Skorpiona
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Bayushi Tokuno](placeholder.jpg)

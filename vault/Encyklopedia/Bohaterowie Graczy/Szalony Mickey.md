@@ -8,6 +8,7 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Tomasz TYMIŃSKI
 archetyp: Rewolwerowiec
 tags: [bohater-gracza, deadlands, western, horror]
+statblock_status: "niepelny"
 ---
 
 ![Portret Szalony Mickey](placeholder.jpg)

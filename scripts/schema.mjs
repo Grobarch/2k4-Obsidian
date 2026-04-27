@@ -41,13 +41,13 @@ export const TYPE_SCHEMAS = {
   "bohater-gracza": {
     required:    ["title", "type", "system", "system_pelna", "tags"],
     arrayFields: ["tags", "kampania", "kampania_link", "aliases"],
-    computed:    ["system_pelna", "tags"],
+    computed:    ["system_pelna", "tags", "statblock_status"],
     defaults:    {},
   },
   "bohater-niezalezny": {
     required:    ["title", "type", "system", "system_pelna", "tags"],
     arrayFields: ["tags", "kampania", "kampania_link", "aliases"],
-    computed:    ["system_pelna", "tags"],
+    computed:    ["system_pelna", "tags", "statblock_status"],
     defaults:    {},
   },
   "epizod": {

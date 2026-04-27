@@ -32,6 +32,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { relative, resolve } from "node:path";
 import { findMdFiles, parseFrontmatter } from "./shared.mjs";
+import { extractBody, findMissingFields, hasStatblock } from "./statblock-detect.mjs";
 import { SYSTEM_NAMES } from "./schema.mjs";
 
 // ─── Parsowanie argumentów ───────────────────────────────────────────────────
@@ -49,48 +50,7 @@ function parseArgs(argv) {
   return opts;
 }
 
-// ─── Detekcja ─────────────────────────────────────────────────────────────────
-
-/** Wyciąga ciało notatki (po frontmatterze). */
-function extractBody(content) {
-  const m = content.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n?([\s\S]*)$/);
-  return m ? m[1] : content;
-}
-
-/**
- * Znajduje wszystkie inline-pola z em-dash placeholderem. Akceptuje dwie formy:
- *   **Label:** —      (kanoniczna — tak generują szablony w `vault/templates/statblocks/`)
- *   **Label**: —      (legacy — historyczne notatki pisane ręcznie, dwukropek poza **)
- * Opcjonalnie z frazą w nawiasach: **Label (Opis):** — / **Label (Opis)**: —.
- * Pomija wystąpienia wewnątrz bloków kodu (``` ... ```).
- * Zwraca uporządkowaną listę unikalnych nazw pól (zachowuje kolejność wystąpień).
- */
-function findMissingFields(body) {
-  const stripped = body.replace(/```[\s\S]*?```/g, "");
-  const missing = [];
-  const seen = new Set();
-  // Regex dopuszcza `:` przed LUB po zamykającym `**` (obie konwencje w vault).
-  const re = /\*\*\s*([^*\n:]+?)(?:\s*\([^)\n]*\))?\s*:?\s*\*\*\s*:?\s*—/g;
-  let m;
-  while ((m = re.exec(stripped)) !== null) {
-    const name = m[1].trim();
-    if (name && !seen.has(name)) {
-      seen.add(name);
-      missing.push(name);
-    }
-  }
-  return missing;
-}
-
-/** Sprawdza, czy plik zawiera jakikolwiek statblock (tabelę lub marker SYSTEM). */
-function hasStatblock(body) {
-  // Usuń bloki kodu — tabele w ```base``` nie liczą się jako statblock
-  const stripped = body.replace(/```[\s\S]*?```/g, "");
-  // Marker HTML (konwencja vault: `<!-- SYSTEM: l5k -->` przed statblockiem)
-  if (/<!--\s*SYSTEM:/i.test(stripped)) return true;
-  // Dowolny wiersz zaczynający się od `|` (potencjalna tabela)
-  return /^\s*\|.*\|\s*$/m.test(stripped);
-}
+// ─── Analiza ─────────────────────────────────────────────────────────────────
 
 /**
  * Analizuje pojedynczy plik postaci.

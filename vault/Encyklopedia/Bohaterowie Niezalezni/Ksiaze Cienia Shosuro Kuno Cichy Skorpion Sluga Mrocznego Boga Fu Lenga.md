@@ -7,6 +7,7 @@ system_pelna: Legenda Pięciu Kręgów 1ed
 kampania_link: ["/systemy/l5k/miecze-cnot-i-grzechow"]
 kampania: ["miecze-cnot-i-grzechow"]
 tags: [bohater-niezalezny, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Książę Cienia Shosuro Kuno - Cichy Skorpion - Sługa Mrocznego boga Fu Lenga](placeholder.jpg)

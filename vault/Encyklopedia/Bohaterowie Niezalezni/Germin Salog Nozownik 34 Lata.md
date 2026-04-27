@@ -5,6 +5,7 @@ type: bohater-niezalezny
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
 tags: ["bohater-niezalezny", "Wiedźmin", "dark-fantasy", "wiedzmin"]
+statblock_status: "niepelny"
 ---
 
 ![Portret Germin Salog, Nożownik, 34 lata](placeholder.jpg)

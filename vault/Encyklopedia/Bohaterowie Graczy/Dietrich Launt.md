@@ -7,6 +7,7 @@ gracz: Krzysztof OBSTAWSKI
 kampania_link: ["/systemy/wfrp-2ed/kampanie/losy-bohaterow"]
 kampania: [losy-bohaterow]
 tags: [bohater-gracza, wfrp-2ed, dark-fantasy]
+statblock_status: "niepelny"
 ---
 
 ![[Encyklopedia/Bohaterowie Graczy/assets/zbroja.jpeg]]

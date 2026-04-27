@@ -11,6 +11,7 @@ tags:
   - bohater-gracza
   - l5k
   - samurajski
+statblock_status: "niepelny"
 ---
 
 ![Portret Ketsuki Miyagi](placeholder.jpg)

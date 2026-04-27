@@ -9,6 +9,7 @@ kampania: ["wszystkie-przebrania-alistaira-kanta"]
 gracz: Paweł OBSTAWSKI
 archetyp: Ronin i zabójca potworów z Kraju Kwitnącej Wiśni
 tags: [bohater-gracza, deadlands, western, horror]
+statblock_status: "niepelny"
 ---
 
 ![Portret Yojiro](placeholder.jpg)

@@ -14,6 +14,7 @@ tags:
   - deadlands
   - western
   - horror
+statblock_status: "niepelny"
 ---
 
 ![Portret Klaus von Weibenmauer](placeholder.jpg)

@@ -8,6 +8,7 @@ kampania: ["groza-ktora-zawsze-powraca"]
 gracz: Krzysztof OBSTAWSKI
 archetyp: shugenja z Klanu Feniksa
 tags: [bohater-gracza, l5k, samurajski]
+statblock_status: "niepelny"
 ---
 
 ![Portret Isawa Mamoru](placeholder.jpg)
