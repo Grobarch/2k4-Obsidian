@@ -32,7 +32,7 @@ Możny pan ze szklanym lewym okiem o blond włosach przystrzyżonych do hełmu. 
 
 Człowiek o piwnych oczach i szerokiej, płaskiej twarzy z wyrazem wiecznego niezadowolenia. Nosi proste, pocerowane ubranie.
 
-**[[Axel Adelhoff Czarodziej 29 Lat|Axel Adelhoff, Czarodziej, 29 lat]].**
+**[[Axel Adelhoff|Axel Adelhoff, Czarodziej, 29 lat]].**
 
 Łysy z tatuażem na głowie. Ubiera długą szatę z rozcięciami i szerokimi rękawami. Nosi misternie zdobiony złoty amulet i duży pierścień na prawej dłoni. Na czas podróży zawsze zakłada napierśnik.
 
