@@ -2,6 +2,23 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+**Status:** ✅ Wszystkie 10 tasków zakończone, zmerge'owane do `main` (`118c517`, 2026-04-26).
+
+| Task | Commit | Opis |
+|------|--------|------|
+| 1 | `54ff985` | schema.mjs: statblock_status w computed[] |
+| 2 | `a8c8256` | statblock-detect szkielet + extractBody |
+| 3 | `fc3dd48` | findMissingFields heurystyka |
+| 4 | `6a367dd` | hasStatblock heurystyka |
+| 5 | `89d58ec` | computeStatblockStatus (kompozycja) |
+| 6 | `8fdd7a5` | refactor report-statblocks |
+| 7 | `d475338` | vault-tools Pass 2e |
+| 8 | `5cf7660` | backfill 78 plików BG/BN |
+| 9 | `13d072b` | index.md widget'y BG + BN |
+| 10 | `5d32ebb` | docs CLAUDE.md |
+
+**Known follow-up:** top-level `limit:` w `build-bases.mjs` nie jest respektowany (widget BG pokazuje 39 wierszy mimo `limit: 20`) — zaspawnowane jako osobny task chip.
+
 **Goal:** Dodać computed field `statblock_status` (`pelny | niepelny | brak-statblocka`) do typów `bohater-gracza` i `bohater-niezalezny`, zsynchronizować pole z body przez `vault-tools.mjs normalize` (strict recompute), i zastąpić placeholder w `vault/index.md` dwoma widget'ami `base` (BG + BN).
 
 **Architecture:** Single source of truth heurystyk w nowym module `scripts/statblock-detect.mjs` (4 pure funkcje, eksportowane). Refaktor `report-statblocks.mjs` żeby reużywał heurystyki zamiast lokalnych kopii. Dodanie Pass 2e w `cmdNormalize` dla strict recompute. Dwa widget'y `base` w `index.md` (BG wyżej, BN niżej).
@@ -30,7 +47,7 @@
 **Files:**
 - Modify: `scripts/schema.mjs:41-55`
 
-- [ ] **Step 1: Zmodyfikuj `computed` dla `bohater-gracza` i `bohater-niezalezny`**
+- [x] **Step 1: Zmodyfikuj `computed` dla `bohater-gracza` i `bohater-niezalezny`**
 
 W pliku `scripts/schema.mjs`, w `TYPE_SCHEMAS`, zamień dwa wpisy:
 
@@ -53,13 +70,13 @@ W pliku `scripts/schema.mjs`, w `TYPE_SCHEMAS`, zamień dwa wpisy:
 
 Pozostałe typy (epizod, kampania, system, lokacja, artefakt, scenariusz, index) — bez zmian.
 
-- [ ] **Step 2: Weryfikacja — validate nadal działa, brak nowych błędów**
+- [x] **Step 2: Weryfikacja — validate nadal działa, brak nowych błędów**
 
 Run: `node scripts/vault-tools.mjs validate --dir vault 2>&1 | tail -3`
 
 Expected: identyczna liczba ostrzeżeń jak baseline (`⚠ 23/286 plików ma braki.`). Pole nie jest w `required[]`, więc validate go nie sprawdza.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add scripts/schema.mjs
@@ -74,7 +91,7 @@ git commit -m "feat(statblock-status): statblock_status w computed[] dla BG/BN"
 - Create: `scripts/statblock-detect.mjs`
 - Create: `scripts/statblock-detect.test.mjs`
 
-- [ ] **Step 1: Utwórz plik testowy z testami dla `extractBody`**
+- [x] **Step 1: Utwórz plik testowy z testami dla `extractBody`**
 
 ```javascript
 // scripts/statblock-detect.test.mjs
@@ -112,13 +129,13 @@ test("extractBody: pusty body (FM bez treści po)", () => {
 });
 ```
 
-- [ ] **Step 2: Uruchom test — RED (moduł nie istnieje)**
+- [x] **Step 2: Uruchom test — RED (moduł nie istnieje)**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | head -10`
 
 Expected: FAIL z `Cannot find module './statblock-detect.mjs'` lub podobne.
 
-- [ ] **Step 3: Utwórz `scripts/statblock-detect.mjs` ze szkieletem 4 funkcji**
+- [x] **Step 3: Utwórz `scripts/statblock-detect.mjs` ze szkieletem 4 funkcji**
 
 ```javascript
 #!/usr/bin/env node
@@ -170,13 +187,13 @@ export function computeStatblockStatus(content) {
 }
 ```
 
-- [ ] **Step 4: Uruchom testy — GREEN dla extractBody**
+- [x] **Step 4: Uruchom testy — GREEN dla extractBody**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -5`
 
 Expected: `# pass 5 # fail 0` (5 testów `extractBody` przechodzi; stuby pozostałych funkcji nie są testowane jeszcze).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
@@ -191,7 +208,7 @@ git commit -m "feat(statblock-status): szkielet statblock-detect + extractBody"
 - Modify: `scripts/statblock-detect.mjs` (funkcja `findMissingFields`)
 - Modify: `scripts/statblock-detect.test.mjs` (dodaj testy)
 
-- [ ] **Step 1: Dopisz testy na końcu `statblock-detect.test.mjs`**
+- [x] **Step 1: Dopisz testy na końcu `statblock-detect.test.mjs`**
 
 ```javascript
 import { findMissingFields } from "./statblock-detect.mjs";
@@ -231,13 +248,13 @@ test("findMissingFields: body bez placeholderów → []", () => {
 });
 ```
 
-- [ ] **Step 2: Uruchom — RED (stub zwraca [])**
+- [x] **Step 2: Uruchom — RED (stub zwraca [])**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -10`
 
 Expected: 6 nowych testów FAIL (te które oczekują nie-pustej tablicy); 1 test (pusty body) PASS przypadkiem.
 
-- [ ] **Step 3: Zaimplementuj `findMissingFields`**
+- [x] **Step 3: Zaimplementuj `findMissingFields`**
 
 Zamień body funkcji w `scripts/statblock-detect.mjs`:
 
@@ -260,13 +277,13 @@ export function findMissingFields(body) {
 }
 ```
 
-- [ ] **Step 4: Uruchom — GREEN**
+- [x] **Step 4: Uruchom — GREEN**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -5`
 
 Expected: `# pass 12 # fail 0`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
@@ -281,7 +298,7 @@ git commit -m "feat(statblock-status): findMissingFields heurystyka"
 - Modify: `scripts/statblock-detect.mjs` (funkcja `hasStatblock`)
 - Modify: `scripts/statblock-detect.test.mjs`
 
-- [ ] **Step 1: Dopisz testy**
+- [x] **Step 1: Dopisz testy**
 
 ```javascript
 import { hasStatblock } from "./statblock-detect.mjs";
@@ -316,13 +333,13 @@ test("hasStatblock: pusty body — false", () => {
 });
 ```
 
-- [ ] **Step 2: Uruchom — RED (stub zwraca false)**
+- [x] **Step 2: Uruchom — RED (stub zwraca false)**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -10`
 
 Expected: 3 nowe FAIL (3 testów oczekujących `true`).
 
-- [ ] **Step 3: Zaimplementuj `hasStatblock`**
+- [x] **Step 3: Zaimplementuj `hasStatblock`**
 
 ```javascript
 export function hasStatblock(body) {
@@ -332,13 +349,13 @@ export function hasStatblock(body) {
 }
 ```
 
-- [ ] **Step 4: Uruchom — GREEN**
+- [x] **Step 4: Uruchom — GREEN**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -5`
 
 Expected: `# pass 18 # fail 0`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
@@ -353,7 +370,7 @@ git commit -m "feat(statblock-status): hasStatblock heurystyka"
 - Modify: `scripts/statblock-detect.mjs` (funkcja `computeStatblockStatus`)
 - Modify: `scripts/statblock-detect.test.mjs`
 
-- [ ] **Step 1: Dopisz testy**
+- [x] **Step 1: Dopisz testy**
 
 ```javascript
 import { computeStatblockStatus } from "./statblock-detect.mjs";
@@ -385,13 +402,13 @@ test("computeStatblockStatus: tabela z em-dashem w komórce → 'pelny' (świado
 });
 ```
 
-- [ ] **Step 2: Uruchom — RED**
+- [x] **Step 2: Uruchom — RED**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -10`
 
 Expected: 4 FAIL (stub zwraca `"brak-statblocka"` zawsze; 1 test od razu PASS przypadkiem).
 
-- [ ] **Step 3: Zaimplementuj `computeStatblockStatus` jako kompozycję**
+- [x] **Step 3: Zaimplementuj `computeStatblockStatus` jako kompozycję**
 
 ```javascript
 export function computeStatblockStatus(content) {
@@ -402,13 +419,13 @@ export function computeStatblockStatus(content) {
 }
 ```
 
-- [ ] **Step 4: Uruchom — GREEN**
+- [x] **Step 4: Uruchom — GREEN**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -5`
 
 Expected: `# pass 23 # fail 0`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/statblock-detect.mjs scripts/statblock-detect.test.mjs
@@ -424,7 +441,7 @@ git commit -m "feat(statblock-status): computeStatblockStatus (kompozycja 3 heur
 
 **Cel refaktoru:** zero zmian behavior'u (raport markdown identyczny), tylko delete dupli i import.
 
-- [ ] **Step 1: Zapisz baseline output PRZED refaktorem**
+- [x] **Step 1: Zapisz baseline output PRZED refaktorem**
 
 Run:
 ```bash
@@ -434,7 +451,7 @@ wc -l /tmp/report-before.txt
 
 Expected: ~50-100 linii (zależy od stanu vault). Zapamiętaj liczbę.
 
-- [ ] **Step 2: Zaimportuj funkcje z `statblock-detect.mjs`**
+- [x] **Step 2: Zaimportuj funkcje z `statblock-detect.mjs`**
 
 W `scripts/report-statblocks.mjs` zamień blok importów (linie 32-35):
 
@@ -446,7 +463,7 @@ W `scripts/report-statblocks.mjs` zamień blok importów (linie 32-35):
  import { SYSTEM_NAMES } from "./schema.mjs";
 ```
 
-- [ ] **Step 3: Usuń lokalne implementacje 3 funkcji**
+- [x] **Step 3: Usuń lokalne implementacje 3 funkcji**
 
 W `scripts/report-statblocks.mjs` usuń całe definicje (linie ~52-93):
 - `function extractBody(content) { ... }`
@@ -457,7 +474,7 @@ Wraz z ich komentarzami JSDoc i sekcji `// ─── Detekcja ───`.
 
 `analyzeFile` (linia ~95) zostaje **niezmienione** — używa już teraz importowanych funkcji.
 
-- [ ] **Step 4: Weryfikacja — output identyczny po refaktorze**
+- [x] **Step 4: Weryfikacja — output identyczny po refaktorze**
 
 Run:
 ```bash
@@ -467,13 +484,13 @@ diff /tmp/report-before.txt /tmp/report-after.txt; echo "exit: $?"
 
 Expected: `exit: 0` (zero diff, output bit-identyczny).
 
-- [ ] **Step 5: Weryfikacja — testy nadal zielone**
+- [x] **Step 5: Weryfikacja — testy nadal zielone**
 
 Run: `node --test scripts/statblock-detect.test.mjs 2>&1 | tail -3`
 
 Expected: `# pass 23 # fail 0`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add scripts/report-statblocks.mjs
@@ -487,7 +504,7 @@ git commit -m "refactor(statblock-status): report-statblocks używa statblock-de
 **Files:**
 - Modify: `scripts/vault-tools.mjs:29-30,409-411`
 
-- [ ] **Step 1: Dodaj import `computeStatblockStatus`**
+- [x] **Step 1: Dodaj import `computeStatblockStatus`**
 
 W `scripts/vault-tools.mjs` zamień import shared (linia ~29):
 
@@ -497,7 +514,7 @@ W `scripts/vault-tools.mjs` zamień import shared (linia ~29):
 +import { computeStatblockStatus } from "./statblock-detect.mjs";
 ```
 
-- [ ] **Step 2: Wstaw Pass 2e w `cmdNormalize` po Pass 2d**
+- [x] **Step 2: Wstaw Pass 2e w `cmdNormalize` po Pass 2d**
 
 W `scripts/vault-tools.mjs` znajdź koniec Pass 2d (linia ~409, zaraz przed komentarzem `// ── Pass 3: Fill defaults`). Dodaj nowy blok:
 
@@ -516,7 +533,7 @@ W `scripts/vault-tools.mjs` znajdź koniec Pass 2d (linia ~409, zaraz przed kome
 
 Wstaw bezpośrednio przed `// ── Pass 3: Fill defaults for missing fields ──`.
 
-- [ ] **Step 3: Smoke dry-run — sprawdź co normalize zaproponuje**
+- [x] **Step 3: Smoke dry-run — sprawdź co normalize zaproponuje**
 
 Run: `node scripts/vault-tools.mjs normalize --dir vault 2>&1 | grep statblock_status | head -10`
 
@@ -529,13 +546,13 @@ Expected: kilka linii typu:
 
 Łącznie ~80 mutacji (BG + BN). Wszystkie w trybie dry-run.
 
-- [ ] **Step 4: Pełny licznik — ile postaci dostanie pole?**
+- [x] **Step 4: Pełny licznik — ile postaci dostanie pole?**
 
 Run: `node scripts/vault-tools.mjs normalize --dir vault 2>&1 | grep -c "statblock_status:"`
 
 Expected: ~80 (mniej więcej liczba BG + BN w vault).
 
-- [ ] **Step 5: Sanity — wartości rozłożone sensownie**
+- [x] **Step 5: Sanity — wartości rozłożone sensownie**
 
 Run:
 ```bash
@@ -547,7 +564,7 @@ Expected: 3 wartości (`pelny`, `niepelny`, `brak-statblocka`) z rozsądnymi lic
 - `pelny`: większość (BG + reszta BN)
 - `brak-statblocka`: kilka edge cases
 
-- [ ] **Step 6: Commit (sam Pass 2e, bez backfillu)**
+- [x] **Step 6: Commit (sam Pass 2e, bez backfillu)**
 
 ```bash
 git add scripts/vault-tools.mjs
@@ -560,7 +577,7 @@ git commit -m "feat(statblock-status): vault-tools normalize Pass 2e (strict rec
 
 **Files:** (operacje wykonywalne, brak zmian w kodzie)
 
-- [ ] **Step 1: Backfill na tymczasowej kopii vault (sandbox)**
+- [x] **Step 1: Backfill na tymczasowej kopii vault (sandbox)**
 
 ```bash
 rm -rf /tmp/vault-statblock-test
@@ -570,7 +587,7 @@ node scripts/vault-tools.mjs normalize --dir /tmp/vault-statblock-test --apply 2
 
 Expected: `[ZAPISANO] normalize: ~80/286 plików zmodyfikowano.` (lub podobnie — istotne że >0).
 
-- [ ] **Step 2: Spot check — Akodo Monzo (znany niepełny BN)**
+- [x] **Step 2: Spot check — Akodo Monzo (znany niepełny BN)**
 
 ```bash
 head -10 "/tmp/vault-statblock-test/Encyklopedia/Bohaterowie Niezalezni/Akodo Monzo.md"
@@ -578,7 +595,7 @@ head -10 "/tmp/vault-statblock-test/Encyklopedia/Bohaterowie Niezalezni/Akodo Mo
 
 Expected: linia `statblock_status: "niepelny"` we frontmatterze.
 
-- [ ] **Step 3: Idempotence — drugi run normalize → 0 mutacji**
+- [x] **Step 3: Idempotence — drugi run normalize → 0 mutacji**
 
 ```bash
 node scripts/vault-tools.mjs normalize --dir /tmp/vault-statblock-test --apply 2>&1 | grep statblock_status
@@ -587,19 +604,19 @@ echo "exit: $?"
 
 Expected: zero linii ze `statblock_status:` (compute zwraca to samo, oldStatus === newStatus, no mutation). Exit 1 z grep'a (no matches) jest OK.
 
-- [ ] **Step 4: Validate — zero nowych warningów**
+- [x] **Step 4: Validate — zero nowych warningów**
 
 Run: `node scripts/vault-tools.mjs validate --dir /tmp/vault-statblock-test 2>&1 | tail -3`
 
 Expected: identyczna liczba warningów jak baseline (~23).
 
-- [ ] **Step 5: Cleanup sandbox**
+- [x] **Step 5: Cleanup sandbox**
 
 ```bash
 rm -rf /tmp/vault-statblock-test
 ```
 
-- [ ] **Step 6: Backfill na prawdziwym vault**
+- [x] **Step 6: Backfill na prawdziwym vault**
 
 ```bash
 node scripts/vault-tools.mjs normalize --dir vault --apply 2>&1 | tail -5
@@ -607,7 +624,7 @@ node scripts/vault-tools.mjs normalize --dir vault --apply 2>&1 | tail -5
 
 Expected: identyczna liczba zmodyfikowanych plików jak w kroku 1 (sandbox był kopią).
 
-- [ ] **Step 7: Sanity git diff — zmiany tylko w polu statblock_status**
+- [x] **Step 7: Sanity git diff — zmiany tylko w polu statblock_status**
 
 ```bash
 git diff vault/ --stat | tail -5
@@ -620,7 +637,7 @@ Expected:
 
 Jeśli widzisz inne zmiany — STOP, zgłoś jako concern.
 
-- [ ] **Step 8: Commit backfill**
+- [x] **Step 8: Commit backfill**
 
 ```bash
 git add vault/
@@ -634,7 +651,7 @@ git commit -m "data(statblock-status): backfill statblock_status dla BG/BN"
 **Files:**
 - Modify: `vault/index.md:62-66`
 
-- [ ] **Step 1: Zamień sekcję "BN do statowania" placeholder na dwa widget'y**
+- [x] **Step 1: Zamień sekcję "BN do statowania" placeholder na dwa widget'y**
 
 W `vault/index.md` znajdź sekcję `## 🎭 BN do statowania` z callout'em `> [!todo]` (linie ~62-66) oraz separator `***` po niej. Zamień blok:
 
@@ -703,7 +720,7 @@ views:
 5. **🎭 BN do statowania** ⬅️ nowe (zamiast placeholder)
 6. Rozegrane kampanie
 
-- [ ] **Step 2: Smoke build-bases — czy konwersja działa?**
+- [x] **Step 2: Smoke build-bases — czy konwersja działa?**
 
 ```bash
 node scripts/build-bases.mjs vault 2>&1 | grep -E "(SKIP|ERROR|index\.md)" | head -10
@@ -711,7 +728,7 @@ node scripts/build-bases.mjs vault 2>&1 | grep -E "(SKIP|ERROR|index\.md)" | hea
 
 Expected: brak linii `SKIP: nieobsługiwane wyrażenie` ani `ERROR` dla `index.md`. Jeśli widzisz `SKIP` w nowych blokach — heurystyka filtru `==[...]` w `build-bases.mjs` może wymagać adresacji (sprawdź `vault/Systemy/.../*.md` — mają `==[...]` precedens, więc powinno działać).
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add vault/index.md
@@ -725,7 +742,7 @@ git commit -m "feat(statblock-status): widget BG/BN do statowania w index.md"
 **Files:**
 - Modify: `CLAUDE.md` (sekcja drzewa repo + sekcja "Format plików vault")
 
-- [ ] **Step 1: Lokalny build + visual sanity**
+- [x] **Step 1: Lokalny build + visual sanity**
 
 ```bash
 bash scripts/local-build.sh --build 2>&1 | tail -10
@@ -733,7 +750,7 @@ bash scripts/local-build.sh --build 2>&1 | tail -10
 
 Expected: build zakończony sukcesem (`bash scripts/local-build.sh --build` buduje bez `serve`).
 
-- [ ] **Step 2: Otwórz Obsidian i sprawdź index.md**
+- [x] **Step 2: Otwórz Obsidian i sprawdź index.md**
 
 Manualne: otwórz `vault/index.md` w Obsidian. Sprawdź:
 - Sekcja "🎲 BG do statowania" — renderuje się jako list z file.name (klikalny), system_pelna, statblock_status, kampania
@@ -742,7 +759,7 @@ Manualne: otwórz `vault/index.md` w Obsidian. Sprawdź:
 
 Jeśli widzisz problemy renderowania — wróć do Task 9 i sprawdź syntax bloku base.
 
-- [ ] **Step 3: Dodaj `statblock-detect.mjs` do drzewa repo w CLAUDE.md**
+- [x] **Step 3: Dodaj `statblock-detect.mjs` do drzewa repo w CLAUDE.md**
 
 W CLAUDE.md, w sekcji `scripts/`, znajdź linię z `report-statblocks.mjs`. **Bezpośrednio po niej** dodaj:
 
@@ -750,7 +767,7 @@ W CLAUDE.md, w sekcji `scripts/`, znajdź linię z `report-statblocks.mjs`. **Be
 │   ├── statblock-detect.mjs       ← pure heurystyki kompletności statblocka (single source of truth)
 ```
 
-- [ ] **Step 4: Dodaj wzmiankę o `statblock_status` w sekcji "Format plików vault"**
+- [x] **Step 4: Dodaj wzmiankę o `statblock_status` w sekcji "Format plików vault"**
 
 W CLAUDE.md, w sekcji `## Format plików vault`, znajdź akapit:
 
@@ -769,7 +786,7 @@ Każdy plik ma YAML frontmatter. Kanoniczne definicje pól → `scripts/schema.m
 
 ```
 
-- [ ] **Step 5: Weryfikacja — CLAUDE.md parsuje się**
+- [x] **Step 5: Weryfikacja — CLAUDE.md parsuje się**
 
 ```bash
 head -250 CLAUDE.md | tail -100
@@ -777,14 +794,14 @@ head -250 CLAUDE.md | tail -100
 
 Expected: nowa zawartość widoczna; brak nieparowanych ``` ani `#`.
 
-- [ ] **Step 6: Commit dokumentacji**
+- [x] **Step 6: Commit dokumentacji**
 
 ```bash
 git add CLAUDE.md
 git commit -m "docs(statblock-status): statblock-detect + computed statblock_status w CLAUDE.md"
 ```
 
-- [ ] **Step 7: Final verification — wszystkie testy zielone**
+- [x] **Step 7: Final verification — wszystkie testy zielone**
 
 ```bash
 node --test scripts/generate-aliases.test.mjs 2>&1 | tail -3

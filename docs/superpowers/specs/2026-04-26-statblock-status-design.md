@@ -2,6 +2,7 @@
 
 **Linear ticket:** brak (zadanie spoza Linear, prefix commitów: `statblock-status`)
 **Data:** 2026-04-26
+**Status:** ✅ Zaimplementowane (merge `118c517` na `main`, 2026-04-26). Plan: `docs/superpowers/plans/2026-04-26-statblock-status.md`.
 **Powiązane:** RPG-89 (dashboard placeholder), RPG-90 (raport statblocks heurystyka), RPG-91 (precedens computed array — `aliases`)
 
 ## Problem
