@@ -4,8 +4,8 @@ type: kampania
 system: 7th-sea
 system_pelna: 7th Sea
 mg: Arkadiusz RYGIEL
-gatunek: fantasy
-tags: ["kampania", "7th-Sea", "szpiegowski", "fantasy", "7th-sea"]
+gatunek: ["fantasy", "szpiegowski"]
+tags: ["kampania", "7th-sea"]
 draft: "false"
 status: "zakończona"
 ---

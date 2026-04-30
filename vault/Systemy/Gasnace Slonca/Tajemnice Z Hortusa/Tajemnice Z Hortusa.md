@@ -4,8 +4,8 @@ type: kampania
 system: gasnace-slonca
 system_pelna: Gasnące Słońca 2ed
 mg: Arkadiusz RYGIEL
-gatunek: space-fantasy
-tags: [kampania, gasnace-slonca, space-fantasy]
+gatunek: ["space-fantasy"]
+tags: ["kampania", "gasnace-slonca"]
 draft: "false"
 status: "zakończona"
 ---

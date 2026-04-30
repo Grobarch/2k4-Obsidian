@@ -54,7 +54,8 @@ export function parseFrontmatter(content) {
         if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
           val = val.slice(1, -1);
         } else if (val.startsWith('[') && val.endsWith(']')) {
-          val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, ''));
+          const inner = val.slice(1, -1).trim();
+          val = inner === '' ? [] : inner.split(',').map(s => s.trim().replace(/^["']|["']$/g, ''));
         }
         fm[currentKey] = val;
       }

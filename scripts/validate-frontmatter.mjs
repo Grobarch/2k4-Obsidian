@@ -14,7 +14,7 @@
 import { readFile } from "node:fs/promises";
 import { relative } from "node:path";
 import { findMdFiles, parseFrontmatter } from "./shared.mjs";
-import { TYPE_SCHEMAS } from "./schema.mjs";
+import { TYPE_SCHEMAS, GENRES } from "./schema.mjs";
 
 const targetDir = process.argv[2];
 if (!targetDir) {
@@ -48,6 +48,15 @@ function validate(frontmatter, filePath) {
   for (const field of schema.required) {
     if (!frontmatter[field]) {
       errors.push(`${relPath}: type "${type}" requires field "${field}"`);
+    }
+  }
+
+  if ((type === "kampania" || type === "scenariusz") && Array.isArray(frontmatter.gatunek)) {
+    for (const g of frontmatter.gatunek) {
+      if (!g) continue; // pusty string z artefaktów parsowania `gatunek: []`
+      if (!GENRES.includes(g)) {
+        errors.push(`${relPath}: nieznany gatunek "${g}" (dopuszczalne: ${GENRES.join(", ")})`);
+      }
     }
   }
 

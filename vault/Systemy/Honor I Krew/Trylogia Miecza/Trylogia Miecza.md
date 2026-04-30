@@ -4,8 +4,8 @@ type: kampania
 system: honor-i-krew
 system_pelna: Honor i Krew
 mg: Arkadiusz RYGIEL
-gatunek: samurajski
-tags: [kampania, honor-i-krew, fantasy, samurajski]
+gatunek: ["samurajski", "fantasy"]
+tags: ["kampania", "honor-i-krew"]
 draft: "false"
 status: "zakończona"
 ---

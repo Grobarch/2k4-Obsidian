@@ -35,6 +35,17 @@ export const SYSTEM_NAMES = {
   "wolsung":        "Wolsung: Magia Wieku Pary",
 };
 
+// ─── Słownik gatunków ───────────────────────────────────────────────────────
+// Zamknięta lista wartości dla pola `gatunek` w kampaniach i scenariuszach.
+// Walidator (validate-frontmatter.mjs) odrzuca wartości spoza tej listy.
+
+export const GENRES = [
+  "samurajski", "horror", "dark-fantasy", "western", "szpiegowski",
+  "steampunk", "space-fantasy", "fantasy", "psychologiczny",
+  "postapokalipsa", "apokaliptyczny", "przygodowy", "cyberpunk",
+  "gangsterski", "science-fiction", "military", "grindhouse", "historyczny",
+];
+
 // ─── Schematy per type ──────────────────────────────────────────────────────
 
 export const TYPE_SCHEMAS = {
@@ -58,7 +69,7 @@ export const TYPE_SCHEMAS = {
   },
   "kampania": {
     required:    ["title", "type", "system", "system_pelna", "mg", "gatunek", "tags", "draft"],
-    arrayFields: ["tags", "aliases"],
+    arrayFields: ["tags", "aliases", "gatunek"],
     computed:    ["system_pelna", "tags"],
     // status: opcjonalne pole (aktywna | zawieszona | zakończona). Normalize
     // wypełnia domyślną wartością gdy brak — nowe kampanie dziedziczą z templatki.
@@ -83,8 +94,10 @@ export const TYPE_SCHEMAS = {
     defaults:    {},
   },
   "scenariusz": {
+    // gatunek jest opcjonalny (część scenariuszy z legacy nie ma promowalnego gatunku w tagach);
+    // jeśli jest, walidator sprawdza enum z GENRES.
     required:    ["title", "type", "system", "data", "tags"],
-    arrayFields: ["tags"],
+    arrayFields: ["tags", "gatunek"],
     computed:    ["tags"],
     defaults:    {},
   },

@@ -4,7 +4,8 @@ type: scenariusz
 system: apokalipsa-spelniona
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2012/10/apokalipsa-speniona-czas-cthulhu.html"
 data: 2012-10-21
-tags: [scenariusz, apokalipsa-spelniona, horror, postapokalipsa]
+tags: ["scenariusz", "apokalipsa-spelniona"]
+gatunek: ["horror", "postapokalipsa"]
 ---
 
 Tekst pierwotnie został opublikowany na witrynie zewcthulhu.pl

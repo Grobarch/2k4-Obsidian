@@ -4,7 +4,8 @@ type: scenariusz
 system: cyberpunk-2020
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2012/04/cyberpunk-2020-czowiek.html"
 data: 2012-04-03
-tags: [scenariusz, cyberpunk-2020, cyberpunk]
+tags: ["scenariusz", "cyberpunk-2020"]
+gatunek: ["cyberpunk"]
 ---
 
 **Przedmowa**
