@@ -78,3 +78,20 @@ Odzyskane wspomnienia
 Wspomnienia odzyskali wszyscy, oprócz Sulejmana i Rashida, którzy nie chcieli wydać współpracowników. Ostatecznie, pozostała trójka została wyciśnięta, jak cytryny, co przyczyniło się do dekonspiracji emira Zaida i finansującego całą akcję szejka Abdullaha.
 
 Koniec.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

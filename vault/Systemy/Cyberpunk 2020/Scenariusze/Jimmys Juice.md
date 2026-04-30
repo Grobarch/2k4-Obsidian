@@ -116,3 +116,20 @@ Latynoska Muzyka…
 Napisy Końcowe…
 
 Serdeczne podziękowania dla Darii, Kenji'ego, Mariusza i Percy'ego, bez których ten scenariusz nie powstałby w takim kształcie, a także dla mojej, starej ekipy: Hódego (Reporter John Kovalsky), Whitlowa (Rockman Jimmy „Aurelio" Fragles), Timona (Netrunner Oskar „Virgin"), Kudłatego (Porucznik Jeffrey „Dirty Django" Bowler), Czarnego (Kapral Eddy „Łodyga" Statham).
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -54,3 +54,20 @@ Stary dom, zardzewiałe ogrodzenie, psy strzegące posesji, telefon odbiera niep
 Po walce na terenie placówki zostaje znalezionych dziesięć noworodków, na biurku obok leży pożółkła kartka starego papieru, mówi o dziesięciorgu dzieci narodzonych w krwawych czasach, które po przebudzeniu usłyszą zew, każde z nich dokona okrutnego i szalonego czynu, zapoczątkuje to nowy czas w dziejach świata, a będą już wtedy dojrzałymi politykami, oficerami, literatami i artystami…
 
 Kadr na twarz Whittmore'a, ciemne tło, flesz z farmy na której zamordowano ukrywającego się barmana Michaela oraz ciotkę i wuja Wilkinsa, ciemne tło, muzyka.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

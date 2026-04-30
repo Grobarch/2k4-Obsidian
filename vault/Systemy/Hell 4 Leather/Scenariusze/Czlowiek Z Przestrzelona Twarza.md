@@ -64,3 +64,20 @@ Sama mechanika jest bardzo plastyczna. Karty tarota jako trzon mechaniki i inspi
 Można śmiało grać, wykorzystując tradycyjną talię kart. Takiej też talii używaliśmy w przypadku sesji, opisywanej w powyższym Actual Playu. Z tarotem, po prostu, jest bardziej klimatycznie i funkcjonalnie.
 
 To by było na tyle. Do zobaczenia na Zjavie.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

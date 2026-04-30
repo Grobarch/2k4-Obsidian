@@ -179,7 +179,7 @@ fmLines.push(`tags: [${typeLabel}, ${systemId}]`);
 // Sekcja Kampanie
 // ============================================================
 const kampaniaSection = wybraneCampanie.length > 0
-  ? `\n## Kampanie\n\n` + wybraneCampanie.map(k => `- [${k.name}](${k.link}/${k.id})`).join("\n") + "\n"
+  ? `\n\n## Kampanie\n\n` + wybraneCampanie.map(k => `- [${k.name}](${k.link}/${k.id})`).join("\n")
   : "";
 
 // ============================================================
@@ -199,10 +199,25 @@ ${statblock.trimEnd()}
 
 ## Opis
 
-*Opis do uzupełnienia.*
+*Opis do uzupełnienia.*${kampaniaSection}
 
 ## Wystąpienia
-${kampaniaSection}`;
+
+\`\`\`base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+\`\`\`
+`;
 
 // ============================================================
 // Utwórz notatkę i otwórz ją

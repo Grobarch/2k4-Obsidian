@@ -105,3 +105,20 @@ Młoda kobieta o ciemnych włosach, czarnych oczach i śniadej cerze, żona gang
 **Diana Seaton, Kustosz, 20 lat.**
 
 Młoda dziewczyna, chodziła do szkoły z Carlo Trivianim, pracuje w muzeum jako kustosz, lubi swoją pracę, w wolnych chwilach przesiaduje w kawiarenkach, od pewnego czasu jest w związku z Carlo, powoli zaczyna poznawać czym jest gangsterski światek, dlaczego jej chłopak pomimo młodego wieku jest darzony takim respektem i skąd ma tyle pieniędzy.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

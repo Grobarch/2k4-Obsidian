@@ -65,3 +65,20 @@ Rozrywkowy, lew salonowy, pijak
 *mjr Esmer Wobel, Żołnierz, 40 lat. Przebiegły, „dżentelmen", kłamca. Człowiek, wotańczyk, archetyp ryzykant, szpieg, zdolność wewnętrzny kompas, słabość konformizm, atut prowokacja(zastraszanie), osiągnięcie skandal(zdrada), Sława 2k10, atrybuty: Krzepa 10+, Zręczność 10+, Przenikliwość 8+, Charyzma 9+, Opanowanie 10+, Kondycja 10+, Reputacja 9+, Obrona 13/16/19, Odporność 0/+2/+5, Bogactwo 1, Umiejętności: Analiza 6, Blef 6, Ekspresja 6, Empatia 3, Odwaga 3, Okultyzm 3, Perswazja 9, Pojazdy(paramobil) 3, Półświatek 3, Przyroda 3, Spostrzegawczość 3, Strzelanie(pistolet) 9, Technika(paramobil) 3, Ukrywanie się 6, Wiedza akademicka(dowodzenie) 3, Walka(pięści) 3, Wysportowanie 6, Zastraszanie 9, Złodziejstwo 3, Gadżety: pistolet.*
 
 *Wotański Żołnierz, Ochroniarz. Człowiek, wotańczyk, żołnierz, słabość konformizm, atut formalista, Sława 1k10, atrybuty: Krzepa 10+, Zręczność 10+, Przenikliwość 10+, Charyzma 10+, Opanowanie 10+, Kondycja 10+, Reputacja 10+, Obrona 13/16/19, Odporność 1/1/1, Bogactwo 0, Umiejętności: Analiza 3, Blef 3, Ekspresja 3, Empatia 3, Odwaga 6, Okultyzm 3, Perswazja 3, Pojazdy(paramobil) 3, Półświatek 3, Przyroda 3, Spostrzegawczość 6, Strzelanie(karabin) 6, Technika(paramobil) 3, Ukrywanie się 6, Wiedza akademicka 3, Walka(pięści) 6, Wysportowanie 3, Zastraszanie 6, Złodziejstwo 3, Broń: karabin.*
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

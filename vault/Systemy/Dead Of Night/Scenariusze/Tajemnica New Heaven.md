@@ -54,3 +54,20 @@ Muzyka...
 Napisy Końcowe...
 
 Dead of Nigt to świetna gra. Jeśli ktoś lubi klimaty tanich horrorów to powinien w nią kiedyś zagrać. Sesja trwała 3,5 h. Nie było żadnych przestojów. Gracze szybko złapali konwencję. Mechanika była wykorzystywana do wspierania narracji. Jeśli chcecie się dowiedzieć czegoś więcej na temat gry, odwiedźcie blog Chimery. Tyle z mojej strony. Pozdrawiam i dzięki za poświęcony czas.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

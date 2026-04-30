@@ -62,3 +62,20 @@ Gracze wcielili się w akwitańskich żołnierzy z kompanii piechoty kpt. Corina
 W pozostałych rolach...
 
 *Andreas Bader, Esesman, 44 lata. Człowiek, wotańczyk, archetyp ryzykant, oficer, zdolność igła w stogu siana, słabość konformizm, Atut Błyskawiczny refleks 3(Walka), atrybuty: Krzepa 10+, Zręczność 9+, Przenikliwość 9+, Charyzma 10+, Opanowanie 9+, Umiejętności: Analiza 6, Blef 6, Ekspresja 3, Empatia 3, Odwaga 9, Okultyzm 9, Perswazja 3, Pojazdy 3, Półświatek 3, Przyroda 3, Spostrzegawczość 6, Strzelanie 9, Technika 6, Ukrywanie się 3, Wiedza akademicka 3, Walka 3, Wysportowanie 6, Zastraszanie 3, Złodziejstwo 3, Gadżety: Pistolet.*
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

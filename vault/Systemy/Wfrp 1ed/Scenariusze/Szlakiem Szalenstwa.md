@@ -94,3 +94,20 @@ Zakończenie
 Wszyscy oczekują na otwarcie mosiężnych wrót za którymi czeka upragnione schronienie. Nad twierdzą pojawia się słońce.
 
 Kiedy brama zostaje otwarta, przybyłych w blasku słońca witają zmutowane krasnoludy o posępnych twarzach… Czarne Tło… Rockowa muzyka… i Napisy Końcowe.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

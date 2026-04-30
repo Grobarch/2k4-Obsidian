@@ -60,3 +60,20 @@ Słowem zakończenia, gra powierza naprawdę wiele interesujących opcji. Przy d
 Serdeczne podziękowania dla Cezara i Whitlowa za udział w rozgrywce.
 
 Korzystając z okazji, życzę wszystkim: wesołych, zdrowych Świąt w gronie rodziny i przyjaciół oraz szczęśliwego Nowego Roku; złapania przez ten czas oddechu w machinie życia, a także naładowania jej baterii; sukcesów w życiu zawodowym i prywatnym, a ponad nimi autorefleksji, pogody, spokoju ducha i samorozwoju; z prozy życia Gracza: dobranych współgrających, bo odpowiednie gry każdy znajdzie w swojej mądrości. Nie życzę szampańskiej zabawy sylwestrowej, ponieważ może oscylować wokół innych procentów, i nie mam tutaj bynajmniej na myśli mechaniki BRP :-D
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

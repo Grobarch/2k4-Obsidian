@@ -13,3 +13,18 @@ tags: [artefakt, cold-city]
 *Opis do uzupełnienia.*
 
 ## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

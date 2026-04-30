@@ -118,3 +118,20 @@ Napisy Końcowe…
 Posłowie
 
 Serdeczne podziękowania dla Kudłatego, Timona, Whitlowa i Cezara, bez których ten scenariusz nie powstałby w takim kształcie.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

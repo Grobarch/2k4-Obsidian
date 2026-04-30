@@ -536,3 +536,20 @@ powstrzymanie szarży, riposta
 
 **Wybrane umiejętności:** Hazard 1, jeździectwo 4, taktyka
 4, wigor 4, zimna krew 2, etykieta 2, czytanie i pisanie 3.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
