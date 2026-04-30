@@ -47,6 +47,28 @@ views:
         direction: ASC
 ```
 
+## Oś czasu
+
+```base
+filters:
+  and:
+    - type == "epizod"
+    - system == "dwory-konca-swiata"
+views:
+  - type: list
+    name: Oś czasu
+    groupBy:
+      property: data
+      format: month
+    order:
+      - file.name
+      - data
+      - kampania
+    sort:
+      - property: data
+        direction: ASC
+```
+
 ## Wszystkie strony
 
 Przegladaj: [wszystkie strony z tagiem *dwory-konca-swiata*](/tags/dwory-konca-swiata)

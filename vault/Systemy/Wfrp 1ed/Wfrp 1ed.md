@@ -68,6 +68,28 @@ views:
         direction: ASC
 ```
 
+## Oś czasu
+
+```base
+filters:
+  and:
+    - type == "epizod"
+    - system == "wfrp-1ed"
+views:
+  - type: list
+    name: Oś czasu
+    groupBy:
+      property: data
+      format: month
+    order:
+      - file.name
+      - data
+      - kampania
+    sort:
+      - property: data
+        direction: ASC
+```
+
 ## Wszystkie strony
 
 Przegladaj: [wszystkie strony z tagiem *wfrp-1ed*](/tags/wfrp-1ed)

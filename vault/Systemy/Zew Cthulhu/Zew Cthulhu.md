@@ -47,6 +47,28 @@ views:
         direction: ASC
 ```
 
+## Oś czasu
+
+```base
+filters:
+  and:
+    - type == "epizod"
+    - system == "zew-cthulhu"
+views:
+  - type: list
+    name: Oś czasu
+    groupBy:
+      property: data
+      format: month
+    order:
+      - file.name
+      - data
+      - kampania
+    sort:
+      - property: data
+        direction: ASC
+```
+
 ## Wszystkie strony
 
 Przegladaj: [wszystkie strony z tagiem *zew-cthulhu*](/tags/zew-cthulhu)

@@ -71,6 +71,28 @@ views:
         direction: ASC
 ```
 
+## Oś czasu
+
+```base
+filters:
+  and:
+    - type == "epizod"
+    - system == "l5k"
+views:
+  - type: list
+    name: Oś czasu
+    groupBy:
+      property: data
+      format: month
+    order:
+      - file.name
+      - data
+      - kampania
+    sort:
+      - property: data
+        direction: ASC
+```
+
 ## Wszystkie strony
 
 Przegladaj: [wszystkie strony z tagiem *l5k*](/tags/l5k)

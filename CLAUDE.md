@@ -139,6 +139,14 @@ dynamicznych tabel, list i kart.
 - `file.folder` — folder nadrzędny pliku (nagłówek: "Folder")
 - `title`, `data`, `system`, `kampania`, `gracz`, `archetyp`, `gatunek`, `wydawca`, `zrodlo` — pola frontmatter
 
+**`groupBy` (tylko widok `list`):**
+- `groupBy: { property, format }` — grupuje wpisy pod nagłówkami `### <label>`
+- `format: month` (default) — z daty `YYYY-MM-DD` wyciąga `YYYY-MM` i renderuje jako "Październik 2010" (polskie nazwy miesięcy)
+- `format: year` — z daty wyciąga `YYYY`, renderuje jako "2010"
+- Sortowanie grup dziedziczy `direction` z `view.sort` dla tego samego `property`
+- Property po którym grupujemy jest pomijane w metadanych bullet (żeby nie powtarzać daty w nagłówku grupy i obok linka)
+- Brak wartości → grupa "Bez daty" na końcu
+
 **Dwa sposoby osadzania:**
 1. Inline code block: ` ```base ... ``` ` — YAML w treści notatki
 2. Wikilink embed: `![[NazwaBazy.base]]` — plik `.base` z YAML
