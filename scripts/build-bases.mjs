@@ -139,7 +139,7 @@ function parseBaseYaml(text) {
       // Nowy element listy views
       if (/^\s{2}-\s+type:/.test(trimmed)) {
         const typeMatch = trimmed.match(/type:\s*(.+)/);
-        currentView = { type: typeMatch ? typeMatch[1].trim() : "table", name: "", order: [], sort: [], filters: { and: [], or: [] } };
+        currentView = { type: typeMatch ? typeMatch[1].trim() : "table", name: "", order: [], sort: [], filters: { and: [], or: [] }, groupBy: null };
         result.views.push(currentView);
         viewSection = null;
         continue;
@@ -156,6 +156,19 @@ function parseBaseYaml(text) {
       if (/^\s{4}order:/.test(trimmed))   { viewSection = "order";   continue; }
       if (/^\s{4}sort:/.test(trimmed))    { viewSection = "sort";    continue; }
       if (/^\s{4}filters:/.test(trimmed)) { viewSection = "filters"; continue; }
+      if (/^\s{4}groupBy:/.test(trimmed)) {
+        viewSection = "groupBy";
+        currentView.groupBy = currentView.groupBy || { property: "", format: "month" };
+        continue;
+      }
+      if (viewSection === "groupBy" && /^\s{6}property:/.test(trimmed)) {
+        currentView.groupBy.property = trimmed.replace(/^\s{6}property:\s*/, "").trim();
+        continue;
+      }
+      if (viewSection === "groupBy" && /^\s{6}format:/.test(trimmed)) {
+        currentView.groupBy.format = trimmed.replace(/^\s{6}format:\s*/, "").trim().toLowerCase();
+        continue;
+      }
 
       if (viewSection === "order" && /^\s{6}-\s/.test(trimmed)) {
         currentView.order.push(trimmed.replace(/^\s{6}-\s+/, "").trim());
@@ -552,8 +565,57 @@ function generateTable(baseConfig, matchedFiles, vaultRoot) {
   return lines.join("\n") + "\n";
 }
 
+// Polskie nazwy miesięcy (1-indexed; PL_MONTHS[0] = "")
+const PL_MONTHS = ["", "Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec",
+                   "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"];
+
+/**
+ * Wyciąga klucz grupowania z wartości pola. Zwraca [sortKey, displayLabel].
+ * sortKey jest leksykograficznie porównywalny (YYYY lub YYYY-MM); displayLabel jest dla user-facing nagłówka.
+ * format: "year" | "month" (default: "month")
+ */
+function groupKey(value, format) {
+  if (!value) return ["~zzz", "Bez daty"];
+  const m = String(value).match(/^(\d{4})(?:-(\d{2}))?/);
+  if (!m) return ["~zzz", String(value)];
+  const year = m[1];
+  if (format === "year" || !m[2]) {
+    return [year, year];
+  }
+  const month = m[2];
+  const monthNum = parseInt(month, 10);
+  const monthName = PL_MONTHS[monthNum] || month;
+  return [`${year}-${month}`, `${monthName} ${year}`];
+}
+
+/**
+ * Renderuje pojedynczy bullet wpisu listy. `excludeColumns` pomija pewne kolumny z metadata
+ * (np. property po którym grupujemy — żeby się nie powtarzało w nagłówku i w bullet).
+ */
+function renderListItem({ fm, path }, columns, vaultRoot, excludeColumns = new Set()) {
+  const url   = buildUrl(path, vaultRoot);
+  const label = cleanFmVal(fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, ""));
+  const link  = `[${label}](${url})`;
+
+  const extra = columns
+    .filter(c => c !== "title" && c !== "file.name" && c !== "file.basename" && !excludeColumns.has(c))
+    .map(c => {
+      const val = getCellValue(c, fm, path, vaultRoot);
+      if (!val) return null;
+      const header = COLUMN_HEADERS[c] || c;
+      return `${header}: ${val}`;
+    })
+    .filter(Boolean);
+
+  if (extra.length > 0) return `- ${link} — ${extra.join(" · ")}`;
+  return `- ${link}`;
+}
+
 /**
  * Generuje listę markdown (bullet points) z pasujących plików.
+ * Obsługuje opcjonalny `groupBy: { property, format: month|year }` — wtedy
+ * wpisy są grupowane pod nagłówkami `### <Miesiąc Rok>` / `### <Rok>`.
+ * Sort wewnątrz grup jest dziedziczony z view.sort.
  */
 function generateList(baseConfig, matchedFiles, vaultRoot) {
   const view = baseConfig.views[0] || {};
@@ -567,30 +629,37 @@ function generateList(baseConfig, matchedFiles, vaultRoot) {
     return "_Brak wyników._\n";
   }
 
-  const lines = matchedFiles.map(({ fm, path }) => {
-    const url   = buildUrl(path, vaultRoot);
-    const label = cleanFmVal(fm.title || path.replace(/\\/g, "/").split("/").pop().replace(/\.md$/i, ""));
-    const link  = `[${label}](${url})`;
+  if (view.groupBy?.property) {
+    const prop = view.groupBy.property;
+    const format = view.groupBy.format || "month";
 
-    // Dodatkowe kolumny (poza title / file.name / file.basename) jako metadata po linku
-    // file.name i file.basename są już wyświetlane jako label linku.
-    const extra = columns
-      .filter(c => c !== "title" && c !== "file.name" && c !== "file.basename")
-      .map(c => {
-        const val = getCellValue(c, fm, path, vaultRoot);
-        if (!val) return null;
-        const header = COLUMN_HEADERS[c] || c;
-        return `${header}: ${val}`;
-      })
-      .filter(Boolean);
-
-    if (extra.length > 0) {
-      return `- ${link} — ${extra.join(" · ")}`;
+    // Grupuj zachowując kolejność z sortFiles.
+    const groups = new Map(); // sortKey → { label, items }
+    for (const item of matchedFiles) {
+      const val = getCellValue(prop, item.fm, item.path, vaultRoot);
+      const [sortKey, label] = groupKey(val, format);
+      if (!groups.has(sortKey)) groups.set(sortKey, { label, items: [] });
+      groups.get(sortKey).items.push(item);
     }
-    return `- ${link}`;
-  });
 
-  return lines.join("\n") + "\n";
+    // Sortuj grupy wg kierunku z view.sort dla tego property (default ASC).
+    const direction = (view.sort || []).find(s => s.property === prop)?.direction || "ASC";
+    const sortedKeys = [...groups.keys()].sort((a, b) =>
+      direction === "DESC" ? b.localeCompare(a, "pl") : a.localeCompare(b, "pl"));
+
+    const exclude = new Set([prop]);
+    const out = [];
+    for (const key of sortedKeys) {
+      const { label, items } = groups.get(key);
+      out.push(`### ${label}`);
+      out.push("");
+      for (const it of items) out.push(renderListItem(it, columns, vaultRoot, exclude));
+      out.push("");
+    }
+    return out.join("\n").trimEnd() + "\n";
+  }
+
+  return matchedFiles.map(it => renderListItem(it, columns, vaultRoot)).join("\n") + "\n";
 }
 
 /** Usuwa zbędne backslashe z wartości frontmatter (np. \" → ") */

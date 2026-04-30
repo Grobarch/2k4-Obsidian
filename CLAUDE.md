@@ -54,6 +54,7 @@ Blog źródłowy: arkadiusz-rygiel.blogspot.com
 │   ├── report-statblocks.mjs      ← raport kompletności statbloków BG/BN (per system, lista brakujących pól)
 │   ├── statblock-detect.mjs       ← pure heurystyki kompletności statblocka (single source of truth)
 │   ├── generate-aliases.mjs       ← heurystyczny generator aliasów dla BG/BN (comma/dash/quote/prefix)
+│   ├── add-timeline-base.mjs      ← idempotentnie wstawia blok "## Oś czasu" (list+groupBy) w folder notes systemów
 │   ├── sync-systems.mjs           ← synchronizacja systems-data.json z vault
 │   ├── fix-infolder-paths.mjs     ← naprawa ścieżek file.inFolder w blokach base
 │   ├── migrate-scenarios.mjs      ← jednorazowa migracja: Scenariusze/→Systemy/[Sys]/Scenariusze/
@@ -138,6 +139,14 @@ dynamicznych tabel, list i kart.
 - `file.folder` — folder nadrzędny pliku (nagłówek: "Folder")
 - `title`, `data`, `system`, `kampania`, `gracz`, `archetyp`, `gatunek`, `wydawca`, `zrodlo` — pola frontmatter
 
+**`groupBy` (tylko widok `list`):**
+- `groupBy: { property, format }` — grupuje wpisy pod nagłówkami `### <label>`
+- `format: month` (default) — z daty `YYYY-MM-DD` wyciąga `YYYY-MM` i renderuje jako "Październik 2010" (polskie nazwy miesięcy)
+- `format: year` — z daty wyciąga `YYYY`, renderuje jako "2010"
+- Sortowanie grup dziedziczy `direction` z `view.sort` dla tego samego `property`
+- Property po którym grupujemy jest pomijane w metadanych bullet (żeby nie powtarzać daty w nagłówku grupy i obok linka)
+- Brak wartości → grupa "Bez daty" na końcu
+
 **Dwa sposoby osadzania:**
 1. Inline code block: ` ```base ... ``` ` — YAML w treści notatki
 2. Wikilink embed: `![[NazwaBazy.base]]` — plik `.base` z YAML
@@ -182,6 +191,16 @@ node scripts/report-statblocks.mjs --md raport.md         # dodatkowo zapisz md
 ```
 
 Skanuje pliki z `type: bohater-gracza` / `bohater-niezalezny` i drukuje raport markdown: podsumowanie per system (pełne / niepełne / bez statblocka) oraz listę niepełnych postaci z nazwami brakujących pól. Heurystyka: wykrywa inline placeholdery `**Label:** —` i `**Label**: —` (em-dash U+2014). Świadomie pomija puste komórki tabel (`| — |`) — fałszywe pozytywy w L5K i innych interlaced statblockach. Exit code zawsze 0 (raport nie blokuje CI).
+
+### Oś czasu kampanii (chronologia epizodów per system)
+
+```bash
+node scripts/add-timeline-base.mjs                    # dry-run cały vault
+node scripts/add-timeline-base.mjs --apply            # zapis
+node scripts/add-timeline-base.mjs --file <path>      # pojedynczy folder note systemu
+```
+
+Wstawia idempotentnie sekcję `## Oś czasu` z blokiem `base` typu `list` z `groupBy` po miesiącu — w folder notes systemów (`Systemy/*/[NazwaSystemu].md` o `type: system`). Pokazuje wszystkie epizody systemu chronologicznie (sortowane ASC po `data`), pogrupowane pod nagłówkami `### Październik 2010` itd. Filtr używa pola `system` z folder note — pasuje do epizodów wszystkich kampanii systemu. Skrypt pomija pliki z istniejącym nagłówkiem `## Oś czasu` (idempotentny).
 
 ### Generator aliasów
 
