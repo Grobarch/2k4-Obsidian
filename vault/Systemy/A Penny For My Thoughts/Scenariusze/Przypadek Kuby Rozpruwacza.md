@@ -4,7 +4,8 @@ type: scenariusz
 system: a-penny-for-my-thoughts
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/08/a-penny-for-my-thoughts-kuby-rozpruwacza.html"
 data: 2011-08-30
-tags: [scenariusz, a-penny-for-my-thoughts, psychologiczny]
+tags: ["scenariusz", "a-penny-for-my-thoughts"]
+gatunek: ["psychologiczny"]
 ---
 
 Wczoraj, w przerwie między minikampanią do Dark Heresy zakończoną w ten weekend, oraz nadal rozgrywaną w Klanarchii, zagraliśmy w A Penny For My Thoughts. O samej grze pisałem w relacji ze świetnego Falkonu 2010, pisał także Chimera na blogu i Rincewind w jednej ze swoich recenzji. Co do samego tytułu, jedną z jego niepodważalnych zalet, jest to, że do gry podchodzi się bez większego przygotowania. Jedyne czego trzeba to odrobina Flow, i duża doza kreatywności. W sesji, wzięli udział Cezar i Whitlow.

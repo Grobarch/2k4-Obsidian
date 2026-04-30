@@ -4,8 +4,8 @@ type: kampania
 system: wiedzmin
 system_pelna: "Wiedźmin: Gra Wyobraźni"
 mg: Arkadiusz RYGIEL
-gatunek: fantasy
-tags: ["kampania", "Wiedźmin", "dark-fantasy", "fantasy", "wiedzmin"]
+gatunek: ["fantasy", "dark-fantasy"]
+tags: ["kampania", "wiedzmin"]
 draft: "false"
 status: "zakończona"
 ---

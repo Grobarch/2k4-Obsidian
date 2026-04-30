@@ -4,8 +4,8 @@ type: kampania
 system: l5k
 system_pelna: Legenda Pięciu Kręgów 1ed
 mg: Arkadiusz RYGIEL
-gatunek: samurajski
-tags: [kampania, l5k, samurajski]
+gatunek: ["samurajski"]
+tags: ["kampania", "l5k"]
 draft: "false"
 status: "zakończona"
 ---

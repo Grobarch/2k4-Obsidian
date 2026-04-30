@@ -4,7 +4,8 @@ type: scenariusz
 system: a-penny-for-my-thoughts
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2011/09/a-penny-for-my-thoughts-zaida.html"
 data: 2011-09-03
-tags: [scenariusz, a-penny-for-my-thoughts, psychologiczny]
+tags: ["scenariusz", "a-penny-for-my-thoughts"]
+gatunek: ["psychologiczny"]
 ---
 
 Korzystając z wolnej chwili, napiszę kilka słów o drugiej sesji A Penny For My Thoughts, rozegranej w starej ekipie. Tym razem, do gry oprócz Cezara i Whitlowa, zasiedli Czarny i Kudłaty. Co razem, dawało pięć osób. Sama rozgrywka była dłuższa od Przypadku Kuby Rozpruwacza, po pierwsze, ze względu na liczbę bohaterów, których opisywała opowieść, po drugie, przez znaczną liczbę żartów i dziwnych rozkmin z Offu.
