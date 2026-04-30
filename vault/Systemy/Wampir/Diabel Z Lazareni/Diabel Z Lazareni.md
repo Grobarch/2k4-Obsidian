@@ -4,8 +4,8 @@ type: kampania
 system: wampir
 system_pelna: "Wampir: Mroczne Wieki"
 mg: Arkadiusz RYGIEL
-gatunek: dark-fantasy
-tags: [kampania, wampir, horror, dark-fantasy]
+gatunek: ["dark-fantasy", "horror"]
+tags: ["kampania", "wampir"]
 draft: "false"
 status: "zakończona"
 ---

@@ -4,8 +4,8 @@ type: kampania
 system: mafia-ggf
 system_pelna: "Mafia: Gangsterska Gra Fabularna"
 mg: Arkadiusz RYGIEL
-gatunek: gangsterski
-tags: [kampania, mafia-ggf, gangsterski]
+gatunek: ["gangsterski"]
+tags: ["kampania", "mafia-ggf"]
 draft: "false"
 status: "zakończona"
 ---

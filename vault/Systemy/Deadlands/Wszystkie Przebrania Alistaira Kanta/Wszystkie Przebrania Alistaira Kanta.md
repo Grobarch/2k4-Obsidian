@@ -4,8 +4,8 @@ type: kampania
 system: deadlands
 system_pelna: "Deadlands: Martwe Ziemie"
 mg: Arkadiusz RYGIEL
-gatunek: western
-tags: [kampania, deadlands, western, horror]
+gatunek: ["western", "horror"]
+tags: ["kampania", "deadlands"]
 draft: "false"
 status: "aktywna"
 ---

@@ -4,8 +4,8 @@ type: kampania
 system: wfrp-2ed
 system_pelna: Warhammer Fantasy Role Play 2ed
 mg: Arkadiusz RYGIEL
-gatunek: fantasy
-tags: [kampania, wfrp-2ed, dark-fantasy, fantasy]
+gatunek: ["fantasy", "dark-fantasy"]
+tags: ["kampania", "wfrp-2ed"]
 draft: "false"
 status: "zakończona"
 ---

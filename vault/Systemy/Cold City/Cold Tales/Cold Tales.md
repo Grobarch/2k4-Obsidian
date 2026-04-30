@@ -4,8 +4,8 @@ type: kampania
 system: cold-city
 system_pelna: Cold City
 mg: Arkadiusz RYGIEL
-gatunek: szpiegowski
-tags: [kampania, cold-city, szpiegowski, horror]
+gatunek: ["szpiegowski", "horror"]
+tags: ["kampania", "cold-city"]
 draft: "false"
 status: "zakończona"
 ---

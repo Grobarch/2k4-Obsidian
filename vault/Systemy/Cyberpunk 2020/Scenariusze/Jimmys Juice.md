@@ -4,7 +4,8 @@ type: scenariusz
 system: cyberpunk-2020
 zrodlo: "https://arkadiusz-rygiel.blogspot.com/2012/12/cyberpunk-2020-juice.html"
 data: 2012-12-09
-tags: [scenariusz, cyberpunk-2020, cyberpunk]
+tags: ["scenariusz", "cyberpunk-2020"]
+gatunek: ["cyberpunk"]
 ---
 
 **Wstępniak**
