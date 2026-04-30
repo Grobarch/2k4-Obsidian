@@ -47,3 +47,20 @@ Filtr od papierosa Castella był ośliniony, pomimo że w gardle robiło mu się
 - Posłuchaj poznaliśmy twoje źródło, wiemy że kupujesz broń od Bradleya. Nie tłumacz się niepotrzebnie i nie bierz tego do siebie. To tylko interes. Twojej rodzinie nic nie grozi.
 
 Nerwy mu puściły, wyciągnął dłoń żeby wycelować i zabić gnojka, lecz w tym samym momencie zabrzmiała śmiercionośna serenada z pistoletów maszynowych. Dziurawiąc karoserie samochodu i jego samego...
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

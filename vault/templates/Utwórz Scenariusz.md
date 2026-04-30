@@ -93,6 +93,23 @@ tags: [scenariusz, ${systemId}]
 # ${tytul}
 
 *Opis do uzupełnienia.*
+
+## Wystąpienia
+
+\`\`\`base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+\`\`\`
 `;
 
 await tp.file.create_new(content, fileName, true, scenarFolder.path);

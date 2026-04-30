@@ -42,3 +42,20 @@ Chwała 1.0, Honor 4.5;
 4: 0, 8: -1, 12: -2, 16: -3, 20: -4, 24: Obalony, 28: Nieprzytomny, 32: Martwy;
 
 Rzeczy dobrej jakości: Niebieskie Kimono, pas Obi, Daisho, skarpety Tabi, sandały, lekka zbroja, dokumenty podróżne, koń.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

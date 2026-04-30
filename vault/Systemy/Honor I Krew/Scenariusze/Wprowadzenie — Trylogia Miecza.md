@@ -129,3 +129,20 @@ Podsumowując nasza postać to Gado Ishi. Doskonały szermierz, wątłej postury
 Gra na pewno spodoba się miłośnikom wszelkich opowieści o samurajach oraz pasjonatom Chanbary czyli japońskich filmów kostiumowych z walkami na miecze. Honor i Krew przypadnie do gustu graczom, którzy cenią prostą, elastyczną i użytkową mechanikę, otwartą na sytuacyjne rozwiązania, sprawdzającą się zarówno w jednostrzałowych historyjkach jak i całych kampaniach. Tytuł wykorzystają osoby, które lubią opowieści o walce samurajskich klanów, gdzie zwycięzcy przy użyciu mieczy, piszą historię krwią wrogów. Gra znajdzie również zastosowanie w scenariuszach politycznych, rozgrywanych w mikro i makroskali. W końcu to doskonały tytuł dla tych, którzy mieli okazję grać w świetną Legendę Pięciu Kręgów i przejadło im się fantasy w starym, dobrym, rokugańskim stylu. Nie będą musieli już adaptować motywów z kultury japońskiej do świata przedstawionego, ponieważ w Honor i Krew te rozwiązania funkcjonują.
 
 Honor i Krew jest doskonałym narzędziem, tak jak samurajski miecz, ale jak go użyjesz, zależy wyłącznie od Ciebie.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

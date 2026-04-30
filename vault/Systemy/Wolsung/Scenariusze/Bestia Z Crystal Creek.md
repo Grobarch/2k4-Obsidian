@@ -66,3 +66,20 @@ W pozostałych rolach...
 *Casimir Abrams, Górnik, 38 lat. Zgorzkniały, mściwy, przepełniony nienawiścią. Człowiek, alfheimczyk, archetyp ryzykant, górnik, zdolność wewnętrzny kompas, słabość konformizm, atut zderzenie(pościg pieszy), osiągnięcie spektakularny wyczyn(przeskoczenie rozpadliny), Sława 2k10, atrybuty: Krzepa 9+, Zręczność 9+, Przenikliwość 10+, Charyzma 10+, Opanowanie 9+, Kondycja 9+, Reputacja 9+, Obrona 13/16/19, Odporność 0/+2/+5, Bogactwo 1, Umiejętności: Analiza 3, Blef 3, Ekspresja 6, Empatia 3, Odwaga 3, Okultyzm 9, Perswazja 3, Pojazdy 3, Półświatek 3, Przyroda 6, Spostrzegawczość 6, Strzelanie(pistolet) 6, Technika 3, Ukrywanie się 3, Wiedza akademicka 3, Walka(pięści) 9, Wysportowanie 6, Zastraszanie 9, Złodziejstwo 3, Gadżety: kij.*
 
 *Wilkołak. Przepełniona nienawiścią, krwiożercza bestia. Likantrop, alfheimczyk, archetyp ryzykant, górnik, zdolność wewnętrzny kompas, słabość konformizm, atut zderzenie(pościg pieszy), osiągnięcie spektakularny wyczyn(przeskoczenie rozpadliny), sława 3k10, atrybuty: Krzepa 8+, Zręczność 8+, Przenikliwość 10+, Charyzma 10+, Opanowanie 10+, Kondycja 8+, Reputacja 10+, Obrona 13/16/19, Odporność 0/+2/+5, Bogactwo 1, Umiejętności: Analiza 3, Blef 3, Ekspresja 6, Empatia 3, Odwaga 9, Okultyzm 9, Perswazja 3, Pojazdy 3, Półświatek 3, Przyroda 6, Spostrzegawczość 6, Strzelanie(pistolet) 0, Technika 3, Ukrywanie się 6, Wiedza akademicka 3, Walka(pięści) 9, Wysportowanie 6, Zastraszanie 9, Złodziejstwo 3, Cechy specjalne Strach(ST 20), Obstawa(wilki), Gadżety: Brak.*
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

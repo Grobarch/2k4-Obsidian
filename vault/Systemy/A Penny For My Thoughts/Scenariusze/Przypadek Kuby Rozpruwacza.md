@@ -76,3 +76,20 @@ Odzyskane wspomnienia
 Wspomnienia odzyskali wszyscy, poza mścicielem, który chciał zacząć wszystko od nowa.
 
 Koniec.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

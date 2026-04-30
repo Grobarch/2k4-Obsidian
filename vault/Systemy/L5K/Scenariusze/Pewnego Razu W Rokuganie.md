@@ -58,3 +58,20 @@ Rankiem mieszkańców budzą krzyki. Okazuję się, że w herbaciarni Sugai zabi
 Za zdrajców zostaję uznana rodzina Hasegawa i następuje jej  rozwiązanie. Prawomocnym dziedzicem jest pan Ramo. Jeszcze nie wie, że gdy przyjmuje gratulacje od pana Iuchi jest już otruty. Namiestnik wraz z yoriki wraca do Otosan Uchi. Wkrótce do stolicy dochodzi wieść o śmierci Ramo. W mieście władzę sprawuje nowy namiestnik z rodziny Bayushi. Ojcobójca zostaje ukarany, miasto ocalone od rzezi, a rodzina Hasegawa rozwiązana. Przy ceremonii picia herbaty zgorzkniały pan Yozu obiecuję sprawiedliwe rozwiązanie dla namiestnika i Jego yoriki. Wszyscy wiedzą, że będzie nim zemsta.
 
 Gracze działali nieszablonowo. Pojawiały się wyraziste sceny i przerysowane postaci. Nie brakowało teatralnych gestów i dramatycznych wyborów. Scena w Mieście Tkanin była utrzymana w konwencji dobrego westernu. Natomiast ogólna oprawa trzymała filmowy klimat. Podsumowując to były trzy godziny naprawdę porządnej gry.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

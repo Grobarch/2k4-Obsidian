@@ -49,3 +49,20 @@ Powstało na skutek odejścia Corvinusa Lupei z Plemienia Krwawych Kłów. Młod
 **Przymierze Nowej Krwi**
 
 Tajemny sojusz Transylwańskich Baronów. Działa w opozycji do Balogów i ich popleczników. Skupia przeciwników despotycznej władzy. Do zgromadzenia przystępują wampiry, które dążą do obalenia Kniaziów. Wielu z nich trwa w uśpieniu spełniając swoje obowiązki w zakonspirowanych organizacjach.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

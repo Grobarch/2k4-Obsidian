@@ -103,3 +103,20 @@ W pozostałych rolach:
 
 **[[Zly Duch Oni Odrzyskora Hifu Hosshin Z Mglistych Bagien Kiri|Zły duch Oni Odrzyskóra Hifu-Hosshin z Mglistych Bagien Kiri]], Zmiennokształtny koszmar potrafiący przybierać różne postaci i formy.**
 OGIEŃ 5, Zręczność 5, Inteligencja 5, ZIEMIA 5, Wytrzymałość 5, Siła Woli 5, POWIETRZE 3, Refleks 5, Intuicja 3, WODA 5, Siła 6, Spostrzegawczość 5, PUSTKA 4, szpony atak 9z5, kły atak 9z5, szpony obrażenia 9z4, kły obrażenia 9z2, PT trafienia 25, UMIEJĘTNOŚCI: Walka: szpony 2, RANY 10:0, 20:-1, 30:-2, 40:-3, 50:-4, 60:Obalony, 70:Nieprzytomny, 80:Martwy.
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```

@@ -28,3 +28,20 @@ Rozwinięcie koncentrowało się na zaprezentowaniu postaci z rodziny Rosenstein
 W zakończeniu znalazły się trudne wybory mające na celu zatrzymanie dążeń Rosensteinów. W ostatniej scenie protagoniści odkryli, że Engel oddaje cześć Slaaneshowi [a jakże! :-D]. Prawda była jednak podana w sposób bardzo dosłowny, gdyż pochodziła z krótkich prześwitów, jakie fundował umysł wyrwany z narkotycznego stanu, podczas orgii w zamku wyznawców pana rozkoszy. Syn Dieobalda bowiem posiadł dar malowania rzeczywistości, jedyne co mu było potrzebne to odrobina krwi osób, których losy miał kreślić... I tak zepsuty malarz narysował scenę z udziałem protagonistów, która wkrótce stała się prawdą.
 
 Grało się na tyle dobrze, że straciliśmy rachubę czasu. Kończąc sesję jakoś przed północą wszyscy byli zadowoleni, mimo tego, że rano następnego dnia trzeba było stawić się w miejscach pracy :-D
+
+## Wystąpienia
+
+```base
+views:
+  - type: table
+    name: Wystąpienia
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - data
+    sort:
+      - property: data
+        direction: ASC
+```
