@@ -18,7 +18,11 @@ views:
     order:
       - file.name
       - system
+      - data
+      - gatunek
     sort:
       - property: system
+        direction: ASC
+      - property: data
         direction: ASC
 ```
